@@ -1,0 +1,350 @@
+{
+  "startScene": "start",
+  "scenes": {
+
+    "start": {
+      "id": "start",
+      "text": "Your master left you two things.\n\nThe compass, and a note in his slanted, deliberate hand: When you are lost enough, it will tell you where to go. You have carried both since Thornwall — since the Cartographers' Guild stripped your rank and showed you the road with the particular efficiency of institutions that are done with people. That was three years ago. You have learned since which towns tolerate ghost surveyors and which do not, which merchants will pay for maps that do not officially exist, and what it costs to be right about something no one wants you to be right about.\n\nThe compass has pointed south-and-wrong the entire time. Immovably stubborn. Your master's promise has seemed, in darker moments, like the final joke of a man who found more things funny than the world gave him credit for.\n\nBut today, at the three-road crossroads where the old stone marker lists northward like a tired man, the needle moves.\n\nIt swings east and holds. Deliberate. Certain. There is a feeling that comes with it you do not have a name for — not hope, something more structural than hope. Like a door that has been stuck for three years finally deciding to open.\n\nEast, the road runs toward smoke and the shape of a settlement catching the last light. Two, maybe three kilometers.\n\nNorth, a forest path climbs toward a tree line where the broken silhouette of a tower interrupts the sky. Old stonework. Something that mattered, once.\n\nYou have been following roads since you were fifteen. You know the compass is telling you something. What you do not know yet is what it is going to cost.",
+      "item": {
+        "id": "wayward_compass",
+        "name": "Wayward Compass",
+        "description": "Your master's compass. It pointed south and wrong for three years. Today, at the crossroads, the needle finally moved. It points east with the quiet certainty of something that has been waiting.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Follow the compass east, toward the settlement.",
+          "next": "road_east"
+        },
+        {
+          "text": "Head north, into the trees and toward the ruined tower.",
+          "next": "path_north"
+        },
+        {
+          "text": "Wait at the crossroads. Something about this moment feels unfinished.",
+          "next": "crossroads_wait"
+        }
+      ]
+    },
+
+    "road_east": {
+      "id": "road_east",
+      "text": "The settlement is called Dusk's End — or so the painted board above the gate suggests, the letters flaking but legible.\n\nIt is a small place. Eight buildings, maybe ten, the kind repaired so many times they are more patch than original timber. Inside the largest of them — the inn, two floors, amber light from the lower windows, a sign bearing a painted candle that has clearly never been lit — it smells of wet wool and something cooking that has been cooking too long.\n\nThe woman behind the bar is somewhere between forty and sixty, with the kind of face that has made a decision about something and never revisited it. Her name, you will learn, is Maren. She sets a clay cup in front of you before you have said a word.\n\n'Drink,' she says. 'Then tell me where you came from.'\n\nHer eyes move briefly to your coat pocket. To the outline of the compass.\n\nShe already knows something.",
+      "choices": [
+        {
+          "text": "Drink. Tell her honestly — a compass found at the crossroads, pointing east instead of north.",
+          "next": "village_honest"
+        },
+        {
+          "text": "Drink. Say nothing about the compass. See what she offers first.",
+          "next": "village_silent"
+        },
+        {
+          "text": "Ask what she knows before you say anything at all.",
+          "next": "village_ask"
+        }
+      ]
+    },
+
+    "village_honest": {
+      "id": "village_honest",
+      "text": "You set the compass on the bar.\n\nMaren looks at it for a long moment. She does not touch it. Her expression does not change — which is itself an expression.\n\n'Found at the crossroads,' she says. Not a question.\n\n'Yes.'\n\n'In the stones at the base of the marker.' She picks up a cup and dries it slowly. 'Someone puts them there. Has been doing it, on and off, for four months. You are the third finder I have had sit down in front of me.'\n\nYou wait.\n\n'The last person who found one walked out of here heading south. Alone, in the morning, without telling me she was going.' She sets down the cup. 'My daughter. Three and a half months ago. I have had one message since, through a trader.'\n\nThe fire pops. Someone at the corner table laughs at something. The sound is ordinary and strange at once.\n\n'So,' Maren says. 'Are you staying the night, or are you going to do something about it?'\n\nThe needle turns in your pocket. South. Toward the door. Toward wherever her daughter went.",
+      "choices": [
+        {
+          "text": "Stay the night. The road south will keep until morning.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "village_silent": {
+      "id": "village_silent",
+      "text": "You do not mention the compass.\n\nYou drink. The ale is thin but warm and that is enough. Maren refills your cup without being asked and asks, in the manner of someone who has learned which questions can be refused, where you are headed.\n\n'North,' you say.\n\nShe nods as though this were obvious.\n\nYou sit with three strangers who become, over the course of an hour, people with names and specific complaints about the road east of the hills. One of them laughs at something you say. One tells you about a path through the pines that cuts three hours off the northern route, if you can find the second blaze mark on the oak trees.\n\nIt is, despite everything, a pleasant evening.\n\nWhen you leave for your room, Maren says without looking up from the glass she is drying: 'Whatever you found at the crossroads — keep it close. These are strange times for compasses to be finding their way into the right hands.'\n\nYou had not mentioned the compass.\n\nShe had not asked.",
+      "choices": [
+        {
+          "text": "Sleep. Ask her in the morning what she meant.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "village_ask": {
+      "id": "village_ask",
+      "text": "'What do you know?' you ask. 'Before I say anything.'\n\nSomething in Maren's face relaxes — like a knot that has been waiting to come undone. She folds her arms on the bar.\n\n'I know you found something at the crossroads. I know you have been sitting here turning it over in your coat pocket because you do not know what to make of it.' She pauses. 'And I know that whoever puts those things in that marker stone has been doing it for four months. You are the third finder to sit down in front of me. The others walked south in the morning.'\n\n'Both of them?'\n\n'The second one was my daughter.' She says it flatly. 'Three and a half months ago. I have had one letter since, with a name on it and directions I have been deciding whether to share.'\n\nOutside, the first drops of rain hit the window. Both of you ignore it.\n\n'Tell me what direction it points,' she says. 'I will tell you what I think it means.'",
+      "choices": [
+        {
+          "text": "'South. It points south.'",
+          "next": "night_at_inn"
+        },
+        {
+          "text": "'I would rather not say yet. But I think you already know.'",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "path_north": {
+      "id": "path_north",
+      "text": "The path narrows within a dozen steps of the tree line.\n\nWhatever road this was — and there are old stones underfoot that suggest it was a road once, laid with intention — it has been losing the argument with the forest for a long time. Roots have cracked the paving. Branches have closed overhead into a canopy that turns the last of the evening light green and thin. You walk under it and feel the temperature drop, the way forests have their own weather, their own opinions.\n\nThe path bends, then opens into a small clearing.\n\nHere the trees stand back from a circle of old stones. Not natural, not random — someone arranged these, came here with intent and the patience to move large things, long enough ago that the forest has grown around the decision and accepted it. The stones are worn smooth on top, and in the center of the circle the ground has been disturbed recently. Not dug. Pressed down, as if something heavy rested here and then left.\n\nYou take out the compass.\n\nThe needle points straight down.",
+      "choices": [
+        {
+          "text": "Study the standing stones carefully. Do not cross into the circle.",
+          "next": "forest_look"
+        },
+        {
+          "text": "Follow where the compass points — past the stones, deeper in.",
+          "next": "forest_deep",
+          "requires": "wayward_compass"
+        },
+        {
+          "text": "Back away. Come back when you know what you are walking into.",
+          "next": "forest_back"
+        }
+      ]
+    },
+
+    "forest_look": {
+      "id": "forest_look",
+      "text": "You circle the stones without crossing inside.\n\nUp close they are older than they looked from the path. The surface has been worked deliberately, in a pattern half-erased by time and the slow patient pressure of lichen. You crouch beside the smallest stone and trace the carved lines with your finger.\n\nCartographic notation. Old — pre-Guild, formal, the system used in documents of record before the Meridian standardized everything. You were trained to recognize it. You were never fully taught to parse it.\n\nYou can almost parse it now. The shape of meaning is there behind the erosion, like a word you almost remember.\n\nThe compass needle, you notice, has shifted. It no longer points down. It points at the center of the circle, where the ground was disturbed.\n\nYou stay until the light fails. The forest around the clearing is quiet in a way forests are not supposed to be — no insects, no wind, no settling of branches. Whatever came here recently enough to press down the center of that circle has not been gone long enough for the normal life of the woods to return.\n\nYou back out the way you came. You carry the unease with you like a stone in a pocket.\n\nThere is a settlement to the east. You need information before you go back in.",
+      "choices": [
+        {
+          "text": "Head east to the settlement.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "forest_deep": {
+      "id": "forest_deep",
+      "text": "You follow the needle.\n\nIt had been pointing down — drawn to something in the earth — and now, as you move slowly around the outside of the circle, it shifts. Between two particular trees, slightly west: this way. The compass is certain in the way it has only been certain since this afternoon, and you have learned today to trust that certainty even when you do not understand it.\n\nYou go between the trees.\n\nThe path here is a memory of one. But the ground is clear enough to walk, and twenty steps past the standing stones you find the marker.\n\nIt has been here a long time. Stone, waist-high, carved with a script you do not recognize — though something in the shape of the letters suggests a name, a direction, or both. At its base, half buried, a small disc of dark metal. You dig it out with your fingers.\n\nYou turn it over.\n\nOne face: a map, etched in lines so fine they might be hair. The other: coordinates, in a notation system you have never formally studied, that your hands somehow know how to read.\n\nYou stand in the dark between the old trees for a long time.\n\nSome things are found before you understand why you were looking for them.",
+      "item": {
+        "id": "ancient_marker_disc",
+        "name": "Marker Disc",
+        "description": "Dark metal, one face a map, the other coordinates in old cartographic notation. You understand the notation without having been taught it. This should not be possible. It is."
+      },
+      "choices": [
+        {
+          "text": "Return to the crossroads. You know which road this points to.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "forest_back": {
+      "id": "forest_back",
+      "text": "You stop.\n\nThree steps into the trees and something makes you stop. Not sound, not movement — the sudden certain feeling that you are in a conversation you do not have the language for yet. That whatever arranged this circle and disturbed its center is still present in some form that exists below the threshold of what you can perceive.\n\nYou are not afraid, exactly. You have been in worse places and felt steadier.\n\nBut you have learned the difference between courage and ignorance. Courage is going forward when you understand the risk. Ignorance is going forward because you cannot imagine it.\n\nYou turn around.\n\nYou walk back to the crossroads. The compass, as you emerge from the trees, swings east.\n\nA settlement that way. Information, a fire, and time to understand what you found before you go back into the dark for it.",
+      "choices": [
+        {
+          "text": "Head east to the settlement.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "crossroads_wait": {
+      "id": "crossroads_wait",
+      "text": "You sit on the stone marker and wait.\n\nA crow lands on the opposite sign post and regards you with the focused attention crows reserve for things they have not decided about yet. You regard it back. After a long moment it decides nothing and flies west into the coming weather.\n\nThe light fails slowly. The eastern settlement brightens as it does — warm squares of amber in the gathering blue.\n\nThen, from the south — from the direction the compass has been pointing for three years — you hear hooves.\n\nOne rider. Moving at a pace that is not hurrying but is not careless either. A lantern swings from a hook on the saddle, throwing a moving circle of light ahead on the road.\n\nThey see you when they are close enough that stopping is a choice and not a reflex. They stop.\n\nThe horse is road-dusty. The rider is bundled against the coming wind. A young woman, from what you can see — with the particular tiredness that comes from distance rather than sleeplessness. Her eyes, when she lowers her collar, are watchful.\n\n'You have been sitting there a while,' she says. Not an accusation. An observation, like weather.\n\nHer eyes move to your coat pocket. To the outline of the compass.\n\nEveryone, it seems, knows about the compass.",
+      "choices": [
+        {
+          "text": "'I have. Looking for someone to tell me what this crossroads means.'",
+          "next": "rider_talk"
+        },
+        {
+          "text": "Stay still. Say nothing. See if she will speak unprompted.",
+          "next": "rider_silence"
+        }
+      ]
+    },
+
+    "rider_talk": {
+      "id": "rider_talk",
+      "text": "She considers, then nudges the horse a step closer and lowers her collar the rest of the way.\n\nHer name is Idra. Road dust on her cheekbones, a practical braid coming loose from weeks of travel. She has been riding the southern road since early winter, she says — delivering messages for a client she has never met, to people who turn up at crossroads with compasses that point wrong.\n\n'This is the sixth delivery,' she says. 'I have tried, professionally, not to think too hard about the other five.'\n\nYou look at the compass. 'What is the message?'\n\nShe produces a folded square of paper from inside her coat. No seal, no mark. 'I was told: do not give it until you are certain they have the compass and mean to follow it.' She looks at you sitting on a crossroads stone at dusk instead of sleeping in the settlement to the east. 'You mean to follow it.'\n\nShe holds out the paper.\n\n'There is a place east with a fire,' she adds. 'Open it there. Under a roof, before the rain.' She glances at the western sky — at the clouds stacking themselves against the last of the light. 'Which I would suggest finding soon.'\n\nThe compass needle is pointing south. At the road she came from. At wherever she has already been.",
+      "choices": [
+        {
+          "text": "Take the paper. Ask what is at the end of the southern road.",
+          "next": "night_at_inn"
+        },
+        {
+          "text": "Take the paper. Let her go. Head east.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "rider_silence": {
+      "id": "rider_silence",
+      "text": "You stay still.\n\nYou have, over the years, developed something like a talent for this — for becoming part of the landscape, for occupying space without asserting it. It has served you in rooms where speaking first was a mistake. It serves you now.\n\nShe studies the crossroads. The stone marker. The compass-shaped outline in your coat pocket. She seems to be running a calculation that involves more variables than you can see.\n\n'Right,' she says at last — to herself more than to you. 'All right.'\n\nHer name is Idra. She has been riding this road for six weeks. She reaches into her coat and produces a folded square of paper and holds it out without ceremony. 'I was told to give this to the person with the compass who looked like they had decided not to run from it.' She considers you. 'You look like that person.'\n\nYou take the paper.\n\n'Do not open it in the rain,' she says. She nods east. 'There is an inn. A woman named Maren behind the bar. She will not ask questions you do not want to answer, but she will have some of her own.' A pause. 'She is worth listening to.'\n\nShe rides on. South. Back the way she came.\n\nYou are holding a letter from someone you have never met, that has been waiting for you specifically, apparently, for a very long time.",
+      "choices": [
+        {
+          "text": "Head east to the settlement. Open the letter by the fire.",
+          "next": "night_at_inn"
+        }
+      ]
+    },
+
+    "night_at_inn": {
+      "id": "night_at_inn",
+      "text": "You sleep better than you expected to.\n\nThe bed at the Salted Crown is narrow and the blanket is overworked, but the walls are thick and the wind is locked out and by the time the common room below quiets you are already gone. You do not dream, or if you do you do not remember — just the compass on the table beside you, still for the first time, and the letter folded beneath it that you have read twice and are choosing not to read a third time until you have slept on it.\n\nBy morning the rain has passed. Dusk's End smells of wet stone and clean air.\n\nMaren is already at the bar when you come down. She does not look up. She sets a cup in front of you. Then, without comment, she slides a folded piece of paper across the wood.\n\n'My daughter sent that back with a trader, seven weeks after she left,' she says. 'I have been deciding whether to give it to the next person who sat down in front of me with one of those compasses.' She finally looks at you. 'You are the third. I have decided.'\n\nThe paper is inn stock, the writing careful and quick. A single name: Voss. Below it, directions — south road, a chapel, a tower with the top burned off. And one note: He will know you by what you say about rivers.\n\n'She did not explain it,' Maren says. 'She was never good at explaining. She just did things and expected the world to keep up.'",
+      "item": {
+        "id": "marensnote",
+        "name": "Maren's Letter",
+        "description": "Inn paper, careful handwriting: 'Voss. South road. Chapel. Tower with the burned top. He will know you by what you say about rivers.' Written by Maren's daughter, who has not come back."
+      },
+      "choices": [
+        {
+          "text": "Ask Maren if she wants you to look for her daughter.",
+          "next": "maren_ask"
+        },
+        {
+          "text": "Pocket the letter, finish your drink, and leave.",
+          "next": "south_road"
+        }
+      ]
+    },
+
+    "maren_ask": {
+      "id": "maren_ask",
+      "text": "Maren considers the question for a long time.\n\nShe dries a cup. She hangs it on its hook. She does not immediately answer — not evasion, you have spent enough time in small places to recognize the difference between someone who does not want to answer and someone deciding how honestly to do it.\n\n'I stopped wanting her back in any particular condition a long time ago,' she says finally. 'She was always going somewhere I could not follow. I knew that when she was eight and decided to correct the road markers outside the village because they were three degrees off.' Something that is almost a smile. 'She got that from her father.'\n\nShe straightens a cup that does not need straightening.\n\n'If you find her — do not tell her I am worried. I am not worried.' A pause that is not convincing. 'Tell her the candle in the sign is real now. I lit it last month. She will know what that means.'\n\nYou look at the painted candle on the sign above the door — the one that has never been lit. Or rather: the one that is freshly repainted, the details corrected, the flame made to look real on purpose.\n\nShe lit it last month. For a daughter who is not here to see it.\n\nYou pocket the letter. You shoulder your pack. You leave the warm room with its honest fire and the woman behind the bar who is, in fact, worried, and has been for three and a half months.",
+      "choices": [
+        {
+          "text": "Head south.",
+          "next": "south_road"
+        }
+      ]
+    },
+
+    "south_road": {
+      "id": "south_road",
+      "text": "The road south is not what you expected.\n\nYou have surveyed this region before — the official version, the one the Guild trained you on. But this stretch of road belongs to a different landscape than the maps describe. The hills do not align. The drainage is wrong. The watershed should run west; it runs northwest. You notice this the way you notice everything — not dramatically, just the slow accumulation of small wrongness until you stop walking and look at what you are standing in.\n\nYou have seen this mistake before. Not this road. This specific error.\n\nYour expelled map. The survey that ended your career. It covered this territory and showed exactly this discrepancy — the hills a quarter-league east of where the official survey placed them, the drainage pattern impossible to reconcile with the watershed model. The Guild called it instrument error and struck it from record.\n\nYou are standing in the middle of the territory your instruments were right about.\n\nThe compass has not moved. South. Straight ahead, as if it has been waiting three years for you to notice the wrongness and is now simply getting on with it.\n\nYou keep walking. The land settles into certainty around you the way land does when you stop trying to make it fit a map you already know is wrong.",
+      "choices": [
+        {
+          "text": "Keep moving. The tower should be visible before dark.",
+          "next": "chapel_approach"
+        },
+        {
+          "text": "Stop here. Survey the discrepancy. Understand what you are looking at.",
+          "next": "survey_stop"
+        }
+      ]
+    },
+
+    "survey_stop": {
+      "id": "survey_stop",
+      "text": "You take your instruments out of your pack.\n\nGhost surveyor's tools — unmarked, unregistered, good enough for work that does not get recorded. You use them the way you have always used them: precisely, without flattering the result. The hills are where they are. The watershed runs where it runs. You write down what the instruments say in the shorthand you developed after the Guild, because the Guild's shorthand reminded you too much of the Guild.\n\nWhen you are done, you look at what you have written.\n\nIt matches your expelled map exactly. Every discrepancy. Every reading they called instrument error.\n\nYour instruments were not in error three years ago. They were correct. The official survey was wrong — not by mistake, by construction. Someone placed the hills where they wanted them on paper, and the paper became the authoritative record, and every deed and boundary drawn from that record inherits the wrongness. Someone expelled you for pointing at it instead of at the map.\n\nYou have known this. You have been carrying it the way you carry the compass — at the bottom of a pocket, heavier than it should be. Here, with the instruments in your hands and the numbers on the paper, there is nothing left to carry around.\n\nThe truth just is.\n\nYou pack your instruments. You continue south. The compass does not comment on any of this, which you appreciate.",
+      "choices": [
+        {
+          "text": "Continue south toward the tower.",
+          "next": "chapel_approach"
+        }
+      ]
+    },
+
+    "chapel_approach": {
+      "id": "chapel_approach",
+      "text": "You see the tower first.\n\nIt rises above the tree line an hour before the road opens into the clearing — three floors of old stone and then: burnt. The top floors are blackened, the roof long gone, the upper windows empty sockets. But the stonework below the burn line is solid, and in the second-floor window a lamp is burning. Someone is home. Someone has been home for a long time.\n\nThe chapel itself appears as you come around a stand of old oak. Stone, pre-peace construction, the kind of building meant to last a generation and kept going by stubbornness. Its windows are boarded. A chain hangs across the main door — iron, dry, recently oiled. Someone maintains that chain.\n\nYou stand at the edge of the clearing.\n\nThe compass is pointing at the tower. Not the chapel. Whatever it wants is in the tower.\n\nThe clearing between the two buildings is dead grass and old paving stones, and at the center a sundial missing its gnomon. You note, because you are who you are, that it would still keep time if you knew which edge to read. Then you cross the clearing.",
+      "choices": [
+        {
+          "text": "Go directly to the tower door.",
+          "next": "voss_door"
+        },
+        {
+          "text": "Circle the chapel first. Read what the outside tells you.",
+          "next": "chapel_exterior"
+        }
+      ]
+    },
+
+    "chapel_exterior": {
+      "id": "chapel_exterior",
+      "text": "Old surveyor's habit: read the outside before you look at the inside.\n\nThe chain on the chapel door is iron and dry — oiled recently, kept maintained. The boards on the windows are fitted from outside with modern fastenings. Someone closed this building deliberately and has been maintaining the closure ever since.\n\nOn the east side, the foundation has been disturbed in a long horizontal line running beneath the building. The stones have been reset — you can see the mortar color difference — reset carefully, by someone who did not want the disturbance to be obvious. You crouch and read the line. A passage. Something beneath the chapel was accessed recently, then resealed.\n\nWhen you straighten, you notice the carved lintel above the main door.\n\nCartographic notation. The formal pre-Guild system — the one used in documents of record before the Meridian standardized everything. You were trained to recognize it. You were never fully taught to parse it.\n\nYou can parse it now.\n\nYou read it twice to be sure.\n\nWhat is held below belongs to the first line, and the first line belongs to the lie.\n\nYou stand in the cold air of the clearing and read it a third time. Then you go to the tower.",
+      "choices": [
+        {
+          "text": "Go to the tower door.",
+          "next": "voss_door"
+        }
+      ]
+    },
+
+    "voss_door": {
+      "id": "voss_door",
+      "text": "The tower door is old oak, iron-banded, closed.\n\nYou raise your fist to knock. Before you do, a voice comes through the wood — dry and precise as a surveyor's entry in a field notebook.\n\n'Describe,' it says, 'what you see when you look at a river on a map.'\n\nYou have been asked stranger questions. You consider it the way you consider territory: fully, without assuming you know what the question is looking for.\n\n'Gradient first,' you say. 'The implied direction of flow. Then the watershed boundary — what feeds it, where the drainage terminates. Then deviation, if the mapmaker was being honest about what the instruments said. How the bends relate to the underlying geology.' A pause. 'Most people draw a blue line. That tells you what they see. It does not tell you what is there.'\n\nA silence that feels like being read.\n\nThe door opens.\n\nThe man inside is small and old and wearing what appears to be every piece of clothing he owns in layered succession. His eyes are the sharp kind that come from decades of looking at things very carefully. He studies you for a moment that feels like an assessment — then says with the weary precision of someone correcting a ledger:\n\n'You are not the one I built it for.'\n\nHe steps aside anyway. He lets you in.\n\n'Sit down,' he says. 'And show me what is in your pocket.'",
+      "choices": [
+        {
+          "text": "Sit. Put the compass on the table.",
+          "next": "voss_talk"
+        }
+      ]
+    },
+
+    "voss_talk": {
+      "id": "voss_talk",
+      "text": "His name is Voss. He looks at the compass for a long time before he speaks.\n\nHe built six of them over forty years, he says — each one calibrated to point toward a vault beneath the chapel across the clearing. He made them for a specific kind of person: someone the Guild calls a natural surveyor, someone who reads spatial notation intuitively without being formally taught to. The Guild tests for this trait. Voss believes — carefully, with evidence — that it also steers such people toward safe careers and away from anything that might lead them toward the archive.\n\n'Someone found you useful before you could become inconvenient,' he says. He does not ask your history. He does not need to.\n\nHe built the compasses because the archive needs to be found, and the vault that contains it can only be opened by someone with the trait and the cipher key. He has spent forty years trying to put both things in the same hands.\n\nHe tells you about the woman who came before you. Young, a cartography student, expelled from the Guild for producing a map that contradicted an official one. She passed the river test at his door. She went into the vault. She came back once to tell him she needed to return. That was three weeks ago.\n\n'She has not come back out,' he says. His eyes go, briefly, to the shape of the disc in your coat pocket — if you found it. He does not comment. 'The vault lock uses my name as the cipher key. If you have my name and know what it means, you can open it.'",
+      "choices": [
+        {
+          "text": "Show him Maren's letter. Tell him her daughter sent you here.",
+          "next": "voss_full_truth",
+          "requires": "marensnote"
+        },
+        {
+          "text": "'I know your name. A woman at the inn in Dusk's End gave me directions.'",
+          "next": "voss_partial"
+        }
+      ]
+    },
+
+    "voss_full_truth": {
+      "id": "voss_full_truth",
+      "text": "He takes the letter from you.\n\nHe reads it once. Reads it again. His expression does not change in any way you can easily name — not grief, not relief, something that has elements of both. The way a man looks when he receives confirmation of something he already knew and is now deciding what to do with the knowing.\n\n'Maren,' he says quietly. 'She kept it.'\n\nHe sets the letter down with the same deliberateness he applies to everything. Then he tells you the rest of it.\n\nThe vault beneath the chapel is the original archive of the Meridian Cartographers' Guild — every survey, every document of record, going back two hundred years to the Guild's founding. Those documents are the legal basis for half the land titles in the kingdom. And they are wrong. The first Meridian Cartographer deliberately moved a river on a map to give a particular lord a territory he wanted. The wrong map became the authoritative record. Every deed drawn from it inherits the lie.\n\nThe Guild has known this for two hundred years. Not every member — but the people at the top have always known, and the vault has always been sealed to prevent anyone from proving what the truth was.\n\n'The woman who went in before you found something I did not know was there,' Voss says. 'A secondary cache — documents I never saw. Names. The original signatories on the falsification. Families whose descendants still hold their titles today.' He looks at you steadily. 'Whatever she found down there, she went back for a reason. I need to know she made that choice freely.'\n\nHe stands.\n\n'Come. I will show you the door.'",
+      "choices": [
+        {
+          "text": "Follow him across the clearing.",
+          "next": "vault_door"
+        }
+      ]
+    },
+
+    "voss_partial": {
+      "id": "voss_partial",
+      "text": "Voss nods once. The name is enough.\n\nHe tells you what he considers the minimum: the vault is real, it contains original Guild archive documents, and he has reason to believe those documents — read carefully by someone with the right training — would reveal something the Guild has spent two hundred years concealing. He does not say what. He does not explain his forty years in this burnt tower, or the compasses, or the chain of people he has sent toward the vault and not seen return.\n\nWhat he does say is this: 'The woman who went in three weeks ago has not come out. I watch both exits. She is not dead and she is not trying to leave. She has chosen, for reasons of her own, to remain. I need someone to go in and understand why.'\n\nHe looks at the compass on the table between you.\n\n'The lock uses the notation system above the chapel door — the formal pre-Guild cipher that encodes meaning into spatial relationship. My name is the key. In the old language it means the setting of stars: the point at which a celestial body crosses the meridian line. If you know how the notation system encodes etymology into orientation, the answer becomes a compass bearing.' He studies you. 'I believe you will be able to work it out.'\n\nHe stands.\n\n'Come. I will take you to the door.'",
+      "choices": [
+        {
+          "text": "Follow him across the clearing.",
+          "next": "vault_door"
+        }
+      ]
+    },
+
+    "vault_door": {
+      "id": "vault_door",
+      "text": "The lock is a panel of carved notation set into the foundation stone, to the left of the chapel's main door.\n\nTo someone without the training it reads as decoration — a pleasing pattern, old stonework, nothing more. To you it reads as text. Old formal Guild notation, pre-Meridian, the system that encodes meaning in the spatial relationship between symbols rather than in the symbols themselves. You were trained to recognize it. You were never fully taught to parse it.\n\nYou can parse it now.\n\nVoss's name, its etymology, the old tongue's rendering of the setting of stars — you translate it into orientation: the direction from this chapel to the first river surveyed in the region's founding document. You know that direction because you have spent three years mapping territory the Guild pretends does not exist, and the river in question appears on your expelled map.\n\nEast-northeast.\n\nYou set the panel. Something releases inside the wall — the sound of a mechanism that has been waiting, carefully, for exactly the right answer. The chain across the door goes slack.\n\nBehind you, Voss is quiet for a moment.\n\n'Whatever she found in there,' he says, 'she decided it was worth staying for. That should tell you something about what it is.'\n\nYou push the door open. Stone stairs descend into cold air. Below, a lamp is burning.",
+      "choices": [
+        {
+          "text": "Go in.",
+          "next": "vault_entry"
+        }
+      ]
+    },
+
+    "vault_entry": {
+      "id": "vault_entry",
+      "text": "The vault is real.\n\nYou knew this — your expelled map said it was real, and the map was correct, and you have just spent three years being right about it in the loudest silence you have ever maintained — but knowing a thing and standing inside it are different experiences. The chamber is long and low, carved into bedrock, the walls lined with wooden shelving that has held its shape better than you would expect from two centuries of underground damp. Rolls of oilcloth-wrapped documents fill every shelf. The seals are cartographic notation, each a precise label in the system you now know how to read.\n\nYou unroll the nearest one. You read the heading, the survey marks, the boundary notations. You find the discrepancy in the third line — the river, quarter-league east — and you put it down carefully.\n\nThere are hundreds more. Centuries of falsified record, meticulously maintained. The legal basis for half the titles in the kingdom, resting in shelves in a room beneath a boarded-up chapel on a road nobody uses.\n\nThen you see the inner door.\n\nIt is in the back wall — not ancient, not original. New, the stonework lighter and cleaner than the surrounding rock, constructed in the last few months by someone who knew exactly what they were doing. The door is ajar. Through the gap: lamplight, warm and recent.\n\nWhoever made this room left the door open.",
+      "choices": [
+        {
+          "text": "Call out her name. Let her know you are here.",
+          "next": "cliffhanger"
+        },
+        {
+          "text": "Go through the door without announcing yourself.",
+          "next": "cliffhanger"
+        }
+      ]
+    },
+
+    "cliffhanger": {
+      "id": "cliffhanger",
+      "text": "The room beyond is small.\n\nThe ceiling is low enough that you duck slightly entering, and it is blackened — not from fire, from a lamp that has been burning for weeks. The carbon from the wick has accumulated on the stone above it in a slow, patient record of time spent here. The lamp sits on the floor in the center of the room, and around it, covering every surface of every wall from floor to ceiling, written in charcoal in a hand you do not recognize but immediately understand: notation.\n\nNot the Guild's formal system. Something faster — the kind of writing a person produces when they are working faster than they can think, when the ideas arrive before the instruments are ready. Cross-referenced, annotated, corrected and corrected again. Coordinates. Names. Dates. Maps sketched in eight lines that say what a proper map would say in eight hundred. It covers the stone like the record of a mind arriving at a conclusion over weeks, leaving every step of the working visible on the walls.\n\nIn the center of the room, sitting on the floor with her back against the wall beneath the lamp, is a young woman.\n\nShe is alive. Her eyes are open. She looks at you with an expression you cannot immediately read — not fear, not relief, something older and more considered than either. She has clearly been here a long time. She does not look like someone who got trapped.\n\nShe looks like someone who stayed.\n\n'I was wondering,' she says, 'when one of us would find this place.' Her eyes go to the compass in your hand. 'Did Voss send you?'\n\nShe does not wait for an answer. She stands, unhurried. She holds out a document — not from the shelves, but new, written in her own hand, clean and precise: a map. The correct version of something.\n\n'I have been rewriting the archive,' she says. She looks at the walls around her — weeks of her own work covering every surface. 'Every falsified survey. The correct versions, reconstructed from the originals stored here.' A pause that holds the weight of three weeks alone underground with a two-hundred-year-old lie. 'The question now is what we do with them.'\n\nIn your pocket, the compass goes still.\n\nFor the first time since the crossroads, the needle does not move.\n\nIt has arrived where it was going.\n\n— The Meridian continues in Chapter II.",
+      "end": true
+    }
+
+  }
+}

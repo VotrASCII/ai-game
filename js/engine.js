@@ -4,38 +4,39 @@ const Game = {
 
   /* ── Config ──────────────────────────────────────────────────── */
   config: {
-    typeSpeed:      26,    // ms per character
-    commaPause:     90,    // ms after ,  ;
-    punctPause:     240,   // ms after .  !  ?  …
-    paragraphPause: 440,   // ms between paragraphs
-    choiceDelay:    160,   // ms stagger between each choice appearing
-    sceneFadeDur:   220,   // ms for scene cross-fade (must exceed CSS opacity transition)
-    notifDuration:  3800,  // ms before notification slides out
-    saveKey:        'textgame_save',
+    typeSpeed:      26,
+    commaPause:     90,
+    punctPause:     240,
+    paragraphPause: 440,
+    choiceDelay:    160,
+    sceneFadeDur:   220,
+    notifDuration:  3800,
+    progressKey:    'textgame_progress',
   },
 
   /* ── Runtime state ───────────────────────────────────────────── */
   state: {
     currentSceneId: null,
-    inventory: [],
-    history: [],
-    isTyping: false,
+    inventory:      [],
+    history:        [],
+    isTyping:       false,
   },
 
-  /* ── Story data (filled from JSON) ──────────────────────────── */
-  data: {
-    title: '',
-    subtitle: '',
-    startScene: 'start',
-    scenes: {},
-  },
+  /* ── Story data ──────────────────────────────────────────────── */
+  manifest:          null,
+  data:              { scenes: {}, startScene: 'start' },
+  currentChapterId:  null,
+
+  /* ── Progress ────────────────────────────────────────────────── */
+  _progress: { chapters: {}, currentChapterId: null },
 
   /* ── DOM refs ────────────────────────────────────────────────── */
   el: {},
 
   /* ── Internal handles ────────────────────────────────────────── */
-  _twCancel:   null,   // call to skip current typewriter
-  _notifTimer: null,
+  _twCancel:      null,
+  _notifTimer:    null,
+  _currentScreen: 'title',
 
   /* ═══════════════════════════════════════════════════════════════
      INIT
@@ -43,20 +44,23 @@ const Game = {
   async init() {
     this._cacheDOM();
     this._bindEvents();
+    this._loadProgress();
 
     try {
-      await this._loadStory('story/demo.json');
+      const res = await fetch('story/manifest.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      this.manifest = await res.json();
     } catch (e) {
-      console.error('Failed to load story:', e);
-      document.body.innerHTML = '<p style="color:#666;padding:4rem;font-family:monospace">Could not load story file.</p>';
+      console.error('Failed to load manifest:', e);
+      document.body.innerHTML = '<p style="color:#666;padding:4rem;font-family:monospace">Could not load story.</p>';
       return;
     }
 
-    document.getElementById('page-title').textContent = this.data.title;
-    this.el.gameTitle.textContent    = this.data.title;
-    this.el.gameSubtitle.textContent = this.data.subtitle;
+    document.getElementById('page-title').textContent = this.manifest.title;
+    this.el.gameTitle.textContent    = this.manifest.title;
+    this.el.gameSubtitle.textContent = this.manifest.subtitle;
 
-    if (this._hasSave()) {
+    if (this._hasProgress()) {
       this.el.btnContinue.classList.remove('hidden');
     }
   },
@@ -65,11 +69,22 @@ const Game = {
     const $ = id => document.getElementById(id);
     this.el = {
       titleScreen:      $('title-screen'),
+      chapterScreen:    $('chapter-screen'),
+      previouslyScreen: $('previously-screen'),
       gameScreen:       $('game-screen'),
+      chapterCard:      $('chapter-card'),
+      chapterCardNum:   $('chapter-card-numeral'),
+      chapterCardTitle: $('chapter-card-title'),
       gameTitle:        $('game-title'),
       gameSubtitle:     $('game-subtitle'),
       btnNew:           $('btn-new'),
       btnContinue:      $('btn-continue'),
+      btnChapterBack:   $('btn-chapter-back'),
+      btnPrevBack:      $('btn-prev-back'),
+      chapterList:      $('chapter-list'),
+      prevChapterLabel: $('prev-chapter-label'),
+      prevChapterText:  $('prev-chapter-text'),
+      prevActions:      $('prev-actions'),
       inventoryBtn:     $('inventory-btn'),
       inventoryCount:   $('inventory-count'),
       inventoryPanel:   $('inventory-panel'),
@@ -85,12 +100,14 @@ const Game = {
   },
 
   _bindEvents() {
-    this.el.btnNew.addEventListener('click', () => this._startNew());
-    this.el.btnContinue.addEventListener('click', () => this._startContinue());
-    this.el.inventoryBtn.addEventListener('click', () => this._toggleInventory());
+    this.el.btnNew.addEventListener('click',         () => this._startFresh());
+    this.el.btnContinue.addEventListener('click',    () => this._transitionTo('chapter'));
+    this.el.btnChapterBack.addEventListener('click', () => this._transitionTo('title'));
+    this.el.btnPrevBack.addEventListener('click',    () => this._transitionTo('chapter'));
+
+    this.el.inventoryBtn.addEventListener('click',   () => this._toggleInventory());
     this.el.inventoryClose.addEventListener('click', () => this._closeInventory());
 
-    // Skip typewriter on click (ignore inventory / choice elements)
     document.addEventListener('click', e => {
       if (!this.state.isTyping) return;
       if (e.target.closest('#inventory-panel')) return;
@@ -98,7 +115,6 @@ const Game = {
       if (this._twCancel) this._twCancel();
     });
 
-    // Skip on Space / Enter; open inventory on I
     document.addEventListener('keydown', e => {
       if ((e.key === 'i' || e.key === 'I') && !this.el.gameScreen.classList.contains('hidden')) {
         this._toggleInventory();
@@ -112,38 +128,228 @@ const Game = {
     });
   },
 
-  async _loadStory(path) {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    this.data = await res.json();
+  /* ═══════════════════════════════════════════════════════════════
+     CHAPTER CARD
+  ═══════════════════════════════════════════════════════════════ */
+  async _showChapterCard(ch) {
+    const { chapterCard, chapterCardNum, chapterCardTitle } = this.el;
+
+    chapterCardNum.textContent   = ch.numeral;
+    chapterCardTitle.textContent = ch.title;
+    chapterCardNum.classList.remove('card-enter');
+    chapterCardTitle.classList.remove('card-enter');
+
+    chapterCard.classList.remove('hidden');
+    await this._wait(30);
+    chapterCard.classList.add('card-visible');
+
+    await this._wait(100);
+    chapterCardNum.classList.add('card-enter');
+    chapterCardTitle.classList.add('card-enter');
+
+    await this._wait(2300);
+
+    chapterCardNum.classList.remove('card-enter');
+    chapterCardTitle.classList.remove('card-enter');
+    chapterCard.classList.remove('card-visible');
+    await this._wait(700);
+    chapterCard.classList.add('hidden');
   },
 
   /* ═══════════════════════════════════════════════════════════════
-     START / CONTINUE
+     SCREEN TRANSITIONS
   ═══════════════════════════════════════════════════════════════ */
-  _startNew() {
-    this._clearSave();
-    this.state = {
-      currentSceneId: this.data.startScene,
-      inventory: [],
-      history: [],
-      isTyping: false,
+  async _transitionTo(screen, opts = {}) {
+    const screens = {
+      title:      this.el.titleScreen,
+      chapter:    this.el.chapterScreen,
+      previously: this.el.previouslyScreen,
+      game:       this.el.gameScreen,
     };
-    this._showGame(this.data.startScene);
+
+    if (screen === 'chapter')    this._buildChapterList();
+    if (screen === 'previously') this._buildPreviouslyCard(opts.chId);
+
+    const fromEl = screens[this._currentScreen];
+    const toEl   = screens[screen];
+
+    fromEl.classList.add('fade-out');
+    await this._wait(350);
+    fromEl.classList.add('hidden');
+    fromEl.classList.remove('fade-out');
+
+    if (opts.chapterCard) {
+      await this._showChapterCard(opts.chapterCard);
+    }
+
+    toEl.classList.remove('hidden');
+    this._currentScreen = screen;
+
+    if (screen === 'game' && opts.sceneId) {
+      this.renderScene(opts.sceneId);
+    }
   },
 
-  _startContinue() {
-    if (!this._loadSave()) { this._startNew(); return; }
-    this._showGame(this.state.currentSceneId);
+  /* ═══════════════════════════════════════════════════════════════
+     CHAPTER SELECT SCREEN
+  ═══════════════════════════════════════════════════════════════ */
+  _buildChapterList() {
+    this.el.chapterList.innerHTML = '';
+
+    this.manifest.chapters.forEach(ch => {
+      const prog        = this._getChapterProgress(ch.id);
+      const isUnlocked  = !!prog;
+      const isCompleted = prog?.status === 'complete';
+
+      const tile = document.createElement('div');
+      tile.className = 'chapter-tile' + (!isUnlocked ? ' locked' : '');
+
+      const numeral = document.createElement('span');
+      numeral.className = 'chapter-numeral';
+      numeral.textContent = ch.numeral;
+
+      const info = document.createElement('div');
+      info.className = 'chapter-info';
+
+      const title = document.createElement('div');
+      title.className = 'chapter-title-text';
+      title.textContent = ch.title;
+
+      const teaser = document.createElement('div');
+      teaser.className = 'chapter-teaser';
+      teaser.textContent = isUnlocked ? ch.teaser : '—';
+
+      info.appendChild(title);
+      info.appendChild(teaser);
+
+      const badge = document.createElement('span');
+      badge.className = 'chapter-badge';
+      if (isCompleted)     badge.textContent = '✓';
+      else if (isUnlocked) badge.textContent = '●';
+
+      tile.appendChild(numeral);
+      tile.appendChild(info);
+      tile.appendChild(badge);
+
+      if (isUnlocked) {
+        tile.addEventListener('click', () => this._onChapterTileClick(ch, isCompleted));
+      }
+
+      this.el.chapterList.appendChild(tile);
+    });
   },
 
-  _showGame(sceneId) {
-    this.el.titleScreen.classList.add('fade-out');
-    setTimeout(() => {
-      this.el.titleScreen.classList.add('hidden');
-      this.el.gameScreen.classList.remove('hidden');
-      this.renderScene(sceneId);
-    }, 370);
+  async _onChapterTileClick(ch, isCompleted) {
+    if (isCompleted) {
+      await this._transitionTo('previously', { chId: ch.id });
+      return;
+    }
+
+    const prog = this._getChapterProgress(ch.id);
+    await this._loadChapterData(ch);
+
+    if (prog?.save?.currentSceneId) {
+      this._restoreState(prog.save);
+      await this._transitionTo('game', { sceneId: prog.save.currentSceneId });
+    } else {
+      this._startChapterFresh(ch);
+      await this._transitionTo('game', { sceneId: ch.startScene, chapterCard: ch });
+    }
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     PREVIOUSLY SCREEN
+  ═══════════════════════════════════════════════════════════════ */
+  _buildPreviouslyCard(chId) {
+    const ch     = this.manifest.chapters.find(c => c.id === chId);
+    const prog   = this._getChapterProgress(chId);
+    const invIds = (prog?.completedInventory || []).map(i => i.id);
+
+    this.el.prevChapterLabel.textContent = `Chapter ${ch.numeral} · ${ch.title}`;
+
+    let summaryText = '';
+    const summaries = ch.summaries || [];
+    for (const s of summaries) {
+      if (!s.requires || s.requires.every(id => invIds.includes(id))) {
+        summaryText = s.text;
+        break;
+      }
+    }
+    if (!summaryText && summaries.length) summaryText = summaries[summaries.length - 1].text;
+    this.el.prevChapterText.textContent = summaryText;
+
+    this.el.prevActions.innerHTML = '';
+
+    const idx    = this.manifest.chapters.findIndex(c => c.id === chId);
+    const nextCh = this.manifest.chapters[idx + 1];
+
+    if (nextCh && this._getChapterProgress(nextCh.id)) {
+      const btn = document.createElement('button');
+      btn.className = 'btn-prev-action';
+      btn.textContent = `Continue — Chapter ${nextCh.numeral}: ${nextCh.title}`;
+      btn.addEventListener('click', async () => {
+        const nextProg = this._getChapterProgress(nextCh.id);
+        await this._loadChapterData(nextCh);
+        if (nextProg?.save?.currentSceneId) {
+          this._restoreState(nextProg.save);
+          await this._transitionTo('game', { sceneId: nextProg.save.currentSceneId });
+        } else {
+          this._startChapterFresh(nextCh);
+          await this._transitionTo('game', { sceneId: nextCh.startScene, chapterCard: nextCh });
+        }
+      });
+      this.el.prevActions.appendChild(btn);
+    }
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     START / LOAD CHAPTER
+  ═══════════════════════════════════════════════════════════════ */
+  async _startFresh() {
+    this._clearProgress();
+    const ch1 = this.manifest.chapters[0];
+    this._initChapterProgress(ch1.id);
+    await this._loadChapterData(ch1);
+    this._startChapterFresh(ch1);
+    this.el.btnContinue.classList.add('hidden');
+    await this._transitionTo('game', { sceneId: ch1.startScene, chapterCard: ch1 });
+  },
+
+  /* Transfer persistent items from the previous chapter's completed inventory */
+  _startChapterFresh(ch) {
+    const idx     = this.manifest.chapters.findIndex(c => c.id === ch.id);
+    const carried = [];
+
+    if (idx > 0) {
+      const prevCh   = this.manifest.chapters[idx - 1];
+      const prevProg = this._getChapterProgress(prevCh.id);
+      if (prevProg?.completedInventory) {
+        prevProg.completedInventory
+          .filter(i => i.persistent)
+          .forEach(i => carried.push(i));
+      }
+    }
+
+    this.state = { currentSceneId: ch.startScene, inventory: carried, history: [], isTyping: false };
+    this._refreshInventoryUI();
+  },
+
+  async _loadChapterData(ch) {
+    const res = await fetch(ch.file);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    this.data             = await res.json();
+    this.currentChapterId = ch.id;
+    if (!this._getChapterProgress(ch.id)) this._initChapterProgress(ch.id);
+  },
+
+  _restoreState(save) {
+    this.state = {
+      currentSceneId: save.currentSceneId,
+      inventory:      save.inventory || [],
+      history:        save.history   || [],
+      isTyping:       false,
+    };
+    this._refreshInventoryUI();
   },
 
   /* ═══════════════════════════════════════════════════════════════
@@ -155,37 +361,76 @@ const Game = {
 
     this.state.currentSceneId = sceneId;
     this.state.history.push(sceneId);
-    this._saveState();
+    this._saveChapterState();
 
-    // Fade out
     this.el.game.classList.add('fading');
     await this._wait(this.config.sceneFadeDur);
 
-    // Clear
     this.el.sceneText.innerHTML = '';
     this.el.choicesContainer.classList.add('hidden');
     this.el.choicesContainer.innerHTML = '';
 
-    // Fade in
     this.el.game.classList.remove('fading');
 
-    // Type the prose
     await this._typewriteText(scene.text);
 
-    // Award item if this scene has one (and player doesn't already carry it)
     if (scene.item && !this.hasItem(scene.item.id)) {
       this._addItem(scene.item);
     }
 
-    // End of demo / story?
     if (scene.end) {
-      this._renderEndOptions();
+      this._onChapterEnd();
       return;
     }
 
     if (scene.choices?.length) {
       this._showChoices(scene.choices);
     }
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     CHAPTER END
+  ═══════════════════════════════════════════════════════════════ */
+  _onChapterEnd() {
+    const chId   = this.currentChapterId;
+    const chIdx  = this.manifest.chapters.findIndex(c => c.id === chId);
+    const nextCh = this.manifest.chapters[chIdx + 1] || null;
+
+    this._progress.chapters[chId].status             = 'complete';
+    this._progress.chapters[chId].completedInventory = [...this.state.inventory];
+    if (nextCh) this._initChapterProgress(nextCh.id);
+    this._saveProgress();
+
+    this.el.btnContinue.classList.remove('hidden');
+
+    const wrap = document.createElement('div');
+    wrap.id = 'chapter-end-container';
+
+    if (nextCh) {
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'btn-chapter-end-next';
+      nextBtn.textContent = `Begin Chapter ${nextCh.numeral}: ${nextCh.title}`;
+      nextBtn.addEventListener('click', async () => {
+        await this._loadChapterData(nextCh);
+        this._startChapterFresh(nextCh);
+        this.el.sceneText.innerHTML = '';
+        this.el.choicesContainer.innerHTML = '';
+        await this._showChapterCard(nextCh);
+        this.renderScene(nextCh.startScene);
+      });
+      wrap.appendChild(nextBtn);
+    }
+
+    const chapBtn = document.createElement('button');
+    chapBtn.className = 'btn-chapter-end-list';
+    chapBtn.textContent = '← All chapters';
+    chapBtn.addEventListener('click', async () => {
+      this._currentScreen = 'game';
+      await this._transitionTo('chapter');
+    });
+    wrap.appendChild(chapBtn);
+
+    this.el.sceneText.appendChild(wrap);
   },
 
   /* ═══════════════════════════════════════════════════════════════
@@ -198,13 +443,13 @@ const Game = {
         .map(p => p.trim())
         .filter(Boolean);
 
-      let pIdx       = 0;
-      let cIdx       = 0;
-      let currentP   = null;
-      let cursor     = null;
-      let timer      = null;
+      let pIdx        = 0;
+      let cIdx        = 0;
+      let currentP    = null;
+      let cursor      = null;
+      let timer       = null;
       let inParagraph = false;
-      let done       = false;
+      let done        = false;
 
       this.state.isTyping = true;
 
@@ -215,20 +460,17 @@ const Game = {
         resolve();
       };
 
-      // Skip: immediately render all remaining text
       this._twCancel = () => {
         if (done) return;
         clearTimeout(timer);
         if (cursor?.parentNode) cursor.remove();
 
-        // Complete current paragraph if partially typed
         if (inParagraph && pIdx < paragraphs.length) {
           currentP.textContent = paragraphs[pIdx];
           pIdx++;
           inParagraph = false;
         }
 
-        // Append any remaining paragraphs
         while (pIdx < paragraphs.length) {
           const p = document.createElement('p');
           p.textContent = paragraphs[pIdx++];
@@ -261,12 +503,11 @@ const Game = {
           currentP.insertBefore(document.createTextNode(ch), cursor);
 
           let delay = this.config.typeSpeed;
-          if (ch === ',' || ch === ';')                       delay = this.config.commaPause;
+          if (ch === ',' || ch === ';')                                  delay = this.config.commaPause;
           else if (ch === '.' || ch === '!' || ch === '?' || ch === '…') delay = this.config.punctPause;
 
           timer = setTimeout(typeChar, delay);
         } else {
-          // Paragraph complete
           cursor.remove();
           cursor      = null;
           inParagraph = false;
@@ -295,7 +536,7 @@ const Game = {
       el.className = 'choice' + (locked ? ' locked' : '');
       el.style.animationDelay = `${idx * this.config.choiceDelay}ms`;
 
-      const numSpan  = document.createElement('span');
+      const numSpan = document.createElement('span');
       numSpan.className = 'choice-num';
       numSpan.textContent = String(idx + 1).padStart(2, '0');
 
@@ -333,34 +574,7 @@ const Game = {
 
   _makeChoice(choice) {
     if (this.state.isTyping) return;
-
-    if (choice.effects?.removeItem) {
-      const ids = Array.isArray(choice.effects.removeItem)
-        ? choice.effects.removeItem
-        : [choice.effects.removeItem];
-      ids.forEach(id => this._removeItem(id));
-    }
-
     this.renderScene(choice.next);
-  },
-
-  /* ═══════════════════════════════════════════════════════════════
-     END
-  ═══════════════════════════════════════════════════════════════ */
-  _renderEndOptions() {
-    const wrap = document.createElement('div');
-    wrap.id = 'restart-container';
-
-    const btn = document.createElement('button');
-    btn.id = 'btn-restart';
-    btn.textContent = '— Begin again —';
-    btn.addEventListener('click', () => {
-      this._clearSave();
-      location.reload();
-    });
-
-    wrap.appendChild(btn);
-    this.el.sceneText.appendChild(wrap);
   },
 
   /* ═══════════════════════════════════════════════════════════════
@@ -368,15 +582,9 @@ const Game = {
   ═══════════════════════════════════════════════════════════════ */
   _addItem(item) {
     this.state.inventory.push(item);
-    this._saveState();
+    this._saveChapterState();
     this._refreshInventoryUI();
     this._showItemNotification(item);
-  },
-
-  _removeItem(itemId) {
-    this.state.inventory = this.state.inventory.filter(i => i.id !== itemId);
-    this._saveState();
-    this._refreshInventoryUI();
   },
 
   hasItem(itemId) {
@@ -427,38 +635,52 @@ const Game = {
   },
 
   /* ═══════════════════════════════════════════════════════════════
-     PERSISTENCE
+     PROGRESS PERSISTENCE
   ═══════════════════════════════════════════════════════════════ */
-  _saveState() {
+  _loadProgress() {
     try {
-      localStorage.setItem(this.config.saveKey, JSON.stringify({
-        currentSceneId: this.state.currentSceneId,
-        inventory:      this.state.inventory,
-        history:        this.state.history,
-      }));
+      const raw = localStorage.getItem(this.config.progressKey);
+      if (raw) this._progress = JSON.parse(raw);
     } catch (_) {}
+    if (!this._progress?.chapters) this._progress = { chapters: {}, currentChapterId: null };
   },
 
-  _loadSave() {
-    try {
-      const raw = localStorage.getItem(this.config.saveKey);
-      if (!raw) return false;
-      const s = JSON.parse(raw);
-      this.state.currentSceneId = s.currentSceneId;
-      this.state.inventory      = s.inventory || [];
-      this.state.history        = s.history   || [];
-      return true;
-    } catch (_) {
-      return false;
+  _saveProgress() {
+    try { localStorage.setItem(this.config.progressKey, JSON.stringify(this._progress)); } catch (_) {}
+  },
+
+  _clearProgress() {
+    this._progress = { chapters: {}, currentChapterId: null };
+    try { localStorage.removeItem(this.config.progressKey); } catch (_) {}
+  },
+
+  _hasProgress() {
+    return Object.keys(this._progress?.chapters || {}).length > 0;
+  },
+
+  _initChapterProgress(chId) {
+    if (!this._progress.chapters[chId]) {
+      this._progress.chapters[chId] = { status: 'active', save: null, completedInventory: null };
+      this._progress.currentChapterId = chId;
+      this._saveProgress();
     }
   },
 
-  _hasSave() {
-    try { return !!localStorage.getItem(this.config.saveKey); } catch (_) { return false; }
+  _getChapterProgress(chId) {
+    return this._progress.chapters[chId] || null;
   },
 
-  _clearSave() {
-    try { localStorage.removeItem(this.config.saveKey); } catch (_) {}
+  _saveChapterState() {
+    if (!this.currentChapterId) return;
+    const ch = this._progress.chapters[this.currentChapterId];
+    if (!ch) return;
+    ch.save = {
+      currentSceneId: this.state.currentSceneId,
+      inventory:      this.state.inventory,
+      history:        this.state.history,
+    };
+    this._progress.currentChapterId = this.currentChapterId;
+    this._saveProgress();
   },
 
   /* ═══════════════════════════════════════════════════════════════

@@ -50,8 +50,10 @@ button {
   color: inherit;
 }
 
-/* ── Title Screen ──────────────────────────────────────────────── */
-#title-screen {
+/* ── Shared full-screen layout ─────────────────────────────────── */
+#title-screen,
+#chapter-screen,
+#previously-screen {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,10 +65,15 @@ button {
   transition: opacity var(--transition);
 }
 
-#title-screen.fade-out {
+#title-screen.fade-out,
+#chapter-screen.fade-out,
+#previously-screen.fade-out,
+#game-screen.fade-out {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ── Title Screen ──────────────────────────────────────────────── */
 
 #title-content {
   display: flex;
@@ -129,6 +136,223 @@ button {
   font-size: 0.6rem;
   letter-spacing: 0.12em;
   color: var(--text-dim);
+}
+
+/* ── Chapter Card ──────────────────────────────────────────────── */
+#chapter-card {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.65s ease;
+}
+
+#chapter-card.card-visible {
+  opacity: 1;
+}
+
+#chapter-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+#chapter-card-numeral {
+  font-family: var(--font-prose);
+  font-size: clamp(3.8rem, 11vw, 6.5rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+#chapter-card-numeral.card-enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#chapter-card-title {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  opacity: 0;
+  transition: opacity 0.85s ease 0.38s;
+}
+
+#chapter-card-title.card-enter {
+  opacity: 1;
+}
+
+/* ── Chapter Select Screen ─────────────────────────────────────── */
+#chapter-content {
+  width: 100%;
+  max-width: 540px;
+  text-align: left;
+}
+
+.screen-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+#chapter-list {
+  margin-bottom: 3rem;
+}
+
+.chapter-tile {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: start;
+  gap: 1.2rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+
+.chapter-tile:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.chapter-tile.locked {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.chapter-tile:not(.locked):hover .chapter-title-text {
+  color: var(--text);
+}
+
+.chapter-numeral {
+  font-family: var(--font-prose);
+  font-size: 1rem;
+  color: var(--accent);
+  padding-top: 0.1em;
+  font-style: italic;
+}
+
+.chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.chapter-title-text {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  transition: color var(--transition);
+}
+
+.chapter-teaser {
+  font-family: var(--font-prose);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.chapter-badge {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  color: var(--accent);
+  padding-top: 0.2em;
+  letter-spacing: 0;
+}
+
+#btn-chapter-back {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: block;
+  margin: 0 auto;
+  transition: color var(--transition);
+}
+
+#btn-chapter-back:hover {
+  color: var(--text-mid);
+}
+
+/* ── Previously Screen ─────────────────────────────────────────── */
+#previously-content {
+  width: 100%;
+  max-width: 560px;
+  text-align: left;
+}
+
+#previously-content .screen-eyebrow {
+  text-align: center;
+}
+
+#prev-chapter-label {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.8rem;
+}
+
+#prev-chapter-text {
+  font-family: var(--font-prose);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  font-style: italic;
+  margin-bottom: 2.8rem;
+}
+
+#prev-actions {
+  margin-bottom: 1.4rem;
+}
+
+.btn-prev-action {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.btn-prev-action:hover {
+  color: var(--text);
+  border-bottom-color: var(--accent-dim);
+}
+
+#btn-prev-back {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: block;
+  transition: color var(--transition);
+}
+
+#btn-prev-back:hover {
+  color: var(--text-mid);
 }
 
 /* ── Game Screen ───────────────────────────────────────────────── */
@@ -409,27 +633,44 @@ button {
   font-style: italic;
 }
 
-/* ── End / Restart ─────────────────────────────────────────────── */
-#restart-container {
+/* ── Chapter End Buttons ───────────────────────────────────────── */
+#chapter-end-container {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
 }
 
-#btn-restart {
+.btn-chapter-end-next {
   font-family: var(--font-ui);
   font-size: 0.65rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-dim);
+  color: var(--text-mid);
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
   transition: color var(--transition), border-color var(--transition);
 }
 
-#btn-restart:hover {
+.btn-chapter-end-next:hover {
   color: var(--text);
   border-bottom-color: var(--accent-dim);
+}
+
+.btn-chapter-end-list {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: color var(--transition);
+}
+
+.btn-chapter-end-list:hover {
+  color: var(--text-mid);
 }
 
 /* ── Scrollbar ─────────────────────────────────────────────────── */

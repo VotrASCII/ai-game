@@ -1,0 +1,301 @@
+{
+  "startScene": "vault_morning",
+  "scenes": {
+
+    "vault_morning": {
+      "id": "vault_morning",
+      "text": "You slept on the vault floor.\n\nThis is not a sentence you expected to say about yourself at any point in your life, and yet: you slept on the vault floor wrapped in Sera's extra coat, with your pack under your head and the lamp burning low two meters away, and you slept well. The cold was consistent and the silence was total and your body, which has spent three years camping in places it was not supposed to be, recognized conditions it could work with and made its peace with them.\n\nWhen you wake, Sera is already at the shelves.\n\nShe moves with the efficiency of someone who has been doing the same thing for three weeks. Left shelf: the original. Right shelf: her version, corrected. She does not work quickly — she works accurately, which is different. You watch her unroll a survey document with the same careful attention she would give a letter from someone she loves.\n\nShe notices you watching without turning around.\n\n'Come look at this,' she says. Not good morning. Come look at this.\n\nShe holds out a sheet of paper — her paper, not an original. Clean lines, careful hand. A map of the river Velas and the hill country to its east.\n\n'This is what it actually looks like,' she says. 'I have verified it against seven independent original surveys from three different decades. They all agree. They were all suppressed.' She sets it down. 'You can also just drink this first if you need to.' She nods at a clay cup near the lamp, still warm from the coals she has been managing since before you woke. 'But the map is more important.'",
+      "item": {
+        "id": "sera_map",
+        "name": "Sera's Corrected Map",
+        "description": "Clean paper, careful hand. The River Velas and the hill country as they actually exist, verified against seven independent surveys across three decades. Different from every official map in the kingdom.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Take the map. Study it. Ask her what you are looking at.",
+          "next": "sera_explains"
+        },
+        {
+          "text": "Watch her work first. Understand the method before the conclusion.",
+          "next": "watch_sera"
+        }
+      ]
+    },
+
+    "watch_sera": {
+      "id": "watch_sera",
+      "text": "You watch her work.\n\nThe system becomes apparent inside a few minutes. The originals on the left arrive in chronological order — she has organized three weeks of sorting into a precise sequence, earliest survey to latest. Her corrected versions on the right correspond to each, labeled in a shorthand you almost recognize: the pre-Guild cartographic notation, but faster, adapted for someone working alone with a lamp and limited paper.\n\nShe cross-references between originals with small numbered marks. She does not write her conclusions directly — instead she maps the pattern of agreements across independent surveys, so that the correction is not her interpretation but the consensus of the originals themselves. She has, in three weeks, built something that functions as its own chain of evidence.\n\nYou have surveyed in difficult conditions for three years. You know good fieldwork from competent fieldwork from inspired fieldwork. This is the third kind.\n\n'You want to know how long this took to see,' she says, still not looking up. 'The first discrepancy, I mean. Before I knew what I was looking at.'\n\nYou do, actually.\n\n'About eight minutes into my second assignment. I was nineteen.' She rolls one original and selects another. 'Which means either I am very perceptive or the falsification was not very carefully done. I have spent three weeks deciding which of those is more unsettling.'\n\nShe finally turns around and hands you the corrected map of the river Velas.",
+      "choices": [
+        {
+          "text": "Take the map. Ask her what it means.",
+          "next": "sera_explains"
+        }
+      ]
+    },
+
+    "sera_explains": {
+      "id": "sera_explains",
+      "text": "She explains it the way you imagine she would explain it to anyone: plainly, precisely, with the patience of someone who has had three weeks to decide where to start.\n\nThe River Velas divides hill country from river valley in the eastern territories. Two hundred years ago, when the Meridian Cartographers' Guild was established as the kingdom's official survey authority, the founding Guildmaster — a man named Aldric Pen — produced the first official map of the region. On that map, the Velas runs three leagues east of where it actually runs.\n\nThe land between the real river and the mapped river is approximately forty square leagues. In the original survey — the suppressed one — it is designated common grazing territory, waterway margin, held in trust for the settlements along the actual bank. In Pen's official map, it becomes the eastern boundary of Lord Harmont's estate.\n\nHarmont had been threatening a border dispute that would have required military intervention. Moving the river on a map resolved the dispute without moving any soldiers. It also gave Harmont forty leagues of productive river valley that legally belonged to the common trust.\n\nHarmont's family has held that territory for two hundred years. The settlements that were displaced — they exist in the original surveys, in the suppressed records on these shelves. Not in any official document alive today.\n\n'The Guildmaster who did it is long dead,' Sera says. 'But the guild that bears his name has known about this since it happened. There is a succession of silence going back two centuries.' She looks at the shelves. 'And all of it is here.'",
+      "choices": [
+        {
+          "text": "Ask how she ended up here — how this started for her.",
+          "next": "sera_origin"
+        },
+        {
+          "text": "Ask who, today, knows the archive exists.",
+          "next": "who_knows"
+        }
+      ]
+    },
+
+    "sera_origin": {
+      "id": "sera_origin",
+      "text": "She was a second-year cartography student at the Guild's own training hall when she noticed the discrepancy.\n\nIt was a standard assignment: reproduce a regional survey using a combination of original fieldwork and existing records. She used the official archive — the records every student uses — and found that three independent sources disagreed with the official map on the course of the Velas. She noted it in her submission. She said: these records do not agree with the official survey; the official survey may contain an error.\n\nShe was called before a review board within four days. The board informed her that her independent sources were unreliable, that the official survey had been verified multiple times by senior cartographers, and that her notation of a discrepancy she could not prove reflected poorly on her judgment as a student and a future Guild member.\n\nShe was given a choice: withdraw the notation, or accept dismissal.\n\nShe did not withdraw the notation.\n\nShe spent six months trying to find someone who would investigate her claim. She found Voss instead — or rather, she found a compass left at the foot of a boundary marker outside her home village, pointing south-southeast, that led her here.\n\n'Voss has been doing this for forty years,' she says. 'Putting them out for people who notice the same things I noticed. People who got expelled for the same reason.' She glances at the compass in your pocket. 'He built six of them. I assume most of the people who found them did not follow them here.'\n\nA pause.\n\n'I assume you did not come alone either.'",
+      "choices": [
+        {
+          "text": "Ask who else knows the archive exists.",
+          "next": "who_knows"
+        }
+      ]
+    },
+
+    "who_knows": {
+      "id": "who_knows",
+      "text": "Fewer people than you would expect, given that the archive contains the legal basis for half the kingdom's land records.\n\nVoss has known for forty years. He found the vault when he was young, read what was in it, and made a decision you still do not fully understand: he would not act alone, because acting alone with an archive this significant meant the archive would simply be suppressed again with one extra body buried alongside it. Instead he spent four decades building compasses and waiting for the right combination of people. How many people he has sent here who never came back, or who chose to leave without acting, he has never told Sera.\n\nThe current Guildmaster — a man named Fen, who has held the position for twelve years — knows. He told Sera this himself, the day he called her before the review board. Not directly. But the precision of his denial, the exactness with which he described the records she had cited as unreliable — he had read them. He knew which ones she had found.\n\nThe families whose titles rest on the original falsification: the Harmont descendants, four other estate lines that were similarly adjusted in the decades after the first falsification. Some know. Others have known for so long it has become part of the family furniture — a truth stored in the cellar that nobody goes down to check.\n\n'And now,' Sera says, 'you and Voss and me.' She looks around the vault — the shelves, the lamp, the inner room she has been living in. 'And whoever Voss has sent the other compasses to. I have been hoping someone else would arrive for three weeks.'\n\nShe sets down the roll she is holding.\n\n'Come. There is something else I need to show you.'",
+      "choices": [
+        {
+          "text": "Follow her.",
+          "next": "secondary_cache"
+        }
+      ]
+    },
+
+    "secondary_cache": {
+      "id": "secondary_cache",
+      "text": "The secondary cache is behind a section of shelving near the back wall.\n\nSera found it three days after she first came down. It is not the vault itself — the vault is the main chamber, the two centuries of organized falsification on its shelves. This is something older and smaller: a compartment built into the bedrock behind the rearmost shelving unit, sealed with a panel of stone that looks structural until you know to look for the seam.\n\nInside: a lead-lined box, the kind used for documents that need to survive water. The box is sealed with a signet you recognize — pre-Guild cartographic authority, the mark of the first royal surveyor's office, the institution the Meridian Guild replaced.\n\nSera opens it. She has clearly opened it many times.\n\nTwelve sheets of paper. Twelve names. Twelve signatures.\n\nAt the bottom of the stack, written in a different hand, a single sheet:\n\nThis document should not exist. It does. If you are reading this, the matter before you has not been resolved to my satisfaction. The signatories below knew what they were agreeing to. They believed it was necessary. I believed it was a crime. I was overruled. These are their own words, in their own hands, witnessed by me. — Pell, First Archivist of the Meridian Guild, in the year of its founding.\n\nYou hold the confessions of the twelve cartographers who moved the river.",
+      "item": {
+        "id": "confession_seal",
+        "name": "The Twelve Confessions",
+        "description": "Twelve sheets, twelve signatures. The original cartographers who falsified the river survey, in their own words, witnessed by the Guild's first archivist. Two hundred years old. Still legally admissible in any court that can be convinced to look at them.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Read all twelve confessions yourself.",
+          "next": "read_confessions"
+        },
+        {
+          "text": "Hand them to Sera. Ask what she intends to do with them.",
+          "next": "pass_to_sera"
+        }
+      ]
+    },
+
+    "read_confessions": {
+      "id": "read_confessions",
+      "text": "You read them.\n\nTwelve surveyors. The names span three decades of Guild history — some are names you were taught in your training, men whose techniques became foundational methods. They are, in aggregate, the people who built the discipline you practiced and lost.\n\nThe confessions are not guilty pleas. They are justifications. Lord Harmont had been threatening a military incursion that would have destabilized three border territories. The common land in question was mostly flood margin — valuable, but not settled, not generating crops. The adjustment was small in cartographic terms. The Guild was new, its authority untested; a concession to Harmont would solidify royal support for the Guild's mandate. Twelve surveyors talked themselves into believing they were choosing the lesser harm.\n\nThe tenth confession is different from the others.\n\nThis one is signed by a woman — the only woman in the twelve. Her name is Eda Sorn. She does not justify. She lists, in clinical survey notation, the names of the fourteen families living on the common land that was transferred to Harmont. Fourteen families. She provides their population estimates, their seasonal livestock counts, the location of their wells. She records what she witnessed in the season after the map was published: the evictions, the relocations, the winter. Then she signs her name.\n\nAt the bottom of Eda Sorn's page, in different ink, clearly added later: She came back the following spring. She counted. Only nine of the fourteen families had relocated. The archivist's note. Pell again. He knew what she had done. He preserved it.\n\nYou set down the stack. The map you were expelled for making is folded in your pack. It shows the Velas three leagues west of the official position. You drew it from fieldwork. You never knew why it mattered.\n\nNow you do.",
+      "choices": [
+        {
+          "text": "Tell Sera what you read. Ask what comes next.",
+          "next": "what_to_do"
+        }
+      ]
+    },
+
+    "pass_to_sera": {
+      "id": "pass_to_sera",
+      "text": "Sera takes the stack without hesitation.\n\nShe reads fast — you watch her eyes move down each page at the pace of someone who has been reading old documents in bad light for three weeks and has developed significant efficiencies. She does not comment as she reads. She does not react visibly until she reaches the tenth sheet, where she slows.\n\nShe reads that one twice.\n\nWhen she finishes, she holds the stack carefully — the way you hold things that have been waiting a long time to be held.\n\n'Twelve of them,' she says. 'I knew there would be names. I did not think they would have written it themselves.' She looks up. 'The archivist who saved these — Pell — he was overruled, but he did not destroy them. He built the box, sealed it, and put it where whoever came after him would find it.' A pause. 'He has been waiting two hundred years for someone to read these.'\n\nShe sets the stack down on the floor between you with the careful deliberateness of putting something important somewhere safe.\n\n'We should talk about what to do.'",
+      "choices": [
+        {
+          "text": "Agree. What do we do.",
+          "next": "what_to_do"
+        }
+      ]
+    },
+
+    "what_to_do": {
+      "id": "what_to_do",
+      "text": "The lamp burns. The shelves wait. Somewhere above you, through the stone and the dead-grass clearing, Voss is in his tower with whatever he has been thinking about for forty years.\n\nYou have the confessions. You have Sera's corrected archive — three weeks of work, every falsified survey reconstructed against the originals. You have your expelled map, which now has context.\n\nYou have not yet decided what any of this is for.",
+      "choices": [
+        {
+          "text": "Take it to the surface. Find a printer. Make it public before the Guild can bury it again.",
+          "next": "plan_surface"
+        },
+        {
+          "text": "The names in the confessions are leverage. Use them. Pressure the Guild from inside.",
+          "next": "plan_leverage"
+        },
+        {
+          "text": "Move the entire archive — originals and corrections — somewhere the Guild cannot unseal and re-bury it.",
+          "next": "plan_move",
+          "requires": "confession_seal"
+        },
+        {
+          "text": "Bring Voss down here. He has been sitting on this for forty years. He should be part of this decision.",
+          "next": "plan_voss"
+        }
+      ]
+    },
+
+    "plan_surface": {
+      "id": "plan_surface",
+      "text": "Sera is quiet for a moment after you lay it out.\n\n'I have thought about this,' she says. 'The problem is authentication. These documents are two hundred years old. A printer will print anything, which is exactly what the Guild will say — that a forger produced a set of plausible confessions and sold them to people with a grudge against cartographic authority. The originals themselves help, but original old documents without a verified chain of custody are just old documents.' She picks up Pell's note. 'What we need is a witness. Someone with standing. Someone whose testimony the Guild cannot dismiss.'\n\n'Voss,' you say.\n\n'Voss,' she agrees. 'Who has been down here, who has seen the originals, who can place the confessions in context. And who is — how old is he exactly? Seventy? Seventy-five?'\n\nShe does not say what this means. She does not need to.\n\nYou have time, but not unlimited time.",
+      "choices": [
+        {
+          "text": "Go get Voss now. Start making a plan.",
+          "next": "aldric_arrives"
+        }
+      ]
+    },
+
+    "plan_leverage": {
+      "id": "plan_leverage",
+      "text": "'The names in those confessions,' you say. 'Their families. The Harmont line. The other four estates. We don't have to make this public to use it. We make clear to the Guild that we have what we have, and the alternative to reform is exposure.'\n\nSera looks at you for a long moment. The lamp between you makes the silence visible somehow — the way warm light in a cold room gives shadow to things you would not otherwise see.\n\n'My mother,' she says, 'runs an inn. She can find a reason to charge full price to anyone who looks like they have money, and she will do it every time, and she has never called it leverage because she knows better.' A pause. 'What you are describing is a negotiation. Negotiation requires the other party to believe you will actually do what you are threatening. Which means you have to be willing to do it.'\n\nShe is not saying no. She is asking if you mean it.\n\n'Are we willing to make it public?' she says. 'Because if we aren't, the Guild will figure that out inside of an hour.'",
+      "choices": [
+        {
+          "text": "'Yes. We are.'",
+          "next": "aldric_arrives"
+        },
+        {
+          "text": "'We will be. We have time to decide.'",
+          "next": "aldric_arrives"
+        }
+      ]
+    },
+
+    "plan_move": {
+      "id": "plan_move",
+      "text": "You lay it out: the confessions establish provenance for the entire archive. The originals are self-authenticating if they are accessible — not to a printer who can be pressured, but to a public institution. A university. A church archive. A civic hall with its own legal standing independent of the Guild.\n\nThe key is not who reads them but where they are kept. If the archive is publicly held, the Guild cannot unseal and re-bury it without the public knowing the vault existed. The act of moving it becomes itself a statement of record.\n\nSera stares at you.\n\n'That,' she says slowly, 'is exactly what I have been building toward for three weeks.' She gestures at the right-hand shelves — the corrected surveys, organized, labeled, cross-referenced. 'I was not just correcting the surveys. I was preparing them to go somewhere. I did not have a somewhere yet.'\n\nShe picks up one of the corrected rolls and looks at it the way she has been looking at everything in here: precisely, with complete attention.\n\n'We need to get these out of the vault first,' she says. 'And we need to do it before the Guild notices anyone has been in here.' She looks at the stairs. 'How long before Voss's quarterly report draws attention?'\n\n'It was already six weeks late when I arrived,' you say.\n\nA silence.",
+      "choices": [
+        {
+          "text": "Go get Voss. Start planning the move.",
+          "next": "aldric_arrives"
+        }
+      ]
+    },
+
+    "plan_voss": {
+      "id": "plan_voss",
+      "text": "'He has had forty years,' Sera says.\n\nNot harshly. She says it the way she says most things — as a statement of fact that you can weigh against your own reasoning.\n\n'He built the compasses and put them at crossroads and waited for someone else to decide what to do when they got here. Which is — I understand it, I think. He is very old and he has been careful for a very long time and he does not trust his own capacity to act without making it worse.' She sets down the sheet she is holding. 'He told me that himself. He said: I have been wrong about the right moment for forty years. I am not capable of judging the right moment.\n\nShe is quiet for a moment.\n\n'But he should be part of it. He knows things I don't know and you don't know, and he has had forty years to think about what happens after the archive is found. That is worth something.' She picks the sheet back up. 'Bring him down here. Let him see we are further along than he expected. See what he says.'\n\nYou start toward the stairs.",
+      "choices": [
+        {
+          "text": "Go up to get Voss.",
+          "next": "aldric_arrives"
+        }
+      ]
+    },
+
+    "aldric_arrives": {
+      "id": "aldric_arrives",
+      "text": "You are halfway up the stairs when you hear the chapel door.\n\nNot Voss — Voss moves through the dark with the particular care of someone who has navigated the same space for forty years and no longer needs to think about it. These footsteps are younger, more careful in a different way, the way of someone trying not to make noise in an unfamiliar place and not entirely succeeding.\n\nYou stop on the stairs. Below you, you can hear Sera come to her feet.\n\nThe footsteps cross the chapel floor. They stop at the top of the vault stairs.\n\nA voice: male, young, slightly uncertain. 'Voss said... he said there was someone.' A pause. 'Hello?'\n\nLight appears at the top of the stairs — a lantern, held at arm's length. Then a hand, then a face: early twenties, a Guild inspector's coat of blue-grey wool, a notebook tucked under his arm, ink on his fingers. He is looking at you on the stairs with the expression of someone whose briefing documents did not prepare him for this specific situation.\n\nYou have perhaps five seconds before he descends far enough to see into the main chamber.",
+      "choices": [
+        {
+          "text": "Retreat back into the vault. Put the confessions somewhere he will not immediately see.",
+          "next": "conceal_first"
+        },
+        {
+          "text": "Stay where you are. Meet him on the stairs.",
+          "next": "stay_meet"
+        },
+        {
+          "text": "Go up to meet him. Keep him in the chapel, away from the vault.",
+          "next": "go_up_meet"
+        }
+      ]
+    },
+
+    "conceal_first": {
+      "id": "conceal_first",
+      "text": "You go back down the stairs quickly and quietly.\n\nSera reads the situation from your face. She takes the confession stack and slides it back into the lead box without comment, replaces the panel, repositions the shelving in front of it. She does this in about twelve seconds. Three weeks of underground work has, among other things, made her very efficient with the secondary cache.\n\nThen you both stand in the vault and wait.\n\nThe young man descends the stairs with the caution of someone who has been told there are people here but has not been told what kind of people or why. He stops at the bottom stair and looks at the two of you — at Sera's organized shelves, at the lamp, at the evidence of extended habitation — with growing confusion.\n\n'The quarterly report,' he says carefully, 'described this as a dormant archive.'\n\n'It is,' Sera says, in a tone that means something slightly different from its literal content. 'Just not as dormant as the report suggested.'",
+      "choices": [
+        {
+          "text": "Ask him who he is.",
+          "next": "aldric_introduction"
+        }
+      ]
+    },
+
+    "stay_meet": {
+      "id": "stay_meet",
+      "text": "You stay on the stairs.\n\nHe descends another few steps and stops when he realizes you are there. Up close: blue-grey inspector's coat, new enough that the wool still holds its shape, the Guild signet on the breast pocket. He is holding the lantern in one hand and a leather notebook in the other, and both hands are very still in the way hands go still when their owner is deciding something.\n\nBelow you, you hear Sera move.\n\n'The vault is occupied,' you say. Not as a warning — as information.\n\n'I can see that,' he says. Then, after a moment: 'Voss said you arrived last night.'\n\n'I did.'\n\nHe looks past you, toward the light from below. He seems to be recalibrating something — some expectation about what he would find here that is being revised against what he is actually finding.\n\n'The quarterly report,' he says slowly, 'did not mention a second person.'\n\n'There is also a third,' you say. 'She has been here for three weeks.'",
+      "choices": [
+        {
+          "text": "Invite him down. Show him the vault.",
+          "next": "aldric_introduction"
+        }
+      ]
+    },
+
+    "go_up_meet": {
+      "id": "go_up_meet",
+      "text": "You continue up the stairs.\n\nHe startles slightly when you emerge into the chapel — he was not expecting movement from below, or not that quickly. Up here, in the light from his lantern and the thin winter light coming through the boarded windows, you can see him clearly: young, tidy in the way people are tidy when they are trying to be taken seriously, ink on the fingers of his writing hand that suggests he came here from a desk rather than from a saddle.\n\nHe holds the lantern up slightly. Takes in your coat, your pack, the general fact of you standing in a supposedly dormant archive in the middle of the southern hill country.\n\n'You are one of the people Voss mentioned,' he says. Not a question.\n\n'I arrived last night.'\n\n'He said there was also...' He glances at the vault door behind you, which is ajar. 'Someone else has been here longer.'\n\n'Three weeks,' you say.\n\nHe looks at the vault door. Then back at you. He opens his notebook to a blank page and holds his pen over it with the air of someone who has been trained to document everything and is currently wondering whether what he is about to document is the kind of thing that gets documented in official records or the kind that gets documented somewhere else entirely.",
+      "choices": [
+        {
+          "text": "Bring him down into the vault.",
+          "next": "aldric_introduction"
+        }
+      ]
+    },
+
+    "aldric_introduction": {
+      "id": "aldric_introduction",
+      "text": "His name is Aldric.\n\nHe has been with the Meridian Guild for two years, assigned to the quarterly inspection circuit six months ago — a role that normally requires senior certification but was handed to him early because the previous inspector retired without a replacement ready. He arrived at the vault six weeks ahead of schedule because his supervisor — a Guild Council member he refers to only as 'my father's colleague' — told him the southern circuit needed to be completed before the winter filing season.\n\nHe says this last part in the careful tone of someone who has recently realized that this explanation does not hold together under examination.\n\nHe is standing in the vault with his notebook open and his pen uncapped. He has not written anything yet. He is looking at Sera's organized shelves — left side originals, right side corrections — with the expression of someone reading a message they had not expected to receive.\n\n'The quarterly report,' he says again. 'Described this as a dormant archive containing pre-Guild miscellaneous survey records of no current administrative relevance.'\n\n'That is one description,' Sera says.\n\n'Is that...' He looks at the shelves. Counts them, apparently. 'Is that the full collection?'\n\n'It is the falsified collection,' Sera says. 'The correct versions are the ones I made.' She nods at the right side. 'I have been here three weeks. I have corrected forty-three surveys so far. There are approximately two hundred remaining.'\n\nAldric looks at the notebook in his hand. Looks at the pen.\n\n'Tell me,' he says, with the resignation of someone who knows the answer is going to take a while, 'what you mean by falsified.'",
+      "choices": [
+        {
+          "text": "Tell him everything. The river, the Harmont estate, the confessions.",
+          "next": "tell_all"
+        },
+        {
+          "text": "Tell him about the falsification. Keep the confessions hidden until you know whose side he is on.",
+          "next": "tell_partial"
+        },
+        {
+          "text": "Don't speak. Show him the confessions instead.",
+          "next": "show_confessions",
+          "requires": "confession_seal"
+        }
+      ]
+    },
+
+    "tell_all": {
+      "id": "tell_all",
+      "text": "You tell him everything.\n\nIt takes about twenty minutes. Sera fills in the parts of the cartographic history you are less certain of. You fill in the parts involving the compass, the crossroads, Voss. Together you cover the Velas adjustment, the Harmont estate, the two-century succession of Guildmasters who maintained the silence, the confessions in the lead-lined box, and Pell's note from two hundred years ago.\n\nAldric listens. He writes nothing in his notebook. He asks two questions — dates, both of them; he wants to establish the timeline with precision — and otherwise stays still in a way that is not the stillness of shock but of concentration.\n\nWhen you finish, he looks at the secondary cache behind the shelving. Looks at where the panel fits. Looks at Sera.\n\n'You found this in three days,' he says.\n\n'I was looking for it,' she says.\n\n'You were looking for it in three days.'\n\n'I knew something was here that Voss didn't know about. The notation above the chapel door is specific: what is held below belongs to the first line. The first line means the founding document. I followed the implication.'\n\nHe writes something in his notebook then. One word, it looks like. He does not show it to either of you.\n\n'My father's colleague,' he says carefully, 'sent me here six weeks early. I did not, until approximately three minutes ago, understand why.'",
+      "choices": [
+        {
+          "text": "Ask him what he is going to write in his report.",
+          "next": "ch2_end"
+        }
+      ]
+    },
+
+    "tell_partial": {
+      "id": "tell_partial",
+      "text": "You tell him about the falsification.\n\nThe river Velas, the Harmont estate, the two hundred years of maintained silence at the top of the Meridian Guild. You show him Sera's corrected surveys — the originals on the left, the corrections on the right — and walk him through two or three specific examples where the discrepancy is inescapable even without the context of why it was done.\n\nYou do not mention the confessions.\n\nHe listens the same way through all of it: with total attention and a notebook that he has not opened. He asks the same two date-specific questions. He does not look surprised, exactly — he looks like someone whose suspicion is being confirmed in a direction he had not expected.\n\nWhen you finish, he is quiet for a moment.\n\n'You are not telling me everything,' he says.\n\nSera looks at you. You look at Sera.\n\n'Not yet,' you say.\n\n'That is fair,' he says. He looks at the shelves. 'My father's colleague sent me here six weeks early with instructions I was told were administrative. I have been on this road for three days trying to understand what an administrative early inspection of a dormant archive was supposed to accomplish.' He closes his notebook. 'I am beginning to form a theory.'\n\nHe looks at the secondary cache — at the panel behind the shelving, which he should not be able to identify as a panel from where he is standing. But he is looking directly at it.",
+      "choices": [
+        {
+          "text": "Ask him what his theory is.",
+          "next": "ch2_end"
+        }
+      ]
+    },
+
+    "show_confessions": {
+      "id": "show_confessions",
+      "text": "You go to the secondary cache.\n\nSera understands immediately — she steps aside as you reposition the shelving and open the panel. You take out the lead box. You bring it to the center of the room and open it.\n\nYou set the stack of twelve confessions in front of Aldric without speaking.\n\nHe reads. It takes longer than it took you — he is methodical in a way that suggests he has been trained to read documents of legal significance very carefully and not skip anything. He reaches Eda Sorn's sheet and stops the same way Sera stopped. He reads it twice.\n\nWhen he finishes, he sets the stack down exactly as carefully as Sera did — with the gravity you give things that have been waiting too long to be treated as important.\n\n'Twelve surveyors,' he says. 'In their own words.'\n\n'Witnessed by the first archivist,' Sera says.\n\nHe looks at Pell's note. 'He built the box himself.'\n\n'I think so.'\n\nAldric sets down his notebook. He sets down his pen. He puts both hands flat on the table — on the lead lid of the box — and looks at the wall above the shelves as if he is reading something there that no one else can see.\n\n'My father's colleague,' he says at last, 'sent me here six weeks early. I have been trying to understand what that means.' He looks at you. 'I think I understand now.'",
+      "choices": [
+        {
+          "text": "Ask him what he understands.",
+          "next": "ch2_end"
+        }
+      ]
+    },
+
+    "ch2_end": {
+      "id": "ch2_end",
+      "text": "Aldric opens his notebook to the first blank page.\n\nHe has been holding the pen over it for a moment that has stretched in a particular way — the way moments stretch when what comes next is not recoverable. When the thing you write is the thing that makes real what was, before you wrote it, possible to deny.\n\nHe writes a date.\n\nThen below it, in a hand that is smaller and more careful than his usual notes: Inspection of the southern archive, vault access confirmed, contents in active review.\n\nHe looks at what he has written. He looks at Sera. At you. At the shelves.\n\n'The quarterly report,' he says, 'is going to require an addendum.' A pause. 'A substantial addendum.'\n\nSera looks at you. You look at Sera.\n\nOutside — above the stone, above the clearing, above the tower where Voss has been watching the road for forty years — the winter light is changing. Morning has become midday without any of you noticing. The lamp has burned low.\n\nSomewhere on the southern road, moving at the pace of someone who was told not to hurry because there was nothing there to hurry for, something is coming toward this clearing.\n\nYou do not know this yet.\n\nAldric is still writing.\n\n— The Meridian continues in Chapter III.",
+      "end": true
+    }
+
+  }
+}

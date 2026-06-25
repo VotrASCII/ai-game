@@ -26,6 +26,34 @@
     <p id="title-footer">Click anywhere during text to skip · Space or Enter also works</p>
   </div>
 
+  <!-- ─── Chapter Select Screen ────────────────────────────────── -->
+  <div id="chapter-screen" class="hidden">
+    <div id="chapter-content">
+      <p class="screen-eyebrow">Chapters</p>
+      <div id="chapter-list"></div>
+      <button id="btn-chapter-back">← back</button>
+    </div>
+  </div>
+
+  <!-- ─── Previously Screen ────────────────────────────────────── -->
+  <div id="previously-screen" class="hidden">
+    <div id="previously-content">
+      <p class="screen-eyebrow">Previously</p>
+      <p id="prev-chapter-label"></p>
+      <p id="prev-chapter-text"></p>
+      <div id="prev-actions"></div>
+      <button id="btn-prev-back">← chapters</button>
+    </div>
+  </div>
+
+  <!-- ─── Chapter Card (full-screen title reveal) ─────────────── -->
+  <div id="chapter-card" class="hidden">
+    <div id="chapter-card-inner">
+      <span id="chapter-card-numeral"></span>
+      <span id="chapter-card-title"></span>
+    </div>
+  </div>
+
   <!-- ─── Game Screen ───────────────────────────────────────────── -->
   <div id="game-screen" class="hidden">
 
@@ -56,7 +84,7 @@
 
   </div>
 
-  <!-- ─── Item Notification (slides in from bottom-right) ──────── -->
+  <!-- ─── Item Notification ─────────────────────────────────────── -->
   <div id="item-notification" aria-live="polite">
     <span class="notif-label">Item discovered</span>
     <span id="item-notif-name"></span>

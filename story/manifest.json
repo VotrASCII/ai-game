@@ -1,0 +1,72 @@
+{
+  "title": "The Meridian",
+  "subtitle": "Five voices. One buried truth.",
+  "chapters": [
+    {
+      "id": "ch1",
+      "num": 1,
+      "numeral": "I",
+      "title": "The Compass",
+      "teaser": "A wayward needle. A vault sealed for two centuries. A woman who chose to stay.",
+      "file": "story/ch1.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": ["ancient_marker_disc"],
+          "text": "You followed your master's compass east to Dusk's End, stopping first in the northern forest to unearth the marker disc from beneath an ancient standing stone. Maren, the innkeeper, gave you her daughter's letter and a name: Voss. South of the hills, in a tower with its top burned away, Voss explained the vault beneath the chapel and what it held. You opened it with a cartographic cipher. Inside, you found Sera — Maren's daughter — alive, surrounded by weeks of charcoal-written corrections covering every wall. She had been rewriting the falsified archive. She had not been trapped. She had stayed."
+        },
+        {
+          "text": "You followed your master's compass east to the settlement of Dusk's End, where a woman named Maren gave you her daughter's letter and a name: Voss. South of the hills, in a tower with its top burned away, Voss explained the vault beneath the old chapel and the two hundred years of falsified records it contained. You opened the vault with a cartographic cipher. Inside, you found Sera — Maren's daughter — alive and deliberate, surrounded by charcoal corrections covering every wall. She had been rewriting the archive. She had not been trapped. She had chosen to stay."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "num": 2,
+      "numeral": "II",
+      "title": "The Rewritten",
+      "teaser": "What Sera found. The weight of two hundred years. Someone arrives at the chapel.",
+      "file": "story/ch2.json",
+      "startScene": "vault_morning",
+      "summaries": [
+        {
+          "requires": ["confession_seal"],
+          "text": "You spent the night in the vault and woke to Sera already working. She showed you the corrected map of the River Velas — the river as it actually runs, three leagues west of every official document in the kingdom. Together you found the secondary cache: a lead-lined box holding twelve confessions signed by the original cartographers who falsified the survey, witnessed by the Guild's first archivist, Pell. Then a Guild inspector arrived — young, ahead of schedule, carrying a notebook and an explanation for his early arrival that didn't hold together. By the time he opened his notebook to write his report, all three of you knew that whoever sent him here had done so for reasons that had nothing to do with routine inspection."
+        },
+        {
+          "text": "You spent the night in the vault and woke to Sera already working. She explained the falsification: the River Velas, the Harmont estate, two centuries of maintained silence at the top of the Meridian Guild. In the secondary cache you found twelve confessions from the original cartographers, witnessed by the Guild's first archivist. A Guild inspector arrived — young, early, sent by someone whose reasons were still unclear. By the time he opened his notebook to write the first date of his report, the question of what to do with the archive had become considerably more urgent."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "num": 3,
+      "numeral": "III",
+      "title": "The Road Out",
+      "teaser": "Getting the truth to the surface. Idra returns. The Guild sends someone south.",
+      "file": "story/ch3.json",
+      "startScene": "leaving_chapel",
+      "summaries": []
+    },
+    {
+      "id": "ch4",
+      "num": 4,
+      "numeral": "IV",
+      "title": "The Meridian Line",
+      "teaser": "The confrontation. The trial. What truth costs when power can rewrite it.",
+      "file": "story/ch4.json",
+      "startScene": "guild_hall_steps",
+      "summaries": []
+    },
+    {
+      "id": "ch5",
+      "num": 5,
+      "numeral": "V",
+      "title": "The First Line",
+      "teaser": "What was built on the lie. What stands when it falls.",
+      "file": "story/ch5.json",
+      "startScene": "epilogue_start",
+      "summaries": []
+    }
+  ]
+}
