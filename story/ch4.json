@@ -1,0 +1,221 @@
+{
+  "startScene": "six_days_north",
+  "scenes": {
+
+    "six_days_north": {
+      "id": "six_days_north",
+      "text": "Six days north, the city arrives before you expect it.\n\nNot dramatically — it builds, the way things that have been accumulating for a long time finally become visible. A road that was a road becomes a road with carts on it. Then a road with carts and toll markers. Then the toll markers have Guild notation on them, the new standardized system, the one that erased the pre-Guild notation the way a new coat of paint erases the wall beneath it. You read the notation the way you have been reading it for three years — as the official version of something — and then you read it the way you have been reading it for the last week, as a record of everything the official version is covering.\n\nThe city gates are stone and Guild-marked and open in the particular way of things that have been open so long they have forgotten how to close.\n\nIdra brought you the address Voss gave you before she rode east. Aldric has been in the city before — many times, as a Guild inspector, but also as a child, in the years when his father sat on the Council and the Council met in the hall behind the Guild tower. He knows the streets by function rather than by name, which is a different kind of knowledge and in some ways a more useful one.\n\nSera is looking at the city with the expression of someone who has been underground for three weeks and then on a road for six days and is now surrounded by the largest concentration of buildings she has seen since her expulsion from the Guild hall.\n\n'Which way?' she says.",
+      "choices": [
+        {
+          "text": "Find Eda first. Voss sent you to her specifically.",
+          "next": "finding_eda"
+        },
+        {
+          "text": "Find the Council chambers. Understand the political geography before anything else.",
+          "next": "council_geography"
+        }
+      ]
+    },
+
+    "council_geography": {
+      "id": "council_geography",
+      "text": "Aldric walks you through it as you walk through the streets.\n\nThe Meridian Guild occupies a complex of four buildings in the city's administrative quarter. The main tower — built eighty years ago in the style of the period, heavy and self-important — houses the Guildmaster's office, the senior cartography division, and the certification halls where new surveyors earn their credentials. The archive division is in the second building, a lower and older structure that predates the Guild by a century. The Council chambers are in the third building, separate from the Guildmaster's offices by design and by precedent: the founders of the Guild specifically built distance between executive and oversight authority.\n\nThe independent Council members — the five whose positions do not derive from the Guildmaster's appointment — hold their offices on the third building's upper floor. One of them, a woman named Councillor Salle, has been on record for eleven years as the member who seconded Aldric's father's motion to reclassify Archive Fourteen.\n\n'She seconded it,' Aldric says. 'She voted for opening the vault.'\n\nHe stops at a corner where the administrative quarter begins.\n\n'She has been on the Council for twenty-two years,' he says. 'She will be careful. She will want to see the documents before she commits to anything. She will also want to know how we got them.' He looks at the traveling case. 'And she will ask about Eda.'\n\n'Who is Eda?' Sera says.\n\n'Someone we should find first,' Aldric says.",
+      "choices": [
+        {
+          "text": "Find Eda. Then Councillor Salle.",
+          "next": "finding_eda"
+        }
+      ]
+    },
+
+    "finding_eda": {
+      "id": "finding_eda",
+      "text": "The address is a building in the old quarter — pre-Guild construction, stone that has been repaired so many times it is almost entirely different stone from its origin, in the way cities are different from their origins while maintaining the shape of them.\n\nThe woman who opens the door is eighty-one and gives no impression of being eighty-one. She is small, quick-eyed, with the particular quality of attention of someone who has been waiting for a specific thing for a long time and has not let the waiting make them impatient.\n\nShe looks at the four of you in the doorway. At the traveling case. At the compass outline in your coat pocket.\n\n'Voss sent a message,' she says. It is not a question. She steps back from the door. 'Come in. Bring the case.'\n\nInside: a room that contains, primarily, maps. Not Guild maps — older maps, hand-drawn, some on cloth, some on treated skin, the kind of documentation that predates the standardization by decades. She has organized them on every wall and flat surface with the thoroughness of someone who has been building a case for a long time.\n\n'My grandmother's family lived on the common land east of the Velas,' she says. She does not preamble this with explanation. 'Before it became the Harmont estate. My grandmother was seventeen when they were evicted. She counted the families the same way Eda Sorn counted them.' She looks at you. 'My grandmother's name was also Eda. It is a family name.' A brief pause. 'I have been waiting for Pell's box to be opened for eighty-one years. Show me what you found.'",
+      "choices": [
+        {
+          "text": "Open the traveling case. Show her Sera's corrected archive.",
+          "next": "eda_reviews"
+        },
+        {
+          "text": "Show her the Twelve Confessions first.",
+          "next": "eda_confessions",
+          "requires": "confession_seal"
+        }
+      ]
+    },
+
+    "eda_reviews": {
+      "id": "eda_reviews",
+      "text": "Eda reviews the archive the way she reviews everything — completely, without hurrying, with the attention of someone who has been thinking about the specific contents of this case for eighty-one years and is not going to rush through them now that she has them.\n\nShe checks three of Sera's corrections against her own wall maps. She cross-references Sera's authentication notation. She finds one small error in the formatting — a notation convention that Sera used differently from the pre-Guild standard — and notes it without criticism, simply as a technical observation.\n\n'Who taught you the pre-Guild system?' she asks Sera.\n\n'I taught myself,' Sera says. 'From documents in the vault.'\n\nEda considers this. 'The error is minor and does not affect the substance. Most modern cartographers would not notice it. A Guild-trained archivist would.' She closes the case carefully. 'Councillor Salle is Guild-trained.'\n\n'We should address it before we present to Salle,' Aldric says.\n\n'I can correct it tonight,' Sera says.\n\nEda has been looking at the compass outline in your coat through this exchange. She looks at you directly now.\n\n'Voss made six compasses,' she says. 'I know because I counted the people he sent to the crossroads. How many of them reached the vault?'\n\n'He told me three,' you say.\n\nShe nods. 'Three reached the vault. The other three left the compass at a different crossroads or kept it and went home.' A pause. 'I always thought the interesting question was not how many people made it to the vault but why Voss trusted the compass to do the sorting.'\n\nShe stands.\n\n'Come. There is someone else here who needs to hear what you found.'",
+      "choices": [
+        {
+          "text": "Follow her.",
+          "next": "renn_crane"
+        }
+      ]
+    },
+
+    "eda_confessions": {
+      "id": "eda_confessions",
+      "text": "You open the lead box.\n\nEda takes the stack without reaching — she waits for you to offer it, and then takes it with both hands, carefully, the way you take something that has been waiting longer than you have been alive.\n\nShe reads in silence. Her face does not change except once, at the tenth sheet — at Eda Sorn's testimony — where something in her expression clarifies, the way a held breath releases when you finally understand what you were afraid to know.\n\n'She counted fourteen families,' the old woman says. 'My grandmother counted fourteen families.' She sets the sheet down. 'She told me the number when I was eight. I asked her how she knew. She said: a cartographer came and wrote them all down, and she came back the following spring and counted again to see how many were left.' A pause. 'I never knew the cartographer's name until now.'\n\nShe holds Eda Sorn's sheet for a long moment.\n\n'My grandmother had the same name as this woman,' she says. 'She never told me whether that was coincidence.' She sets the sheet back in the stack with great care. 'I have my suspicions.'\n\nShe hands you the stack back. She stands.\n\n'Come,' she says. 'Before we go to Salle there is someone here you should meet. He has been in the city for three days and he has been trying to decide whether to come find you himself.'",
+      "choices": [
+        {
+          "text": "Follow her.",
+          "next": "renn_crane"
+        }
+      ]
+    },
+
+    "renn_crane": {
+      "id": "renn_crane",
+      "text": "The man in Eda's back room is sixty-three years old, with the careful posture of someone who has spent a long career managing the distance between what he knows and what he says.\n\nAldric stops in the doorway.\n\nThe man looks at his son for a long moment. Then: 'You found the confessions.'\n\n'Eda Sorn's confession,' Aldric says. 'Yes.'\n\nA silence.\n\nRenn Crane has been on the Guild Council for twenty-two years. He filed the motion to reclassify Archive Fourteen eleven years ago, seconded by Councillor Salle. He was overruled by three votes, two of which he knew had been influenced by Fen's predecessor. He did not fight the outcome, which he says now was a mistake he has been living with.\n\nHe came to the city three days ago when he received a message from Voss — a message that said only: they found the box.\n\n'Fen knows someone has been in the vault,' Renn says. 'He does not know what they found. He does not know about the secondary cache. He believes the vault contains the falsified surveys and the originals and nothing else.' He looks at the case. 'The confessions change his calculation significantly.'\n\n'Can Salle move the reclassification motion?' Aldric asks.\n\n'She can table it. She cannot kill it without three votes, and Fen has three votes that are reliable.' Renn looks at his son. 'But a motion to formally investigate the historical accuracy of the southern survey records — that she can file under her own authority. It does not require a vote. It only requires a complainant with standing.'\n\nEda raises her hand.\n\n'Complainant with standing,' she says.",
+      "choices": [
+        {
+          "text": "Ask Renn how long they have before Fen moves.",
+          "next": "timeline"
+        },
+        {
+          "text": "Ask Eda how she intends to establish standing.",
+          "next": "eda_standing"
+        }
+      ]
+    },
+
+    "eda_standing": {
+      "id": "eda_standing",
+      "text": "'Documented descendant of a displaced family,' Eda says. 'Under the original common-land charter — which pre-dates the Guild and is therefore not subject to Guild authority — displaced families retain standing to petition for survey review for as long as any documented descendant survives.'\n\nShe says this without inflection, which is not the tone of someone who has just thought of this.\n\n'You have known this for eighty-one years,' Sera says.\n\n'I have known it for sixty years,' Eda says. 'The last twenty-one years of research confirmed it.' She looks at the wall of maps. 'I have been building the case. I was waiting for the vault to be opened because the original surveys are in the vault, and the standing petition requires original documentary evidence, not corrected versions.'\n\nShe looks at you specifically.\n\n'But corrected versions, authenticated against the originals by a trained surveyor who physically accessed the vault, are admissible as secondary evidence if the primary is available for verification.' She nods at the traveling case. 'Your case references the originals. The originals are still in the vault. The vault can be verified.'\n\nAldric is looking at his father.\n\n'You knew about Eda,' he says.\n\n'I knew there was a family,' Renn says. 'I did not know how prepared she was.' He looks at her. 'I am sorry it took this long.'\n\n'Yes,' Eda says. 'You are.'",
+      "choices": [
+        {
+          "text": "Ask Renn how long they have before Fen moves.",
+          "next": "timeline"
+        }
+      ]
+    },
+
+    "timeline": {
+      "id": "timeline",
+      "text": "'Three weeks until the reclassification takes effect,' Renn says. 'Which sounds like enough time. It is not enough time.'\n\nHe explains the procedural reality: filing a formal investigation motion requires the complainant to present documentary evidence to the Council registrar, who has three business days to acknowledge receipt. Then the motion is scheduled for a preliminary hearing, which requires five business days' notice. Then the preliminary hearing, which Fen can challenge on procedural grounds, buying another two weeks.\n\n'In three weeks,' Renn says, 'Fen will use the reclassification to seal the vault before the preliminary hearing concludes. Which makes the vault unavailable for verification. Which makes the secondary evidence — your case — unverifiable against primary sources.'\n\nSera looks at you. 'How do we shorten the timeline?'\n\n'We don't,' Renn says. 'We change it. Instead of filing through normal channels, Eda files an emergency petition under the common-land charter provision — which has a forty-eight-hour acknowledgment requirement, not three days. And instead of the Council registrar, she files with the independent review office, which Fen has no authority over.' He pauses. 'The independent review office is one person. She is sixty-seven and has been waiting for something like this to cross her desk for her entire career.'\n\n'Does she know Eda?' Aldric asks.\n\n'They were at school together,' Renn says.",
+      "choices": [
+        {
+          "text": "Move. File today.",
+          "next": "filing_day"
+        }
+      ]
+    },
+
+    "filing_day": {
+      "id": "filing_day",
+      "text": "The independent review office is in a building that the city's administrative geography has gradually surrounded with more important buildings until it has become almost invisible — tucked between the Council annex and a merchant hall, its door unmarked except for a small plaque in pre-Guild notation that Eda reads aloud without looking: office of first record.\n\nThe woman inside is sixty-seven, tidy, with the particular quality of someone who has spent her career maintaining the procedural conditions for something to happen and has not lost faith that it will.\n\nShe looks at Eda. At the traveling case. At Aldric's Guild coat and Renn behind him.\n\n'Crane,' she says to Renn. 'You finally came.'\n\n'I finally came,' he says.\n\nShe opens a drawer. She produces a form that looks like it has been in that drawer for a long time, not because it is old but because it has been ready.\n\nThe filing takes forty minutes. She reads every document Sera shows her. She asks three questions — all of them procedural, all of them answered correctly by Eda without hesitation. She asks one substantive question, which is: where are the originals?\n\n'In the vault,' Sera says. 'Archive Fourteen, southern circuit.'\n\n'Is the vault accessible for verification?'\n\nYou think of Voss. In his tower. Watching the road.\n\n'Yes,' you say.",
+      "choices": [
+        {
+          "text": "Ask what happens now.",
+          "next": "what_happens_now"
+        }
+      ]
+    },
+
+    "what_happens_now": {
+      "id": "what_happens_now",
+      "text": "The reviewer — her name is Mareth — explains what happens now with the calm of someone narrating a process they have long known by heart.\n\nThe emergency petition is acknowledged within forty-eight hours. The preliminary hearing is scheduled for seven days from acknowledgment. Fen can challenge the petition but cannot delay the hearing without filing an objection that must itself be reviewed — which requires him to formally contest the common-land charter provision, which requires him to argue, on record, that the provision is invalid. That argument would be heard by the independent review office, not by the Council.\n\n'He will know we filed as soon as the acknowledgment goes out,' Renn says.\n\n'Yes,' Mareth says. 'Tomorrow morning.'\n\nAldric looks at you. 'He will also know about Eda by then. He will look for the archive.'\n\n'The archive,' Mareth says carefully, 'could be filed with this office as evidentiary material for the petition. Evidentiary material in a pending review is not subject to administrative reclassification.'\n\nShe opens the drawer again. Another form.\n\n'It would need to be filed tonight,' she says. 'Before tomorrow's business hour.'\n\nSera looks at the traveling case.\n\n'Tonight,' she says.",
+      "choices": [
+        {
+          "text": "File the archive tonight. Protect it.",
+          "next": "hearing_day"
+        }
+      ]
+    },
+
+    "hearing_day": {
+      "id": "hearing_day",
+      "text": "Seven days.\n\nIn seven days the city has had time to become aware that something is happening without being certain what. The Guild quarter has a different quality of movement — more purposeful, less routine. Aldric's pass has been flagged: he knows this because he tried to use it at the archive division entrance and was turned away. He is no longer, officially, an active inspector.\n\nRenn has been to the Council chambers twice. He returns the second time with the expression of a man doing arithmetic in his head and finding the numbers consistent.\n\n'Fen has two of the five independent votes,' he says. 'He has been working on the third. Salle will not move.' He sits down. 'But the hearing is not a vote. It is a review. The standard is evidentiary, not political.'\n\n'What is the standard?' Sera asks.\n\n'Can the petitioner demonstrate that a documented survey discrepancy exists, that it has material effect on current land records, and that a qualified surveyor can verify the discrepancy against original documents.'\n\nHe looks at the three of you.\n\n'You are the qualified surveyor,' he says to you. 'Sera is the archivist who produced the corrected evidence. Eda is the complainant. And I...' He looks at his hands. 'I am the Council member who filed the original reclassification motion eleven years ago, which means I am on record as having believed the archive contained material of administrative significance.' He looks up. 'Fen will argue that I am biased. He will be correct. It will not help him.'\n\nThe hearing is in the morning.",
+      "choices": [
+        {
+          "text": "Prepare your testimony. What you know and how you know it.",
+          "next": "testimony_prep"
+        },
+        {
+          "text": "Ask Sera what she is most worried about.",
+          "next": "sera_worried"
+        }
+      ]
+    },
+
+    "sera_worried": {
+      "id": "sera_worried",
+      "text": "She thinks before answering, which is how she does most things.\n\n'The notation error I corrected,' she says. 'The pre-Guild formatting convention I had wrong. Even corrected, an opposing archivist could make the argument that someone who learned the notation system from the vault documents themselves — rather than from formal training — cannot produce independently authoritative evidence.'\n\n'Eda trained in the pre-Guild system,' Aldric says.\n\n'Eda is the complainant. She cannot also be the certifying expert.'\n\nA silence.\n\n'Voss,' you say.\n\nEveryone looks at you.\n\n'Voss was trained in the pre-Guild system. Formally. Before the Meridian Guild existed, when he was young.' You look at the address Voss gave you. 'He certified me, in a way — he tested me at the door. He can certify Sera's methodology.' You think about the tower. The forty years. 'He will not want to come.'\n\n'No,' Sera says. 'But he has been waiting forty years for someone to need him to.'",
+      "choices": [
+        {
+          "text": "Send a message to Voss tonight. Ask him to come.",
+          "next": "testimony_prep"
+        }
+      ]
+    },
+
+    "testimony_prep": {
+      "id": "testimony_prep",
+      "text": "You prepare your testimony the way you prepare a survey: from observation, working outward to conclusion, leaving nothing assumed.\n\nWhat you know: a compass pointed wrong for three years, then pointed east. A vault beneath a chapel. Hundreds of surveys, organized, original and falsified side by side. A woman who had been there for three weeks, correcting them. An old man in a burnt tower who built the compass. A box of confessions. A name on a petition that stretches back two hundred years.\n\nWhat you can verify independently: the landscape. The watershed drainage that runs northwest where the official survey says it runs west. The hills a quarter-league east of their mapped positions. The territory your expelled map correctly described and that ended your career three years ago.\n\nYou have been that territory for three years. You can say, under examination, that you walked it. That your instruments confirmed it. That the official map is wrong and your map is right and the vault contains the original surveys that agree with your map and disagree with the official record.\n\nSera looks over your notes.\n\n'You left out the compass,' she says.\n\n'The compass is not evidence,' you say. 'It is personal.'\n\nShe looks at you for a moment with the expression she uses when she disagrees and is deciding whether the disagreement is relevant.\n\n'Yes,' she says. 'But it is true.'",
+      "choices": [
+        {
+          "text": "The hearing is tomorrow. Sleep.",
+          "next": "the_hearing"
+        }
+      ]
+    },
+
+    "the_hearing": {
+      "id": "the_hearing",
+      "text": "The hearing room is smaller than you expected.\n\nFour walls, a long table, the independent review officer at the head of it. Mareth. Eda sits at the complainant's side. Renn sits behind her. Aldric is in the row after that, no longer in his inspector's coat, wearing civilian grey. Sera has the archive — now formally logged as evidentiary material — in the traveling case at her feet.\n\nAcross the table, Guildmaster Fen.\n\nHe is fifty-four. He has the look of someone who has been powerful for long enough that the power has become load-bearing — not arrogance, something more structural, the sense that what he thinks is what is true because it has been confirmed by everyone around him for twelve years. He came with two advisors and a legal assistant and a copy of the administrative reclassification motion.\n\nHe looks at the case at Sera's feet. He looks at you.\n\nHe looks at the compass outline in your coat pocket.\n\nHe says, precisely: 'This petition rests on a corrected archive produced by an expelled cartography student, certified by a man who has not held an active survey license in forty years, filed by a woman who cannot produce legal documentation of her family's original land claim.'\n\nMareth looks at Eda.\n\nEda opens a folder that she has been holding on her lap.\n\n'I can produce it,' Eda says.",
+      "choices": [
+        {
+          "text": "Watch. This is Eda's hearing.",
+          "next": "fen_countermove"
+        }
+      ]
+    },
+
+    "fen_countermove": {
+      "id": "fen_countermove",
+      "text": "Eda produces the documentation.\n\nShe has it all: the family record going back to the eviction, the original common-land charter's relevant clause, the legal succession of standing from her grandmother through her mother to her. It is thorough, organized, notated in the pre-Guild system, and entirely immune to the procedural challenge Fen just made.\n\nFen's legal assistant leans to whisper something. Fen waves him off.\n\n'The archive itself,' Fen says. He looks at Mareth. 'The evidentiary material in this case consists of documents produced by an individual who accessed a sealed Guild archive without authorization.'\n\n'The archive was not sealed,' Aldric says from the back of the room.\n\nFen turns. He takes in Aldric — coat, no inspector's badge, the deliberate presentation of someone who has put aside an official role.\n\n'Mr. Crane,' he says. 'Your inspection authorization has been—'\n\n'Revoked,' Aldric says. 'Yes. Two days ago. The archive was unsealed four days before that.'\n\nMareth makes a note.\n\nFen looks at the traveling case. He looks at you. Something moves through his expression — not uncertainty, the recalibration of someone who has encountered terrain they did not map.\n\n'I would like to enter a counter-document,' he says. He produces a folder. 'A contemporary survey of the southern circuit, conducted under my authority, confirming the accuracy of the current official map. Signed by three senior cartographers.'\n\nMareth receives the folder. She opens it. She reads.\n\n'This survey,' she says, 'is dated six weeks ago.'\n\n'Yes,' Fen says.\n\n'It postdates the filing of this petition by forty-eight hours.'\n\nA silence.\n\n'Regardless,' Fen says. 'It is current evidence.'",
+      "choices": [
+        {
+          "text": "Speak. This is what you walked three years of wrong roads to say.",
+          "next": "your_testimony",
+          "requires": "corrected_archive"
+        },
+        {
+          "text": "Let Sera speak. The archive is her work.",
+          "next": "sera_testimony"
+        }
+      ]
+    },
+
+    "your_testimony": {
+      "id": "your_testimony",
+      "text": "You stand up.\n\nMareth looks at you with the calm attention she has given everything in this room.\n\n'I am a surveyor,' you say. 'I was trained by the Meridian Guild and expelled three years ago for producing a map that contradicted the official survey of the southern hill country.' You set the corrected archive case on the table. 'This case contains forty-three surveys, each corrected against the original documents in Archive Fourteen. I walked the territory in question. I walked it with instruments. The watershed drainage in the eastern hill country runs northwest. The official survey records it as running west. I know this because I was standing in it when my instruments told me, and the Guild called it instrument error when I reported it.'\n\nYou look at Fen's counter-survey.\n\n'A survey conducted six weeks ago and signed by three senior cartographers would show the correct watershed drainage, if those cartographers walked the territory. If they produced the official map position instead, one of three things is true: they did not walk the territory; their instruments were calibrated to return the expected result; or they were asked to confirm a conclusion rather than conduct a survey.' You look at Fen. 'I was expelled for not doing the third thing. I have spent three years being right about it in silence. I would like to stop being silent.'",
+      "choices": [
+        {
+          "text": "Sit. Wait for what comes next.",
+          "next": "ch4_end"
+        }
+      ]
+    },
+
+    "sera_testimony": {
+      "id": "sera_testimony",
+      "text": "Sera stands.\n\nShe is smaller than the room expects, which rooms always get wrong about her. She sets one of her corrected surveys on the table — the Velas watershed, the first one she made, the one she showed you the morning you woke in the vault.\n\n'This is the River Velas,' she says. 'This is the position it actually occupies, verified against seven independent original surveys conducted across three different decades, all of which are filed in Archive Fourteen and all of which are available for verification.' She sets it down beside Fen's counter-survey. 'This is the current official map.'\n\nShe does not point out the difference. She lets the difference point out itself.\n\n'I spent three weeks in the vault,' she says. 'I corrected forty-three surveys. I still have approximately one hundred and sixty to go. I was not finished when we left, because we needed to bring what we had to this room before the reclassification motion closed the vault.' She looks at Fen without heat — with the focused, matter-of-fact quality of her attention. 'The reclassification motion was filed two weeks after this petition. Someone filed it because they knew this petition was coming.' A pause. 'The timeline of knowledge that would produce that sequence is worth examining.'\n\nMareth makes another note.",
+      "choices": [
+        {
+          "text": "Wait for what comes next.",
+          "next": "ch4_end"
+        }
+      ]
+    },
+
+    "ch4_end": {
+      "id": "ch4_end",
+      "text": "Fen does not speak again during the testimony.\n\nHe watches. He makes notes. His legal assistant whispers twice more and is waved off twice more. He has the quality of someone managing their response with great care — not defeat, the controlled attention of a man revising his calculation in real time.\n\nWhen Mareth calls a recess, he stands and straightens his coat and speaks quietly to his advisors for a moment. Then he looks at you.\n\nNot at Eda. Not at Renn Crane, whose presence here is a Council matter he will need to address separately. Not at the case, which is filed, which is in the room, which cannot be moved without triggering the exact procedural complication he has spent six weeks trying to avoid.\n\nAt you.\n\n'Ghost surveyor,' he says. It is not contemptuous. It is the tone of a man categorizing information. 'The map you submitted before your expulsion. The one the review board called instrument error.' He tilts his head slightly. 'Where did you conduct that survey?'\n\n'Eastern hill country,' you say. 'South circuit. River valley approach.'\n\n'Yes.' He looks at the case. 'I authorized your expulsion. I reviewed the board's findings.'\n\nA silence.\n\n'The survey was correct,' you say.\n\n'Yes,' Fen says. 'I know.'\n\nHe leaves the room ahead of the recess.\n\nMareth watches him go. She looks at her notes. Then she looks at Sera with an expression that is the closest she has come all morning to something that might be satisfaction.\n\n'Your evidence is in order,' she says. 'The hearing continues tomorrow.'\n\nSera looks at you. At the case. At the door Fen walked through.\n\n'He is not done,' she says.\n\n'No,' Aldric says from the back of the room. 'But neither are we.'\n\n— The Meridian continues in Chapter V.",
+      "end": true
+    }
+
+  }
+}

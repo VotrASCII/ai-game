@@ -63,8 +63,20 @@
       "title": "The Meridian Line",
       "teaser": "The confrontation. The trial. What truth costs when power can rewrite it.",
       "file": "story/ch4.json",
-      "startScene": "guild_hall_steps",
-      "summaries": []
+      "startScene": "six_days_north",
+      "summaries": [
+        {
+          "requires": ["confession_seal", "corrected_archive"],
+          "text": "You reached the city with Sera, Aldric, and the corrected archive. Aldric's father Renn was waiting with Eda — eighty-one years old, descendant of a displaced family, who had been building a legal case for sixty years. You showed Eda the Twelve Confessions. She recognized Eda Sorn's name. Eda filed an emergency petition under the original common-land charter. Mareth, the independent review officer, accepted the archive as evidentiary material before Fen could reclassify it. At the hearing, Guildmaster Fen produced a counter-survey dated six weeks ago. You testified about the three years you spent being right about the landscape in silence. Fen left the room early. He said he knew your expelled map was correct. The hearing continues tomorrow."
+        },
+        {
+          "requires": ["corrected_archive"],
+          "text": "You reached the city with Sera, Aldric, and the corrected archive. Eda — eighty-one, descendant of a displaced family — filed an emergency petition under the original common-land charter. The archive was filed as evidentiary material before Fen could reclassify it. At the hearing, Fen produced a counter-survey. Sera presented the corrected Velas map alongside the official one and let the difference speak for itself. Fen left before the recess and said nothing more. The hearing continues tomorrow."
+        },
+        {
+          "text": "You reached the city with Sera and Aldric. Eda — eighty-one, descendant of a displaced family — had been building a legal case for sixty years. She filed an emergency petition. The hearing was held in a small room with Guildmaster Fen across the table. He produced a counter-survey. The evidence was presented. Fen left early. The hearing continues tomorrow."
+        }
+      ]
     },
     {
       "id": "ch5",
