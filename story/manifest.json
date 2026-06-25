@@ -45,8 +45,16 @@
       "title": "The Road Out",
       "teaser": "Getting the truth to the surface. Idra returns. The Guild sends someone south.",
       "file": "story/ch3.json",
-      "startScene": "leaving_chapel",
-      "summaries": []
+      "startScene": "vault_day_two",
+      "summaries": [
+        {
+          "requires": ["aldric_pass"],
+          "text": "Aldric chose to write a blank report and buy you time. He gave you his inspector's pass and used it to help you through the checkpoint on the south road. Sera carried forty-three corrected surveys out of the vault in a traveling case. Voss gave you an address in the city: a woman named Eda, eighty-one years old, one of the fourteen families displaced by the original falsification. Idra found you north of the checkpoint with news — Guildmaster Fen had filed a reclassification motion that would seal the archive under his authority within four weeks. Back at the crossroads, with the compass pointing north for the first time, she said: choose now. Fen's riders were already heading south."
+        },
+        {
+          "text": "Aldric chose to write a blank report and buy you time. Sera carried forty-three corrected surveys out of the vault in a traveling case. Voss gave you an address in the city: a woman named Eda, eighty-one years old, one of the fourteen families displaced when the river was moved. Idra found you on the north road with news — Guildmaster Fen had filed a reclassification motion that would seal the archive under his authority within four weeks. Back at the crossroads, the compass pointed north for the first time. Fen's riders were already heading south. You had to choose."
+        }
+      ]
     },
     {
       "id": "ch4",

@@ -1,0 +1,210 @@
+{
+  "startScene": "vault_day_two",
+  "scenes": {
+
+    "vault_day_two": {
+      "id": "vault_day_two",
+      "text": "Morning of the second day finds three people in the vault and a conversation that has been going since last night.\n\nAldric has been talking for some time — not confessing, exactly, but unfolding. The way a person unfolds when they have been carrying something that requires witness.\n\nHis father is a man named Renn Crane, twenty-two years on the Guild Council, currently serving as Deputy Chancellor for Archive Affairs. The position gives him administrative authority over everything the Guild keeps in storage — including, technically, this vault, which is listed in the Council's records as Archive Fourteen, Southern Circuit, Dormant Status.\n\nAldric was sent here six weeks early, he now understands, to assess whether Archive Fourteen had been accessed. His father's colleague — the Council member who gave him the specific timing — would have received Voss's annual report, would have noted the dates, would have decided that a quiet inspection before the regular season was worth sending a young and reliable inspector who would not ask the wrong questions.\n\nHe is looking at the shelves when he says this. At Sera's organized corrections on the right side.\n\n'He believed I wouldn't ask the wrong questions,' Aldric says. 'He was probably right, until about eighteen hours ago.'\n\nSera has been listening from her side of the room. She has been working, because Sera works, but the pace of her work has slowed to something close to listening.\n\n'What happens,' she says, 'when you file a report that says the archive was accessed?'",
+      "choices": [
+        {
+          "text": "Ask Aldric what he intends to do about his report.",
+          "next": "aldric_decision"
+        },
+        {
+          "text": "Ask Sera what she thinks Aldric will do.",
+          "next": "sera_reads_aldric"
+        }
+      ]
+    },
+
+    "sera_reads_aldric": {
+      "id": "sera_reads_aldric",
+      "text": "Sera sets down what she is holding.\n\n'He hasn't decided yet,' she says. She says it directly, as if Aldric is not in the room, and then glances at him in a way that makes clear she knows he is in the room. 'Which is more promising than I expected when I heard him on the stairs.'\n\nAldric receives this assessment with the equanimity of someone who has recently had several more significant surprises.\n\n'She is correct,' he says. 'I haven't decided.'\n\n'He could file the report honestly,' Sera continues. 'In which case his father's colleague — whoever the Council member is — would know the archive has been accessed and by whom, and would act on that information before we can get anything out of here.'\n\nShe picks up her work again.\n\n'Or he could not file the report honestly. In which case he is choosing to deceive his principal on behalf of people he met yesterday.' She looks at Aldric. 'Which would require him to have a reason.'\n\nThe lamp between them flickers in a draft from somewhere in the stonework. All three of you wait for it to settle.",
+      "choices": [
+        {
+          "text": "Ask Aldric what his reason would be.",
+          "next": "aldric_decision"
+        }
+      ]
+    },
+
+    "aldric_decision": {
+      "id": "aldric_decision",
+      "text": "Aldric looks at the notebook in his hand.\n\nHe has written three things since last night: the date, the confirmation of access, and one word you never saw. He has not written anything else. The quarterly report form, with its boxes and its standardized language and its space for the inspector's assessment of administrative relevance, sits blank beside the date and the one word.\n\n'My father,' he says, 'served on the committee that reviewed the official archive policy eleven years ago. The policy that maintains this vault as dormant, that classifies its contents as pre-Guild miscellaneous records of no current relevance.' He closes the notebook. 'I was twelve. I found the committee minutes in his study and I read them because I was twelve and nosy.' A pause. 'The minutes record a motion to reclassify Archive Fourteen. The motion failed. My father voted against reclassification.'\n\nThe vault is quiet in the way underground spaces are quiet.\n\n'I did not know what reclassification would have meant,' he says. 'I was twelve. But I have been wondering, for eleven years, why my father cared about a dormant archive in the southern circuit.'\n\nHe opens the notebook. He tears out the page with the date and the word. He puts it in his coat pocket.\n\n'The new first page will be blank,' he says. 'The report will note a routine inspection with no findings of administrative relevance. That will buy us some time. Not much.'",
+      "choices": [
+        {
+          "text": "'How much time?'",
+          "next": "preparing_exit"
+        },
+        {
+          "text": "'What do you want in return?'",
+          "next": "aldric_wants"
+        }
+      ]
+    },
+
+    "aldric_wants": {
+      "id": "aldric_wants",
+      "text": "'Nothing,' he says.\n\nHe says it without hesitation, which is itself a kind of answer — not the absence of want, but the presence of something that has already been decided before you asked.\n\n'I want to understand what my father voted to keep buried,' he says. 'I have wanted that for eleven years. I appear to be in the correct location to find out.' He looks at Sera's work, the methodical corrected surveys on the right side of the shelves. 'And I want to be useful. That is, I will admit, partly professional habit. But it is also — I do not know what this is going to take. I know that three people know about it and one of them is seventy-three years old and has been alone in a burnt tower for forty years, and the documents that prove what happened are in a room that only the three of us and one elderly recluse know the location of.' He looks at you. 'I have a Guild inspector's pass. I know the checkpoint schedule on every road between here and the city. I know which filing officials my father's colleague has influence over, which means I know which ones he doesn't.'\n\nHe holds out his pass — blue-grey card, Guild seal, his name and certification date.\n\n'This is worth more than nothing,' he says.",
+      "item": {
+        "id": "aldric_pass",
+        "name": "Aldric's Inspector Pass",
+        "description": "Blue-grey card, Guild seal, the name Aldric Crane and his certification date. Official Meridian Guild inspector credentials. Worth more than nothing, as he said."
+      },
+      "choices": [
+        {
+          "text": "Take the pass. He's right.",
+          "next": "preparing_exit"
+        }
+      ]
+    },
+
+    "preparing_exit": {
+      "id": "preparing_exit",
+      "text": "You have three hours.\n\nThat is what Aldric estimates based on the inspection schedule: the checkpoint on the south road is manned by a shift that rotates at midday, and the shift change creates a twenty-minute window when records cross between outposts and no individual officer has a complete picture of who has passed through. He wants to be at the checkpoint during that window.\n\nThree hours to finish what Sera needs to finish and decide what you are carrying out.\n\nSera is not interested in carrying out originals — the originals stay, because the vault itself is evidence, and an empty vault is a vault that has been cleaned. What she has been preparing for three weeks is the corrected archive: forty-three surveys, cross-referenced, authenticated against the originals by notation that any qualified cartographer can verify. She has them rolled and labeled and organized in a traveling case she found in the vault's storage alcove.\n\nYou carry the case up the stairs and into the winter light of the clearing.\n\nVoss is standing at the tower door watching you emerge. He does not look surprised. He looks like a man watching something he has been waiting forty years to see, taking inventory of how it compares to what he imagined.",
+      "item": {
+        "id": "corrected_archive",
+        "name": "Sera's Corrected Archive",
+        "description": "Forty-three surveys in a traveling case. Each corrected version cross-referenced against the originals, authenticated by notation that any qualified cartographer can verify. Three weeks of work in a lamp-lit underground room. The truth of the River Velas, bound and labeled for someone to do something with.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Take a moment with Voss before you leave.",
+          "next": "voss_farewell"
+        },
+        {
+          "text": "There is no time. Get on the road.",
+          "next": "south_road_ch3"
+        }
+      ]
+    },
+
+    "voss_farewell": {
+      "id": "voss_farewell",
+      "text": "He is smaller than he seems inside the tower.\n\nOutdoors, in the winter light, without the warmth of his layered clothing and his absolute certainty of purpose, Voss is an old man with a compass made of iron who has spent forty years in a burned building waiting for this morning. He looks at the traveling case in your hands. He looks at Sera. He looks at Aldric in his Guild inspector's coat with his notebook tucked under his arm.\n\n'More than I built the compasses for,' he says. Not complaint — assessment.\n\n'Were you expecting fewer of us?' Sera asks.\n\n'I was expecting you,' he says. 'And possibly one other. I was not expecting a Guild official, even a young one.' He looks at Aldric with the careful attention of someone reading a survey. 'Crane's boy.'\n\nAldric goes very still.\n\n'I knew your father,' Voss says. 'Before the committee vote. He was the one who brought the motion to reclassify. He thought opening the archive was the right answer.' He looks at the cleared space above the chapel door, where the carved notation catches the low winter sun. 'He was overruled. He didn't fight it. I have spent eleven years wondering if he regrets that.'\n\nHe looks at you all in turn, then back at the tower.\n\n'I am not going with you,' he says. 'I would slow you down, and someone needs to be here if anyone comes looking.' He holds out a piece of paper — an address, written in the pre-Guild notation. 'There is a woman in the city named Eda. She is eighty-one years old. She was born in one of the fourteen families.' He meets your eyes. 'Tell her Pell's box has been opened.'",
+      "choices": [
+        {
+          "text": "Take the address. Get on the road.",
+          "next": "south_road_ch3"
+        }
+      ]
+    },
+
+    "south_road_ch3": {
+      "id": "south_road_ch3",
+      "text": "The south road going north is different from the north road going south.\n\nThis is not a paradox — it is the basic truth of direction, which your training reinforced at every level: the same ground reads differently depending on which way you are facing. The hills you walked through two days ago, the watershed drainage you identified as wrong, the small wrongnesses that accumulate into the certainty that someone has been lying to you about the landscape — they read the same from this direction, but the implication is different now. Before, the wrongness meant the official map was wrong. Now the wrongness means there is a document in the traveling case on your back that proves it.\n\nAldric walks ahead, checking the road ahead for details you are not trained to read the way he is. He knows the checkpoint schedule. He knows what the inspectors will look for. He knows what a routine inspection looks like from both sides of the barrier, and he is quiet about this in a way that suggests he is currently running through the specifics.\n\nSera walks beside you. She has been underground for three weeks and the light seems to affect her — not distress, something closer to relief, the slow reacquaintance of a body with a world it had voluntarily left. She is looking at the hills.\n\n'The hill to the left,' she says.\n\n'Quarter-league east of where the official survey puts it,' you say.\n\n'Yes.' She looks at it. 'I have been correcting that error for three weeks from underground. This is the first time I have seen it.'\n\nThe checkpoint comes into view around the next bend.",
+      "choices": [
+        {
+          "text": "Let Aldric handle the checkpoint. Stay behind him.",
+          "next": "checkpoint_aldric"
+        },
+        {
+          "text": "Use the inspector's pass directly. You know how checkpoints work.",
+          "next": "checkpoint_pass",
+          "requires": "aldric_pass"
+        },
+        {
+          "text": "Circle the checkpoint through the trees. Avoid the road entirely.",
+          "next": "checkpoint_avoid"
+        }
+      ]
+    },
+
+    "checkpoint_aldric": {
+      "id": "checkpoint_aldric",
+      "text": "Aldric walks forward alone.\n\nThe checkpoint is two officers and a barrier post — the minimal staffing that still counts as an official checkpoint. You and Sera hang back on the road. You have had the conversation about what to do if this goes wrong: the archive is the priority, the originals are still in the vault, you do not need all three of you.\n\nAldric reaches the barrier and presents his pass. The conversation is too quiet to follow at this distance, but you can read the shape of it: one officer checking the pass, the other watching Aldric with a neutrality that is doing work. Aldric is talking with the specific calm of someone performing official routine, the kind of calm that is more convincing than enthusiasm because it doesn't ask to be believed.\n\nThe barrier lifts.\n\nAldric turns and nods to you — the practiced small signal of someone who has done this many times and knows what a competent signal looks like.\n\nYou walk forward. The second officer watches the traveling case without looking at it, which is a skill. You walk through.\n\nOn the other side of the barrier, on the north side of the checkpoint where the road opens into the next valley, Aldric exhales once. Just once.",
+      "choices": [
+        {
+          "text": "Keep moving. Ask him what the officer said.",
+          "next": "north_of_checkpoint"
+        }
+      ]
+    },
+
+    "checkpoint_pass": {
+      "id": "checkpoint_pass",
+      "text": "You take the pass from your coat and walk forward.\n\nThe checkpoint officer is a woman your age, road-competent, with the particular attention of someone who has worked this post long enough to know what ordinary travelers look like and has learned to trust the gap between ordinary and not. She looks at the pass. Looks at you. Looks at the pass again.\n\n'Crane,' she says. Reads the name on the pass.\n\n'Deputy's office,' you say. 'Southern circuit close-out before the winter filing.'\n\nShe has heard this before. This is not a lie — Aldric is in fact doing the close-out, and the pass belongs to him, and the story is technically accurate in every particular. It is also the most natural explanation. The officer who has worked this checkpoint long enough to recognize the rhythm of the southern circuit season knows what a close-out party looks like.\n\n'Three of you?' she says.\n\n'Survey crew,' you say. 'He's the inspector, I'm the surveyor, she's the archivist.' You nod at Aldric and Sera.\n\nA pause that is not long but feels precise.\n\n'Keep the barrier road, not the valley cut,' she says. 'There's a tree down on the valley cut from last week, nobody's cleared it yet.'\n\nShe hands back the pass. She lifts the barrier.",
+      "choices": [
+        {
+          "text": "Thank her. Walk through. Keep moving.",
+          "next": "north_of_checkpoint"
+        }
+      ]
+    },
+
+    "checkpoint_avoid": {
+      "id": "checkpoint_avoid",
+      "text": "You leave the road and move into the tree line twenty meters before the checkpoint comes into clear view.\n\nThe trees here are sparse — winter-stripped, not much cover. But you know how to move in the kind of way that doesn't draw attention, the accumulated knowledge of three years of surveying in places you didn't have official permission to be. You know how to be part of the background. You bring Sera and Aldric into it — tell them with your hands rather than your voice, the field-survey signals you picked up from your master, whose field signals came from someone before him.\n\nSera follows correctly the first time. Aldric follows correctly the third time. They are not trained for this, but they are quiet and they trust you, and that is enough.\n\nYou emerge north of the checkpoint in a stand of oak. The road is visible thirty meters to your right. The checkpoint officers are not looking in your direction.\n\nYou step back onto the road and walk on.\n\n'We should not have to do that again,' Aldric says.\n\n'Probably not,' you agree. 'But it is good to know we can.'",
+      "choices": [
+        {
+          "text": "Continue north. Keep moving.",
+          "next": "north_of_checkpoint"
+        }
+      ]
+    },
+
+    "north_of_checkpoint": {
+      "id": "north_of_checkpoint",
+      "text": "Two hours north of the checkpoint, the road passes through a stand of old pines where the trees are close enough that the wind drops out entirely.\n\nYou hear the hooves before you see the rider.\n\nOne horse, easy pace, coming south. The rider appears around the bend and you recognize the posture before the face — someone who has been in a saddle for long enough that the horse and the movement of it have become part of how they hold themselves in the world.\n\nIdra.\n\nShe reins in and takes in the three of you with the professional assessment of someone who has spent months reading crossroads and travelers and knowing which category each falls into.\n\n'You took your time,' she says. To you specifically.\n\n'I only arrived two days ago.'\n\n'I know. Voss sent a message.' She looks at the traveling case. At Aldric. 'Guild coat,' she says.\n\n'He is with us,' Sera says.\n\nIdra looks at Aldric for a long moment with the particular expression of someone deciding how much extra caution a fact warrants.\n\n'All right,' she says. She turns the horse. 'Ride north with me.' She does not have a spare horse, so this means: walk with me while I ride. 'There are things you do not know about the road ahead.'",
+      "choices": [
+        {
+          "text": "Walk with her. Ask what she knows.",
+          "next": "idra_news"
+        }
+      ]
+    },
+
+    "idra_news": {
+      "id": "idra_news",
+      "text": "She has been riding this road for four months now.\n\nThe Voss deliveries — the compasses left at crossroads for specific kinds of people — are one thing. But there is a secondary network, which Idra describes with the careful brevity of someone who has kept operational details sparse as a professional habit: a loose chain of message carriers who pass information between the people Voss has put into motion, so that someone arriving at the vault knows roughly what has changed in the weeks they were inside it.\n\nWhat has changed, in the weeks you were inside it:\n\nThe Guildmaster — Fen — filed an unusual administrative motion two weeks ago. It reclassifies the southern circuits as an area of strategic cartographic interest, which transfers direct oversight of any archives in the region from the Council's archive division to the Guildmaster's office. A narrow administrative shift. The kind of thing that would not draw attention unless you knew what Archive Fourteen contained.\n\nHe knows someone has been in the vault. He does not yet know who or what they found.\n\n'How long until the reclassification takes effect?' Aldric says. He is walking beside Idra's horse with his notebook in his hand, writing as he goes.\n\n'It was filed two weeks ago. Normal processing is six weeks.' She looks at him. 'Your father's colleague sits on the processing committee.'\n\nAldric stops writing.\n\n'So four weeks,' he says. 'Possibly less.'",
+      "choices": [
+        {
+          "text": "Ask Idra where she is taking you.",
+          "next": "crossroads_again"
+        },
+        {
+          "text": "Ask Aldric what the reclassification means practically.",
+          "next": "aldric_explains_reclassification"
+        }
+      ]
+    },
+
+    "aldric_explains_reclassification": {
+      "id": "aldric_explains_reclassification",
+      "text": "'It means,' Aldric says, 'that when the reclassification takes effect, the Guildmaster can order the vault sealed under his own authority — not the Council's authority, his. He can do it without committee review, without a vote, without administrative record that would be legible to anyone outside his office.'\n\nHe closes his notebook.\n\n'It also means that any material removed from the vault before the reclassification would technically still fall under Council authority. The Council has five independent members who do not owe Fen their positions.' He looks at the traveling case you are carrying. 'If the corrected archive is in the hands of a Council-aligned institution before the reclassification takes effect, Fen cannot order it sealed without the independent members noticing.'\n\nHe looks at Idra.\n\n'Four weeks is enough time,' he says. 'If we move now. If we go directly to the city and do not stop.'\n\nIdra is watching him with an expression that has moved from professional caution to something closer to attention.\n\n'You're Renn Crane's son,' she says.\n\n'Yes.'\n\n'Your father voted to bring the motion to reclassify Archive Fourteen eleven years ago. Before Fen's time.'\n\n'I know.'\n\nA silence that has several layers.\n\n'His vote would have opened the vault,' Idra says carefully.\n\n'I know,' Aldric says. 'I have been thinking about that for eleven years.'",
+      "choices": [
+        {
+          "text": "Ask Idra where she is taking you.",
+          "next": "crossroads_again"
+        }
+      ]
+    },
+
+    "crossroads_again": {
+      "id": "crossroads_again",
+      "text": "The crossroads.\n\nThe same marker stone, the same three roads, the same crow-silence of a place where directions become decisions. You stood here two days ago with a compass that had spent three years pointing wrong and finally moved. You are standing here now with a traveling case full of corrected surveys and a question that has grown larger than any compass can measure.\n\nIdra brings her horse to a stop at the center.\n\n'Three roads,' she says. 'Same as when you arrived.' She nods at each in turn. 'East: Dusk's End. Maren's inn. Safe shelter, warm fire, nobody comes looking there because nobody knows it matters.' She nods north. 'North: the city. Six days' walk, four on horseback. The Guild seat, the Council chambers, the independent members who could receive the archive before the reclassification takes effect.' She looks south. 'South: back the way you came. The chapel. Voss.'\n\nSera is looking at the marker stone. At the base, you notice, the stones have been rearranged — someone has been here since you left, not taking anything, just checking.\n\n'One more thing you should know,' Idra says. 'Two riders came through this morning heading south. Guild livery. Not the inspector's office — the Guildmaster's direct staff.' She looks at you. 'They asked me about travelers on the south road. I told them I hadn't seen any.' She glances at Aldric. 'They were particularly interested in whether I had seen a Guild inspector, young, recently assigned to the southern circuit.'\n\nAldric absorbs this.\n\n'Choose,' Idra says. 'They will be at the chapel before nightfall.'",
+      "choices": [
+        {
+          "text": "North. The city. Get the archive to the Council before Fen closes the window.",
+          "next": "ch3_end"
+        },
+        {
+          "text": "East first. Warn Maren. She is part of this whether she knows it or not.",
+          "next": "ch3_end"
+        },
+        {
+          "text": "South. Voss needs to know what is coming.",
+          "next": "ch3_end"
+        }
+      ]
+    },
+
+    "ch3_end": {
+      "id": "ch3_end",
+      "text": "You tell Idra your decision.\n\nShe nods once — not approval, not disapproval, the professional acknowledgment of someone who has delivered the information and will now do what she does next. She reaches into her saddlebag and produces a second object: a sealed envelope, no name on the outside, the same non-seal of everything Voss has ever sent.\n\n'He said to give this to whichever of you carries the archive when you leave the crossroads,' she says.\n\nYou take it. You break the seal.\n\nInside, in Voss's careful hand — smaller than you would expect, a precise small handwriting for a man with large ideas:\n\nI built six compasses over forty years. Two were lost before they reached anyone. One came back to me. Three reached people who followed them here. You are one of the three. The other two are further along than I told you. One of them has been waiting in the city for eleven years. She will know the archive when she sees it. She already knows it exists. Find Eda. She is eighty-one and she does not have patience for preamble. Start with the river.\n\nThe compass in your pocket is still for a moment.\n\nThen it moves.\n\nNorth.\n\nCertain as the first time, at the crossroads, when the needle finally decided.\n\n— The Meridian continues in Chapter IV.",
+      "end": true
+    }
+
+  }
+}
