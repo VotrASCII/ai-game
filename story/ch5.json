@@ -1,0 +1,167 @@
+{
+  "startScene": "second_morning",
+  "scenes": {
+
+    "second_morning": {
+      "id": "second_morning",
+      "text": "The second morning of the hearing arrives in the ordinary way mornings arrive: cold, grey, with the persistent quality of things that are not going to be stopped by anyone's preference.\n\nFen filed a procedural objection at the close of business yesterday.\n\nAldric reads it aloud over breakfast. It is eleven pages. It challenges Sera's methodology on three technical grounds, contests the chain of custody of the corrected archive, and argues that Eda's family documentation contains an unverified link in the third generation that compromises her standing.\n\n'The third-generation link is my mother,' Eda says, without looking up from her tea. 'I have her birth record, her death record, her marriage record, and her testimony in her own handwriting that her mother told her the name of every family that was displaced.' She sets down the tea. 'I kept it because my grandmother said to. My grandmother said: someone will ask for it eventually.'\n\nRenn is reading the objection with the careful attention of someone looking for the thing that is not the objection.\n\n'He is buying time,' Renn says. 'The objection itself is procedurally valid — Mareth will need the morning to review it before the hearing resumes. That gives him until noon.' He sets the pages down. 'There is something he is doing with the morning that we don't know about yet.'\n\nAldric's expression shifts slightly in the way it shifts when he is putting a timeline together.\n\n'The reclassification,' he says. 'The processing timeline was six weeks. It has been six weeks and three days.'",
+      "choices": [
+        {
+          "text": "Get to Mareth's office. The reclassification cannot take effect during an active evidentiary review.",
+          "next": "race_to_mareth"
+        },
+        {
+          "text": "Split up. Aldric goes to Mareth, you and Sera go to the vault.",
+          "next": "divide_tasks"
+        }
+      ]
+    },
+
+    "divide_tasks": {
+      "id": "divide_tasks",
+      "text": "You lay it out quickly.\n\nAldric goes to Mareth's office — the evidentiary protection argument, the procedural shield, whatever he can get in place before the reclassification clears. Renn goes with him; his Council position makes him the most credible voice in an administrative dispute.\n\nYou and Sera go south.\n\nNot all the way — you cannot reach the vault and return in a morning. But Idra is still in the city, you know where she stabled her horse, and Idra has been riding the southern circuit for months.\n\n'I can send a message to Voss,' Sera says. She is already on her feet. 'He needs to know what is happening. If the reclassification takes effect before we can stop it, Fen will send people to the vault. Voss needs to—'\n\nShe stops.\n\n'He needs to be somewhere else,' you say.\n\n'Yes.'\n\nEda is watching both of you with the calm of someone who has had sixty years to practice being unhurried in urgent situations.\n\n'Go,' she says. 'I will be at the hearing room at noon whether Mareth has resolved the objection or not. Fen is not the only one who can make a procedural argument.'",
+      "choices": [
+        {
+          "text": "Get to Idra. Get the message south.",
+          "next": "idra_again"
+        }
+      ]
+    },
+
+    "race_to_mareth": {
+      "id": "race_to_mareth",
+      "text": "You are at Mareth's office before the hour turns.\n\nShe is already there — she had the same thought, or Renn reached her first, or she has simply been doing this long enough to know what a procedural objection filed at close of business on the eve of a reclassification means.\n\nShe is writing when you arrive. She does not stop writing when she speaks.\n\n'Evidentiary material in an active review is protected from administrative reclassification under the archive access provision,' she says. 'I am logging the protection order now. It covers Archive Fourteen and all material referenced in the petition filing.'\n\n'Fen knows this,' Aldric says.\n\n'Yes,' Mareth says. 'Which means the reclassification motion was never primarily about the vault. It was about establishing that he moved first. That he had authority. That even if the hearing proceeds, he was the one who initiated action, which gives him grounds to challenge the review's jurisdiction on separation-of-authority grounds.'\n\nShe finishes writing. She looks up.\n\n'He is a man who thinks three moves ahead,' she says. 'He has been thinking ahead for twelve years. This particular move he has been preparing for eleven.'\n\n'Since my father's motion,' Aldric says.\n\n'Since before that,' Mareth says. 'Since he was appointed Guildmaster. He knew the vault existed. He knew what was in it.' She stands. 'He has known this hearing was possible for twelve years. He has had twelve years to prepare for it.'",
+      "choices": [
+        {
+          "text": "Ask what he prepared that you don't know about.",
+          "next": "fens_move"
+        }
+      ]
+    },
+
+    "idra_again": {
+      "id": "idra_again",
+      "text": "Idra is at the stable, as you somehow knew she would be.\n\nShe listens to the situation with the practiced attention of someone who has been the person in the middle of a message network for long enough that she processes multiple variables at once. She asks three questions: how long until the hearing resumes, whether Mareth's protection order is already filed, and whether Voss has anyone else who can reach him before midday.\n\n'There is someone,' she says. 'On the south road. One of the other compass finders — someone who found theirs before you did and has been in the circuit. I have been passing messages through her for two months.'\n\n'You have been running a network,' Sera says.\n\n'Voss asked me to,' Idra says. She already has her horse ready — she has always already had her horse ready. 'I told you in the beginning. Sixth delivery. I have been trying, professionally, not to think too hard about the other five.'\n\nShe swings into the saddle.\n\n'Get back to the hearing,' she says. 'Voss will know before noon. What he does with that information is his.' She looks at the compass outline in your coat. 'It has been pointing north for six days. Has it moved?'\n\nYou check.\n\nIt points at the hearing room. Two streets east.\n\n'Yes,' you say.\n\nIdra nods once, the particular nod of someone who expected this.\n\n'Then go there,' she says.",
+      "choices": [
+        {
+          "text": "Go to the hearing room.",
+          "next": "fens_move"
+        }
+      ]
+    },
+
+    "fens_move": {
+      "id": "fens_move",
+      "text": "You reach the hearing room with fifteen minutes before noon.\n\nFen is already there.\n\nHe has brought a third advisor and a document case that he did not have yesterday. He is sitting at his side of the table with the stillness of someone who has resolved their calculations and is waiting for the room to catch up.\n\nMareth reviews the procedural objection aloud. She rules on each of the three technical grounds in sequence — Sera's methodology: admissible, the notation error was corrected before filing. Chain of custody: documented, the filing record is complete. Third-generation standing: verified by the materials Eda has produced.\n\nFen accepts each ruling without expression.\n\nThen Mareth says: 'We resume with the counter-evidence.'\n\nFen opens his document case.\n\nHe produces three things: a letter, a ledger, and a map.\n\nThe letter is dated eleven years ago. It is addressed to Councillor Renn Crane from the Guild's archive director at the time. It describes Archive Fourteen as containing sensitive administrative materials relevant to ongoing boundary negotiations, and recommends against public disclosure pending resolution of those negotiations.\n\nRenn reads it. His face goes careful.\n\n'I never received this letter,' he says.\n\n'It was filed under your signature,' Fen says.\n\nA silence.\n\nEda is looking at the ledger. She has not touched it — she is reading it from across the table with the focused attention of someone who has spent eighty-one years learning how to read documents that were meant to be hidden from her.",
+      "choices": [
+        {
+          "text": "Ask Eda what the ledger is.",
+          "next": "eda_reads"
+        }
+      ]
+    },
+
+    "eda_reads": {
+      "id": "eda_reads",
+      "text": "Eda looks at Fen.\n\n'May I?' She gestures at the ledger.\n\nFen slides it toward her. Carefully. With the precision of someone who has staged a scene and is executing it on schedule.\n\nEda opens the ledger.\n\nShe reads. Three pages. You watch her face — the focused calm she has maintained through everything, the eighty-one years of controlled patience. It does not break. But something in it sharpens, the way a map sharpens when you finally identify the landmark you have been looking for.\n\nShe sets the ledger down.\n\n'This is a compensation record,' she says. 'Dated two years after the eviction. It lists fourteen families and payment amounts issued to each.' She looks at Fen. 'It purports to show that the displaced families were compensated for their relocation. That the land transfer was not a taking but a negotiated settlement.'\n\n'It is an accurate record,' Fen says.\n\n'It is a forged record,' Eda says.\n\nA silence.\n\n'My grandmother's family received no compensation,' Eda says. 'She told me this explicitly and I have her written account. Nine of the fourteen families received no compensation. Eda Sorn counted them.' She looks at the ledger. 'This document contains the names of people who were evicted and who received nothing. It has numbers next to those names. The numbers are false.' She closes the ledger. 'If you would like me to provide the written accounts of the families I have collected over eighty-one years, I can do so. I have accounts from six of the fourteen lines. The other eight either did not survive or left no documentation I have been able to find.'\n\nMareth makes a note.\n\n'The map,' she says.",
+      "choices": [
+        {
+          "text": "Watch. The map is Fen's final argument.",
+          "next": "the_map"
+        }
+      ]
+    },
+
+    "the_map": {
+      "id": "the_map",
+      "text": "Fen unfolds the third document.\n\nIt is a map of the River Velas region, dated approximately one hundred and eighty years ago. Pre-Guild notation. The river runs in the position the current official map shows — east of where the originals in the vault show it, in the position that gives Harmont's land to Harmont.\n\nBut the notation is correct. The pre-Guild system. Formatted precisely.\n\n'This is an original survey,' Fen says. 'Pre-Guild, pre-dating the founding Guildmaster's map by twenty years. It shows the river in the same position as the current official map. If the river was in this position before the Guild's founding, then the originals in Archive Fourteen — which show a different position — are themselves the erroneous documents.'\n\nHe looks at Mareth.\n\n'The petition claims that the current official map is a falsification of the original surveys. If I can show that an earlier survey agrees with the current map, the petitioner's claim of falsification fails. The originals in the vault are not the oldest documents. This map predates them.'\n\nThe room is quiet.\n\nSera is looking at the map.\n\nShe is looking at it the way she looks at things she has read before — with the recognition of something she already knows from a different angle. Her expression is not alarmed.\n\nYou look at the notation. The formatting. Something in it is wrong. Not obviously. In the way a hill is a quarter-league east of where the map says it is — wrong in a way only a surveyor's instruments can confirm, or wrong in a way that the person reading it has specifically been trained to recognize.",
+      "choices": [
+        {
+          "text": "Ask to examine the map.",
+          "next": "you_examine_map"
+        },
+        {
+          "text": "Let Sera examine the map. She spent three weeks with every notation system used in that vault.",
+          "next": "sera_examines_map"
+        }
+      ]
+    },
+
+    "you_examine_map": {
+      "id": "you_examine_map",
+      "text": "Mareth passes the map to you.\n\nYou take it.\n\nThe notation is pre-Guild. That part is correct. The dating is consistent with the period. The river runs east, matching the current official map.\n\nBut you spent three years as a ghost surveyor mapping territory the Guild pretended did not exist, using the notation systems you taught yourself from old documents and from your master, who learned them from someone before him, who learned them from a time before the Guild existed. You know this notation the way you know the watershed drainage — not as something you studied but as something you walked through.\n\nThe notation in this map uses a convention that was not standardized until forty years after the date on the document.\n\nThe dating symbol in the lower right corner uses the post-Guild system, which replaced the pre-Guild symbol for the current year in the first decade of the Meridian Guild's existence.\n\nThis document is dated before the Guild. It uses Guild notation to do so.\n\nYou set the map on the table.\n\n'The dating notation,' you say. 'Lower right corner. This uses the Guild calendar system. The Guild calendar was adopted in year one of the Guild's existence. This document is dated twenty years before that.' You look at Fen. 'Whoever made this map knew the notation system well enough to get everything else right. They did not know — or did not check — that the year marker they used did not exist yet.'",
+      "choices": [
+        {
+          "text": "Wait for Mareth's response.",
+          "next": "verdict_approaches"
+        }
+      ]
+    },
+
+    "sera_examines_map": {
+      "id": "sera_examines_map",
+      "text": "Mareth passes the map to Sera.\n\nSera takes it with both hands. She is quiet for what feels like a long time but is probably thirty seconds.\n\n'The notation is pre-Guild,' she says. 'Everything except one convention.' She sets the map flat on the table and points, without looking up, at the lower right corner. 'The year marker. This symbol was introduced in the first decade of the Meridian Guild's existence to standardize year notation across the new cartographic authority. It replaced three regional systems that had been in use previously.' She looks at the date on the map. 'This document is dated twenty years before the Guild's founding. It uses a notation symbol that was created after the Guild's founding.' She looks at Fen. 'The symbol itself is correctly formed. Whoever made this map knew the system well. They simply did not know — or forgot to check — that the symbol they used to date the document did not exist yet when the document was supposed to have been made.'\n\nShe slides the map back to the center of the table.\n\n'I spent three weeks reading every notation system used in Archive Fourteen,' she says. 'Including the transitional period between pre-Guild and Guild standardization. This map is from the transitional period, not the pre-Guild period. It is approximately forty years old, not one hundred and eighty.'",
+      "choices": [
+        {
+          "text": "Wait for Mareth's response.",
+          "next": "verdict_approaches"
+        }
+      ]
+    },
+
+    "verdict_approaches": {
+      "id": "verdict_approaches",
+      "text": "Mareth looks at the map for a long time.\n\nFen does not speak. He looks at the map as well, with the expression of a man watching a calculation he trusted come apart at a point he did not check.\n\n'I will need to have this notation assessed independently,' Mareth says. 'By a notation expert not affiliated with the Guild.'\n\n'Voss,' Eda says.\n\nMareth looks at her.\n\n'Voss,' Eda repeats. 'He is the foremost living authority on pre-Guild cartographic notation. He trained before the Guild existed. He is currently in the southern hill country. He can be here in six days.'\n\nFen finally speaks.\n\n'The hearing cannot be suspended for six days.'\n\n'The hearing can be suspended for as long as the review officer determines is necessary to properly evaluate the evidence,' Mareth says. She looks at Fen with the calm of someone whose authority is structural and does not require assertion. 'I am determining that six days is necessary.' She closes her notebook. 'The counter-document's provenance will be assessed by an independent expert. The protection order on Archive Fourteen remains in effect. The reclassification motion is stayed pending the review outcome.'\n\nShe stands.\n\nFen looks at you — not at Mareth, not at Eda, not at Aldric or Renn. At you.\n\n'Your master,' he says. 'Who built the compasses.'\n\n'Voss taught him,' you say. 'Yes.'\n\n'And your master taught you.'\n\n'Yes.'\n\nHe nods once. The nod of someone updating a file.\n\n'I have been running the wrong calculation,' he says. He straightens his coat. 'I thought the archive was the threat. I thought if the vault stayed sealed, the archive could not be used.' He picks up his document case. 'I was wrong about what the archive was.'\n\nHe leaves.",
+      "choices": [
+        {
+          "text": "Ask Eda what he meant.",
+          "next": "what_fen_meant"
+        },
+        {
+          "text": "Let him go. You understand already.",
+          "next": "what_fen_meant"
+        }
+      ]
+    },
+
+    "what_fen_meant": {
+      "id": "what_fen_meant",
+      "text": "Eda watches the door for a moment after Fen has gone through it.\n\n'He thought the archive was the evidence,' she says. 'The documents in the vault. The originals. The falsified surveys.' She picks up her folder — the eighty-one years of her grandmother's account and her mother's record and the names of the other families she has spent her life collecting. 'He was not wrong. The documents are evidence.'\n\nShe closes the folder.\n\n'But the archive is not the threat,' she says. 'The archive has been down there for two hundred years. Sealed. It could not move. Fen could always, in theory, find a way to seal it again — reclassify it, lose it in administrative records, find a new Voss who would stay in a tower another forty years and not act.' She looks at you. 'The threat is the people who know what is in it. Who walked through the territory and compared what their instruments said to what the map said. Who spent three weeks underground correcting it. Who has been alive for eighty-one years building the case. Who was twelve years old and read the committee minutes in his father's study.'\n\nShe looks at Aldric. At Sera. At you.\n\n'The archive is paper,' she says. 'Paper can be burned. But you cannot burn what has already been read.'\n\nRenn is in the doorway. He has been listening.\n\n'Voss is coming,' he says. He holds up a piece of paper — a message, recently arrived, in the pre-Guild notation. 'He left the tower this morning. He says he should have left it forty years ago.'",
+      "choices": [
+        {
+          "text": "Six days. Wait for Voss. See what comes after.",
+          "next": "six_days_later"
+        }
+      ]
+    },
+
+    "six_days_later": {
+      "id": "six_days_later",
+      "text": "Voss arrives on the fifth day.\n\nHe is, as you predicted, slower than the road. He is also, as you did not predict, not alone. With him is a woman you have never met — sixties, road-competent, with the look of someone who has been in this particular story longer than anyone told you about. She introduces herself as the third compass finder. She has been working in the city for three months under a name nobody asked her to explain. She has, she says, been waiting for you to arrive.\n\nMareth examines Fen's counter-document with Voss in the room.\n\nIt takes Voss four minutes.\n\n'Transitional period,' he says. 'Year forty of the Guild, approximately. I know this convention — I was there when it was introduced. I was young. It was a bad decision and we told them so.' He sets the map down. 'Whoever made this was good. They were not as old as this map pretends to be.'\n\nThe hearing reconvenes.\n\nMareth rules.\n\nYou are not in the room for all of it — the procedural elements take hours, and hours of legal process require a kind of attention that works in a different part of the brain than everything you have done to get here. You sit outside with Sera and the third compass finder whose name, it turns out, is Lan, and who tells you things about the network Voss has been running — the quiet decades of preparation, the false starts, the people who found compasses and went home — with the matter-of-fact quality of someone finally allowed to put down something they have been carrying a long time.\n\nEda comes out at midday.\n\nShe sits beside you on the bench in the corridor.\n\n'It is going to take time,' she says. 'Not this hearing. The consequences. The boundary reviews, the land assessments, the families that need to be found. The ones whose descendants are still out there somewhere, not knowing they have a claim.' She looks at her hands — the folder she has been carrying for sixty years, slightly less full now that she has filed its contents. 'I am eighty-one. I cannot finish this.'\n\nA pause.\n\n'But it has started,' she says. 'That is what today is. It has started.'",
+      "choices": [
+        {
+          "text": "Ask her what she wants you to do next.",
+          "next": "what_next"
+        }
+      ]
+    },
+
+    "what_next": {
+      "id": "what_next",
+      "text": "Eda thinks for a moment.\n\n'The vault still has a hundred and sixty surveys Sera has not corrected,' she says. 'The hearing has established the evidentiary value of Sera's methodology. The remaining corrections are now part of the official record process.' She looks at Sera. 'Someone needs to go back and finish.'\n\nSera nods. She has been going to say this herself, you can tell.\n\n'The families,' Eda continues. 'Not just mine. The other thirteen lines. Six I have accounts for. Eight I don't. Someone needs to look.' She looks at Lan, the third compass finder. 'You have been looking.'\n\n'Two years,' Lan says. 'I have found three lines. The others went farther than I expected.'\n\nEda nods.\n\n'The official map,' she says. She looks at you. 'Someone needs to make a correct one. An official one, one that goes into the Guild's primary record under full administrative process. Not Sera's corrected versions — those are evidence. An original survey, freshly conducted, that the Guild is required by the hearing outcome to accept.' She looks at your coat pocket. 'By a licensed surveyor.'\n\nYou have not had a survey license in three years.\n\n'Mareth is reviewing the expulsion record,' Aldric says from down the corridor. He has been listening. 'She found a procedural irregularity in the review board's original findings.' He pauses. 'She said she will not take long.'",
+      "choices": [
+        {
+          "text": "Wait for Mareth.",
+          "next": "ch5_end"
+        }
+      ]
+    },
+
+    "ch5_end": {
+      "id": "ch5_end",
+      "text": "Mareth comes out of the hearing room at the third hour of the afternoon.\n\nShe has a folder under her arm — the kind that means administrative action, not evidence. She looks at the four of you on the bench in the corridor: you, Sera, Aldric, Lan. Eda is still beside you, the empty folder in her hands.\n\n'The hearing has concluded,' Mareth says. 'The petition is sustained. Archive Fourteen and all its contents are transferred to the custody of the independent review office pending a full historical assessment. The reclassification motion is void. The boundary records affecting the Velas watershed are flagged for review.'\n\nShe opens her folder.\n\n'The review board finding against a licensed surveyor,' she says, 'three years and four months ago, has been assessed as procedurally deficient. The finding is vacated.' She looks at you. 'Your license is reinstated.'\n\nThe corridor is quiet. The building around you continues its ordinary life — footsteps, a door, someone's distant voice reading aloud from something administrative. The ordinary machinery of the world, running.\n\nYou take the compass out of your coat pocket.\n\nThe needle is still. Not wrong-still, not the stuck-south-and-wrong of three years. Still in the way of something that has arrived. That has done what it was made for and is now resting in the palm of your hand, a small piece of iron that your master built and left at a crossroads for someone who would know what to do with it.\n\nYou think about the vault. The hundred and sixty surveys. The eight families. The map that needs to be made correctly, freshly, by someone with a license and instruments and three years of experience walking territory that official maps have never told the truth about.\n\nThe needle moves.\n\nSouth.\n\nBack the way you came. Back to the watershed drainage and the hills a quarter-league east. Back to the land as it actually is, waiting to be correctly recorded for the first time in two hundred years.\n\nYou close your fingers around the compass.\n\n'When do we leave?' Sera asks.\n\nYou look at the compass. At Sera. At Aldric, who has already picked up his notebook. At Lan, who has already shouldered her pack. At Eda, who is looking at you with the eighty-one-year patience of someone who has been waiting for this answer since before you were born.\n\n'Now,' you say.\n\nYou leave the corridor.\n\nYou walk out into the city, which is its ordinary afternoon self, full of the ordinary business of a world that does not yet know what just happened in a small hearing room. It will know. That is what today started.\n\nThe compass points south.\n\nYou walk toward it.",
+      "end": true
+    }
+
+  }
+}

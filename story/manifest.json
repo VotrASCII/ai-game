@@ -85,8 +85,12 @@
       "title": "The First Line",
       "teaser": "What was built on the lie. What stands when it falls.",
       "file": "story/ch5.json",
-      "startScene": "epilogue_start",
-      "summaries": []
+      "startScene": "second_morning",
+      "summaries": [
+        {
+          "text": "Fen filed a procedural objection overnight. He produced three counter-documents: a forged letter, a falsified compensation ledger, and a map with an anachronistic notation error that exposed it as a forgery forty years newer than it claimed. The notation error was identified in the hearing room. Mareth stayed the reclassification, summoned Voss, and suspended the hearing for six days. When Voss arrived, he confirmed the forgery in four minutes. The hearing was sustained: the petition stands, the vault transfers to independent custody, the boundary records are flagged for review. Your survey license was reinstated — vacated by Mareth as procedurally deficient. The compass pointed south. You left the city the same afternoon."
+        }
+      ]
     }
   ]
 }
