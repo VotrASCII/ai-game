@@ -1,0 +1,443 @@
+/* ── Reset ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Variables ─────────────────────────────────────────────────── */
+:root {
+  --bg:           #0a0a0a;
+  --bg-panel:     #111111;
+  --bg-hover:     #161616;
+  --text:         #e6e1d8;
+  --text-dim:     #4a4640;
+  --text-mid:     #7a7268;
+  --accent:       #9c8a6e;
+  --accent-dim:   #5c4e3a;
+  --border:       #1c1c1c;
+  --border-bright:#2a2a2a;
+
+  --font-prose:   'EB Garamond', Georgia, serif;
+  --font-ui:      'Lekton', 'Courier New', monospace;
+
+  --prose-size:   1.225rem;
+  --prose-line:   1.95;
+  --max-width:    660px;
+
+  --transition:   0.35s ease;
+}
+
+/* ── Base ──────────────────────────────────────────────────────── */
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-prose);
+  font-size: var(--prose-size);
+  line-height: var(--prose-line);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* ── Title Screen ──────────────────────────────────────────────── */
+#title-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: opacity var(--transition);
+}
+
+#title-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#title-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+#game-title {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+#game-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-mid);
+  max-width: 360px;
+  line-height: 1.7;
+}
+
+#title-actions {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+#title-actions button {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+#title-actions button:hover {
+  color: var(--text);
+  border-bottom-color: var(--accent-dim);
+}
+
+#title-footer {
+  position: absolute;
+  bottom: 2rem;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+/* ── Game Screen ───────────────────────────────────────────────── */
+#game-screen {
+  min-height: 100vh;
+  position: relative;
+  transition: opacity var(--transition);
+}
+
+#game-screen.hidden {
+  display: none;
+}
+
+/* ── UI Bar (top right) ────────────────────────────────────────── */
+#ui-bar {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 50;
+}
+
+#inventory-btn {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+#inventory-btn:hover {
+  color: var(--text-mid);
+  border-bottom-color: var(--accent-dim);
+}
+
+#inventory-count {
+  color: var(--accent);
+}
+
+/* ── Inventory Panel (slide from right) ─────────────────────────── */
+#inventory-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  background: var(--bg-panel);
+  border-left: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: transform var(--transition);
+  overflow-y: auto;
+}
+
+#inventory-panel.open {
+  transform: translateX(0);
+}
+
+#inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+#inventory-close {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  transition: color var(--transition);
+}
+
+#inventory-close:hover {
+  color: var(--text);
+}
+
+.inv-empty {
+  font-style: italic;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.inventory-item {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.inventory-item:last-child {
+  border-bottom: none;
+}
+
+.inv-item-name {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.inv-item-desc {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  font-style: italic;
+}
+
+/* ── Main Game Area ────────────────────────────────────────────── */
+#game {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 2rem 8rem;
+  transition: opacity 0.2s ease;
+}
+
+#game.fading {
+  opacity: 0;
+}
+
+/* ── Scene Text ────────────────────────────────────────────────── */
+#scene-text p {
+  font-family: var(--font-prose);
+  margin-bottom: 1.6em;
+}
+
+#scene-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* blinking cursor during typewriter */
+.tw-cursor {
+  display: inline-block;
+  width: 1px;
+  height: 0.9em;
+  background: var(--text-dim);
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Choices ───────────────────────────────────────────────────── */
+#choices-container {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#choices-container.hidden {
+  display: none;
+}
+
+.choice {
+  display: flex;
+  gap: 1.2rem;
+  align-items: baseline;
+  padding: 0.65rem 0;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(6px);
+  animation: choice-appear 0.5s forwards;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.choice:last-child {
+  border-bottom: none;
+}
+
+.choice:hover {
+  border-bottom-color: var(--border);
+}
+
+.choice:hover .choice-text {
+  color: var(--text);
+}
+
+.choice-num {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  flex-shrink: 0;
+  padding-top: 0.15em;
+}
+
+.choice-text {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--text-mid);
+  line-height: 1.6;
+  transition: color var(--transition);
+}
+
+.choice.locked .choice-text {
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-dim);
+  cursor: not-allowed;
+}
+
+.choice.locked .choice-num {
+  color: var(--text-dim);
+}
+
+@keyframes choice-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Item Notification ─────────────────────────────────────────── */
+#item-notification {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-bright);
+  border-left: 2px solid var(--accent);
+  padding: 1.1rem 1.4rem;
+  max-width: 260px;
+  z-index: 300;
+  transform: translateX(calc(100% + 3rem));
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+#item-notification.show {
+  transform: translateX(0);
+}
+
+.notif-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+#item-notif-name {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+#item-notif-desc {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-mid);
+  line-height: 1.55;
+  font-style: italic;
+}
+
+/* ── End / Restart ─────────────────────────────────────────────── */
+#restart-container {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+#btn-restart {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+#btn-restart:hover {
+  color: var(--text);
+  border-bottom-color: var(--accent-dim);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 4px; }
+::-webkit-scrollbar-track  { background: var(--bg); }
+::-webkit-scrollbar-thumb  { background: var(--border-bright); border-radius: 2px; }
+
+/* ── Utilities ─────────────────────────────────────────────────── */
+.hidden {
+  display: none !important;
+}

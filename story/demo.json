@@ -1,0 +1,197 @@
+{
+  "title": "The Meridian",
+  "subtitle": "A demo — a fragment of an unwritten road.",
+  "startScene": "start",
+
+  "scenes": {
+
+    "start": {
+      "id": "start",
+      "text": "The road gives out at the crossroads.\n\nYou've been walking since before the sky turned red, and now it is the color of old rust — painting the cracked flagstones and the tilted road signs and the flat stretch of land around you in equal measure. The air has that particular weight to it, the weight of rain still hours away but already decided. To the west, where the hills catch the last light, clouds are building themselves into something serious.\n\nThree roads from here. East, toward a cluster of lights that can only be a settlement — two kilometers, maybe three, close enough that if the wind shifts you'd catch woodsmoke. North, a narrow path that enters the tree line and does not visibly exit it. South, the road you came from and everything you left behind on it.\n\nYou stop. Set down your pack. Roll your shoulders and listen.\n\nNothing but wind through tall grass and the distant complaint of a crow.\n\nThat is when you see it — wedged into the base of the old stone marker, tucked into a crack as though someone hid it there in a hurry, or dropped it running. A compass. Small, brass-cased, the face glass scratched but unbroken.\n\nYou pick it up. Turn it over. The needle swings lazily and settles.\n\nIt points south.\n\nYou are heading north. There is nothing south of here that matters anymore. You shake the compass. Tap the glass. The needle holds. Patient. Certain.\n\nIt does not point north.",
+      "item": {
+        "id": "wayward_compass",
+        "name": "Wayward Compass",
+        "description": "The needle points south with quiet conviction, as if it knows something about you that you don't know about yourself."
+      },
+      "choices": [
+        {
+          "text": "Head east, toward the settlement lights.",
+          "next": "road_east"
+        },
+        {
+          "text": "Take the north path, into the trees.",
+          "next": "path_north"
+        },
+        {
+          "text": "Stay at the crossroads. Wait to see what comes.",
+          "next": "crossroads_wait"
+        }
+      ]
+    },
+
+    "road_east": {
+      "id": "road_east",
+      "text": "The settlement is called Dusk's End — or so the painted board above the gate suggests, the letters flaking but legible if you know what you're looking for.\n\nIt is a small place. Eight buildings, maybe ten, the kind that have been repaired so many times they are more patch than original timber. A wall of rough stakes surrounds the perimeter — not tall enough to stop anything serious, but enough to say something. We are here. We chose to be here.\n\nThe gate stands open. A boy of perhaps twelve sits beside it on an upturned crate, whittling something that might one day become a bird. He doesn't look up as you pass.\n\nThe inn is the largest structure — two floors, warm amber light leaking from the lower windows, a sign bearing a painted candle that has clearly never been lit. Inside it smells of wet wool and something heavy cooking on a fire that has been working too long.\n\nThree men at a corner table look up when you enter and look away again. Not unfriendly. Just tired.\n\nThe keeper stands behind the bar. A woman somewhere between forty and sixty, with the kind of face that has made a decision about something and never revisited it. She sets a clay cup down in front of the nearest stool before you've said a word.\n\n\"Drink,\" she says. \"Then tell me where you came from.\"\n\nHer eyes travel briefly to your coat pocket. To the outline of the compass there.\n\nShe already knows something.",
+      "choices": [
+        {
+          "text": "Drink. Tell her honestly — a compass, found at the crossroads, that doesn't point north.",
+          "next": "village_honest"
+        },
+        {
+          "text": "Drink. Say nothing about the compass. See what she volunteers.",
+          "next": "village_silent"
+        },
+        {
+          "text": "Ask her what she knows before you say anything at all.",
+          "next": "village_ask"
+        }
+      ]
+    },
+
+    "village_honest": {
+      "id": "village_honest",
+      "text": "You set the compass on the bar.\n\nThe innkeeper looks at it for a long moment. She doesn't touch it. Her expression doesn't change — which is itself an expression, you have learned.\n\n\"Found at the crossroads,\" she finally says. Not a question.\n\n\"Yes.\"\n\n\"In the stones at the base of the marker.\" She picks up a cup and dries it slowly. \"Someone put it there. Someone who knew you'd be passing through.\"\n\nYou wait.\n\n\"I've seen two others like it in twenty years. Both times, the person who found it didn't understand what they were carrying until much later.\" She sets the cup down. Looks at you directly for the first time. \"The last one who found a compass like this walked out of here three months ago heading south. I haven't heard from them since.\"\n\nThe fire pops in the hearth. Someone at the corner table laughs at something, and the sound is ordinary and out of place all at once.\n\n\"So,\" she says. \"Are you staying the night? Or are you going to go chase whatever that thing is pointing at?\"\n\nYou realize the needle has shifted again. It is pointing south.\n\nToward the door.",
+      "choices": [
+        {
+          "text": "Stay the night. The road south will keep until morning.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "village_silent": {
+      "id": "village_silent",
+      "text": "You don't mention the compass.\n\nYou drink. The ale is thin but warm, and that is enough. The innkeeper refills your cup without being asked, and asks, in the manner of someone who has learned the value of questions that can be refused, where you are headed.\n\n\"North,\" you say.\n\nShe nods as though this were obvious.\n\nYou sit with three strangers who become, over the course of an hour, people with names and specific complaints about the road condition east of the hills. One of them laughs at something you say. One of them tells you about a path through the pines that cuts three hours off the northern route, if you can find the second blaze mark on the oak trees.\n\nIt is, despite everything, a pleasant evening.\n\nWhen you finally stand to go to your room, the innkeeper says, without looking up from the glass she's drying: \"Whatever you found at the crossroads — keep it close. These are strange times for lost things to be finding their way into the right hands.\"\n\nYou hadn't mentioned the compass.\n\nShe hadn't asked.",
+      "choices": [
+        {
+          "text": "Sleep. Ask her in the morning what she meant.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "village_ask": {
+      "id": "village_ask",
+      "text": "\"What do you know?\" you ask. \"Before I say anything.\"\n\nSomething in her face relaxes — like a knot that has been waiting to come undone. She folds her arms on the bar.\n\n\"I know you found something at the crossroads. I know you've been sitting here turning it over in your coat pocket because you don't know what to make of it and you don't fully trust the look on my face.\" She pauses. \"And I know that whoever put it there has been leaving things at that marker for going on six months. You are the first person who has sat down in front of me afterward.\"\n\nShe looks at you steadily.\n\n\"The others just walked on. Whichever direction the thing was pointing.\"\n\nYou consider this.\n\n\"You've been waiting?\" you ask.\n\n\"Watching,\" she says. \"There's a difference.\"\n\nOutside, the first drops of the forecasted rain hit the window. Both of you ignore it.\n\n\"Tell me what direction it points,\" she says. \"I'll tell you what I think it means.\"",
+      "choices": [
+        {
+          "text": "\"South. It points south.\"",
+          "next": "demo_end"
+        },
+        {
+          "text": "\"I'd rather not say. Not yet.\"",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "path_north": {
+      "id": "path_north",
+      "text": "The path narrows within a dozen steps of the tree line.\n\nWhatever road this was — and there are old stones underfoot that suggest it was a road once, laid with intention — it has been losing the argument with the forest for a long time. Roots have cracked the paving. Branches have closed overhead into a canopy that turns the last evening light green and thin. You walk under it and feel the temperature drop the way forests have their own weather, their own opinion about things.\n\nThe path bends right, then left, then opens into a small clearing.\n\nHere the trees stand back from a circle of old stones — not natural, not random. Someone arranged these. Someone came here with intent and the patience to move large things, and they did it long enough ago that the forest has grown around them like a decision it has accepted. The stones are worn smooth on top, and in the center of the circle, the ground has been disturbed recently. Not dug. Pressed down, as if something heavy rested here and then left.\n\nYou take the compass out.\n\nThe needle points straight down.",
+      "choices": [
+        {
+          "text": "Study the standing stones more carefully. Don't cross into the circle.",
+          "next": "forest_look"
+        },
+        {
+          "text": "Follow where the compass points — past the stones, deeper in.",
+          "next": "forest_deep",
+          "requires": "wayward_compass"
+        },
+        {
+          "text": "Back away. Whatever this is, you'll come back when you know more.",
+          "next": "forest_back"
+        }
+      ]
+    },
+
+    "forest_look": {
+      "id": "forest_look",
+      "text": "You circle the stones without crossing inside.\n\nUp close they are older than they looked from the path. The surface isn't just worn — it has been worked, deliberately, in a pattern that has been half-erased by time and weather and the slow patient pressure of lichen. You crouch beside the smallest stone and trace the carved lines with your finger.\n\nThey could be text. They could be a map. They could be both. They could be neither — just the marks of a mind working something out in stone because it had no other medium.\n\nThe compass needle, you notice, has settled. It no longer points south. It points at the center of the circle, where the ground was disturbed.\n\nYou stay until the light fails fully.\n\nThe forest around the clearing is quiet in a way forests aren't supposed to be. No insects. No wind. No settling of branches. Whatever came here and pressed down the center of that circle came recently enough that the normal life of the woods hasn't resumed around it.\n\nYou back out the way you came. You carry the unease with you like a stone in a pocket, and when you reach the crossroads you stand for a moment looking at the eastern lights and deciding.",
+      "choices": [
+        {
+          "text": "Head to the settlement. You need information before you go back in.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "forest_deep": {
+      "id": "forest_deep",
+      "text": "You follow the needle.\n\nIt had been pointing down — straight down, drawn to something beneath the earth — and now, as you move slowly around the outside of the circle, it shifts. Not south. Not north. Something in between, slightly west: this way, between these two particular trees, where the shadows are deepest and the old road stones are thickest underfoot.\n\nYou go between the trees.\n\nThe path beyond isn't a path at all. It is a memory of one. But the ground is clear enough to walk and the compass is certain, and whatever this instrument was made for, it was made for exactly this — for finding something that had stopped wanting to be found.\n\nTwenty steps past the standing stones, you find the marker.\n\nIt has been here a long time. Stone, waist-high, carved with a script you don't recognize. Though something in the shape of the letters suggests a name, or a direction, or both — the way some things carry their meaning in their form before you ever parse their sense.\n\nAt its base, half buried in the soft earth, a small disc of dark metal. You dig it out with your fingers.\n\nYou turn it over.\n\nOne face: a map, etched in lines so fine they might be hair. On the other: coordinates, in a notation system you have never encountered, that your hands somehow know how to read.\n\nYou stand in the dark between the old trees for a long time.\n\nSome things are found before you understand why you were looking for them.",
+      "item": {
+        "id": "ancient_marker_disc",
+        "name": "Marker Disc",
+        "description": "Dark metal, one face a map, the other coordinates you shouldn't know how to read. You do."
+      },
+      "choices": [
+        {
+          "text": "Return to the crossroads. You know which road to take now.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "forest_back": {
+      "id": "forest_back",
+      "text": "You stop.\n\nThree steps into the trees and something makes you stop. Not sound, not movement — just the sudden certain feeling that you are in a conversation you don't have the language for yet. That whatever made this circle of stones and disturbed the earth at its center is still present in some form that exists below the threshold of your senses.\n\nYou are not afraid, exactly. You have been in worse places and felt steadier about it.\n\nBut you have also learned the difference between courage and ignorance. Courage is going forward when you understand the risk. Ignorance is going forward because you can't imagine it.\n\nYou turn around.\n\nYou walk back down the narrowing path to the crossroads, and you stand there with the compass in your hand, and you look at the lights to the east, and you make a choice.\n\nYou walk east.\n\nTomorrow is a better day for whatever the forest is keeping.",
+      "choices": [
+        {
+          "text": "Head to the settlement for the night.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "crossroads_wait": {
+      "id": "crossroads_wait",
+      "text": "You sit on the stone marker and wait.\n\nThe crow comes back — or another crow comes, it's difficult to say. It lands on the opposite sign post and regards you with the focused attention crows reserve for things they haven't decided about yet. You regard it back. After a long moment it decides nothing and flies west into the coming weather.\n\nThe light fails slowly. The eastern settlement brightens as it does, warm squares of amber in the gathering blue.\n\nThen, from the south — from the direction you came from — you hear hooves.\n\nOne rider. Moving at a pace that isn't hurrying but isn't careless either. Purposeful, the way long-distance riders get after a hundred kilometers of the same road. A lantern swings from a hook on their saddle, throwing a moving circle of light ahead.\n\nThey see you when they are close enough that stopping is a choice and not a reflex. They stop.\n\nThe horse is dusty with red road clay. The rider is bundled against the coming wind, collar turned up, hat brim down. What you can see of their face is watchful and tired in equal measure. A woman, you think, though road travel does interesting things to the usual signs.\n\n\"You've been sitting there a while,\" she says. Not an accusation. An observation, the way you'd note the weather.\n\nHer eyes move to your coat pocket. To the outline of the compass.\n\nEveryone, it seems, knows about the compass.",
+      "choices": [
+        {
+          "text": "\"I have. Looking for someone to tell me what this crossroads means.\"",
+          "next": "rider_talk"
+        },
+        {
+          "text": "Stay still. Say nothing. See if she'll say more unprompted.",
+          "next": "rider_silence"
+        }
+      ]
+    },
+
+    "rider_talk": {
+      "id": "rider_talk",
+      "text": "She looks at you for a long moment, deciding.\n\nThen — as if you passed some test being administered behind her eyes — she nudges the horse a step closer and lowers her collar.\n\nShe's younger than you expected. Road dust on her cheekbones, the particular tired that comes from distance rather than sleeplessness. A scar along her jaw that is old enough to be unremarkable.\n\n\"There's a house,\" she says. \"Day's ride south on this road. Old stone building at a crossroads like this one — you'll know it by the marker, same design as that one.\" A slight tilt of her head toward the stone you're sitting on. \"The woman who lives there has been waiting for someone to bring a message to.\"\n\n\"What message?\"\n\n\"I don't know,\" she says. No apology in it. \"She didn't tell me. She only described who would have the compass.\" A pause. \"She described you.\"\n\nYou look down at your coat pocket.\n\nYou look back up.\n\n\"How did she know I'd be here?\"\n\nThe rider shrugs — a small, tired movement. \"She said, 'They'll be sitting at the crossroads at dusk with a compass that points wrong.' \" She looks at you with something that might, in better light, be sympathy. \"That's you.\"\n\nThe compass needle turns in your pocket. South.\n\nToward her. Toward wherever she came from.",
+      "choices": [
+        {
+          "text": "\"Tell me about the woman at the southern house.\"",
+          "next": "demo_end"
+        },
+        {
+          "text": "\"How long have you been riding?\"",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "rider_silence": {
+      "id": "rider_silence",
+      "text": "You stay still.\n\nYou have, over the years, developed something like a talent for this — for becoming part of the landscape, for occupying space without asserting it. It has served you well in rooms where speaking first was a mistake. It serves you now.\n\nShe studies the space around you. Looks east at the settlement lights. North toward the tree line. Then at the stone marker you're sitting on, examining it the way someone looks at a thing they expected to be different.\n\nHer gaze passes over you, settles, comes back.\n\n\"You're not going to make this easy,\" she says. It isn't annoyed. It's something closer to impressed.\n\nShe reaches into her coat and produces a small folded square of paper, holding it out.\n\n\"I was told to give this to whoever was sitting at this marker at dusk with a compass that pointed wrong. I've been through four crossroads today.\" She looks at the compass outline in your pocket. \"You're the one.\"\n\nYou take the paper.\n\nYou do not unfold it yet. You watch her instead.\n\n\"Anything else?\" you ask.\n\n\"Yes,\" she says. \"Don't open it until you're somewhere with a roof.\" She looks at the western sky, at the clouds stacking themselves against the last of the light. \"Which I'd suggest finding soon.\"",
+      "choices": [
+        {
+          "text": "Ask her who sent her.",
+          "next": "demo_end"
+        },
+        {
+          "text": "Let her go. Head east to the settlement and open the letter there.",
+          "next": "demo_end"
+        }
+      ]
+    },
+
+    "demo_end": {
+      "id": "demo_end",
+      "text": "The sky has gone fully dark by the time you're settled.\n\nThe rain comes in from the west, measured and certain, the way it had been promising to all evening. It drums on the roof above you — or on the leaves, or on the road stones, depending on where you are — and the sound of it is unexpectedly comforting. Rain means the weather has made up its mind. Rain means one less thing still deciding.\n\nYou turn the compass over in your fingers.\n\nSomewhere to the south, something is waiting. Somewhere to the north, the stones in that forest clearing are getting wet, and whatever disturbed the center of that circle is either indifferent to rain or not the kind of thing that gets wet at all. Somewhere, a woman you've never met described you well enough that a rider found you on a dark road at the right moment.\n\nYou don't know yet what any of it means.\n\nBut you know the compass. You know the weight of it. You know that things which point in the wrong direction are not broken — they are pointing at something the maps don't show yet.\n\nYou are, it turns out, the kind of person who follows them.\n\n—\n\nThis is where the demo ends. The full story begins here — with all of this, and with everything that comes after it. Every road. Every choice. Every thing carried and left behind and found again in unexpected places.\n\nThe compass is yours. The road is yours.\n\nGo south.",
+      "end": true
+    }
+  }
+}

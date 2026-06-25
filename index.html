@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Loading…</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lekton:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── Title Screen ─────────────────────────────────────────── -->
+  <div id="title-screen">
+    <div id="title-content">
+      <p id="title-eyebrow">A text adventure</p>
+      <h1 id="game-title"></h1>
+      <p id="game-subtitle"></p>
+      <div id="title-actions">
+        <button id="btn-new">Begin</button>
+        <button id="btn-continue" class="hidden">Continue</button>
+      </div>
+    </div>
+    <p id="title-footer">Click anywhere during text to skip · Space or Enter also works</p>
+  </div>
+
+  <!-- ─── Game Screen ───────────────────────────────────────────── -->
+  <div id="game-screen" class="hidden">
+
+    <!-- Top-right UI -->
+    <div id="ui-bar">
+      <button id="inventory-btn" title="Inventory (I)">
+        <span>carried</span>
+        <span id="inventory-count">0</span>
+      </button>
+    </div>
+
+    <!-- Inventory Drawer -->
+    <div id="inventory-panel" aria-hidden="true">
+      <div id="inventory-header">
+        <span class="panel-label">Carried Items</span>
+        <button id="inventory-close" aria-label="Close inventory">✕</button>
+      </div>
+      <div id="inventory-list">
+        <p class="inv-empty">Nothing carried.</p>
+      </div>
+    </div>
+
+    <!-- Main prose + choices -->
+    <main id="game">
+      <div id="scene-text"></div>
+      <div id="choices-container" class="hidden"></div>
+    </main>
+
+  </div>
+
+  <!-- ─── Item Notification (slides in from bottom-right) ──────── -->
+  <div id="item-notification" aria-live="polite">
+    <span class="notif-label">Item discovered</span>
+    <span id="item-notif-name"></span>
+    <span id="item-notif-desc"></span>
+  </div>
+
+  <script src="js/engine.js"></script>
+</body>
+</html>
