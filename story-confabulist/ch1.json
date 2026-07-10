@@ -256,6 +256,12 @@
     "rao_honest": {
       "id": "rao_honest",
       "text": "You tell him — because he is the director, because secrecy in a hospital seems like a symptom, because the handshake-recoil is exactly the kind of no-facts feeling that Dr. Adair warned you could be talked into anything, and you are not yet ready to let a shiver appoint itself your counsel.\n\nSo: the rules, numbered. The tally marks, forty-one now. The day's notes — the curve, the chess, the man in Room 5 who deals two hands. You watch him receive it, and he receives it beautifully — nodding, delighted, a researcher warmed by good instrumentation.\n\nOnly twice does the lighthouse stop sweeping and fix.\n\nOnce, when you mention the rules are numbered and that there are six. \"Six,\" he repeats, pleasantly, a man confirming a delivery date.\n\nAnd once when you mention Room 5 — and here something happens at the exact outer corner of his eyes, a tightening of perhaps a millimeter, which on this smooth a face reads like a shout. \"Mr. Weir wanders in his stories,\" he says, gently, regretfully. \"A different condition from yours. Sadder. I'd not weigh anything he says — or does — too heavily. It distresses the families, that sort of confusion.\" A beat, precisely the length of sympathy. \"Yours especially, I'd think. Thursday's coming.\"\n\nHe pats your shoulder — the animal flattens itself against the wall again, silently, uselessly — wishes you a productive afternoon in a voice you'd trust with your savings, and moves off down the corridor at the pace of a man who owns the clocks.\n\nYou stand there holding two new facts and a shiver. The rules have six numbers, and now he knows it. And: Thursday's coming meant something, and everyone in this building appears to know what except you.",
+      "item": {
+        "id": "rao_told",
+        "name": "Note: I Told the Director",
+        "description": "You answered Rao honestly — the rules, the tallies, six of them, the day's notes. He received it beautifully, and repeated 'six' like a man confirming a delivery date. The notebook's shape is now on file in the place with the good locks.",
+        "persistent": true
+      },
       "choices": [
         {
           "text": "Back to your room. The light is going amber, and the notebook has a day to swallow.",

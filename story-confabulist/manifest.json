@@ -70,7 +70,23 @@
       "teaser": "A wife your gut has never met. A coffee order your hand remembers.",
       "file": "story-confabulist/ch3.json",
       "startScene": "morning_thursday",
-      "summaries": []
+      "summaries": [
+        {
+          "requires": ["nadia_ally", "clause_nine"],
+          "text": "You remember Thursday like this — the notebook remembers it, and Thursday earned the notebook forever. Dr. Adair taught you the shape of the lie before it arrived: familiar face, severed wire, cheap story — the gut is the broken part. And it came exactly on schedule, glassy and certain, and you chose the hand instead: you showed Nadia the coffee order in the old slanted letters, and twenty-two years surfaced in her face at once. 'You chose this. I watched you sign.' There is a parcel behind her linen press, mailed two days before you signed — 'You'll know when.' And there is a form Rao brings every Thursday with his own pen: clause nine transfers custody of your data with you. Then the night gave up the rest: the west wing, a drawer opened ahead of the creak, its contents in margin code; and Rao's voice in a dark corridor — the board convenes on Day 60, his sixtieth, and he needs you at Fernhill and signed for before it sits. The largest letters in the book now: ASK HER PROPERLY. PROOF IN HAND."
+        },
+        {
+          "requires": ["nadia_ally"],
+          "text": "You remember Thursday like this — the notebook remembers it, and Thursday earned the notebook forever. Dr. Adair taught you the lie's shape at nine o'clock — familiar face, severed wire, cheap story; certainty is a symptom today — and at eleven it arrived word for word, and you chose the hand instead. You showed Nadia the coffee order in the old slanted letters. 'That's his handwriting,' she said, and then, because you asked from inside the truth: 'You chose this. I watched you sign.' Fourteen months of not sleeping after what happened to that poor man; a way to make it right that only you could do; a parcel behind her linen press, sealed two days before you signed — 'You'll know when.' She re-decides every Thursday. This week was easy. Then the night gave up the rest: the west wing on feet that know a commute, one drawer opened ahead of the creak, and Rao's midnight voice — the board sits on Day 60, and he needs you gone and signed for first. ASK HER PROPERLY. PROOF IN HAND. SHE HAS BEEN WAITING SIX WEEKS."
+        },
+        {
+          "requires": ["nadia_wounded"],
+          "text": "You remember Thursday like this — the notebook remembers it, and the notebook does not spare you. Dr. Adair taught you the lie's shape at nine — the gut is the broken part; she is your wife; the stranger is in the mirror — and at eleven the lie arrived glassy and certain, and you chose neither the gut nor the hand. You chose protocol. Embassy courtesy, careful sentences, a managed hour — and careful reads as gone, to someone who knew you before. 'Twenty-two years, you never once handled me.' She left early, and at the door: 'They keep asking me to decide what's best for you. I don't know what I'm waiting for anymore.' Whatever she decides next, you armed it. The night gave up the rest anyway: the west wing on feet that know a commute, one drawer opened ahead of the creak, and Rao's midnight voice — the board sits on Day 60; the wife is close; tired signs. Fifteen days and one question left. ASK HER PROPERLY. PROOF IN HAND."
+        },
+        {
+          "text": "You remember Thursday like this — the notebook remembers it, and the notebook is not proud of it. Dr. Adair taught you the lie's shape at nine o'clock, and at eleven you dodged the exam: dizzy, sorry, next week, sent through Nurse Calder while you watched from your dark window. Nadia in the car park, recalibrating her whole errand — and then Rao crossing the gravel with a folder and an uncapped pen. She closed the folder with both hands and drove away; he watched her taillights like a man rescheduling, not losing. Tired signs eventually, he believes. Dr. Adair's verdict was gentler than you deserved: Thursday is the load-bearing wall in that woman's week, and today you took it out. The night gave up the rest: the west wing on feet that know a commute, one drawer opened ahead of the creak, and Rao's midnight voice — the board sits on Day 60, his sixtieth, and he needs you at Fernhill and signed for before it sits. Fifteen days. ASK HER PROPERLY. PROOF IN HAND."
+        }
+      ]
     },
     {
       "id": "ch4",

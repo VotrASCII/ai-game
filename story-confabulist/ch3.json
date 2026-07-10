@@ -1,0 +1,278 @@
+{
+  "startScene": "morning_thursday",
+  "scenes": {
+    "morning_thursday": {
+      "id": "morning_thursday",
+      "text": "You wake the way a house wakes when the power comes back, and the notebook is waiting, and you read yourself into existence one more time: the rules, the tallies — you make the forty-fifth mark — and then yesterday's entry, which ends with a schedule and a warning and a coffee order in handwriting older than you are.\n\nThursday. Eleven o'clock. Nadia Sorel — wife, standing, never missed one. Your gut will call her a stranger; the doctor says the gut is wrong, not lying. Your hand knows her coffee: flat white, no sugar, too hot — always. Weigh the hands.\n\nAnd boxed beneath it, the standing experiment, five mornings deep now. So when the knock comes — two knuckles, twice — you are already watching yourself, clinician and subject in one skull, and it happens the way the notebook swears it has happened four times before: the animal stands down before the door finishes opening. N of five. The trust arrives ahead of the woman, punctual as weather off the sea.\n\nDr. Adair comes in without her folder, which your five days of records say has never happened, and sits in her chair, and looks at you with the particular evenness she wears over deep water.\n\n\"No battery today,\" she says. \"Today I have one job, and it's this conversation. At eleven o'clock a woman will sit where I'm sitting, and your own brain is going to lie to you about her — fluently, confidently, in your own voice. I'd like to teach you the shape of the lie while there's still time to learn it.\" A breath. \"This is the lecture I least enjoy giving. Attend anyway.\"",
+      "choices": [
+        {
+          "text": "Attend. Let her draw the machinery.",
+          "next": "wren_briefing"
+        }
+      ]
+    },
+    "wren_briefing": {
+      "id": "wren_briefing",
+      "text": "\"Recognizing a face,\" she says, \"is two systems pretending to be one. The first is a catalogue — it matches geometry: this nose, this jaw, seen before. Yours is intact. When she walks in, you will know her face the way you'd know a famous painting. You could describe her earrings from memory you didn't know you had.\n\n\"The second system doesn't do geometry. It does warmth. It's older, deeper, wired straight down into the body — and its whole job is to fire when the catalogue finds someone who matters, so that recognition arrives wearing its feeling. That wire, in you, was cut. Not frayed. Cut.\n\n\"So here is what your brain will receive at eleven o'clock: a face that matches perfectly, and a body that reports nothing. Total familiarity, zero warmth. And brains abhor that gap. Yours will do what every brain does with an impossible ledger — it will write a story that balances it. And the cheapest story, the one that fits the data like a glove, is: this is not really her. An impostor. A replacement. The feeling of that conclusion, when it comes, will be absolute certainty.\" She leans forward, and the evenness parts like a curtain for one sentence: \"Certainty is a symptom today. The gut is the broken part. When it renders its verdict, I need you to hear my voice reading the charge sheet: familiar face, severed wire, cheap story. She is your wife. The stranger is in the mirror.\"\n\nThe room holds it. And then you say the other half, because five mornings of notes have earned it:\n\n\"And you're the same lesion wearing the other mask. Warmth with no history. My body files you under decade-old friend and I met you five days ago, forty-five times. If certainty's a symptom at eleven — why not at nine?\"\n\nShe goes very still. \"Because,\" she says at last, quietly, \"you test yours. Every morning, in a box, with a hypothesis. Don't stop.\" And she stands to go, and stops at the door, and doesn't turn: \"For the record — I file that experiment under the bravest thing in this building. Eleven o'clock. Weigh the hands.\"",
+      "choices": [
+        {
+          "text": "Eleven o'clock, then. Meet the woman the catalogue knows and the wire doesn't.",
+          "next": "eleven_oclock"
+        },
+        {
+          "text": "One more thing before she goes — the cut pages. Say the ghost-words to her: 'the doctor's part in this was.' Watch her face.",
+          "next": "stubs_pressed",
+          "requires": "torn_stubs"
+        }
+      ]
+    },
+    "stubs_pressed": {
+      "id": "stubs_pressed",
+      "text": "\"Before you go.\" You open the notebook to the wounded place, spine tilted to the window light so the stubs show. \"Three pages, cut with a blade, by the man with the slanted hand. The grooves survive. 'The doctor's part in this was.' 'Not her fault.' 'Forgive.' And twice —\" you keep your eyes on her \"— 'my signature.'\"\n\nYou have watched her be careful for five recorded mornings. You have never watched the blood actually leave her face.\n\nShe crosses the room — quick, no permission asked — and looks at the stubs, and her hand hovers over the ghost-grooves without touching, the way people hover over the names on memorials. When she speaks her voice has been wrung out and re-hung, and it is not entirely steady on the line.\n\n\"He told me he burned those.\" Not you — he. The slanted man, granted his own pronoun, the two of you separated in her grammar like the dead and the living. She stands there another moment, mastering something, and when she straightens, the clinician is back but the curtain hasn't fully closed. \"I'm going to say this once, and then I am going to go and be professional somewhere until eleven. The rope I walk has an end. You are closer to it than you have ever been. What you found in that binding is a door, and the proof that opens it exists, and it is not in this room. Ask me properly —\" her voice catches, evens \"— and please, ask me soon. I have been watching you almost-ask for six weeks, and I don't know how many more Thursdays I can—\"\n\nShe stops herself, the way she stopped at extremely and at you wrote and at because she knows you. Folds it. Puts it away.\n\n\"Eleven o'clock,\" she says at the door. \"Weigh the hands.\"",
+      "choices": [
+        {
+          "text": "Eleven o'clock. Meet the woman the catalogue knows and the wire doesn't.",
+          "next": "eleven_oclock"
+        }
+      ]
+    },
+    "eleven_oclock": {
+      "id": "eleven_oclock",
+      "text": "At eleven o'clock the sunroom has been arranged for two, and the woman who comes in is carrying a cardboard tray with two coffees, and Dr. Adair's lecture happens to you exactly on schedule, like a demonstration.\n\nThe catalogue fires first. You know this face. Mid-forties, weathered elegance, grey coming in at the temple in a streak she has clearly decided not to fight; a scar, tiny, at the left eyebrow; earrings — small gold birds, and yes, you could have described them before she cleared the door. The face matches something enormous. Every line of it is indexed.\n\nAnd the body reports: nothing.\n\nNot dislike. Nothing — a customs hall, a stranger on a train, a face on currency. And in the gap between everything and nothing, you feel it being written, live, in your own voice, with total fluency: it's not really her. They've found someone close. The earrings are props. Look how she watches you — she's checking whether it's working—\n\nThe certainty of it is glassy and perfect and exactly, word for word, the cheap story you were warned about at nine o'clock. Knowing that doesn't dim it at all. That's the part no lecture could have carried: the lie doesn't feel like a lie. It feels like the one clear thing in the room.\n\nThe woman — Nadia; the notebook says Nadia — sets down the tray, and hands you a cup, and you notice her hands aren't steady, and that she still wears her ring, and that she watches your face the way people watch the sea where a boat went down.\n\n\"Hello, love,\" she says, and the word has forty-five Thursdays of wear on it.\n\nThe cup in your hand is too hot to hold. Always too hot.",
+      "choices": [
+        {
+          "text": "Hold to protocol: courteous, formal, careful. Give the broken wire nothing to spend. Get through the hour without wounding anyone.",
+          "next": "visit_cold"
+        },
+        {
+          "text": "Put the notebook on the table, open to the coffee order. 'My gut says stranger. My hand says flat white, no sugar, too hot — always. I'm choosing the hand. Help me.'",
+          "next": "visit_coffee"
+        },
+        {
+          "text": "You can't do it. Make an excuse — dizzy, sorry, next week — and watch her leave from your window instead. The wire wins this round; learn what you can from cover.",
+          "next": "visit_shadow"
+        }
+      ]
+    },
+    "visit_cold": {
+      "id": "visit_cold",
+      "text": "You are courteous the way embassies are courteous. You thank her for the coffee. You answer her questions — sleeping well, eating well, the tests go well — in sentences that would pass any audit, and you watch this stranger's face do something complicated and slow, like weather changing over open water.\n\nShe has been briefed too, you realize. For weeks. Someone — Dr. Adair, it has her fingerprints, the mercy of it — has taught her the machinery: he will know your face and feel nothing; it isn't him; it isn't you. And she has sat here Thursday after Thursday holding that lecture like a handrail, and today you watch the handrail fail.\n\nBecause protocol courtesy is worse than the gap. The gap she could forgive — the gap is a lesion. But you are being careful with her, managing her, offering her the smooth diplomatic surface a man offers a difficult stranger, and somewhere in the third quarter of the hour she sets down her cup and looks at the window and says, in a voice with all the fight gone out of it:\n\n\"You used to argue with me. Twenty-two years, you never once handled me.\" A breath. \"He said — before, he said, whatever else, it'll still be me underneath, the wiring isn't where I keep— \" She stops. Waves it away, angry at the quote or at herself for keeping it. \"They tell me the feeling can't cross. Fine. I learned that. But you're not even— you're managing me. Like a meeting.\" She gathers her coat, her bag, the empty tray, with the terrible efficiency of a woman who has rehearsed leaving early and hoped never to perform it. \"Tell them I'll — tell them Thursday. Or something. I need to think.\"\n\nAt the door she stops, and doesn't turn around, and says, evenly, the worst sentence available: \"They keep asking me to decide what's best for you. I keep saying I need more time. I don't know what I'm waiting for anymore.\"\n\nThe sunroom holds the two cooling coffees. Your hand, unwatched, has been shredding the cardboard tray-corner into neat strips, the way hands do when their owner is grieving above their pay grade.",
+      "item": {
+        "id": "nadia_wounded",
+        "name": "Note: I Managed Her Like a Meeting",
+        "description": "You gave Nadia embassy courtesy and it broke something the lesion couldn't. 'Twenty-two years, you never once handled me.' She left early. At the door: 'They keep asking me to decide what's best for you. I don't know what I'm waiting for anymore.' Whatever she decides next, you armed it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The hour is a ruin. Find out what the building does with the rest of the day.",
+          "next": "after_cold"
+        }
+      ]
+    },
+    "visit_coffee": {
+      "id": "visit_coffee",
+      "text": "You put the notebook on the table, turned so she can read it, open to the margin where the slanted letters live.\n\nN — flat white, no sugar, too hot. Always too hot.\n\n\"Here's the truth from inside,\" you say. \"My gut looks at you and files you as a stranger. I'm told that's a cut wire and a cheap story, and I believe it, but believing doesn't dim it — you deserve to know the size of the lie I'm working against. And then there's this. My hand wrote your coffee order before I knew you existed. The doctor says the hands are older than the feelings.\" You slide the notebook an inch toward her. \"I'm choosing the hand. Help me choose it.\"\n\nShe looks at the margin for a long time. When she looks up, twenty-two years have surfaced in her face all at once, jostling — grief, fury, tenderness, exhaustion, none of them yielding right of way.\n\n\"That's his handwriting,\" she says. \"The fast slant. God. I used to find it on everything — receipts, seed packets, my grocery lists corrected.\" A laugh with a broken keel. \"Of course it's what survived. His hands were always paying attention when the rest of him was at work.\"\n\nAnd then she tells you, because you asked from inside the truth and there is apparently no other password: \"You chose this. I watched you sign.\" The words land like the ghost-grooves made flesh. \"Fourteen months I watched that place eat you — after what happened to that poor man, you stopped sleeping, stopped talking, sat up nights with papers you'd hide when I came down. And then you told me there was a way to make it right that only you could do, and I said if you do this you do it as a stranger to me, and you —\" her voice doesn't break so much as change gauge \"— you said: then I'll court you again after. You'd have to be you to find that funny. You signed on a Tuesday. I've been having coffee with the consequences every Thursday since.\"\n\nShe wraps both hands around her cup, steadying. \"And before you ask — because you're still you, somewhere, and he always asks the next question — yes. There's more. You mailed me a parcel two days before you signed. Sealed, taped like a paranoid. You'll know when, you wrote. I keep it behind the linen press and I keep almost burning it, and I have carried it up and down the stairs of that house like it's breathing.\" She meets your eyes. \"Do I know when yet? You tell me.\"",
+      "item": {
+        "id": "nadia_ally",
+        "name": "Note: The Parcel Behind the Linen Press",
+        "description": "Nadia — met from inside the truth, chosen by the hand. 'You chose this. I watched you sign.' Fourteen months of not sleeping after what happened to 'that poor man'; then a way to make it right that only you could do. And a parcel, mailed two days before you signed, sealed and waiting: 'You'll know when.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "\"Not yet. When I ask for it, it has to be because I've earned the question — there's a rule about that, and I think I wrote it. But soon. Keep it safe; keep yourself safer.\"",
+          "next": "after_coffee"
+        },
+        {
+          "text": "Ask her the other thing, gently: \"Who's pressing you, Nadia? Someone keeps asking you to decide what's best for me. Describe them.\"",
+          "next": "after_coffee_rao"
+        }
+      ]
+    },
+    "visit_shadow": {
+      "id": "visit_shadow",
+      "text": "You send the excuse through Nurse Calder — dizzy, sorry, next week, the coward's trinity — and you stand at your window with the lights off like a man conducting surveillance on his own life.\n\nShe comes out at twenty past eleven. Even at this range the catalogue fires: the walk is indexed, the way she settles her bag on the shoulder is indexed, and the body reports its perfect customs-hall nothing, and you watch her stand a moment in the car park doing what people do when a door has been closed on them politely — recalibrating her whole errand, finding it suddenly heavy.\n\nAnd then the front steps produce Director Rao.\n\nHe crosses the gravel at his unhurried owner's pace, and there is a folder in his hand, and the conversation that follows is a silent film you'd give a year of tallies to hear. He talks; she doesn't; he opens the folder on the roof of her car like a man laying out something reasonable in good light. A pen appears — offered from his breast pocket, uncapped already, a small profession of convenience.\n\nShe looks at the folder for a long time. Then she closes it. Not a slam — a closing, both hands flat, the way you'd close a coffin lid or a argument you can't yet win — and gets in her car, and Rao watches her taillights all the way down the drive with an expression you can read even from here, because it's the one that goes with retotaling: not today, then. But she's tired. Tired signs eventually.\n\nHe caps the pen. He goes back inside. The gravel keeps his footprints about as long as this building keeps anything.\n\nAt the lamp you write what you saw and then sit a long time over the interpretation, because it forks: she refused to sign something — or she isn't ready yet to sign something — and the difference between those two sentences is the difference between an ally and a countdown, and you chose the window over the room where you could have asked her.",
+      "item": {
+        "id": "nadia_watched",
+        "name": "Note: The Folder on the Car Roof",
+        "description": "You refused the visit and watched from the window. Rao met Nadia in the car park with a folder and an uncapped pen. She closed the folder with both hands and drove away; he watched her go like a man rescheduling, not losing. She refused — or she isn't ready yet. You chose the window over the room where you could have asked.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The building exhales toward afternoon. Find Dr. Adair — some debriefs can't wait for morning.",
+          "next": "after_shadow"
+        }
+      ]
+    },
+    "after_cold": {
+      "id": "after_cold",
+      "text": "Dr. Adair finds you in the sunroom — you suspect Nurse Calder of running a signals service — and takes in the tableau with one sweep: two abandoned coffees, a shredded tray-corner, a man sitting very straight in the wreckage of an hour.\n\nShe doesn't say it could have gone worse. She doesn't say anything for a while, in a way that is somehow load-bearing; she clears the cups, sits down across from you, and lets the silence finish its rounds first.\n\n\"The first Thursday,\" she says eventually, \"she brought photographs. Twenty years of them, a whole bag — she'd captioned the backs, in case. I had to explain why that wouldn't work the way she hoped. She listened to the whole lecture, and then she said: fine, then I'll be new every week, and put the bag in her car, and came back in and introduced herself to you.\" A pause. \"I have watched a great many people meet this disease across a table. She is not the fragile end of the distribution. But everyone has a load limit, and today you found hers — not because you're cruel; because you were careful. Careful reads as gone, to someone who knew you before.\" She stands, squares her cardigan, becomes the clinician again by visible effort. \"Write the day honestly. All of it. The man who reads it tomorrow is going to want to do better, and he can only want what you leave him.\"\n\nAt the door she pauses, and adds, in the voice with the fracture line: \"For the record — the coffee. She's the only person who ever gets it right. I've watched you notice that with your hands, Thursday after Thursday, holding the cup like a — like a letter.\" A breath. \"Weigh the hands. Both of you deserve it.\"",
+      "choices": [
+        {
+          "text": "Evening, then the notebook — and one more thing before the day is surrendered: the tea she brings you goes down with a slip in it.",
+          "next": "sugar_slip"
+        }
+      ]
+    },
+    "after_coffee": {
+      "id": "after_coffee",
+      "text": "\"Not yet,\" you tell her. \"When I ask for the parcel, it has to be because I've earned the question. There's a rule about that — I think I wrote it. But soon. Keep it safe. Keep yourself safer.\"\n\nNadia looks at you for a long moment, and then she laughs — wet, unwilling, the keel still broken but the boat somehow underway — and says, \"There he is,\" and the phrase lands on you with its now-familiar weight: third speaker, same words. You are apparently recognizable, in flashes, to everyone who knew the slanted man. A lighthouse the ship keeps glimpsing through weather.\n\nThe rest of the hour is the strangest gentle thing: a first date conducted inside a marriage. She tells you true things at random, non-sequential, the way you'd feed someone starving — the house has a linen press and a lopsided apple tree; you cook badly but with enormous conviction; your daughter — and there she stops herself, files it, visibly re-wraps it — some things need you steadier, she says, and you write DAUGHTER? in the margin with a hand that has gone suddenly unreliable, and she watches you write it and doesn't take it back.\n\nAt the door, coats and tray gathered, she stands a moment. \"Next Thursday,\" she says. \"And the one after. I re-decide every week, you should know that. This week was easy.\" A pause; the gauge change again. \"He wrote me one letter from in here — week one, before the routine settled. It said: if I look at you like a stranger, remember it's the wiring, not the will. I thought that was him being kind to me in advance.\" Her eyes go to the notebook under your arm. \"It wasn't. It was him being kind to you. He knew you'd need me to have read it, today. He was always — three moves ahead, and terrible at being present. Work on the second part. The first part seems to have survived.\"",
+      "choices": [
+        {
+          "text": "Evening, then the notebook — and Dr. Adair's tea arrives with a slip in it.",
+          "next": "sugar_slip"
+        }
+      ]
+    },
+    "after_coffee_rao": {
+      "id": "after_coffee_rao",
+      "text": "\"Who's pressing you?\" you ask. \"Someone keeps asking you to decide what's best for me. Describe them.\"\n\nAnd Nadia's face does something you file instantly and permanently: it goes polite. The exact diplomatic surface you nearly offered her an hour ago — deployed, you understand, against a listening building.\n\n\"Dr. Rao is very attentive,\" she says, at conversational volume, for the room. And then she leans in to straighten the notebook on the table between you, entirely wife, entirely natural, and at a volume for two: \"Every Thursday for a month. There's a form. Transfer of care — a facility called Fernhill, long-term, 'better suited to his horizon,' he says, and he says horizon like he's already bought the frame for it. He brings it in a folder. He brings his own pen.\" She squares the notebook's corner precisely. \"I read the form properly the first time — all of it, the way you taught me to read anything with a signature line. Custody of the subject transfers. And listen — clause nine — custody of the derived data transfers with him. Your tests. Your numbers. Everything this place has measured of you, six weeks of it, rehomed to an address I can't find a medical license attached to.\" She sits back, resumes the polite face, hands you your cooling coffee like a prop. \"He thinks I'm tired. He's right. He thinks tired signs.\" For one second, the polite face cracks and the woman with the broken-keeled laugh looks through. \"Twenty-two years married to a man who reads the whole document. Tired learns to read faster, that's all.\"\n\nShe leaves you with the tray, the margin note, and a sentence you copy out twice for pressure: custody of the derived data transfers with him. The form isn't about your care. It's about your numbers — the only witness in this building that survives the night.",
+      "item": {
+        "id": "clause_nine",
+        "name": "Note: Clause Nine",
+        "description": "Nadia read Rao's transfer form the way you taught her — all of it. Custody of the subject transfers to Fernhill; clause nine transfers custody of the derived data with him. Six weeks of your numbers, rehomed to an address with no medical license attached. The form isn't about care. It's about the witness.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Evening, then the notebook — and Dr. Adair's tea arrives with a slip in it.",
+          "next": "sugar_slip"
+        }
+      ]
+    },
+    "after_shadow": {
+      "id": "after_shadow",
+      "text": "You find Dr. Adair in the testing room, writing up someone else's afternoon, and she looks up at you and reads the whole errand off your face before you speak — and something in hers closes a careful half-inch.\n\n\"You didn't see her.\" Not a question. The evenness has weather under it today. \"Nurse Calder said dizzy. You don't get dizzy — your vestibular scores are the best thing in your chart. So: you chose not to see her, and now you're here, which means you watched something instead, because you are constitutionally incapable of choosing less information.\" She caps her pen. \"Go on.\"\n\nYou tell her: the car park, the folder, the offered pen, the closing with both hands, Rao watching the taillights like a man rescheduling rather than losing.\n\nShe listens without moving. At the end she is quiet for a long time, and when she speaks it is with the care of someone crossing her rope bridge with extra weight on her back.\n\n\"I can't discuss what's in that folder. You know the shape of my rope by now.\" A breath. \"What I can say — because you watched it yourself, with your own instruments, and I am only confirming your reading — is that a woman who wanted to sign would have signed. It's been weeks of Thursdays, and the pen has been very available.\" She looks at you steadily. \"And I can say this, as your physician, on the record: the visit you dodged today was not for her benefit. It stopped being for her benefit around the third week, when I watched her learn the machinery faster than most residents' families ever do. She comes because Thursday is the load-bearing wall in her week. Today you took it out. People whose walls are gone make structural decisions.\" She turns back to her write-up, and adds, softly, to the folder, in the voice with the fracture line: \"Next Thursday, be dizzy after eleven.\"",
+      "choices": [
+        {
+          "text": "Evening, then the notebook — and her tea, when it comes, goes down with a slip in it.",
+          "next": "sugar_slip"
+        }
+      ]
+    },
+    "sugar_slip": {
+      "id": "sugar_slip",
+      "text": "She brings you tea in the last of the light — not her job; the trolley exists; she brings it anyway, one cup, hers left behind somewhere as always — and sets it down at your elbow while you write, and says, in the absent voice of a person whose front-of-house is busy elsewhere:\n\n\"Careful. You used to take it with too much sugar too.\"\n\nToo. The word detonates gently, a depth charge with a long fuse. Used to — the third slip of its kind, but it's the too that does the work. Too, as in: as well as. As in: there is another beverage, another era, another kitchen or break room or small hour somewhere in which your sugar intake was a known and teased-about quantity — hers to know and hers to tease.\n\nYou put down the pen. \"Too,\" you say. \"You used to take it with too much sugar too. Finish the sentence, Doctor. Who's the other party in that too?\"\n\nThe absent voice snaps back into the room and finds itself already committed. She stands very still with the trolley-that-isn't-hers non-excuse evaporating around her, and you watch her run the rope through her hands to its absolute end.\n\n\"There are questions,\" she says, at last, with the care of a woman defusing her own sentence, \"that I am not allowed to answer until you ask them properly. Properly means: with proof in hand. Yours, not mine — that distinction is the entire architecture of your treatment, and I have already told you more about the architecture than the architecture permits.\" She straightens, and the fracture line in her evenness is carrying visible load now. \"The raw things sleep in the west wing. Your feet know the way — I have watched them know it, every time we pass the double doors. I am going to leave, before this conversation finishes becoming the thing I'd have to recuse myself over. Drink your tea.\"\n\nAt the door — without turning, in a voice you will press into the notebook so hard it ghosts three pages:\n\n\"One spoon. You take one spoon now. For the record, I like the new arrangement better. He never once let the tea just be tea.\"",
+      "choices": [
+        {
+          "text": "The building settles. The lamp burns. Tonight, the west wing — the feet have been waiting all week for permission.",
+          "next": "west_wing"
+        }
+      ]
+    },
+    "west_wing": {
+      "id": "west_wing",
+      "text": "Past midnight, the Rooke Institute becomes an instrument at rest — ticking pipes, a nightlight archipelago, the deep hum of the building doing its bookkeeping — and you go west, and you let the feet drive.\n\nIt is an extraordinary thing to be a passenger in your own body. At the double doors your weight is already shifting for the left leaf — the right one, some cellular ledger knows, has sagged on its hinge since long before your tallies began. Down the admin corridor the feet slow at the third window, where a draught lives; your shoulder is turning to shield papers you are not carrying. The body has opinions about doors you have no memory of opening. The body has a commute.\n\nThe records room lock is old and good, and here the hands take over from the feet entirely: your fingers find the loose escutcheon plate, tip it a quarter-turn, take up the slack in the latch with a patience that is not yours — you are watching this, appalled and elated, from about two inches behind your own eyes — and the door gives with a small institutional sigh, exactly as though it recognizes you.\n\nInside: cabinets in ranks, the cold paper smell of kept things, and one drawer bank labeled in a taxonomy your eyes read without effort. PROTOCOL LETHE — SUBJECTS 1–9.\n\nSomewhere above, a floor creaks on its rounds. The night audit walks the west wing at a pace you can hear and cannot predict, and the arithmetic of the room is brutally simple: there is time to open one drawer properly — read it, understand it, leave it seamless — before the creak comes back. The feet got you here. The choice they cannot make for you.",
+      "choices": [
+        {
+          "text": "SUBJECT 9. Your drawer. Whatever you signed, it starts and ends there.",
+          "next": "file_mine"
+        },
+        {
+          "text": "SUBJECT 7. Weir's drawer — the amendment, the rationale, the signature that nags like a face in a crowd.",
+          "next": "file_weir"
+        },
+        {
+          "text": "The thin folder standing crooked at the bank's end, spine out, initialed W.A. — an objection, filed and acknowledged. Her fight, on paper.",
+          "next": "file_wa"
+        }
+      ]
+    },
+    "file_mine": {
+      "id": "file_mine",
+      "text": "Your drawer rolls out on old runners, and it is nearly empty.\n\nNot unstarted — emptied. The hanging rails carry the ghosts of files: bent tabs, a paperclip rusted to the rail, dust shadows where folder-widths of paper stood until recently. And face-up in the bottom, doing the work of a headstone, a checkout card in a filing system old enough to still use them: CONTENTS TRANSFERRED — ADMINISTRATIVE HOLD — P. RAO, with a date twenty days old.\n\nHe didn't read your file. He took it.\n\nYou are turning the card over — blank — when your fingers, running the drawer's seams on their own initiative, find what the emptying missed: a single carbon leaf, slipped down behind the drawer's rear divider, misfiled by some long-ago clerk into the gap between SUBJECT 9 and the steel. You work it out with the patience the door taught you.\n\nIt is the signature block of a consent instrument. The top is torn away — no header, no name field — but the block survives entire:\n\n…being of assessed and certified capacity, and having authored or co-authored the protocol herein consented to, the undersigned executes this instrument in the dual capacity of INVESTIGATOR-SUBJECT ☒ …\n\nBelow, a signature. The impatient crossbar. The terminal letter that doesn't quite land. The face in the crowd, closer than it has ever come, and still — still — the name swims where names swim, but the bones of it are bones you have watched your own hand build forty-five mornings running.\n\nAnd below that, on the witness line, in small precise letters you would know anywhere in the building: W. ADAIR.\n\nThe floor creaks overhead, returning. You slide the carbon into the notebook, close the drawer to seamless, and give the feet the wheel.",
+      "item": {
+        "id": "consent_scrap",
+        "name": "Note: The Carbon Leaf",
+        "description": "From behind your emptied drawer's divider: the signature block of a consent instrument. '…having authored or co-authored the protocol herein consented to… in the dual capacity of INVESTIGATOR-SUBJECT ☒.' The signature's bones are the ones your hand builds every morning. Witnessed: W. ADAIR. The rest of your file: CONTENTS TRANSFERRED — P. RAO, twenty days ago.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Out, past the draught and the sagging leaf, ahead of the creak.",
+          "next": "near_discovery"
+        }
+      ]
+    },
+    "file_weir": {
+      "id": "file_weir",
+      "text": "SUBJECT 7 rolls out heavy — a real file, a life's worth of paper — and you read the way your eyes apparently read: fast, clinical shorthand going down like water.\n\nThe early pages are triumph. Weir, Tomas, sixty-eight, night watchman, thirty-one years — the fire at the Calder Street depot, four dead, him the finder of the four; intractable post-traumatic presentation, five years refractory to everything with a journal behind it. Then LETHE: targeted reconsolidation excision, sessions 1–40, the trauma unbound from the man carefully, capsule by capsule, and the checkmark you saw on the ward copy — BOUNDED AND VERIFIED — here backed by forty pages of the most careful science you have ever read, and some of the marginalia is in the impatient crossbar hand, and it is brilliant, and you can feel the brilliance the way you felt the star: an old channel, carrying.\n\nSix clean months. A man given back his nights. There are follow-up notes with something like joy leaking through the prose.\n\nThen the amendment. AMENDMENT 7-C: RECONSOLIDATION WINDOW EXTENDED PER REVISED CURVE. And this time the rationale is attached, and the rationale is the thing you will carry out of this room in your teeth: Extension projected to consolidate durability of excision. Modeling per designing investigator. Risk of generalization assessed LOW (see curve). Objection noted and overruled — see file W.A.\n\nAuthored by the designing investigator. Overruling her. The signature under AUTHORIZED has the impatient crossbar, the terminal letter that doesn't land; the name swims; the bones don't. And after 7-C the file becomes a fall in slow motion — window shortening, generalization, the man losing first the depot fire and then the decade around it and then the faculty of decades entirely — charted in a hand that gets less clinical page by page until the last entry before the ward-copy handover, which is not shorthand at all: He deals a second hand at three o'clock. Nobody has had the heart to move the chair.\n\nThe floor creaks overhead, returning. You copy the rationale's last line in margin code, close the drawer seamless, and let the feet take you.",
+      "item": {
+        "id": "weir_rationale",
+        "name": "Note: Amendment 7-C",
+        "description": "Weir's full file. The excision was bounded and verified — six clean months, joy in the follow-ups. Then Amendment 7-C: window extended 'per designing investigator,' risk assessed LOW, objection noted and overruled — see file W.A. The signature under AUTHORIZED has the impatient crossbar. After 7-C, the fall. The designing investigator's name swims. Its bones don't.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Out, past the draught and the sagging leaf, ahead of the creak.",
+          "next": "near_discovery"
+        }
+      ]
+    },
+    "file_wa": {
+      "id": "file_wa",
+      "text": "The thin folder stands crooked because it has been pulled often — the crook of a working document, not an archived one — and it is initialed W.A., and you should not read it, and you read it.\n\nFORMAL OBJECTION — AMENDMENT 7-C, DOSING SCHEDULE, SUBJECT LETHE-7. Filed eleven months ago. The prose is her evenness perfected into armor: The proposed extension exceeds modeled parameters by a factor the attached curve does not support. The durability gain is speculative; the generalization risk is not. I do not consent to administer. Attached: her own curve, annotated in her small precise hand, and the annotation you will carry out of this room: the risk isn't in the tail of this distribution. It IS the distribution.\n\nThen the countersheets. OBJECTION NOTED. OVERRULED — see rationale, designing investigator. RATIFIED — P. RAO, DIRECTOR. And beneath the bureaucratic burial, a page that was never meant to be filed and was filed anyway — a memo, unsent or sent and returned, addressed not to a committee but to a person, in her hand with the evenness cracking:\n\nYou taught me that the curve is the conscience — that we don't get to want results. I am asking you as your colleague and as your — I am asking you to re-run the model with your own eyes and not the program's. If you sign this, everything after it is signed by you too. Don't make me choose between the record and\n\nIt ends there. Mid-sentence, like a cut page. The next sheet is the administration log for Amendment 7-C, dated four days later. Administering clinician: W. Adair. Under protest, appended in ink so small it is almost a private sound.\n\nShe told him. She put it in writing, she put herself in writing, and she was overruled, and then she pushed the plunger herself rather than let it be pushed by hands that wouldn't watch the curve. And eleven months later she carries tea down an evening corridor to the man who overruled her, and lets the tea just be tea.\n\nThe floor creaks overhead. You close the folder to its exact crook, and go.",
+      "item": {
+        "id": "wa_objection",
+        "name": "Note: 'It IS the Distribution'",
+        "description": "W.A.'s formal objection to Amendment 7-C, filed eleven months ago: 'I do not consent to administer.' Overruled by the designing investigator; ratified by Rao. Her unsent memo ends mid-sentence: 'Don't make me choose between the record and—'. Four days later she administered it herself. Under protest, in ink like a private sound.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Out, past the draught and the sagging leaf, ahead of the creak.",
+          "next": "near_discovery"
+        }
+      ]
+    },
+    "near_discovery": {
+      "id": "near_discovery",
+      "text": "You are ten feet from the double doors when light blooms in the stairwell ahead, and the feet make the decision at their own frame rate: sidestep, alcove, stillness — tucking you into a doorway's shadow with the economy of a body that has hidden in this corridor before, which is its own small filing to make later.\n\nVoices. One is the night administrator's murmur. The other owns the clocks.\n\n\"—no, the board convenes on the sixtieth day. His sixtieth; yes, I'm aware of the poetry, the calendar wasn't my idea.\" Rao's voice at night is the same voice, unhurried, warm as a filing cabinet. A pause for the phone-crackle of someone else's sentence. \"The data is the argument. If the subject is at Fernhill before the board sits, the dataset closes clean, Seven's chart stays as amended, and the program survives review. If he's here, someone puts him in a chair in front of them, and he is — persuasive. Even now. Especially now, God help us, he's persuasive in ways he doesn't remember inventing.\" Another crackle. Footsteps, nearer; the torch-beam swings past your alcove and dwells on the records door — which sits seamless, latched, giving nothing. \"The wife is close. Tired signs; give it a Thursday or two.\" And then, passing so near you could count his keys, the last of it, thrown away like a receipt: \"The doctor is managed. She knows the price of an objection better than anyone in the building — she's already paid it once. There's a reason I kept her on his mornings, and sentiment isn't it. Watch what she does, not what she files.\"\n\nThe light dies down the stairwell. The building resumes its bookkeeping.\n\nYou stand in the alcove a long moment, doing the arithmetic he seemed so comfortable doing on everyone. The sixtieth day. Fernhill before the board. Tired signs. And the doctor, kept on your mornings as management — which he believes, and which you have five weeks of margin-coded mornings arguing against, and one of those two readings of her is wrong, and everything is parked on which.",
+      "item": {
+        "id": "transfer_overheard",
+        "name": "Note: The Sixtieth Day",
+        "description": "Rao, overheard past midnight: the review board convenes on Day 60 — 'his sixtieth.' If you're at Fernhill before it sits, the dataset closes clean and Seven's chart stays amended. 'He's persuasive in ways he doesn't remember inventing.' The wife: 'tired signs.' The doctor: 'managed — watch what she does, not what she files.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Back east, ahead of the audit, and get it all into the notebook while the night still belongs to you.",
+          "next": "back_room9"
+        }
+      ]
+    },
+    "back_room9": {
+      "id": "back_room9",
+      "text": "The feet bring you home dry — over the loose board, past the draught, east into the residential hush — and you sit at the lamp and write for an hour, pressing hard, because tonight's freight is the heaviest yet and the ship sails at whatever hour sleep decides.\n\nThe drawer. The carbon, or the amendment, or her objection — whichever door you opened, its contents go down in full, margin-coded where prose would be dangerous. The alcove. The sixtieth day. Fernhill before the board. Tired signs. Watch what she does, not what she files.\n\nAnd then you sit with the pen up for a long time over the last entry, because it has to be the right size for a stranger to lift, and finally you write it plainly, boxed, the largest letters in the book:\n\nDAY 60 IS THE BOARD. THE DIRECTOR NEEDS YOU GONE AND SIGNED FOR BEFORE IT SITS. YOU HAVE FIFTEEN DAYS AND ONE QUESTION. ASK HER PROPERLY — PROOF IN HAND. SHE HAS BEEN WAITING SIX WEEKS FOR YOU TO EARN WHAT SHE'S FORBIDDEN TO GIVE AWAY.\n\nThe lamp is hot. The rookery is silent. Somewhere behind a linen press an hour south, a sealed parcel breathes; somewhere down the corridor a deck of cards lies cut for morning; somewhere upstairs a folder with your number on it sits inside an administrative hold like a stone inside a fist.",
+      "choices": [
+        {
+          "text": "Square the notebook to the corner and surrender the day.",
+          "next": "ch3_end"
+        },
+        {
+          "text": "One last discipline before sleep: the notebook itself. He's known its shape since Day 41 — check the object like an instrument.",
+          "next": "notebook_checked",
+          "requires": "rao_told"
+        }
+      ]
+    },
+    "notebook_checked": {
+      "id": "notebook_checked",
+      "text": "Before you surrender the day, you do what the slanted man would have done: you audit the instrument.\n\nYou told the director about the notebook on Day 41 — told him honestly, rules and tallies, six of them; the entry is right there, in your own reproachless record — and a man who confirms a delivery date eventually takes delivery. So you check the object the way you'd check a lock: not for damage. For fluency.\n\nIt sits squared to the desk corner. You square it every night; the habit is in the entries. But your squaring — you test it now, three times, watching your own hands — lands the spine parallel to the desk edge, close, not exact; the hands have a signature even in tidiness. Tonight the notebook is exact. Machined. Squarer than you.\n\nAnd inside: nothing missing, nothing added — but the rules page, the most-read page in the book, dog-eared soft as cloth by forty-five mornings, lies a half-degree wrong in the binding, re-seated by a thumb with different geometry. And when you hold the page flat and rake the lamplight across it, low, the way the ghost-grooves taught you: a faint fresh crease, dead horizontal, a third of the way down. The crease a page takes when it is held flat against a copier's glass by a careful hand — careful, but the machine's lid has a weight no thumb can argue with.\n\nSomeone photographed the rules while you were west of the double doors. The six of them. Including the crossed-out or standing Rule Six — the disposition of which is, you realize with the cold arriving properly, itself the finding: whichever way you decided, the director now holds your decision in facsimile, timestamped, filed with the good locks.\n\nYou write it small and hard at the foot of the day: THE BOOK WAS COPIED TONIGHT. HE READS US NOW. From here, the margins keep the truth and the pages perform for the camera. Two ledgers. Like everything else in this building.",
+      "choices": [
+        {
+          "text": "Square the notebook — exactly, this time; let him wonder — and surrender the day.",
+          "next": "ch3_end"
+        }
+      ]
+    },
+    "ch3_end": {
+      "id": "ch3_end",
+      "text": "The tide comes up over Thursday and takes it: the earrings you could have described before the door opened, the cup too hot to hold, the folder closed on a car roof or the parcel breathing behind a linen press; the drawer that rolled out on old runners; a torch-beam dwelling on a seamless door; the sixtieth day.\n\nAll of it goes over the side, freight-tagged in a notebook by a man who will not see the ship come in.\n\nBut mark what the tide cannot reach, tonight of all nights.\n\nSomewhere below the waterline of you, five weeks of mornings have compounded into a standing sea — her tread, her stillness, her tea going down the corridor against regulations — and tonight a new current joined it: a voice saying hello, love with forty-five Thursdays of wear on it; a slow surfacing of gold birds and grey streak and hands that weren't steady. The catalogue keeps what the wire can't warm. It waits there, whole, for the day the warmth finds its way back across — or doesn't.\n\nIn the west wing, a drawer sits seamless and lighter by one carbon leaf, or heavier by one reader. In the director's files, a photograph of six rules waits to be spent. In an office you have never knowingly entered, a review board's date sits circled on a calendar: the sixtieth day. Fifteen mornings off. Fourteen. The arithmetic runs even while you sleep — it is the one thing here that never needed you awake.\n\nAnd east, in a small warm room, a notebook holds the largest letters it has ever carried: ASK HER PROPERLY. PROOF IN HAND. SHE HAS BEEN WAITING SIX WEEKS.\n\nThe rooks turn in the dark, first of anything, hours before light.\n\nThe Confabulist continues in Chapter IV.",
+      "end": true
+    }
+  }
+}
