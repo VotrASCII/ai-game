@@ -12,16 +12,26 @@
 </head>
 <body>
 
+  <!-- ─── Library Screen (story select) ────────────────────────── -->
+  <div id="library-screen">
+    <div id="library-content">
+      <p class="screen-eyebrow">Stories</p>
+      <div id="story-list"></div>
+    </div>
+    <p id="title-footer">Select a story to begin</p>
+  </div>
+
   <!-- ─── Title Screen ─────────────────────────────────────────── -->
-  <div id="title-screen">
+  <div id="title-screen" class="hidden">
     <div id="title-content">
-      <p id="title-eyebrow">A text adventure</p>
-      <h1 id="game-title"></h1>
-      <p id="game-subtitle"></p>
-      <div id="title-actions">
+      <p id="title-eyebrow" class="reveal-el">A text adventure</p>
+      <h1 id="game-title" class="reveal-el"></h1>
+      <p id="game-subtitle" class="reveal-el"></p>
+      <div id="title-actions" class="reveal-el">
         <button id="btn-new">Begin</button>
         <button id="btn-continue" class="hidden">Continue</button>
       </div>
+      <button id="btn-title-back" class="reveal-el">← all stories</button>
     </div>
     <p id="title-footer">Click anywhere during text to skip · Space or Enter also works</p>
   </div>
@@ -56,6 +66,11 @@
 
   <!-- ─── Game Screen ───────────────────────────────────────────── -->
   <div id="game-screen" class="hidden">
+
+    <!-- Top-left UI -->
+    <div id="nav-bar">
+      <button id="btn-game-back" title="Back to stories">← stories</button>
+    </div>
 
     <!-- Top-right UI -->
     <div id="ui-bar">

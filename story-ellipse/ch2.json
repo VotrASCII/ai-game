@@ -1,0 +1,464 @@
+{
+  "startScene": "vectors",
+  "scenes": {
+    "vectors": {
+      "id": "vectors",
+      "text": "Day 9. The commit is a week old and the ship has stopped debating it; ships are honest that way. The trajectory on your board is no longer a proposal — it is where you live now, a long bright line with the Halcyon strung on it like a bead.\n\nEach watch begins the same way, by regulation and by ritual: the navigator confirms the committed solution against the stars, and logs it, and the day is allowed to start.\n\nYou pull up the board.",
+      "choices": [
+        {
+          "text": "Confirm the log: hard burn, continuous thrust, arrival Day 96.",
+          "requires": "route_hard_burn",
+          "next": "h_settle"
+        },
+        {
+          "text": "Confirm the log: transfer ellipse, arrival Day 178.",
+          "requires": "route_slow_ellipse",
+          "next": "s_coast"
+        }
+      ]
+    },
+
+    "h_settle": {
+      "id": "h_settle",
+      "text": "Two-thirds of a gravity, without pause, without mercy, for months. Nobody who hasn't lived under sustained thrust understands what it actually taxes: not muscle — the body adapts, grudgingly — but the ten thousand small economies of a ship built to spend most of its life falling. Everything weighs. Tools, meals, eyelids at the end of a watch. The spin section is locked down, redundant now; the whole crew lives in the drive's vertical architecture, climbing between decks that were corridors a week ago.\n\nThe Halcyon herself has gone quiet in a new way. The drive's voice is so constant it has become the silence — a deep, mineral note, two decks down, that you feel in your teeth and have stopped hearing. Juno calls it 'the landlord.' The landlord is always home.\n\nYou keep the ledger like a religion. Every kilogram of reaction mass spent on schedule, every hour of burn logged against the arrival marker: Day 96, seven days ahead of the beacon's date. The margin you all chose. The margin you all think about at night, each in your own arithmetic.\n\nEighty-seven days of this. The crew is finding out who they are at two-thirds weight, one watch at a time.",
+      "choices": [
+        {
+          "text": "Start the rounds with the medbay. Sustained thrust is Okonkwo's busiest season, and he's the one man aboard who never reports on himself.",
+          "next": "h_medbay"
+        },
+        {
+          "text": "Start with engineering. Juno has been drafting a hull inspection under thrust, which is either diligence or a dare.",
+          "next": "h_juno_hull"
+        }
+      ]
+    },
+    "h_medbay": {
+      "id": "h_medbay",
+      "text": "Under sustained thrust the medbay runs like a weather station in a long storm: fluid balances, vestibular complaints, the crew's joints filing grievances in strict seniority order. Okonkwo processes it all with his usual unhurried thoroughness, and he is very good, which is how he hides.\n\nBut you were trained to watch, one way or another, and the signs are there for anyone keeping his file instead of the crew's. He takes the two flights between decks with a schedule in mind — never hurried, never twice in an hour. He examines standing patients seated. At the end of the long watch his left hand finds the counter's edge, casually, and stays there.\n\nTwo-thirds of a gravity is a tax on every heart aboard. Five of those hearts are young or documented. The sixth is running on a dosage its owner cut in half at Anchorage, and is now carrying a body up and down a gravity well it didn't order.\n\nHe catches you cataloguing him and smiles, professionally, daring you — inviting you? — to say it in his own room.",
+      "choices": [
+        {
+          "text": "You promised to countermand him only when it's true. Look at his hand on the counter and decide whether it's true.",
+          "requires": "okonkwo_secret",
+          "next": "h_confide"
+        },
+        {
+          "text": "Read him clinically, out loud: the stairs, the seated exams, the hand. Name the pattern and make him show you the pharmacy ledger.",
+          "requires": "field_medicine",
+          "next": "h_confide"
+        },
+        {
+          "text": "Let it go. Every senior officer aboard is spending some private margin on this run; his is his own.",
+          "next": "h_juno_hull"
+        }
+      ]
+    },
+    "h_confide": {
+      "id": "h_confide",
+      "text": "You say it in his own room, quietly, with the door shut: the halved dosage, the strategy of stairs, the hand on the counter. The pharmacy budget stretched toward a patient he has never met.\n\nOkonkwo listens the way he does everything, completely, and then he sits — really sits, letting the weight win for once — and the professional smile folds itself away like an instrument he no longer needs.\n\n\"Under one gravity of thrust I would already have grounded a patient with my chart,\" he says. \"Under two-thirds, the question is arguable, and I have been arguing it with myself twice a day.\" He looks at his own hands. \"Here is the clinical truth: I can finish this voyage. I cannot finish it and also work a crisis at the far end — a resuscitation, a long surgery, a suit rescue — not without becoming the second patient in the room. So the ship's doctor has a conflict of interest, and the ship's protocol for that is disclosure to a certifying officer.\" A dry breath that is almost a laugh. \"You appear to be certifying.\"\n\nTogether, you restructure the truth into something survivable: his dosage restored to full — he argues; you decline to hear it — the pharmacy budget rebalanced against Erebus's old medical stores, which the station schematics list two decks under the core. And a standing arrangement, witnessed by no one: at the far end, he does not go through a hatch first, and if the day comes that triage puts him last in his own queue, you will be the one who says so, so that he doesn't have to.\n\n\"You realize,\" he says as you leave, \"that you have just prescribed for your own doctor.\" He signs your slate with exaggerated ceremony. \"Try to enjoy it. Almost no one gets to.\"",
+      "item": {
+        "id": "okonkwo_secret",
+        "name": "The Doctor's Ration",
+        "description": "Okonkwo was stretching his own cardiac medication to preserve the pharmacy for whoever waits on Erebus. Dosage restored, budget rebalanced, and a standing arrangement: he doesn't go through hatches first, and when triage puts him last, you'll be the one to say it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Engineering next. Juno's hull inspection proposal is still on your queue, flagged in her handwriting: 'important, actually.'",
+          "next": "h_juno_hull"
+        }
+      ]
+    },
+    "h_juno_hull": {
+      "id": "h_juno_hull",
+      "text": "Juno's proposal is titled EXTERNAL SURVEY, MICROMETEOROID AND THERMAL, MIDSHIP TO DRIVE FRAME, and it is, you note, flawless — routes, tether plans, abort ladders, the works. It is also an EVA on the outside of a ship under continuous two-thirds-gravity thrust, which is not free-fall spacewalking. It is mountaineering on a building that is falling upward forever, above a drive plume you must never, ever descend into.\n\n\"Before you say it,\" she says, \"three points. One: we took a debris strike off the bow quarter in week one — the sensors say cosmetic, and sensors said my flow gauge was fine too. Two: after turnover we can't inspect anything until we're at Erebus, and if the hull has a problem I want it found while we can still choose our burns. Three—\" she hesitates, and honesty wins, it always does with her, \"—three is that I'm the best tether hand on this ship and everybody knows it, and if you make Volkov do it instead I will be insufferable for the rest of the voyage.\"\n\nAll three points are correct. That's the trouble with Juno: her judgment is genuinely good; it's her odds she's never met.\n\nVolkov's voice in the hold, unbidden: keep her off the sharp edge. That's my number and my price.",
+      "choices": [
+        {
+          "text": "Approve it — and suit up as her second yourself. If the ship's best tether hand walks the hull, the navigator walks it with her.",
+          "next": "h_hullwalk"
+        },
+        {
+          "text": "Approve the survey, but run it by drone with Juno flying remote. Her hands, nobody's bones.",
+          "next": "h_hull_inside"
+        }
+      ]
+    },
+    "h_hullwalk": {
+      "id": "h_hullwalk",
+      "text": "Two hours on the outside of a burning ship, and you understand every legend spacers tell and decline to tell.\n\nDown is aft, and down is real: let go, and you do not float away — you fall, into the blue-white column of the drive plume standing below the ship like the pillar of some terrible church. So you do not let go. You move like Juno teaches you between the tether points, three of four limbs always loaded, and the discipline of it empties your head of everything but hardware, which is, you suspect, half of why she comes out here.\n\nShe works the survey grid like a musician. The debris strike, when you reach it, is exactly what she feared and the sensors shrugged at: a bright gouge across a radiator manifold, cosmetic — except for the mounting flange beneath, cracked clean through, one thermal cycle from walking up the coolant line. Under her helmet lamp she photographs it, splints it with the kit on her hip, and grins at you through the faceplate, and you log privately that Volkov was wrong about one thing. She knows exactly what the sharp edge is. She just believes, at twenty-four, that respect is paid to it out there, with your hands, and not from behind a screen.\n\nBack in the airlock, gravity honest again, she racks her helmet and says, too casually: \"You came out. Marek wouldn't have. Volkov couldn't have.\" A beat. \"When we get where we're going, Nav — whatever needs doing outside, I want it to be us. Deal?\"\n\nYou will remember, later, the exact weight of the word before you said it.",
+      "item": {
+        "id": "juno_trust",
+        "name": "Juno's Tether Protocol",
+        "description": "Two hours on the hull of a burning ship, three of four limbs always loaded, and a cracked flange found and splinted that the sensors shrugged at. A deal made in the airlock: whatever needs doing outside, it's the two of you.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The night watches wait. Lately the captain has been standing hers at the observation blister, off-log.",
+          "next": "h_marek_ring"
+        }
+      ]
+    },
+    "h_hull_inside": {
+      "id": "h_hull_inside",
+      "text": "The drone does the walking; Juno does everything else, flying the survey grid from the engineering bay with a touch so fine the telemetry looks simulated. She finds what she feared: the debris strike off the bow quarter gouged a radiator manifold, and beneath the cosmetic scar the mounting flange is cracked through, one thermal cycle from a coolant failure after turnover. The drone's manipulator splints it in forty minutes under her hands. Textbook. Nobody's bones at stake.\n\nShe signs the work log without a word and is professional for the rest of the watch, which from Juno is a shout. Only at shift's end, racking the drone controller, does she say it, not quite to you:\n\n\"It missed a hairline on the second flange. I'd have seen it with my lamp, on my tether — angle of the light. I'll catch it next cycle.\" She stretches the ache of remote work out of her hands, and adds, evenly, \"Logged my objection this morning. Logging that it stands.\"\n\nShe's not wrong, and you're not wrong, and you both know that this is a conversation you will have again someday, somewhere with more vacuum in it and less time.",
+      "choices": [
+        {
+          "text": "The night watches wait. Lately the captain has been standing hers at the observation blister, off-log.",
+          "next": "h_marek_ring"
+        }
+      ]
+    },
+    "h_marek_ring": {
+      "id": "h_marek_ring",
+      "text": "You find out because trajectory work keeps strange hours too. Three nights running, in the dead watch, the blister's occupancy light is on — and the duty log says nobody.\n\nMarek stands at the pane with her hands folded behind her, at ease the way soldiers are at ease, which is to say load-bearing. Ahead, where the ship is pointed, the starfield has begun to do the thing that no crew ever gets used to: the faintest wrongness in the sky, stars near the trajectory line crowding minutely toward a center that is blacker than the black around it. KS-41, bending the light of everything behind it. At this range the lensing is subtle, a smear you could dismiss — unless you knew precisely where to look, and she is looking precisely there.\n\n\"Fifty-two thousand suns' worth of mass,\" she says, not turning, \"and it has never once done anything wrong. It just sits there, being heavy. Everything that happened out here, people did.\" \n\nYou stand the rest of the watch with her, unlogged, and she says nothing else, and you learn two things from the silence. She has stood at panes like this one before, looking at this exact smear in the sky — her body knows the posture too well. And whatever she is rehearsing, night after night, is not for the ship. Ships get orders. What she is rehearsing is for someone.",
+      "choices": [
+        {
+          "text": "Day 68. The picket line is coming up fast — the interdiction's old sentries. Time to plan the flyby.",
+          "next": "h_picket_flyby"
+        }
+      ]
+    },
+    "h_picket_flyby": {
+      "id": "h_picket_flyby",
+      "text": "Day 68. The interdiction's outer marker resolves in the telescopes: the quarantine picket line, or what remains of it — automated relay buoys strung across the approaches, and one dark tonnage among them that the registry names Meridian Gate, picket vessel, decommissioned in place in Year Eleven when the watch was automated. A warship-shaped hole in the starlight, holding station on a dead assignment for thirty-one years.\n\nAt your velocity there is no stopping here; you will cross the picket line at better than four thousand kilometers a second, decelerating, and the encounter window is measured in minutes. What you have is one comms drone, hardened, expendable: launched ahead on the right vector, it can match, dock, and squirt whatever it finds back to the ship before the geometry closes.\n\nOne drone. Two targets.\n\nThe relay buoy is the picket's memory — its archive logged every signal that crossed this line for eleven crewed years and thirty-one automated ones, including, presumably, the night the Erebus beacon woke. And the Meridian Gate is the picket's witness: a sealed hull that was on this line in the years the record went strange, with whatever her final crew left aboard.\n\nPriya wants the buoy and says so at length. Marek, asked for a preference, is silent for exactly as long as it takes everyone to notice, and then says, \"Navigator's call,\" in a voice with a door closed in it.",
+      "choices": [
+        {
+          "text": "Send the drone to the relay buoy. Archives don't decay; the truth of this line is in its traffic logs.",
+          "next": "h_buoy_data"
+        },
+        {
+          "text": "Send the drone to the Meridian Gate. Crews leave truths aboard that no archive ever holds.",
+          "next": "h_wreck_scan"
+        }
+      ]
+    },
+    "h_buoy_data": {
+      "id": "h_buoy_data",
+      "text": "The drone flies eleven minutes ahead of the ship, docks with a buoy forty-one years past its service life, and finds the interface protocols unchanged — bureaucracies outlive their makers. The archive comes across in a compressed shriek seconds before the geometry closes and the drone is gone astern, expended, mission perfect.\n\nPriya has the index open before the ship stops ringing with the download. \"Traffic logs, complete, Year Zero to now — wait.\" Her voice changes registers. \"Not complete. There's a checksum gap. Entries 4,417 to 4,431, Year Three. Fifteen entries, deleted — not corrupted, deleted, the index was rebuilt around the hole. And the rebuild is signed.\" She turns the screen. \"Picket-era service code. Someone with watch-officer authority on this line took fifteen entries out of the record and had the clearance to make it clean.\"\n\nAlmost clean. The buoy, dutiful machine, kept a shadow ledger of transmission metadata its officers apparently never knew about, and the shadow survives: fifteen entries, Year Three, all logging the same event class. WEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. And then, after the fifteenth: CLASSIFICATION AMENDED — INSTRUMENT ECHO. NO FURTHER LOGGING THIS BEARING.\n\nThe shack is very quiet.\n\n\"Three years after the evacuation,\" Priya says. \"Somebody out there was transmitting. Somebody on this line heard it, acknowledged it, logged it fifteen times — and then somebody made it an echo.\" She looks at you, and the tea has gone cold in her hands. \"Nav. An echo of what? There was nothing left out there to echo.\"",
+      "item": {
+        "id": "deleted_ack_fragment",
+        "name": "The Buried Acknowledgment",
+        "description": "Fifteen deleted entries from the picket buoy's Year Three traffic log, recovered from a shadow ledger: WEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. Then: CLASSIFICATION AMENDED — INSTRUMENT ECHO. Someone was alive and transmitting, three years after the certificate said no one was. Someone with watch-officer authority made sure it stayed an echo.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "There's more in the archive — the beacon's own wake-up, logged from the near field. Let Priya pull its cipher header at full resolution.",
+          "next": "h_buoy_key"
+        },
+        {
+          "text": "Seal the fragment under navigator's log authority and think very carefully about who to show it to. Ahead, the zone boundary waits.",
+          "next": "h_transmit_ask"
+        }
+      ]
+    },
+    "h_buoy_key": {
+      "id": "h_buoy_key",
+      "text": "The buoy heard the beacon wake from closer than any ship ever will again, and its recording is pristine: the first transmission, three weeks before your intercept, cipher header complete to the last housekeeping bit.\n\nPriya runs the header, and the key-epoch marker comes back like a depth sounding: the encryption indexes to the picket registries. A Compact fleet key, issued to quarantine picket personnel, four decades ago, never rolled over. The beacon is not broadcasting to the void, and never was. It is a letter, addressed by era and service, to whoever out of that vanished fleet might still be listening.\n\n\"A letter to the picket,\" Priya says slowly, \"logged by the picket's own buoy, sitting eleven light-minutes from a picket-era deletion in the same archive.\" She rubs her face. \"I keep arranging these three things in different orders, Nav, and every order tells the same story, and in the story somebody we — \" She stops. Starts again, carefully: \"Somebody who knows this line personally has been part of this from before we were born. I'd like to be wrong. Arrange them so I'm wrong.\"\n\nYou can't. Neither can she. The zone boundary is nineteen days ahead.",
+      "item": {
+        "id": "beacon_epoch_key",
+        "name": "Cipher Epoch Marker",
+        "description": "The beacon's key-epoch, recovered at full resolution from the picket buoy: encryption keyed to the quarantine picket registries, issued forty-two years ago, never rolled over. The transmission is a letter, and the envelope carries a rank, an era, and very nearly a name.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Ahead, the zone boundary — and a decision about whether to announce yourselves to whatever is listening at Erebus.",
+          "next": "h_transmit_ask"
+        }
+      ]
+    },
+    "h_wreck_scan": {
+      "id": "h_wreck_scan",
+      "text": "The drone flies eleven minutes ahead and puts its lamps on the Meridian Gate, and the crew gathers at the screens without being called, because a dead ship is a dead crew's house and you do not walk through it loudly, even by wire.\n\nShe is intact. Powered down by the book, hatches sealed, thirty-one years of dust-fine debris drifted against her spinward faces like snow against a fence. The drone reads her hull plate, her final watch roster still posted at the airlock in the manner of the old fleet — and there, fourth line down, the camera holds steady on a name while the whole bridge of the Halcyon goes silent: MAREK, I., COMMS RATING 3C.\n\nNo one looks at the captain. Everyone is looking at the captain.\n\n\"My first posting,\" Marek says, from the back of the bridge, into the silence, absolutely level. \"Three years on this line, after the evacuation convoy. You'd have found it in my service record if the Compact hadn't sealed everything that touches this zone.\" A pause. \"Which I could not unseal for you. Sealed means sealed — even from me.\"\n\nThe drone's window closes; the Meridian Gate falls astern with her dust and her roster. What the flyby has bought you is not evidence — the archive went unread; the buoy will keep its secrets — but it is knowledge of a shape: the captain served on this line, in the exact years the public record bends around its seals, and every soul aboard now knows it at the same time, which was perhaps, you think, watching her straight back leave the bridge, exactly what she could not bring herself to say and chose to let a camera say instead.",
+      "choices": [
+        {
+          "text": "Ahead, the zone boundary — and a decision about whether to announce yourselves to whatever is listening at Erebus.",
+          "next": "h_transmit_ask"
+        }
+      ]
+    },
+    "h_transmit_ask": {
+      "id": "h_transmit_ask",
+      "text": "Nineteen days out from Erebus, comms puts the question on the table: do you transmit ahead?\n\nThe case for is plain as bread. Whoever maintains that beacon has been rationing watts for decades and is counting down to a date; a single message — a ship is coming, hold on — might be worth more than the ship itself. Okonkwo puts it clinically: \"Hope has a dosage. Arriving unannounced wastes it.\"\n\nThe case against comes from the head of the table, and it is not procedural. Marek hears the proposal out and says, \"No transmission,\" and offers, for the first time in four years, a reason that is visibly not the real one: interdiction protocol, unknown receivers, the legal exposure of hailing a withdrawn registry. It would not convince a cadet. She knows it would not convince a cadet, and stands behind it anyway, and the silence afterward has her whole career inside it.\n\nWhatever waits at Erebus, she is not ready to say the Halcyon's name to it. Or her own.\n\nPriya looks at you across the table. Comms authority is the captain's. Trajectory declarations, though — arrival notices, approach warnings, navigational broadcasts — those are the navigator's, and everyone at the table knows it, including the captain, who is watching you learn it.",
+      "choices": [
+        {
+          "text": "Send it under navigational authority: a standard approach declaration. Ship inbound, arrival Day 96. Six words that mean 'hold on.'",
+          "next": "h_defy_send"
+        },
+        {
+          "text": "Honor the silence. Marek is carrying something you can't see the shape of yet, and you won't force her hand at fifteen light-hours from nowhere.",
+          "next": "h_obey_silence"
+        }
+      ]
+    },
+    "h_defy_send": {
+      "id": "h_defy_send",
+      "text": "You write it in the flattest dialect there is, the one language every era of equipment speaks: NAVIGATIONAL DECLARATION. VESSEL HALCYON, INBOUND EREBUS STATION. ARRIVAL DAY 96 SYSTEM REFERENCE. RESPONSE NOT REQUIRED.\n\nSix hours later — transmitted, logged, unrecallable — Marek summons you to her cabin, and does not ask you to sit.\n\n\"Under navigational authority,\" she says. \"Clean. I'd have done the same at your board.\" She lets that stand just long enough to mean it. \"Understand what you've spent, Nav. There is a person at the far end of that line who has been waiting longer than you've been alive, and you have just told her the wait is over and given her a date. If we are late — if we are wrong — if this ship arrives as six strangers and a cargo manifest instead of whatever she has spent forty-two years imagining —\" and there it is, her, unremarked, hanging in the cabin air between you, the first time anyone aboard has given the beacon a pronoun, \"— then you have written a promise on my registry that I may not be able to keep. I've watched that done before. From very close.\"\n\nShe turns to her screen, dismissal and confession finished in the same breath. At the door, her voice again, quieter: \"For the log: the declaration was correct. Keep transmitting the approach updates. All of them. If we're going to promise — promise properly.\"",
+      "item": {
+        "id": "promise_sent",
+        "name": "The Approach Declaration",
+        "description": "VESSEL HALCYON, INBOUND EREBUS STATION. ARRIVAL DAY 96. Six words under navigational authority, unrecallable, telling forty-two years of patience that the wait has a date now. If we're going to promise — promise properly.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Day 95. The zone boundary. Cross it.",
+          "next": "h_zone_cross"
+        }
+      ]
+    },
+    "h_obey_silence": {
+      "id": "h_obey_silence",
+      "text": "You let the silence stand. It is the captain's ship, and whatever she is not ready to name, you will not name it for her by broadcast.\n\nThe decision sits differently with different people. Priya logs a formal objection, one paragraph, correct and cold. Okonkwo says nothing, which from Okonkwo is a diagnosis. Juno takes it worst and shows it least: you find her that night recalibrating the docking sensors for the fourth time, and she doesn't look up when she says, \"If it was me out there, and a ship was coming, and it didn't say so—\" and then the sentence goes back into the work, where she keeps the things that have no safe shape.\n\nThe Halcyon runs on toward Erebus, dark and punctual, carrying its silence like a second cargo. Whoever waits at the beacon will learn the wait is over when a ship's drive flame crests their sky — a rescue, or an ambush of hope, arriving all at once, unannounced. You chose the captain's reasons without knowing them. You will find out together what they cost.",
+      "choices": [
+        {
+          "text": "Day 95. The zone boundary. Cross it.",
+          "next": "h_zone_cross"
+        }
+      ]
+    },
+    "h_zone_cross": {
+      "id": "h_zone_cross",
+      "text": "Day 95. The Halcyon crosses the interdiction boundary decelerating hard, drive first, standing on her fire, and KS-41 finally stops being a number in your files.\n\nAhead — visibly ahead now, to the naked eye at the blister — the starfield warps around a center of pure absence. The Einstein ring has opened: a thin, impossible circlet of smeared starlight, the light of everything behind the hole bent around its mass and delivered to you wrong. Inside the ring, nothing. Not dark — nothing, an absence with a circumference. Juno stands at the pane for an hour and finally says, \"It's not that it's black. It's that it's exactly where looking stops working,\" which is as good as any survey annex has ever put it.\n\nAnd somewhere in that warped sky, too small to resolve, falling around the nothing at thirteen thousand kilometers a second: a station, a beacon, and the answer to a forty-two-year-old arithmetic problem about survival.\n\nThe board counts down the last day of the burn. Arrival tomorrow. Day 103 — whatever it is, whatever it costs — is seven days out, and you are going to be there for it, with sixteen hundred kilometers a second in the tanks and no road home that doesn't run through whatever you find.\n\nThe landlord's note deepens, aft. The final approach begins.",
+      "end": true
+    },
+
+    "s_coast": {
+      "id": "s_coast",
+      "text": "The drive fell silent on Day 6, and the Halcyon entered the long middle of her ellipse: months of free-fall, the spin section turning again, the ship coasting up out of the sun's country toward the cold where KS-41 keeps its orbit like a secret.\n\nCoasting is honest flight, the purest kind — the whole voyage banked as velocity, nothing spent, everything held. Thirty-two hundred kilometers a second of margin sleeps in the tanks, and as navigator you tend the stillness like a fire: tiny trim maneuvers, star fixes, the arrival marker holding rock-steady on Day 178.\n\nAnd beneath the stillness, the other arithmetic, the one nobody logs. Day 103 will happen with the ship still seventy-some days from Erebus, still deep in the crossing, a spectator strapped to a trajectory that cannot be meaningfully improved. Whatever the beacon has been counting down to, the Halcyon will watch it from the cheap seats and arrive to the consequences.\n\nA crew with too much time and one unspendable regret: that is the cargo now. The transit will be a siege of patience, and sieges go to whoever tends their people best.",
+      "choices": [
+        {
+          "text": "Tend the flashpoint first: Volkov's hold, where the leave-now arithmetic never sleeps.",
+          "next": "s_volkov"
+        },
+        {
+          "text": "Tend the doctor: free-fall hides bodies' truths even better than gravity does, and Okonkwo reports on everyone but himself.",
+          "next": "s_medbay"
+        }
+      ]
+    },
+    "s_volkov": {
+      "id": "s_volkov",
+      "text": "You find Volkov doing what he always does in free-fall: inspecting lashings that have not moved, because eleven hundred tonnes of cargo in zero gravity is not stored, it is paused.\n\nHe talks the way he works, in tight, load-bearing sentences, and today's load is the one you came for. \"Hundred and seventy-eight days out. Hundred and eighty-some back, whenever back happens. A year of my life and everyone's contracts, to arrive seventy-five days after the only number the beacon thought was worth saying.\" He tests a strap with his fist. \"I voted my piece and I fly the result — that's the job. But you should hear what the quiet ones are thinking, Nav, because they've stopped saying it at the table: if Day 103 is what a countdown to nothing looks like — if we watch that date pass and the beacon just keeps ticking — there will be a case for turning for home with the margin we still hold. A real case. Made by real crew. And it will land on your board, because the ellipse is yours.\"\n\nIt is not a threat; it is a weather report from the only man aboard who never lies about cargo, including the human kind.",
+      "choices": [
+        {
+          "text": "Level with him the way he leveled with you at Anchorage: whatever lands on the board gets weighed honestly — his tally included.",
+          "requires": "wayward_manifest",
+          "next": "s_volkov_pact"
+        },
+        {
+          "text": "Log the weather report and keep the rounds moving. The medbay next.",
+          "next": "s_medbay"
+        }
+      ]
+    },
+    "s_volkov_pact": {
+      "id": "s_volkov_pact",
+      "text": "\"At Anchorage you showed me a number nobody else gets to see,\" you say, \"and told me margins die from being known. So here's mine, kept the same way.\" You give it to him straight: the abort geometries you maintain and re-derive every week and log nowhere — the exact windows, closing one by one along the ellipse, where the Halcyon could still turn for home, and the honest delta-v price of each. \"When the case for turning back lands on my board, it gets weighed against these. Truly weighed — not managed, not steered. Your tally, my windows. If the numbers ever say go home, I will say go home, to the captain's face, whatever's out there. And if the numbers say we finish this, you'll back the board. Both directions, Volkov. That's the trade.\"\n\nHe is quiet for a long moment, drifting one calloused hand along a cargo strap like a man reading braille.\n\n\"Eighteen years I've kept that tally,\" he says finally, \"and you're the first officer who ever offered collateral for it.\" He extends the hand. His grip is exactly as honest as his ledgers. \"Both directions. Done. And Nav — when it comes, and it will come — make sure it's a vote, out loud, at the table. Crews survive hard arithmetic. They don't survive learning it was done to them in private.\"",
+      "choices": [
+        {
+          "text": "The medbay next. Free-fall hides bodies' truths, and Okonkwo reports on everyone but himself.",
+          "next": "s_medbay"
+        }
+      ]
+    },
+    "s_medbay": {
+      "id": "s_medbay",
+      "text": "Free-fall is kind to bad hearts and cruel to doctors trying to hide them: no stairs to strategize around, no weight to carry — and no gravity to blame anything on either. Okonkwo runs the crew's zero-g protocols with his usual patient thoroughness, bone-density scans and fluid-shift checks, and the medbay in coast phase is a calm and orderly country.\n\nBut you have months to watch him now, and long stillness is its own examination. He tires in the afternoons and schedules around it beautifully. His own exercise regimen — mandatory, his rules — is logged complete every day, and the resistance settings creep downward week by week, a little, then a little. In the seventh week you catch the detail that matters: he has quietly moved the crash kit's cardiac module from the locker's high shelf to the rail beside his own sleep restraint. Doctors arrange rooms around the emergencies they expect.\n\nHe sees you seeing it. He is too good not to. The question is what the two of you do about a truth that has all the time in the world to grow.",
+      "choices": [
+        {
+          "text": "Keep the promise made in his medbay at the start of all this: name it now, before the long quiet makes it unsayable.",
+          "requires": "okonkwo_secret",
+          "next": "s_confide"
+        },
+        {
+          "text": "Read the room like a chart — the crash kit, the creeping resistance settings, the beautiful scheduling — and say the pattern out loud, medic to physician.",
+          "requires": "field_medicine",
+          "next": "s_confide"
+        },
+        {
+          "text": "Leave the doctor his privacy and his arrangements. On a voyage this long, dignity is medicine too.",
+          "next": "s_juno_sim"
+        }
+      ]
+    },
+    "s_confide": {
+      "id": "s_confide",
+      "text": "You name it — the relocated crash kit, the dwindling resistance settings, the pharmacy arithmetic underneath it all — quietly, in his own room, with the door shut.\n\nOkonkwo floats still for a moment, and then does something you have never seen him do: he stops performing steadiness. The difference is like a room's lights coming half down.\n\n\"Managed decline,\" he says. \"That's the honest chart. In free-fall I will coast a long time — hearts love the cheap seats. It's the far end that concerns me: whatever we find at Erebus after Day 103 has come and gone, it will not be a calm clinic, and a doctor who might become the second casualty in the room is a liability I've been rationing everyone's future around.\" He gestures at the crash kit on its rail, faintly amused at himself. \"You see the estate planning.\"\n\nWhat you build together, over tea in bulbs, is not hope exactly — it is protocol, which is what people like the two of you have instead. His dosage restored in full; the pharmacy rebalanced against the medical stores Erebus's schematics promise, two decks under the shielded core. Juno to be trained up, casually, disguised as cross-certification, in the six procedures he considers most likely to be needed. And the standing arrangement, witnessed by no one: he does not go through hatches first, and when triage finally puts him last in his own queue, you will be the one who says it, so that he doesn't have to.\n\n\"A hundred days of quiet left,\" he says as you leave. \"Do you know, I feel better than I have since Anchorage. Secrets have a mass, Nav. Physicians just prefer not to chart it.\"",
+      "item": {
+        "id": "okonkwo_secret",
+        "name": "The Doctor's Ration",
+        "description": "Okonkwo was stretching his own cardiac medication to preserve the pharmacy for whoever waits on Erebus. Dosage restored, budget rebalanced, Juno quietly cross-trained, and a standing arrangement: he doesn't go through hatches first, and when triage puts him last, you'll be the one to say it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Engineering, where Juno has built something in the simulator that she calls 'homework.'",
+          "next": "s_juno_sim"
+        }
+      ]
+    },
+    "s_juno_sim": {
+      "id": "s_juno_sim",
+      "text": "Juno's 'homework' turns out to be a full-fidelity docking simulation: Erebus Station, built plate by plate from the forty-two-year-old schematics, orbiting a black hole she has modeled down to the lensing — and every docking approach flown against equipment that has had four decades to decay.\n\n\"Nobody's talking about the part after we arrive,\" she says, flying the sim one-handed while she talks, \"so I am. Look — their collar is a Mark Four. Nothing's mated to a Mark Four in thirty years; our adapter allegedly backward-qualifies, which means it was tested once, on a bench, by somebody who's retired. The station's spinning around that thing —\" the black nothing swings past the simulated viewport, ringed in bent starlight, and she doesn't even glance at it, \"— so approach corridors are tight and periodic. And if the collar's dead, everything crossing between ship and station goes over on a line. In suits. Through vacuum that's had forty-two years to fill up with whatever a dying station sheds.\"\n\nShe crashes the sim deliberately — collar failure at contact, the worst case — and flies the recovery, and it is beautiful, and she knows it, and she runs it again.\n\n\"Fly it with me,\" she says. \"Every variant. By the time we're there, I want the two of us to have docked at Erebus a thousand times before we do it once.\"",
+      "choices": [
+        {
+          "text": "Fly it with her. Every watch you can spare, every failure mode she can invent — a thousand times before once.",
+          "next": "s_sim_partner"
+        },
+        {
+          "text": "Endorse the homework, assign her the full failure catalogue — but keep your own watches for the ledger. The ellipse needs its navigator.",
+          "next": "s_marek_ring"
+        }
+      ]
+    },
+    "s_sim_partner": {
+      "id": "s_sim_partner",
+      "text": "It becomes the shape of the transit: the dead watches, the two of you, and a station neither of you has ever seen rendered in patient light.\n\nYou fly the nominal approach until it bores her, and then the catalogue: collar failures, thruster faults, a station wobble from a broken damper, suit transfers on the line in every flavor of bad. She invents failure modes the way other people hum. Somewhere around the two-hundredth run the two of you stop being officer and junior and become what she actually wanted: a crew of two that thinks in halves of the same sentence. You learn her tells — she goes silent two seconds before she commits to a correction. She learns yours. On run four hundred and something, a compound failure she designed to be unsurvivable, you both bring the ship in anyway, her on the collar, you on the line math, no words in the last ninety seconds at all.\n\nShe powers the sim down that night and is quiet for a while.\n\n\"My mother flew ferries,\" she says finally. \"She used to say you never really fly with someone until something goes wrong. Everything before that is just sitting near each other.\" She racks the controller, not looking at you, saying it to the equipment: \"Whatever needs doing out there — it's us. Deal?\"\n\nYou will remember, later, the exact weight of the word before you said it.",
+      "item": {
+        "id": "juno_trust",
+        "name": "Juno's Tether Protocol",
+        "description": "Four hundred simulated dockings at a station neither of you has seen, every failure mode she could invent, until the two of you think in halves of the same sentence. A deal made in the dark of the sim bay: whatever needs doing outside, it's the two of you.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Lately the captain has been standing unlogged watches at the observation blister. It's time you stood one with her.",
+          "next": "s_marek_ring"
+        }
+      ]
+    },
+    "s_marek_ring": {
+      "id": "s_marek_ring",
+      "text": "Three nights running, in the dead watch, the blister's occupancy light is on with nobody's name in the duty log. On the fourth night you go up.\n\nMarek stands at the pane with her hands folded behind her, at ease the way soldiers are at ease, which is to say load-bearing. Ahead, where the ellipse is climbing, the starfield has begun its slow wrongness: stars near the trajectory line crowding minutely toward a center blacker than the black around it. KS-41, still weeks away, already bending everything behind it. The lensing at this range is a smear you could dismiss — unless you knew precisely where to look. She is looking precisely there.\n\n\"Fifty-two thousand suns' worth of mass,\" she says, not turning, \"and it has never once done anything wrong. It just sits there, being heavy. Everything that happened out here, people did.\"\n\nYou stand the rest of the watch with her, unlogged. Near its end, with the lights banked and her face in the pane's reflection layered over the warped stars, she says one more thing, quietly, in the tone of a woman balancing a ledger out loud: \"Day 103 is going to happen with this ship still deep in the crossing. Whatever it is. I chose an ellipse that watches.\" A long breath. \"Remember that it was chosen, Nav. When you're deciding later what I knew — remember all of us chose it together, in the light, with the numbers on the table. It matters to me that it was clean.\"\n\nYou didn't decide anything later, you almost say. And understand, in the not-saying: she is not talking to you at all. She is rehearsing.",
+      "choices": [
+        {
+          "text": "Day 92. The picket line — the interdiction's old sentries — lies close to the ellipse. With margin to spare, a rendezvous is yours to order.",
+          "next": "s_picket_rdv"
+        }
+      ]
+    },
+    "s_picket_rdv": {
+      "id": "s_picket_rdv",
+      "text": "Day 92. The old quarantine picket line lies within two hundred thousand kilometers of the ellipse, and with thirty-two hundred in the tanks, a matched rendezvous costs pocket change: forty hours alongside, and back on the trajectory with the arrival marker unmoved.\n\nWhat waits there, holding station on a dead assignment: the automated relay buoys, one every few light-minutes, their archives fat with forty-two years of everything that crossed this line. And the Meridian Gate — the picket vessel herself, decommissioned in place in Year Eleven, a warship-shaped silence that the registry says was simply locked and left.\n\nEleven days before Day 103. Whatever the beacon is counting toward, this line watched the whole story that led to it: the evacuation, the sealed years, the automation, the long dark. Its memory is sitting out there in cold storage, and no living authority is left to say you can't read it.\n\nMarek approves the rendezvous in one syllable and does not come to the planning session, which everyone notices and no one mentions.\n\nForty hours. The buoy's archive, the dead ship's hull — with a full rendezvous you can work both, but the order matters: whichever you open first will decide what you're looking for in the second.",
+      "choices": [
+        {
+          "text": "Board the Meridian Gate first. Crews leave truths aboard that no archive holds — read the house before the letters.",
+          "next": "s_wreck_board"
+        },
+        {
+          "text": "Dive the buoy archive first. Establish the record, then walk the ship that wrote it.",
+          "next": "s_buoy_dive"
+        }
+      ]
+    },
+    "s_wreck_board": {
+      "id": "s_wreck_board",
+      "text": "You cross to the Meridian Gate in suits, four of you, through a boarding hatch whose mechanism accepts its legal override like a butler accepting a card. Inside, the ship is a held breath: powered down by the book, dust settled in the corners the spin once made, every hatch dogged in sequence by someone who did it right and knew it was the last time.\n\nThe picket's crew spaces tell the story the registry doesn't. Eleven years of watch rotations wear grooves in a ship — the taped handholds, the coffee stains fossilized under emergency lighting, the duty board still chalked for a final watch in Year Eleven. And in the forward observation bay, arranged with the unbearable neatness of the long-alone: a wall of hand-drawn star charts tracking Erebus's orbit season by season, annotated in three different hands across three different years, the last hand writing simply, again and again, in the margin of each survey: STILL THERE.\n\nIt's Okonkwo, methodically inventorying the abandoned medical bay, who finds the thing you carry away. A crewman's dosimeter, service-numbered, hanging on the sick bay rail where regulations said it should be surrendered at end of tour — except its dose history was never downloaded, and the badge remembers what the record was built to forget. He reads its stored curve twice and hands it to you without a word.\n\nThe picket line's official radiological log, public, certified: ambient background, all years, nothing notable. The badge in your glove: a dose spike in Year Three, sharp, sustained for eleven days — the unmistakable signature of the line riding out a radiation event that, according to every unsealed document in the system, never reached it. The picket was inside something. And whoever certified the logs wrote it out.\n\n\"Year Three,\" Okonkwo says over the suit channel, very evenly. \"Note the year, Nav. Things keep happening in Year Three.\"",
+      "item": {
+        "id": "picket_dosimeter",
+        "name": "The Picket Dosimeter",
+        "description": "A crewman's radiation badge from the Meridian Gate, dose history never downloaded: a sharp, sustained spike in Year Three — eleven days of the picket riding out an event the certified logs say never reached the line. The record was built to forget. The badge didn't.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The buoy archive next. If the badge says Year Three, the traffic logs will say who knew.",
+          "next": "s_buoy_dive"
+        }
+      ]
+    },
+    "s_buoy_dive": {
+      "id": "s_buoy_dive",
+      "text": "The relay buoy accepts Priya's interface handshake with the eagerness of a machine that has had no one to talk to for thirty-one years, and the archive comes across entire: every signal that crossed the picket line, Year Zero to now.\n\nPriya works it like an excavation, and the strata give up their dead in order. Year Zero: the evacuation's comm storm, the convoy, the casualty traffic, the certificate. Years One and Two: the picket settling into its watch, traffic thinning. And then Year Three, where her voice changes registers.\n\n\"Checksum gap. Entries 4,417 to 4,431 — fifteen entries, deleted. Not corrupted: deleted, index rebuilt around the hole, and the rebuild is signed with a picket-era service code. Watch-officer authority.\" She works in silence for a while, and then finds what the deleters never knew existed: the buoy's shadow ledger, transmission metadata logged autonomously below the level officers ever saw. Fifteen entries, Year Three. All the same event class.\n\nWEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. Fifteen times, across eleven days. And after the fifteenth: CLASSIFICATION AMENDED — INSTRUMENT ECHO. NO FURTHER LOGGING THIS BEARING.\n\nNobody says anything for a long moment. The buoy hums, helpful, senile, keeping its perfect ruined record.\n\n\"Three years after 'no survivors,'\" Priya says finally, \"somebody at Erebus keyed a transmitter, weak, over and over, for eleven days. And somebody on this line heard it, acknowledged it — and then classified it into furniture.\" She looks at you, cold-handed. \"The beacon we're answering isn't the first time she called, Nav. It's the second. The first time, we hung up.\"",
+      "item": {
+        "id": "deleted_ack_fragment",
+        "name": "The Buried Acknowledgment",
+        "description": "Fifteen deleted entries from the picket buoy's Year Three traffic log, recovered from a shadow ledger: WEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. Then: CLASSIFICATION AMENDED — INSTRUMENT ECHO. Someone was alive and transmitting, three years after the certificate said no one was. Someone with watch-officer authority made sure it stayed an echo.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Pull the beacon's own wake-up from the near-field record while the interface holds — Priya wants its cipher header at full resolution.",
+          "next": "s_buoy_key"
+        },
+        {
+          "text": "Forty hours run short. Secure what you hold and return to the ellipse — Day 103 is eleven days out.",
+          "next": "s_transmit_ask"
+        }
+      ]
+    },
+    "s_buoy_key": {
+      "id": "s_buoy_key",
+      "text": "The buoy heard the new beacon wake from closer than any ship ever will again, and its recording is pristine: the first transmission, weeks before your intercept, cipher header complete to the last housekeeping bit.\n\nPriya runs the header, and the key-epoch marker comes back like a depth sounding. The encryption indexes to the picket registries: a Compact fleet key, issued to quarantine picket personnel four decades ago, never rolled over. The beacon is not broadcasting to the void, and never was. It is a letter, addressed by era and by service, to whoever out of that vanished fleet might still be listening.\n\nPriya sets the three facts side by side on her screen, unlabeled, like evidence bags: a letter keyed to the picket. A deletion signed by the picket's watch. A dose the picket's own logs deny. \"Every order I arrange these in tells the same story,\" she says, \"and I've stopped being able to make myself wrong about it.\" She powers the interface down gently, the way you'd close a witness's door. \"Somebody who served on this line is meant to read that beacon, Nav. And the ugly half: somebody who served on this line spent Year Three making sure nobody had to.\"\n\nThe Halcyon casts off from the buoy and burns gently back onto the ellipse. Eleven days to Day 103.",
+      "item": {
+        "id": "beacon_epoch_key",
+        "name": "Cipher Epoch Marker",
+        "description": "The beacon's key-epoch, recovered at full resolution from the picket buoy: encryption keyed to the quarantine picket registries, issued forty-two years ago, never rolled over. The transmission is a letter, and the envelope carries a rank, an era, and very nearly a name.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Eleven days out. One question left before the date arrives: does the Halcyon announce itself?",
+          "next": "s_transmit_ask"
+        }
+      ]
+    },
+    "s_transmit_ask": {
+      "id": "s_transmit_ask",
+      "text": "Eleven days before Day 103 — and eighty-six before the Halcyon can arrive — comms puts the question on the table: do you transmit ahead?\n\nIt lands differently on this trajectory, and everyone knows it. A message now is not 'hold on, help is near.' It is: a ship is coming, and it will arrive seventy-five days after your date. Whatever Day 103 is — the failure of something, the end of something, the arrival of something — the Halcyon's honest news is that it will miss it.\n\nOkonkwo argues for sending anyway, and his case is the strongest kind, clinical and unadorned: \"Unknown hope is not zero hope; it is unstable hope, and it kills. A date — even a late one — is something a mind can build on. You do not let a patient face a countdown alone if one sentence can stand in the room with them.\"\n\nThe counter comes from the head of the table, and it is not procedural. Marek hears him out and says, \"No transmission,\" and offers a reason that is visibly not the real one — interdiction protocol, unknown receivers, legal exposure. It would not convince a cadet. She stands behind it anyway, level and immovable, and the silence afterward has her whole career inside it.\n\nWhatever waits at Erebus, she is not ready to say the Halcyon's name to it. Or her own.\n\nPriya looks at you across the table. Comms authority is the captain's. But trajectory declarations — arrival notices, approach broadcasts — are the navigator's, and everyone at the table knows it, including the captain, who is watching you learn it.",
+      "choices": [
+        {
+          "text": "Send it under navigational authority: VESSEL HALCYON, INBOUND. ARRIVAL DAY 178. Late is a fact. Coming is a promise. Send both.",
+          "next": "s_defy_send"
+        },
+        {
+          "text": "Honor the silence. You'll arrive after the date regardless — and you will not force Marek's hand with a broadcast she can't take back.",
+          "next": "s_obey_silence"
+        }
+      ]
+    },
+    "s_defy_send": {
+      "id": "s_defy_send",
+      "text": "You write it in the flattest dialect there is, the one language every era of equipment speaks — and then, off the record of your own authority, you allow it one human line:\n\nNAVIGATIONAL DECLARATION. VESSEL HALCYON, SIX CREW, INBOUND EREBUS STATION. ARRIVAL DAY 178 SYSTEM REFERENCE. RESPONSE NOT REQUIRED. HOLD.\n\nFour letters of editorializing. Priya transmits it without comment, and touches your shoulder once on her way out of the shack, which from Priya is a speech.\n\nSix hours later Marek summons you to her cabin and does not ask you to sit. \"Under navigational authority. Clean.\" She lets the assessment stand long enough to mean it, and then: \"Understand what you've spent, Nav. There is a person at the far end of that line who has been waiting longer than you've been alive. You have just told her that rescue exists — and that it arrives seventy-five days after the only date she thought was worth transmitting. You've handed her a countdown and a consolation prize in the same sentence, and you and I do not know which one she'll hear.\" And there it is — her, unremarked, the first pronoun anyone aboard has given the beacon — hanging in the cabin air like a dropped tool.\n\nAt the door, her voice again, quieter, and this time you'd swear it isn't the captain speaking at all: \"HOLD was right, for what it's worth. If any word can reach across that — it's that one. Keep the updates going. All of them. If we're going to promise, promise properly.\"",
+      "item": {
+        "id": "promise_sent",
+        "name": "The Approach Declaration",
+        "description": "VESSEL HALCYON, SIX CREW, INBOUND EREBUS STATION. ARRIVAL DAY 178. RESPONSE NOT REQUIRED. HOLD. A promise and its terrible arithmetic in the same sentence, unrecallable — telling forty-two years of patience that rescue exists and will be seventy-five days late.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Day 103 arrives with the ship deep in the crossing. Take your station and watch.",
+          "next": "s_flare_day"
+        }
+      ]
+    },
+    "s_obey_silence": {
+      "id": "s_obey_silence",
+      "text": "You let the silence stand. It is the captain's ship; whatever she cannot yet bring herself to name, you will not name it for her at transmission power.\n\nThe decision sits differently with different people. Priya files a formal objection — one paragraph, correct, cold as the tea she abandons in the shack. Okonkwo says nothing at the table, and then, alone with you in the corridor, says the only cruel thing you will ever hear from him, delivered gently, which is worse: \"For the chart, Nav: withholding a prognosis to spare the physician is still called abandonment. We simply bill it as discretion.\" Juno takes it worst and shows it least; the docking simulator's log that night records forty-one consecutive runs, and the forty-first is flown so hard the software flags it as a stress test.\n\nThe Halcyon coasts on toward Day 103, dark and punctual, carrying its silence like a second cargo. Whoever waits at Erebus will meet the date — whatever the date is — alone, unanswered, the way they have met everything for forty-two years. You chose the captain's reasons without knowing them. You will find out together what they cost.",
+      "choices": [
+        {
+          "text": "Day 103 arrives with the ship deep in the crossing. Take your station and watch.",
+          "next": "s_flare_day"
+        }
+      ]
+    },
+    "s_flare_day": {
+      "id": "s_flare_day",
+      "text": "Day 103 arrives like any other day of the crossing, because space does not observe occasions. The whole crew is at stations anyway, unassigned, unasked, from the top of the watch. The telescopes hold on the warped patch of sky where KS-41 keeps its nothing, fifteen light-hours ahead: whatever happens there happened fifteen hours ago; the news is already in flight toward you, unstoppable, unhurryable. It is the loneliest property light has, and today the whole ship lives inside it.\n\nAt 1940, ship reference, the sky answers.\n\nIt begins as a point of X-ray brightness where no point should be, and then the main display's false color climbs through its scale and keeps climbing, and Priya's instruments start narrating in the flat voice of hardware pushed past its calibrations. The accretion flow around KS-41 — starved, dim, twenty-eight quiet years of it — is being fed. Something massive came apart at the Roche limit, shredded across its own orbit, and the infalling debris is lighting the black hole's throat like a furnace door swinging open. The luminosity curve is a wall. The radiation environment for three AU in every direction of that mouth is, for these hours and for days to come, instantly lethal and utterly indifferent.\n\nAnd Erebus is in it. Three point one AU out, in the flood plain. Shielded core, you all think at the same time, in the same silence, doing the same arithmetic with the same missing variables.\n\nThe beacon — the beacon that has repeated its one date across forty-two years of patience — transmits through the storm for six hours and eleven minutes, timing pulses steady against the inferno's static. Then, at 0151, mid-frame, it stops.\n\nJuno is the one who finally says it, into a bridge with no sound in it but instruments: \"She knew. She told us the day the sky would catch fire. It was never a distress call.\" Her voice does something and recovers. \"It was a forecast.\"\n\nSeventy-five days of flight remain, toward a station inside a cooling fire, and a silence where the ticking used to be.",
+      "choices": [
+        {
+          "text": "Fly on. There is nothing to do but arrive — and be what arrives.",
+          "next": "s_zone_cross"
+        }
+      ]
+    },
+    "s_zone_cross": {
+      "id": "s_zone_cross",
+      "text": "The last seventy-five days are the longest country anyone aboard has ever crossed.\n\nThe flare decays on schedule — Priya's light curves shed their violence week by week, the debris ring around KS-41 settling into a thin, cooling scar of ionized ice where a moonlet used to be. The physics is finished; the physics was finished fifteen hours before you ever saw it. What remains in flight is only the question, and the six of you take turns carrying it, and it does not get lighter.\n\nThe beacon stays silent. Priya listens anyway, every watch, past the end of every shift — to the bearing, to the noise floor, to the place in the spectrum where a weak carrier would rise if a hand were alive to key one. Nothing. Or: not nothing, once — on Day 149 she flags nineteen seconds of something at the beacon's old frequency, too faint to certify, gone before the recorders could commit it, and refuses to log it as contact, and refuses to delete the file, and does not sleep well after, and you find the file three times in your own queue, replayed at 0300, unattributed.\n\nOn Day 177 the Halcyon crosses the interdiction boundary, decelerating, and KS-41 stops being a number in anyone's files. The Einstein ring opens ahead — a thin, impossible circlet of smeared starlight around an absence with a circumference — and threaded through it now, faint and new, the flare's leaving: a cooling ring of debris, the wreckage of Day 103, drawn around the black like a line under a finished sum.\n\nSomewhere in that warped sky, too small to resolve: a station that stood inside the fire, and whatever the fire left.\n\nThe capture burn is plotted. Arrival tomorrow. You have thirty-two hundred in the tanks, every option intact, and the one thing no margin has ever bought back: seventy-five days, already spent, between her date and your arrival.\n\nThe final approach begins.",
+      "end": true
+    }
+  }
+}

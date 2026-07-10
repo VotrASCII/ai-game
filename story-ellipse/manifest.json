@@ -1,0 +1,169 @@
+{
+  "title": "The Long Ellipse",
+  "subtitle": "A forty-two-year-old distress call. A clock at the bottom of a gravity well.",
+  "chapters": [
+    {
+      "id": "ch1",
+      "num": 1,
+      "numeral": "I",
+      "title": "The Beacon",
+      "teaser": "A signal from a dead station. A date that repeats. A captain who knows the procedure too well.",
+      "file": "story-ellipse/ch1.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "wayward_manifest"
+          ],
+          "text": "Mid-watch on Day 0, the Halcyon intercepted a distress beacon from Erebus Station — a research platform orbiting the black hole KS-41, evacuated and certified dead forty-two years ago. Maritime law made the diversion mandatory. The beacon carried one clear thing through the static: a date, repeating — Day 103. Volkov showed you the true fuel tally he keeps off the official log; it buys options the official numbers don't. Captain Marek recited the interdiction procedure from memory, one revision out of date, and did not explain how she knew it. At the vote you weighed two trajectories: a hard burn arriving Day 96 with almost nothing left in the tanks, or the long ellipse arriving Day 178, fuel-rich, seventy-five days after whatever Day 103 means. The drive lit. The ship committed."
+        },
+        {
+          "requires": [
+            "beacon_epoch_key"
+          ],
+          "text": "Mid-watch on Day 0, the Halcyon intercepted a distress beacon from Erebus Station — a research platform orbiting the black hole KS-41, evacuated and certified dead forty-two years ago. Maritime law made the diversion mandatory. You sat with the raw signal yourself and found what Priya's console had missed: the beacon is encrypted with a picket-fleet key four decades out of registry, and buried in it, one date, repeating — Day 103. Captain Marek recited the interdiction procedure from memory, one revision out of date, and did not explain how she knew it. At the vote you weighed two trajectories: a hard burn arriving Day 96 with almost nothing left in the tanks, or the long ellipse arriving Day 178, fuel-rich, seventy-five days after whatever Day 103 means. The drive lit. The ship committed."
+        },
+        {
+          "text": "Mid-watch on Day 0, the Halcyon intercepted a distress beacon from Erebus Station — a research platform orbiting the black hole KS-41, evacuated and certified dead forty-two years ago. Maritime law made the diversion mandatory; not everyone aboard agreed it should be. The beacon carried one clear thing through the static: a date, repeating — Day 103. Captain Marek recited the interdiction procedure from memory, one revision out of date, and did not explain how she knew it. At the vote you weighed two trajectories: a hard burn arriving Day 96 with almost nothing left in the tanks, or the long ellipse arriving Day 178, fuel-rich, seventy-five days after whatever Day 103 means. The drive lit. The ship committed."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "num": 2,
+      "numeral": "II",
+      "title": "The Ellipse",
+      "teaser": "The transit. The picket wreck. What a checksum gap is worth.",
+      "file": "story-ellipse/ch2.json",
+      "startScene": "vectors",
+      "summaries": [
+        {
+          "requires": [
+            "deleted_ack_fragment",
+            "picket_dosimeter"
+          ],
+          "text": "The transit carried you to the bones of the quarantine picket — the Meridian Gate, locked and left in Year Eleven, and her patient relay buoys. Aboard the dead ship, Okonkwo found a crewman's dosimeter whose stored history proves the picket rode out eleven days of radiation in Year Three that the certified logs say never reached the line. And in the buoy's archive, Priya found a checksum gap — fifteen entries deleted, the deletion signed with a picket-era service code — and beneath it, in a shadow ledger the deleters never knew existed: WEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. Then: CLASSIFICATION AMENDED — INSTRUMENT ECHO. Someone was alive and transmitting, three years after the certificate said no one was. Someone made sure it stayed an echo. The Halcyon flew on."
+        },
+        {
+          "requires": [
+            "deleted_ack_fragment"
+          ],
+          "text": "The transit carried you past the bones of the quarantine picket, and into its relay buoy's archive, where Priya found a checksum gap: fifteen entries from Year Three, deleted, the deletion signed with a picket-era service code. In a shadow ledger the deleters never knew existed, the truth survived: WEAK CARRIER, BEARING EREBUS. ACKNOWLEDGED BY WATCH. Then: CLASSIFICATION AMENDED — INSTRUMENT ECHO. Someone was alive and transmitting, three years after the certificate said no one was. Someone with watch-officer authority made sure it stayed an echo. The Halcyon flew on."
+        },
+        {
+          "text": "The transit carried you past the bones of the quarantine picket — a hulk holding station on a dead assignment — and onward into the interdiction zone, where KS-41 bends the starfield into a ring and the crew learned what the crossing would ask of each of them. The Halcyon flew on."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "num": 3,
+      "numeral": "III",
+      "title": "The Approach",
+      "teaser": "The capture burn. What answers, and what doesn't. Somebody's going to have to walk.",
+      "file": "story-ellipse/ch3.json",
+      "startScene": "capture_burn",
+      "summaries": [
+        {
+          "requires": [
+            "mutiny_carried",
+            "route_hard_burn"
+          ],
+          "text": "The capture burn matched you to a station orbiting at thirteen thousand kilometers a second, and a voice answered live: Dr. Asha Veil, thirty at the evacuation, seventy-two now — never rescued because she was never missing. She was left. She explained Day 103: Marlowe's Object, an ice moonlet on a dying orbit, comes apart at the Roche limit in days, and the sky around KS-41 becomes a furnace. And at the table, the ship chose the tanks: the Halcyon refused the dock and fell back to hold at the boundary, leaving forty-two years of patience to face the fire alone. 'Being answered was enough,' she said. 'Not everyone gets their letter answered.' The line is held. It has to be lived with now."
+        },
+        {
+          "requires": [
+            "mutiny_carried"
+          ],
+          "text": "The capture burn matched you to a scorched and silent station — the flare of Day 103 had burned its outer decks and melted the beacon mast that repeated one date for forty-two years. But two radiators still held nine degrees over ambient: managed heat, seventy-five days after the fire. At the table, Volkov made the honest case — a warm spot against five certain lives and a road home — and the arithmetic won. The Halcyon turned for home with every soul aboard alive and certified so, and a station-sized silence astern that keeps its nine warm degrees, and keeps them, and keeps them."
+        },
+        {
+          "requires": [
+            "marek_confessed"
+          ],
+          "text": "Before Erebus could speak for itself, you put the evidence in front of Captain Marek — and she gave her account standing, to her own crew: at twenty she certified 'no survivors' under orders; three years later, on the picket, the carrier from Erebus was acknowledged at her own board, and the deletion that made it an echo is signed with her service code. The crew heard it from her, which made the difference a truth's source always makes. Then the docking collar sheared on contact — forty-two years of embrittlement finishing its work in half a second — and someone crossed the gap in a suit to lash the ships together and open the spine hatch. The station's answer to forty-two years of certificates was waiting inside."
+        },
+        {
+          "requires": [
+            "route_hard_burn"
+          ],
+          "text": "The capture burn matched you to a station orbiting at thirteen thousand kilometers a second, and for the first time the light-lag shrank to nothing: a voice answered live. Dr. Asha Veil — thirty at the evacuation, seventy-two now, never rescued because she was never missing. She was left. She addressed Captain Marek by name, with a key forty-two years out of registry, and the truth detonated in the middle of the crew: Marek certified 'no survivors' at twenty, under orders, and the picket-era deletion that buried a living woman's transmissions is signed with her service code. Then the docking collar sheared on contact, and someone crossed the gap in a suit to bring the Halcyon home to Erebus. Day 103 has a meaning now: Marlowe's Object comes apart at the Roche limit in days — and Asha Veil has no intention of missing it."
+        },
+        {
+          "text": "The capture burn matched you to a scorched and silent station — the flare of Day 103 had burned its outer decks and melted the beacon mast. But two radiators held nine degrees over ambient: managed heat, seventy-five days after the fire. At the table, Volkov made the honest case for home, and the crew weighed it out loud, and chose the search. The docking collar was dead; someone crossed the gap in a suit, past a cable run spliced with bright wire by a hand that was alive to splice it after the sky finished burning, to a corridor papered with forty-two years of hand-drawn charts — and a single work lamp burning where the core begins. Lamps never burn for themselves."
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "num": 4,
+      "numeral": "IV",
+      "title": "Erebus",
+      "teaser": "The station. The ring. The ask.",
+      "file": "story-ellipse/ch4.json",
+      "startScene": "arrival",
+      "summaries": [
+        {
+          "requires": [
+            "mutiny_carried"
+          ],
+          "text": "The line was held. The Halcyon watched Day 103 arrive fifteen hours old — the X-ray point, the climbing curve, the century's event narrated by instruments to a ship with no observation program and no one to send the data to. Threaded through the storm's static, the patient pulse that repeated one date for forty-two years transmitted through the fire for six hours and eleven minutes, from a mast never rated for it. At 0151, mid-frame, it stopped. Marek turned from the blister and gave the only order the vote had left her: maintain heading. The long flight home began. It is very quiet."
+        },
+        {
+          "requires": [
+            "the_watch_kept"
+          ],
+          "text": "Erebus, in the days before the fire. Asha Veil walked the crew through forty-two years of work — the shielded core, the Verge probes, the lensed ring of home, station clocks running twenty-two seconds a day slow — and made the ask she had composed for decades: stay, and crew the observation of the century from the front row. The deuterium flowed, the water-wall filled, the shelter was certified for seven. On Day 101 she spoke it to the glass: 'Station Erebus. Crew complement: seven. It has never once been seven. Seal the core.'"
+        },
+        {
+          "requires": [
+            "asha_aboard",
+            "route_hard_burn"
+          ],
+          "text": "Erebus, in the days before the fire. Asha Veil walked the crew through forty-two years of work and made her ask — and the crew answered with its own: come with us. Okonkwo argued years; Juno argued please; and the woman who had been at peace for decades changed the shape of her own ending. The loading took thirty hours — the archive, the seed library, one tomato plant in a printed pot — and the station was left running, lights on, instruments live: 'It kept the watch alone before. It knows how.' The Halcyon burned for the boundary with the sky about to catch fire astern, carrying the century's data and the woman who made it."
+        },
+        {
+          "requires": [
+            "data_and_gone"
+          ],
+          "text": "Erebus, in the days before the fire. Asha Veil made the ask she had composed for decades, and you gave her the answer she was not braced for: the design honored. The archive crossed to the Halcyon watch by watch — the data of four decades, the corrected record of Year Zero, the recordings made for nobody, now addressed to everyone. At the hatch she shook six hands, gave Marek the station's spare master key and no sentence at all, and kept her station, her event, and her solitude. The Halcyon stood off beyond the boundary on Day 102, tanks full, hold full of proof. Whatever happens in the core now happens to its architect alone. As originally designed."
+        },
+        {
+          "requires": [
+            "asha_aboard"
+          ],
+          "text": "Erebus, seventy-five days after the fire — and a second lamp kindling at the far end of the shelter deck. Asha Veil, alive: thin as rationed things are thin, her survival engineered backward from the arrival date your broadcast gave her, your one word HOLD pinned above her bunk where a person keeps a photograph. She had rationed a cooked station's last margins against a promise seventy-five days late, and made it be enough. The vault crossed to the Halcyon — forty-two years of proof, accuracy or nothing — and when the question came of where her remaining years should happen, the answer was weather, faces, home. She pinned a fresh chart above her new bunk for the voyage. Homework."
+        },
+        {
+          "requires": [
+            "left_at_post"
+          ],
+          "text": "Erebus, seventy-five days after the fire — and Asha Veil alive in the core, her survival engineered backward from the date your broadcast promised. The work complete and exported, the question came of where her remaining years should happen — and she chose her post. The strangest resupply in the Compact's history followed: the second warm deck restored, the pharmacy regimen written to the year mark, a comms suite rated unkillable, a watch rotation countersigned officer to officer. The re-founding of Erebus Station, crew of one, resident director: Veil, A. Never again unanswered. She'll be transmitting."
+        },
+        {
+          "requires": [
+            "ashas_archive"
+          ],
+          "text": "Erebus, seventy-five days after the fire. The shelter deck was in order — tools boarded, six bunks made up against guests it had no reason left to expect, a work lamp aimed at the door. She was in the observation chair, facing her instruments, gone around Day 140: she survived the fire by thirty-one days, finished the work, verified it, filed it, cleaned her house, and lit a lamp. The vault held forty-two years of proof and a one-page letter TO WHOEVER CAME. The crew loaded it all, left the station running per her instructions, and carried her home wrapped in the station's flag — with Marek's final log entry: 'Recommend the record be amended: SURVIVOR, ONE. She is owed the noun.'"
+        },
+        {
+          "text": "Erebus, at last — and what the crew found there, and chose there, is the weight the Halcyon carries home."
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "num": 5,
+      "numeral": "V",
+      "title": "Periapsis",
+      "teaser": "What the well keeps. What it lets go.",
+      "file": "story-ellipse/ch5.json",
+      "startScene": "day_of",
+      "summaries": [
+        {
+          "text": "Marlowe's Object crossed the Roche limit and came apart into a ring of ice and light around KS-41, and every path the Halcyon could have taken arrived somewhere different: home the long way, or a life measured twenty-two seconds a day slow under the lensed ring, or a ledger with a name on it that no rescue can balance, or a beacon ending mid-transmission behind a ship that never came. The well keeps what it takes. Sometimes, it lets something go."
+        }
+      ]
+    }
+  ]
+}

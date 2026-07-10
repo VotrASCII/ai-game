@@ -1,0 +1,344 @@
+{
+  "startScene": "arrival",
+  "scenes": {
+    "arrival": {
+      "id": "arrival",
+      "text": "Every voyage has a day when the flying is over and what remains is the reason you flew. For the Halcyon, this is that day, and the ship's log requires its first entry: where the day finds you.",
+      "choices": [
+        {
+          "text": "It finds you at the boundary line, holding station, with the ship's boards dark and the reason drifting astern.",
+          "requires": "mutiny_carried",
+          "next": "m4_line"
+        },
+        {
+          "text": "It finds you aboard Erebus, seven days before the fire, in a station that has been getting ready for longer than you've been alive.",
+          "requires": "route_hard_burn",
+          "next": "p4_core_tour"
+        },
+        {
+          "text": "It finds you at the core hatch, seventy-five days after the fire, one open door from the answer.",
+          "requires": "route_slow_ellipse",
+          "next": "q4_core_open"
+        }
+      ]
+    },
+
+    "p4_core_tour": {
+      "id": "p4_core_tour",
+      "text": "Asha Veil's station is a lesson in what one disciplined mind does with forty-two years and no audience.\n\nThe shielded core — three decks, buried at Erebus's heart behind water tanks and regolith ballast she spent a decade winching into place — has become something between a laboratory, a monastery, and a root cellar. Hydroponics racks line the warm level: tomatoes, greens, the herb smell that met you at the hatch, every plant descended from a seed library meant for a crew of forty. Below, the machines she has kept alive outlive their design lives threefold, repaired with parts of parts, annotated in her hand — this pump lies about pressure; believe the gauge, not the software. And everywhere, on every surface that holds a pin, the work: the charts, the light curves, the orbital solutions for Marlowe's Object refined year over year over year, converging like a noose on Day 103.\n\n\"People ask — the recordings I made for nobody used to ask,\" she corrects herself, dry as dust, \"how one survives it. The answer is offensively boring: routine. You keep the watches. You tend the plants. You do the work, because the work is the only thing aboard that gets larger instead of smaller.\" She touches a chart as she passes, not sentimentally — checking the pin. \"The station clock runs twenty-two seconds a day slow against the system reference; deep in a well, orbiting fast, one falls behind the universe on a schedule. Eight days, I've lost, all told. I used to find it poetic. Now I mostly find it — accurate.\"\n\nShe stops at the heart of the core, where a six-bunk shelter stands stocked and ready, its inventory checklist dated this morning. \"Your quarters, if you stay for the event. I fitted it for six. The number was aspirational.\" A beat. \"It's no longer aspirational. That's going to take me some getting used to.\"",
+      "choices": [
+        {
+          "text": "Ask for the story the certificates never held: Year Zero, from inside.",
+          "next": "p4_asha_story"
+        },
+        {
+          "text": "Ask about the instruments first — the Verge array, the probes, the science this is all for.",
+          "next": "p4_verge"
+        }
+      ]
+    },
+    "p4_asha_story": {
+      "id": "p4_asha_story",
+      "text": "She tells it in the voice of someone who has rehearsed it for decades and is discovering, live, the difference an audience makes.\n\n\"Year Zero. A fragment — a shard Marlowe's Object shed at an earlier periapsis; I proved that later, not that anyone was reading — came down the well and lit the accretion flow. We had warning enough for the core, if everyone moved well. Not everyone moved well. Thirty-one didn't.\" The pin-checking hand pauses. \"Dane flew the last capsule out. My husband. Tug pilot. He made the ferry run four times, and the fourth time the flare's leading edge was already climbing, and he put the capsule on the convoy's deck and there wasn't enough left of his margins to bring the tug about. The convoy had his telemetry the whole way down. So did I.\"\n\nShe resumes walking, because the story goes better with the body in motion; you know the technique from Marek at her blister. \"The evacuation left on the numbers — correct numbers, I've re-run them; staying would have cost more lives — and the core telemetry was ambiguous, and someone certified it empty, and the fleet went home. I came out of shelter on Day 31 to an empty station and a system that had signed for my death.\" A shrug, forty-two years deep. \"In Year Three I keyed the old transmitter at the picket for eleven days. Something acknowledged, once — I saw the handshake — and then nothing. So. The system preferred me dead; the work preferred me alive; I went with the work.\"\n\nShe stops at a viewport, where the lensed ring hangs in the black like a verdict. \"I want it understood, Halcyon, before the grievances get their hearing: I stopped being the woman in the certificate a long time ago. What you rescued — what you'll shelter with, if you stay — is what I turned into instead. I'm told—\" the dry flicker again, \"—by the recordings I made for nobody, that she takes some getting used to.\"",
+      "choices": [
+        {
+          "text": "The instruments next: the Verge array, and the science all this patience was spent on.",
+          "next": "p4_verge"
+        }
+      ]
+    },
+    "p4_verge": {
+      "id": "p4_verge",
+      "text": "\"Come see the only part of this station that ever went where the physics is.\"\n\nThe Verge control room is the core's true chapel: nine consoles for nine probes, seven of them dark — expended, or lost, or retired — and two still live, their telemetry crawling across the displays in slow columns. \"You can't put people deep,\" she says, matter-of-fact as gravity. \"Everyone asks. The dilation everyone dreams about — the big factors, years-for-days — lives in orbits down near the innermost circle, and matching one means half the speed of light. No ship carries that. No ship ever will; the arithmetic isn't shy. The well's deep time belongs to the probes. We just read their letters.\"\n\nShe pulls up Verge-6's greatest hit like a woman opening the family album: a probe sent down on an eccentric ellipse, its periapsis shaved close enough that every pass came back stretched — signal slowed, reddened, thinned by the well on its way out. \"Twenty-nine percent, at the deepest usable pass. For every ten of my seconds, the probe lived seven behind the universe... it adds up to nothing human, before you romance it. Seconds per orbit. The point was never time travel. The point—\" and her voice does the thing that has been forty-two years training itself flat and does not quite manage it, \"—the point is that everything that falls toward that horizon writes home slower and redder until it stops, and the stopping is asymptotic. Nothing ever ends, from out here. It just gets too faint to read.\"\n\nOn the ninth console, apart from the others, a single archive directory is pinned to the display. Its label, in her filing hand: V9 / DOWNLINK / DO NOT TIDY.",
+      "choices": [
+        {
+          "text": "Ask about the ninth console. Archives labeled 'do not tidy' are never about tidiness.",
+          "next": "p4_recorder"
+        },
+        {
+          "text": "Leave it be. The event is six days out and there's a station to prepare — the shelter work should start now.",
+          "next": "p4_shield_prep"
+        }
+      ]
+    },
+    "p4_recorder": {
+      "id": "p4_recorder",
+      "text": "She stands at the ninth console for a moment with her back to you, and when she speaks it is in the flat cataloguing voice that people build over their deepest water.\n\n\"Verge-9 was the salvage probe. Years after Year Zero, I sent it to sweep the debris shell where the flare had thrown everything it took. It found what such sweeps find — plating, tankage, the station's shed skin. And the Kestrel.\" The name comes out with its edges long since worn smooth by handling. \"Dane's tug. Holed, tumbling, forty months into its own orbit around the hole. Verge-9 matched, docked, and pulled the flight recorder. The downlink took eleven days. I have had it for thirty-eight years and I have played it—\" she checks the number against some interior ledger, \"—four times. It is fifty-one minutes long. The last nine are him talking to the convoy after his margins were gone and everyone on the channel knew it. Talking to the comms watch, because the comms watch was who answered. He wasn't— \" the ledger holds, level, \"—he wasn't alone, at the end. Someone stayed on the channel with him all the way down. A rating. Twenty years old, the roster said later. I have spent forty-two years being unable to decide whether I owe that person everything or can never forgive them, and I have recently been informed by your approach telemetry—\" she turns around, and her eyes are perfectly dry, which is the worst way eyes can be, \"—that I'm about to get the chance to find out. Take the archive, Navigator. It's addressed to your ship anyway. It always was.\"",
+      "item": {
+        "id": "kestrel_recorder",
+        "name": "The Kestrel's Recorder",
+        "description": "Fifty-one minutes from the flight recorder of the tug Kestrel, salvaged by Verge-9 from its orbit around the hole. The last nine minutes are Dane Veil talking to the evacuation convoy's comms watch all the way down. He wasn't alone at the end. Neither of the two women shaped by those nine minutes has ever heard them together.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Carry it carefully, and get to work — the event is six days out, and the shelter needs every hand.",
+          "next": "p4_shield_prep"
+        }
+      ]
+    },
+    "p4_shield_prep": {
+      "id": "p4_shield_prep",
+      "text": "Six days, and the station becomes a shipyard.\n\nAsha's shelter plan is forty-two years mature — she walks the crew through it like a general who has fought the battle nightly in her head: the core's water-wall topped off from the ice stores, the regolith ballast re-trimmed hole-ward, every instrument that must survive brought inside the shadow, every instrument that must watch hardened where it stands. It is Juno she promotes to lieutenant within the hour — the two of them speaking fluent repair across a fifty-year age gap, Juno hauling her sim-built model of the station out of her slate and Asha correcting it in seven places and praising it in one, which Juno wears like a medal for days.\n\nVolkov masters the logistics of the water-wall like the cargo problem it is. Priya rebuilds the beacon mast's feed so the station can transmit through the event — \"if the mast survives,\" Asha says; \"the mast survives,\" Priya says, in the exact voice of someone re-engineering it to make the sentence true. Okonkwo inventories the station's medical stores, two decks under the core, and comes back up moving like a man whose pharmacy arithmetic just balanced for the first time since Anchorage.\n\nAnd through it all the deuterium flows — her stock into the Halcyon's tanks, hours of pumping logged watch by watch, the ledger's terrible sixteen hundred climbing back toward numbers that mean choices. The ship will be able to leave. Which means staying, if you stay, will finally mean something: not a trap riding out weather, but a decision, made with the door open.\n\nBy the fourth day the core is sealed to specification and the checklist is done, and there is nothing left in the plan but the part where you choose.",
+      "item": {
+        "id": "core_shield_plan",
+        "name": "The Shelter Certification",
+        "description": "The core sealed to Asha's forty-two-year specification: water-wall full, ballast trimmed hole-ward, six bunks stocked, every margin walked and signed by Juno and its architect together. Rated, in its builder's dry hand, for 'one century-class event, with company.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Before the choice — Okonkwo has asked for an hour of the station's time: his patient of the imagination, finally on his table.",
+          "next": "p4_okonkwo_exam"
+        }
+      ]
+    },
+    "p4_okonkwo_exam": {
+      "id": "p4_okonkwo_exam",
+      "text": "Okonkwo examines Asha Veil in her own medical bay, with her permission — \"granted, doctor, though I warn you the file's been self-reported for four decades\" — and the two of them conduct the appointment like a summit of rival heads of state, each professionally delighted by the other's fortifications.\n\nThe verdict, delivered to her first and to you after, with her leave: \"She is a marvel and a ruin, in the proportions you'd expect. The marrow remembers Year Zero — her blood counts run on margins I'd call reckless in a patient one-third her age. The heart is sound; the bones are the station's, more than half; there is scarring in the lungs from some year she has declined to narrate. She can live years yet, with medicine. Without it —\" he closes the folder with a physician's punctuation, \"— she has been living without it for some time, and the account is nearly drawn.\"\n\nBehind his summary sits the question neither of them says in front of you: whether the pharmacy that crossed a hundred and thirty AU has enough in it to change her arithmetic — and what it costs the six who have to fly home on the remainder.",
+      "choices": [
+        {
+          "text": "Open the rebalanced books: the full pharmacy, restructured at Anchorage against exactly this patient. Tell Okonkwo to prescribe like a doctor with a ship's margin behind him.",
+          "requires": "okonkwo_secret",
+          "next": "p4_pharmacy"
+        },
+        {
+          "text": "The medicine question keeps until the sky is done burning. What can't keep is the fifth night — and what finally happens, or doesn't, between the two accurate women.",
+          "requires": "marek_confessed",
+          "next": "p4_reckoning"
+        },
+        {
+          "text": "The medicine question keeps until the sky is done burning. What can't keep is the fifth night, and the silence with two authors that the whole station has been working around.",
+          "next": "p4_cold_peace"
+        }
+      ]
+    },
+    "p4_pharmacy": {
+      "id": "p4_pharmacy",
+      "text": "\"Prescribe like a doctor with a margin,\" you say, and Okonkwo looks at you for a moment over the top of the folder — the look from the medbay at Anchorage, the night the two of you restructured his rationing into protocol.\n\n\"You understand what you're spending,\" he says. Not a question; the arrangement's old words. \"The rebalanced stock covers her regimen and the crew's transit home, with the reserve intact — because we rebuilt it around a patient exactly like her, months before we knew she existed.\" He writes the orders in his small precise hand, and something that has been clenched in him since Anchorage visibly stands down. \"For the chart, Nav: the rationing I began this voyage doing was arithmetic without faith. This is the version with faith in it. I find I prefer the exchange rate.\"\n\nHe presents the regimen to Asha as doctors present to formidable patients: options, numbers, no theater. She reads it twice. \"Years,\" she says at last, testing the word's load rating. \"You're offering me years, on a ship's stores, priced against your own transit.\" And then, with the first fully unguarded look you have seen on her: \"I spent this morning certain of one thing about the rest of my life — its length to within a season. You people have been aboard five days and I am already back to not knowing things.\" She signs the consent line the way she pins her charts, precisely. \"Very well, doctor. Confuse me further.\"",
+      "choices": [
+        {
+          "text": "One thing remains before the chart room: the fifth night — and what finally happens, or doesn't, between the two accurate women.",
+          "requires": "marek_confessed",
+          "next": "p4_reckoning"
+        },
+        {
+          "text": "One thing remains before the chart room: the fifth night, and the silence with two authors that the whole station has been working around.",
+          "next": "p4_cold_peace"
+        }
+      ]
+    },
+    "p4_reckoning": {
+      "id": "p4_reckoning",
+      "text": "It happens on the fifth night, and the two of them choose the chart room to do it in — Marek and Asha Veil, the rating and the widow, with the corridor's forty-two years of converging orbits papered around them and no audience invited. You know of it only because Asha asks you, afterward, to walk her back to the core, and pays you the wage she pays for everything, which is the truth.\n\n\"She gave her account standing. I sat; the knees are the station's now. It took her eleven minutes and she never once reached for the orders, though the orders were real and I've read them — she carried the whole thing on her own back, which was the only acceptable way, and she knew it, which is why it took forty-two years.\" The old hands fold. \"I told her about the eleven days in Year Three: what it costs, keying a transmitter into a silence you've stopped believing has anyone on the far side of it. She told me about the fifteenth acknowledgment — that she logged it knowing, that the amendment came down and she entered it with her own code, because at twenty-three the chain of command is load-bearing and you cannot yet imagine that it would use you to bury a living woman.\" A long pause, chart-light on her face. \"We have agreed that forgiveness is the wrong instrument — too blunt, wrong scale. What we have instead, as of tonight, is an accurate shared record. Navigator—\" and her voice is dry and steady and completely unguarded, \"—I recommend it. Accuracy. It's the only thing I've found that holds at every depth.\"\n\nFrom that night the two women work the shelter preparations side by side, unnarrated, and the crew — who have been holding their captain at arm's length in exact proportion to their love for her — watch Asha Veil hand Marek the station's master keys to carry, and quietly stand down.",
+      "choices": [
+        {
+          "text": "The last preparation is the choice itself. Asha has asked for the crew, all six, in the chart room.",
+          "next": "p4_the_ask"
+        }
+      ]
+    },
+    "p4_cold_peace": {
+      "id": "p4_cold_peace",
+      "text": "The two of them are never in the same compartment for the first three days, and the station is big enough, and the work is thick enough, that it almost passes for coincidence.\n\nIt was Asha who named Marek on the open channel at first contact — one sentence, surgical, the grievance given its hearing at last — and the crew has been living inside the blast radius since: a captain who will not defend herself, a rescued woman who will not press further, and the work going forward in a silence with two authors. Marek executes the shelter plan flawlessly and eats alone. Asha instructs the crew with genuine warmth and grants their captain the precise, permanent courtesy owed to a stranger.\n\nOn the fifth night, at the water-wall, you finally see them meet — unplanned, both checking the same valve line at the same hour, because they are, God help them, the same kind of person. A silence. Then Asha: \"Your rig on the ballast winches was correct. I'd have trimmed two degrees flatter.\" And Marek: \"Noted. I'll re-trim on the next watch.\" And Asha, already moving away, not looking back: \"Leave it. Correct is correct.\"\n\nIt is not forgiveness. It is not even conversation. It is two accurate women agreeing about a winch, and it is, you suspect, the entire treaty that will ever be signed — the rest to be carried, separately, the way both of them have carried everything. The crew works around the silence like a structural member. The sky keeps its schedule.",
+      "choices": [
+        {
+          "text": "The last preparation is the choice itself. Asha has asked for the crew, all six, in the chart room.",
+          "next": "p4_the_ask"
+        }
+      ]
+    },
+    "p4_the_ask": {
+      "id": "p4_the_ask",
+      "text": "She gathers all six of you in the chart room, under the papered decades, and makes the ask she has been composing since before some of you were born.\n\n\"Two days. Then Marlowe's Object crosses the Roche limit and comes apart, and for nine days this system conducts the experiment I have arranged my whole exile around. Every instrument on this station is aimed. The core is certified. And here is the truth of the menu, now that the tanks are full and every option is real.\" She stands the way Marek stands, load-bearing, at the head of her life's work.\n\n\"Stay, and we record it together — from the front row, in the shadow, safe as engineering can make six guests and a fossil. What comes out of that core on Day 112 will be the reference dataset for a century of physics. I have run this station alone for forty-two years, and I am telling you plainly: I cannot run the full observation program alone. I never could. The program was designed for colleagues I no longer have. You are six trained crew. You are, absurdly, exactly what the experiment is missing.\n\n\"Or load me and my archive and burn for the boundary, and we watch my life's work from the cheap seats, complete but thin — the instruments will record what they record with no hands to tend them, and I will be a rescued woman with years ahead of her and one unattended masterpiece behind.\n\n\"Or—\" and she says the third thing evenly, because she has promised herself she will, \"—you go, and I stay, and you carry the data of forty-two years home regardless, and what happens in the core on Day 103 happens to its architect alone, as originally designed.\n\n\"I am at peace with all three. But you should know, before you weigh it, that I have been at peace for decades, and it is a colder climate than it looks. Choose warm, if you can afford to. Whatever warm turns out to mean.\"",
+      "choices": [
+        {
+          "text": "Stay. All of you, in the core, through the fire — crew the experiment, keep the watch, and see the century's event from the front row.",
+          "next": "p4_end_stay"
+        },
+        {
+          "text": "Evacuate her. Asha, her archive, and the Halcyon beyond the boundary before the sky lights — the work survives as data; make sure she survives as its author.",
+          "next": "p4_end_evac"
+        },
+        {
+          "text": "Take the archive and go — and honor her design: she keeps her station, her event, and her solitude, and the truth of this place finally goes home.",
+          "next": "p4_end_leave"
+        }
+      ]
+    },
+    "p4_end_stay": {
+      "id": "p4_end_stay",
+      "text": "\"We stay,\" you say, and the chart room is very quiet, and Asha Veil looks around the six faces with the expression of a woman checking an instrument she does not yet trust.\n\n\"The whole crew,\" she says. \"In the core. Through a century-class event. On my certification.\" It is Marek who answers — fitting, the whole ship feels it: \"Your certification held this station for forty-two years, Doctor. It will hold nine more days.\" And Volkov, gruff, sealing it the way he seals everything: \"The lady built a shelter for six and spent her life getting the forecast right. In my trade we call that a warehouse with a good roof. We stay.\"\n\nThe last two days are the finest this crew has ever worked. Juno and Asha tune the hardened instruments like accompanists. Priya's rebuilt mast rehearses its through-flare telemetry until the link budget closes with margin to spare. Okonkwo stocks the six bunks' medical stations — seven; Asha corrects the count with something suspiciously bright in her voice — and Marek walks the final checklist with the station's master keys on her belt, every line signed twice.\n\nOn the last evening, the seven of you stand at the core's viewport as the station's orbit brings the lensed ring around one more time, and beyond it, too small to see and utterly punctual, a hundred and eighty kilometers of ancient ice keeps its appointment.\n\n\"For the log,\" Asha says, to the glass, to the nothing, to all of you. \"Station Erebus, Day 101. Crew complement: seven.\" Her voice does not shake. \"It has never once been seven. Seal the core.\"",
+      "item": {
+        "id": "the_watch_kept",
+        "name": "The Watch Kept",
+        "description": "Crew complement: seven. The core sealed on Day 101 with every bunk filled for the first time in the station's life, the instruments aimed, and the century's event two days out. Her experiment finally has its colleagues.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "p4_end_evac": {
+      "id": "p4_end_evac",
+      "text": "\"You come with us,\" you say. \"Now, before the sky lights. The data lives, and so does its author. That's the whole menu.\"\n\nShe argues — of course she argues; she has been arguing with an empty station for forty-two years and is magnificent at it — and the crew absorbs it the way a water-wall absorbs radiation, and in the end it is not the arguments that decide it. It is Okonkwo, quietly, with her file in his hand: \"Doctor Veil. Your instruments are hardened, automated, and aimed by the finest observational mind in the system. They do not need your marrow in the blast radius. Come and be their colleague from three AU, and live to peer-review yourself.\" And it is Juno, who says only: \"Please. We didn't fly a year to watch your station from the front row. We flew it for you.\"\n\nAsha Veil looks at the two of them, and then for a long time at her chart-papered walls, and then she does the largest thing you will ever watch a person do, which is change her mind about the shape of her own ending.\n\nThe loading takes thirty hours: the archive, the seed library, the recordings made for nobody, four decades of irreplaceable everything, and last — carried aboard in her own hands, declining all help — a single tomato plant in a printed pot. The station she leaves running, instruments live, mast transmitting, lights on: \"It kept the watch alone before. It knows how.\"\n\nAt five hundred meters she asks for the channel, and keys it herself: \"Erebus, Erebus, this is Veil. Departing station after forty-two years, eight days, and — \" a breath, \"— and twenty-two seconds per day, whatever that comes to. Mind the store. I'll be watching from the cheap seats.\" And the Halcyon burns for the boundary with the whole sky about to catch fire astern, carrying the century's data and the woman who made it, alive, confused by hope, furiously alive.",
+      "item": {
+        "id": "asha_aboard",
+        "name": "The Rescued Author",
+        "description": "Asha Veil, aboard the Halcyon at last — with her archive, her seed library, one tomato plant in a printed pot, and years ahead of her that existed on no chart she ever drew. The station keeps the watch alone. It knows how.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "p4_end_leave": {
+      "id": "p4_end_leave",
+      "text": "\"We honor the design,\" you say, and of the three answers this is the one she was not braced for, and for a moment the flat calm of forty-two years opens on something underneath that is not calm at all, and closes again, and she nods once, like a pin going into a chart.\n\n\"Then let's do it properly.\"\n\nThe last two days are a strange, bright, terrible gift. The archive crosses to the Halcyon watch by watch — the data of four decades, the corrected record of Year Zero, the recordings made for nobody now addressed to everyone. She works alongside the crew loading her life's evidence for export and is funnier than she has been all week, lighter, the way people are light when a verdict has finally landed and the waiting is over. Only once does the lightness pause: at the ninth console, her hand flat on the casing, some accounting conducted and closed.\n\nAt the hatch, she shakes hands with each of them — Volkov gets a cargo joke that makes him bark; Priya gets the beacon mast's original keying log, 'for the collection'; Juno she holds by both shoulders and says, \"You would have been chief engineer here in a better timeline. Build things anyway.\" To Marek she gives the station's spare master key, and no sentence at all, and the two accurate women let the object carry it.\n\nAnd to you, last through the hatch: \"Navigator. You weighed it honestly and chose the version where everyone gets to be exactly who they are. That is rarer than rescue.\" The dry flicker, one last time. \"Fly the data home. And when they ask what she was like — the woman at the bottom of the well — tell them: at peace, and armed, and expecting excellent seats.\"\n\nThe Halcyon stands off beyond the boundary on Day 102, tanks full, hold full of proof, one lit station falling around the nothing astern. Whatever happens in the core now happens to its architect alone. As originally designed.",
+      "item": {
+        "id": "data_and_gone",
+        "name": "The Exported Archive",
+        "description": "Forty-two years of data, the corrected record of Year Zero, and the recordings made for nobody — aboard, secured, and addressed to everyone. Its author kept her station, her event, and her solitude. As originally designed.",
+        "persistent": true
+      },
+      "end": true
+    },
+
+    "q4_core_open": {
+      "id": "q4_core_open",
+      "text": "The core hatch stands ajar, and the lamplight beyond it holds the answer the ship crossed a hundred and thirty AU to learn. The crew stacks at the threshold in the oldest formation there is — medic behind point, captain at the rear against her every instinct — and the station breathes its cold, kept air around you.\n\nHow you go through a door like this is decided long before the door: it was decided months ago, in a comms shack fifteen light-hours from anywhere, by what you told the dark you were coming to do.",
+      "choices": [
+        {
+          "text": "Call out as you enter. She has known you were coming since the declaration — HOLD was a promise, and promises knock.",
+          "requires": "promise_sent",
+          "next": "q4_alive"
+        },
+        {
+          "text": "Enter the silence as you kept it: unannounced, respectful, braced for either answer.",
+          "next": "q4_silence"
+        }
+      ]
+    },
+    "q4_alive": {
+      "id": "q4_alive",
+      "text": "\"Erebus! Halcyon, six crew, at your core hatch —\" and before the sentence finishes there is an answer: not a voice first, but a lamp — a second lamp, kindling deliberately at the far end of the shelter deck, and beneath it, rising from a nest of blankets and printed foam like winter coming indoors, a woman.\n\nShe is thin the way rationed things are thin, and she needs the handrail, and she has clearly measured out this exact moment against her strength for weeks — but her spine is a mast, and her eyes in the lamplight have the terrible bright patience of the long-alone, and pinned to the wall above her bunk, where a person would keep a photograph, is a printed transcript of a navigational broadcast: VESSEL HALCYON, SIX CREW, INBOUND. ARRIVAL DAY 178. RESPONSE NOT REQUIRED. HOLD.\n\n\"Day 178,\" she says. Her voice is a ruin and a monument at once. \"You're punctual. I want that noted — forty-two years, and the one ship that finally comes is punctual.\" The handrail takes her weight; her chin does not drop an inch. \"Dr. Asha Veil, stellar dynamics. Sole resident. You'll forgive the staging — I had a speech, but I spent it, somewhere around the fortieth day of rationing shielding margin against your arrival date.\" Her eyes go down the crew, one by one, cataloguing, and stop on Marek, and something old and precise crosses the ruined voice as it drops to a register kept for one sentence across four decades:\n\n\"Hello, Rating. You got taller.\"\n\nAnd then Okonkwo is through the stack with his kit already open, because the handrail has finished being enough, and the reunion becomes, in the way of every rescue that was ever real, work.",
+      "choices": [
+        {
+          "text": "Stabilize her, warm the deck, and hear it — the fire, the wait, and what your six words bought.",
+          "next": "q4_her_story"
+        }
+      ]
+    },
+    "q4_her_story": {
+      "id": "q4_her_story",
+      "text": "She tells it from a nest of blankets on the shelter deck, with Okonkwo's telemetry ticking beside her and the crew arranged around like the colleagues she designed this room for, and she tells it accurately, because accuracy is the house style.\n\n\"The event was everything I promised the sky it would be. Marlowe's Object crossed the limit on schedule to within an hour — forty-one years of solutions, one hour of error; pin that chart — and the disruption lit the flow like creation morning. The core held. My instruments held. The mast—\" a dry pause, \"—the mast transmitted six hours and eleven minutes into it, which was five hours longer than its link budget, and died announcing the thing it waited its whole life to announce. I intend to have that written up. Beacons deserve obituaries.\n\n\"Then the arithmetic. Seventy-five days, alone, on a station whose outer decks were cooked, with the reactor's output halved and winter in every corridor. On my old numbers I don't see Day 160.\" She looks at the transcript pinned above the bunk. \"But I had your broadcast. A date is a technology, Navigator — I told the nobody-recordings this for decades and it was theory; now it's data. You gave me Day 178, and I engineered backward from it: cut the warm zone to one deck, then to this room, then to that bunk; banked the reactor to embers on a schedule; spent shielding margin like a miser spends coin, because the date said exactly how long the spending had to last. HOLD.\" The ruined voice inspects the word from all sides. \"Four letters of editorializing on an official broadcast. I have eaten meals smaller than that word, and it fed me longer.\"\n\nOkonkwo's verdict, delivered that night, ship-side, is the arithmetic made flesh: weeks from the edge, not days past it. She rationed her survival against your promise, and the promise was seventy-five days late, and it was enough, because she made it be.",
+      "choices": [
+        {
+          "text": "In the morning, she asks for two things: the vault — and the ninth console.",
+          "next": "q4_vault"
+        }
+      ]
+    },
+    "q4_silence": {
+      "id": "q4_silence",
+      "text": "You enter the silence as you kept it, and the silence keeps its side.\n\nThe shelter deck is in order. That is the thing you will carry longest: the order. The hydroponics racks drained, cleaned, and racked; the tools oiled and boarded; the six-bunk shelter — six bunks, stocked, their inventory checklists dated in a steady hand — made up with hospital corners against the arrival of guests it had no reason left to expect. The work lamp at the entrance was the last one lit, positioned to be seen from the corridor, aimed at the door. Lamps never burn for themselves.\n\nShe is in the observation chair in the Verge control room, facing the nine consoles, wrapped against the cold that finally kept its appointment, and she has been gone — Okonkwo is gentle and exact — around five weeks. Day 140, give or take. The event data on the consoles is complete, verified, and backed up threefold; the last entry in the station log is dated thirty-one days after the flare, and reads, in full: 'Observation program concluded. All records in order. The mast died well. If someone is reading this — the vault key is where a key would be, the letter is with the vault, and the tomatoes were the best crop in a decade, which I choose to find funny. A.V.'\n\nShe survived the fire. She survived it by thirty-one days, alone, on a cooked station with a halved reactor — long enough to finish the work, verify it, file it, clean her house, and light a lamp at the door. The cold took a tidy station and its architect in her chair, facing her instruments, twenty-two seconds a day behind a universe that never once wrote back.\n\nMarek stands in front of the chair for a long time. Then she takes off her uniform jacket, drapes it over the wrapped shoulders as though against a draft, and says, to the room, in the voice of a rating keeping the channel open all the way down: \"Watch officer of record, Erebus Station. I'll take it from here, Doctor.\"",
+      "choices": [
+        {
+          "text": "Find the vault. She left a key where a key would be, and a letter with it.",
+          "next": "q4_found"
+        }
+      ]
+    },
+    "q4_found": {
+      "id": "q4_found",
+      "text": "The vault is the old sample hold, two decks down, and the key is where a key would be — taped inside the cover of the station's paper logbook, labeled in her filing hand: FOR THE PUNCTUAL.\n\nInside, forty-two years, curated for carriage: the event data of Day 103, master and two copies, with her verification worksheets pinned to each like affidavits. The corrected record of Year Zero — the fragment's provenance, the flare reconstruction, the core telemetry that was called ambiguous, annotated where it was never ambiguous at all. The recordings made for nobody, hundreds of hours, indexed. The seed library. And on top of the stack, weighted with a drafting compass, the letter — addressed, in the steady hand, TO WHOEVER CAME.\n\nIt is one page. It thanks you — whoever you turned out to be — for the flying, which she calls 'the only part I could never do from here.' It disposes of her effects in nine lines, of which the tomatoes get two. It asks that the data go to the system's open archives, 'all of it, including the parts that name names — accuracy or nothing.' It asks that the station be left running: 'It kept the watch before me. It knows how.' And it ends, above the signature, with the sentence you will quote at the inquiry, at the memorial, and privately, on other ships, in other years, for the rest of your working life:\n\n'To the navigator of whatever ship this was: I checked the sky every day. Nothing that mattered was ever missing from it except an answer — and the sky's excuse, at least, was physics.'\n\nBeside the vault, on its own shelf, apart from the others the way a thing is kept apart when it is not data at all: a small archive drive labeled V9 / DOWNLINK / DO NOT TIDY, and beneath the label, newer ink: 'Rating — this was always yours too. A.V.'",
+      "item": {
+        "id": "kestrel_recorder",
+        "name": "The Kestrel's Recorder",
+        "description": "Fifty-one minutes from the flight recorder of the tug Kestrel, salvaged from its orbit around the hole. The last nine minutes are Dane Veil talking to the evacuation convoy's comms watch all the way down. Set apart from the data, labeled in newer ink: 'Rating — this was always yours too.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Load the vault, honor the letter, and carry them home — all of it, including the parts that name names.",
+          "next": "q4_carry"
+        }
+      ]
+    },
+    "q4_vault": {
+      "id": "q4_vault",
+      "text": "The vault is the old sample hold, two decks down, and she insists on being present for the transfer in a suit-warmed chair, supervising like a dockmaster: forty-two years, curated for carriage. The event data of Day 103, master and two copies, verification worksheets pinned like affidavits. The corrected record of Year Zero, annotated where it was never ambiguous at all. The recordings made for nobody — 'index them under stubbornness' — and the seed library, and the charts coming down off the corridor walls one papered decade at a time, rolled by Juno with archivist's gloves and archivist's reverence.\n\n\"All of it goes to the open archives,\" she says, watching the decades cross to the Halcyon crate by crate. \"Including the parts that name names. Accuracy or nothing — that's the price of carriage, Navigator, and I'll hear it agreed out loud.\" You agree out loud. Volkov, lashing the crates, mutters that it's the first cargo he's ever carried that weighs more in the manifest than on the scale, and she laughs — a ruin of a laugh, delighted with itself — and makes him say it again for the recordings.\n\nThen the ninth console. She has Marek wheel her to it herself — has, specifically, Marek — and the two of them are alone with it for some time while the crew finds work elsewhere, and when you are called back in, the archive drive labeled V9 / DOWNLINK / DO NOT TIDY is in Marek's hands, and both women have the scoured, level look of people who have finally heard the same fifty-one minutes.\n\n\"It was always addressed to her fleet,\" Asha says simply. \"Now it's delivered. Navigator — your hold has my life in it. Let's discuss what happens to the rest of me.\"",
+      "item": {
+        "id": "kestrel_recorder",
+        "name": "The Kestrel's Recorder",
+        "description": "Fifty-one minutes from the flight recorder of the tug Kestrel, salvaged from its orbit around the hole. The last nine minutes are Dane Veil talking to the evacuation convoy's comms watch all the way down. Played, at last, for the two women it shaped — together.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The question that's left: where Asha Veil's remaining years happen.",
+          "next": "q4_choice"
+        }
+      ]
+    },
+    "q4_choice": {
+      "id": "q4_choice",
+      "text": "She frames it herself, on the shelter deck, with the strength Okonkwo's regimen has been rebuilding in her and the crew gathered like the colleagues she designed the room for.\n\n\"The work is finished. Verified, exported, in your hold in triplicate — nothing that matters to physics needs me within a hundred AU of this place ever again. So the question is smaller than it looks, and larger: it's just where an old woman lives.\" She turns her mug — Juno printed it a week ago; it says EREBUS STATION, CREW: 7, and she has used it for every meal since — a quarter-turn, and you think of Marek's cup, forty-two years ago in another cabin, and say nothing.\n\n\"Your doctor offers me years, in the inner system: treatment, faces, weather off a real horizon. I remember weather. I am not immune to faces.\" A pause, accurate as a pin. \"And against it: this. My station. It kept me; I kept it; we are, as far as I can determine, the only two of our kind. Out here the sky I spent my life reading wheels past that port every eight point eight days, and my husband —\" level, level, \"— my husband is in that sky, in an orbit I know to nine decimals, and nowhere else in the universe, and certainly nowhere with weather.\n\n\"I will abide your call, Navigator — yours, because you're the one who weighed everything else on this voyage honestly. Take me home to years I never budgeted. Or leave me provisioned at my post, resupplied by the relief ships your report will bring, to finish as I began — on station, on watch, twenty-two seconds a day behind a universe that finally, once, wrote back.\"",
+      "choices": [
+        {
+          "text": "Take her home. Years, treatment, faces, weather — she budgeted for none of it, which is exactly why she should have it.",
+          "next": "q4_end_home"
+        },
+        {
+          "text": "Leave her at her post, provisioned and connected — and let the record show the rescue asked, and listened, and honored the answer.",
+          "next": "q4_end_post"
+        }
+      ]
+    },
+    "q4_end_home": {
+      "id": "q4_end_home",
+      "text": "\"Home,\" you say. \"You spent forty-two years being the only person in the sky who kept every appointment. Someone owes you weather, Doctor. Let it be us.\"\n\nShe holds your eyes for a long moment — checking the instrument — and then nods, once, pin into chart, and begins issuing decommissioning orders in the same breath, because if it is to be done then it will be done accurately.\n\nThe leaving takes four days. The station is set to autonomous watch: instruments live, remaining telemetry feeding the relief missions your report will summon, lights cycling on a schedule she writes herself — 'a lit window costs nothing and means everything; I have data.' The last crate aboard is the seed library. The last thing aboard is her, carried across the hard-line in a suit Juno spent three days refitting, pausing once on the traverse — by arrangement, the whole crew holding the line silent — to face the wheeling sky where an orbit she knows to nine decimals keeps its patient circuit, and to say whatever a person says to it, on a channel she asks to have muted.\n\nAboard, installed in the cabin the crew has quietly made hers, she pins two things above the bunk: the transcript of a six-word broadcast, and a fresh chart, hand-drawn, of the debris ring's evolving orbit — 'homework,' she says, 'for the voyage; I don't intend to arrive rusty.'\n\nThe Halcyon casts off from Erebus on Day 186, tanks heavy with her deuterium, hold heavy with her proof, and one crew heavier than it sailed. Astern, the station holds its orbit, lit windows wheeling around the nothing every eight point eight days, keeping the watch it knows how to keep. She does not look back at it. She has an old ship's discipline about watches that are no longer hers — and a new chart to draw.",
+      "item": {
+        "id": "asha_aboard",
+        "name": "The Rescued Author",
+        "description": "Asha Veil, aboard the Halcyon at last — with her archive, her seed library, her homework chart of the debris ring, and years ahead of her that existed on no chart she ever drew. The station keeps its watch, lit and willing. She doesn't look back. Discipline.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "q4_end_post": {
+      "id": "q4_end_post",
+      "text": "\"The record will show,\" you say, \"that the rescue asked, and listened. Your post, Doctor. Provisioned, connected, and never again unanswered — that's the treaty, and we'll sign it in cargo.\"\n\nAnd so the strangest resupply operation in the Compact's history conducts itself over six days, by the book, entered in the log as what it is: the re-founding of Erebus Station, crew of one. The Halcyon's hold gives up everything sparable — food, filters, spares, the whole rebalanced pharmacy regimen with Okonkwo's orders written out to the year mark, and a comms suite Priya builds from doubled redundancies that she personally rates 'unkillable, and I'll be checking.' Juno and Asha restore the second warm deck and re-rig the hydroponics; Volkov re-trims the station's stores like a man provisioning his own mother's house; Marek walks the watch rotation Asha will keep alone and countersigns it, officer to officer.\n\nThe treaty's teeth are in the schedule: your report goes home ahead of you at light-speed, and the relief missions it summons are no longer hope, they are manifest — the first science crews will reach Erebus within two years, and the station that was a tomb becomes, in the paperwork Priya files with visible relish, an active research outpost, resident director: Veil, A.\n\nAt the hard-line, the goodbyes are brief because she rations everything, even now. To you, last: \"Navigator. Every ship that ever passed this way chose the sky over the person or the person over the sky. You're the first that managed both. That's carried in the record too — my record, which is the accurate one.\" The dry flicker, one final time, from her side of the closing hatch. \"Fly well. Mind the ring on your way out. And — Halcyon.\" The oldest word in her ruined voice, made new: \"Respond as convenient. I'll be transmitting.\"",
+      "item": {
+        "id": "left_at_post",
+        "name": "The Re-founded Watch",
+        "description": "Erebus Station, active research outpost, resident director: Veil, A. — provisioned to the year mark, comms rated unkillable, relief missions on the manifest, and a watch rotation countersigned officer to officer. Never again unanswered. She'll be transmitting.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "q4_carry": {
+      "id": "q4_carry",
+      "text": "The loading takes three days, and the crew conducts it like the honor guard it is.\n\nThe vault crosses first — the event data in triplicate, the corrected Year Zero record, the recordings made for nobody, all lashed by Volkov with a care he usually reserves for pressure vessels, entered on the manifest in his hand as PROOF, VEIL, 42 YRS, MASS UNDERSTATED. The seed library. The rolled decades of corridor charts. And on the last day, with the whole crew at the traverse in suits, Asha Veil herself, wrapped in the station's flag — there was a flag; she had kept it folded in the vault with everything else that mattered — carried across the hard-line at the pace of a procession, to lie in the Halcyon's sample hold among her instruments, which Okonkwo certifies with a physician's last kindness: 'In order. All of it. In order.'\n\nPer the letter, the station is left running — lights cycling, instruments feeding their autonomous watch, one window kept lit over the core hatch on a circuit Juno triple-checks and does not explain to anyone. Per the letter, the data is bound for the open archives, all of it, including the parts that name names. And per nothing in the letter — per something older, that Marek enters in the log without consulting anyone: 'Erebus Station log, final crewed entry. Watch officer of record, I. Marek. The station kept its resident for forty-two years, and its resident kept the watch to Day 134, and the watch was worth keeping. Relieved at last, at anchor, by her own arrangements. Recommend the record be amended: SURVIVOR, ONE. She is owed the noun.'\n\nThe Halcyon casts off on Day 183, heavier than any manifest can state, and sets its bow for home with the lit window wheeling astern, once every eight point eight days, exactly as designed.",
+      "item": {
+        "id": "ashas_archive",
+        "name": "The Vault, Entire",
+        "description": "Forty-two years of proof, curated for carriage by its author and lashed like pressure vessels: the Day 103 event data in triplicate, the corrected Year Zero record, the letter TO WHOEVER CAME, and its author, wrapped in the station's flag, going home to archives that will finally have to be accurate.",
+        "persistent": true
+      },
+      "end": true
+    },
+
+    "m4_line": {
+      "id": "m4_line",
+      "text": "The line is held. That is the sentence, and the ship lives inside it now.\n\nThe Halcyon rides its station-keeping orbit at the interdiction boundary — or its long ellipse home; the geometry differs, the arithmetic doesn't — and the crew stands its watches with the punctuality of people who have agreed, without meeting, that correctness is the only room left to live in. Meals happen. Maintenance happens. The abort windows you once maintained like prayers pass one by one, honored at last, each closing with a small soundless click that only you seem to hear.\n\nWork was where a person keeps their mind when there's nowhere else to put it; Okonkwo said that, months and a different ship ago. There is a great deal of work. Priya has the antennas — all of them, every watch, aimed at a bearing she no longer logs, running recorders she no longer mentions. Volkov audits the hold, then audits it again, and his tallies have begun to include columns that are not mass. Juno fixes what is broken, and then what is not broken, and has stopped inventing failure modes, which from Juno is the sound of something turned off at the main.\n\nAnd Marek keeps the con, correct and complete, presiding over the held line with her hands folded behind her, at parade rest, or braced — and stands, every dead watch, at the blister, facing the warped patch of sky where the lensing marks the well. You know now what she rehearses there. You have heard the whole speech. It was given, once, to a bridge that voted the numbers instead.\n\nThe sky keeps its schedule regardless. It always did.",
+      "choices": [
+        {
+          "text": "Stand the watch of Day 103 — or its anniversary of silence — wherever the ship happens to be when the light arrives.",
+          "next": "m4_after"
+        }
+      ]
+    },
+    "m4_after": {
+      "id": "m4_after",
+      "text": "The light arrives on schedule, fifteen hours old, and the crew gathers without being called, because whatever else was voted away, the watching was never on the ballot.\n\nOn the displays, the patch of sky around KS-41 ignites — the X-ray point, the climbing curve, the furnace door swinging open exactly as a forty-one-year solution said it would — and for six hours the instruments narrate the most valuable astrophysical event of the century to a hold with no observation program in it, a bridge with no one to send the data to, a ship that is present for history the way a closed eye is present for a sunrise.\n\nPriya's recorders take what the antennas can reach. It is not nothing. It is the cheap seats' honest fraction, and she logs it with the thoroughness of a woman filing evidence for a trial no court has scheduled.\n\nAnd threaded through the storm's static, for six hours and eleven minutes, the other signal — the patient pulse that repeated one date for forty-two years, transmitting through the fire from a mast that was never rated for it, steady, steady, steady. At 0151, mid-frame, it stops.\n\nNobody says anything. There is nothing aboard this ship that anyone can afford to say.\n\nIn the silence where the ticking used to be, Marek finally turns from the blister, and her face is the one from Day 0 — the stillness that is work — and she gives the only order left in her ledger, the one the vote wrote for her: \"Maintain heading.\" The Halcyon maintains heading. The ship is correct, and fueled, and lawful, and every soul aboard is alive and certified so, and astern, cooling, a station-sized silence keeps whatever it keeps, unwitnessed, twenty-two seconds a day slower than a universe that had, in the end, exactly one answer to give and chose the tanks.\n\nThe long flight home begins. It will be quiet. You have all become very good at quiet.",
+      "end": true
+    }
+  }
+}

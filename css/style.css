@@ -51,6 +51,7 @@ button {
 }
 
 /* ── Shared full-screen layout ─────────────────────────────────── */
+#library-screen,
 #title-screen,
 #chapter-screen,
 #previously-screen {
@@ -65,12 +66,95 @@ button {
   transition: opacity var(--transition);
 }
 
+#library-screen.fade-out,
 #title-screen.fade-out,
 #chapter-screen.fade-out,
 #previously-screen.fade-out,
 #game-screen.fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+/* ── Library Screen ────────────────────────────────────────────── */
+#library-content {
+  width: 100%;
+  max-width: 560px;
+  text-align: left;
+}
+
+.story-tile {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 1.2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.story-tile:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.story-tile:hover .story-title-text {
+  color: var(--text);
+}
+
+.story-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-title-text {
+  font-family: var(--font-prose);
+  font-size: 1.5rem;
+  color: var(--text-mid);
+  transition: color var(--transition);
+}
+
+.story-subtitle {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.story-blurb {
+  font-family: var(--font-prose);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 0.3rem;
+}
+
+.story-badge {
+  font-family: var(--font-ui);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.story-badge.in-progress {
+  color: var(--accent);
+}
+
+#btn-title-back {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 1.2rem;
+  transition: color var(--transition);
+}
+
+#btn-title-back:hover {
+  color: var(--text-mid);
 }
 
 /* ── Title Screen ──────────────────────────────────────────────── */
@@ -104,6 +188,65 @@ button {
   color: var(--text-mid);
   max-width: 360px;
   line-height: 1.7;
+}
+
+/* ── Title Reveal ──────────────────────────────────────────────────
+   Staged entrance when a story is opened from the library. The title
+   settles out of a wide letter-spacing; everything after it fades up. */
+#title-screen.revealing .reveal-el {
+  opacity: 0;
+}
+
+#title-screen.revealing #title-eyebrow,
+#title-screen.revealing #title-actions,
+#title-screen.revealing #btn-title-back {
+  transform: translateY(10px);
+  transition: opacity 1.1s ease, transform 1.1s ease;
+}
+
+#title-screen.revealing #game-title {
+  transform: translateY(18px);
+  letter-spacing: 0.32em;
+  transition: opacity 1.9s ease, transform 1.9s cubic-bezier(0.2, 0.7, 0.2, 1),
+              letter-spacing 2.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Opacity leads, blur trails. Sharing one duration makes the subtitle
+   invisible until it is almost opaque (blur thins the ink), so it lands
+   in one jump instead of resolving. */
+#title-screen.revealing #game-subtitle {
+  filter: blur(5px);
+  transform: translateY(6px);
+  transition: opacity 0.9s cubic-bezier(0.33, 0, 0.2, 1),
+              filter 2.3s cubic-bezier(0.16, 0.6, 0.2, 1),
+              transform 2.3s cubic-bezier(0.16, 0.6, 0.2, 1);
+}
+
+#title-screen.revealing .reveal-el.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+#title-screen.revealing #game-title.reveal-in {
+  letter-spacing: -0.01em;
+}
+
+/* `none` is a keyword, not a filter value: blur(5px) → none cannot be
+   interpolated, so the subtitle would hold its blur and snap sharp.
+   Animate to blur(0px) instead. */
+#title-screen.revealing #game-subtitle.reveal-in {
+  filter: blur(0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #title-screen.revealing .reveal-el {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    letter-spacing: normal;
+    transition: none;
+  }
+  #title-screen.revealing #game-title { letter-spacing: -0.01em; }
 }
 
 #title-actions {
@@ -372,6 +515,26 @@ button {
   top: 2rem;
   right: 2rem;
   z-index: 50;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 50;
+}
+
+#btn-game-back {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: color var(--transition);
+}
+
+#btn-game-back:hover {
+  color: var(--text-mid);
 }
 
 #inventory-btn {

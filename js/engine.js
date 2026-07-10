@@ -36,7 +36,7 @@ const Game = {
   /* ── Internal handles ────────────────────────────────────────── */
   _twCancel:      null,
   _notifTimer:    null,
-  _currentScreen: 'title',
+  _currentScreen: 'library',
 
   /* ═══════════════════════════════════════════════════════════════
      INIT
@@ -44,30 +44,132 @@ const Game = {
   async init() {
     this._cacheDOM();
     this._bindEvents();
+
+    try {
+      const res = await fetch('stories.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      this.library = (await res.json()).stories;
+    } catch (e) {
+      console.error('Failed to load story library:', e);
+      document.body.innerHTML = '<p style="color:#666;padding:4rem;font-family:monospace">Could not load stories.</p>';
+      return;
+    }
+
+    this._buildStoryList();
+    document.getElementById('page-title').textContent = 'Stories';
+
+    /* A ?story= link still opens that story directly. */
+    const param = new URLSearchParams(location.search).get('story');
+    const direct = param && this.library.find(s => s.dir === param);
+    if (direct) {
+      await this._selectStory(direct, { instant: true });
+    }
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     LIBRARY (story select)
+  ═══════════════════════════════════════════════════════════════ */
+  _progressKeyFor(story) {
+    return story.dir === 'story' ? 'textgame_progress' : `textgame_progress_${story.dir}`;
+  },
+
+  _storyHasProgress(story) {
+    try {
+      const raw = localStorage.getItem(this._progressKeyFor(story));
+      if (!raw) return false;
+      return Object.keys(JSON.parse(raw)?.chapters || {}).length > 0;
+    } catch (_) {
+      return false;
+    }
+  },
+
+  _buildStoryList() {
+    this.el.storyList.innerHTML = '';
+
+    this.library.forEach(story => {
+      const started = this._storyHasProgress(story);
+
+      const tile = document.createElement('div');
+      tile.className = 'story-tile';
+
+      const info = document.createElement('div');
+      info.className = 'story-info';
+
+      const title = document.createElement('div');
+      title.className = 'story-title-text';
+      title.textContent = story.title;
+
+      const subtitle = document.createElement('div');
+      subtitle.className = 'story-subtitle';
+      subtitle.textContent = story.subtitle;
+
+      const blurb = document.createElement('div');
+      blurb.className = 'story-blurb';
+      blurb.textContent = story.blurb;
+
+      info.appendChild(title);
+      info.appendChild(subtitle);
+      info.appendChild(blurb);
+
+      const badge = document.createElement('span');
+      badge.className = 'story-badge' + (started ? ' in-progress' : '');
+      badge.textContent = started ? 'in progress' : `${story.chapters} chapters`;
+
+      tile.appendChild(info);
+      tile.appendChild(badge);
+      tile.addEventListener('click', () => this._selectStory(story));
+
+      this.el.storyList.appendChild(tile);
+    });
+  },
+
+  async _selectStory(story, opts = {}) {
+    this.storyDir           = story.dir;
+    this.config.progressKey = this._progressKeyFor(story);
+
+    /* Reset all per-story runtime state before loading the new manifest. */
+    this.manifest         = null;
+    this.data             = { scenes: {}, startScene: 'start' };
+    this.currentChapterId = null;
+    this.state            = { currentSceneId: null, inventory: [], history: [], isTyping: false };
     this._loadProgress();
 
     try {
-      const res = await fetch('story/manifest.json');
+      const res = await fetch(`${this.storyDir}/manifest.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       this.manifest = await res.json();
     } catch (e) {
       console.error('Failed to load manifest:', e);
-      document.body.innerHTML = '<p style="color:#666;padding:4rem;font-family:monospace">Could not load story.</p>';
       return;
     }
 
     document.getElementById('page-title').textContent = this.manifest.title;
     this.el.gameTitle.textContent    = this.manifest.title;
     this.el.gameSubtitle.textContent = this.manifest.subtitle;
+    this.el.btnContinue.classList.toggle('hidden', !this._hasProgress());
 
-    if (this._hasProgress()) {
-      this.el.btnContinue.classList.remove('hidden');
+    this._stageTitleReveal();
+
+    if (opts.instant) {
+      this.el.libraryScreen.classList.add('hidden');
+      this.el.titleScreen.classList.remove('hidden');
+      this._currentScreen = 'title';
+    } else {
+      await this._transitionTo('title');
     }
+
+    this._playTitleReveal();
   },
 
   _cacheDOM() {
     const $ = id => document.getElementById(id);
     this.el = {
+      libraryScreen:    $('library-screen'),
+      storyList:        $('story-list'),
+      btnTitleBack:     $('btn-title-back'),
+      btnGameBack:      $('btn-game-back'),
+      titleEyebrow:     $('title-eyebrow'),
+      titleActions:     $('title-actions'),
       titleScreen:      $('title-screen'),
       chapterScreen:    $('chapter-screen'),
       previouslyScreen: $('previously-screen'),
@@ -100,8 +202,10 @@ const Game = {
   },
 
   _bindEvents() {
+    this.el.btnTitleBack.addEventListener('click',   () => this._backToLibrary());
+    this.el.btnGameBack.addEventListener('click',    () => this._leaveGame());
     this.el.btnNew.addEventListener('click',         () => this._startFresh());
-    this.el.btnContinue.addEventListener('click',    () => this._transitionTo('chapter'));
+    this.el.btnContinue.addEventListener('click',    () => { this._clearTitleReveal(); this._transitionTo('chapter'); });
     this.el.btnChapterBack.addEventListener('click', () => this._transitionTo('title'));
     this.el.btnPrevBack.addEventListener('click',    () => this._transitionTo('chapter'));
 
@@ -159,8 +263,71 @@ const Game = {
   /* ═══════════════════════════════════════════════════════════════
      SCREEN TRANSITIONS
   ═══════════════════════════════════════════════════════════════ */
+  async _backToLibrary() {
+    this._clearTitleReveal();
+    this._buildStoryList();
+    document.getElementById('page-title').textContent = 'Stories';
+    await this._transitionTo('library');
+  },
+
+  /* Leave a scene mid-play. The chapter state is already saved on every
+     scene render, so this only has to stop what's still animating. */
+  async _leaveGame() {
+    if (this._twCancel) this._twCancel();
+    clearTimeout(this._notifTimer);
+    this.el.itemNotification.classList.remove('show');
+    this._closeInventory();
+    await this._backToLibrary();
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     TITLE REVEAL
+  ═══════════════════════════════════════════════════════════════ */
+  _revealTimers: [],
+
+  _clearTitleReveal() {
+    this._revealTimers.forEach(clearTimeout);
+    this._revealTimers = [];
+    this.el.titleScreen.classList.remove('revealing');
+    this._revealEls().forEach(el => el.classList.remove('reveal-in'));
+  },
+
+  _revealEls() {
+    return [...this.el.titleScreen.querySelectorAll('.reveal-el')];
+  },
+
+  /* Hide the title elements before the screen fades in, so nothing
+     flashes at full opacity ahead of its cue. */
+  _stageTitleReveal() {
+    this._clearTitleReveal();
+    this.el.titleScreen.classList.add('revealing');
+    void this.el.titleScreen.offsetWidth;   // commit the staged state
+  },
+
+  _playTitleReveal() {
+    const cues = [
+      [this.el.titleEyebrow,   0],
+      [this.el.gameTitle,      420],
+      [this.el.gameSubtitle,   1750],
+      [this.el.titleActions,   2750],
+      [this.el.btnTitleBack,   2950],
+    ];
+
+    cues.forEach(([el, delay]) => {
+      this._revealTimers.push(setTimeout(() => el.classList.add('reveal-in'), delay));
+    });
+
+    /* Once everything has landed, drop the staging class so later visits
+       to this screen (from chapter select) render instantly. */
+    this._revealTimers.push(setTimeout(() => {
+      this.el.titleScreen.classList.remove('revealing');
+      this._revealEls().forEach(el => el.classList.remove('reveal-in'));
+    }, 5200));
+  },
+
   async _transitionTo(screen, opts = {}) {
     const screens = {
+      library:    this.el.libraryScreen,
       title:      this.el.titleScreen,
       chapter:    this.el.chapterScreen,
       previously: this.el.previouslyScreen,
@@ -306,6 +473,7 @@ const Game = {
      START / LOAD CHAPTER
   ═══════════════════════════════════════════════════════════════ */
   async _startFresh() {
+    this._clearTitleReveal();
     this._clearProgress();
     const ch1 = this.manifest.chapters[0];
     this._initChapterProgress(ch1.id);
@@ -638,6 +806,7 @@ const Game = {
      PROGRESS PERSISTENCE
   ═══════════════════════════════════════════════════════════════ */
   _loadProgress() {
+    this._progress = null;
     try {
       const raw = localStorage.getItem(this.config.progressKey);
       if (raw) this._progress = JSON.parse(raw);

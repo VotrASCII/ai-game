@@ -1,0 +1,294 @@
+{
+  "startScene": "capture_burn",
+  "scenes": {
+    "capture_burn": {
+      "id": "capture_burn",
+      "text": "There is no 'nearby' at a black hole. There is matched, and there is missed.\n\nErebus Station falls around KS-41 at three thousand eight hundred and sixty kilometers a second, and to arrive is to become that number: the capture burn is the voyage's single largest line item, hours of sustained fire spending close to four thousand kilometers a second of everything the ledger holds, the drive howling at the top of its certificates while the ship threads itself onto an orbit eight point eight days long around an absence with a circumference.\n\nYou fly it yourself. You were always going to fly it yourself.\n\nThe hole crosses the viewports during the final phase and every instrument aboard files its grievances at once — star trackers losing their minds in the lensed sky, the navigation suite politely requesting a reality that parses. You fly on instruments you trust and the arithmetic you came up on, and the arithmetic holds, the way it has held since the first night at the blister: mass and motion do not lie.\n\nBurn termination. Orbit matched. The Halcyon and Erebus Station now fall around KS-41 together, twenty kilometers apart, closing gently — two artifacts in the oldest kind of formation there is.\n\nOn the main display, growing, lit by the warped light of a ring of stars: the station.",
+      "choices": [
+        {
+          "text": "Day 96. Seven days before the beacon's date. Take the approach.",
+          "requires": "route_hard_burn",
+          "next": "h3_arrival"
+        },
+        {
+          "text": "Day 178. Seventy-five days after the fire. Take the approach.",
+          "requires": "route_slow_ellipse",
+          "next": "s3_arrival"
+        }
+      ]
+    },
+
+    "h3_arrival": {
+      "id": "h3_arrival",
+      "text": "Erebus resolves in the long lenses, and the first surprise is that there is no ruin.\n\nThe station is whole. Old — her hull streaked and crazed by four decades of radiation weather, her spin section stilled, her running lights dark — but whole, and not dead: along the central spine, a scatter of windows burns with warm light, and her radiators hold the faint infrared bloom of systems alive and managed. The beacon mast at her bow transmits its patient date at you from close range now, absurdly strong, like a lighthouse hailed from its own doorstep.\n\nForty-two years of certificates say this place is a tomb. The thermal camera says somebody kept the lights on.\n\nPriya has the comms board live, hands steady by force of professionalism alone. At this range the light-lag is seconds — after months of fifteen-hour silences, conversation is suddenly, dizzyingly possible. Whoever is behind those windows can speak, and be answered, and hear the answer, in the same minute. First contact with the far end of a forty-two-year letter, and the channel is yours to open.\n\nMarek stands at the back of the bridge in full uniform — the first time this voyage — with her hands folded behind her, at parade rest, or braced.",
+      "choices": [
+        {
+          "text": "Before any channel opens — put the picket cipher in front of Marek, in front of everyone, and give her the chance to say it herself.",
+          "requires": "beacon_epoch_key",
+          "next": "h3_confront_marek"
+        },
+        {
+          "text": "Before any channel opens — lay the buried acknowledgment on the bridge display, and give Marek the chance to explain Year Three herself.",
+          "requires": "deleted_ack_fragment",
+          "next": "h3_confront_marek"
+        },
+        {
+          "text": "Open the channel you've kept warm since the declaration. She knows you're coming; don't make her wait a minute longer.",
+          "requires": "promise_sent",
+          "next": "h3_contact_expected"
+        },
+        {
+          "text": "Open the channel cold. Standard hail, full formality — let whoever answers set the temperature.",
+          "next": "h3_contact_cold"
+        }
+      ]
+    },
+    "h3_confront_marek": {
+      "id": "h3_confront_marek",
+      "text": "You put it on the main display where the whole bridge can see it — the cipher keyed to a dead fleet's registry, the acknowledgment classified into an echo, the shape that has been assembling itself since Day 0 — and you say, \"Captain. Before we open that channel, the crew needs to hear it from you and not from her.\"\n\nAnd Ilse Marek, who has been rehearsing at a blister window for months, stands very straight and finally says her piece to the living instead of the glass.\n\n\"I was twenty. Communications rating on the evacuation convoy. The telemetry from the station's core was ambiguous — partial pressure readings that could have been survivors and could have been sensor decay. The convoy commander needed a certification to leave, the radiation was climbing, and certifying meant everyone stopped dying that day. I keyed 'no survivors remaining aboard' with my own hands, under orders I have spent forty-two years choosing to believe I believed.\" Her voice does not waver. That is somehow the worst part. \"Three years later, on the picket, my own board logged a carrier from Erebus. Fifteen times, eleven days. I acknowledged the first myself, and took it to my watch commander — the same officer who had needed the certification. And when the amendment came down, classifying it as echo, I entered it. I was the watch officer of record. The deletion is signed with my service code, because it was mine.\"\n\nShe looks around the bridge, at each of them, finishing with you. \"There is a woman alive on that station whom I have abandoned twice, by the book both times. The book and I are done. This ship will not make it a third — whatever that costs, starting with this: I am stepping back from first contact. The navigator has the channel. She should hear a voice that owes her nothing.\"\n\nNobody speaks. Volkov, at last, into the silence: \"Well. Now we know the cargo.\" And, gruffly, the highest sentence he awards: \"Better carried late than never weighed.\"",
+      "item": {
+        "id": "marek_confessed",
+        "name": "The Captain's Account",
+        "description": "Marek's confession, given standing, to her own crew, before Erebus could give it for her: the certification at twenty, under orders; the carrier on her own picket watch three years later; the deletion signed with her own service code. The crew heard it from her. It made the difference a truth's source always makes.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Open the channel. However this goes now, the ship goes into it whole.",
+          "next": "h3_contact_expected"
+        }
+      ]
+    },
+    "h3_contact_expected": {
+      "id": "h3_contact_expected",
+      "text": "Priya opens the channel, and before your hail is even complete a voice comes back — a woman's voice, dry and clear and fluent in the exact dialect of your own approach declarations, because she has been reading them for weeks.\n\n\"Vessel Halcyon, Erebus Station. Hold your closure at five hundred meters off my spine — my collar's alignment thrusters are down to persuasion and prayer, and I want your hull where I can see it.\" A pause, and the professional armor opens a visible seam: \"You kept transmitting. Every update. I want it in your log that the updates were — that they mattered. Forty-two years, and the hardest part turned out to be the last ninety-six days, because for the first time there was something to wait for.\"\n\nShe gives her name the way people surrender something long defended: \"Dr. Asha Veil. Stellar dynamics. The certificate you flew out here holding says I was evacuated. The certificate is wrong about that, and about several other things — and if the composition of your crew is what your registry suggests—\" the channel holds a silence with fifteen years of picket procedure inside it, \"—then some of what's wrong, your captain already knows. We'll come to it. Physics first, grievances after; the physics has a deadline.\"\n\nJuno, off-mic, barely breathing: \"She's real.\"\n\n\"Now,\" Asha Veil says, and every screen on the bridge lights as she pushes data at you — orbital elements, a decaying ellipse, a mass, a date. \"You arrived seven days early, Halcyon, which is the first luck I've had in four decades. Let me show you what Day 103 is.\"",
+      "choices": [
+        {
+          "text": "Take her data. Whatever Day 103 is, it has a mass and an orbit now.",
+          "next": "h3_asha_terms"
+        }
+      ]
+    },
+    "h3_contact_cold": {
+      "id": "h3_contact_cold",
+      "text": "Priya transmits the standard hail — vessel identity, registry, statement of rescue intent — into a silence that lasts eleven seconds and will be discussed aboard this ship for years.\n\nThen the voice, a woman's, dry and precise, with the particular deliberateness of someone who has not conversed in real time across four decades and is watching herself do it: \"Erebus Station receives you, Halcyon. You'll forgive the delay. I wrote the protocols for this conversation a long time ago, and I find the document requires revision.\"\n\nA breath, and then, absolutely level: \"Statement for your log, since you've come under the rescue statutes: this station has one occupant. Dr. Asha Veil, stellar dynamics. The evacuation certificate lists me among the recovered. It has been wrong for forty-two years — a fact I stopped transmitting in Year Three, when it became clear the line preferred its version.\" If she means it as a shot across anyone's bow, her voice declines to aim it. \"You arrived with no announcement, seven days before the only date that matters here, which means you flew months on faith in a number. Good. You'll need exactly that disposition for what comes next.\"\n\nEvery screen on the bridge lights at once as she pushes data at you: orbital elements, a decaying ellipse, a mass, a date.\n\n\"Hold your closure at five hundred meters and pay attention, Halcyon. Let me show you what Day 103 is. Physics first. Grievances—\" the pause is surgical, \"—after. There are grievances. But the physics has a deadline.\"",
+      "choices": [
+        {
+          "text": "Take her data. Whatever Day 103 is, it has a mass and an orbit now.",
+          "next": "h3_asha_terms"
+        }
+      ]
+    },
+    "h3_asha_terms": {
+      "id": "h3_asha_terms",
+      "text": "She teaches the way lighthouses shine — indifferent to whether you feel ready.\n\n\"Marlowe's Object. An ice body, hundred and eighty kilometers, captured by KS-41 the same ancient millennium the hole itself was captured by the star. I've tracked it for forty-one years: every periapsis, the hole's tide kneads it, its orbit decays, and my numbers—\" a flicker of pride older than the certificate, \"—my numbers say the next periapsis is inside the Roche limit. On Day 103, Marlowe's Object crosses the line where tide beats matter, and comes apart. The debris rains into the accretion flow, and for roughly nine days this volume of space becomes an X-ray furnace. Everything unshielded within three AU of the hole — cooked. My station sits at three point one, which my late colleagues would have called 'Asha's sense of humor.'\"\n\nThe projection turns: Erebus's shielded core, buried at the station's heart, thirty-one years of her modifications crawling over its schematics. \"The core rode out Year Zero's flare, which was a firecracker next to this. With the work I've done since, it rides this out too. So here are your options, Halcyon, and note that I have been composing this menu for decades. One: you shelter with me, ship docked in the station's shadow, crew in the core, and we — together, with your instruments and mine — record the most valuable astrophysical event of our century from the front row. Two: you stand off beyond three AU, wait out the fire, and come back for me after. Three—\" and her voice goes, for the first time, quiet, \"—three is you take an old woman aboard right now and burn for the boundary, and we watch my life's work happen from the cheap seats, and I spend whatever's left of me being grateful and unbearable. I am at peace with any of the three. I have had practice being at peace.\"\n\n\"And Halcyon — check your tanks before you feel noble. I know what a capture burn out here costs. My deuterium stock is yours whichever way this goes: the station makes more every year, and I only ever needed enough to keep a beacon lit.\"",
+      "choices": [
+        {
+          "text": "Take it to the crew. Six people, three doors, and a countdown — this decision belongs to the whole table.",
+          "next": "h3_crew_vote"
+        }
+      ]
+    },
+    "h3_crew_vote": {
+      "id": "h3_crew_vote",
+      "text": "The mess again — everything decided on this ship gets decided at that table — with the station's warm windows drifting across the viewport and six days on the clock.\n\nVolkov opens against the front row. \"We came to save a life. It's saveable. Take her aboard, take her fuel, stand off past three AU, and let the sky burn without us in it. Science can watch from anywhere.\" Priya, surprising the table, argues the opposite with her ears still full of forty-two years of signal: \"She didn't hold that line for decades so somebody could carry her off a week before the answer. You all heard her. The event is the point. And—\" she says it plainly, \"—her core data from inside that flare will be irreplaceable. Nine days in a bunker for a century's worth of physics is the cheapest trade this voyage has been offered.\" Okonkwo speaks to what he always speaks to: \"She is seventy-two, and no scan of mine has touched her yet. Whatever's decided, decide it where my equipment can reach her.\" Juno just looks at the station's lit windows and says, \"We're not leaving her. Past that, I'll fly anything.\"\n\nAnd Marek — Marek, who has carried this table's silences since Day 0 — says only: \"The master defers to the mission. The mission's shape is the navigator's call. Weigh it, Nav, and say it out loud.\"\n\nSix days. A furnace with a schedule. A shielded core with forty-two years of one woman's cunning in it. And your tanks at sixteen hundred, refillable only at her dock.",
+      "choices": [
+        {
+          "text": "Commit: dock, shelter, and stand the watch with her. The Halcyon rides out the fire in Erebus's shadow, and the crew records the century's event from the front row.",
+          "next": "h3_final_approach"
+        },
+        {
+          "text": "Commit: evacuate her now. Load Asha Veil and her archive, refuel at the dock, and be beyond three AU before the sky lights. The work can survive as data; make sure she survives as a person.",
+          "next": "h3_final_approach"
+        },
+        {
+          "text": "Refuse both. This crew signed for freight, not for sitting inside a forecast furnace; hold at the boundary, let the fire pass, and pick up whatever's left after.",
+          "next": "h3_refuse"
+        }
+      ]
+    },
+    "h3_refuse": {
+      "id": "h3_refuse",
+      "text": "You say it, and the table goes still, and then — this is the part you will replay — most of the stillness is relief.\n\nIt is defensible. It is even, by the cold books, correct: an unsurveyed forty-year-old station, a forecast radiation event, a crew of six with sixteen hundred in the tanks. Volkov backs the call instantly and without triumph. Priya files her objection in writing and stops speaking at meals. Okonkwo says, \"Noted for the chart,\" in a voice with a closed door in it. Marek — Marek says nothing at all, and stands very straight, and you understand that you have just handed her a third abandonment conducted by the book, and that she will preside over it, because presiding over the book is what her whole ruined ledger of a life has been for.\n\nJuno votes no, out loud, uncounted, and leaves the bridge.\n\nYou hold the Halcyon at the boundary. You tell Asha Veil yourselves — you owe her that, and she takes it with a courtesy that is worse than any anger could have been: \"Understood, Halcyon. It was always the likeliest menu item. Hold your line; I'll transmit through the event as long as the mast survives. If the numbers are kind, come find me after. If they aren't—\" the pause is brief, and old, and completely calm, \"—then for the record: being answered was enough. Not everyone gets their letter answered.\"\n\nThe channel closes. The ellipse holds. Six days to the fire, and the ship all around you is quiet with the particular quiet of a crew that has chosen safety and started paying for it.",
+      "item": {
+        "id": "mutiny_carried",
+        "name": "The Held Line",
+        "description": "The ship held at the interdiction boundary while a woman who waited forty-two years faced the fire alone. Defensible. By the book. The kind of correct that has to be lived with afterward.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "h3_final_approach": {
+      "id": "h3_final_approach",
+      "text": "The commitment is logged and Asha Veil talks you in herself, her voice on approach control as sure as any harbor pilot's — she has, after all, exactly one door, and she has kept it oiled for forty-two years against exactly this arrival.\n\n\"Five hundred meters. Three hundred. Your adapter claims it backward-qualifies to my Mark Four collar; I've read that certification and I want it known I laughed. Alignment coming — now.\"\n\nThe Halcyon slides down the final corridor, thrusters printing gentle blue punctuation on the dark, and the station fills every viewport: the crazed hull with its warm windows, the beacon mast still patiently shouting its date at a system that finally sent somebody, the whole ancient structure falling around the nothing at thirteen thousand kilometers an hour in the formation you now share. Juno is at the collar station, hands easy, a thousand simulator runs deep. Contact in twelve. In eight. In four.\n\nThe collar takes the Halcyon's adapter with a shudder you feel through the deck — and then a sound nobody who hears it will need explained, a wet metallic shear, forty-two years of radiation embrittlement finishing its long work in half a second. Amber cascades across Juno's board. The docking collar has failed — mechanically, totally, in exactly the way she rehearsed because it was the worst one — and the Halcyon drifts back from Erebus's spine, attached by nothing, five meters and a universe from a station door that cannot come to you.\n\n\"Well,\" says Asha Veil, on the channel, into six people's silence, with forty-two years of gallows patience in it, \"now it's a proper rescue. Somebody's going to have to walk.\"",
+      "choices": [
+        {
+          "text": "Honor the deal made on the hull. You and Juno suit up and rig the transfer line — the two of you, the way it was always going to be.",
+          "requires": "juno_trust",
+          "next": "h3_cross_juno"
+        },
+        {
+          "text": "Take Marek across with you. Whatever waits inside, the captain has an account to deliver in person — and you'll not send her alone.",
+          "next": "h3_cross_marek"
+        },
+        {
+          "text": "Nobody walks who doesn't have to: compute a drift solution and fly the cargo drones as a rigged ferry line — slower, ugly, and bloodless.",
+          "requires": "trajectory_intuition",
+          "next": "h3_cross_drones"
+        }
+      ]
+    },
+    "h3_cross_juno": {
+      "id": "h3_cross_juno",
+      "text": "You and Juno cross the gap the way you trained on the hull of a burning ship: three of four limbs loaded, the tether philosophy, her voice and yours in halves of the same sentence.\n\nThe five-meter drift has opened to forty by the time you're out, the two hulls breathing apart on their slightly different orbits, and the crossing is a textbook nightmare — a dead collar shedding fragments, a station spine bristling with four decades of jury-rigged antennae, and beneath your boots, wheeling, the lensed ring and its exact circumference of nothing. You do not look down. Juno looks down on purpose, once, pays the nothing its respects, and gets back to work.\n\nShe rigs the transfer line to Erebus's spine with the fast, certain hands of four hundred rehearsals, and the two of you ratchet the ships into a hard-line marriage the collar could never have managed. Ninety minutes. Zero discrepancies. When the spine hatch's manual override finally gives — her on the wheel, you on the pry bar, both laughing at something neither of you could explain to a board of inquiry — the door swings into warm air and grown herbs and light.\n\nAnd Asha Veil is standing in it. Smaller than her voice. Steel-haired, straight-backed, in a station jumpsuit patched with forty-two years of neat exact stitches, looking at the two of you with an expression you will never find the one right word for — someone watching the abstract concept of other people become, after fifteen thousand days, a specific pair of them, breathing in her doorway.\n\n\"Six crew,\" she says finally. Her voice is steady. Her hands are not. \"They sent me six whole crew. Come in — mind the tomatoes.\"",
+      "choices": [
+        {
+          "text": "Cross the threshold. Chapter's end; the station's beginning.",
+          "next": "h3_docked"
+        }
+      ]
+    },
+    "h3_cross_marek": {
+      "id": "h3_cross_marek",
+      "text": "Marek suits up in silence, and you understand that this crossing was always going to be hers; the collar's failure just made it honest.\n\nShe is twenty years past her best EVA rating and it shows — she moves by procedure where Juno would move by feel, checking each tether point twice, spending strength on caution that costs her more strength. Halfway across, the dead collar sheds a panel that sails past her helmet close enough to read its part number; she watches it go by without a sound, waits three breaths, resumes. It takes the two of you nearly three hours to rig the transfer line, and by the end her breathing on the channel is doing arithmetic that Okonkwo, listening below, is visibly entering into a chart.\n\nBut the line goes taut. The ships are married. And when the spine hatch's manual wheel finally gives, and warm air and light spill out, and Asha Veil stands in her doorway looking at the two suited figures on her threshold — it is Marek who steps forward and unlatches her own helmet first, in the open air of the station she certified dead, so that her face is bare when she says it.\n\n\"Dr. Veil. Ilse Marek. Comms rating, third class, evacuation convoy, Year Zero.\" A breath that costs more than the whole crossing did. \"I keyed the certificate. And in Year Three, on the picket — the carrier they classified into an echo was acknowledged at my board. I've come to answer it in person. Forty-two years late, and out of excuses on the way.\"\n\nThe silence in the hatchway lasts four seconds and forty-two years, and what Asha Veil finally says is the last of the many things you imagined: \"I know exactly who you are, Rating Marek. Why do you think my letter was addressed to your fleet?\" She steps back, holding the door. \"Come in. Both of you. You've had a long walk — and we have a shorter time than anyone deserves.\"",
+      "choices": [
+        {
+          "text": "Cross the threshold. Chapter's end; the station's beginning.",
+          "next": "h3_docked"
+        }
+      ]
+    },
+    "h3_cross_drones": {
+      "id": "h3_cross_drones",
+      "text": "Nobody walks. You spend four hours at the board instead, doing the thing you are actually for: computing the two hulls' relative drift down to the centimeter-per-second, and flying Volkov's cargo drones — squat, graceless, magnificently indifferent to radiation and dread — as a rigged ferry line across the gap.\n\nIt is ugly and it is beautiful. Drone one carries the messenger line; drone two walks the heavy cable out along it; drones three and four ratchet tension until the Halcyon and Erebus are hard-lined into a marriage the dead collar could never have managed. Juno flies the manipulators for the final connections, remote, her sim-trained hands doing in gloves-by-wire what she would rather have done in gloves — and says so, once, and lets it go, because the work is good and she knows good work.\n\nThe first thing to cross the finished line is a supply pallet. The second is the crew, riding the traverse in suits, hand over hand down a cable as solid as a bridge, with the lensed ring wheeling below and nobody's life ever hanging on fewer than three redundancies. Your solution. Slow, ugly, bloodless. In the log it will read as one line. In the crew's memory of you it will read considerably longer.\n\nAt the spine hatch, warm air, grown herbs, light — and Asha Veil in her patched jumpsuit, watching six people file into her doorway after fifteen thousand days, her eyes going once down the taut, ratcheted, quadruply-redundant cable line, then to you, with the instant professional recognition of one systems mind for another.\n\n\"The navigator, I assume,\" she says. \"I watched the whole rig through the spine cameras. Four redundancies.\" Something almost like a smile. \"You'd have done well here. We were that kind of people, once. Come in — mind the tomatoes.\"",
+      "choices": [
+        {
+          "text": "Cross the threshold. Chapter's end; the station's beginning.",
+          "next": "h3_docked"
+        }
+      ]
+    },
+    "h3_docked": {
+      "id": "h3_docked",
+      "text": "The hatch seals behind the last of you, and the Halcyon's crew stands inside Erebus Station — inside forty-two years of one woman's held breath, made architecture.\n\nWarm air, moving gently, smelling of growing things and machine oil and time. A spine corridor whose panels have been repaired so many times they have become something else, a mosaic of patience. Light everywhere it is needed and nowhere it isn't, because watts were rationed here before some of this crew was born. And on every wall, in the corridor's whole run — charts. Hand-drawn, hand-annotated, decades deep: the orbit of Marlowe's Object traced season by season by season, converging, page by page and year by year, on the date the beacon shouted into the dark.\n\nDay 96 closes with six ship's crew and one resident under the same roof, the ships lashed hard outside, the tanks' arithmetic waiting patiently at sixteen hundred, and the corridor charts all agreeing, in the same steady hand, on what happens next.\n\nSeven days to Day 103. The station hums around you, readied. It has been getting ready for longer than you have been alive.",
+      "end": true
+    },
+
+    "s3_arrival": {
+      "id": "s3_arrival",
+      "text": "Erebus resolves in the long lenses, and the crew goes quiet one instrument at a time.\n\nThe station stood inside a furnace, and looks it. Her sunward hull — hole-ward hull; the language fails out here — is scorched to bare crazed metal, paint and coatings cooked off in one nine-day season of fire. The great Verge antenna array is a stump forest, half its masts sheared or slagged. The spin section, dark. The windows, dark. The beacon mast at her bow, the mast that repeated one date for forty-two years and fell silent at 0151 mid-frame — dark, and visibly melted along its upper third, a candle snuffed by the very thing it was lit to announce.\n\nBut the hull is whole. And Priya, who has not left her board since the capture burn ended, says it out loud, forcing the numbers to stand up in front of everyone: \"Radiators. Two of them, portside spine, holding nine degrees over ambient.\" Her voice is a wire. \"That's not residual. Residual doesn't hold. Something inside is still making heat, seventy-five days after the fire. Managed heat.\"\n\nThe shielded core. The place her whole station was arranged around. Nine degrees over ambient, and no voice, no light, no beacon — a station-sized silence with one warm spot at the center of it, like a body found in the snow where you cannot yet tell.\n\nMarek stands at the back of the bridge in full uniform — the first time this voyage — looking at the melted mast.",
+      "choices": [
+        {
+          "text": "Before anyone boards that station — put the picket cipher in front of Marek, in front of everyone. If what's in the core can't hear her account, her crew still can.",
+          "requires": "beacon_epoch_key",
+          "next": "s3_confront_marek"
+        },
+        {
+          "text": "Before anyone boards — lay the buried acknowledgment on the bridge display. Year Three needs answering before this ship opens that hull.",
+          "requires": "deleted_ack_fragment",
+          "next": "s3_confront_marek"
+        },
+        {
+          "text": "The questions can wait; the warm spot can't. Take the decision to the table: search, or turn for home.",
+          "next": "s3_vote"
+        }
+      ]
+    },
+    "s3_confront_marek": {
+      "id": "s3_confront_marek",
+      "text": "You put it on the main display where the whole bridge can see it — the cipher keyed to a dead fleet's registry, the acknowledgment classified into an echo, the shape that has been assembling itself since Day 0 — and you say, \"Captain. Before anyone boards that station, the crew hears it from you.\"\n\nAnd Ilse Marek, in full uniform, facing a melted beacon mast through the viewport, finally says her piece to the living instead of the glass.\n\n\"I was twenty. Communications rating on the evacuation convoy. The core telemetry was ambiguous, the radiation was climbing, the commander needed a certification to leave — and I keyed 'no survivors remaining aboard' with my own hands, under orders I have spent forty-two years choosing to believe I believed.\" Her voice does not waver; that is the worst part. \"Three years later, on the picket, my own board logged a carrier from that station. Fifteen times, eleven days. I acknowledged the first myself, took it up the chain — to the same officer who had needed the certificate — and when the amendment came down calling it an echo, I entered it. The deletion is signed with my service code because it was mine.\"\n\nShe turns from the viewport to face the crew, and finishes the account like a woman signing it. \"Her name is Asha Veil. Stellar dynamics. Her letter was addressed to my fleet because I am what's left of it — and I flew you all out here on a mandatory statute and a silence because I did not have the courage to fly you out here on the truth. Whatever is in that warm core, I abandoned it twice by the book. Weigh your captain accordingly, and then, whatever you decide about me — go open that station. She waited seventy-five days past her own forecast. If she can still be found, this crew finds her.\"\n\nNobody speaks. Volkov, at last, gruffly, the highest sentence he awards: \"Better carried late than never weighed.\"",
+      "item": {
+        "id": "marek_confessed",
+        "name": "The Captain's Account",
+        "description": "Marek's confession, given standing, in full uniform, facing the melted mast: the certification at twenty, under orders; the carrier on her own picket watch three years later; the deletion signed with her own service code. The crew heard it from her. It made the difference a truth's source always makes.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "To the table, then. Search, or turn for home — but decided as a crew that finally knows what it's deciding.",
+          "next": "s3_vote"
+        }
+      ]
+    },
+    "s3_vote": {
+      "id": "s3_vote",
+      "text": "The mess, one last time before everything changes — six people and the scorched station drifting across the viewport, and on the table, the case Volkov promised you months ago would come.\n\nHe makes it himself, plainly, without appetite. \"Thirty-two hundred in the tanks. A clean abort window for another nine days — I've seen the board. Home is a year of flying, and every day we spend here it gets no closer. And the mission—\" he gestures at the viewport, at the melted mast, and his voice stays level, \"—the mission was a voice, and the voice stopped, mid-word, seventy-five days ago, inside a radiation event that the survey says was hundreds of grays. I can weigh a warm radiator against that, Nav. It weighs nine degrees. I'm asking the table to weigh it too, out loud, like we agreed: what's in that core is a hope. What's in our tanks is five certain lives and a road home. Say what we're spending, and say who pays.\"\n\nIt is the strongest case anyone has made at this table all voyage, and it is made by the most honest man aboard, and it deserves the answer it asked for: out loud.\n\nPriya: \"Nine degrees held for seventy-five days is not a hope, it's engineering.\" Okonkwo: \"I have never once certified a warm body dead from across a vacuum, and I decline to begin at my age.\" Juno, white-knuckled, steady: \"We're not the second ship that leaves. I said it at the start. It's still true, and now it's seventy-five days truer.\" And Marek, from the head of the table, in the voice of a woman who has forfeited the right to cast this vote and knows it: \"The master stands by the board's decision. Whichever it is.\"\n\nThe table looks at you.",
+      "choices": [
+        {
+          "text": "Order the search. Suits, medical kit, the full boarding plan — this crew opens that core, and this crew carries out what it finds, whatever it finds.",
+          "next": "s3_search_commit"
+        },
+        {
+          "text": "Concede the turn for home. Nine degrees against five lives — log the arithmetic, honor it, and live with the warm spot in your wake forever.",
+          "next": "s3_turnhome"
+        }
+      ]
+    },
+    "s3_turnhome": {
+      "id": "s3_turnhome",
+      "text": "You say it — the arithmetic, out loud, the way you promised Volkov it would be said — and the table takes the weight the way honest tables do: without relief, without triumph, five people watching a sixth put a number on a hope and finding the number too small.\n\nVolkov backs the call and never once looks satisfied about it. Priya files her objection in writing, and then, because she is Priya, spends her last watch aiming every antenna the Halcyon owns at that warm spot in the core, and leaves the recorders running for the whole burn home, and never tells anyone what she is or isn't hearing. Okonkwo says, \"Noted for the chart,\" in a voice with a closed door in it. Juno does not vote no out loud this time. She simply stops — stops volunteering, stops fixing what she isn't cleared to fix, stops being twenty-four — and something goes out of the ship's sound that you will listen for, on other ships, for the rest of your career.\n\nAnd Marek stands very straight at the viewport as the departure burn swings the melted mast out of view, presiding over her third abandonment conducted entirely by the book, because presiding over the book is what her whole ruined ledger of a life has turned out to be for.\n\nThe Halcyon leaves the way ships leave: correctly. Thirty-two hundred in the tanks, every soul aboard alive and certified so, the abort window caught cleanly, the long ellipse home opening ahead. Behind you, falling around its nothing at thirteen thousand kilometers a second, a scorched station keeps its nine warm degrees to itself, patient as its builder, patient as her beacon, patient the way only the long-abandoned learn to be patient — and keeps them, and keeps them, and keeps them.",
+      "item": {
+        "id": "mutiny_carried",
+        "name": "The Turn for Home",
+        "description": "Nine warm degrees weighed against five certain lives, and the tanks won. The arithmetic was honest, spoken out loud, decided as agreed. It will be lived with forever, which is the one line item the ledger never showed.",
+        "persistent": true
+      },
+      "end": true
+    },
+    "s3_search_commit": {
+      "id": "s3_search_commit",
+      "text": "\"We search,\" you say, and the table exhales, and even Volkov — especially Volkov — nods once, the nod of a man whose case was weighed honestly and can therefore live with the verdict. \"Both directions,\" he says quietly, closing the pact you made in his hold. \"That was the trade. Fly your search, Nav. The tanks will hold the door.\"\n\nThe boarding plan builds itself out of everything this voyage has already rehearsed: Okonkwo assembles a field kit for a patient he has imagined in clinical detail for months — seventy-two years old, forty-two years deprived, seventy-five days post-exposure, alive, he says, until my equipment says otherwise. Priya maps the station's remaining electrical activity from outside: dead, dead, dead, and then the core's stubborn constellation, nine degrees of somebody's arrangements. Juno preps the crossing rig against a docking collar that the flare has almost certainly finished — 'almost certainly' being, she notes, the exact phrase the sensors used about her flow gauge once.\n\nThe Halcyon closes to five hundred meters off the scorched spine. The collar, hailed by the adapter's handshake protocols, returns the mechanical equivalent of silence. As forecast: somebody's going to have to walk.\n\nAbove the airlock, someone — Juno; it is always Juno — has grease-penciled the old tether school motto: THREE OF FOUR. The suits wait in their racks. The station waits in its silence. The warm spot waits at the center of everything, nine degrees over ambient, seventy-five days patient.",
+      "choices": [
+        {
+          "text": "Honor the deal made in the simulator dark. You and Juno rig the crossing — the two of you, the way it was always going to be.",
+          "requires": "juno_trust",
+          "next": "s3_cross_juno"
+        },
+        {
+          "text": "Take Marek across with you. If what's in that core can hear an account delivered in person, it will be delivered — and if it can't, she has the right to stand where it ends.",
+          "next": "s3_cross_marek"
+        },
+        {
+          "text": "Nobody walks who doesn't have to: compute the drift solution and fly the cargo drones as a rigged ferry line — slower, ugly, and bloodless.",
+          "requires": "trajectory_intuition",
+          "next": "s3_cross_drones"
+        }
+      ]
+    },
+    "s3_cross_juno": {
+      "id": "s3_cross_juno",
+      "text": "You and Juno cross the gap the way four hundred simulator runs built you to cross it: three of four limbs loaded, halves of the same sentence, her silence-then-commit and your line math meshing like gears that were always going to mesh.\n\nThe station's flare-side hull passes under your boots, and it is a landscape now — coatings burned to glass, sensor housings slumped like wax, the melted mast overhead. Juno reads the damage as she moves, cataloguing aloud in a voice she keeps deliberately technical, because the alternative voice is not for open channels: \"Slag pooling on the sunward rails... this was hundreds of grays, easy... and look — look, Nav.\" Her lamp finds it: a repair. Fresh, post-flare. A cable run along the spine, spliced and re-clipped with wire brighter than anything around it, patched by a hand that was alive to patch it after the sky finished burning.\n\nNeither of you says anything. The repair says it.\n\nThe spine hatch's manual override takes both of you — her on the wheel, you on the pry bar, ninety seconds of shared load — and swings open on air that is cold but is air, moving, machine-smelling, dark except for the guide lights of a corridor whose walls are papered with decades of hand-drawn charts, every one of them converging on a date that is now seventy-five days in the past.\n\nAt the corridor's far end, where the core begins, a single work lamp is burning. It was not burning for itself. Lamps never are.",
+      "choices": [
+        {
+          "text": "Follow the lamp. The chapter ends where the corridor does.",
+          "next": "s3_docked"
+        }
+      ]
+    },
+    "s3_cross_marek": {
+      "id": "s3_cross_marek",
+      "text": "Marek suits up in silence, and you understand that this crossing was always going to be hers; the silent station just made it honest.\n\nShe is twenty years past her best EVA rating and it shows — procedure where Juno would be feel, strength spent on caution that costs more strength. She crosses the scorched hull like a woman walking to a hearing: steadily, without hurry, past the slumped sensor housings and the slagged rails, under the melted mast that shouted one date for forty-two years and died announcing it. Halfway along the spine her lamp finds what changes everything — a repair, fresh, post-flare, bright wire spliced along the burned cable run by a hand that was alive to splice it after the sky finished burning — and you hear her breathing stop, and resume, different.\n\nThe spine hatch takes the two of you ninety seconds of shared load, and swings open on cold moving air and a dark corridor papered with decades of hand-drawn charts, and a single work lamp burning where the core begins.\n\nMarek unlatches her helmet in the cold air — against every protocol, and you do not stop her, because some protocols were burned out of her tonight — and she says it down the corridor, into the dark, toward the lamp, in a voice pitched to carry forty-two years:\n\n\"Dr. Veil. Ilse Marek. Comms rating, third class, evacuation convoy, Year Zero. I keyed the certificate. The carrier in Year Three was acknowledged at my board. I have come to answer it in person — late, and out of excuses, and carrying six crew who are better than their captain.\" A breath. \"If you're there — the wait is over. And if you're not—\" her voice holds, barely, \"—then let the record show it was over anyway. Somebody came, Asha. Somebody finally came.\"\n\nDown the corridor, beyond the lamp, something answers. A sound. A door. Movement.",
+      "choices": [
+        {
+          "text": "Go to it. The chapter ends where the corridor does.",
+          "next": "s3_docked"
+        }
+      ]
+    },
+    "s3_cross_drones": {
+      "id": "s3_cross_drones",
+      "text": "Nobody walks who doesn't have to. You spend four hours at the board computing the hulls' relative drift to the centimeter-per-second, and Volkov's cargo drones — squat, graceless, blessedly expendable across a hull that soaked hundreds of grays — walk the messenger line, then the cable, then the ratchets, until the Halcyon and the scorched station are hard-lined into a marriage her dead collar could never have managed.\n\nThe drones survey as they work, and the survey rewrites the mission before anyone crosses: their cameras find, along the burned spine, a repair. Fresh. Post-flare. A cable run spliced and re-clipped with wire brighter than everything around it, patched by a hand that was alive to patch it after the sky finished burning. Priya puts the image on every screen on the ship and lets it argue for itself. Nine warm degrees, and now bright wire. The bridge is very loud for about a minute, in the way of crews who have been braced for grief being handed, instead, a chance.\n\nThe crossing itself is almost ceremonial after that: the crew riding the taut cable hand over hand in suits, four redundancies, the lensed ring wheeling below, Okonkwo's field kit crossing on its own dedicated trolley like visiting royalty. The spine hatch takes ninety seconds of shared load and opens on cold moving air, a dark corridor papered with decades of hand-drawn charts — and, where the core begins, a single work lamp, burning.\n\nLamps never burn for themselves.",
+      "choices": [
+        {
+          "text": "Follow the lamp. The chapter ends where the corridor does.",
+          "next": "s3_docked"
+        }
+      ]
+    },
+    "s3_docked": {
+      "id": "s3_docked",
+      "text": "The corridor to the core is the length of a held breath, and its walls are forty-two years deep: chart after hand-drawn chart, the orbit of Marlowe's Object traced season by season in a steady hand that aged and did not waver, converging page by page on a date the melted mast outside spent decades announcing and one night keeping.\n\nPast the last chart, the core hatch stands ajar — ajar, unsealed, opened from inside since the fire — and beyond it, in lamplight, the shape of everything this ship crossed a hundred and thirty AU to learn.\n\nDay 178 closes with the Halcyon lashed hard to Erebus's scarred spine, six crew standing at the edge of the lamplight in a station that rode out the century's fire, and the search one open hatch from its answer. Whatever the core holds — the survivor, or her arrangements; the voice, or the recordings of it; the observation of the century, or the seat she saved for whoever finally came — it has kept itself nine degrees warm for seventy-five days, waiting to be found.\n\nThe hatch is ajar. You go in.",
+      "end": true
+    }
+  }
+}

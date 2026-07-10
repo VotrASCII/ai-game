@@ -1,0 +1,20 @@
+{
+  "stories": [
+    {
+      "id": "story",
+      "dir": "story",
+      "title": "The Meridian",
+      "subtitle": "Five voices. One buried truth.",
+      "blurb": "A disgraced cartographer follows a compass that has pointed wrong for three years — east, to a sealed vault, a falsified archive, and a woman who was never trapped.",
+      "chapters": 5
+    },
+    {
+      "id": "story-ellipse",
+      "dir": "story-ellipse",
+      "title": "The Long Ellipse",
+      "subtitle": "A forty-two-year-old distress call. A clock at the bottom of a gravity well.",
+      "blurb": "A freighter is diverted to answer a beacon from a station certified dead four decades ago. The woman who sent it is still there — and the date she keeps repeating is not a plea. It is a forecast.",
+      "chapters": 5
+    }
+  ]
+}
