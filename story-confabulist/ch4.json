@@ -1,0 +1,284 @@
+{
+  "startScene": "morning_signature",
+  "scenes": {
+    "morning_signature": {
+      "id": "morning_signature",
+      "text": "You wake the way a house wakes when the power comes back, and you read yourself into existence, and this morning the notebook does not let you down gently: the largest letters in the book are waiting on the last written page, boxed, pressed hard enough to ghost.\n\nDAY 60 IS THE BOARD. THE DIRECTOR NEEDS YOU GONE AND SIGNED FOR BEFORE IT SITS. ASK HER PROPERLY — PROOF IN HAND. SHE HAS BEEN WAITING SIX WEEKS FOR YOU TO EARN WHAT SHE'S FORBIDDEN TO GIVE AWAY.\n\nYou make the forty-sixth mark with a hand that has already gone quiet and cold and workmanlike, the way hands apparently go in this skull when the day has a job in it. Fourteen mornings left, counting this one. You read the whole book — properly, cover to cover, margin code and ghost-grooves and scars — and by the end of it you are not a man who woke up twenty minutes ago. You are the executor of a long correspondence, and today the estate gets settled.\n\nThe knock comes — two knuckles, twice — and the animal stands down before the door finishes opening, n of six, punctual as tide.\n\nDr. Adair is carrying the folder and something else: a flat zinc tray with a sheet of heavy paper clipped to it, and a pen that is not her pen — a formal pen, a witnessed-document pen.\n\n\"Battery's different today,\" she says, and her evenness has the fracture line showing from the first word. \"One task. It's called a signature series. Ten signatures, your name, one below the other.\" She sets the tray on the desk between you like a chessboard. \"It's used for detecting forgery, tremor, simulation. It is also —\" and she looks at you, level, the deep water right there under the surface of her \"— admissible. For matching a hand to a document. Any document. Whenever you're ready.\"",
+      "choices": [
+        {
+          "text": "Sign your name ten times — and then lay the carbon leaf from the records room beside the wet ink, and ask her properly.",
+          "next": "ask_properly",
+          "requires": "consent_scrap"
+        },
+        {
+          "text": "Sign — then lay out your margin-coded copy of Amendment 7-C: 'The signature under AUTHORIZED. I've seen its bones in my own wrist. Is that proper enough?'",
+          "next": "ask_properly_weir",
+          "requires": "weir_rationale"
+        },
+        {
+          "text": "Sign — then give her back her own unsent sentence: ''Don't make me choose between the record and—'' Finish it, Doctor. And tell me who taught you the curve is the conscience.'",
+          "next": "ask_properly_wa",
+          "requires": "wa_objection"
+        },
+        {
+          "text": "Sign the ten signatures and ask the only honest thing available: 'What are these for? Your face is asking me to see something. Help me see it.'",
+          "next": "almost_ask"
+        }
+      ]
+    },
+    "ask_properly": {
+      "id": "ask_properly",
+      "text": "You sign your name ten times. It comes off the pen strangely — the name you can never quite hold sits in the wrist entire, and you watch it emerge ten times running like a fish surfacing in the same ring of water: the impatient crossbar, the terminal letter that doesn't quite land.\n\nThen you open the notebook to where the carbon leaf lives, and you lay it on the zinc tray beside the wet ink, signature block to signature series, and the two hands on the table are one hand, and any board in the world could see it from the door.\n\n\"…having authored or co-authored the protocol herein consented to,\" you say, quietly, \"the undersigned executes this instrument in the dual capacity of investigator-subject. Box ticked. Witnessed: W. Adair.\" You look up at her. \"Proof in hand, Doctor. I'm asking properly. Who signed this?\"\n\nFor a moment she doesn't move at all. Then Dr. Adair reaches out and squares the carbon leaf to the tray's edge — a small, helpless act of tidiness, buying one last second on the rope — and when she looks up her eyes are bright and wrecked and free.\n\n\"Asked and answered,\" she says. \"Finally. Oh — finally. Sit down, love. It's a long jailbreak.\"\n\nThe word love goes through the room like the laugh did — history in it, wear on it — and she doesn't take it back, and you understand that from here on, nothing gets taken back. That was the whole price of properly.",
+      "choices": [
+        {
+          "text": "Sit down. Hear all of it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+    "ask_properly_weir": {
+      "id": "ask_properly_weir",
+      "text": "You sign your name ten times, and it surfaces from the wrist ten times running — impatient crossbar, terminal letter falling short — and then, while the ink is still wet, you open the notebook to the margin code and read Amendment 7-C back into the room where it was born.\n\n\"'Extension projected to consolidate durability of excision. Modeling per designing investigator. Risk of generalization assessed low.'\" You set the notebook down beside the signature series. \"The signature under AUTHORIZED nags like a face in a crowd — that's what I wrote the night I read it. Well. Here's the crowd —\" you turn the tray so the ten wet signatures face her \"— ten faces of it. Same bones. I signed the amendment that broke Tomas Weir, didn't I? That's my proof, Doctor. I'm asking properly: who am I?\"\n\nShe looks at the tray for a long time. When she finally speaks it is not the answer yet — it is one clinician's sentence, laid down carefully, like an instrument on a cloth:\n\n\"For eleven months I have wondered what I would feel when you asked, and the honest finding is: relief, and it isn't close.\" She pulls her chair around the desk — not across from you; beside you, so that the tray and the carbon and the code are in front of both of you, one body of evidence, one bench — and the folder stays shut, and her voice when it comes has stopped being even and started being hers. \"Asked and answered. All of it, now. It's a long jailbreak — and you should know before we start that the man who signed that amendment is also the reason there was anything left of Tomas Weir to sit with at three o'clock. Both things are true. You taught me not to resolve them.\"",
+      "choices": [
+        {
+          "text": "Hear all of it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+    "ask_properly_wa": {
+      "id": "ask_properly_wa",
+      "text": "You sign your name ten times — the name surfacing from the wrist entire, ten rings in the same water — and then you put down the formal pen and give her back her own handwriting.\n\n\"'You taught me that the curve is the conscience — that we don't get to want results. If you sign this, everything after it is signed by you too. Don't make me choose between the record and—'\" You stop where the memo stops. The room is very quiet. \"It ends there. Filed anyway, four days before you administered 7-C under protest, in ink like a private sound. So finish it, Doctor. Don't make me choose between the record and — what? And tell me who taught you the curve is the conscience, because I have ten wet signatures here that say I already know.\"\n\nAll the blood leaves her face, the way it left it once before — and then comes back, all at once, like a decision.\n\n\"The record and you,\" she says. \"The sentence ends: don't make me choose between the record and you. I couldn't file that in a regulatory objection, so I filed the amputation and kept the limb.\" She comes around the desk and sits beside you, close enough that her sleeve rests against yours, and takes one long breath like a diver. \"You read my whole fight in a crooked folder at midnight and you still had to ask whose it was. That's the cruelest thing about this building, and you built it, and I'm about to explain why you were right to. Asked and answered. It's a long jailbreak. Stay with me.\"",
+      "choices": [
+        {
+          "text": "Stay with her. Hear all of it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+    "almost_ask": {
+      "id": "almost_ask",
+      "text": "You sign your name ten times, watching it surface from the wrist — a name you can't hold, arriving entire, ten rings in the same water — and then you set down the formal pen and meet her eyes.\n\n\"What are these for? Your face is asking me to see something. I don't have the proof, Doctor. I've read my whole book and I have shapes, grooves, margins — I have almost. Help me see it.\"\n\nShe looks at you, and at the ten signatures, and something in her finishes a long argument with itself.\n\n\"Almost,\" she repeats. \"Six weeks of almost. And fourteen days left, and a man with a folder and his own pen walking my corridors like a bailiff.\" She stands, goes to the window, and speaks the next part to the lime tree, in the voice of a woman stepping off her own rope at last. \"The protocol says you must assemble it yourself — that anything I hand you is coaching, and coached testimony dies in front of a board. The protocol is right. I have kept faith with it for forty-six mornings, and I will answer for what I'm about to do to it, gladly, in writing, in front of anyone. Because the protocol assumed there would be time, and the man with the pen has taken the time.\" \n\nShe comes back to the desk. From the bottom of her folder she draws a photocopy — a consent instrument, complete, the header reading PROTOCOL LETHE-9, and lays it beside your ten wet signatures. The signature at the bottom has the impatient crossbar. The terminal letter doesn't quite land. Ten faces in the crowd, and an eleventh, and they are all the same face.\n\n\"…the undersigned executes this instrument in the dual capacity of investigator-subject,\" she reads, steady until the last word. \"Witnessed: W. Adair. I witnessed it. I'll witness it again now. Asked — near enough answered. Sit down, love. It's a long jailbreak, and it's overdue.\"",
+      "choices": [
+        {
+          "text": "Sit down. Hear all of it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+    "the_answer": {
+      "id": "the_answer",
+      "text": "\"Your name is on the founding papers of this program,\" she says. \"Protocol LETHE — targeted reconsolidation excision. You built it with Rao, six years ago; I came in year three, your hire, your student. You used to say memory isn't a library, it's a courtroom — every recall re-opens the case, and while the case is open, the record can be amended. You learned to amend it. Bounded, humane, exact: take the one unbearable thing and leave the life around it standing. That was the whole creed, and it was yours.\n\n\"Tomas Weir was our first. The Calder Street fire — he found the four. Five years of every therapy with a journal behind it, and then forty sessions of yours, and it worked. Bounded and verified. Six clean months. I have follow-up notes with joy in them; some of the joy is mine.\n\n\"Then you wanted durability. The excision was holding but you could see it fraying at the edges of the model, decades out, and Weir was sixty-eight, and you decided he shouldn't have to outlive his own cure. So you extended the reconsolidation window. Amendment 7-C. Your curve, your signature. I objected — you've read what I filed. You overruled me. Rao ratified it, because your results were the program and the program was the institute. And I administered it, under protest, because if it was going to be done it was going to be done by hands that watched the curve.\" A breath. \"It generalized. You know what it did. You sit with what it did every afternoon at three, across a hand of cards.\n\n\"And then, fourteen months of not sleeping later, you did the thing I will be angriest about for the rest of my life, and the thing I will defend to any board on earth, and they are the same thing. Rao was rewriting Seven's chart — pre-existing degeneration, idiopathic decline; the program must survive review. You had the proof it was 7-C. And your own name was on 7-C. Your testimony was a confession; your confession was his lever — 'the designing investigator was compromised, distraught, unreliable.' So you built the second protocol. Bounded, corrected, every safeguard Seven never got. And you volunteered. Investigator-subject. If it held, it proved the method sound and the amendment — only the amendment — was the breach. Your mind as the control condition. Your body as the evidence. The one witness Rao couldn't impeach: a man with no access to the very knowledge that made him impeachable.\n\n\"You wrote the disclosure protocol yourself — no staff narration, reconstruction only, testimony not recording. You made me memorize it. You made me promise.\" Her voice drops to its foundation. \"I countersigned your consent, and I pushed the plunger, and I have done both of those things again in my head every morning for forty-six mornings, walking down that corridor to see whether you'd look at me like a stranger — which you did, every day, and then every day, before the door even opened, you somehow — didn't.\" She stops. Steadies. \"I did this to you. You asked me to. Both of those things are true, and I only get to keep one per day, and I have never once managed to choose.\"",
+      "choices": [
+        {
+          "text": "The cut pages. 'The night before Day Zero, I took a blade to my own book. Three leaves. Tell me you have them.'",
+          "next": "torn_pages_given"
+        }
+      ]
+    },
+    "torn_pages_given": {
+      "id": "torn_pages_given",
+      "text": "\"The night before Day Zero,\" she says, \"you came to my office at two in the morning with three pages and a face I'd never seen on you, and you said: I wrote the whole truth and I find I can't carry it into the dark with me. If the man on the other side is ever ready, he'll ask the right question. Give them back only if he asks the right question. And I said, how will I know it's the right question, and you said — you were already at the door — you'll know. You always know. It's why I hired you.\"\n\nShe takes a flat envelope from the folder's inner sleeve — carried daily, you understand; forty-six mornings, in and out of this room, on her person like a pacemaker — and puts it in your hands.\n\nThree leaves, cut flush. The slanted hand, pressing hard.\n\nI saw it on the third day. Post-amendment, day three, the generalization signature was in Weir's evening panel — small, but I built the model; I know my own animal's footprints. And I ran confirmations for eight days. Eight days of elegant, careful, unforgivable due diligence, because the curve was mine and I wanted to be wrong about being wrong. Wren would have halted on day three. Wren TRIED to halt on day minus-four, before the first dose, on paper, and I overruled her because his suffering was loud and my mathematics were beautiful. By the time I stopped the schedule we were past threshold. The man forgets his own morning because I spent eight days protecting my authorship. That is the whole of it. That is what I am taking into the dark.\n\nNot her fault. Write it wherever the record allows: the objection was hers, the amendment mine, the eight days mine. If the protocol holds and there is a hearing, my signature confesses and my spared mind testifies, and Rao's lever breaks in his hand.\n\nAnd — for the man reading this, if he ever earns it back: there is a sentence I never finished either. She knows the one. Let it stay unfinished, or finish it as a free man, but do not finish it as an apology. She has had enough apologies signed under protest.\n\nYou look up. She is watching you read your own confession with her hands folded like a woman in a waiting room, and the morning light has moved all the way across the desk, and somewhere out in the beeches the rooks are conducting their endless case, appeal after appeal.\n\n\"Forgive the man who wrote this,\" you say — the ghost-groove, out loud at last.\n\n\"I did,\" she says. \"Eleven months ago. He never believed me. Maybe you'll be better at it.\"",
+      "item": {
+        "id": "torn_pages",
+        "name": "The Three Leaves",
+        "description": "Your confession, restored to the book: the generalization signature on day three; eight days of confirmations run to protect your own authorship; past threshold by the halt. 'Not her fault. The objection was hers, the amendment mine, the eight days mine.' And an unfinished sentence you are instructed not to finish as an apology.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The day has to keep moving — Rao's bailiff-walk is out there somewhere. Lunch, the sunroom, Emil: the board is set and you are, for once, dangerous.",
+          "next": "nineteen_moves"
+        }
+      ]
+    },
+    "nineteen_moves": {
+      "id": "nineteen_moves",
+      "text": "Emil sets up the board without asking — white toward you, the ten-thousandth iteration — and something is off in him today: the cheer is present but it has been carried upstairs by hand, not delivered fresh. He keeps glancing at the corridor. The building's weather has changed and the building's barometer knows it.\n\nYou play. And today the game comes to your hands the way the star came, the way the latch came, the way the signature surfaced ten times in its own rings — some deep engine turning over at full compression, six weeks of overnight consolidation nobody's protocol can explain to the man it happens inside of. You see the fork before you build it. You see his defense before he mounts it. On the nineteenth move, quietly, almost apologetically, your rook arrives on the seventh rank and there is nothing whatsoever to be done about it.\n\nEmil looks at the board for a long moment. Then he laughs — one big, low, delighted note — and tips his king with a fingertip, formal as a salute.\n\n\"Nineteen,\" he says. \"Under twenty. Well.\" He takes out the fat pocket ledger, writes the result in his tiny disciplined hand, and rules a line under it — an actual line, a ledger-closing line, months in the making. \"You know, some days I thought you'd get there before I wanted, and some days I was afraid you'd never get there at all, and most days I couldn't tell which of those I was more afraid of.\"\n\nHe looks at the corridor once more. Then back at you, and the cheer sets down its tray entirely.\n\n\"Rules are rules,\" Emil says. \"And you made this one yourself.\"",
+      "choices": [
+        {
+          "text": "Say it back to him, from the ledger's own margin: 'I asked you to remember something for me. I'm asking for it back.'",
+          "next": "emil_envelope",
+          "requires": "chess_ledger"
+        },
+        {
+          "text": "Take the win and the strange weather both, and go find out what's wrong with the corridor.",
+          "next": "what_rao_did"
+        }
+      ]
+    },
+    "emil_envelope": {
+      "id": "emil_envelope",
+      "text": "\"Early summer,\" you say. \"Below the chess results, your hand: Asked me to remember something for him. Wouldn't say what. Said he'd ask for it back when he could beat me in under twenty moves.\" You turn your palm up on the table. \"Nineteen, Emil. I'm asking.\"\n\nHe doesn't go get anything. That's the first surprise: he reaches into the inside pocket of the orderly's coat he is wearing today like every day, and takes out a small envelope, soft-cornered from months of riding there — carried, like her folder, like a pacemaker — and sets it in your palm.\n\n\"Never left me,\" he says. \"You said: no drawers, no lockers, nothing with a hinge. A pocket votes with its owner, you said. Drawers vote with whoever holds the master key.\" He shakes his head slowly. \"You talked like that all the time. Man couldn't ask you to pass the salt without learning something about institutional custody.\"\n\nInside the envelope: a plain gold ring — and the pale line on your finger wakes up under it like a footprint finding its foot — and one strip of paper, the slanted hand, pressing hard even at this size:\n\nIf the parcel is ever opened, this goes back on first — before the reading, not after. She should see it on the hand before the hand starts defending itself. If it can never go back on honestly, give it to Nadia and tell her the vault was real even if the currency failed.\n\nYou sit with the ring in your palm and the sunroom going on around you, and Emil watches you the way he watches a board.\n\n\"He knew,\" Emil says at last, gently. \"Whatever's coming — the man knew you'd be sitting here one day with your whole life in an envelope. So I'll tell you what I'd tell him.\" He taps the closed ledger once. \"Nineteen moves. You're faster than he was. Go be faster where it counts.\"",
+      "item": {
+        "id": "emil_kept",
+        "name": "The Ring in the Envelope",
+        "description": "Kept in Emil's breast pocket since early summer, locked behind nineteen moves: your wedding ring, and an instruction in the slanted hand. 'If the parcel is ever opened, this goes back on first — before the reading, not after. She should see it on the hand before the hand starts defending itself.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Go find out what's wrong with the corridor.",
+          "next": "what_rao_did"
+        }
+      ]
+    },
+    "what_rao_did": {
+      "id": "what_rao_did",
+      "text": "Dr. Adair intercepts you in the east corridor, moving fast, folder clamped under her arm like a splint, and steers you into the testing room and shuts the door, and the room that has held six weeks of liturgy now holds a war council of two.\n\n\"He's moved,\" she says. \"This morning, while we were —\" a gesture at the desk, the tray, the whole detonated morning \"— he was in the administrator's office with the Fernhill paperwork. It's live. What I don't have yet is which version of it he's driving, and the difference is everything, and it turns on your wife.\" She stops herself; the clinician and the woman change places behind her eyes at speed. \"On Nadia. It turns on Nadia, and on what happened Thursday, and you were there and I wasn't. So before I tell you what I know — tell me what you need to know.\"",
+      "choices": [
+        {
+          "text": "Ask what Nadia decided — Thursday ended with her saying she didn't know what she was waiting for anymore.",
+          "next": "rao_move_signed",
+          "requires": "nadia_wounded"
+        },
+        {
+          "text": "Ask what happens to Rao's paperwork now that Nadia is holding a parcel and a refusal.",
+          "next": "rao_move_blocked",
+          "requires": "nadia_ally"
+        },
+        {
+          "text": "Ask what Rao does when the folder on the car roof keeps coming back unsigned.",
+          "next": "rao_move_pressure",
+          "requires": "nadia_watched"
+        }
+      ]
+    },
+    "rao_move_signed": {
+      "id": "rao_move_signed",
+      "text": "\"Thursday,\" you say, and the notebook's account is already cold in your stomach. \"I managed her like a meeting. She left early. She said she didn't know what she was waiting for anymore. Tell me she didn't—\"\n\n\"She signed.\" Dr. Adair says it fast and clean, a clinician's mercy, the needle in before the flinch. \"Yesterday evening, at her house, with his pen. He drove out personally.\" She lets the fact stand in the room a moment, then keeps working, because that is what she is: someone who keeps working. \"Transfer of care to Fernhill Continuing Facility, effective within seventy-two hours — he'll present it as forty-eight, he pads everything — countersigned by the attending of record, which is me, which is the last hinge on the door, because I haven't signed and I am not going to sign, and when I refuse he'll go to the deputy medical officer, which costs him a day, maybe two.\" Her voice stays level; her knuckles on the folder do not. \"I want you to hear the next part from me and not from your own worst arithmetic. She didn't sign because she stopped — because she gave up on you. I've sat with that woman every Thursday for six weeks. She signed because Thursday finally read to her like proof there was nothing left to wait for. He harvested it. He watched her walls come down and he was there with the pen the same evening. That is who is driving this, and that is the timetable now: days, not weeks. Whatever you were going to become ready for —\" and here the evenness finally cracks clean through, and what's under it is not despair; it is something with much more voltage \"— be ready now.\"",
+      "choices": [
+        {
+          "text": "Days, then. The ward is missing its other fixed point — where is Emil?",
+          "next": "afternoon_46"
+        }
+      ]
+    },
+    "rao_move_blocked": {
+      "id": "rao_move_blocked",
+      "text": "\"Thursday she told me everything,\" you say. \"The form. Clause nine — the data transfers with me. And the parcel: 'you'll know when.' So what does he do now that she's holding a refusal and I'm holding his motive?\"\n\nFor the first time all day, something in Dr. Adair's face gets room to be fierce. \"Clause nine. She read it, she flagged it, she told you — God, I could kiss that woman.\" The sentence is out before its own audit; she lets it stand, colors slightly, keeps working. \"Then here's the board as it sits. He cannot get the family signature — she's refused, and a refusal from the holder of power of attorney is a wall, not a delay. So he's pivoted to the administrative route: an emergency transfer on institutional authority, medical necessity, which requires the attending of record to certify the necessity. I'm the attending of record. I will not certify, and I'll put my refusal in writing with the clause-nine language quoted in it, which converts his emergency into a dispute, and disputes get read by boards.\" She taps the folder, once, hard. \"He needs this done quietly before Day 60. Every piece of paper we make him generate is a witness he can't bury. Nadia's refusal. My refusal. Your notebook. The carbon. He's fast, but he's fast because he's always moved in empty rooms — and the room is filling up.\" She looks at you, and the fierce thing and the fracture line are suddenly the same feature. \"She's coming Monday. Before Thursday — she moved it up herself. She's bringing the parcel. She said, tell him: he'll know when. It's when.\"",
+      "choices": [
+        {
+          "text": "The room is filling up — but the ward is missing its other fixed point. Where is Emil?",
+          "next": "afternoon_46"
+        }
+      ]
+    },
+    "rao_move_pressure": {
+      "id": "rao_move_pressure",
+      "text": "\"Thursday I watched from the window,\" you say. \"The folder on the car roof. She closed it with both hands and drove away, and he watched her go like a man rescheduling. So what does he do when it keeps coming back unsigned?\"\n\n\"He stops asking.\" Dr. Adair opens her folder and turns it around — the old gesture, the instrument handed over — and inside is a photocopy she should not have and does not care that she should not have: an internal memorandum, yesterday's date, Rao's fluent administrative prose. \"Emergency transfer on institutional authority. Medical necessity. It's the route around the family: if the holder of power of attorney is 'unresponsive to repeated consultation' — that's Thursday, weaponized; your dizzy excuse is in here as evidence the family visit structure has broken down — then the institution may act on the attending's certification alone.\" She lets you read it. The prose is calm and reasonable and each sentence closes like a well-oiled door. \"The attending of record is me. He needs my signature to make it real, and he believes he'll get it, because he believes I'm managed. 'She knows the price of an objection — she's already paid it once.'\" She quotes it flat, and you keep your face still, because you heard the original in a dark corridor and she is quoting it verbatim without knowing you were there. \"He'll present it to me tomorrow, with witnesses, so that refusing is a scene. I'll refuse. Then it goes to the deputy medical officer, who owes him, and we are into days — days, not weeks.\" She closes the folder. The evenness over the voltage, one last time. \"Nadia never signed, you should know. Weeks of Thursdays with the pen right there. Whatever the wire tells you about her — the paper says she held.\"",
+      "choices": [
+        {
+          "text": "Days, then. The ward is missing its other fixed point — where is Emil?",
+          "next": "afternoon_46"
+        }
+      ]
+    },
+    "afternoon_46": {
+      "id": "afternoon_46",
+      "text": "The afternoon ward has a hole in it and everyone is walking around the hole.\n\nThe med round runs late. Nurse Calder does the tea trolley herself, badly, with the expression of a woman doing a missing man's job on top of her own and being angry at three different targets about it, only one of whom is the trolley. In the sunroom the chessboard sits put away — properly, squared, by hands that square things — on the shelf where it lives when it is not being a calendar.\n\nThe building has subtracted Emil, and the building isn't saying so.\n\nYou think about the morning: a jailbreak conducted at normal volume in a room with a folder in it. You think about a man who reads what he shouldn't read and moves the same day. You think about load-bearing walls, and about how this place tests them — quietly, administratively, one wall at a time — and the thought arrives with its coat already on: whatever happened to Emil happened because of you, on a schedule, as a message.",
+      "choices": [
+        {
+          "text": "His paper had your weight on it and his name on it. Find Nurse Calder and get the truth about where Emil is.",
+          "next": "emil_suspended",
+          "requires": "emil_debt"
+        },
+        {
+          "text": "Whatever the message is, the evening will deliver it. There's somewhere else you have to be: she said to come by after rounds.",
+          "next": "the_lights_on"
+        }
+      ]
+    },
+    "emil_suspended": {
+      "id": "emil_suspended",
+      "text": "You find Nurse Calder in the sluice room, where staff go to say things walls shouldn't hear over the sound of water, and she looks at you and decides in about one second flat that you've earned it.\n\n\"Suspended. This morning, first thing — before the man had his coat off. Audit irregularity.\" She says the phrase like something she's picked up with forceps. \"A sign-out form from weeks back. A supervised night walk, one resident, his signature. Some discrepancy about authorization levels — I've signed a hundred of those forms, love; nobody's ever audited one, ever. They didn't escort him, I'll give them that. Let him walk out on his own legs. He stopped at the desk and left instructions about your tea, as if we don't know your tea.\" Her mouth does something complicated. \"Pending review. Review scheduled — you'll enjoy this — for the sixty-first day. One day after the board sits. The calendar around here has a sense of humor.\"\n\nThe form was yours. The night was yours — Room 5, the cards, the torch-beam, Emil walking out of a linen alcove with a blanket and a lie because some appointments matter more than paperwork. He told you the price at the time, cheerfully, holding the tray: if it's ever read hard, it reads on me. It has been read hard. On schedule. As a message: this is what a wall costs.\n\n\"He said one more thing,\" Calder adds, at the door, water still running. \"For you, if you asked. He said: tell him the review's a formality either way — either the truth comes out by then and I'm a footnote to something good, or it doesn't and I wouldn't want to work here anyway. Then he said to make sure you eat.\" She snaps the tap off. \"So. Eat.\"\n\nIn the notebook, boxed, pressed hard, before the evening: THE DEBT CAME DUE. HE PAID IT WALKING, WITH INSTRUCTIONS ABOUT MY TEA. The truth by Day 60, or this place isn't worth his mop. Make it the footnote he ordered.",
+      "choices": [
+        {
+          "text": "Evening, then. She said to come by after rounds.",
+          "next": "the_lights_on"
+        }
+      ]
+    },
+    "the_lights_on": {
+      "id": "the_lights_on",
+      "text": "After rounds, her office is lamplight and stacked paper and a second chair that has clearly spent its whole institutional life somewhere else and was carried in tonight, and she is not wearing the clinic coat, and the tea she hands you has one spoon of sugar in it, unasked.\n\nFor a while nobody does anything but hold their cups.\n\n\"I keep starting sentences and auditing them,\" she says finally. \"So here's the one that survives. Tomorrow I refuse a director in front of witnesses, and after that the days get fast and official, and there will be no evening where the tea is just tea. So tonight I wanted —\" the smallest gesture at the lamp, the chairs, the whole burglarized ordinariness of it \"— this. One of these. On the record.\"\n\nYou ask her the question you have been carrying since the morning — since the notebook's boxed experiment, since n of one. \"What I feel when you come through a door — I need to know what it is. Six weeks of mornings I can't keep, and it got stronger anyway. Is it me? Or is it just — leftovers? Conditioning with nowhere to go?\"\n\nShe doesn't flinch and she doesn't dress it up. \"Everything anyone feels is leftover conditioning,\" she says. \"Every love on earth is weather laid down by days the couple mostly can't retrieve either — they just have the illusion of the archive. You don't. That's the entire difference: you can see your own machinery, and it frightens you, and it should — it's frightening.\" She sets down her cup, and looks at you with the deep water all the way up at the surface now, nothing over it. \"So here's the only test that means anything, and you built it, and it's the bravest thing in this building. Not where the feeling came from. Whether you'd choose it again with the lights on. You wake with the lights on every single morning — no history, no momentum, no sunk costs, the coldest of cold starts — and every single morning, before the door finishes opening, you choose it again. Forty-six times. That's not leftovers, love. That's the most replicated finding I have.\"\n\nThe lamp hums. Somewhere in the beeches the rookery turns over in its sleep. She reaches across the burglarized ordinary and puts her hand over yours — over the pale line, over everything — and says, \"Tomorrow we go to war with a filing cabinet. Tonight, drink your tea. One spoon. New arrangement.\"",
+      "choices": [
+        {
+          "text": "Before the day is surrendered, the last thing: she has laid three folders on the desk, edge to edge. 'The course ends on Day 60 regardless,' she says. 'What happens then is the one decision left that's entirely yours.'",
+          "next": "the_ask_scene"
+        }
+      ]
+    },
+    "the_ask_scene": {
+      "id": "the_ask_scene",
+      "text": "Three folders, edge to edge, in the lamplight.\n\n\"Day 60 the course completes,\" she says, clinician again — for your sake, visibly; the voltage banked so the instrument reads true. \"The blockade was never permanent. That was the whole thesis: bounded in scope, bounded in time. When it lapses, consolidation resumes — new days will keep. Whatever else happens, the man who wakes on Day 61 gets to keep Day 62. What he doesn't get back — on the default course — is anything behind him: the sixty days, and the eight, and the years the excision took as collateral margin. Sealed, not stored. That's folder one: let it complete. The forward door opens; the back door stays bricked.\n\n\"Folder two is the thing I've been building at two in the morning for five months, off the record, with your own reconsolidation mathematics: reinstatement. The traces aren't destroyed — excision suppresses retrieval pathways; the architecture is still down there, cold. Catch the course-end window, re-open consolidation while the old traces are labile, and it can knit — all of it, back to before Day Zero. The whole man. The whole witness, in one skull: designer, confessor, exhibit. In front of a board it would be unanswerable.\" She stops, and gives you the honest edge of it, both hands flat on the folder: \"It is also, in the wrong dose, exactly the fire that took Tomas Weir. The window extension of 7-C — that's the machinery I'd be using, aimed the other way. Dosed to the true curve, I believe it holds. Dosed to a guess —\" she doesn't finish it, because the end of that sentence deals cards to an empty chair down the corridor.\n\n\"And folder three is his. The transfer. I keep it on my desk so I never forget it's the default — the thing that happens if we do nothing well enough, fast enough. Fernhill. The course doesn't end there; clause nine, the dosing continues 'pending study completion.' Every morning, Day One, forever, in a building with no Emil, no Thursdays, no—\" the evenness holds, barely, \"—no mornings of mine.\n\n\"I'll be honest to the end of the rope and past it: I have a preference, and it is enormous, and I am not going to say it out loud, because forty-six mornings ago a man I — a man I knew wrote a protocol saying the reconstruction has to be yours. This one most of all. So.\" She turns the lamp a quarter, so the light falls on you instead of the folders. \"Day 60. What happens?\"",
+      "choices": [
+        {
+          "text": "Folder two. Reinstatement. 'All of it back. I built the fire and I'll take its measure — the board gets the whole witness. We dose to the true curve.'",
+          "next": "commit_restore"
+        },
+        {
+          "text": "Folder one. Let it complete. 'The man who wrote the amendment kept choosing his authorship over the patient in front of him. I'm choosing forward. The confession testifies on paper; I start from Day 61.'",
+          "next": "commit_refuse"
+        },
+        {
+          "text": "Folder three. 'Sign me over. The board, the war, the rope's end — the price of me keeps landing on everyone else. At Fernhill the only person who pays is the one who signed for it.'",
+          "next": "commit_transfer"
+        }
+      ]
+    },
+    "commit_restore": {
+      "id": "commit_restore",
+      "text": "\"Folder two,\" you say. \"Reinstatement. All of it back — the years, the eight days, the fire and the man who lit it. I'm done testifying by carbon paper. The board gets the whole witness, and Weir gets his amendment answered by the hand that signed it.\"\n\nShe closes her eyes for one second — the preference, enormous, passing through her like weather she refuses to report — and when they open she is already working. \"Then we dose to the true curve or we don't dose at all. I mean that as a wall, not a wish: the difference between reinstatement and what happened to Seven is a number, and I will not guess at it. The honest model, the raw runs — that's the price of folder two, and we pay it in full or the folder stays shut.\" She pulls paper toward her, and the two-in-the-morning mathematics comes out of its five-month exile into the lamplight, and for an hour the office is the thing this whole institute was supposed to be: two people and a curve and no wanting of results.\n\nAt the door, notebook under your arm, the night porter's rounds already ticking somewhere below, she stops you with one hand flat on your chest — over the freight, over all of it.\n\n\"Understand what you chose,\" she says quietly. \"If it knits, the man who walks out of that room will remember every morning of this — all forty-six, and however many are left. He'll remember what I was to him before, and what you've been to me since, and he will have to hold both, and I don't know what that man does.\" A breath. \"And I find I'd rather find out than keep him bricked up. Write it down, love. Fourteen mornings. Make them count double.\"\n\nIn the notebook, boxed, the largest letters yet: DAY 60 — WE GO BACK IN. TRUE CURVE OR NOTHING. FIND THE RAW RUNS.",
+      "item": {
+        "id": "route_restore",
+        "name": "Note: Folder Two",
+        "description": "Day 60: reinstatement. Re-open consolidation in the course-end window and knit the old traces back — the whole witness in one skull. Her wall, and yours: dose to the true curve or don't dose at all. The difference between reinstatement and Room 5 is a number, and nobody guesses at it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Sleep, while the arithmetic runs on without you.",
+          "next": "ch4_end"
+        }
+      ]
+    },
+    "commit_refuse": {
+      "id": "commit_refuse",
+      "text": "\"Folder one,\" you say. \"Let it complete.\"\n\nShe goes very still — the preference, enormous, held off the record with both hands — and you give her the reasoning entire, because she of all people has earned the working and not just the answer.\n\n\"The man who wrote the amendment had one flaw that mattered: when the choice came, he kept choosing his authorship over the patient in front of him. His curve, his durability, his eight days of confirmations. Folder two is beautiful and it is his kind of beautiful — the whole witness, the unanswerable exhibit, the perfect vindication knitted back in one heroic dose. And the patient in front of me —\" you turn one hand palm-up on the desk: exhibit, self \"— is a man who wakes clean, who chose you forty-six times from a cold start, who beat Emil in nineteen moves on pure forward motion. I won't gamble him to resurrect his author. The confession testifies on paper. The carbon testifies. The signatures testify. And on Day 61, for the first time in this whole long correspondence, tomorrow will answer to me.\"\n\nShe is quiet for a long moment. Then: \"For the record,\" she says, and her voice has stopped being even and it is not trying anymore, \"my enormous preference — the one I wasn't going to say out loud.\" She looks up, and the deep water is shining. \"This was it. I've spent five months building folder two at two in the morning because I owed him that — the option, built honest, ready. But I built it praying you'd refuse it. The man before Day Zero was the best mind I ever worked under, and he never once slept through a night I knew of, and he looked at everything — everything, every face, his own hands — like evidence. You look at things like they're new. Because they are. Every morning, new — and you still choose the same things. The tea. The chair. Me.\" She closes folder two and squares it to the desk edge, retired with honors. \"Day 61, then. I'd like to be there when tomorrow starts answering to you. Professionally and — otherwise.\"\n\nIn the notebook, boxed: DAY 60 — LET IT COMPLETE. THE PAPER CONFESSES; I GO FORWARD. Folder two retired, unopened, with honors.",
+      "item": {
+        "id": "route_refuse",
+        "name": "Note: Folder One",
+        "description": "Day 60: let the course complete. The forward door opens; the back door stays bricked, by your own election. The confession testifies on paper, the carbon and the signatures beside it. 'On Day 61, for the first time in this whole long correspondence, tomorrow will answer to me.'",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Sleep, while Day 61 waits its turn.",
+          "next": "ch4_end"
+        }
+      ]
+    },
+    "commit_transfer": {
+      "id": "commit_transfer",
+      "text": "\"Folder three,\" you say, and the room goes wrong.\n\nYou lay it out the way it assembled itself in the dark of the afternoon: Emil walking out on his own legs with instructions about your tea. Nadia's Thursdays spent and re-spent on a man who resets nightly. Her — forty-six mornings on a rope over deep water, and tomorrow a refusal in front of witnesses, and after that whatever a cornered director does to an attending of record who stopped being managed. \"The price of me keeps landing on everyone else,\" you say. \"Every wall in this building is holding my weight. At Fernhill, the only person who pays is the one who signed for it.\"\n\nShe listens all the way through. She does not interrupt, because she has never once interrupted you, and when you finish she is quiet for exactly as long as it takes to fold something away — and what comes out from under it is not grief. It is the fierce thing, unbanked, at full voltage.\n\n\"No,\" she says. \"And I'll tell you why, and I'll use your own instruments. Clause nine. The dosing continues at Fernhill 'pending study completion' — there is no course-end there, no Day 61, ever. You are not choosing to pay everyone's debts; you are choosing to make every payment already made worthless. Emil's suspension buys the truth a witness — unless the witness is in a van. Nadia's Thursdays were down-payments on a man coming back — folder three forecloses him. And I —\" the voltage arcs, just once \"— I did not push that plunger and walk that corridor for forty-six mornings so the man I was keeping could hand himself to the filing cabinet as a tidy line-item. You want to settle accounts? The estate's executor doesn't get to burn the estate.\"\n\nShe stands, takes folder three off the desk, and puts it in the drawer, out of the lamplight. \"I am your attending of record,\" she says, even again, the rope re-walked by main force. \"I do not certify, I do not consent, and I do not accept the instruction. File an objection.\" And then, quieter, with everything under it: \"Please. File an objection. You taught me how.\"\n\nOutside, the rookery stirs and resettles. The night is very long, and the notebook takes the whole argument down, both sides, pressed hard — and leaves tomorrow's verdict, honestly, to the stranger who inherits it.",
+      "item": {
+        "id": "route_transfer",
+        "name": "Note: Folder Three",
+        "description": "You chose the transfer — the tidy line-item, every debt settled on the signer. She refused to certify and put the folder in the drawer: 'The estate's executor doesn't get to burn the estate. File an objection.' The notebook holds both sides of the argument, pressed hard, verdict left to the stranger who inherits it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Sleep, with the argument unsettled in the dark.",
+          "next": "ch4_end"
+        }
+      ]
+    },
+    "ch4_end": {
+      "id": "ch4_end",
+      "text": "The tide comes up over Day 46 — the heaviest day the notebook has ever been asked to carry — and takes it.\n\nTen wet signatures and an eleventh in carbon. A jailbreak conducted in morning light. Three leaves, restored to their binding after eleven months in an inner pocket, riding to work and home again over a careful heart. A rook arriving on the seventh rank, and a ledger ruled closed with an actual line. A ring, perhaps, waking the pale line under it like a footprint finding its foot. A director moving through the building's paperwork like weather through rigging. An office with a burgled second chair, a tea with one spoon, a hand laid over the pale line and everything else — and three folders, edge to edge, and a lamp turned deliberately away from all of them, toward you.\n\nAll of it goes over the side, freight-tagged, pressed hard, into pages a stranger inherits at dawn.\n\nBut the estate is not what it was. Mark the difference. The confession is back in the book — the freight the slanted man couldn't carry, riding home at last. The question that waited six weeks has been asked properly and answered like a jailbreak. And on the last written page, boxed, in letters that will reach tomorrow's stranger before anything else in the world does, a decision stands committed in your own round hand — the first decision in this whole long correspondence that belongs to neither the slanted man nor the building, but to you.\n\nFourteen mornings to Day 60. The arithmetic runs on in the dark, patient as a beacon.\n\nSomewhere below the waterline, the standing sea takes tonight's soundings and deepens.\n\nThe Confabulist continues in Chapter V.",
+      "end": true
+    }
+  }
+}

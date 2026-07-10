@@ -96,7 +96,19 @@
       "teaser": "Ten signatures on a sheet of paper. One more on a form you have never seen.",
       "file": "story-confabulist/ch4.json",
       "startScene": "morning_signature",
-      "summaries": []
+      "summaries": [
+        {
+          "requires": ["route_restore"],
+          "text": "You remember Day 46 like this — and for once the notebook barely had room for it. Ten signatures on a zinc tray, and the proof laid beside the wet ink, and the question asked properly at last. She answered like a jailbreak. Your name is on the founding papers: Protocol LETHE is yours; memory isn't a library, it's a courtroom — you taught her that. Amendment 7-C was your curve, your signature, her overruled objection; and fourteen sleepless months later you volunteered as investigator-subject — your mind the control condition, your body the evidence Rao couldn't impeach. She countersigned. She pushed the plunger. She has been walking the rope ever since. The three leaves came back: the generalization signature on day three, eight days of confirmations run to protect your own authorship. 'Not her fault. The objection was hers, the amendment mine, the eight days mine.' Rao's transfer machinery is live and the ward is short one orderly. And at the lamp, with the tea at one spoon, you chose folder two: Day 60, reinstatement. The whole witness in one skull. True curve or nothing."
+        },
+        {
+          "requires": ["route_refuse"],
+          "text": "You remember Day 46 like this — and for once the notebook barely had room for it. Ten signatures on a zinc tray, the proof beside the wet ink, the question asked properly at last — and she answered like a jailbreak. Protocol LETHE is yours. Amendment 7-C was your curve and your signature over her written objection; Tomas Weir deals two hands because you spent eight days protecting your authorship instead of halting. Fourteen sleepless months later you volunteered as investigator-subject — the one witness Rao couldn't impeach — and she countersigned, and pushed the plunger, and has carried your confession in her folder for forty-six mornings. The three leaves are back in the binding. Rao's transfer machinery is live; the ward is short one orderly. And at the lamp, with the tea at one spoon, you chose folder one: let the course complete. The man who wrote the amendment kept choosing his authorship over the patient in front of him — you chose forward. The paper confesses. On Day 61, tomorrow answers to you."
+        },
+        {
+          "text": "You remember Day 46 like this — and the notebook holds both sides of it, pressed hard. Ten signatures on a zinc tray, the proof beside the wet ink, the question asked properly at last — and she answered like a jailbreak. Protocol LETHE is yours; Amendment 7-C was your curve and your signature over her objection; you volunteered as investigator-subject fourteen sleepless months later, and she countersigned, and has carried your three-leaf confession over her heart for forty-six mornings. It is back in the binding now. Rao's transfer machinery is live, the ward is short one orderly, and at the lamp you reached for folder three — sign me over; let the only person who pays be the one who signed for it — and she refused to certify, at full voltage: clause nine means no course-end, no Day 61, ever; the estate's executor doesn't get to burn the estate. File an objection, she said. You taught her how. The verdict went to the stranger who inherits the book."
+        }
+      ]
     },
     {
       "id": "ch5",
