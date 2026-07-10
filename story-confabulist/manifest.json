@@ -36,7 +36,31 @@
       "teaser": "What was spared. What improves without you. The man in Room 5 deals you in.",
       "file": "story-confabulist/ch2.json",
       "startScene": "morning_two",
-      "summaries": []
+      "summaries": [
+        {
+          "requires": ["weir_deck", "torn_stubs"],
+          "text": "You remember it like this — the notebook remembers it, and the notebook has scars now, and you trust it more for them. The weather test ran four mornings and confirmed four times: you trust Dr. Adair before the door finishes opening. You obeyed Rule Six and failed the battery slowly, and she saw the coat you put on the data — 'the fourth angle, interesting' — and told you, in fluent deniability, that the scores flow to keyholders she doesn't choose. At midnight your feet navigated a building they were never taught, to Room 5, where Tomas Weir dealt you in and called you Doctor. 'I'm Seven. You're Nine.' The second hand — dealt every day at three, all these weeks — is yours. And the binding testified: three pages cut clean by the slanted man's own blade. What survives in the ghost-grooves: 'the doctor's part in this was' … 'not her fault' … 'forgive' … 'my signature,' twice. Your hand knows Nadia's coffee. Your gut knows nothing at all. Today is Thursday."
+        },
+        {
+          "requires": ["weir_deck"],
+          "text": "You remember it like this — the notebook remembers it, and you have decided to believe the notebook. The weather test confirmed, morning after morning: the trust arrives before the door opens. You obeyed Rule Six and wore a coat over the data, and Dr. Adair saw it — 'the fourth angle, interesting' — and let you know, deniably, that the scores go to keyholders she doesn't choose. At midnight your feet navigated a building they were never taught — whoever you were worked here — and took you to Room 5, where Tomas Weir dealt you in and called you Doctor. 'I'm Seven. You're Nine. I kept count.' The second hand, dealt fresh every day at three o'clock since before your first tally, is yours. He kept the appointment with the only faculty the damage couldn't reach. Your hand wrote Nadia's coffee order unasked; your gut, told 'your wife,' produced a key at a smooth wall. Today is Thursday. Eleven o'clock."
+        },
+        {
+          "requires": ["weir_chart", "torn_stubs"],
+          "text": "You remember it like this — the notebook remembers it, and the notebook has scars, and you trust it more for them. You overruled Rule Six and gave the battery everything, and the data ran so hot Dr. Adair's pen couldn't keep up: you are learning across days you cannot keep; the loss is bounded, and she nearly said what that proves before the rope stopped her. 'The protocol wasn't imposed on you,' she said. She walked you to Room 5 at three o'clock, where Tomas Weir dealt you in and called you Doctor — and she did not correct him. On the way out, an open chart: LETHE-7, excision bounded and verified, then a dosing amendment — 'reconsolidation window extended' — signed by a hand that nags like a face in a crowd, and after it, the deterioration. W.A. filed an objection: NOT idiopathic. And the binding testified: three pages cut clean; 'not her fault'; 'forgive'; 'my signature,' twice. Your hand knows Nadia's coffee. Today is Thursday."
+        },
+        {
+          "requires": ["weir_chart"],
+          "text": "You remember it like this — the notebook remembers it, and you have decided to believe the notebook. You overruled Rule Six and gave the battery everything, and the data ran hot enough to crack even Dr. Adair's evenness: you are learning across days you cannot keep, which proves the loss is bounded, which matters in some argument being conducted over your head. 'The protocol wasn't imposed on you,' she said, at the very end of her rope. At three o'clock she walked you to Room 5, where Tomas Weir dealt you a hand he has dealt every day for six weeks and called you Doctor — and she did not correct him; she held her folder too tight and said some kinds of keeping don't require the keeper to remember why. On the way out, his open chart: bounded and verified, then an amendment, then the decline — and an objection on file, initialed W.A. Your hand wrote Nadia's coffee order unasked. Your gut, told 'your wife,' found a smooth wall. Today is Thursday."
+        },
+        {
+          "requires": ["torn_stubs"],
+          "text": "You remember it like this — the notebook remembers it, and the notebook, you now know, has scars. The weather test kept confirming: the trust arrives before the door. The battery days ran their course, the ledger says the chess games are getting shorter, and the week bent toward Thursday — your wife, Nadia, eleven o'clock, every week without fail. Your gut holds nothing for her; your hand wrote her coffee order in the old slanted letters without asking you. And late on Day 44, you held the notebook up to the lamp and the binding testified: three pages, cut flush with a blade, deep in the slanted section. What the ghost-grooves surrender: 'the doctor's part in this was' … 'not her fault' … 'forgive' … and twice, 'my signature.' The man who left you the rules edited the evidence first. Today you meet the wife your gut has never met, carrying a question with no safe answer: what did my signature sign — and which doctor?"
+        },
+        {
+          "text": "You remember it like this: good days, quiet days. The tests went well — they always go well, you think — and Dr. Adair was pleased with you, and Emil lost more games than he won. An old man down the corridor plays cards in the afternoons; sometimes there is company for him. The week had a shape to it, meals and rounds and the rooks in the beeches, and at the end of the shape: Thursday. Your wife visits Thursdays. Nadia. You remember her fondly — of course you do; a man remembers his wife — and tomorrow she comes at eleven, with coffee from the place by the station, and it will be good to see her. The notebook says to weigh the hands, whatever that means. The evenings have gone soft at the edges lately, but softness, the notebook agrees, is not the same as peace."
+        }
+      ]
     },
     {
       "id": "ch3",
