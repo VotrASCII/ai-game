@@ -118,7 +118,11 @@
       "teaser": "Day sixty. What the sleep takes. What you choose to keep.",
       "file": "story-confabulist/ch5.json",
       "startScene": "day_sixty",
-      "summaries": []
+      "summaries": [
+        {
+          "text": "Day 60 came the way it was always coming — fourteen strangers ratifying one decision, a board convening at two, a course completing at nightfall — and every path out of the Rooke Institute arrived somewhere different: a whole witness with all the lights on; a tide that left only the weather; a man testifying to a crime he cannot remember on the word of his own handwriting; a new ledger opened by the same firm; or a white room where, every morning, a notebook says READ THIS FIRST. The days were never the estate. The weather was. It only ever deepens."
+        }
+      ]
     }
   ]
 }
