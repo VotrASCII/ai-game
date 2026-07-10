@@ -1,0 +1,362 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You wake the way a house wakes when the power comes back: all at once, and with no idea how long it was dark.\n\nThe room is small, warm, and unfamiliar in a way that doesn't frighten you as much as it should. A bed with rails that have been folded down, as if someone decided you'd earned that. A window full of green — a lime tree, enormous, and beyond it a stand of beeches with black birds working the branches. A desk. A chair that has been sat in by someone who sits very straight.\n\nAnd on the desk, squared to the corner like it was placed by a careful hand, a notebook. Heavy paper, cloth cover, a pen clipped to it. On the cover, in block capitals, in handwriting you recognize the way you recognize your own face:\n\nREAD THIS FIRST.\n\nYou hold up your hands and look at them. They are your hands. There is a plastic band on the left wrist, printed text turned inward, and a fading pale line on the ring finger where something used to sit.\n\nYou do not know what this place is. You do not know what day it is. You are not, you notice with a distant clinical interest, entirely sure who you are — the name is there, you can feel the shape of it, but everything that should be attached to the name is a corridor of closed doors.\n\nThe notebook says READ THIS FIRST. Somebody knew you'd be standing here like this.",
+      "choices": [
+        {
+          "text": "Do what the cover says. Read it first.",
+          "next": "read_first"
+        },
+        {
+          "text": "There's a call button by the bed. Whoever runs this place can explain it faster than a notebook can.",
+          "next": "ring_staff"
+        },
+        {
+          "text": "Not yet. Search the room first — the notebook was left for you, which means someone expected you to read it. Learn what they didn't arrange.",
+          "next": "search_room"
+        }
+      ]
+    },
+    "read_first": {
+      "id": "read_first",
+      "text": "You sit in the straight-backed chair and open the notebook, and the first thing that happens is that your own handwriting punches you in the chest.\n\nIt is yours. Not similar — yours, down to the impatient crossbar on the t's, and it fills page after page, and you remember writing none of it.\n\nThe first page is a list, numbered, written slowly and pressed hard, the way you'd write something you needed to survive your own disbelief:\n\nONE. Make the mark first. (Below this, rows of small tally strokes march across the page in groups of five. You count them twice. Forty. The pen is clipped to this page.)\n\nTWO. Read all of this before you believe anyone.\n\nTHREE. The kindness here is real, and it is also a procedure. Both things are true. Do not resolve them.\n\nFOUR. You may ask the doctor anything. She is only allowed to answer what you can prove. This is not her rule.\n\nFIVE. Your hands are older than your feelings. When they disagree, believe the hands.\n\nAnd then, beneath a ruled line, in ink that sits blacker on the page than the rest — added later, by the same hand, pressed harder still:\n\nSIX. Fail the battery slowly. Not all at once. Never to zero.\n\nYou read the list three times. Then you uncap the pen and make the forty-first mark, because Rule One is the only one that doesn't ask you to decide anything yet.",
+      "item": {
+        "id": "notebook",
+        "name": "The Notebook",
+        "description": "Cloth cover, heavy paper, your handwriting throughout. READ THIS FIRST. Six rules, forty-one tally marks, and a great many pages you haven't gotten to yet. It is the only thing in this room that was unambiguously left for you, by you.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Page through the rest — the daily entries, whatever else past-you thought was worth the ink.",
+          "next": "search_room"
+        },
+        {
+          "text": "Enough reading. Press the call button and meet the kindness-that-is-a-procedure for yourself.",
+          "next": "ring_staff"
+        }
+      ]
+    },
+    "ring_staff": {
+      "id": "ring_staff",
+      "text": "The call button brings footsteps in under a minute — unhurried, which tells you the button doesn't mean emergency here, it means awake.\n\nThe nurse who comes in is broad and calm and says \"Good morning\" like it's the answer to a question. Her badge reads CALDER. She checks the window latch, the water jug, and your face, in that order, with the same practiced glance.\n\n\"You'll have questions,\" she says. \"You always do, and they're always good ones, and I'm the wrong person for all of them. Dr. Adair does your mornings. She's already on the ward.\" She pauses at the door, and something in her squares itself, like a person deciding — again, you suspect; deciding daily — how much is kind. \"You're safe here. You've been safe here for a while. That one you can have for free.\"\n\nFor a while. The phrase settles on you with a weight that has nothing to hold onto. There's a plastic band on your wrist; while you wait, you turn it around and read it.\n\nSUBJECT NINE — PROTOCOL LETHE-9 — STATUS: CONSENTED.\n\nSubject, not patient. And consented — which is boilerplate, surely. Paperwork. Everyone in every facility on earth has consented to something.\n\nSurely.",
+      "choices": [
+        {
+          "text": "Wait for this Dr. Adair — and read the notebook properly while you do.",
+          "next": "read_first"
+        },
+        {
+          "text": "Use the minutes. Go over the room like it's a document.",
+          "next": "search_room"
+        },
+        {
+          "text": "Stand at the window and let the questions arrange themselves.",
+          "next": "wren_arrives"
+        }
+      ]
+    },
+    "search_room": {
+      "id": "search_room",
+      "text": "You go through the room the way you'd go through a text you didn't trust, and the room turns out to be legible.\n\nThe slippers by the bed are worn at the outside edge — a pacer's wear, a corridor-walker's wear. Whoever lives here thinks on his feet, in circles. The wardrobe holds clothes in your size with the labels laundered soft; the collars say these have been washed dozens of times. On the desk, beneath the notebook's shadow, a chess journal, well-thumbed, the mailing label neatly blacked out with marker — someone redacting a name is different from someone removing a label, and this is the first kind.\n\nOn the sill, a water glass ring has bitten into the varnish in one exact spot, as though a glass has stood there most mornings for a long season while somebody watched the tree.\n\nThe window: the lime, the beeches behind it, and the black birds — rooks, some part of you supplies, that colony structure is rooks — falling and climbing between the branches like ash that changed its mind. The grounds beyond say private clinic, converted country house, money that prefers hedges to fences.\n\nAnd the wristband, turned inward on your left wrist. You read it twice.\n\nSUBJECT NINE — PROTOCOL LETHE-9 — STATUS: CONSENTED.\n\nEverything in this room agrees on one thing: you have been here a long time. The room has grown around you the way a shoe grows around a foot. Whatever happened to you, it did not happen last night.",
+      "choices": [
+        {
+          "text": "The notebook, then. Past tenant of this room, present tense of this skull — time to hear him out.",
+          "next": "read_first"
+        },
+        {
+          "text": "There are footsteps in the corridor — measured ones. Meet the owner of the straight-backed chair.",
+          "next": "wren_arrives"
+        }
+      ]
+    },
+    "wren_arrives": {
+      "id": "wren_arrives",
+      "text": "She knocks — two knuckles, twice — and comes in already reading you, a slight woman in a grey cardigan over clinic whites, dark hair pinned up with the efficiency of someone who solved that problem years ago and never revisited it. A folder under one arm. A pen behind her ear and a second pen in her breast pocket, which tells you the first pen gets lost a lot.\n\nAnd here is the thing — the thing you will spend the rest of the day walking around like furniture in a dark room:\n\nBefore she says a word, something in you stands down.\n\nIt is not recognition. You could not pick her out of a photograph of two people. It is lower than that, older than that — the way a dog knows the tread on the stairs, the way your shoulders drop half an inch on a threshold you've crossed a thousand times. Every fact you have says: stranger. And the whole animal underneath the facts has already pulled out a chair for her.\n\n\"Good morning,\" she says. \"I'm Dr. Adair. I look after your mornings — we'll get to what that means.\" Her voice does exactly what the tread on the stairs did. \"You woke about forty minutes ago, you've been moving around the room, and unless I've badly misjudged the furniture, you have roughly nine hundred questions. We usually start with the three worst ones.\"\n\nShe sits in the straight-backed chair like it's hers. It is hers. The chair told you that an hour before she did.",
+      "choices": [
+        {
+          "text": "Tell her the truth on the table: \"I trust you and I don't know why. That's either an answer or a symptom, and I'd like to know which.\"",
+          "next": "tell_wren"
+        },
+        {
+          "text": "Keep it. Watch her instead — count the ways she already knows this room, and say nothing about the animal under the facts.",
+          "next": "watch_wren"
+        },
+        {
+          "text": "Ask the worst question first: \"Who are you to me? Not your job. Your job sat down in that chair like it was home.\"",
+          "next": "ask_wren"
+        }
+      ]
+    },
+    "tell_wren": {
+      "id": "tell_wren",
+      "text": "You say it plainly, because whatever else has been taken from you, plainness apparently stayed: \"I trust you and I don't know why. That's either an answer or a symptom, and I'd like to know which.\"\n\nShe goes still.\n\nIt is a very particular stillness — not surprise, you'd swear it's not surprise — more like a person standing exactly where a wave is about to land, who has decided not to step back. The folder stays closed on her knee. She does not write anything down, and some instinct tells you the not-writing is significant, because everything else about her says she writes everything down.\n\n\"Both,\" she says finally. \"It's both, and that is the most honest answer you'll get from anyone in this building, so I'd like credit for it.\" A breath. \"There is a kind of memory that survives what happened to you. It doesn't do faces or names or events. It does — weather. The weather a person makes. You have known my weather for some time, and that part of you kept it.\" She meets your eyes, and for a moment the clinician in her is standing behind the glass rather than in front of it. \"What you do with that is one of the few things here that is entirely yours. I'd handle it gently. It has no facts in it, and things with no facts in them can be talked into anything.\"\n\nShe stands, brisk again, the wave landed and the beach swept. \"Battery's at ten. It's less sinister than it sounds. It's also,\" and there is the ghost of something at the corner of her mouth, \"more interesting than I'm allowed to tell you.\"",
+      "choices": [
+        {
+          "text": "Follow her to this battery. Interesting-but-not-allowed is the most honest sign on any door.",
+          "next": "battery_intro"
+        }
+      ]
+    },
+    "watch_wren": {
+      "id": "watch_wren",
+      "text": "You say nothing about the animal under the facts. You answer her questions — slept well, no headache, yes the tally is made — and you watch.\n\nShe knows the room the way water knows a channel. She reaches for the blind cord without looking at it. When you sit on the bed's edge she angles her chair a precise quarter-turn, pre-empting a glare from the window that doesn't arrive for another ten minutes — and then arrives, exactly where her turned shoulder isn't. She pours your water when the glass is two-thirds empty, not before, like someone who has learned your exact threshold of wanting it, and she does it mid-sentence, without a flicker of decision anywhere in her face.\n\nNone of this is a doctor knowing a ward. This is a person grown around another person, habit calcified into architecture, and it is all pointed at you.\n\n\"You're quiet this morning,\" she says, at the end, closing the folder she has barely used. \"You're allowed to be. But for the record —\" and here she pauses, choosing, and you watch her put the sentence back and pick up a smaller one \"— quiet ones are the mornings I get wrong. When you talk, I know where you are.\"\n\nShe leaves you with: \"Battery's at ten. It's less sinister than it sounds.\"\n\nYou write one line in the notebook before you follow. Her hands know my glass. Ask what else her hands know.",
+      "choices": [
+        {
+          "text": "Go to the battery, carrying your observations like coins you haven't spent.",
+          "next": "battery_intro"
+        }
+      ]
+    },
+    "ask_wren": {
+      "id": "ask_wren",
+      "text": "\"Who are you to me?\" you ask. \"Not your job. Your job sat down in that chair like it was home.\"\n\nShe looks at you for a long moment, and you have the sudden, vertiginous certainty that of all the mornings this room has held — and the water ring on the sill says there have been many — this exact question has arrived before, and it costs her something every time, and she has never once let the cost show past where she lets it show now: a slight settling of the shoulders. Weight taken up, familiar weight, carried on.\n\n\"I'm your attending physician,\" she says. \"And that answer is a door with a lock on it, and I want you to notice that I am telling you it's locked instead of pretending it isn't a door.\" She taps the closed folder once, some private punctuation. \"There are things I am not permitted to tell you. Not by him —\" a small tilt of the head at the building around you, the him unexplained and somehow load-bearing \"— by the terms of your own treatment. If that sounds like a riddle: it is one, and it isn't mine, and I hate it professionally and otherwise. Rule Four, if you've read your notebook.\"\n\nShe knows the rules by number. The rules in your handwriting, in the notebook that was written before — before whatever this is. She knows them the way you know a text you've been living with.\n\n\"Battery's at ten,\" she says at the door, and then, without turning: \"For what it's worth — the chair. You gave me the chair. You said the bed rail was making my posture worse.\" A pause you could fall into. \"That's the most I can answer that question today.\"",
+      "choices": [
+        {
+          "text": "You gave her the chair. Carry that stone to the battery and turn it over all morning.",
+          "next": "battery_intro"
+        }
+      ]
+    },
+    "battery_intro": {
+      "id": "battery_intro",
+      "text": "The testing room is two doors down: a table, two chairs, a mirror on a hinged stand, and paper.\n\n\"The battery,\" Dr. Adair says, laying out a sheet printed with a five-pointed star, its outline doubled like a road with verges, \"is a set of tasks. Some memory, some motor, some pattern. This one you do with the mirror.\" She positions the stand so you can see the star only in reflection, then screens your drawing hand from direct view with a shield of card. \"Trace between the lines. Watching the mirror, not your hand. Everything will feel backwards, and it will make an extremely dignified person feel like a marionette. There is no trick and it isn't timed.\"\n\nIt does feel backwards. For about eight seconds. Then your hand — quietly, without consulting you — stops fighting the mirror, banks into the star's first angle like a car that knows the road, and runs the whole circuit between the lines with two touches and no derailments.\n\nThe room is very quiet.\n\n\"Huh,\" you say, marionette to your own fingers.\n\n\"Mm,\" says Dr. Adair, in the tone of a scientist filing away a supernova. She explains, while you run it twice more: there was a man decades ago, initials H.M., hippocampi lost to a surgeon's enthusiasm, who could hold no new day — and who got better at this exact task every single session, while swearing each time he had never seen it before. Proof, written in pencil lines, that the hand learns down a different road than the one that burned. \"Skill survives,\" she says. \"Practice survives. The self that knows-how outlives the self that knows-that.\"\n\nYour third circuit is flawless and takes nineteen seconds, and her pen has stopped moving on the score sheet, and you notice that too.",
+      "choices": [
+        {
+          "text": "Ask the obvious out loud: \"How many times have I done this? Show me my curve.\"",
+          "next": "score_history"
+        },
+        {
+          "text": "Ask the other question: \"What is the battery for? Not me. Rule Four says the tests aren't— say what it's for.\"",
+          "next": "battery_purpose"
+        },
+        {
+          "text": "Say nothing. File the stopped pen next to the stopped stillness from this morning, and let her lead.",
+          "next": "battery_quiet"
+        }
+      ]
+    },
+    "score_history": {
+      "id": "score_history",
+      "text": "\"How many times have I done this?\" you ask. \"Show me my curve.\"\n\nThe pen stays stopped. She looks at you — measuring something; you have the impression of a woman checking the depth of water she has been forbidden to describe — and then she opens the folder and turns it around, and you understand that this small rotation of cardboard is, in some system of rules you can't see, an act with weight.\n\n\"Interpretation is yours,\" she says. \"It has to be. Remember I said that.\"\n\nThe chart is titled MIRROR-DRAWING — ERRORS / TIME, and it is a learning curve, forty-one points long, descending the way learning curves descend: steep, then stubborn, then flat. A textbook curve, except.\n\nExcept it starts too low. You can see where a beginner should start — she has helpfully left the normative band printed in grey, a fat cloud of ordinary first attempts, high on the error axis. Your Day One sits far beneath the cloud. Below asymptote for most of the population. On your first morning, marionette-handed and brand new, you traced that star like a man with years in his wrist.\n\nThe curve since is almost flat. Not because you aren't learning. Because there was nearly nothing left to learn.\n\n\"Whoever I was,\" you say slowly, \"had done this before. A lot. This exact task.\"\n\n\"Interpretation,\" she says again, evenly, closing nothing, hiding nothing, her eyes steady on you in a way that is itself a third data series, \"is yours.\"\n\nYou copy the numbers into the notebook with a hand that draws axes faster than thought — and then you look at how fast your hand just drew those axes, and you write that down too.",
+      "item": {
+        "id": "mirror_sheet",
+        "name": "Note: The Curve Starts Too Low",
+        "description": "Your mirror-drawing scores, copied from Dr. Adair's chart. Day One sits far below the normative band — you began this task already expert. Someone practiced this for years. The someone was you. Interpretation, she said twice, is yours.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Push once more — \"What is the battery for?\" — and watch what she's allowed to do with it.",
+          "next": "battery_purpose"
+        },
+        {
+          "text": "Pocket the anomaly. Lunch is called, and there is apparently a standing chess appointment with an orderly named Emil.",
+          "next": "emil_chess"
+        }
+      ]
+    },
+    "battery_purpose": {
+      "id": "battery_purpose",
+      "text": "\"What is the battery for?\" you ask. \"Not for me. Rule Four says you can only answer what I can prove, so here's what I can prove: nobody runs a full battery every day on one patient for six weeks to help the patient. That cadence is for data. Say what it's for.\"\n\nSomething moves through her face that a less careful person would let become a smile. \"There he is,\" she says, mostly to the folder, so quietly you nearly miss it — and then, aloud, in her measured clinic voice:\n\n\"The battery measures what was spared. What happened to you took one thing — one specific mechanism. The overnight step. Your days are intact while you're in them; what fails is the filing. Sleep comes, and the day doesn't consolidate. The battery maps everything the failure didn't touch — motor learning, priming, span, habit — every road that still runs. The purpose of the map,\" and here she chooses each word like a foothold, \"is to prove the loss is bounded. That it took what it took, and nothing else, and takes nothing new. That proof matters. It matters beyond this room, in ways I am — \" the smallest pause \" — not able to describe to you yet. You are doing the most important flat, boring, repetitive work I have ever plotted, and you are doing it brilliantly, and I am aware of how little that can be worth on a morning when a stranger has your face.\"\n\nIt is a great deal of honesty arranged very carefully around a hole. You can see the hole's exact shape from the way the honesty bends: bounded, spared, proof, yet. The battery is evidence. Evidence is for an argument. Somewhere beyond this room, an argument is going on about what happened to you — and you are, apparently, the exhibit.",
+      "choices": [
+        {
+          "text": "Let it bend. Lunch is called — and a standing chess appointment with an orderly named Emil.",
+          "next": "emil_chess"
+        },
+        {
+          "text": "One more pull at the thread: \"Show me my score history, then. If I'm the exhibit, I get to read the exhibit.\"",
+          "next": "score_history"
+        }
+      ]
+    },
+    "battery_quiet": {
+      "id": "battery_quiet",
+      "text": "You say nothing, and you learn what silence buys in this room: more.\n\nShe runs the rest of the morning battery with a metronome calm — word lists you hold perfectly for twenty minutes and will not hold past tonight; a tapping sequence your fingers absorb on the second pass; word-stems, TRA— and MER— and CART—, where she watches which completions surface, and writes fast when your mouth says traverse, meridian, cartography without any decision arriving from you first. Somewhere in you a vocabulary is stacked like cargo, and the stems are a crane, and she is inventorying the hold.\n\nTwice you catch her pen stopping. Once on the mirror star. Once when, waiting for the next list, your hand idly rules the scratch paper into a grid — fast, unconscious, six exact columns — and begins heading them before you notice and stop. Whatever your hands used to do, it had columns.\n\n\"Same time tomorrow,\" she says at the end, which is a strange sentence to say to a man with no tomorrow, and she says it without cruelty and without flinching, and you understand it is a discipline of hers, to speak to you as continuous. Practice, sustained daily, against an audience that resets nightly.\n\nAt the door she pauses. \"You watched me all morning,\" she says, not turning around. \"You do that, some days. For the record, it's fine. I'm told I make — reliable weather.\" And is gone before the sentence finishes landing, leaving you certain of exactly one new thing: she knows about the animal under the facts. She has always known. Someone told her — and the only someone with jurisdiction is the man who wrote the notebook.",
+      "choices": [
+        {
+          "text": "Lunch, and the standing chess appointment with an orderly named Emil. Bring your silence; it's earning.",
+          "next": "emil_chess"
+        }
+      ]
+    },
+    "emil_chess": {
+      "id": "emil_chess",
+      "text": "Lunch happens in a sunroom off the main corridor, and with it comes Emil — a big soft-spoken orderly with a chess set under one arm and the unhurried assurance of a man who has carried heavier things than furniture. He sets up the board without asking, white toward you, and it has the shape of the ten-thousandth iteration of a ritual.\n\n\"Board says hello,\" he says. \"Board sees you every day. You see the board once. Somehow you're still up nine games this month, which as your orderly I find medically fascinating and as a chess player I find personally offensive.\"\n\nHe keeps score — a fat pocket ledger, dates and results in a tiny disciplined hand, months deep. He turns it around so you can see: columns of outcomes, your initials against his, streaks and droughts. An archive of days you have no other proof occurred. He lets you look as long as you want. You suspect that's why the ledger exists at all — that it is not for chess.\n\nYou play. Your hands know the openings the way they knew the star; you watch yourself pin his knight with a move you couldn't name five seconds before making it.\n\n\"Emil. How long have I been here?\"\n\n\"Longer than the summer,\" he says, easy, moving a pawn. \"Staff aren't supposed to do numbers with you. Numbers are the doctor's. But seasons —\" he nods at the window, the lime in full leaf, the rooks quarrelling in the beeches \"— seasons are free. You came before the leaves did.\"\n\nThen, taking your bishop, conversational as weather: \"You write different now, you know. In that book of yours. Used to watch you write in the day room — fast, all slanted. Now it comes out rounder. Slower.\" He shrugs at your stare. \"Same hand. Different weather in it. Check, by the way.\"",
+      "choices": [
+        {
+          "text": "Press him: different how, since when — and what else has he watched change that the doctors don't chart?",
+          "next": "emil_press"
+        },
+        {
+          "text": "Let it sit. Play out the game quietly and ask instead about this place — the building, the staff, the man whose name is on the letterhead.",
+          "next": "emil_place"
+        }
+      ]
+    },
+    "emil_press": {
+      "id": "emil_press",
+      "text": "\"Different how? Since when?\" You lean in. \"Emil — what else changed that nobody's charting?\"\n\nHe considers you for a moment, and then does something you will later understand was generous: he answers like you're a colleague, not a symptom.\n\n\"Handwriting went rounder maybe — month back? Little more. Didn't happen slow, either. One week it's the old slant, next week it's the new round. Like a man switching instruments.\" He resets a captured pawn on its home square, thinking. \"Other things. You used to ask me the same three questions every day, word for word — how long, what season, who knows I'm here. Now it's different questions every day. Better ones. Today's were the best yet, no offense to the old ones.\" A slow smile. \"Whatever they measure in that testing room, I measure mornings, and mornings say you're not going down. Different from what the — \" he stops himself, rearranges the sentence \" — different from what some people around here expected.\"\n\nSome people. He picks the ledger up, thumbs back through it, and turns it around again: a page from early summer where, below the chess results, he has noted in his tiny hand: Asked me to remember something for him. Wouldn't say what. Said he'd ask for it back when he could beat me in under twenty moves.\n\n\"You're at twenty-three,\" Emil says, taking the page back, gentle and immovable as a door closing on a spring. \"Rules are rules. You made this one yourself.\"\n\nYour move sits on the board, forgotten. Somewhere in early summer, a version of you with a slanted hand hid something inside a chess score — and set the lock to your own improvement.",
+      "item": {
+        "id": "chess_ledger",
+        "name": "Note: Emil Keeps the Days",
+        "description": "Emil's pocket ledger holds months of dated chess results — proof of time your own head can't supply. And an entry from early summer: you asked him to remember something for you, retrievable only when you can beat him in under twenty moves. Current best: twenty-three.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Finish the game — hard. Nineteen moves is a destination now. Then out to the corridor; the afternoon has appointments of its own.",
+          "next": "corridor_room5"
+        }
+      ]
+    },
+    "emil_place": {
+      "id": "emil_place",
+      "text": "You let the handwriting sit — filed, not forgotten — and ask about the building instead, and Emil gives you the tour a man gives of a place he has decided to love with both eyes open.\n\nThe Rooke Institute. Converted country house, older than the discipline it now serves; the founders kept the name for the rookery in the beeches and thought the pun was charming. Forty beds' worth of building holding maybe a dozen residents, which even you can hear is not an economy that patient fees explain — this place runs on research money, on the difference between a clinic and an instrument. East wing is residential: you, a few long-stay faces, Room 5. West wing is offices, records, the testing suites. \"And the director's office,\" Emil says, \"which is the corner one, with the good windows. Dr. Rao. You'll meet him — he does his walk-through most afternoons. He'll shake your hand.\" A beat, arranging pawns he has already arranged. \"He does that.\"\n\nIt is a sentence with a second floor to it, but the stairs are roped off, and Emil moves on: meals, grounds privileges, the fact that the rooks own the beeches by ancient treaty and will mug anyone eating outside.\n\n\"Room 5,\" you say. \"You said it like a name, not a number.\"\n\nEmil's hands go still on the board for the first time all lunch. \"Mr. Weir,\" he says. \"Tomas. He's — been here longest. You'll pass his door. He plays cards at three.\" He looks at you with something careful and unreadable folded behind the kindness. \"He always sets out two hands.\"",
+      "choices": [
+        {
+          "text": "Three o'clock is soon. Take the corridor past Room 5.",
+          "next": "corridor_room5"
+        }
+      ]
+    },
+    "corridor_room5": {
+      "id": "corridor_room5",
+      "text": "The east corridor at three o'clock has the specific hush of an institution digesting lunch, and Room 5's door is propped open the way doors are propped for people who can no longer be trusted with the concept of latches.\n\nInside, at a small table by the window, an old man is dealing cards.\n\nHe is thin the way rope is thin — worn down to the load-bearing fibers — and his hands move with a fluency that the rest of him has visibly lost, shuffling with a bridge and a waterfall, dealing crisp and exact. Two hands. One in front of himself. One in front of the empty chair across the table, squared neatly to the chair's absent occupant, five cards face down, waiting.\n\nHe looks up as your shadow crosses the doorway, and his face does something that stops your breath: it opens. Complete, uncomplicated recognition — the way a face opens for family.\n\n\"There you are,\" says Tomas Weir, gathering warmth and dropping it in the same second, the sentence already sliding away from him as he says it. His eyes lose the thread, find the cards, find you again — a man reading by lightning flashes. \"Sit down, sit down, they said — they said you'd —\" It goes. It visibly goes, mid-clause, the way your days apparently go at night, except his going takes seconds. He blinks at the dealt hands as though they have just appeared. Deals a sixth card onto the empty chair's pile with perfect mechanical grace. Looks up at you once more, and his face opens all over again, brand new: \"There you are.\"\n\nA nurse materializes at your elbow with practiced softness and turns you up the corridor, and the last thing you see through the closing angle of the door is the empty chair, and the crisp waiting hand of cards in front of it, and it is somehow the loudest object you have encountered all day.\n\n\"He deals two hands every day,\" the nurse says quietly, apology and warning in one. \"Best not to linger. It winds him up for hours.\"",
+      "choices": [
+        {
+          "text": "Ask her, before she peels off: \"Who's the second hand for?\" — and watch whether the answer is a fact or a procedure.",
+          "next": "rao_visit"
+        },
+        {
+          "text": "Say nothing. Add the empty chair to the ledger of loud objects, and walk on. The director does his rounds about now.",
+          "next": "rao_visit"
+        }
+      ]
+    },
+    "rao_visit": {
+      "id": "rao_visit",
+      "text": "You are still carrying the empty chair down the corridor when the corridor produces a man walking the other way, and everything about him arrives slightly before he does — the unhurried stride, the good suit worn casually to say it isn't the best one, the attention that sweeps the hall like a lighthouse and settles on you with the warmth already prepared.\n\n\"Subject Nine — no. Forgive me.\" He course-corrects with a smile that knows exactly how charming its own fallibility is. \"Habits of paperwork. You'll be having a good afternoon, I hope? I'm Dr. Rao — Pravin. I direct this place, insofar as it consents to be directed.\" And he puts out his hand.\n\nYou take it.\n\nAnd the animal that pulled out a chair for Dr. Adair this morning — the animal underneath the facts, the one with no words and older wiring — that animal recoils. Your hand completes the shake with perfect social smoothness while the whole floor of you drops. It is over in a second. It is absolutely unambiguous. You have no memory of this man, no fact against him, nothing but a firm dry courteous handshake; and something in you that cannot speak has crossed the room and put its back against the wall.\n\n\"— settling in well, Adair tells me, doing marvelous work,\" he is saying. His eyes move once, lightly, to the notebook under your arm. \"And the famous notebook. The great collaboration between you and yourself.\" A comfortable little laugh. \"Does it help? What sort of thing do you find yourself writing — if you don't mind an old researcher's curiosity?\"\n\nIt is delivered as small talk. It weighs, you notice, considerably more than small talk. Rule Three surfaces in your mind's ear, in your own pressed handwriting: The kindness here is real, and it is also a procedure. Both things are true.",
+      "choices": [
+        {
+          "text": "Answer honestly — the rules, the tallies, the day's notes. It's a medical device; he's a doctor; hiding it would be strange.",
+          "next": "rao_honest"
+        },
+        {
+          "text": "Shrug it flat: \"Grocery lists for a man with no groceries. Mostly I complain about the tea.\" Give the lighthouse nothing to sweep.",
+          "next": "rao_deflect"
+        },
+        {
+          "text": "Turn it around: \"You'd know better than me, Director. You've read it, surely? Everything in this building gets measured.\" — and watch his face do arithmetic.",
+          "next": "rao_probe"
+        }
+      ]
+    },
+    "rao_honest": {
+      "id": "rao_honest",
+      "text": "You tell him — because he is the director, because secrecy in a hospital seems like a symptom, because the handshake-recoil is exactly the kind of no-facts feeling that Dr. Adair warned you could be talked into anything, and you are not yet ready to let a shiver appoint itself your counsel.\n\nSo: the rules, numbered. The tally marks, forty-one now. The day's notes — the curve, the chess, the man in Room 5 who deals two hands. You watch him receive it, and he receives it beautifully — nodding, delighted, a researcher warmed by good instrumentation.\n\nOnly twice does the lighthouse stop sweeping and fix.\n\nOnce, when you mention the rules are numbered and that there are six. \"Six,\" he repeats, pleasantly, a man confirming a delivery date.\n\nAnd once when you mention Room 5 — and here something happens at the exact outer corner of his eyes, a tightening of perhaps a millimeter, which on this smooth a face reads like a shout. \"Mr. Weir wanders in his stories,\" he says, gently, regretfully. \"A different condition from yours. Sadder. I'd not weigh anything he says — or does — too heavily. It distresses the families, that sort of confusion.\" A beat, precisely the length of sympathy. \"Yours especially, I'd think. Thursday's coming.\"\n\nHe pats your shoulder — the animal flattens itself against the wall again, silently, uselessly — wishes you a productive afternoon in a voice you'd trust with your savings, and moves off down the corridor at the pace of a man who owns the clocks.\n\nYou stand there holding two new facts and a shiver. The rules have six numbers, and now he knows it. And: Thursday's coming meant something, and everyone in this building appears to know what except you.",
+      "choices": [
+        {
+          "text": "Back to your room. The light is going amber, and the notebook has a day to swallow.",
+          "next": "evening_notebook"
+        }
+      ]
+    },
+    "rao_deflect": {
+      "id": "rao_deflect",
+      "text": "\"Grocery lists for a man with no groceries,\" you say. \"Mostly I complain about the tea.\"\n\n\"The tea deserves it,\" Rao says warmly, instantly, and the moment closes over your deflection without a ripple — closes, you notice, a half-second too smoothly, the way a door closes when it has been oiled for exactly this. He did not press. Curiosity that genuine does not un-ask itself that fast. Which means the question wasn't curiosity; it was a reading, and your flat needle told him something too.\n\nEverything after is charm on rails: he hopes the battery isn't tiring you, he praises Dr. Adair with a fondness that has a filing cabinet behind it — \"our most exacting mind; I stole her from a better-paying future, you know\" — and he mentions, pleasantly, on the pivot of leaving: \"Thursday soon. Good. Continuity matters — whatever the literature says.\" A little smile at his own joke, which you are not equipped to get. The animal under your facts watches his back recede with its hackles still up, silently, all the way to the corner.\n\nWhen he is gone, you stand a moment in the amber corridor doing the arithmetic he seemed so comfortable doing on you. He asked what you write. He accepted a nothing answer at face-value speed. A man who directs a research institute does not accept nothing — unless he doesn't need your answer. Unless the question was really: does Subject Nine hide things?\n\nAnd you just told him yes.\n\nYou go back to your room and you write it all down, pressing hard: Rao asked about the notebook. I gave him tea jokes. He clocked it. Kindness with a filing cabinet behind it. Also — WHAT IS THURSDAY?",
+      "choices": [
+        {
+          "text": "The light is going amber. Let the notebook swallow the day.",
+          "next": "evening_notebook"
+        }
+      ]
+    },
+    "rao_probe": {
+      "id": "rao_probe",
+      "text": "\"You'd know better than me, Director,\" you say. \"You've read it, surely? Everything in this building gets measured.\"\n\nFor one clean second, the corridor holds its breath — and Rao laughs. A real laugh, delighted, and underneath the delight his eyes do exactly what you invited them to do: arithmetic. You watch him retotal you — the amnesiac who parries — and file the new sum somewhere with good locks on it.\n\n\"There he is,\" Rao says — and the words land wrong in your chest, because someone else said them this morning, softly, to a folder, and hearing them in this polished voice feels like hearing a borrowed key try your lock. \"No, I have not read your notebook. It is, legally and delightfully, private property — the property, in fact, of its author, whose consent —\" the word arrives buttered, frictionless \"— is on file. We take the paperwork here very seriously. It's the only organ of mine that's never been sued.\"\n\nHe adjusts, warm again, confiding: \"Measure everything, yes — but the notebook works because we don't touch it. An external memory the subject trusts is only useful if it stays trusted. Your own design philosophy, that. From before.\" The words from before are dropped like coins on a counter, deliberate, watching to see if you'll stoop for them. \"Well. Productive afternoon. Thursday soon — that'll do you good.\"\n\nHe leaves. The animal under your facts stays pressed to the wall long after the corner takes him.\n\nIn your room, you write with a pressing-hard hand: He said the notebook works because they don't touch it. He said it was MY design philosophy. From before. He wanted me to hear that. Also: he said 'There he is' — secondhand. Someone reports my mornings to him. Count the people who heard this morning happen.",
+      "choices": [
+        {
+          "text": "The light has gone amber. Let the notebook take the rest of the day.",
+          "next": "evening_notebook"
+        }
+      ]
+    },
+    "evening_notebook": {
+      "id": "evening_notebook",
+      "text": "Dinner comes and goes. The rooks settle the day's litigation in the beeches and go quiet. The lamp on your desk makes a small warm country of the notebook, and you write the day into it the way the notebook's earlier pages taught you days are written here: facts first, pressed hard, feelings flagged as feelings.\n\nThe doctor's chair. The curve. The ledger. The two dealt hands. The handshake, and the animal's verdict on it, labeled honestly: no facts, strong signal, per Rule Five believe the hands — but it was the HAND that shook his and the gut that recoiled, so which is which?\n\nAnd near the end, because the day has earned it, you write the other thing. Her name is Dr. Adair. I trusted her before she said her name. She called it weather. TEST THIS TOMORROW: I will have forgotten her. See if the trust arrives again before the name does. If it does — that trust is older than any day I can lose. Build on it or beware of it. Decide which.\n\nThen you sit back, and the lamplight catches the rules page where it is dog-eared from forty-one readings, and Rule Six looks up at you in its too-black ink.\n\nFAIL THE BATTERY SLOWLY. NOT ALL AT ONCE. NEVER TO ZERO.\n\nAll day it has sat in your peripheral vision like a stranger at a bus stop. The battery is Dr. Adair's proof that the loss is bounded — she said so, said the proof matters beyond this room. The battery is also data flowing somewhere every day, through folders, past a director whose questions weigh more than they say. The man with the slanted handwriting knew this place from the inside and left you a standing order to sandbag it — quietly, gradually, plausibly.\n\nHe knew things you don't. He is also, as of tonight, a stranger who lies to doctors. Tomorrow starts with whichever of you wins.",
+      "item": {
+        "id": "wren_test_note",
+        "name": "Note: Test the Weather",
+        "description": "Her name is Dr. Adair. You trusted her before she said it. Tomorrow you will have forgotten her — see if the trust arrives again before the name does. If it does, that trust is older than any day you can lose. Build on it or beware of it. Decide which.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Obey Rule Six. He wrote it pressing hard, he knew this building, and until you know why, his orders outrank your comfort.",
+          "next": "commit_night"
+        },
+        {
+          "text": "Cross it out. The battery is the only proof of you that survives the night, and Dr. Adair called it important beyond this room. Trust the living.",
+          "next": "commit_staff"
+        },
+        {
+          "text": "Neither, yet. Read the rest of the notebook first — every page, back to front — before signing up with either stranger.",
+          "next": "rules_again"
+        }
+      ]
+    },
+    "rules_again": {
+      "id": "rules_again",
+      "text": "You read the whole notebook, first page to last, and it is the strangest document you will ever hold: a correspondence in which both parties are you and neither can hear the other.\n\nThe early entries are the slanted hand Emil described — fast, cramped, professional. They read like field notes. Day 3: word-stem intrusions confirm semantic survival. Good. Day 5: R. walked through twice today. Twice is interest, not administration. The slant knows this place. The slant writes about the staff like colleagues and about the tests like an author reviewing his own galleys.\n\nThen — around the second week, exactly where Emil said — the hand rounds. Slows. The entries change key: less inventory, more question. The round hand is you, the daily you, forty-odd strangers writing each other forward through the dark.\n\nAnd twice, deep in the slanted section, the paper itself testifies. A page ends mid-sentence — the doctor's part in this was — and the next page starts clean on a new topic; and when you tilt the notebook against the lamp, close to the binding: stubs. Cut, not torn — flush, deliberate, a blade and a straight edge. Three leaves gone. The slanted man wrote something here, pressing hard enough that ghost-grooves cross the following page — you can raise a word or two by angling the light: …not her fault… and what might be forgive and is certainly, twice, my signature.\n\nSomeone edited your external memory. The economical guess is the author himself, the night everything blackened his ink. The uneconomical guesses are worse.\n\nYou sit with the lamp and the stubs and the two strangers who share your handwriting, and the choice Rule Six demands is still exactly where you left it — but you make it now knowing the notebook has already survived one act of surgery, and that in this building, even the paper has scars.",
+      "choices": [
+        {
+          "text": "Obey Rule Six. The slanted man cut pages to protect something — extend him the loan of your trust.",
+          "next": "commit_night"
+        },
+        {
+          "text": "Cross Rule Six out. A source that edits itself is a source with an agenda. The battery, the curve, the doctor — trust what you can verify by daylight.",
+          "next": "commit_staff"
+        }
+      ]
+    },
+    "commit_night": {
+      "id": "commit_night",
+      "text": "You uncap the pen and write it as orders, because that is apparently how the men of this notebook speak to each other:\n\nRULE SIX STANDS. Tomorrow's you: fail slowly. Miss late, not early — flub the star's fourth angle, not the first; drop the last list-words, not the middle. Degrade like tissue, not like defiance. Keep the real scores HERE, in the back pages, in the margin code. If the battery is a window, we decide what the window sees. And watch — watch everything. The slanted man knew this building and he pressed hard when he wrote SLOWLY. Find out what he was afraid of. Then decide if we still are.\n\nYou read it back twice. It is, you notice with a complicated feeling, beginning to slant.\n\nOutside, the rookery makes one last remark and settles. You put the notebook square to the corner of the desk where a stranger with your hands will find it, and you turn off the lamp, and you lie in the dark doing the one piece of arithmetic that has been waiting all day for the lights to go out:\n\nEverything you learned today — the chair, the curve, the two dealt hands, the handshake, her weather — all of it is currently held in the only vault in this building that is robbed every single night.\n\nThe notebook has the facts. But the facts aren't the whole estate. There is also the day itself — the way her stillness felt, the exact wrongness of Rao's palm, the openness of an old man's face saying there you are. That, no pen gets. That goes to the bottom of the dark, tonight and every night, like cargo over the side.\n\nYou fall asleep the way everyone does: mid-thought, unwitnessed. Somewhere in the small hours, gently, without malice, the day is taken.",
+      "item": {
+        "id": "route_night",
+        "name": "Note: Rule Six Stands",
+        "description": "Your standing order to tomorrow: fail the battery slowly — miss late, not early; degrade like tissue, not defiance. Keep true scores in the back-page margin code. The slanted man pressed hard when he wrote SLOWLY. Find out what he was afraid of.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Sleep.",
+          "next": "ch1_end"
+        }
+      ]
+    },
+    "commit_staff": {
+      "id": "commit_staff",
+      "text": "You uncap the pen, and you draw one straight deliberate line through Rule Six — through, not over; it stays legible, because censoring your only ancestor is a habit you refuse to start — and beneath it you write your dissent for the record:\n\nOVERRULED, Day 41. Reasoning: The battery is the only testimony I give that survives the night. Dr. Adair says it proves the loss is bounded, and that the proof matters beyond this room — I believe her, and I can even say why: because she shows me the raw curve and lets me read it myself. Interpretation is yours, she said. Liars don't hand you the instrument. The slanted man knew more than me, but he also cut pages out of this book and told no one why, and I will not run my one daylight hour on the sealed orders of a man who edits the evidence. If the building is dangerous, the answer is more record, not less. Full effort tomorrow. Show them everything the failure didn't touch.\n\nYou read it back. It is the longest entry on the page, and your hand is steady, and somewhere under the reasoning you can feel the other reason, the one you flag honestly because the notebook's whole ethic demands it: Also — feelings, flagged as feelings — I do not want to spend my one day lying to her.\n\nOutside, the rookery makes one last remark and settles. You square the notebook to the desk corner for the stranger who inherits it, and lie in the dark holding the day's unwritable remainder — her stillness, the old man's opening face, the exact temperature of a handshake — the cargo no pen gets, going over the side tonight like every night.\n\nYou fall asleep mid-thought, unwitnessed. Somewhere in the small hours, gently, without malice, the day is taken.",
+      "item": {
+        "id": "route_staff",
+        "name": "Note: Rule Six Overruled",
+        "description": "Your dissent, on the record, Day 41: the battery is the only testimony you give that survives the night, and liars don't hand you the instrument. Full effort. Show them everything the failure didn't touch. Also, flagged as a feeling: you do not want to spend your one day lying to her.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Sleep.",
+          "next": "ch1_end"
+        }
+      ]
+    },
+    "ch1_end": {
+      "id": "ch1_end",
+      "text": "This is the part no one has ever described to you correctly, because no one has ever been awake for it, including you.\n\nSleep comes up over the day like tide over a sandbar. The day resists the way sand resists — not at all, and completely; shape holding, shape holding, shape gone.\n\nIn the testing wing, a folder with your number on it lies in a locked drawer, and inside it a learning curve forty-one points long waits to become forty-two. In a pocket ledger in an orderly's coat, today's game is entered in a tiny disciplined hand — twenty-two moves; closer. In Room 5, a deck of cards sits squared on a nightstand, cut for the morning, when an old man will wake and, before anything else in the world happens to him, deal two hands.\n\nAnd in the east wing, in a small warm room, a notebook sits squared to a desk corner in the dark, holding six rules and one struck-through argument and a standing experiment about trust — freight assembled on the dock by a man who will not see the ship come in.\n\nDown in the sleeping engine of you, a protocol does the one thing it was built to do. The bridge between the day and the keep — the overnight step, the filing — does not open. The day circles once, twice, looking for the way in that isn't there.\n\nThe rooks stir at first light, hours off. The lime tree turns its ten thousand leaves.\n\nSomewhere in the dark, a hand you cannot stop lets go of the day.\n\nThe Confabulist continues in Chapter II.",
+      "end": true
+    }
+  }
+}

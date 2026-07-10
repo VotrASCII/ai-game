@@ -1,0 +1,72 @@
+{
+  "title": "The Confabulist",
+  "subtitle": "A mind wiped nightly. A notebook that knows why.",
+  "chapters": [
+    {
+      "id": "ch1",
+      "num": 1,
+      "numeral": "I",
+      "title": "Day One, Again",
+      "teaser": "A room that reads itself to you. A notebook in your own hand. Rule Six.",
+      "file": "story-confabulist/ch1.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": ["route_night", "mirror_sheet"],
+          "text": "You remember it like this — which is to say, the notebook remembers it, and you have decided to believe the notebook. Day 41. You woke to a room that had grown around you like a shoe around a foot, and a wristband that said SUBJECT, and CONSENTED. Dr. Adair arrived and something in you trusted her before she said her name; she called it weather, and did not pretend it wasn't strange. The mirror-drawing curve she let you read starts far below where a beginner's should — whoever you were had practiced that exact task for years. Emil keeps the days in a chess ledger you can't remember earning. A man in Room 5 deals two hands every afternoon, one of them to an empty chair, and his face opened for you like family. The director shook your hand and something older than facts put its back against the wall. And at the lamp, you let Rule Six stand: fail the battery slowly. The slanted man pressed hard when he wrote it. Tomorrow lies to everyone but the back pages."
+        },
+        {
+          "requires": ["mirror_sheet"],
+          "text": "You remember it like this — which is to say, the notebook remembers it, and you have decided to believe the notebook. Day 41. You woke to a room that had grown around you, a wristband that said SUBJECT NINE — CONSENTED, and six rules in your own handwriting. Dr. Adair arrived and something in you trusted her before she said her name; she called it weather. She let you read your own mirror-drawing curve, and it starts far below where a beginner's should — whoever you were had practiced that exact task for years. Interpretation, she said twice, is yours. Emil keeps months of your days in a chess ledger. A man in Room 5 deals a hand of cards to an empty chair every afternoon at three. The director's handshake made something wordless in you recoil, and you wrote it down and flagged it honestly as a feeling. And at the lamp, you struck through Rule Six and chose full effort: the battery is the only testimony you give that survives the night, and liars don't hand you the instrument."
+        },
+        {
+          "requires": ["route_night"],
+          "text": "You remember it like this — which is to say, the notebook remembers it, and you have decided to believe the notebook. Day 41. A room grown around you, a wristband that said CONSENTED, six rules in your own hand, and the forty-first tally mark. Dr. Adair does your mornings; you trusted her before she said her name, and she called it weather and warned you that things with no facts in them can be talked into anything. Emil beat you at chess and keeps the score in a ledger that is really a calendar of you. A man in Room 5 deals two hands every day, one to an empty chair. Director Rao asked, pleasantly, what you write in the notebook — the question weighed more than it said. And at the lamp you let Rule Six stand: fail the battery slowly, miss late not early, keep the true scores in the back pages. The slanted man knew this building. Until you know what he was afraid of, his orders outrank your comfort."
+        },
+        {
+          "text": "You remember it like this: Day 41, and a good first day — first again, the notebook explains, and you have decided not to fight it. You woke in your own room, read your own rules, made the forty-first mark. Dr. Adair looks after your mornings; you liked her at once, the way you must always like her. The tests went well — better than well, you think, though the numbers stay in her folder. You played chess with Emil and nearly won. You passed an old man's room where he was laying out cards for a friend he was expecting. The director stopped to shake your hand in the corridor, warm and reassuring; a kind man, you think, running a kind place. Thursday is coming — a visit, they say, which will do you good. At the lamp there was some business in the notebook about the battery, some old instruction, but the evening had gone soft at the edges by then, and you slept the sleep of a man in safe hands."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "num": 2,
+      "numeral": "II",
+      "title": "The Battery",
+      "teaser": "What was spared. What improves without you. The man in Room 5 deals you in.",
+      "file": "story-confabulist/ch2.json",
+      "startScene": "morning_two",
+      "summaries": []
+    },
+    {
+      "id": "ch3",
+      "num": 3,
+      "numeral": "III",
+      "title": "Thursday",
+      "teaser": "A wife your gut has never met. A coffee order your hand remembers.",
+      "file": "story-confabulist/ch3.json",
+      "startScene": "morning_thursday",
+      "summaries": []
+    },
+    {
+      "id": "ch4",
+      "num": 4,
+      "numeral": "IV",
+      "title": "The Signature",
+      "teaser": "Ten signatures on a sheet of paper. One more on a form you have never seen.",
+      "file": "story-confabulist/ch4.json",
+      "startScene": "morning_signature",
+      "summaries": []
+    },
+    {
+      "id": "ch5",
+      "num": 5,
+      "numeral": "V",
+      "title": "Reconsolidation",
+      "teaser": "Day sixty. What the sleep takes. What you choose to keep.",
+      "file": "story-confabulist/ch5.json",
+      "startScene": "day_sixty",
+      "summaries": []
+    }
+  ]
+}
