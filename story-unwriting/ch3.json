@@ -1,0 +1,154 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The ellipse needs edges, and edges mean fieldwork.\n\nThe pooled luck on the map is still a shape drawn from other people's disasters — traders' gossip, Archivist litanies, her year of pins. To make it evidence you need ground truth: readings taken at the seams, drift clocked against your three honest timepieces, the weather of days measured instead of survived. Osy plots a survey route through the eastern districts like a woman laying out a tournament schedule: fourteen stations, two days, margins for what she calls 'weather' and the traders call, with more honesty, the sky forgetting itself.\n\n'Rules,' she says, shouldering her pack at the mouth of the east stair. 'One: the dog outranks both of us on matters of when to run. I've watched you log him for a week; I read your notes upside down; his hit rate embarrasses the instruments. Two: nobody crosses a seam the eyes disagree with. If the street looks like June and smells like November, we go around. Three —' and here she pauses, and looks at you with the particular flatness that carries her heaviest cargo — 'if a storm catches us, you hold on to me and I hold on to you. People who lose contact in a day-storm don't always come out the same age. I've seen it. Once was enough.'\n\nB stands at the top of the stair in the early light, nose working the wind, tail slung low and easy. The city stretches east in its quilt of mismatched mornings — rain two blocks off under a clear sky, a stand of trees wearing October against the summer wall of a warehouse — and somewhere out there, if the ellipse is honest, is the sharpening edge of a shape that has her address at its center.\n\nYou check the wind-up watch against the stairwell clock, out of piety. Then you go into the weather.",
+      "choices": [
+        {
+          "text": "Run the route as plotted — fourteen stations, discipline, no improvising. The data is only as good as the protocol.",
+          "next": "survey"
+        },
+        {
+          "text": "Suggest inverting the route — start at the far stations while the morning holds. You've been watching the seams from the roof for a year; afternoons are when the sky forgets itself.",
+          "next": "survey_inverted"
+        }
+      ]
+    },
+    "survey": {
+      "id": "survey",
+      "text": "The morning gives you six clean stations, and the work settles into a rhythm older than the ruin around you.\n\nAt each station — a corner, a culvert, a transit vent, chosen by her for sightlines and by you for signal — the ritual: you read drift off the three timepieces while she takes shadow angles with a carpenter's bevel and a schoolgirl's protractor, and B lies down facing, always, the direction you have not looked yet. The seams have texture up close. A boundary between a Tuesday and some older Friday announces itself as a hedge of cold air that does not move with the wind; the light on the far side is always slightly wrong, like a photograph printed on cheaper stock.\n\nOsy works fast and narrates faster — she cannot not explain; a week of company has opened some long-closed valve, and the explanations pour out of her in the dry precise voice of a woman who has been her own only student for a year. 'Drift isn't smooth, see. The days don't slide, they ratchet. Which means tension accumulates. Which means release events. Which is what a day-storm is — a slip fault, but in when instead of where. The traders think they're weather. They're earthquakes.'\n\nAt station six, the readings kink. Drift on the eastern bearing jumps from minutes to hours; the bevel and the wristwatch start disagreeing about how far the morning has gotten; and away east, over the warehouse district, the air above the rooftops has begun, very gently, to shine — the shine you know from echo people, spread across a square kilometre of sky.\n\nB stands up. Not alarmed. Attending. His working tail, low and slow, pointed east at the shine like a compass needle finding an argument.\n\n'Tension release,' Osy says quietly, packing the bevel without looking down. 'Early. The plot said tomorrow.' She looks at the shine the way she looks at an opponent who has just moved out of book. 'Station seven's in that. Route decision, colleague. Now would be good.'",
+      "choices": [
+        {
+          "text": "Skip seven; loop south to eight. You do not take clean data into a slip fault, and you especially do not take her into one.",
+          "next": "storm_edge"
+        },
+        {
+          "text": "Push to seven fast and shallow — instruments only, ninety seconds, out. Storm-edge readings are the rarest data there is; the edge is where the mechanism shows.",
+          "next": "storm_edge_push"
+        }
+      ]
+    },
+    "survey_inverted": {
+      "id": "survey_inverted",
+      "text": "She hears the argument out — roof observations, afternoon slip frequencies, eleven months of amateur meteorology — and reverses her own plan in four seconds flat, which is a thing you have never once seen a project lead do in the world before.\n\n'Better prior than mine,' she says. 'Far stations first. Go.'\n\nSo the morning is spent deep in the eastern districts while the sky is still remembering itself, and the far stations give up their readings clean: drift angles, seam textures, the cold hedges of air between one day and its neighbors. Out here the quilt is coarser — whole blocks running seasons apart — and twice you cross boundaries that make B sneeze and shake himself, as if time had a pollen count.\n\nIt is working back westward, six stations banked, that the sky forgets itself anyway, a day early, over the warehouse district between you and home.\n\nThe air above the rooftops begins, very gently, to shine — the shine of echo people, spread across a square kilometre of sky — and the light everywhere goes the color of a photograph printed on cheaper stock. Under your feet, in your ears, comes a pressure that is not sound: the ratchet, slipping.\n\n'Tension release,' Osy says quietly, packing the bevel without looking down. 'And we're on the wrong side of it.' She looks at the shine the way she looks at an opponent who has moved out of book. B stands, taut, reading the storm-front with instruments nobody has names for. 'Two ways home, colleague: south around the warehouses, long and low. Or the transit cut, straight through — underground, fast, and directly beneath that.' Her chin lifts at the shining sky. 'Route decision. Now would be good.'",
+      "choices": [
+        {
+          "text": "South around. Long and low and boring. Boring is the correct amount of interesting to be, in weather that ages people.",
+          "next": "storm_edge"
+        },
+        {
+          "text": "The transit cut. Under the storm, not through it — the tunnels held their days gently at the Halfway; they'll hold them now. Fast beats far.",
+          "next": "storm_edge_push"
+        }
+      ]
+    },
+    "storm_edge": {
+      "id": "storm_edge",
+      "text": "You take the long way, and the long way teaches you what the short way would have cost.\n\nThe southern loop keeps the storm on your left shoulder for an hour: a square kilometre of sky, shining, and under it the warehouse district running like wet ink. From a safe remove you watch a stand of poplars along the freight road blur through a year of seasons in about a minute — green, gold, bare, green — like a thumb riffling a book. You watch rain fall upward out of a courtyard. You watch, and log, with your mouth dry, a flock of starlings enter the shine at one edge and exit at the other visibly more numerous, the storm having disagreed with itself about how many birds there had been.\n\n'Nobody dies in them, necessarily,' Osy says, watching beside you, wind pulling at her hood. 'That's the horror of it. The traders tell stories — a man walks out of a day-storm twenty years older, mid-sentence, and finishes the sentence. A woman comes out younger than her daughter. The storm doesn't kill you. It re-decides you.' She is quiet a moment. 'My sister used to chase them with a camera. Early on, before anyone understood. She said they were the only honest thing left — the world showing its working.'\n\nIt is the first time she has offered the sister unprompted. You hold very still, the way you hold still when a wild thing crosses a clearing. But the schedule reasserts, the hood comes up, the sentence closes like water. 'Readings,' she says. 'Storm-edge drift, three bearings, while it's giving us the data for free.'\n\nYou take the readings. The numbers are extraordinary — the ratchet's teeth, caught mid-slip, the mechanism showing — and beneath them B lies down across your boots, thirty-four kilos of insistence that the mechanism keep its distance.",
+      "choices": [
+        {
+          "text": "Bank the readings and push for home before the light goes — the storm is drifting, and drift is a thing you now have numbers for.",
+          "next": "b_refusal"
+        }
+      ]
+    },
+    "storm_edge_push": {
+      "id": "storm_edge_push",
+      "text": "Fast and shallow, then — and for four minutes it is the best data of your life.\n\nAt the edge of the shine the world's working is exposed like wiring with the panel off. Your three timepieces come apart from one another with a smoothness that is almost obscene — the wristwatch losing seconds per second against the stairwell clock in your pack, both of them slandering the sun. The cold hedge of the seam has gone soft, mobile, pacing the street like something patrolling. You read drift off the disagreement, call numbers; Osy writes without looking at the page, eyes up, watching the shine breathe.\n\nOn the fourth minute the storm notices the street.\n\nThere is no wind, no sound. The light simply goes wrong faster, and the fronts of the warehouses across the road begin to run — brick flowing like slow water, windows blinking between broken and whole and boarded and gone — and B, who has stood rigid at your knee since minute one, does the thing he has never done in his life.\n\nHe takes Osy's sleeve in his mouth and pulls.\n\nNot play. Not panic. A tow, low and steady and absolutely committed, thirty-four kilos of decision hauling her back the way you came — and she goes, instantly, no argument, rule one operating at reflex speed, her hand finding your forearm and closing hard, and the three of you are moving, then running, the shine swelling at your backs with a pressure like a held breath, until the seam's cold hedge snaps past you and the light comes right and the ordinary broken afternoon catches you like a net.\n\nBehind you, the street you stood in ages a decade in a heartbeat — the warehouses graying, slumping, one roofline folding in with a distant sigh — and then the storm moves on, and leaves the street lying there, re-decided.\n\nOsy is bent double, hands on knees, breathing. When she straightens, she looks first at the street, then at the dog. 'Hit rate noted,' she says, unsteadily, and then, to you, flat and fast, the closest she comes to shaken: 'Ninety seconds was the plan. We used two hundred and forty. That's on both of us, and it doesn't happen again, because the next version of that story, somebody finishes a sentence twenty years from now.'",
+      "choices": [
+        {
+          "text": "No argument. Log the numbers — they're paid for now — and take the long, boring, correct way home.",
+          "next": "b_refusal"
+        }
+      ]
+    },
+    "b_refusal": {
+      "id": "b_refusal",
+      "text": "The way home crosses Fennel Street, and B refuses Fennel Street.\n\nHe does not growl — B has never growled in his life. He simply stops at the corner, plants, and becomes geological. The lead goes taut. Osy, two steps into the crossing, looks back; the street ahead is unremarkable, a straight clear run between fire-gutted terraces, the fastest line home by four minutes.\n\n'Fennel's clean,' she says. 'I've used it twenty times.' But she says it already walking back, because rule one is rule one, and you have both watched his hit rate embarrass the instruments.\n\nYou stand at the corner with the dog planted against your knee, and you count, because counting is the last dignity. At thirty-one seconds, Fennel Street forgets itself.\n\nIt is small, as storms go — a slip the width of one street, a shrug of the ratchet, the kind the survey has been logging as 'micro-events, uninhabited, no witnesses.' The cold hedge rolls up the pavement like a wave in a wheat field; the light goes cheap; the gutted terraces blink, and are whole, and are on fire, and are gutted again — a two-year-old evening re-run at speed — and then it is over, and Fennel Street stands there in the wrong afternoon looking innocent, and the burnt smell reaches you a moment later like an afterthought.\n\nThirty-one seconds. You write it down because the alternative is saying it aloud.\n\nOsy crouches in front of B and takes his head in both hands, and looks at him the way she looks at positions. 'What are you,' she asks him, with complete seriousness. B licks her chin, once, comprehensively, which is his position on most interrogations. She straightens, wipes her chin with the back of her wrist, and looks at you. 'He knew before it happened. Not during. Before. Your notes say seconds; that was half a minute.' Her voice has gone to its lowest, most careful register. 'Colleague. What sense organ detects the future?'",
+      "choices": [
+        {
+          "text": "Say the uncomfortable version: maybe nothing detects the future. Maybe the future is arriving from somewhere, and B hears it coming — the way dogs hear a train in the rails.",
+          "next": "rails_theory"
+        },
+        {
+          "text": "Stay with the data. Log the interval, mark Fennel on the map, and get everyone home before the sky forgets anything else. Theories are for the station, with tea.",
+          "next": "station_shelter"
+        }
+      ]
+    },
+    "rails_theory": {
+      "id": "rails_theory",
+      "text": "'Dogs hear trains in the rails,' you say. 'Minutes early, sometimes. Not because they see the future — because the future is already in the rails. The train is coming; the steel knows first; the dog reads the steel.' You look down at B, who accepts the attention as his due. 'What if the storms are like that. Not weather that happens — weather that's sent. Dispatched. And whatever the rails are, for time — he can feel them hum.'\n\nOsy goes silent in the way that means processing, and the silence lasts a full block.\n\n'If the storms are dispatched,' she says at last, slowly, 'then somewhere there's a dispatcher.' The word lands between the three of you like a piece set down with terrible gentleness. 'That's the wall, colleague. That's my whole wall, said with one word. The luck pools; the timing aims; the disasters have preferences.' Her pace does not change, but something in her voice tightens like a lens racking into focus. 'I've spent a year proving that something is choosing, and being careful never to say choosing what — because the honest answer scared me, and unfalsifiable fear is just noise. But if your dog can hear the switching yard…' She stops walking. She looks east, back at the shine still breathing over the warehouse district, then down at B, then at you. 'Then it's not weather at all. None of it was ever weather. And we are going to find the yard.'\n\nB shakes himself stem to stern, ringing his invisible bell, and sets off toward the station without waiting; his position on the matter is that all yards may be found after dinner.",
+      "choices": [
+        {
+          "text": "Home, then — dinner, tea, and the day's numbers, which have just become the first survey of somebody's switching yard.",
+          "next": "station_shelter"
+        }
+      ]
+    },
+    "station_shelter": {
+      "id": "station_shelter",
+      "text": "The station takes you back with its held-breath warmth, and the evening runs its liturgy: batteries, dinner, the dog fed with full ceremony, the day's numbers spread across the folding table in the lamplight.\n\nPlotted, the readings do the thing that good data does — they stop being numbers and become a sentence. The drift vectors from fourteen — twelve — stations all bend. Not randomly. The whole eastern district's broken time is shearing around something, the way river current shears around a piling. There is a still point in the flow. The storms slip everywhere except along certain corridors; the corridors curve; the curves close.\n\nOsy stands over the plot with her tea forgotten, and draws, with one finger, an inch above the paper, the shape the vectors are whispering. An ellipse. Tighter than yours. Nested inside the pooled luck of her year of pins like the yolk of an egg.\n\n'The luck pools,' she says, 'and the weather flows around the same center.' Her finger hovers over the empty middle of it, not touching, an inch above the map, the height at which superstition operates. 'Nothing on the map there but city. Nothing special. Some streets, a school, a depot.' She looks up at you, lamplight in her eyes. 'Two independent instruments, one shape. Whatever is choosing — this is where it does its choosing from. Or —' and this she says more slowly, catching it as it goes past, the way she catches everything eventually — 'this is what it's choosing for. Center of protection isn't the same as center of origin. A castle sits in the middle of its own defenses. So does a king.'\n\nOn the concrete by the battery bank, B rolls over in his sleep with his legs in the air, wholly indifferent to the geometry closing around the lamplight. You look at the empty middle of the ellipse and feel, in your hindbrain, a door you locked a week ago shift its weight against the bolt.",
+      "choices": [
+        {
+          "text": "Ask the operational question, because someone has to: how do you survey the center of an ellipse without telling the ellipse's owner you've found it?",
+          "next": "monitoring_hut"
+        }
+      ]
+    },
+    "monitoring_hut": {
+      "id": "monitoring_hut",
+      "text": "The next morning has one station left on the salvage of the survey — an old civil-defense monitoring hut on the ridge of the rail cutting, dead center of the drift corridors, and you go together, quiet, watchful, a household now in the way that danger makes households.\n\nThe hut is concrete, one room, older than the Halfway by fifty years — built for a different apocalypse, faithfully maintained for it, and pressed back into service by somebody after all. That is the first wrongness: the door's hinges are oiled. In a city where everything either rusts or shines, somebody has been maintaining a door.\n\nInside: instrument mounts, empty. A chart table, bare. Dust everywhere except the places dust would be disturbed by careful, regular visits — a path polished across the floor from door to table, a clean rectangle on the chart table's surface where something the size of a logbook lived until recently. Whoever uses this room strips it between visits. Whoever uses this room thinks about being found.\n\nIt is B who finds the tube. Wedged in the junction of roof beam and wall, above eye height, invisible from the floor: he stands beneath it and points his whole body at the ceiling until you climb the chart table and feel along the beam. A waterproof map tube, army surplus, capped. Inside, one sheet, rolled.\n\nA hand-drawn survey of the rail cutting and the depot below, annotated with drift vectors — vectors matching yours, taken by the same method, the timepiece-disagreement method, the method you invented, you would have said, this week. Coordinates in the margin, seven figures, precise. And beneath them, small, pressed hard into the paper, in handwriting you recognize the way you recognize your own face in an unexpected mirror — because it is, it is exactly, down to the impatient crossbar on the t's, your own:\n\n'NOT YET.'\n\nBehind you, Osy is reading the vectors over your shoulder, and has not yet looked at the margin. The tube is cold in your hands. Somewhere in your chest, a door you have been leaning against for a week quietly comes off its hinges.",
+      "item": {
+        "id": "coords_notyet",
+        "name": "Coordinates, \"Not Yet\"",
+        "description": "A hand-drawn survey of the rail cutting, drift vectors by your own method, seven-figure coordinates — and two words pressed hard into the margin in handwriting that is yours down to the impatient crossbar on the t's. You have no memory of writing it. The tube rides in your pack like a second heartbeat.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Show her everything. The vectors, the coordinates, the handwriting. You are her check on pareidolia; she is yours; the treaty of this household is truth.",
+          "next": "show_coords"
+        },
+        {
+          "text": "Show her the vectors and the coordinates — but roll the margin under your thumb. The handwriting is impossible, and impossible claims need one careful night before they enter the record.",
+          "next": "hide_coords"
+        }
+      ]
+    },
+    "show_coords": {
+      "id": "show_coords",
+      "text": "You lay the sheet flat on the chart table, all of it, and you put your finger on the margin and hold your hand steady by an act of engineering.\n\n'Vectors match ours. Method matches ours. And that —' your finger under the two words — 'is my handwriting.'\n\nOsy looks at the margin for a long time. Then she does the thing that makes her her: she takes your field log out of your pack without asking, opens it to yesterday's entries, and lays it beside the sheet, and compares, stroke by stroke, like a forensic examiner, for two full minutes, while the hut's oiled door swings gently in the draft.\n\n'It's yours,' she says finally. 'Or it's a forgery good enough that the distinction stops paying rent. The crossbars. The pressure pattern. The way your sevens can't decide about the crossstroke.' She straightens and looks at you, and there is no fear in her face, which frightens you more than fear would; there is the tournament stillness, the whole-board look. 'Options. One: you wrote this and don't remember — and given where we live, missing time is not an exotic diagnosis. Two: someone is copying your hand, which means someone has studied you, which means you were worth studying before I found you. Three —' she taps the drift vectors — 'someone with your methods and your handwriting surveyed the center of this ellipse before we knew there was an ellipse. However you slice it, colleague, you are not a bystander to this map. You're on it.'\n\nShe rolls the sheet, caps the tube, and hands it to you — to you, deliberately, a jury entering something into evidence. 'We follow the coordinates. Together, armed, in daylight, after planning. Not yet —' the corner of her mouth moves, entirely without humor — 'as the man says. But soon. And from here forward, whatever you feel about what we find: say it out loud. Deal?'\n\n'Deal,' you say, and the word costs nothing, and you will spend the rest of your life discovering what it costs.",
+      "item": {
+        "id": "showed_margin",
+        "name": "Said Out Loud",
+        "description": "She has seen the handwriting. The deal stands: whatever you find, say it out loud.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Home, and take stock. The survey is done and it found more than an ellipse; before anyone follows any coordinates, this household audits what it knows and what it can do.",
+          "next": "waypoint_one"
+        }
+      ]
+    },
+    "hide_coords": {
+      "id": "hide_coords",
+      "text": "You angle the sheet as you flatten it, and your thumb rides the margin, and you show her the vectors and the coordinates and not the two words, and the concealment goes off without a hitch, which is the worst possible outcome.\n\nShe works the vectors like the professional she is — matches them against yesterday's numbers, confirms the method, arrives in ninety seconds at the conclusion that whoever surveyed this ridge did it your way, before you. 'A predecessor,' she says, with the relish of a woman who has just been handed a new opponent. 'Somebody worked this problem before us and cached their answer above eye height. Coordinates deliberate, tube deliberate, room stripped between visits — this is tradecraft. We follow it together, armed, in daylight, after planning.'\n\nYou nod, and roll the sheet, and cap the tube, and the two words ride home in your pack pressed against the inside of your knowledge like a stone in a shoe.\n\nThe careful night you promised yourself, you spend at the lamp with your own field log open beside your memory, comparing crossbars in your head until they blur. It is your hand. You know it is your hand the way you know your own gait in a shop window. Which leaves missing time, or a student of you so devoted they have your sevens — and both hypotheses have a hole in the middle shaped like a question you are suddenly, physically unwilling to look at: what else might you not remember, and who decided you shouldn't.\n\nAcross the station, Osy sleeps the guiltless sleep of a woman whose colleague tells her things. B, on the floor between your bunks, watches you with his chin on his paws, awake past his bedtime, gaze steady in the lamp glow — and you would swear on the old world's whole literature that the dog knows what is in the tube, and is waiting, with the patience of his species, for you to be worth it.\n\nYou put out the lamp. The two words stay lit.",
+      "choices": [
+        {
+          "text": "Morning, and take stock. The survey found more than an ellipse; before anyone follows any coordinates, this household audits what it knows and what it can do.",
+          "next": "waypoint_one"
+        }
+      ]
+    },
+    "waypoint_one": {
+      "id": "waypoint_one",
+      "text": "The audit happens at the folding table, over the last of the real coffee, and it is Osy who names it for what it is.\n\n'Inventory of capabilities,' she says, flattening a fresh notebook page. 'A year alone taught me mine: I can read a system, I can hold a schedule, I can shoot exactly well enough to be a danger to shelving. Now you. Because whatever's at those coordinates — whatever owns that ellipse — the next phase isn't surveying anymore. It's contact. And I want to know what I'm standing next to before it happens.'\n\nSo you audit yourself, honestly, in her notebook, in your own impatient hand. The signal work — eleven months of receivers and logs, and a mile of headroom left in the old skills if you choose to climb back up them. The economics you kept in your back pocket through the old career: incentives, trades, the price under the price — a currency, out here, among traders and factions and rigged games. The neuroscience you read at nights, the amateur hours that keep turning out to matter in a world where minds fray at the seams. The chess — her chess, really, the game she rebuilt in you, which has begun to feel less like a pastime than a language you will need. And the body: average, honest, eleven months hardened, capable of being deliberately more.\n\n'We can't sharpen everything,' she says, reading the page upside down, the way she reads everything of yours. 'Time's the budget and the budget is short. So choose. What does this household need you to be, when we knock on the center of that ellipse and something answers?'\n\nB puts his chin on the table's edge, supervising the allocation with the seriousness of a board chairman, and against the lamplight the ellipse waits on the map, its empty middle patient, its two words in your pack saying not yet, not yet — and 'yet' arriving, now, at last, at the speed of everything.",
+      "waypoint": { "points": 3, "label": "Waypoint I — The Audit" },
+      "end": true
+    }
+  }
+}
