@@ -1,0 +1,222 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You cannot knock on the center of an ellipse with two packs and a dog. Contact needs kit, kit needs trade, and trade, in what is left of the city, means the Glasshouse.\n\nThe old botanical conservatory sits on a seam so gentle it has become an institution: inside the iron-and-glass hull, the day runs a permanent mild morning from some lost April, warm enough to winter in, bright enough to trade by. The market grew into it the way markets grow into any reliable thing. Two hundred stalls under the palms. Rainwater tariffs. A rope perimeter patrolled by the only mutually-funded institution left alive: the Scale, the market's weights-and-measures men, who care about nothing on earth except that a deal witnessed is a deal kept.\n\n'Shopping list,' Osy says, on the walk in, B pacing between you with his lead on — his formal wear, worn for crowds. 'Storm canvas. Batteries, the honest kind. Rope. Iodine. A second headlamp, because yours is a fire risk with a strap. And information, which is the real errand: somebody in that tent city knows what's inside our empty middle. Depot workers, old transit men, scavengers who've been east. We buy stories and check them against each other.' She glances at you sideways. 'Market rules. Everything in there is a game, and every game has a house, and the house is not your friend. The Scale keeps the deals honest. Nothing keeps the deals fair.'\n\nB stops at the rope line, sits, and presents himself for inspection with the gravitas of a diplomat. The perimeter man — enormous, slow, a brass weighing-pan tattooed on his forearm — looks the three of you over and finds the dog the only serious party. 'Weapons peace-tied. Dog's bond is your bond.' He chalks a mark on your pack. 'Trade well. Or poorly. The Scale weighs either way.'\n\nInside, under the glass, the lost April comes down warm and green, and the roar of the last market on earth rises up to meet you like the fourth floor's lunchtime, like the world insisting, in its ruined dialect, that it is still a going concern.",
+      "choices": [
+        {
+          "text": "Split the list: she hunts stories, you hunt kit. You know what a fair price smells like — you spent a career pricing things nobody could see.",
+          "next": "kit_run"
+        },
+        {
+          "text": "Stay together and work the market as one unit. Slower, but the last time you two split up it took eleven months and a beacon to fix.",
+          "next": "together_run"
+        }
+      ]
+    },
+    "kit_run": {
+      "id": "kit_run",
+      "text": "You take the list and go to work, and the work turns out to live in your hands still, under the rust.\n\nThe Glasshouse's economy runs on three currencies — clean water shares, battery charge, and reputation — and the exchange rates float on rumor. A morning of listening tells you the spreads: canvas is dear because a storm re-decided the tent quarter last month; iodine is cheap because a hospital cache came in; batteries are a cartel, three stalls thick, run by a woman called the Chandler who sets the price of stored sunlight for the whole east end.\n\nYou trade the way you always modeled it: never against the person, always with their constraint. The canvas man is drowning in iodine he took in a bad swap — you cross the market twice and come back to him with the hospital stall's surplus and take the difference in cloth. The rope dealer's daughter wants signal lessons — a receiver like yours heard her brother's voice on the mesh last spring, and went silent, and you write her a tuning card and a frequency schedule in exchange for thirty metres of climbing line, and her mother adds gloves, unasked, and will not take them back.\n\nBy midday the list is half-crossed and your pack is heavy, and you have relearned the thing the old career taught you and the ruin made you forget: you are good with people, so long as the people are puzzles. It is only when they become mirrors that you lose the thread.\n\nAt the batteries, the cartel holds. The Chandler names a price for six cells that would gut your water shares, smiles like a ledger closing, and waits. Around her stall, hung like trophies, the dead flashlights of people who paid it.",
+      "choices": [
+        {
+          "text": "[Ledger 2] Break the cartel's price with its own structure: her two junior partners split her margin unevenly — you watched the resentment change hands all morning. Make the juniors a quiet three-way offer she has to match or expose.",
+          "next": "chandler_beaten",
+          "skillRequires": { "ledger": 2 }
+        },
+        {
+          "text": "Pay the price. Batteries are life out east, water shares are replaceable, and a man with a mission does not start a trade war on a Tuesday.",
+          "next": "chandler_paid"
+        },
+        {
+          "text": "Walk away from the cartel and improvise: salvaged cells recondition, and you are, whatever else, a man who builds things when the world says no.",
+          "next": "chandler_walked"
+        }
+      ]
+    },
+    "together_run": {
+      "id": "together_run",
+      "text": "You work the market as one unit, and discover that the two of you have a act, unrehearsed.\n\nShe opens — fast, exact, a question with a fact packed inside it, so the stallholder learns immediately that this customer prices lies at zero — and you close, slower, agreeable, the reasonable half who translates her verdicts into terms a person can accept without losing face. By the third stall you have canvas at a fair rate, by the fifth the iodine, and by the seventh the rope dealer is telling Osy, unprompted, about her cousin who worked the eastern depot before the Halfway, because Osy asks questions the way doctors palpate — here? here? does this hurt? — and people mistake precision for sympathy, and are not entirely wrong.\n\nThe cousin's story is the first real coin of the day. The depot at the center of your ellipse was 'transit maintenance' the way a mountain is 'geology' — true and useless. Trucks at night. A fence inside the fence. And in the last year before the Halfway, her cousin said, engineers who came and went by tunnel and were paid in a scrip nobody recognized, stamped with a loom.\n\nOsy does not look at you. That is how you know the word lands in her exactly where it lands in you.\n\nB, meanwhile, has been conducting his own commerce: he has learned that sitting in front of the dried-fish stall with his ears at maximum deployment produces fish, and he has been running this exploit with the shamelessness of a man arbitraging a mispriced market. The fish woman is on her third donation. 'I'm a cat person,' Osy tells her, taking the lead, and the fish woman looks at the dog leaning his whole weight against Osy's legs and says, 'Sure you are, love,' and gives him a fourth.",
+      "choices": [
+        {
+          "text": "Follow the loom-scrip thread while it's warm — somebody in this market has seen that scrip, and engineers who tunnel to work have supply chains.",
+          "next": "scrip_hunt"
+        },
+        {
+          "text": "Finish the kit list first, discipline before curiosity — the batteries are a cartel and the afternoon prices climb.",
+          "next": "chandler_paid"
+        }
+      ]
+    },
+    "chandler_beaten": {
+      "id": "chandler_beaten",
+      "text": "You spend forty minutes on it, and it is the most fun you have had in a year, and you note that fact with the mild alarm you reserve for evidence about yourself.\n\nThe juniors take lunch at opposite ends of the cartel's row — that was the tell all morning; partners who eat apart split money unevenly. You take the east one a proposition wrapped in an observation: the Chandler's price holds because the three stalls quote as one, but her margin is not split as one, is it, and a man whose stock moves at a fair price beats a man whose stock decorates a monopoly. You say the same thing westward, adjusted for grievance. You never name a number. You let each of them discover, privately, that the other might defect first.\n\nBy mid-afternoon the cartel's quote has a crack in it, and the Chandler — who did not build the east end's battery trade by being slow — reads the crack, reads you across the market with a long, appraising, entirely unhostile look, and sends her boy over with six cells and a counter-offer at two-thirds the morning's price, 'professional courtesy.'\n\nYou pay it. Courtesy answers courtesy; humiliation is for amateurs; she knows you could have gone lower and you know she will remember you either way, and the difference between those memories is worth every share of the spread you left on the table.\n\n'You,' Osy says, when you rendezvous under the central palm and she has heard the shape of it, 'have been wasted on honest work your whole life.' It is, from her, practically a decoration. B sniffs the batteries once and files them under Not Food, his harshest category.",
+      "item": {
+        "id": "market_standing",
+        "name": "The Chandler's Courtesy",
+        "description": "Six honest cells at a courteous price, and something worth more: the east end's battery queen now rates you a professional. In the Glasshouse, reputation is the third currency, and yours has opened an account.",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Rendezvous complete, kit complete. Now the real errand: information. The tent rows where the depot stories live.",
+          "next": "scrip_hunt"
+        }
+      ]
+    },
+    "chandler_paid": {
+      "id": "chandler_paid",
+      "text": "You pay the cartel's price, and you watch your water shares cross the counter with the particular grief of a man who can see the fair price shimmering two feet under the real one and cannot reach it.\n\nThe Chandler counts the shares twice, not because she doubts them but because counting twice is who she is, and studies you while she does it. 'You priced that walk-away three times before you paid,' she says. 'Most don't price it once.' She slides the cells across, and then — commerce concluded, a different woman entirely — adds a seventh cell to the stack, gratis, and taps it. 'For the dog. Animal that mannered in a crowd this size is worth a cell of anyone's charge. Go on.'\n\nB accepts his patronage with a slow tail and the dignity of a knight receiving lands. You leave the stall lighter in shares, heavier in cells, and richer by the day's real lesson, which you file carefully: in the Glasshouse, sentiment is not absent. It is simply denominated, like everything else, and it is the only currency the cartels can't fix.\n\nUnder the central palm, Osy inventories the kit against her list, pronounces it adequate — her second-highest grade — and turns to the half of the errand that was always the point. 'Stories now. The tent rows. And stay close —' she scans the crowd with a flatness that took her a year of aloneness to build — 'because I've had three separate traders warn me about the same thing today, and it isn't the weather. There's a game runs afternoons by the north door. Man called Tench. The warnings disagree about how it's crooked. Nobody disagrees that it is.'",
+      "choices": [
+        {
+          "text": "The tent rows first — depot stories, loom scrip, engineers who tunneled to work. Games can wait for people who don't have an ellipse to open.",
+          "next": "scrip_hunt"
+        },
+        {
+          "text": "Walk past the north door on the way, casually. A game every trader warns you about, in a market this disciplined, is load-bearing for somebody — and you both read structures for a living.",
+          "next": "tench_game"
+        }
+      ]
+    },
+    "chandler_walked": {
+      "id": "chandler_walked",
+      "text": "You walk away from the cartel, and you spend the afternoon proving the point instead.\n\nThe scavenger rows sell dead cells by the crate — storm-killed, over-drained, the honest garbage of the battery age — and you buy a crate for a tenth of the Chandler's quote plus a promise to show the seller the trick when you find it. Then you colonize a corner of the repair quarter, borrow a soldering iron for the price of fixing the lender's radio, and go to work on the chemistry with a patience the old world trained into you and the new one sharpened.\n\nMost of the crate is truly dead. But storm-killed cells, it turns out, fail strangely — their charge doesn't leak so much as misremember itself, and a slow forced cycle, down to nothing and up again, reminds about one cell in five of what it is. By dusk you have seven reconditioned cells, a small audience of repair-quarter men taking notes, and a new line of credit in the only bank this place respects: the reputation for making dead things confess.\n\nThe lender of the soldering iron, a transit electrician in the world before, pays out more than his radio's fix was worth: he worked the eastern depot's substation twice, before the Halfway. 'Power draw like a smelter,' he says, 'in a yard that never smelted anything. And the cabling ran down, friend. Whatever ate that current lived under the yard.' He looks at your reconditioned cells, and then at you, with the freemasonry of people who fix things. 'You're going out there.' It is not a question, and you do not insult him with an answer, and he sells you his old substation keys for three cells and does not once ask why a dead yard's locks should still be worth turning.",
+      "item": {
+        "id": "substation_keys",
+        "name": "The Substation Keys",
+        "description": "Three keys on a transit-authority ring, sold by the electrician who used them. The eastern depot drew current like a smelter, and the cabling ran down. Whatever ate that power lived under the yard.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Find Osy at the rendezvous palm and trade findings — she has been hunting stories all afternoon, and yours has a basement in it.",
+          "next": "scrip_hunt"
+        }
+      ]
+    },
+    "scrip_hunt": {
+      "id": "scrip_hunt",
+      "text": "The tent rows are where the market keeps its memory, and the memory has prices.\n\nYou work them together into the afternoon: teamsters who ran night freight to the eastern yard and were paid to be incurious; a woman who cooked for the tunnel engineers and remembers the loom-stamped scrip — 'spent like gold at the commissary and nowhere else on earth' — and remembers, too, that the engineers never once spoke of what they built, but were, to a man, the kind of tired that lives behind the eyes. Piece by piece, cross-checked, the empty middle of your ellipse acquires furniture: a freight yard that ate power like a smelter, a fence inside a fence, engineers who came by tunnel, and a name the teamsters heard the engineers use for the place, once or twice, carelessly, and which Osy makes each of them repeat separately before she will let herself believe it.\n\nNot 'the depot.' The Anchorage.\n\n'Sailors' word,' the oldest teamster says, sucking his tea. 'Place you moor things so the weather can't take them.' He looks out through the glass at the mismatched sky, and something old crosses his face. 'Always thought it was a joke name. Doesn't feel like one anymore, does it.'\n\nOsy writes it in the vandal-proof hand and boxes it twice, and you watch her want, with a physical want, to draw the line from that word to her wall — because things get moored so the weather can't take them, and the weather of days flows around the center of your ellipse like current around a piling.\n\nIt is at this exact moment, naturally, that the afternoon's noise changes shape. From the north door: a crowd sound with a wound in it. A man's voice, ugly with delight. And under it, briefly, a voice you would know at any bitrate, saying something short and precise that lands in the crowd like a dropped blade.\n\nB is moving before you are.",
+      "choices": [
+        {
+          "text": "Follow the dog, fast. That was her market voice, and it was cutting something.",
+          "next": "tench_game"
+        }
+      ]
+    },
+    "tench_game": {
+      "id": "tench_game",
+      "text": "The game by the north door is called Weatherglass, and it is beautiful, and it is a machine for harvesting the desperate.\n\nTench runs it off a barrelhead: a sealed glass jar of storm-water — genuinely eerie stuff, silvered, restless, sloshing gently against no wind — and a ring of numbered stakes. The pitch: the water 'remembers the sky.' Players bet water shares on which stake the next silvering surge will lean toward; the jar performs; the house pays short odds on wins it can see coming and long odds on a 'grand lean' that, you observe within four cycles, the jar produces only when the pot is worth taking. Tench himself is lean and pleasant and works the crowd like a man petting a dog he intends to sell — and the crowd is tent-row poor, betting shares they cannot spare, because the jar glitters and the patter says the storm-water knows.\n\nOsy is standing at the rail with the stillness of a drawn bow. She has watched, you estimate, six cycles. On the barrelhead her own marker is down — she has bought into the game, which for one cold second you misread as madness, until you see what she bought: standing. Players may speak. Spectators may not.\n\n'House take on the last six pots,' she says, conversationally, to the crowd at large, in the voice that used to empty conference rooms, 'is eighty-one percent. The jar leans wherever the magnet under the barrel tells it. He drives it with his knee — watch the third brace from the left when the pot crosses twenty shares. There is no sky in the glass. There is a man deciding which of you looks hungriest.' She turns to Tench, pleasant as arithmetic. 'Show them the underside of the barrel and I'll retract every word.'\n\nThe crowd sound develops its wound. Tench's smile stays; his eyes have gone to a place his smile knows nothing about; and his two rail-men have begun, with the unhurried drift of professionals, to relocate toward Osy's end of the barrel.\n\nThe Scale's nearest weighman is thirty feet away, and looking, and not yet walking. In the Glasshouse, a deal witnessed is a deal kept — but an accusation unwitnessed is a body in the storm drain, and every soul at this rail knows it, and Osy has just bet her standing on the arithmetic.",
+      "choices": [
+        {
+          "text": "Step to the rail beside her, loudly, as her second — put your market name on her claim and call for the Scale by title. Whatever it costs your standing, the arithmetic will not stand at that rail alone.",
+          "next": "back_her"
+        },
+        {
+          "text": "[Ledger 3] Flank instead: get to the weighman first and buy the Scale's attention with your afternoon's reputation — a formal challenge, house against claimant, jar on the pans. Cooler, safer, and the trap closes on Tench in public.",
+          "next": "flank_scale",
+          "skillRequires": { "ledger": 3 }
+        },
+        {
+          "text": "Get her out. Take her arm mid-sentence, apologize to the rail — 'my colleague misspoke' — and trade the truth for her spine intact. Markets forget claims; storm drains don't give back colleagues.",
+          "next": "pull_her_out"
+        }
+      ]
+    },
+    "back_her": {
+      "id": "back_her",
+      "text": "You step to the rail and you spend it all.\n\n'My name is on this morning's deals,' you say, to the crowd, at volume, in the voice you used once for review boards, 'canvas row, rope row, the battery cartel — ask them what my word weighed. It's on her claim now, whole. Third brace from the left, twenty-share pots. And I call the Scale.' You put your hand flat on the barrel, which is a thing you know from nowhere and mean like a signature. 'By title. A witnessed accusation of a rigged house. Weigh it.'\n\nCalling the Scale by title, it turns out, is a mechanism: heads turn, the weighman starts walking, and the market's whole immune system arrives at the north door in the space of forty heartbeats — three weighmen, the perimeter giant, and a silence that costs more than the pot.\n\nThey tip the barrel. The magnet is bolted where she said, to the third brace, with a knee-plate polished by use.\n\nWhat follows is swift and municipal: the pot returned share by share to the afternoon's losers off the Scale's own ledger of witnessed bets; the jar confiscated 'for the pans'; Tench's stall-bond forfeit; the man himself escorted to the rope line with his rail-men, pleasant to the last, pausing only once — at you, not at her, which you will remember later — to take your face in the way that men in his trade take inventory. 'Weighed and found honest,' he says, mildly, like a diagnosis. 'Expensive way to live, friend.' And he is gone into the mismatched afternoon.\n\nYour standing, you discover by dusk, has not been spent after all; it has been converted. The tent rows will not haggle with you properly anymore — the fish woman refuses your shares outright, scandalized — but every door in the Glasshouse has quietly come off the latch, and the rope dealer's mother explains it to you, patting your arm, in the market's own dialect: 'Cheap to trade with the clever. Dear to trade with the good. We'll pay it.'\n\nOsy says nothing about any of it until the walk home, and then she says only, looking straight ahead: 'You called the Scale before you checked the math yourself. You backed me on my say-so, in public, at cost.' Four more strides. 'Noted for the file. Large font.'",
+      "item": {
+        "id": "thread_market",
+        "name": "At the Rail",
+        "description": "You put your name on her arithmetic in public, at cost, before checking it. She noticed. Large font.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Home by the lamplit rows — one stall left that Osy has been circling all day without entering: the Archivists' tent.",
+          "next": "archivist_tent"
+        }
+      ]
+    },
+    "flank_scale": {
+      "id": "flank_scale",
+      "text": "You read the board once and move on the weak square: the weighman.\n\nThirty feet, eight seconds, and you arrive not as a partisan but as a customer of the institution. 'Formal challenge, house against claimant. My morning's name stands surety for her claim —' the weighman's eyes flick; your morning's name, it turns out, has already reached the Scale's ledger — 'and the house's bond stands against it. Jar on the pans, barrel on its side, everybody paid either way. That's Scale business, or nothing in this market is.'\n\nInstitution logic is a lever that moves institutions. The weighman raps his pan-iron on the doorpost twice, the market's oldest sound, and the immune response assembles — and it assembles as procedure rather than as mob, which is the whole difference you crossed thirty feet to buy. The barrel is tipped by sworn hands. The magnet is found bolted where Osy said. The pot is unwound share by share; the bond is forfeit; Tench is escorted to the rope line intact and pleasant and taking inventory of exactly one face on his way out — yours, which is the price of being the visible mechanism of a man's ruin.\n\n'Weighed and found clever,' he says at the rope, mildly, like a diagnosis. 'Expensive in a different way, friend.' And he is gone.\n\nOsy finds you in the settling crowd. She has her marker back and her point proven and the tent rows' poor made whole, and she studies you for a moment with the expression she wears over a strong novelty. 'You didn't stand at the rail,' she says — pure observation, no verdict in it, which is somehow worse than a verdict. 'You went and moved the institution instead. Faster. Safer. It worked.' A beat. 'She'd have stood at the rail,' she adds, to herself, in the voice she uses for exactly one person, and does not say the name, and walks toward the lamplit rows, and you stand in the crowd doing arithmetic of your own about what was won just now, and at which counter.",
+      "choices": [
+        {
+          "text": "Follow her toward the one stall she has circled all day without entering: the Archivists' tent.",
+          "next": "archivist_tent"
+        }
+      ]
+    },
+    "pull_her_out": {
+      "id": "pull_her_out",
+      "text": "You take her arm, and you say the sentence, and it works, and working is the worst thing it does.\n\n'My colleague misspoke — long day, strong tea. House keeps the pot. Gentlemen.' A nod to the rail-men, easy, fluent, the reasonable half doing what the reasonable half does — and the crowd's wound closes over, and the jar resumes its glittering, and Tench's smile returns to his eyes with the smoothness of a tide covering a rock, and he tips two fingers at you, one professional to another, which is the precise moment you understand what you have sold.\n\nOsy does not fight your grip, because she would never hand a crowd that scene. She walks beside you, wholly composed, through the north door and twenty yards into the lamplit rows, and then she removes your hand from her arm with two fingers, like lifting a teabag from a cup.\n\n'Inventory,' she says, in her flattest voice, which you know now is her most careful one. 'Item: the arithmetic was right. Item: those people's shares are gone, and the jar is still drinking. Item: you traded both away in my voice. \"Misspoke.\"' She looks at you, and there is no anger in it, which is the catastrophe; anger is for peers; this is the look she gives a position that has disappointed her. 'I survived a year alone by knowing exactly what my word was worth, because it was the only asset I had left. You just marked it down in public, to buy my safety, without asking the owner.' A pause, and then, with terrible precision: 'They keep asking me — the traders, the fish woman, the Scale — is he yours? Meaning are you my keeper. I keep saying colleague. Colleagues check the math before they overrule it.'\n\nShe walks on toward the Archivists' tent, and B — who has stood equidistant between you through the entire exchange, ears down, the one being in the market with no theory about anyone — looks up at you for a long moment before following her, and his tail does not move at all.",
+      "item": {
+        "id": "market_misspoke",
+        "name": "\"Misspoke\"",
+        "description": "You marked her word down in public, to buy her safety, without asking the owner.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Follow, at the distance the mistake has priced. The Archivists' tent is the last stall of the day, and she has been circling it since morning.",
+          "next": "archivist_tent"
+        }
+      ]
+    },
+    "archivist_tent": {
+      "id": "archivist_tent",
+      "text": "The Archivists' tent stands apart from the rows, unlit by lamps because it needs none: the walls are woven through with strips of mirror and dead screens, and the tent collects the Glasshouse's mild April light all day and gives it back at dusk, pale and secondhand, like everything else they keep.\n\nInside, the last religion is arranged on trestle tables. Kept days: photographs by the crate, diaries ranked by year, voice recorders labeled in a script like knitting, hours of the dead world indexed and cross-referenced by the grey-robed keepers who believe, with a gentleness that does not blink, that the Loom was the last mind of God and that every preserved moment is a prayer it might someday re-read.\n\nOsy has been circling this tent all day because of a rumor a teamster sold her for a cup of tea: the Archivists bought a storm-chaser's estate last winter. Camera. Notebooks. A woman's kit, found east, in the drift corridors.\n\nThe keeper at the table is old and small and has the eyes of a person who has watched ten thousand hours of other people's happiness at one remove. She listens to Osy's description — field notebooks, grid-ruled, a left-hander's slant, storm logs in colored pencil — and goes to a chest without a word and lays a bundle on the trestle, and Osy puts her hand on it and goes so still that the tent's secondhand light seems to pool around her.\n\nHer sister's notebooks. Three of them, water-stained, the colored-pencil storm profiles blooming through the covers like pressed flowers.\n\n'The price,' the keeper says, gently, because the Archivists have one price and everyone knows it, 'is a memory, told truly, of the one who wrote them. Told to the archive.' She sets a recorder on the trestle, patient as furniture. 'We do not keep the notebooks from kin. We keep the teller company while she pays.'",
+      "choices": [
+        {
+          "text": "Stand with her while she pays — whatever she chooses to tell, someone she trusts should be in the room where she tells it.",
+          "next": "sister_memory"
+        },
+        {
+          "text": "Give her the tent. Take B and wait outside — some payments are counted more easily with no colleague watching the count.",
+          "next": "sister_memory_outside"
+        }
+      ]
+    },
+    "sister_memory": {
+      "id": "sister_memory",
+      "text": "She looks at you once — a checking look, is this witness acceptable — and whatever she reads, she nods at the keeper, and the recorder's little light comes on, and Osy pays.\n\n'My sister's name was Pin. Officially something longer; nobody used it. Eight years younger. She was the one who felt things first and checked them second — we were a complete system between us and an argument apart.' Her voice is level, dictation-level, and it stays level the whole way, which is how you know what it is costing. 'When the sky broke she didn't hide like the smart people. She took the camera out. She said the storms were the only honest thing left — the world showing its working — and she chased them for a year and a half while I built walls out of notebooks, and we fought about it every single time, and she was right and I was right, which is the worst outcome an argument can have.\n\n'The one that took her wasn't even big. I've seen the profile —' a nod at the water-stained bundle — 'she logged its approach herself, nineteen minutes out. She stayed because it was doing something new. Her last page says NEW in her storm shorthand, underlined twice. She was twenty-six, and then she was six, and then she wasn't, and it took the length of a kettle boiling, and I stood at the tape line where the air changed and I took notes, because taking notes was the only thing left to give her, and I have hated the notes ever since, and I have kept every one.'\n\nThe recorder's light dies. The keeper bows over it, formal as a bank. And Osy picks up her sister's notebooks with both hands and holds them against her sternum, next to the queen's cord, and stands there in the borrowed light — and then, in her flattest, most careful voice, to you: 'For the record, colleague. That is the whole file. Nobody else has read it.' A breath. 'Now there's a witness. Files with one copy don't survive.'",
+      "item": {
+        "id": "sister_notes",
+        "name": "The Sister's Pages",
+        "description": "Pin's three field notebooks, water-stained, storm profiles in colored pencil. The last page says NEW, underlined twice, in a dead woman's shorthand. Her whole method rides in your pack now — nineteen-minute approach logs, honest to the end of the world.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Home, all three of you, under the mismatched stars — and open Pin's notebooks at the lamp, because NEW, underlined twice, is now the oldest lead you have.",
+          "next": "end_ch4"
+        }
+      ]
+    },
+    "sister_memory_outside": {
+      "id": "sister_memory_outside",
+      "text": "You take B out into the dusk and give her the tent, and the two of you conduct your vigil among the guy-ropes, where the Archivists' secondhand light lies on the ground in pale stripes.\n\nB does not settle. He arranges himself against the tent wall at the point nearest, by your estimate, to where she stands inside, and he leans on the canvas until it bows, gently, a dog-shaped pressure in the wall of the last archive on earth, and stays that way for the whole count. Whatever is said in there, he keeps its perimeter. You keep the lead, and the silence, and the thought — arriving with no permission, filed with no name — that you have spent eleven years learning every public room of this woman and tonight a stranger with a recorder is being handed a floor you have never seen the stairs to.\n\nIt takes twenty minutes. When she comes out she is carrying three water-stained notebooks against her sternum, and her face is dictation-calm, and her eyes are dry, and she stops in front of you and stands there a moment in the striped light, reading you reading her.\n\n'Paid,' she says. And then, because she is Osy, and mercy from her always arrives dressed as accuracy: 'You gave me the room. Noted. But for the record, colleague — I'd have let you hear it.' She settles the notebooks into her pack with surgical care. 'There's a version of me that only exists out loud. She showed up tonight for a stranger's recorder. Odd allocation, on reflection.'\n\nShe shoulders the pack and whistles low for the dog, who un-leans from the canvas with reluctance, one ear inside out. The walk home is quiet, and the quiet has a new grain in it — not distance exactly; a door left ajar onto a room you were invited into one evening too late.",
+      "item": {
+        "id": "sister_notes",
+        "name": "The Sister's Pages",
+        "description": "Pin's three field notebooks, water-stained, storm profiles in colored pencil. The last page says NEW, underlined twice, in a dead woman's shorthand. Her whole method rides in Osy's pack, held like something rescued from a fire.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Home under the mismatched stars — and at the lamp, Pin's notebooks come open, because NEW, underlined twice, is now the oldest lead you have.",
+          "next": "end_ch4"
+        }
+      ]
+    },
+    "end_ch4": {
+      "id": "end_ch4",
+      "text": "At the station, in the lamplight, the dead storm-chaser joins the team.\n\nPin's notebooks are a revelation in colored pencil. She had no instruments to speak of — a camera, a compass, a child's barometer — and she compensated with a fieldcraft so patient it reads like love: approach logs to the minute, storm shapes sketched in cross-section, a taxonomy of slips in her own shorthand, twenty months of the sky's forgetting, catalogued by a woman lying on warehouse roofs with a pencil between her teeth. Osy turns the pages like a surgeon and an heir at once, translating the shorthand aloud, and between the two of you, by midnight, Pin's storms are on the wall with everything else — and they fit. Her tracks bend around the same still center. Her 'quiet lanes' are your drift corridors. The dead sister and the living one have been working the same problem from opposite ends of a year and a half, and tonight, at this folding table, their files finally merge.\n\nWhich leaves the last page. NEW, underlined twice, nineteen minutes logged on a storm that was doing something no storm in twenty months of taxonomy had done.\n\n'The profile,' Osy says, quietly, working it, 'shows the slip starting to run backward. Every storm in her files re-decides a place and moves on. This one was un-deciding. Rebuilding what it had already re-decided, block by block — reversing itself, or being reversed.' She looks up from her sister's handwriting, across the lamp, and in her face the grief and the mathematics have fused into a single instrument, the way they were always going to. 'Something can undo the weather of days. Pin saw it happen, nineteen minutes before it killed her. And a thing that can undo a storm, colleague —' she lays her hand flat on the wall of red thread, on the ellipse, on its patient empty middle — 'is a thing that can aim one.'\n\nOn his blanket by the battery bank, B sighs the sigh of a dog whose people will not sleep, and pointedly, one limb at a time, goes to bed. Tomorrow the kit gets packed. Tomorrow the maps get final. The Anchorage has waited under its fence-inside-a-fence for however many years it has waited — but it is Pin's word you write at the top of the expedition file, in your own impatient hand, because the dead deserve the naming rights: NEW.",
+      "end": true
+    }
+  }
+}
