@@ -1,0 +1,192 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The city runs on four different days now, and you live in the one where it is always almost autumn.\n\nYou wake at what your body still calls seven, in the shell of an office tower whose upper floors flicker — some mornings there are forty storeys above you, some mornings twelve, and once, memorably, a greenhouse. Your floor stays put. Your floor has stayed put for eleven months, which is the reason you chose it, back when you were still choosing things for reasons.\n\nOn the desk that is not your desk, in the office that is not your office, there is a legal pad with a list on it, written in your own careful hand. Seven items. Six are crossed out.\n\nWater rights transferred to the family in the atrium — crossed out. Generator manuals annotated — crossed out. Seed cache mapped and labeled — crossed out. Passwords, such as they still mean anything, written down for no one — crossed out. The tomato plants given to the atrium family too, who looked at you strangely, because nobody gives things away here without a price, and you couldn't explain that the price had already been paid, somewhere upstream, by everyone.\n\nItem seven is not crossed out. Item seven has been not crossed out for six weeks.\n\nFrom the doorway comes the sound of a large dog sighing at you. B is lying across the threshold the way he lies across it every morning — not in the room, not out of it, positioned with scientific exactness at the point of maximum inconvenience. His tail moves twice when you look at him. The tail says: breakfast has historically occurred by now. The tail is not wrong. The tail is never wrong.\n\nYou were a data scientist, in the world before the Halfway. You built models. You have not stopped. The only model that matters now is the one you can't finish, and it has one variable left.",
+      "choices": [
+        {
+          "text": "Feed the dog. The list has waited six weeks; it can wait past breakfast. Everything can always wait past breakfast — that is, you suspect, the dog's entire philosophy, and lately your whole remaining one.",
+          "next": "feed_b"
+        },
+        {
+          "text": "Look at item seven properly for once. You are a man who finishes lists. It is the one thing everyone always agreed you were.",
+          "next": "the_list"
+        },
+        {
+          "text": "Do the perimeter walk first. The tower's day has been slipping lately — the lobby ran an hour behind the stairwell on Tuesday — and if the building is going to desync, you want to know before it decides.",
+          "next": "perimeter"
+        }
+      ]
+    },
+    "feed_b": {
+      "id": "feed_b",
+      "text": "You feed the dog.\n\nThis is a procedure with rules, all of them his. The bowl must be placed, not set down — placed, with both hands, while he watches with the gravity of a customs official. He does not eat until you step back. He has never once eaten until you step back, and you have never found out what he thinks would happen if he started early, but his conviction is absolute and you respect conviction wherever it survives these days.\n\nHalf a scoop of the good kibble, from the pallet you found in month two and rationed like plutonium. The other half of his meal is whatever the day provides — this morning, strips of the dried fish the atrium family trades you for water pressure. He eats with his whole body, tail going, one ear inside out, and for ninety seconds the world is not broken anywhere.\n\nYou did the math once — you do the math always; it is the disease you had before the world caught its own — and the pallet runs out in March. You have watched yourself, with clinical interest, keep extending the supply curve past the point where you had privately stopped extending your own.\n\nThat was the first data point. You logged it and said nothing to anyone, there being no one.\n\nB finishes, inspects the bowl's emptiness with brief formal disappointment, and then comes and leans his entire weight against your legs — thirty-four kilos of unearned certainty — and looks up at you with the face that has no theory about anything at all. You are, as far as this dog is concerned, the fixed point around which breakfast orbits. It is the only job you have kept through the end of the world.\n\nThe legal pad is still on the desk. Item seven is patient the way only ink is patient.",
+      "item": {
+        "id": "b_lead",
+        "name": "B's Lead",
+        "description": "Woven green, worn soft, a brass clip you have repaired twice. He doesn't need it — he has never once left your side without a reason — but he sits taller when it's on, like a man in a good suit. It lives coiled in your left coat pocket. You are not sure anymore which of you it is for.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Now the list. You gave yourself until the kibble math said March, and you have been quietly aware for some time that this was never about the kibble.",
+          "next": "the_list"
+        },
+        {
+          "text": "Take him up to the roof instead. The rooks on the flickering floors don't age, and he likes to watch them, and you like to watch him not understand. Postponement is also a procedure.",
+          "next": "roof"
+        }
+      ]
+    },
+    "perimeter": {
+      "id": "perimeter",
+      "text": "The perimeter walk takes forty minutes if the building cooperates, and this morning it cooperates.\n\nYou check the stairwell clock against the lobby clock against the wind-up watch on your wrist — the only three timepieces you trust, because they are the only three that are wrong in ways you have characterized. The stairwell runs true. The lobby has drifted eleven minutes since Tuesday, which you note in the margin of your log with the small satisfaction of a man whose disaster is at least well-instrumented.\n\nThrough the lobby glass, the street tells you which day it's wearing. The bakery across the road is the tell: some mornings it is burnt out, some mornings it is intact and shuttered, and on the bad mornings there is bread cooling on a rack inside and a woman moving behind the counter who has been dead, by your best estimate, for two years. Today it is burnt out. A relief. The intact days cost you more than you have ever put into words, and there is no one to put them into words for anyway.\n\nB does the walk with you, nose down, reading the building's edition of the morning paper. At the east door he stops. Doesn't growl — B has never growled in his life, you would sooner expect the stairwell to sing — just stops, and stands, and points his whole body at the boarded-up transit entrance like a compass needle finding an argument.\n\nHe did this on Tuesday too. And the Thursday before. Always the east door. You have a hypothesis file for it, and this morning you add a line: 'Recurrence n=3. Interval irregular. He hears something I can't. Investigate while still —' and you stop writing, because the sentence was about to file you under the things that are running out.",
+      "choices": [
+        {
+          "text": "The east door has boards on it for a reason, and the reason is that you nailed them there. Go back up. The list is on the desk and lists do not finish themselves.",
+          "next": "the_list"
+        },
+        {
+          "text": "Pry a board loose and listen at the gap. Three recurrences is a pattern, and you were never once in your life able to leave a pattern alone.",
+          "next": "east_door"
+        }
+      ]
+    },
+    "roof": {
+      "id": "roof",
+      "text": "The roof is the one luxury you have kept.\n\nTwelve storeys below — or forty, depending on the building's mood — the city lies in its quilt of mismatched days. From up here you can see the seams: the boulevard where it is raining into sunshine, the park stuck in the green of a June that belongs to no current year, the river running under a bridge that is whole at one end and burnt at the other and has been both, without contradiction, since the Halfway. You have mapped the seams. The map is nailed to the wall of your workshop, and it is beautiful, and it is useless, and making it kept you alive through February, which was its actual function.\n\nB patrols the parapet with his nose up, taking the census of the wind. The rooks live on the flickering floors of the insurance tower opposite — the floors that exist on alternate mornings — and the rooks flicker with them and do not seem to mind. B minds. B has opinions about birds that observe different physics, and he files these opinions with you, at length, in a low talkative almost-woof he uses for nothing else.\n\nYou sit with your back against the water tank, in the strip of sun, and for a while you are just a man with a dog on a roof, which is a thing that has survived every apocalypse so far.\n\nThe thought arrives, as it always arrives, on schedule, wearing its lab coat: this is pleasant, and pleasant is not a reason. A reason is a load-bearing thing. Pleasant is weather. You have been living on weather for eleven months, and the list on the desk downstairs is what a man writes when he has audited himself for load-bearing structures and found the ledger empty.\n\nB abandons the rooks, crosses the roof, and sits on your feet. All of him. He is not a small dog. You stay another twenty minutes because you cannot feel your toes and moving would disturb him, and both of you know that is not the reason, and neither of you says so.",
+      "choices": [
+        {
+          "text": "Down, then. The desk. The pad. You are calm about it, which you have decided to be proud of, there being no one else available to be proud of anything about you.",
+          "next": "the_list"
+        }
+      ]
+    },
+    "east_door": {
+      "id": "east_door",
+      "text": "The nails come out easier than they went in. Most things do.\n\nBehind the boards, the transit entrance breathes its transit breath — cold electric dust, standing water, the specific dead-air smell of a system that stopped mid-thought. B pushes his head into the gap beside your hip, ears up, absolutely silent. Whatever he has been pointing at, it is down there, and it is still happening.\n\nYou hear it on the third breath. Voice. Human, or was one — the tunnels do terrible things with echoes, and worse things with echoes of the other kind. A voice, and under it a rhythmic click you know from a previous life: the self-test cycle of a mesh repeater, the cheap municipal kind, the kind the transit authority bolted up by the thousand to carry signal between stations. Something down there is broadcasting. Something down there has power.\n\nYou built a receiver in month three — of course you did; you were sad, and when you are sad you build things; it is the one behavior of yours that has survived every version of you. It sits in the workshop on the fifth floor pulling static out of the air and writing it dutifully to a log that nothing will ever read. It has never once caught a coherent transmission.\n\nBecause you never pointed it down, you realize. You swept the horizon for eleven months. The city's nervous system is under the street, and the street is where the days are least broken, and you never pointed the antenna down.\n\nB looks from the dark to you and back to the dark, tail low and slow — his working tail, his something-is-true-down-there tail.\n\nYou put the board back. Your hands are doing the thing they do when there is suddenly a thing to build: they have stopped shaking, and you had not noticed until now that they were.",
+      "choices": [
+        {
+          "text": "Fifth floor. The receiver. If the transit mesh is alive you can hear it from the workshop without going into any tunnels, and you will do this one last build, and then — the list. The list will keep.",
+          "next": "workshop"
+        }
+      ]
+    },
+    "the_list": {
+      "id": "the_list",
+      "text": "You sit down at the desk and you read item seven, which you wrote six weeks ago in handwriting so steady it frightens you a little now.\n\n'7. Finish.'\n\nThat's all. One word. You were a professional; you had a horror of overlong documentation.\n\nUnderneath the legal pad, squared to its edges, is the letter. You wrote it back when item seven was item one and the other six hadn't occurred to you yet — before you understood that a man cannot leave until his systems are handed over, which is the most yourself you have ever been about anything. It is addressed to no one, because the auditing found no one. It is folded in thirds, office-style. You have unfolded it and read it maybe thirty times, always with the same feeling of reviewing a colleague's work: competent, clear, no action items for the reader. That was the point. Ask nothing of anyone. Exit cleanly, like a process that frees its memory.\n\nThe survivors' word for what you have planned is 'walking north.' North of the river the days come apart entirely — the blocks up there are running years, not hours, out of true, and people who walk into them do not so much die as stop being locatable. It has a reputation for painlessness. It has a reputation, whispered, for being like walking into an old summer.\n\nYou have the route marked. You have the letter. You have six crossed-out items testifying that you are a man who completes things.\n\nWhat you have not solved — the bug you have circled for six weeks with growing professional embarrassment — is the dog.\n\nB is watching you from the doorway. You could walk him down to the atrium family, who would take him, who would love him, roughly. You have walked him down there four times. You have walked him back up four times. In the hypothesis file this is logged, honestly, as: 'Test failed. Cause unknown. Cause known.'",
+      "item": {
+        "id": "resignation_note",
+        "name": "The Folded Resignation",
+        "description": "One page, folded in thirds, addressed to no one. Clear, competent, and proud of asking nothing. You have read it thirty times and it has never once read you back.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Solve the dog today. Walk him to the atrium, leave the lead, don't do the coward's loop back up the stairs. A finisher finishes.",
+          "next": "atrium_attempt"
+        },
+        {
+          "text": "There was something at the east door this morning — a voice under the street, a repeater clicking through its self-test. It is probably nothing. Check the nothing first; you have never in your life been able to leave a log unread.",
+          "next": "workshop"
+        }
+      ]
+    },
+    "atrium_attempt": {
+      "id": "atrium_attempt",
+      "text": "The atrium family's grandmother is the one who answers, because she is always the one who answers; the others work the gardens and she works the door, and her tariff for passage is conversation, which you have always paid in the smallest denominations you could.\n\n'The dog again,' she says. It is not a question. She looks at the lead in your hand, coiled and offered, and then at your face, for longer. She has buried, by her own count, a husband, a city, and two calendars. You do not know what your face is doing but you know she is reading it at a level of literacy you cannot block.\n\nB sits between you, splendidly neutral, taking the sun.\n\n'Fifth time,' she says. 'You know what I told my daughter? That man upstairs keeps trying to give away the only thing still holding him to the floor, and the dog keeps letting him fail at it. Smart animal. Knows his work.' She scratches B's head; B permits it grandly. 'I'll take him, when it's true. It isn't true yet. Something in you hasn't signed.'\n\nYou stand there holding the lead like a man holding the pen above the last line of a contract, and what you feel — you log it precisely, because precision is the last dignity — is not relief and not despair. It is the very specific irritation of an engineer whose clean shutdown keeps failing on the same dependency.\n\nFrom eleven floors up, faint, threading down the stairwell like water finding a level: a sound. Electronic. Three rising tones. Your receiver, in the workshop, which has said nothing but static for eleven months, has just announced a lock.\n\nThe grandmother hears it too. 'There,' she says, entirely without surprise, handing you back the lead. 'Go see what wants you.'",
+      "choices": [
+        {
+          "text": "Take the stairs two at a time, because your body has apparently voted before the committee finished sitting.",
+          "next": "workshop"
+        }
+      ]
+    },
+    "workshop": {
+      "id": "workshop",
+      "text": "The workshop is the truest room you have. Everyone keeps one true room, the atrium grandmother says, and everything else is corridor.\n\nIt is the old fifth-floor conference room, glass wall frosted with eleven months of your breath and solder smoke. The long table carries the archaeology of your sadnesses in strata: the water-pressure manifold from month one; the seam map with its pins; the seed-sprouting racks; the chess computer you rebuilt from a toy and a calculator and then could not bear to play against, because it played like a beginner and the only person you ever wanted to lose to played like the weather. And at the window end, the receiver — your longest build, your quietest one — antenna out through the sash, log scrolling on a salvaged screen.\n\nEleven months of static. You kept it running the way lighthouse keepers kept lamps lit after the shipping stopped: not for traffic. For form.\n\nToday the log is not static.\n\nLOCK 41.7 MHz — TRANSIT MESH NODE 118 — RELAY ACTIVE — VOICE TRAFFIC (REPEATING)\n\nYour hands are steady in the way they are only ever steady at a keyboard, which a doctor once told you was not a compliment. You isolate the traffic. It is short. It repeats on a cycle of sixty-one seconds, which means it is recorded, or scripted, or a person with a clock and unusual discipline. The tunnels chew the audio and spit out maybe half.\n\nBut the voice.\n\nYou would know the voice at any bitrate. You have, in fact, exactly this expertise and no other: eleven years of listening to this voice explain things across a chessboard, across a break-room table, across the whole arc of the previous world — explaining mating nets, explaining payoff matrices, explaining kindly and finally, once, on a night you have never filed anywhere because there is no folder that holds it, why she did not feel what you felt and why she was telling you the truth about it instead of leaving.\n\nOsy.\n\nThe fragment says: '— is not random. If anyone is receiving this, I can prove it's not random. Node one-one-eight, east concourse, I re-arm this beacon every —' and the tunnels eat the rest, and sixty-one seconds later she says it again, identically, patiently, like a woman who has decided the void will blink first.\n\nB is standing in the doorway with the lead in his mouth.\n\nYou did not give him the lead. The lead was in your coat. You look at the dog and the dog looks at you, and the tail moves once, slowly, like the second hand of a clock starting up.",
+      "choices": [
+        {
+          "text": "Triangulate first. You have one receiver, but a receiver and a stairwell and four hours make a synthetic array — pin the node, plot the route, go like a professional. She would go like a professional.",
+          "next": "triangulate"
+        },
+        {
+          "text": "Go now. East concourse, node 118, it's under the mile you already know. Every sixty-one seconds she says it again to nobody, and every one of those is a minute she has been talking to nobody for God knows how long.",
+          "next": "go_now"
+        },
+        {
+          "text": "Sit down. Be honest with the data before you spend the last of yourself on it: the tunnels are full of echoes, and the cruelest kind replay the dead. Sixty-one seconds, identical — that is exactly what a looped ghost sounds like.",
+          "next": "echo_doubt"
+        }
+      ]
+    },
+    "triangulate": {
+      "id": "triangulate",
+      "text": "You do it properly, because doing it properly is the only prayer you know.\n\nFour hours, three stairwell landings, one roof: you carry the receiver like a votive object from position to position, log signal strength, let the geometry confess. The mesh is bouncing her up through six dead stations, but bearing lines do not care about drama, and by early afternoon you have node 118 pinned to the east concourse of Verstand Street station — one and a half kilometres, two river-of-day seams to cross, a station whose entrance you have walked past two hundred times because it is four blocks from the building where you both used to work.\n\nOf course it is. She went somewhere with power, walls, and a defensible timetable. She went to ground in the world's basement and started, methodically, to make noise. It is the most her thing you have ever heard of, and you have a decade of documented evidence of her doing the most her thing.\n\nWhile the last plot dries you pack, and the packing tells you things about yourself you note without comment. Water, food for two days, the med roll — standard. Then: her coffee mug from the office, which you have carried through eleven months and two building changes and have never once used or explained. The chess computer, which weighs six hundred grams you cannot spare. You put the mug back. You take the chess computer. There is no version of this you could defend to an auditor, and for the first time in six weeks nobody is auditing.\n\nThe legal pad goes in last, or rather it doesn't: you stand over it, and item seven looks up at you, one word, six weeks old.\n\nYou do not cross it out. You are a precise man; nothing has been finished. But you take the pad off the desk and put it in the bottom of the pack, under the food, where a thing goes when it has been demoted from schedule to contingency.\n\nB watches the whole audit from the doorway, lead already in his mouth, entirely certain he is coming. He was never, for the record, in question.",
+      "item": {
+        "id": "triangulation_plot",
+        "name": "The Bearing Plot",
+        "description": "Four hours of signal strengths reduced to three pencil lines crossing at Verstand Street station, east concourse. Under it, in your writing: 'Node 118. She picked the basement of the old life. Of course she did.'",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Out the east door, down into the mile you know, following three pencil lines toward the first voice in eleven months.",
+          "next": "descent"
+        }
+      ]
+    },
+    "go_now": {
+      "id": "go_now",
+      "text": "You are down the stairs before you have finished deciding, which is not a thing you do — you are the man of the four-hour verification, the man colleagues once described, in a performance review you kept, as 'pathologically unwilling to act on incomplete information.' The review did not foresee the information being her.\n\nYou pack in nine minutes. Water, food, the med roll, headlamp, the pry bar. At the door you go back — you knew you would go back; even your impulsiveness is scheduled — and take the chess computer off the workshop table, six hundred grams of indefensible weight, and wedge it between the water bottles where it will be safe.\n\nThe legal pad you leave exactly where it lies. Item seven, uncrossed, one word. Halfway down the stairwell you stop, stand for four seconds in the dark, climb back up, and put the pad in the bottom of the pack. Not because the plan has changed, you tell yourself, in the tone you use for telling yourself things: because a document that important shouldn't be left where the weather can edit it.\n\nEven now, you are honest enough to flag that for what it is. You just don't have time to run the review.\n\nAt the east door B stands beside you as you lever off the boards for the second time today, lead in his mouth, tail doing its slow working metronome. The dark breathes out at both of you. Somewhere under that dark, on a sixty-one second cycle, with the patience of a woman who has decided the void will blink first, Osy is talking to nobody.\n\nNot to nobody. The correction arrives with a violence that surprises you. As of this morning, not to nobody.",
+      "choices": [
+        {
+          "text": "Down. Headlamp on, dog at heel, into the mile you know by the light you have.",
+          "next": "descent"
+        }
+      ]
+    },
+    "echo_doubt": {
+      "id": "echo_doubt",
+      "text": "You sit down. You make yourself do the cruel arithmetic, because eleven months alone have taught you exactly what hope costs when it bounces.\n\nHypothesis one: echo. The tunnels hold pockets of stopped time the way cellars hold cold. A looped broadcast is exactly what a pocket would preserve — some real transmission she made on some real day, possibly the last one, replaying under the city like the bakery woman who bakes her one bread forever. Sixty-one seconds, identical every cycle. Echoes are identical every cycle. The living drift.\n\nHypothesis two: she is alive, and she built a beacon, and it repeats because she scripted it to repeat, because battery discipline is exactly the kind of thing she would have.\n\nYou listen to nineteen more cycles with the log running and your ear against the speaker like a safecracker. And on cycle twenty you catch it — the thing that decides the rest of your life, eleven milliseconds long. A dog barks somewhere down there, mid-transmission, and she pauses. The pause is not in the next cycle. The pause was never in any previous cycle. The recording is being made fresh. She is not a loop. She is a woman with a clock, re-reading her own script every sixty-one seconds, hour after hour, with the discipline of a lighthouse — and someone down there has a dog, or there are dogs in the tunnels, and either way the signal is live, LIVE, and you are standing up so fast the chair goes over.\n\nB is in the doorway, lead in his mouth. He has been there, you realize, for some time, with the patience of an animal waiting for a slow colleague to finish reading the obvious.\n\n'She drifted,' you tell him, out loud, voice you haven't used in days. 'The loop didn't.' The tail swings once, magnanimous. Fine. He knew first. It goes in the log: he knew first.",
+      "item": {
+        "id": "live_signal_proof",
+        "name": "Cycle Twenty",
+        "description": "A spectrogram scrap: eleven milliseconds of bark, one human pause that never recurs. Proof of life, at the bitrate available. You have stared at richer data with less at stake and you cannot currently remember any of it.",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Pack properly, plot the bearings, and go get her voice back its second party. Down through the east door, professional to the last.",
+          "next": "descent"
+        }
+      ]
+    },
+    "descent": {
+      "id": "descent",
+      "text": "The tunnels keep their own calendar, and it is kinder than the street's.\n\nDown here the Halfway came gently: the days lie in long still reaches instead of shattered blocks, and your headlamp crosses the seams as mild changes in the air, a pressure in the ears, a smell of some other season's rain. You walk the service side of the eastbound tube, on the walkway the maintenance crews used, B's claws ticking a rhythm on the concrete that you find you are pacing your breath to.\n\nTwice the dark is inhabited. Once by people — a family moving west with handcarts, lamps hooded, who watch you pass with the flat courtesy of the after-world, nothing to trade and nothing to fear from a man whose pack is small and whose dog is calm. Once by an echo: a maintenance crew of four, tools ringing, radios crackling with a control room that burned two years ago, men absorbed in a repair they have completed ten thousand times and will complete forever. B walks a wide bow around them, hackles half-raised, and you keep your light low and your eyes forward, because you learned in month two that watching the shining ones too long files a groove in you that stays.\n\nAt the junction before Verstand Street the mesh node on the wall blinks its self-test at you — alive, relaying, part of her web — and past it, faint down the black concourse, you hear it with your own ears at last, unbounced, undigitized: a voice, saying its scripted lines to the dark, and then stopping, and then — this is the part no recording carried — sighing, briefly, off-script, like a broadcaster between takes who does not know the mic is warm.\n\nB's whole body goes taut as a drawn bow. He looks up at you. Permission.\n\n'Not yet,' you tell him, hand in his ruff, absurdly formal. 'We announce. Nobody surprises anybody in a tunnel.' You raise your voice down the concourse, and it comes out steadier than you have any right to: 'Node one-one-eight. Receiving you since this morning. Two of us — one's a dog. Coming in slow, lights up.'\n\nThe silence that follows lasts three of her cycles. Then the voice, live, unscripted, cracked wide open on the first word and rebuilt by the fourth, because she was always fastest at rebuilding:\n\n'...State your name and how you like your openings, because I only know one person that dog barks like.'\n\nB is already gone, a low golden arrow down the concourse, lead trailing, protocol abandoned, and you stand in the dark of the world's basement holding your last unfinished list, laughing for the first time in eleven months, walking toward the light she has strung along the platform edge.",
+      "choices": [
+        {
+          "text": "Walk into the light and answer the question. You have carried the answer eleven years: badly, and too fast, and she knows it.",
+          "next": "reunion"
+        }
+      ]
+    },
+    "reunion": {
+      "id": "reunion",
+      "text": "She has built a room out of a station.\n\nThe east concourse of Verstand Street is lit with strung work-lamps run off a battery bank the size of a chest freezer, and the light falls on order: crates in labeled ranks, water in graded containers, a wall of transit maps annotated in her minute vandal-proof hand, and a folding table bearing — you inventory it in one sweep and feel a decade fold up inside you like a map — a chessboard, mid-position, both chairs occupied by nobody.\n\nOsy stands in the middle of it with a wrench in one hand and your dog's entire head in the other, B having achieved her at flank speed and presented himself for the reunion he has personally never doubted. She is thinner. There is grey at her temple that is new, and a scar through one eyebrow that is new, and the way she looks at you — checking you against some internal record, top to bottom, twice — is not new at all. It is exactly the look she gave problems.\n\n'You're alive,' she says, in the tone of a hypothesis surviving review. And then, because she is Osy and mercy always came from her dressed as accuracy: 'You look like a man who's been eating properly and sleeping terribly. The dog looks perfect. I assume that ranking reflects your priorities.'\n\nYou say her name. It is most of what you can do. Eleven months of silence have left your voice a decommissioned system, and anyway everything queued behind her name is contraband: none of it survives the treaty the two of you signed, without paper, on a night years ago — the treaty whose single clause is that you may stand anywhere in her life except that one room, and in exchange she will never once pretend the room isn't there.\n\n'Sit down before you fall down,' she says, kicking a crate toward you. 'And then I need your eyes. You did signals, you did data — good. Because either I have gone very quietly insane down here, or —' she turns the wrench in her hand like a piece she's deciding where to place, and her voice drops into the register that used to empty conference rooms — 'the disasters are choosing. And I can prove it.'\n\nOn her wall of maps, you see it now: red thread. Dozens of pins. Every pin a catastrophe, every thread converging on a question she has not yet said out loud.\n\nB settles onto her feet with a sigh of total vindication. The station hums. Sixty-one seconds pass, and no broadcast goes out, because the beacon has done its work: the void blinked.",
+      "choices": [
+        {
+          "text": "Sit down on the crate, in the light, at the edge of the rest of your life. 'Show me everything. From the first pin.'",
+          "next": "end_ch1"
+        }
+      ]
+    },
+    "end_ch1": {
+      "id": "end_ch1",
+      "text": "She talks until the batteries dim, and you listen the way you have not listened to anything since the world broke: fully, professionally, alive in every instrument.\n\nStorms that route around certain blocks. Collapses timed to the minute. A water main that failed in the one hour that emptied a building before the fire — 'lucky,' the survivors called it, and Osy wrote the word on the map and circled it, because she has a pathologist's respect for the word lucky. Thread after red thread. A world of wounds, and under the wounds, she is certain, a hand.\n\n'Entropy doesn't have preferences,' she says, tapping the map. 'This has preferences. Somebody is playing, and everyone else thinks the weather is just weather.' She looks at you across the work-lamps, and there it is, the old current, the thing that was always better than what you wanted and never enough: the two of you, pointed at the same problem, wheels engaged. 'I've been assembling this for a year with no one to check my work. So check it. Find the flaw. I'll be delighted, I'll be insufferable, if it's pareidolia I want to know by Friday.'\n\nYou look at the wall. Eleven years of loving her taught you her failure modes, and this is not one of them; the pins are too many and the threads too straight. But you will check. You will check like a professional, because that is the thing you have that is worth her having.\n\nMuch later, in the guest bunk she assembles out of crates with terrifying speed — 'you're staying, obviously; the tunnels eat amateurs' — you take out the legal pad to log the day, because the log is the one system still running from the old regime. Item seven looks up at you. One word, six weeks old, written by a man who had finished his audit.\n\nYou do not cross it out. You write, beneath it, in the same steady hand:\n\n'8. First, this.'\n\nB is asleep across the doorway of her light, at the point of maximum inconvenience, exactly between her and the dark. You put out the lamp. Underground, in the basement of the old world, three heartbeats keep three different times, and for once, none of them is wrong.",
+      "end": true
+    }
+  }
+}
