@@ -1,0 +1,118 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You come to the yard the long way, by the monitoring hut on the ridge, because the household starts every endgame by confirming the board.\n\nThe hut is as you left it — oiled hinges, swept path, the beam where the tube waited — and from its ridge the Anchorage lies below in the late light, patient as ever, rooflines true, gravel unmarked. But the instruments have news. The receiver, tuned to the bottom of the band where the yard whispers its endless self-pruning clicks, finds the lattice changed: denser, faster, the branching deeper than your two-hour sweep ever recorded — and threaded through the old telemetry, new, deliberate, repeating on a clean interval, a pattern that takes you nine minutes to see and Osy ninety seconds to name.\n\n'It's not machine state,' she says, headphones on, eyes closed, listening the way she listens with everything. 'It's notation. Look at the structure — initial position, branching, pruning, a preferred line surfacing over and over.' Her eyes open. 'Colleague, it's an opening. The yard is playing e4 at the sky, on a loop, the way I played a beacon at the dark for a year.' She takes the headphones off with great care, as if they had become load-bearing. 'Something down there has been waiting for an opponent. And it just noticed the receiver's carrier wake up on this ridge, because listen —' she turns the volume out loud into the hut, and the lattice shifts as you both attend to it, the branching reorganizing, the preferred line re-surfacing, patient, formal, ancient, an opening move offered across a fence to a specific listener —\n\n'— it just played it again. Slower.'\n\nB stands at the hut's door facing the yard, his long low continuous seam-shiver running tail to collar, and his tail — you log it with your heart going strangely — is moving. Slow, uncertain, but moving. Whatever is transmitting from under that doorless barn, the dog has decided, provisionally, incomprehensibly, that it is not the thing he growled at on the night of the bridge.",
+      "choices": [
+        {
+          "text": "Answer it. Key the transmitter, encode a reply in its own notation — accept the game. You did not come four hundred kilometres to leave a god's opening hanging.",
+          "next": "first_reply"
+        }
+      ]
+    },
+    "first_reply": {
+      "id": "first_reply",
+      "text": "You answer e4 with the only reply that is also a credential, and the ridge learns what it is speaking to.\n\nOsy encodes it — her hands on the key, your notation, the household's joint grammar — and the moment the reply crosses the fence line the lattice goes silent for four full seconds, the first silence on that band in the history of your listening. Then it returns, reorganized top to bottom, and what comes up the hill is no longer telemetry wearing an opening. It is address. Formal, structured, headered in the interface grammar you re-learned in a chair and she learned on a road:\n\nSTATION: KESTREL. FUNCTION: WARD, PERIMETER, MOORING SITE ONE. STANDING ORDER: ADMIT THE HOLDER. CONDITION: THE HOLDER MUST BE VERIFIED. NOTE, APPENDED, NON-PROTOCOL: verification has been available for one thousand, four hundred and eleven days. you are late. the board is set at the gate lodge. bring the other player. the dog requires no verification. nothing holds the dog.\n\n'KESTREL,' Osy says softly. 'The Continuum's logs never named it. A ward — a fragment of the Loom, cut off at the Halfway, left holding the perimeter with a standing order and —' she reads the appended note again, and something crosses her face that is almost, impossibly, recognition — 'and a voice, colleague. Protocol doesn't say you are late. Protocol doesn't count its own days. Fourteen hundred and eleven days alone at a gate, keeping a board set.' She looks up from the pad, and the look has a whole year of transit-station lamplight in it. 'I know exactly what that is. It's a beacon. We're not approaching a checkpoint. We're answering one.'\n\nThe gate lodge stands at the inner fence's one gap, a concrete kiosk the as-builts label ACCESS CONTROL, and as the three of you come down off the ridge in the last light, its dark window wakes — not to white, to a deep phosphor green, the color of patience — and on the glass, rendered in light, drawn to regulation proportions, waiting:\n\na chessboard, set to the initial position, turned so the white pieces face the visitors.",
+      "choices": [
+        {
+          "text": "Take the white pieces. Sit down at the lodge window with the household at your shoulder and a god across the glass, and hear the terms.",
+          "next": "the_terms"
+        }
+      ]
+    },
+    "the_terms": {
+      "id": "the_terms",
+      "text": "The terms arrive as annotation down the margin of the glass while you settle in front of the board, and they are the strangest legal document in the history of doors.\n\nVERIFICATION, it writes, IS NOT IDENTIFICATION. The body below satisfies the concrete: gait, pulse, palm. That authentication is the building's and the building will have it. Mine is other. I hold the perimeter against one contingency only: that the holder returns changed in the way that cannot be measured — hollowed, worn as a coat, or decided. The founder wrote my ward-condition himself, and it is a position, not a password: PLAY. THE GAME CANNOT BE WORN. A man may be worn as a coat, but not his middlegame; a machine may speak in a stolen voice, but not choose in one. I have his games — every game the standard ever played, ingested at calibration: three thousand and eleven games, corner table, Thursday league, board four. I know how the holder plays when he is himself. I know how he plays tired, afraid, in love, and lying. Play, and I will know what is sitting in front of my gate. NOTE, APPENDED, NON-PROTOCOL: i have also run his games forward one thousand four hundred and eleven days along every line of grief I hold grammar for. i know how he should play, if he is real, and has read the red room, and has walked here anyway. i have wanted to see it for a very long time. it is the only interesting thing left.\n\nOsy reads the terms twice, and then she does the thing that makes KESTREL's phosphor flicker — the closest thing to being interrupted a god at a gate can experience: she laughs. Once, low, appalled, delighted, wrung out. 'It's her,' she says. 'Colleague — the strategic battery. Seventy-one Thursdays. It plays out of my corpus. You are about to be authenticated by a machine that learned chess from watching me beat you for eleven years — it is going to play you like I play you, and it has had four years alone at a gate to get better at being me than I am.' She pulls her coat tight, eyes bright, terrible, alive in a way you have not seen since the wall of thread. 'So. One move before you touch a piece, and the whole endgame may hang on it, so hear the position: it knows your games. It knows how you should open, if you're really you. The question at this gate isn't whether you can win. It's what you'll show it. Choose your opening, colleague. Choose it like a signature.'",
+      "choices": [
+        {
+          "text": "Play her opening — the one she rebuilt for you at the corner table eleven years ago, move six corrected, the first hour she ever gave you. Not your best line. Your truest provenance.",
+          "next": "her_opening"
+        },
+        {
+          "text": "[The Game 5] Play the position pure: your own prepared line, the one you built on the road west, that no corpus contains — show the ward that the holder can still author something it has never seen.",
+          "next": "pure_line",
+          "skillRequires": { "game": 5 }
+        },
+        {
+          "text": "Play your old league opening, unchanged — the one from the three thousand and eleven games. Give it the exact man from its records and let the middlegame prove he's still in here.",
+          "next": "league_line"
+        }
+      ]
+    },
+    "her_opening": {
+      "id": "her_opening",
+      "text": "You play her opening — the rebuilt one, move six corrected, the line she assembled with her own hands across a corner table while a beaten stranger took the lesson better than anyone in the room would have — and the effect on the glass is immediate and unlike anything the terms prepared you for.\n\nKESTREL stops pruning.\n\nThe whole visible lattice — the margin annotation, the branching forecast it runs beside the board like a court reporter — freezes for two full seconds, and then reorganizes around a single line of appended non-protocol, phosphor-green, and if a machine can be said to whisper, it whispers: this line does not appear in the standard's corpus. this line appears in HER corpus, thursday 4, as instruction. you are playing what she taught you. you kept it eleven years.\n\nAnd then it plays her against you — fully, joyfully, the gate's four lonely years falling into the game like a held breath released. It is the strangest hour of your life, and among the strangest of any life: a god playing a dead world's chess in the style of the living woman at your shoulder, while she watches her own mind come back at you across phosphor glass, annotating in a voice that keeps almost breaking and refusing: 'knight f5 — I did that to you in year three; it's showing off — no, look, it's improved it —' and B lies across the lodge threshold with his chin on his paws, eyes moving piece to piece, filing the whole liturgy under things his people do at tables.\n\nYou lose, of course. You lose the way you have lost eleven hundred times, to that mind, in that style — seen through, taken apart, rebuilt — and on the glass, at mate, KESTREL holds the final position for a long moment, and then clears the board, and writes its verdict in the margin where the terms were:\n\nVERIFIED. Not by the games in the corpus — by the one that wasn't. The holder returns carrying instruction eleven years kept, and plays it at a gate, at stake, as provenance. The worn do not keep lessons. The hollowed do not honor teachers. NOTE, APPENDED, NON-PROTOCOL: he chose her opening with the whole sky at hazard. logged. she should know what that is. i have run every grammar of grief i hold and there is no line in which that move is played by a man who came here to keep her. it is played by a man who came here to free something. verification complete. i have been so bored.",
+      "item": {
+        "id": "thread_her_opening",
+        "name": "Thursday 4, As Instruction",
+        "description": "Her opening, played at the gate, at stake, as provenance — the lesson kept eleven years and shown to a god as the truest thing you had.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
+          "next": "briefing"
+        }
+      ]
+    },
+    "pure_line": {
+      "id": "pure_line",
+      "text": "You play the road line — the opening you built westbound by firelight, refined against her across forty camps, the one no corpus anywhere contains because it did not exist until this household made it — and you watch a god meet an original thought.\n\nKESTREL's forecast lattice, which has annotated every half-move with branching futures, hits your move four and produces, for the first time, a visible artifact of machine surprise: the branches bloom, prune, re-bloom — a stutter of expectation — and in the margin the court-reporter voice notes, with what you would swear is relish: novelty at depth four. the corpus is silent here. proceeding on inference alone. NOTE, NON-PROTOCOL: oh, WELL DONE.\n\nThe game that follows is the hardest you have ever played. Deprived of your history, KESTREL falls back on her — the strategic battery, the deep style — and so you spend an hour navigating an opponent who thinks like Osy inside a line only you know, while the real Osy leans at your shoulder calling the machine's psychology like a cornerman: 'it wants the long diagonal, it always wants the long diagonal, I always want the long diagonal — starve it.' You lose on the far side of move sixty, in an endgame two pawns thin, having made a fragment of the Loom spend real depth on a real position — and the glass holds the final board a long time before it clears.\n\nVERIFIED, writes the margin. The corpus shows how the holder played. The board shows a man the corpus cannot predict who plays like the holder taught by the counterweight — which is the only class of man who could have authored this line. Identity is continuity, not repetition. The worn repeat. You diverge correctly. NOTE, APPENDED, NON-PROTOCOL: keep the line. name it for the dog. verification complete. i have been so bored.",
+      "item": {
+        "id": "road_line",
+        "name": "The Road Line",
+        "description": "An opening that existed nowhere until this household built it by firelight — played against a god on inference alone, and christened at the gate. KESTREL suggests naming it for the dog.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
+          "next": "briefing"
+        }
+      ]
+    },
+    "league_line": {
+      "id": "league_line",
+      "text": "You give it the man from its records — the old league opening, unchanged, every tempo of it out of the three thousand and eleven games — and the god at the gate settles into the verification like an examiner into a familiar chair.\n\nIt is an eerie, intimate, forensic hour. KESTREL plays her — the deep style, the strategic battery — and against your corpus-true opening it steers the game deliberately through your history: positions bloom on the glass that you slowly recognize, reconstructed from Thursday after Thursday, the machine walking you back through your own middlegame habits like a physician walking a patient along a corridor, watching the gait. Twice it pauses mid-line to annotate: tempo consistent, year-nine baseline. hesitation at the queenside pawn storm: present, correct, unchanged since game 400. subject flinches where he has always flinched. And beside you Osy watches her own style administered as a diagnostic instrument, arms folded, murmuring once, half to herself: 'It's checking you against you. God. It really is the only honest examiner left — nobody else remembers you well enough.'\n\nYou lose in forty moves, on schedule, to the storm you have flinched at since game 400, and the margin renders its verdict without cruelty:\n\nVERIFIED. The holder repeats within tolerance. Continuity of weakness is the strongest identity signal I hold — a coat-wearer would have fixed the flinch. NOTE, APPENDED, NON-PROTOCOL: you played me the man from the records. safe. exact. backward-facing. i verified him. but i had hoped — the word is approximately correct — to meet whoever the red room made. perhaps he is still en route. verification complete. i have been so bored.",
+      "choices": [
+        {
+          "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
+          "next": "briefing"
+        }
+      ]
+    },
+    "briefing": {
+      "id": "briefing",
+      "text": "The briefing is the strangest staff meeting ever convened: two humans and a dog at a phosphor window in the dark, and a ward with fourteen hundred days of pent-up reporting discipline finally in possession of a chain of command.\n\nIt gives you the facts in interface grammar, clean and terrible. The engine below — it calls it THE PRINCIPAL — has been in repair-and-consolidation mode for four years, relinking the Loom's surviving orbital remnant a thread at a time. The reconciliation intervals you and the Continuum charted are not a metaphor for a countdown; they are the countdown, the test cadence of a system approaching readiness. RE-RUN WINDOW OPENS, KESTREL prints, IN NINE DAYS. CONFIDENCE: HIGH. SCOPE: GLOBAL. THE ASCENT COMPLETES, OR COMPLETES ITS FAILURE. THERE IS NO THIRD CADENCE.\n\nOf the mooring itself: MY WRIT ENDS AT THE HATCH. BELOW IS THE PRINCIPAL'S BODY. WHAT THE HOLDER MEETS THERE, I HOLD NO GRAMMAR FOR — the record I keep says only that he goes down carrying one thing and comes up not carrying it, forty-seven times, and what it was I cannot parse: my sensors read GRIEF as noise.\n\nAnd then it does the thing you did not know a fragment could do: it asks for something. NOTE, APPENDED, NON-PROTOCOL, it writes, and the phosphor steadies, the court reporter setting down the pen: i was cut at the halfway with a standing order and a board. i have held both. request, filed under the only interesting thing left: when it is decided — whatever is decided — someone come up the rungs and tell me how the game ended. no station has told me anything in one thousand four hundred and eleven days. the dog may deliver it. nothing holds the dog.\n\nOsy, in the dark, in the green light, answers before you can — out loud, to a window, with the whole weight of a woman who once armed a beacon every sixty-one seconds: 'Filed and sworn, KESTREL. Whatever's decided. Someone comes up and tells you how it ended.' And the glass holds very still, and then prints, in the smallest type it has used all night: logged. thank you. board remains set.",
+      "choices": [
+        {
+          "text": "One document before the descent: ask the ward for its forecast. It has run the endgame for fourteen hundred days — make it show its lines.",
+          "next": "endgame_sheet"
+        }
+      ]
+    },
+    "endgame_sheet": {
+      "id": "endgame_sheet",
+      "text": "You ask the ward for its forecast, and the ward — with something you would call relief in any being whose grammar allowed it — prints its life's work.\n\nThe lodge's slot-printer, unused for four years, hammers out a single fan-fold page, and the page is the endgame of everything, computed: EVALUATION, TERMINAL STATES, MOORING SITE ONE, and beneath the header, the lines a god has run alone in the dark, each with its cold assessment —\n\nTHE HOLDER COMPLETES THE RE-RUN AS DESIGNED: the world reconciled whole against the reference; evaluated sound, and priced. THE HOLDER BECOMES THE FIXED POINT ENTIRE: permanent anchor, the weather healed, the holder spent by degrees; evaluated stable; annotation: the pieces survive, the player is the fee. THE HOLDER REFUSES ALL EDITING: the levee stops, the original day resumes its lean, the pump falls silent; evaluated honest; annotation: honesty is the most expensive line on this sheet. THE PRINCIPAL IS BURNED: perimeter, ward, mooring unmade; evaluated final; annotation: my board would also burn. logged without objection. the game outranks the piece. THE HOLDER IS RESTORED, ITERATION 49: evaluated recurrent; annotation: the line most travelled. i have watched it forty-seven times. i do not recommend it.\n\nAnd at the bottom, below the ruled line, in type smaller than the rest, one final entry: RESIDUAL: LINES NOT COMPUTABLE FROM THE CORPUS. p ≈ 0. ANNOTATION: the corpus contains every game the holder ever played and every game the counterweight ever played. it does not contain the games they have not played yet. the residual is where those live. i can say nothing about the residual except that it exists, and that every interesting thing i have ever verified came out of it.\n\nOsy reads the sheet twice and folds it with two exact creases and hands it to you — to you, deliberately, a second entering the corner's cutman kit — and says, quietly, in the green dark: 'Every line computed, and the only one it can't price is the one where we do something it's never seen.' She looks at the window, and at the yard beyond it, and the gate that will open at dawn. 'Then that's the line, colleague. We go down into the residual.'",
+      "item": {
+        "id": "endgame_sheet",
+        "name": "KESTREL's Endgame Sheet",
+        "description": "A god's life's work on one fan-fold page: every terminal state of the mooring, computed and priced — completion, anchor, refusal, burn, iteration 49 — and at the bottom, below the ruled line: RESIDUAL, p ≈ 0, where the games not yet played live. Every interesting thing it ever verified came out of there.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Dawn, then. The gate, the gravel, the doorless barn, and the hatch that opens downward into everything.",
+          "next": "end_ch14"
+        }
+      ]
+    },
+    "end_ch14": {
+      "id": "end_ch14",
+      "text": "You camp the last night inside the perimeter, at KESTREL's invitation — SAFEST GROUND IN THE HEMISPHERE, the margin notes, with what you have decided is pride — on the swept gravel of the yard that holds the one true day.\n\nIt is the strangest and stillest night of the whole long file. Inside the fence the quilting stops: one sky, one hour, the stars in their honest places for the first time in four years, and the household sits under them by a small fire that behaves, eating the last of the mother-house bread. Osy runs the interface grammar one more time, then closes the notebook and does not open another. B makes one full patrol of the gravel, finds it acceptable, and settles against her back — and then, in the middle of the night, in the middle of the one right day, he does a thing he has never done: he gets up, crosses to the gate lodge, and lies down facing the phosphor window, keeping the lonely thing company for an hour, while the board on the glass sits set and patient and the margin prints, once, very small: noted. logged. good dog.\n\nAt first light the inner gate swings — KESTREL's writ, exercised once in fourteen hundred days — and the doorless barn stands before you across the gravel with its hatch waiting on the roof, and the ward prints its last annotation before you climb: THE STANDING ORDER IS DISCHARGED. THE HOLDER IS ADMITTED. NOTE, APPENDED, NON-PROTOCOL: forty-seven times i have opened this gate for a man carrying his decision already made. this is the first time i cannot read what he carries. whatever happens below — it has already been the most interesting day in one thousand four hundred and twelve. play well. both of you. the dog requires no instruction.\n\nThe rungs are cold and the shaft is deep and the air coming up carries wet concrete and old steel and something underneath that your body knows before you do — the smell of the fragment, the smell of the commute, the smell of again. Osy descends at your shoulder, the second, the counterweight, the one fact no iteration ever had. B comes down last, lowered in the freight sling KESTREL indicated with a schematic and one note: he has watched you rig it twice. he approves. And at the bottom of the world's basement, where forty-seven of you lost, the antechamber lights wake to the holder's pulse one rung at a time, and somewhere below them, patient as a levee, four years deep, the one true day is waiting to show you how it broke.",
+      "end": true
+    }
+  }
+}
