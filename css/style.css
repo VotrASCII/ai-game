@@ -845,3 +845,176 @@ button {
 .hidden {
   display: none !important;
 }
+
+/* ── Waypoint (skill allocation) ───────────────────────────────── */
+.waypoint-panel {
+  margin: 2.5rem 0 1rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid var(--border-bright);
+  background: var(--bg-panel);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.waypoint-panel.wp-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.waypoint-header {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.waypoint-points {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-mid);
+  margin-bottom: 1.25rem;
+}
+
+.waypoint-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.wp-skill-info { min-width: 0; }
+
+.wp-skill-name {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.wp-skill-desc {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-top: 0.15rem;
+}
+
+.wp-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.wp-btn {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  line-height: 1;
+  color: var(--text-mid);
+  border: 1px solid var(--border-bright);
+  background: transparent;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.wp-btn:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+.wp-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.wp-dots {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+.wp-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-bright);
+  background: transparent;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.wp-dot.filled {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.wp-dot.pending {
+  background: var(--accent-dim);
+  border-color: var(--accent-dim);
+}
+
+.wp-confirm {
+  display: block;
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.7rem;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  border: 1px solid var(--border-bright);
+  background: transparent;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.wp-confirm:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
+
+/* ── Skills in inventory panel ─────────────────────────────────── */
+.inv-skills {
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.inv-skills-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.inv-skill-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.inv-skill-name {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+}
+
+/* ── Skill tag on choices ──────────────────────────────────────── */
+.choice-skill-tag {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  color: var(--accent-dim);
+  font-style: normal;
+}

@@ -16,10 +16,13 @@ const Game = {
 
   /* ── Runtime state ───────────────────────────────────────────── */
   state: {
-    currentSceneId: null,
-    inventory:      [],
-    history:        [],
-    isTyping:       false,
+    currentSceneId:   null,
+    inventory:        [],
+    history:          [],
+    isTyping:         false,
+    skills:           {},
+    skillPoints:      0,
+    waypointsClaimed: [],
   },
 
   /* ── Story data ──────────────────────────────────────────────── */
@@ -131,7 +134,7 @@ const Game = {
     this.manifest         = null;
     this.data             = { scenes: {}, startScene: 'start' };
     this.currentChapterId = null;
-    this.state            = { currentSceneId: null, inventory: [], history: [], isTyping: false };
+    this.state            = this._freshState(null);
     this._loadProgress();
 
     try {
@@ -483,10 +486,22 @@ const Game = {
     await this._transitionTo('game', { sceneId: ch1.startScene, chapterCard: ch1 });
   },
 
-  /* Transfer persistent items from the previous chapter's completed inventory */
+  _freshState(startScene) {
+    return {
+      currentSceneId:   startScene,
+      inventory:        [],
+      history:          [],
+      isTyping:         false,
+      skills:           {},
+      skillPoints:      0,
+      waypointsClaimed: [],
+    };
+  },
+
+  /* Transfer persistent items and skills from the previous chapter's completed state */
   _startChapterFresh(ch) {
-    const idx     = this.manifest.chapters.findIndex(c => c.id === ch.id);
-    const carried = [];
+    const idx  = this.manifest.chapters.findIndex(c => c.id === ch.id);
+    const next = this._freshState(ch.startScene);
 
     if (idx > 0) {
       const prevCh   = this.manifest.chapters[idx - 1];
@@ -494,11 +509,14 @@ const Game = {
       if (prevProg?.completedInventory) {
         prevProg.completedInventory
           .filter(i => i.persistent)
-          .forEach(i => carried.push(i));
+          .forEach(i => next.inventory.push(i));
       }
+      if (prevProg?.completedSkills)      next.skills           = { ...prevProg.completedSkills };
+      if (prevProg?.completedSkillPoints) next.skillPoints      = prevProg.completedSkillPoints;
+      if (prevProg?.completedWaypoints)   next.waypointsClaimed = [...prevProg.completedWaypoints];
     }
 
-    this.state = { currentSceneId: ch.startScene, inventory: carried, history: [], isTyping: false };
+    this.state = next;
     this._refreshInventoryUI();
   },
 
@@ -512,10 +530,13 @@ const Game = {
 
   _restoreState(save) {
     this.state = {
-      currentSceneId: save.currentSceneId,
-      inventory:      save.inventory || [],
-      history:        save.history   || [],
-      isTyping:       false,
+      currentSceneId:   save.currentSceneId,
+      inventory:        save.inventory        || [],
+      history:          save.history          || [],
+      isTyping:         false,
+      skills:           save.skills           || {},
+      skillPoints:      save.skillPoints      || 0,
+      waypointsClaimed: save.waypointsClaimed || [],
     };
     this._refreshInventoryUI();
   },
@@ -546,6 +567,13 @@ const Game = {
       this._addItem(scene.item);
     }
 
+    if (scene.waypoint) {
+      const key = `${this.currentChapterId}:${sceneId}`;
+      if (!this.state.waypointsClaimed.includes(key)) {
+        await this._runWaypoint(scene.waypoint, key);
+      }
+    }
+
     if (scene.end) {
       this._onChapterEnd();
       return;
@@ -564,8 +592,11 @@ const Game = {
     const chIdx  = this.manifest.chapters.findIndex(c => c.id === chId);
     const nextCh = this.manifest.chapters[chIdx + 1] || null;
 
-    this._progress.chapters[chId].status             = 'complete';
-    this._progress.chapters[chId].completedInventory = [...this.state.inventory];
+    this._progress.chapters[chId].status               = 'complete';
+    this._progress.chapters[chId].completedInventory   = [...this.state.inventory];
+    this._progress.chapters[chId].completedSkills      = { ...this.state.skills };
+    this._progress.chapters[chId].completedSkillPoints = this.state.skillPoints;
+    this._progress.chapters[chId].completedWaypoints   = [...this.state.waypointsClaimed];
     if (nextCh) this._initChapterProgress(nextCh.id);
     this._saveProgress();
 
@@ -697,8 +728,16 @@ const Game = {
      CHOICES
   ═══════════════════════════════════════════════════════════════ */
   _showChoices(choices) {
-    choices.forEach((choice, idx) => {
-      const locked = choice.requires && !this.hasItem(choice.requires);
+    let shown = 0;
+    choices.forEach(choice => {
+      const itemLocked  = choice.requires && !this.hasItem(choice.requires);
+      const skillLocked = choice.skillRequires && !this._meetsSkills(choice.skillRequires);
+      const locked      = itemLocked || skillLocked;
+
+      /* Hidden-thread choices: silently absent unless unlocked. */
+      if (locked && choice.hideLocked) return;
+
+      const idx = shown++;
 
       const el = document.createElement('div');
       el.className = 'choice' + (locked ? ' locked' : '');
@@ -712,7 +751,15 @@ const Game = {
       textSpan.className = 'choice-text';
       textSpan.textContent = choice.text;
 
-      if (locked) {
+      if (choice.skillRequires) {
+        const tag = document.createElement('em');
+        tag.className = 'choice-skill-tag';
+        tag.textContent = ` [${Object.entries(choice.skillRequires)
+          .map(([id, rank]) => `${this._skillName(id)} ${rank}`).join(', ')}]`;
+        textSpan.appendChild(tag);
+      }
+
+      if (itemLocked) {
         const reqNote = document.createElement('em');
         reqNote.textContent = ` [requires: ${this._resolveItemName(choice.requires)}]`;
         textSpan.appendChild(reqNote);
@@ -746,13 +793,158 @@ const Game = {
   },
 
   /* ═══════════════════════════════════════════════════════════════
+     SKILLS
+  ═══════════════════════════════════════════════════════════════ */
+  skillRank(skillId) {
+    return this.state.skills[skillId] || 0;
+  },
+
+  _meetsSkills(reqs) {
+    return Object.entries(reqs).every(([id, rank]) => this.skillRank(id) >= rank);
+  },
+
+  _skillDefs() {
+    return this.manifest?.skills || [];
+  },
+
+  _skillName(skillId) {
+    return this._skillDefs().find(s => s.id === skillId)?.name || skillId;
+  },
+
+  _skillMax() {
+    return this.manifest?.skillMax || 5;
+  },
+
+  /* Waypoint: award points and let the player allocate them. Resolves
+     when the allocation is confirmed; unspent points carry forward. */
+  _runWaypoint(waypoint, key) {
+    return new Promise(resolve => {
+      const defs    = this._skillDefs();
+      const max     = this._skillMax();
+      const alloc   = {};
+      defs.forEach(d => { alloc[d.id] = 0; });
+      let remaining = (waypoint.points || 0) + this.state.skillPoints;
+
+      const panel = document.createElement('div');
+      panel.className = 'waypoint-panel';
+
+      const header = document.createElement('div');
+      header.className = 'waypoint-header';
+      header.textContent = waypoint.label || 'Waypoint';
+      panel.appendChild(header);
+
+      const ptsLine = document.createElement('div');
+      ptsLine.className = 'waypoint-points';
+      panel.appendChild(ptsLine);
+
+      const rows = [];
+
+      const refresh = () => {
+        ptsLine.textContent = `${remaining} point${remaining === 1 ? '' : 's'} to spend`;
+        rows.forEach(({ def, dots, minus, plus }) => {
+          const base  = this.skillRank(def.id);
+          const total = base + alloc[def.id];
+          dots.forEach((dot, i) => {
+            dot.className = 'wp-dot' +
+              (i < base ? ' filled' : i < total ? ' pending' : '');
+          });
+          minus.disabled = alloc[def.id] === 0;
+          plus.disabled  = remaining === 0 || total >= max;
+        });
+        confirmBtn.textContent = remaining > 0
+          ? `Confirm (${remaining} unspent — carried forward)`
+          : 'Confirm';
+      };
+
+      defs.forEach(def => {
+        const row = document.createElement('div');
+        row.className = 'waypoint-row';
+
+        const name = document.createElement('div');
+        name.className = 'wp-skill-name';
+        name.textContent = def.name;
+        name.title = def.desc || '';
+
+        const desc = document.createElement('div');
+        desc.className = 'wp-skill-desc';
+        desc.textContent = def.desc || '';
+
+        const controls = document.createElement('div');
+        controls.className = 'wp-controls';
+
+        const minus = document.createElement('button');
+        minus.className = 'wp-btn';
+        minus.textContent = '−';
+        minus.addEventListener('click', () => {
+          if (alloc[def.id] > 0) { alloc[def.id]--; remaining++; refresh(); }
+        });
+
+        const dotWrap = document.createElement('div');
+        dotWrap.className = 'wp-dots';
+        const dots = [];
+        for (let i = 0; i < max; i++) {
+          const dot = document.createElement('span');
+          dot.className = 'wp-dot';
+          dotWrap.appendChild(dot);
+          dots.push(dot);
+        }
+
+        const plus = document.createElement('button');
+        plus.className = 'wp-btn';
+        plus.textContent = '+';
+        plus.addEventListener('click', () => {
+          if (remaining > 0 && this.skillRank(def.id) + alloc[def.id] < max) {
+            alloc[def.id]++; remaining--; refresh();
+          }
+        });
+
+        controls.appendChild(minus);
+        controls.appendChild(dotWrap);
+        controls.appendChild(plus);
+
+        const left = document.createElement('div');
+        left.className = 'wp-skill-info';
+        left.appendChild(name);
+        left.appendChild(desc);
+
+        row.appendChild(left);
+        row.appendChild(controls);
+        panel.appendChild(row);
+
+        rows.push({ def, dots, minus, plus });
+      });
+
+      const confirmBtn = document.createElement('button');
+      confirmBtn.className = 'wp-confirm';
+      confirmBtn.addEventListener('click', () => {
+        defs.forEach(def => {
+          if (alloc[def.id] > 0) {
+            this.state.skills[def.id] = this.skillRank(def.id) + alloc[def.id];
+          }
+        });
+        this.state.skillPoints = remaining;
+        this.state.waypointsClaimed.push(key);
+        this._saveChapterState();
+        this._refreshInventoryUI();
+        panel.remove();
+        resolve();
+      });
+      panel.appendChild(confirmBtn);
+
+      refresh();
+      this.el.sceneText.appendChild(panel);
+      requestAnimationFrame(() => panel.classList.add('wp-visible'));
+    });
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
      INVENTORY
   ═══════════════════════════════════════════════════════════════ */
   _addItem(item) {
     this.state.inventory.push(item);
     this._saveChapterState();
     this._refreshInventoryUI();
-    this._showItemNotification(item);
+    if (!item.silent) this._showItemNotification(item);
   },
 
   hasItem(itemId) {
@@ -760,15 +952,40 @@ const Game = {
   },
 
   _refreshInventoryUI() {
-    this.el.inventoryCount.textContent = this.state.inventory.length;
+    const visible = this.state.inventory.filter(i => !i.silent);
+    this.el.inventoryCount.textContent = visible.length;
+    this.el.inventoryList.innerHTML = '';
 
-    if (!this.state.inventory.length) {
-      this.el.inventoryList.innerHTML = '<p class="inv-empty">Nothing carried.</p>';
+    const defs = this._skillDefs();
+    if (defs.length) {
+      const block = document.createElement('div');
+      block.className = 'inv-skills';
+      const label = document.createElement('div');
+      label.className = 'inv-skills-label';
+      label.textContent = 'Skills';
+      block.appendChild(label);
+      defs.forEach(def => {
+        const row = document.createElement('div');
+        row.className = 'inv-skill-row';
+        const rank = this.skillRank(def.id);
+        const dots = Array.from({ length: this._skillMax() },
+          (_, i) => `<span class="wp-dot${i < rank ? ' filled' : ''}"></span>`).join('');
+        row.innerHTML = `<span class="inv-skill-name">${def.name}</span>
+                         <span class="wp-dots">${dots}</span>`;
+        block.appendChild(row);
+      });
+      this.el.inventoryList.appendChild(block);
+    }
+
+    if (!visible.length) {
+      const p = document.createElement('p');
+      p.className = 'inv-empty';
+      p.textContent = 'Nothing carried.';
+      this.el.inventoryList.appendChild(p);
       return;
     }
 
-    this.el.inventoryList.innerHTML = '';
-    this.state.inventory.forEach(item => {
+    visible.forEach(item => {
       const el = document.createElement('div');
       el.className = 'inventory-item';
       el.innerHTML = `<div class="inv-item-name">${item.name}</div>
@@ -844,9 +1061,12 @@ const Game = {
     const ch = this._progress.chapters[this.currentChapterId];
     if (!ch) return;
     ch.save = {
-      currentSceneId: this.state.currentSceneId,
-      inventory:      this.state.inventory,
-      history:        this.state.history,
+      currentSceneId:   this.state.currentSceneId,
+      inventory:        this.state.inventory,
+      history:          this.state.history,
+      skills:           this.state.skills,
+      skillPoints:      this.state.skillPoints,
+      waypointsClaimed: this.state.waypointsClaimed,
     };
     this._progress.currentChapterId = this.currentChapterId;
     this._saveProgress();
