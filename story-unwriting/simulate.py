@@ -107,9 +107,11 @@ print(f"reachable {last_id} endings: {sorted(endings)}")
 if missing:
     print(f"!! UNREACHABLE endings: {sorted(missing)}")
 for ci, ch in enumerate(manifest['chapters'][:len(chapters)]):
-    n = len(ch.get('summaries', []))
+    summs = ch.get('summaries', [])
     hit = {i for c, i in summaries_hit if c == ch['id']}
-    unhit = set(range(n)) - hit
+    # an unconditional summary may legitimately go unhit if conditional ones
+    # cover every path — it exists as the engine's fallback
+    unhit = {i for i in set(range(len(summs))) - hit if summs[i].get('requires')}
     if unhit:
         print(f"!! {ch['id']}: summaries never matched at chapter end: {sorted(unhit)}")
 if soft_locks:

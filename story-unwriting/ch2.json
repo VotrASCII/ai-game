@@ -1,0 +1,181 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You have been at Verstand Street for six days, and the station has begun to assign you a shape.\n\nOsy runs the place on a timetable she posts, to an audience of two, on the pillar by the battery bank: water at eight, work at nine, the beacon's health-check at noon, and at eighteen hundred a line that just says THINK, which turns out to mean she sits at the chessboard with tea and stares at the mid-position like it owes her money. The board never resets. You have not been invited into it. The second chair, you have gathered, is load-bearing in some way you have not been given the drawings for.\n\nYour job is the wall. 'Break it,' she said, on day one, handing you her year of red thread like a colleague and not like anything else. 'Every pin, every source, every inference. If I'm pattern-matching on grief I need to know.'\n\nSo you break at it. You rebuild her catastrophe list from the raw sources — traders' gossip she transcribed, the Archivists' disaster litanies, her own field notes in that minute, vandal-proof hand — and you apply every test you know for the human weakness for meaning. Six days in, the wall is winning. The timing clusters survive shuffling. The 'lucky' events sit four sigma from any luck you can model. Something is choosing.\n\nB, meanwhile, has completed his transfer of allegiance with the shamelessness of a cabinet minister. He sleeps at the foot of her bunk. He escorts her to the water point. He brings her, every morning, one item from your pack — a sock, the med roll, once the legal pad, which you intercepted with a speed that interested her visibly — and presents it as tribute.\n\n'I'm a cat person,' she says, most days, flatly, while the dog leans his whole weight against her legs and gazes up with an expression of settled marriage. She has started keeping fish strips in her jacket. She thinks you haven't noticed. You have a log.",
+      "choices": [
+        {
+          "text": "Tell her the verdict straight, the way she paid you the honor of expecting: the wall holds. Something is choosing. She isn't insane, which is worse news than insanity.",
+          "next": "verdict"
+        },
+        {
+          "text": "Before the verdict, run one more control. You want to hand her a finding with no soft spots — she has been alone with this for a year, and the kindest thing you own is rigor.",
+          "next": "control_run"
+        }
+      ]
+    },
+    "control_run": {
+      "id": "control_run",
+      "text": "You spend the morning building the null world.\n\nIf the disasters were honest weather — if the Halfway just shakes broken pieces out of a broken sky — then a synthetic city, wired with the same fragilities and shaken with the same violence, should produce the same rate of 'lucky' escapes and cruel timings as the real one. You code the null world on her salvaged laptop in the language of your old trade: crude, fast, honest. You shake it ten thousand times.\n\nThe null world is kinder than the real one and crueler, both at once, in exactly the way randomness is: it has no taste. The real city's catastrophes have taste. In the null world, water mains fail at all hours; in the real one, they fail — pin after pin on her wall — in the hour that empties the building. In the null world, collapse buries the fast and the slow alike; in the real one, there is a persistent, sickening bias toward sparing certain blocks, certain routes, certain hours, as if the disaster had read a schedule first.\n\nAnd there is one more thing the null world will not do, no matter how you shake it. It will not cluster its mercies. The real city's luck is not smeared evenly across the map. It pools. You mark the pooling with the detachment you keep for results you do not yet understand, and the marks make a rough ellipse, and you look at the ellipse for a long time, and you do not yet draw its center, because some part of your hindbrain has seen where the center is and has quietly locked the door to that room.\n\nAt noon she brings you tea and looks at the screen over your shoulder, and is silent for a while.\n\n'You built a control city,' she says at last. There is something in her voice you have heard exactly twice in eleven years, and both times someone had just played, against her, a genuinely good move.",
+      "item": {
+        "id": "null_world",
+        "name": "The Null World",
+        "description": "Ten thousand shaken cities that never learned to aim. The honest weather the real one stopped being. Its purpose is to be worse at cruelty than reality, and it succeeds, and the difference is the whole case.",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Give her the verdict with the control behind it: the wall holds, the luck pools, something is choosing.",
+          "next": "verdict"
+        }
+      ]
+    },
+    "verdict": {
+      "id": "verdict",
+      "text": "You lay it out the way you'd have laid it out for the old review board: findings first, method second, caveats stapled to every claim.\n\nThe wall holds. The timings survive every shuffle. The luck pools instead of smearing. If this is pareidolia, then pareidolia has learned statistics. Something with preferences is operating on the city — patient, precise, and powerful in a way you both refuse to say out loud yet, because the only machinery that ever touched time was the Loom, and the Loom died at the Halfway. Officially. The way everything died officially, in a world with no officials left.\n\nOsy listens with her eyes closed, which is her way of listening with everything. When you finish she is quiet for four full seconds — you count; you always count — and then she says, 'A year. A year I've been telling this to the dark and getting my own voice back. Do you know what it does to a person, checking their own work with no opponent?' She opens her eyes. 'It makes every conclusion feel like a blunder you haven't found yet. You just handed me a played game. Thank you.'\n\nShe stands, and rolls the biggest map flat, and puts her finger on the old business district, four blocks up. 'Next move, then. I need my archive. When it started I kept everything on the office servers — incident data going back to before the Halfway, the baseline nobody else bothered to keep. The building is in a stuck day. I've been once.' A pause with a whole winter in it. 'I turned around in the lobby. I couldn't do the fourth floor alone.'\n\nThe fourth floor. Break room, corner meeting room, the long window with the bad blind. The chess league played on the fourth floor, Thursday lunchtimes, eleven years, and you would both know that floor blind, and will now get the chance to prove it, because a stuck day means the floor is still happening.\n\n'I'll do the fourth floor with you,' you say, and her shoulders come down a centimetre, and B's tail thumps the concrete twice, sealing the minutes of the meeting.",
+      "choices": [
+        {
+          "text": "Go now, in daylight, while the seam between here and there is thin. The archive is the mission; the floor is just a floor.",
+          "next": "surface_walk"
+        }
+      ]
+    },
+    "surface_walk": {
+      "id": "surface_walk",
+      "text": "Four blocks, in the open air, in the company of another living person: it is the longest walk you have taken in a year, by every measure that matters.\n\nThe business district holds its stuck day like water in a bowl. You feel the seam as you cross it — pressure in the ears, the smell of a different season's rain — and then you are in it: a Thursday from the world before, mid-morning, late spring by the light. The street runs its hour on a loop the way rivers run: the same courier bike leaning into the same corner, the same pigeons rising off the same ledge, the same two suits arguing gently about a restaurant by the revolving door of your old building. The people shine, very slightly, the way echoes shine. They do not see you. They are busy being that day.\n\nOsy walks through it with her jaw set, reading building numbers as if she couldn't find this door blind drunk in a blackout. Data first. Grief never, if the schedule holds. You have read the schedule. THINK, eighteen hundred. You suspect that line carries more than chess.\n\nB does not like the shining people — he keeps himself exactly between them and Osy, a moving wall of dog, hackles at half — but it is at the door itself that he stops. Your building. Revolving door, marble lobby beyond, the security desk where Aldo used to hold your packages hostage for gossip. B plants himself and points his whole body at the lobby, tail low and slow. His working tail. His something-is-true-in-there tail.\n\n'It's an echo, B,' Osy says. 'It's just the past.' But she looks at you as she says it, because you have both spent six days learning to respect this dog's opinion of doors, and the truth is nobody knows what 'just the past' means anymore, and the two people on earth most likely to find out are standing on its doormat.",
+      "choices": [
+        {
+          "text": "In through the revolving door, the way you went in three thousand times. Lobby, stairs, servers on six — mission first, floor four only if the stairwell forces it.",
+          "next": "lobby"
+        },
+        {
+          "text": "Watch B first. Read what the dog is reading. He has been right about doors before, and something in his low slow tail is speaking in complete sentences.",
+          "next": "read_the_dog"
+        }
+      ]
+    },
+    "read_the_dog": {
+      "id": "read_the_dog",
+      "text": "You crouch at the dog's shoulder and look down his sight-line like a man borrowing an instrument.\n\nB is not looking at the shining people. He is looking through the lobby at the stairwell door, and his ears are doing something you have logged only twice before — both times at seams, both times seconds before the air changed. Not fear. Attention. The attention of an animal listening to a sound that has not happened yet.\n\n'He does this at the seams,' you say. 'And the seams are where the day is thin. If the stuck day has a thin place inside it —'\n\n'— then the loop isn't uniform,' Osy finishes, already there, already three squares ahead. 'Some hours in there are more re-run than others. Something inside gets… rehearsed harder.' She looks at the building with new eyes: not her past now, a structure with load paths. 'The fourth floor. If the pocket has a center, a day it's stuck around —' and she stops, because the fourth floor on a Thursday lunchtime means one thing on this street, and you both own the memory of it, and hers goes back exactly as many years as yours.\n\nThe chess league. The pocket did not pick a random day to hold. Or it did, and the universe has taste. Neither answer is comfortable, and you go in anyway, because between the two of you, turning around has never once made the shortlist.\n\nB exhales — a decision, dog-sized — and takes point through the revolving door, matching his circuit to yours, dignified as a doorman resuming an old post.",
+      "item": {
+        "id": "seam_sense_notes",
+        "name": "Hypothesis: The Dog Hears Seams",
+        "description": "Recurrence n=5 and climbing. He attends to thin places in time seconds before the instruments agree. You have no mechanism, a growing dataset, and a colleague who has stopped saying 'it's just the dog.'",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Follow him in. Lobby, stairwell, and up.",
+          "next": "lobby"
+        }
+      ]
+    },
+    "lobby": {
+      "id": "lobby",
+      "text": "The lobby is running its Thursday with the sound turned down.\n\nAldo is at the security desk, shining faintly, signing for a box from a courier who has been reaching for his pen for two years. The marble smells of the coffee cart that used to park by the east wall — is smelling of it, presently, forever. You keep to the service side, out of old habit and new physics; the echoes do not see you, but B walks between them and Osy all the same, and you have stopped correcting his math.\n\nThe stairwell door opens on air that is more re-run than the lobby's — you feel it now that you know to feel it, a graininess, like a photocopy of a photocopy. Osy climbs one flight and stops on the landing where the fourth-floor door stands propped, the way it was always propped, by the fire extinguisher that facilities never once collected.\n\nThrough the gap: voices. Lunchtime voices. The specific Thursday roar of the fourth floor — cutlery, laughter, someone's terrible speaker playing someone's terrible playlist — and under it, rising through it like a keel through water, a voice saying, 'No. Take it back. Look at the whole board first.'\n\nHer voice. Eleven years younger, two wars fewer, absolutely unmistakable.\n\nBeside you, the present Osy has gone very still, one hand flat on the propped door, looking through the gap at the light of a day she is standing inside of and locked out of at once. 'I turned around here,' she says, conversationally, which is how she says the things that are not conversation. 'In March. I stood on this landing and I listened to myself teach you the Réti and I walked home to the dark and re-armed the beacon and told nobody, because there was nobody.' She takes her hand off the door and looks at you. 'Sixth floor is the mission. This floor is a wound with furniture in it. Your call, colleague. I've made mine once already and I don't trust it.'",
+      "choices": [
+        {
+          "text": "The mission first. Sixth floor, the archive, the reason two rational people walked into a stuck day. The fourth floor has waited two years; it will wait one more hour.",
+          "next": "servers_first"
+        },
+        {
+          "text": "Go in. You will regret the archive an hour late; you would regret the door forever. Some data only gets one read.",
+          "next": "fourth_floor"
+        }
+      ]
+    },
+    "servers_first": {
+      "id": "servers_first",
+      "text": "You do the professional thing, and the building rewards professionalism the way it always did: slowly, on the sixth floor, in server-room air.\n\nThe racks are dead — the stuck day, mercifully, holds the building's shape but not its power draw above floor five; the loop is strongest below, where the people were. Osy's archive server sits exactly where her labeled diagram says, and the two of you spend a grimy, competent hour pulling drives and wrapping them in her scavenged anti-static, working in the easy silence of people who have carried furniture together in a previous life.\n\nIt is she who breaks it. 'When it started — the Halfway — I was at that window.' She nods down the floor, toward the long glass. 'Everyone was screaming about the sky. And I stood there doing arithmetic. What percentage of what I love is inside a ten-minute radius. It was a very short list, and the top of it was a person, and I couldn't do anything about any of it, so I went to the stationery cupboard and I took every notebook they had. Forty-one notebooks. I have filled thirty-eight.' She seals the last drive, writes ARCHIVE 6/6 on it in her minute hand. 'People think the notes are the sane part of me. The notes are the screaming. Just — filed.'\n\nYou do not ask who was at the top of the list. The treaty holds at all altitudes. But the sentence goes into you sideways and lodges somewhere expensive, and B, sprawled across the server-room threshold at the point of maximum inconvenience, lifts his head and looks at you both as if checking a perimeter only he can see.\n\nDrives packed. Mission complete. Between you and the exit: the stairwell, and the propped door, and the Thursday roar of the fourth floor, still running, still lunchtime, forever.\n\n'One hour,' Osy says, shouldering her pack, not looking at you. 'We were owed lunch two years ago. I'm collecting.'",
+      "item": {
+        "id": "archive_drives",
+        "name": "The Archive, 6/6",
+        "description": "Six drives in anti-static wrap: incident data from before the Halfway, the baseline nobody else kept. A year of red thread waits to be tested against it. She wrote the labels; you carried the weight; the division of labor felt eleven years old.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Collect the lunch. Through the propped door, into the Thursday that never ends.",
+          "next": "fourth_floor"
+        }
+      ]
+    },
+    "fourth_floor": {
+      "id": "fourth_floor",
+      "text": "The fourth floor is exactly itself, which is the most violent thing it could have been.\n\nThe break room roars its lunchtime roar. The terrible speaker plays the terrible playlist. Dev from procurement is telling the story with his hands again; the story never lands, has not landed in two years, will never land, and his audience laughs anyway, forever, shining faintly. The window with the bad blind stripes the far wall with that late-spring light that no season since has gotten right.\n\nAnd at the corner table, at the board, the two of you are playing.\n\nYou know the day the moment you see the position. Of course the pocket held this day; you have stopped pretending the universe has no taste. It is the first Thursday: the day a transfer from the Delft office sat down across from the department's reigning club player — you, then; it embarrasses you now to remember being proud of it — and took your measure in nineteen moves. There you are, younger, softer, wearing the good shirt for no reason you'd have admitted: hanging your knight on move fourteen with the serene confidence of a man who has not yet met his ceiling. There she is: twenty-nine, sleeves pushed up, playing at half her speed out of a courtesy you didn't detect until years later, dismantling you with the gentle thoroughness of a bomb-disposal tech.\n\nMate on move nineteen. The echo of you tips his king, and the echo of her — and you had forgotten this; how had you filed even this away — does not smile the winner's smile. She turns the board around. 'Again,' she says, eleven years ago, forever. 'Your opening was fine until move six. Bad play offends me more than losing offends you — sit, I'll show you.' And she rebuilds your opening with her own hands, move by move, the first hour she ever gave you, spending it on your weakness as if it were a thing worth her time.\n\nBeside you, the present Osy watches herself with an expression you have never been issued a name for. 'I remember thinking,' she says quietly, 'that you took the lesson better than anyone in that room would have. No sulk. You just — wanted the truth about move six.' A pause. 'I decided about you right then, you know. Whatever I decided. I've never found the word for what it was. But it's held eleven years, so it must have been load-bearing.'",
+      "choices": [
+        {
+          "text": "Watch to the end of the hour. Both games — the one on the board and the one that started that day and never had a name. Some data only gets one read; read all of it.",
+          "next": "break_room_end"
+        },
+        {
+          "text": "Look away from the board and watch her instead — the present her, watching herself. The echo is the past; she is the finding.",
+          "next": "watch_her"
+        }
+      ]
+    },
+    "watch_her": {
+      "id": "watch_her",
+      "text": "You commit the small treason of the eyes: you let the echo run unwatched and you study your colleague instead.\n\nShe stands in the striped light with her arms folded, weight on the back foot — her analysis stance, the one from tournament halls — and she watches her younger self spend an hour on a stranger's move six, and you watch the present tense of her run the whole ledger behind her eyes. What it cost to be that person. What it kept costing. Somewhere in that hour her younger self laughs — head back, unguarded, at something your younger self has said that history does not preserve — and the present Osy flinches, one centimetre, as if the laugh were an expense she had not budgeted for.\n\n'I don't laugh like that anymore,' she says, matter-of-fact, to the room at large.\n\n'You laughed at the dog on Tuesday,' you say. 'When he brought you my sock like a court summons.'\n\nShe considers this with full seriousness, the way she considers everything, and something in her posture unhardens by a degree you could not have measured without eleven years of baseline. 'Huh,' she says. 'So I did. Update logged.' And then, because she is Osy and cannot leave a position unresolved: 'This is why I couldn't do this floor alone. Not the grief. The version control. Standing here you can see exactly which parts of yourself got overwritten, and there's no diff tool, there's just —' she gestures at the shining lunchtime, the laugh, the light — 'the backup, running. And you can't restore from it. You can only visit.'\n\nB leans against her legs, thirty-four kilos of present tense. She rests one hand on his head without noticing she has done it, which is how all her treaties with the dog are ratified — beneath acknowledgment, in the layer where the load-bearing things live.",
+      "choices": [
+        {
+          "text": "Give her the hour anyway — stand with her while the old Thursday spends itself, and then walk the floor once before you go.",
+          "next": "break_room_end"
+        }
+      ]
+    },
+    "break_room_end": {
+      "id": "break_room_end",
+      "text": "The hour ends the way the hour always ends: the roar thins, the terrible playlist dies mid-song, the shining people carry their cups to the sink in the eternal choreography of one-fifteen on a Thursday, and the loop — you feel it in your ears now, trained by six days of her and one dog — draws breath and begins its noon again.\n\nYou walk the floor once before you go. Your old desk: a stranger's echo sits at it; you feel nothing, which you note with interest. Her old desk: still hers even in echo, the stationery squared, and present-Osy trails one finger an inch above its surface without touching, a museum patron at her own exhibit.\n\nIt is in the corner meeting room — the chess room, the league's trophy shelf still bearing its joke trophies, forever — that you find the wreckage the echo cannot paper over. Something real happened here after the Halfway: the room alone is burnt, one violent scorch across the shelf and table, actual char under the shining replay, the present bleeding through the past. The boards burned. The sets burned. Whatever came through here came through hard, once, in the real timeline, and the loop launders it every hour, and the char remains under the light like a signature under paint.\n\nIn the ash, half under the fallen shelf, something small keeps its shape. You crouch. A black queen — the club set's, the heavy Staunton she used to lift like a hammer coming down when the mate arrived — scorched, soot-silked, whole. The only piece that made it. Your hand closes around it with a feeling you do not stop to parse, because behind you Osy says, from the doorway, in a voice with no analysis left in it at all:\n\n'That's my queen. That's — I mated you with that queen. The first Thursday. And the last one.' A silence. 'The last Thursday of the world, we played, did you know that? Board four. I never told you. We never got to finish, and then there were no more Thursdays.'\n\nThe queen is warm from your hand. It weighs six hundred grams less than a chess computer and infinitely more.",
+      "choices": [
+        {
+          "text": "Put it in her hand. It was never yours; it was the hammer, and the hammer belongs to the hand that knew its work. Some things should be returned, not kept.",
+          "next": "give_queen"
+        },
+        {
+          "text": "Pocket it. A piece of the first Thursday, carried by the man it landed on — call it your half of the archive. She has thirty-eight notebooks; you get one queen.",
+          "next": "keep_queen"
+        }
+      ]
+    },
+    "give_queen": {
+      "id": "give_queen",
+      "text": "You cross the burnt room and you put the queen in her hand, and you close her fingers over it with both of yours, one second, and you let go before the second becomes a sentence.\n\n'Board four never got finished,' you say. 'The set did. She should be with the player who knew what she was for.'\n\nOsy looks at the piece in her palm for a long time. The shining lunchtime rebuilds itself around you both — the roar rising, the playlist resurrecting, the eternal noon drawing its breath — and she stands in the middle of it holding the one object in the room that is real.\n\n'You know what's strange,' she says, finally, in her flattest voice, which you have learned is her most careful one. 'A year alone, I lost — inventory: a city, a family, a sister, every Thursday. And I did not cry once, because crying is for when the analysis is finished, and it never is.' Her fingers close over the queen, precise as a clock. 'One chess piece. Returned by the correct party, with correct handling.' She breathes once, all the way down. 'I'm not going to cry now either, for the record. But it was closer than I run things. Noted for the file.'\n\nShe threads the queen onto the cord she wears — the one that carries the key to her sister's flat, which you know about and have never once asked about, treaty terms — and it settles at her sternum like a piece placed on its home square.\n\n'Right,' she says, restored, or performing restoration so well the difference is classified. 'Archive's on our backs, lunch is eaten, past is visited. Take me home, colleague. We have a monster to find.'\n\nB rises from the doorway and shakes himself, ringing an invisible bell, and takes point down the stairwell of the world before, toward the seam, toward the dark, toward the work.",
+      "item": {
+        "id": "thread_queen",
+        "name": "Returned",
+        "description": "The black queen went home to the hand that knew her work.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Home through the seam, drives on your back, the day's finds logged.",
+          "next": "end_ch2"
+        }
+      ]
+    },
+    "keep_queen": {
+      "id": "keep_queen",
+      "text": "You pocket the queen. She watches you do it, and says nothing, and the nothing has a shape.\n\n'Souvenir?' she asks, at last, lightly. Lightly is not her register. It fits her like the good shirt fit your younger self at the corner table: worn for an occasion that did not require it.\n\n'Evidence,' you say. 'First Thursday. Exhibit A in the case that I ever nearly beat you.'\n\n'You were mated in nineteen moves.'\n\n'The nearness is a matter of interpretation.'\n\nIt lands as banter and files as something else; you can feel the misfiling happen, somewhere in the archive the two of you keep between you, a document going into the wrong drawer with no one assigned to ever move it. The queen rides in your coat pocket next to B's lead, scorched and warm, and it is yours now, which is a thing you wanted, and the wanting sits slightly askew for the rest of the day in a way you decline to analyze.\n\nOsy turns back once at the door of the burnt chess room and looks at the shelf, the char, the eternal replay papering over the real wound, and whatever she files, she files it in the vandal-proof hand that no one reads but her.\n\n'Take me home, colleague,' she says. 'We have a monster to find.'\n\nB rises from the doorway and puts himself between her and the shining people without being asked, and does not look at you, which from B is also a document, also filed.",
+      "item": {
+        "id": "black_queen",
+        "name": "The Black Queen",
+        "description": "The club set's heavy Staunton, scorched silk-black, sole survivor of the burnt chess room. She used to bring it down like a hammer when the mate arrived. It rides in your pocket now, next to the lead, weighing more than it weighs.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Home through the seam, drives on your back, the day's finds logged.",
+          "next": "end_ch2"
+        }
+      ]
+    },
+    "end_ch2": {
+      "id": "end_ch2",
+      "text": "The seam lets you out of the stuck Thursday into the true dusk, and the walk home runs quiet, four blocks of ruined city that after that floor feel almost honest.\n\nAt the station she powers one lamp and mounts the first archive drive with the reverence of a surgeon and the impatience of a child, and within the hour the baseline is flowing into her year of red thread — the before-world's steady heartbeat of ordinary failure, against which every crooked mercy since the Halfway now stands out like a lie in a deposition.\n\n'Look at it,' she breathes. On the screen, her pins and your null world and the old data lock together, the ellipse of pooled luck sharpening at its edges. 'A year I've had the shape and no spine for it. Now it has a spine.' She looks up at you across the lamplight, and there is the current again, the old dangerous wonderful thing, two minds finding the same fault line. 'Whoever is doing this has been doing it since the beginning. Methodically. At cost. You don't spend that kind of power on strangers.' She taps the ellipse, not quite at its center, not yet. 'The next question is who benefits. And the answer is somewhere in the pooling.'\n\nAt eighteen hundred, the timetable says THINK, and for the first time she stops at the chessboard and turns, and asks, as if it were nothing, as if it were not the second chair: 'Do you still play the opening I built you?'\n\nYou play until the batteries dim. She wins, of course — she wins the way weather wins — but on move six you do the thing she taught you eleven years and one world ago, and she looks up from the board with the winner's smile she never wears, wearing something better.\n\n'Board four,' she says, 'is hereby resumed.'\n\nIn the log that night, under the day's findings, you write the truest line you have: 'The wall holds. The luck pools. And somewhere in this city, something with preferences knows her address.' B sleeps across the doorway of her light, and the dark, for once, keeps its distance, or is merely patient. You are a data scientist. You know better than to confuse the two.",
+      "end": true
+    }
+  }
+}
