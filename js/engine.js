@@ -731,8 +731,10 @@ const Game = {
     let shown = 0;
     choices.forEach(choice => {
       const itemLocked  = choice.requires && !this.hasItem(choice.requires);
+      const countLocked = choice.requiresCount &&
+        choice.requiresCount.of.filter(id => this.hasItem(id)).length < choice.requiresCount.min;
       const skillLocked = choice.skillRequires && !this._meetsSkills(choice.skillRequires);
-      const locked      = itemLocked || skillLocked;
+      const locked      = itemLocked || countLocked || skillLocked;
 
       /* Hidden-thread choices: silently absent unless unlocked. */
       if (locked && choice.hideLocked) return;

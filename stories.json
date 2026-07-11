@@ -23,6 +23,14 @@
       "subtitle": "A mind wiped nightly. A notebook that knows why.",
       "blurb": "You wake in a memory clinic with no yesterday. Your notebook is your memory, your doctor is warm in a way you can't account for, and the woman who says she's your wife feels like a stranger. Your gut is lying about one of them — and the notebook knows which.",
       "chapters": 5
+    },
+    {
+      "id": "story-unwriting",
+      "dir": "story-unwriting",
+      "title": "The Unwriting",
+      "subtitle": "The apocalypse has an author. She's hunting him. He's helping.",
+      "blurb": "The world broke halfway through humanity's last upgrade, and it is still breaking — precisely, surgically, like something with preferences. You are nobody: an average man the catastrophe inexplicably spared, with a dog, a dwindling reason to stay alive, and a woman who plays god at chess and is hunting the person unwriting the world. Every disaster lands near her. You've decided to keep her safe before you go. Neither of you knows what you are.",
+      "chapters": 19
     }
   ]
 }

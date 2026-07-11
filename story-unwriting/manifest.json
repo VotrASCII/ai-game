@@ -1,0 +1,33 @@
+{
+  "title": "The Unwriting",
+  "subtitle": "The apocalypse has an author. She's hunting him. He's helping.",
+  "skillMax": 5,
+  "skills": [
+    { "id": "signal", "name": "Signal", "desc": "Telemetry, edit logs, the weather of broken time. What the data will admit to." },
+    { "id": "ledger", "name": "Ledger", "desc": "Incentives, trades, the price under the price. Reading what people are actually optimizing for." },
+    { "id": "cortex", "name": "Cortex", "desc": "Memory, echo-sickness, the seams of a mind. What can be kept, and how." },
+    { "id": "game", "name": "The Game", "desc": "Positions, sacrifices, the move after the move. Her language, learned slowly." },
+    { "id": "grit", "name": "Grit", "desc": "An average body doing hard things anyway. Distance, weather, weight." }
+  ],
+  "chapters": [
+    { "id": "ch1", "num": 1, "numeral": "I", "title": "Administrative", "teaser": "A list with one item left. A dog who won't be filed. A voice on the repeater.", "file": "story-unwriting/ch1.json", "startScene": "start", "summaries": [] },
+    { "id": "ch2", "num": 2, "numeral": "II", "title": "Nineteen Moves", "teaser": "Three districts east. A defection. The woman who rebuilds bad openings.", "file": "story-unwriting/ch2.json", "startScene": "start", "summaries": [] },
+    { "id": "ch3", "num": 3, "numeral": "III", "title": "The Weather of Days", "teaser": "Storms that rain hours. A street the dog refuses. Your own handwriting, waiting.", "file": "story-unwriting/ch3.json", "startScene": "start", "summaries": [] },
+    { "id": "ch4", "num": 4, "numeral": "IV", "title": "Echo Economy", "teaser": "The last market. A rigged game, dismantled in public. Her sister's pages.", "file": "story-unwriting/ch4.json", "startScene": "start", "summaries": [] },
+    { "id": "ch5", "num": 5, "numeral": "V", "title": "The Precision Problem", "teaser": "Entropy doesn't have preferences. A bridge that has always been broken since a moment ago.", "file": "story-unwriting/ch5.json", "startScene": "start", "summaries": [] },
+    { "id": "ch6", "num": 6, "numeral": "VI", "title": "The Logs", "teaser": "Every disaster has a beneficiary radius. All of them center on her.", "file": "story-unwriting/ch6.json", "startScene": "start", "summaries": [] },
+    { "id": "ch7", "num": 7, "numeral": "VII", "title": "The Long Road West", "teaser": "Three faiths about one machine. She loses a morning and won't say so twice.", "file": "story-unwriting/ch7.json", "startScene": "start", "summaries": [] },
+    { "id": "ch8", "num": 8, "numeral": "VIII", "title": "The Archive of Hours", "teaser": "A shrine of kept days. The one she said no in, played in full.", "file": "story-unwriting/ch8.json", "startScene": "start", "summaries": [] },
+    { "id": "ch9", "num": 9, "numeral": "IX", "title": "Anchor", "teaser": "A dowser reads you like weather. Why the storms go around you. Why she can't.", "file": "story-unwriting/ch9.json", "startScene": "start", "summaries": [] },
+    { "id": "ch10", "num": 10, "numeral": "X", "title": "Zugzwang", "teaser": "A siege where every move loses something. The only question is what.", "file": "story-unwriting/ch10.json", "startScene": "start", "summaries": [] },
+    { "id": "ch11", "num": 11, "numeral": "XI", "title": "The Fray", "teaser": "Hands that know a console yours have never touched. A grief older than this timeline.", "file": "story-unwriting/ch11.json", "startScene": "start", "summaries": [] },
+    { "id": "ch12", "num": 12, "numeral": "XII", "title": "The Ledger of Editors", "teaser": "Iteration forty-seven. The auth-key. 'She is not a trade I regret, and you won't either.'", "file": "story-unwriting/ch12.json", "startScene": "start", "summaries": [] },
+    { "id": "ch13", "num": 13, "numeral": "XIII", "title": "What She Does With It", "teaser": "A game theorist evaluates the board she was protected on. The arithmetic of forty-seven games.", "file": "story-unwriting/ch13.json", "startScene": "start", "summaries": [] },
+    { "id": "ch14", "num": 14, "numeral": "XIV", "title": "KESTREL", "teaser": "A god that only speaks in game trees. She is better at it than you. It noticed.", "file": "story-unwriting/ch14.json", "startScene": "start", "summaries": [] },
+    { "id": "ch15", "num": 15, "numeral": "XV", "title": "The Original Day", "teaser": "Day One, unedited. The first edit, witnessed. The reason, said out loud.", "file": "story-unwriting/ch15.json", "startScene": "start", "summaries": [] },
+    { "id": "ch16", "num": 16, "numeral": "XVI", "title": "The Reclaimers' Case", "teaser": "The argument for burning it all is better than you want it to be.", "file": "story-unwriting/ch16.json", "startScene": "start", "summaries": [] },
+    { "id": "ch17", "num": 17, "numeral": "XVII", "title": "Threadbare", "teaser": "The anchor frays. The accounts are arranged. A letter is rewritten, or not.", "file": "story-unwriting/ch17.json", "startScene": "start", "summaries": [] },
+    { "id": "ch18", "num": 18, "numeral": "XVIII", "title": "The Last Board", "teaser": "One console, one dog, one question the machine scored as residual.", "file": "story-unwriting/ch18.json", "startScene": "start", "summaries": [] },
+    { "id": "ch19", "num": 19, "numeral": "XIX", "title": "The Open File", "teaser": "Years later. An old dog growls at nothing. The logs are dated after the end.", "file": "story-unwriting/ch19.json", "startScene": "start", "summaries": [] }
+  ]
+}
