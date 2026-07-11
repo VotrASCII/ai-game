@@ -227,7 +227,21 @@ button {
   transform: none;
 }
 
+/* The entrance rules above are ID-specific (#title-eyebrow, #game-title,
+   #game-subtitle, #title-actions, #btn-title-back), which makes them more
+   specific than the generic `.reveal-el.reveal-in { transform: none }`
+   reset — so without these, every element would stay stuck at its offset
+   the whole time .revealing is applied, then all snap into place at once
+   when .revealing is removed after the reveal finishes. Repeating the
+   reset per-ID here restores the intended settle-in-place behavior. */
+#title-screen.revealing #title-eyebrow.reveal-in,
+#title-screen.revealing #title-actions.reveal-in,
+#title-screen.revealing #btn-title-back.reveal-in {
+  transform: none;
+}
+
 #title-screen.revealing #game-title.reveal-in {
+  transform: none;
   letter-spacing: -0.01em;
 }
 
@@ -235,6 +249,7 @@ button {
    interpolated, so the subtitle would hold its blur and snap sharp.
    Animate to blur(0px) instead. */
 #title-screen.revealing #game-subtitle.reveal-in {
+  transform: none;
   filter: blur(0px);
 }
 

@@ -293,6 +293,7 @@ const Game = {
     this._revealTimers = [];
     this.el.titleScreen.classList.remove('revealing');
     this._revealEls().forEach(el => el.classList.remove('reveal-in'));
+    this.el.gameTitle.style.minHeight = '';
   },
 
   _revealEls() {
@@ -300,10 +301,22 @@ const Game = {
   },
 
   /* Hide the title elements before the screen fades in, so nothing
-     flashes at full opacity ahead of its cue. */
+     flashes at full opacity ahead of its cue. The title enters at a wide
+     letter-spacing that can wrap to a second line before settling to its
+     narrower resting width; as it un-wraps back to one line mid-reveal,
+     the title's own box shrinks and drags the subtitle/actions below it
+     upward. Lock the title to its wide (tallest) height up front so that
+     collapse happens invisibly inside its own box instead of moving
+     everything after it. */
   _stageTitleReveal() {
     this._clearTitleReveal();
     this.el.titleScreen.classList.add('revealing');
+
+    const wasHidden = this.el.titleScreen.classList.contains('hidden');
+    if (wasHidden) this.el.titleScreen.classList.remove('hidden');
+    this.el.gameTitle.style.minHeight = `${this.el.gameTitle.offsetHeight}px`;
+    if (wasHidden) this.el.titleScreen.classList.add('hidden');
+
     void this.el.titleScreen.offsetWidth;   // commit the staged state
   },
 
@@ -321,7 +334,12 @@ const Game = {
     });
 
     /* Once everything has landed, drop the staging class so later visits
-       to this screen (from chapter select) render instantly. */
+       to this screen (from chapter select) render instantly. The title's
+       locked min-height is left in place — it matches its own settled
+       content height on non-wrapping viewports, and on the ones where it
+       doesn't, releasing it here would itself cause the box to snap
+       while still fully on screen. It's cleared by _clearTitleReveal()
+       the next time a reveal is staged, or when navigating away. */
     this._revealTimers.push(setTimeout(() => {
       this.el.titleScreen.classList.remove('revealing');
       this._revealEls().forEach(el => el.classList.remove('reveal-in'));
