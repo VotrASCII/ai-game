@@ -40,6 +40,21 @@ for _, _, scenes in chapters:
         if it and it.get('persistent'):
             PERSISTENT_IDS.add(it['id'])
 
+# Only items that gate something (choice requires / requiresCount / summary
+# requires) need to live in the state key; the rest are cosmetic and tracking
+# them explodes the state space combinatorially.
+RELEVANT_IDS = set()
+for ch in manifest['chapters']:
+    for summ in ch.get('summaries', []):
+        RELEVANT_IDS.update(summ.get('requires', []))
+for _, _, scenes in chapters:
+    for s in scenes.values():
+        for c in s.get('choices', []):
+            if c.get('requires'):
+                RELEVANT_IDS.add(c['requires'])
+            if c.get('requiresCount'):
+                RELEVANT_IDS.update(c['requiresCount']['of'])
+
 soft_locks, endings, summaries_hit = [], set(), set()
 
 def unlocked(c, items, max_rank):
@@ -65,7 +80,7 @@ def run(policy):
         chid, start, scenes = chapters[ci]
         s = scenes[sid]
         it = s.get('item')
-        if it and it['id'] not in items:
+        if it and it['id'] in RELEVANT_IDS and it['id'] not in items:
             items = frozenset(items | {it['id']})
             key2 = (ci, sid, items)
             if key2 in seen:
