@@ -1,0 +1,110 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "B hears them a day out. By dusk you can see them without glasses: a column coming up the valley road in slate-grey and road-leather, forty strong, white gorgets pale in the failing light — and ahead of them, walking the last kilometre alone under a white rag on a stick, a tall figure the household has met before.\n\nWarden Sere reaches the fence gate at full dark, and Rhee, after a long look through the wire, lets her into the gatehouse, where she stands with her hands visible and her face like a woman who has been marched at the front of her own mistake for a week.\n\n'I filed slow,' she says, without preamble. 'They read fast. There's a dowser in the order older than me, and she took one look at my three blind days on the map and drew a line through the middle of them, and the line ends here.' Her pale eyes go around the gatehouse — the machinist, the household, the dog she once cleared with country courtesy — and settle on you, and the doctrine and the grandmother fight in her face to a standstill. 'Hear the shape of it before you decide anything. That column is the Chapter of the Bare Hand — the order's hard wing, the ones who pulled the shepherd apart. They hold the founding argument whole: the world wants to finish breaking, and everything that holds a piece of the old day steady is a splinter in the wound. They have felt the country calming for a hundred kilometres around this campus, and they have felt it — forgive the grammar; it's the only grammar they have — walking. They are not here to walk a line, friend. They are here to pull the splinter of the western hills.' A silence. 'Me they brought as the finder. Finders confirm the pull. It's an honor.' Her mouth does something that has nothing to do with smiling. 'I have until dawn to bring out an answer. The Chair of the column is a man called Hollis, and Hollis is not cruel, which is the worst of it. He is kind, and slow, and absolutely sure, and he has never once in eleven years been talked out of a pull.'\n\nOsy looks at the map, and the column's fires blooming one by one along the fence line like a rosary being told, and says, quietly, to the household: 'Count the exits, colleague. Every one of them costs a piece. He's put us in zugzwang — any move weakens something. So we choose which loss we can play on from.' ",
+      "choices": [
+        {
+          "text": "Convene the war council in the calibration lab — all parties, all cards up, Sere included. If every move loses something, the household chooses its loss like professionals.",
+          "next": "war_council"
+        }
+      ]
+    },
+    "war_council": {
+      "id": "war_council",
+      "text": "The council meets at the horseshoe under the ring main, and Osy chairs it, because positions with only bad moves are her mother tongue.\n\n'The board,' she says, and lays it out with terrible economy. 'Forty Bare Hands at the fence, doctrine-certain, dawn deadline. Their objective is him. Behind us, below us: the deep stacks — the mooring's as-builts, the interface protocols, everything the founder needs to walk back into his own design; irreplaceable, unmoved, two days from being fully copied. Among us: a Warden who spent her reputation on our grace and will be held to account for it; a machinist whose home this is; a colleague whose mind now holds together best within two metres of the man forty zealots have come to pull apart. And the clock.' She sets the shirt-button king in the center of the bench, alone. 'Moves. I count four. All of them lose material. Speak to costs, not hopes — hopes are how households die.'\n\nRhee speaks to the gambit: the campus's dead fleet still holds one running flatbed and the division's old transponder kit — evidence can be staged, a departure faked, a warm trail laid east for the dowsers to find. 'Send them chasing a ghost of you, son. They'll ride east elated. Cost: everything east of here inherits forty Bare Hands with their blood up, and the trail we lay them ends —' he does not soften it — 'in the one direction we cannot afford them to go, eventually. Toward the yard.'\n\nSere speaks to the parley: Hollis is sure, but the order beneath the doctrine runs on oaths, and a freely offered compact outranks a pull. 'Offer him terms with your own mouth. A stay, sworn and signed — until the new moon, say. If by then the world shows no mending, you present yourself for the pull, unresisted. He'd take it; a willing splinter is the order's oldest parable. Cost: your word, friend. Genuinely pledged. The order forgives everything except a broken compact, and I will be the one who countersigns it.'\n\nAnd the other two moves sit on the bench unspoken, because everyone at the horseshoe can count: the door can be held — old steel, one approach, a machinist who knows every choke point, until the column's discipline breaks against it and the deep stacks finish copying. Or the surface can be surrendered — the campus opened, the lab given to their fires, the stacks' existence bluffed flat, the household gone down the cooling tunnels while the order burns its satisfaction into the buildings above.\n\nOsy looks at the lone king on the bench for a long moment. 'Your move, colleague,' she says. 'It was always going to be your move. But the household plays on from whatever square you choose — remember that when you're pricing. You are not spending alone.'",
+      "choices": [
+        {
+          "text": "[The Game 4] Rhee's gambit: stage the departure, lay the warm trail east, and let forty certainties ride off after a ghost. Buy the stacks their two days — and accept that you have aimed the Bare Hand at the east, and at everything you love that lives there.",
+          "next": "route_gambit",
+          "skillRequires": { "game": 4 }
+        },
+        {
+          "text": "[Ledger 5] The compact: walk out to Hollis under the white rag and buy the household's time with the only coin the order can't refuse — your word, freely pledged. Until the new moon. Then, if the world shows no mending, the pull, unresisted.",
+          "next": "route_compact",
+          "skillRequires": { "ledger": 5 }
+        },
+        {
+          "text": "[Grit 5] Hold the door: old steel, one approach, the machinist's choke points, and the copying running below night and day. Make dawn cost them more than doctrine is worth, and keep everyone's word and everyone's east unspent.",
+          "next": "route_door",
+          "skillRequires": { "grit": 5 }
+        },
+        {
+          "text": "Surrender the surface: open the gates, give their fires the campus and the lab, bluff the stacks flat, and take the household down the cooling tunnels. Buildings for people. It is the oldest trade there is.",
+          "next": "route_surrender"
+        }
+      ]
+    },
+    "route_gambit": {
+      "id": "route_gambit",
+      "text": "You play Rhee's gambit, and it is beautiful, and you will pay for it exactly where he said you would.\n\nThe night goes to stagecraft. The flatbed is fueled and loaded with a bedroll, a burned-out receiver, a deliberately forgotten glove; the division's transponder kit — tuned, Rhee says, to 'sing on the frequency their dowsers feel, near enough' — is lashed under the bed with a timer rig of your own soldering. Two hours before dawn, Rhee drives it east down the service road with the lights off and walks back the last mile in the dark, seventy years old and grinning like a vandal, and at first light the campus presents to the order's instruments exactly one story: the warm thing they came for has bolted east, at speed, ahead of its own fear.\n\nThe dowsers confirm it — the old one first, hand raised over the flatbed's cooling trail like a priest at a font. You watch from the gatehouse glass as certainty reorganizes forty people in nine minutes: the fires doused, the column formed, Hollis at its head with his kind, slow, absolutely sure face turned east — and Sere at the column's rear, glancing back once at the campus, at the gatehouse, at the window she cannot see you behind, before the road folds them all into the grey.\n\n'Two days,' Osy says flatly, already moving. 'Then the trail goes cold, or worse, goes warm toward something real, and either way they double back or they keep east. You've moved the threat off the board, colleague —' she looks at you, and the chess player and the woman are having two different conversations in her face — 'by moving it onto the only other board we care about. The city. The Glasshouse. The yard. Sere said it: he has never been talked out of a pull. We copy fast, we move fast, and we pray we're ahead of our own decoy when it matters.'\n\nRhee, pouring tea with a vandal's unrepentant hands, says only: 'The stacks get their two days. At my age you buy time in the currency you have. Drink up, household — the archive opens in ten minutes and history doesn't copy itself.'",
+      "item": {
+        "id": "false_trail",
+        "name": "The Ghost Eastbound",
+        "description": "A flatbed, a transponder singing on the dowsers' frequency, and forty Bare Hands riding east after a ghost of you. Two days bought for the deep stacks — paid for in direction. The trail you laid them ends, eventually, toward everything you love.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Down into the deep stacks with both days burning — the copying, the as-builts, the founder's own design, before the ghost goes cold.",
+          "next": "aftermath"
+        }
+      ]
+    },
+    "route_compact": {
+      "id": "route_compact",
+      "text": "You walk out to the fires at first light under Sere's white rag, and you buy time in the oldest market there is.\n\nHollis receives you at the fence line, a big slow-moving man with a farmer's burnt neck and eyes of a terrible mildness, and he listens to the whole offer without once interrupting — the stay until the new moon; the work below, described honestly as 'reading what the builders left'; the pledge, freely given, that if the world shows no mending by moonrise of the new moon, you will walk to the white stones yourself and stand for the pull, unresisted. When you finish he is quiet for a long time, looking at you the way men look at weather they respect.\n\n'The order's oldest story,' he says at last, 'is the willing splinter. Most of us die without hearing it offered.' He looks past you, at the campus, at the country calming for a hundred kilometres around the warm thing in front of him, and something moves behind the mildness that might, in a man less sure, be called grief. 'I'll tell you what I believe, friend, so the compact is honest on both faces. I believe the world is a wound trying to close, and I believe you are the splinter, and I believe that at the new moon you will stand at the stones and I will do my office and weep doing it. And I believe in compacts more than I believe in haste.' He puts out his bare hand. 'Until the new moon. Sworn.'\n\nYou swear it. Sere countersigns the compact on the gatehouse ledger in a hand that shakes exactly once, and the column strikes its fires by noon and folds back down the valley to make camp at the mother-house fork — withdrawn, not gone; compacts are witnessed things — and the campus exhales.\n\nOsy says nothing until the two of you are alone at the horseshoe. Then: 'Price check, colleague. You've pledged them your body on a lunar timer, against the mending of a world we don't yet know how to mend.' Her voice is flat and her knuckles are white and the two facts have stopped pretending to be unrelated. 'So the file just acquired a deadline. New moon. Whatever is in that mooring, whatever the not yet was waiting for — we are now on its schedule and Hollis's both. Copy fast. Read fast. And colleague —' at the door she turns, and the tournament stillness has one crack in it, and through the crack, eleven years — 'the next time you price your own life into a deal, the household holds a vote first. That's an amendment. It passed unanimously while you were out swearing.'",
+      "item": {
+        "id": "warden_compact",
+        "name": "The New Moon Compact",
+        "description": "Sworn at the fence line, countersigned by Sere: a stay until the new moon, bought with your freely pledged word — if the world shows no mending by then, you stand at the white stones for the pull, unresisted. Hollis believes in compacts more than haste. He will do his office and weep doing it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Down into the deep stacks with a lunar timer running — the copying, the as-builts, the founder's own design, and a world to mend by moonrise.",
+          "next": "aftermath"
+        }
+      ]
+    },
+    "route_door": {
+      "id": "route_door",
+      "text": "You hold the door, and the door holds, and the price walks up to it on the second night wearing forty years of certainty.\n\nThe first day is Rhee's masterpiece. The interface division was built against older fears, and the machinist plays it like an organ: blast shutters nobody knew still ran, corridors flooded ankle-deep from the fire mains to slow boots and kill footing, the single approach to the stacks' stair narrowed by welded racking into a defile one body wide. The Bare Hands come on at dusk with pry bars and hymn-calm and no cruelty at all, which makes it worse, and the household's watch runs all night in shifts — Osy on the shutters' cranks, you at the defile with a pry bar of your own and the specific terror of an average man holding arithmetic's worst corridor, B pacing the dark behind you with his hackles up and his discipline absolute.\n\nThey do not break the defile. The copying runs below, hour after bought hour, thirty-eight percent, sixty, eighty-one.\n\nIt is the fire mains that kill Rhee. Second night, the order's engineers — they have engineers; certainty recruits everyone — find the pumphouse and shut the flood, and the machinist goes down through the service crawl to reopen it, alone, without asking, because it is his house and his organ and his objection, four years old, finally with hands. He gets the water back. You hear it come, a cathedral sound through the pipes, boots slowing above, the defile holding — and the crawl does not give him back. A fall, in the dark, in the wet, at seventy: the oldest invoice there is. B finds him at dawn, and stands over him in the pump-house doorway, and howls once — the first and only time you ever hear it — and the sound goes down every corridor of the house the old man kept, and even the Bare Hands at the shutters go quiet at it, hymn-calm and all.\n\nThe column withdraws on the third morning — doctrine is patient; doors are not worth what compacts are; they will return with more — and the household buries Rhee where he told Osy, on the second night, drily, in case: under the terrace, facing east, 'where I can keep an eye on the cabling.' The copying finishes while you are still filling the grave. One hundred percent. Two days, bought and paid.\n\nAt the foot of the founder's file, beneath her own amendment, Osy writes the campus's last entry in the vandal-proof hand: 'The stacks are whole. The stacks were his. — For A. Rhee, who filed the objection, and held the door, and was owed a better ledger than this one.'",
+      "item": {
+        "id": "rhee_fallen",
+        "name": "Under the Terrace, Facing East",
+        "description": "The machinist reopened his own fire mains in the dark, at seventy, without asking, and the crawl did not give him back. The stacks finished copying while you filled the grave. B howled once — the only time you ever heard it — and even the Bare Hands went quiet.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Down into the whole, paid-for stacks — because the only apology with any engineering content is to read every page the old man died holding the door for.",
+          "next": "aftermath"
+        }
+      ]
+    },
+    "route_surrender": {
+      "id": "route_surrender",
+      "text": "You open the gates at dawn, and you learn what the oldest trade actually costs, which is never what the ledger said.\n\nThe terms are simple and Hollis honors every one of them: the household walks, unhindered, with what it can carry; the campus is the order's. The bluff holds — the deep stacks' blast door, dressed by Rhee overnight in forty years of grime and a welded 'FLOODED — STRUCTURAL' plate, reads to their engineers as dead void, and the copying rig below sits silent and safe in the dark, unfound and unfinished. Thirty-one percent. What is on the drives is on the drives.\n\nThe order does not loot. It liturgizes. You watch from the ridge road, packs cutting shoulders, as the Bare Hands walk the campus in procession, and then the fires go up — the accommodation blocks, the horseshoe consoles, the calibration lab where the sky was built, each ignition attended with bowed heads, a wound being helped to close — and Rhee stands beside you on the ridge and watches his twenty-two years burn with a face like sheet steel, and says nothing at all for one hour, and then says, in a voice you will hear for the rest of your life: 'The objection was in there. The original. Four years of appendices.' And then, machinist to the end, already turning east: 'Copies exist. Walk, household. Daylight's a tool.'\n\nThe order does not garrison. Splinter-pullers, Brother Alder said, mostly go away again: by the second dawn the column has said its offices over the ashes and folded back down the valley road, certain the wound of the western hills has been helped to close — and the household comes down off the ridge into the warm ruin of the campus and reopens the forged door, and the deep stacks breathe their cold intact dark up the stair like a cellar that never heard the fires.\n\nRhee stands a long time at the head of his burnt lab before he goes below. The horseshoe is slag; the objection — the original, four years of appendices — is smoke; twenty-two years of workshop is an acre of warped roofline against the moor sky. 'Copies exist,' he says at last, machinist to the end, in a voice you will hear for the rest of your life, and B crosses the char and leans, full weight, thirty-four kilos of unearned certainty against a machinist's knees, and after a while the old man's hand finds the dog's ruff, and after another while he goes down the stair to the work.\n\nBuildings for people, and the stacks for a lie of a door. It never once comes out even. It was still the only column that balanced.",
+      "item": {
+        "id": "surface_burned",
+        "name": "The Warm Ruin",
+        "description": "The bluff held and the surface paid for it: the calibration lab, the horseshoe, the original objection with its four years of appendices — smoke. Below the forged 'FLOODED' plate, the deep stacks sit whole and cold and unfound. Rhee reads in them daily, in his burnt house, at the pace of a man spending inheritance.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Down into the intact stacks beneath the burnt campus — the copying resumed, the founder's design whole, and an old man reading in the ruin of his own workshop.",
+          "next": "aftermath"
+        }
+      ]
+    },
+    "aftermath": {
+      "id": "aftermath",
+      "text": "The ledger of the siege gets written that evening, because the household writes its ledgers while the ink of them still hurts.\n\nOsy chairs the accounting at whatever table the day has left you, and it is done properly: what was spent, what was bought, what now bears interest. Somewhere in the middle of it she stops, pen down, and looks at the lone shirt-button king still standing where the war council left it, and says the thing that the chapter has been arriving at since B first heard boots a day out:\n\n'Notice what he did, colleague. Hollis. He never touched a piece. He walked forty certainties up a valley and put us in a position where every legal move cost us material — the east, or your word, or the stacks, or the man —' the pen stands in her fingers like a piece she is declining to play — 'and then he waited for us to move, because he knew we had to. That's not zealotry. That's technique. The doctrine may be a wound-cult, but somebody in that order plays real chess, and we have now shown them our style under pressure, which is worth more to a good opponent than any single exchange.' She writes one line, and turns the book so you can read it, and it goes into the file at the level of doctrine, beside two skulls, one file and nothing unwitnessed:\n\n'They will come again, with better technique. Next time we choose the position first.'\n\nOutside, the western hills hold their vast grey evening. Somewhere east, the yard keeps its one true day around whatever wears your keys; somewhere nearer, an order of certainties reorganizes itself around what it has learned. B sleeps against Osy's back, on the seam of her, holding the page. The household counts its remaining pieces, and finds them fewer, and dearer, and — this goes in the file too, in your hand, at the bottom of the siege's account, because it is data — undivided.",
+      "end": true
+    }
+  }
+}
