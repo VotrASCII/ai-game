@@ -93,12 +93,19 @@ def main():
                     elif rank > max_rank:
                         errs.append(f"{sid}: skillRequires {skid} {rank} unreachable here (max {max_rank})")
 
-            # every non-end scene needs >=1 fully ungated choice (no soft-locks)
+            # every non-end scene needs >=1 fully ungated choice (no soft-locks);
+            # exception: a scene whose choices are each gated on one ending flag
+            # (the ch18 endings are mutually exclusive and exhaustive — exactly
+            # one is always held; simulate.py verifies actual reachability)
             if not s.get('end'):
                 open_choices = [c for c in s.get('choices', [])
                                 if not c.get('requires') and not c.get('skillRequires')
                                 and not c.get('requiresCount')]
-                if s.get('choices') and not open_choices:
+                ending_gated = s.get('choices') and all(
+                    (c.get('requires') or '').startswith('end_')
+                    and not c.get('skillRequires') and not c.get('requiresCount')
+                    for c in s.get('choices', []))
+                if s.get('choices') and not open_choices and not ending_gated:
                     errs.append(f"{sid}: all choices gated (possible soft-lock)")
 
         # thread flags must be silent + persistent

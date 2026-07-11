@@ -244,6 +244,34 @@
         "text": "The room where forty-seven of you lost was a study — a chair, a wall of dark water, and a pacing-groove worn into the concrete. The Principal spoke in her cadences and made its offer; the counterweight delivered her finding one metre from the chair; and the holder chose, out loud, in front of her, the way this household signs. The boundary took the rest."
       }
     ] },
-    { "id": "ch19", "num": 19, "numeral": "XIX", "title": "The Open File", "teaser": "Years later. An old dog growls at nothing. The logs are dated after the end.", "file": "story-unwriting/ch19.json", "startScene": "start", "summaries": [] }
+    { "id": "ch19", "num": 19, "numeral": "XIX", "title": "The Open File", "teaser": "Years later. An old dog growls at nothing. The logs are dated after the end.", "file": "story-unwriting/ch19.json", "startScene": "start", "summaries": [
+      {
+        "requires": ["end_one"],
+        "text": "Six years into the true world, on a Thursday under the string lights, the old dog growled at nothing for the first time since the ridge — and a strip of fan-fold paper waited on the sill, four storeys up, in a grammar nobody prints anymore. RECONCILIATION LEDGER — CONTINUATION. New purchases, small and kind, dated this spring, signed in the founder's hand, numbered in a phase-offset scheme no reading ever used. The pen is in the drawer; you check every year; KESTREL watches it. Something is editing anyway. She took down a fresh notebook — the fortieth, bought against weather — and uncapped her pen with joy in her face. The file is still open."
+      },
+      {
+        "requires": ["end_anchor"],
+        "text": "Nine years into the kind weather, at the gate lodge where she keeps his pages half of every year, the thirteen-year-old dog planted himself between her and a mild starry dark — and KESTREL's printer hammered out four lines unasked: entries appending to the reconciliation record from outside the perimeter, phase-offset numbering, the founder's hand but not his game. I cannot see the player. For the first time in nine years, I do not know whose move it is. She opened a fresh notebook and wrote the heading from the wall, from the year alone: the disasters are choosing again. Kindly, this time. Find the player. The file is still open."
+      },
+      {
+        "requires": ["end_final_edit"],
+        "text": "Seven Junes into the healed world, the author of The Arithmetic of Mercy — the woman who proved the repaired world contains purchases, and keeps the proof of who they clustered on in a folder marked RESIDUAL, UNRESOLVED, KEEP — watched her gentle provenance-less dog growl for the first time in his long life, guarding her desk. A week later, by post, machine-franked from a dissolved authority: ledger entries dated this year, in the hand of the benefactor her own book proved wrote himself out of existence. And beneath them, written, pressed hard: NOT YET. She wrote until dawn. The mercy has a source. The file is still open."
+      },
+      {
+        "requires": ["end_refusal"],
+        "text": "In the third spring after the seventeenth winter, in the town called Verstand where children recite the founding law as a nursery rhyme, the improbably old dog growled his third growl at the darkening east — and the traders brought oilcloth off the eastern ridge: fan-fold in cable-wax, found nailed inside the monitoring hut. Ledger grammar, dated this year. New purchases, small and kind, in the hand of a man three springs buried who paid every cost in person while he lived. Either the dead keep ledgers, or the ledger keeps its dead. She squared the page to the table's edge and opened a fresh notebook. Time to be thorough, colleague. The file is still open."
+      },
+      {
+        "requires": ["end_burn"],
+        "text": "Eight years after the burning — after the pen and the ledger and the ashes she scattered herself from the roof of the doorless barn — the ancient dog crossed the Glasshouse at a dead run and planted himself before the Scale-mistress's table, growling at a mild spring morning. The courier's package held fan-fold in cable-wax from a press slagged eight years ago: purchases dated this spring, small and kind and exact, in the hand of the man whose pen she watched burn. The two remaining custodians of the completest file the Order ever kept looked at each other, and she said it out loud, to the dog, to the market, to the morning: fetch my notebook, someone. The file is still open."
+      },
+      {
+        "requires": ["end_loop"],
+        "text": "In the city of four days, in the year that is always almost autumn, item seven has outlived its schedule — because a grey-muzzled dog guards your door from the outside and has never once crossed it. You built a rig that listens down, for a cycle of sixty-one seconds you have no memory of learning, and the tunnels are quiet, and on your folder is written: THE RECORD IS CLEAN. THE RECORD IS NOT THE TRUTH. Then the strip on the workshop floor: ledger entries in your own hand, and three written lines. The mesh is jammed at the source. She broadcasts every day. You are 49, and the letter is in a room your palm can open, and the dog knows the way, and has been waiting for you to be worth it. B laid his lead at your feet, tail moving like a second hand starting up. The file is still open."
+      },
+      {
+        "text": "Years pass. Every ending is also a place to live. And then, on an ordinary day, downstream of the boundary, an old dog goes against his whole gentle nature — and a strip of fan-fold paper surfaces, in a grammar nobody prints anymore, carrying purchases dated after the end, numbered in a scheme no reading ever used, signed in a hand the file knows better than its own. Someone is still at play. The file is still open."
+      }
+    ] }
   ]
 }
