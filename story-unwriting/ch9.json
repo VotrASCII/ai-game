@@ -18,6 +18,27 @@
         {
           "text": "Ask it plainly, in the room built for the question: 'Who was the standard, Rhee? Who did the mathematics hold still?'",
           "next": "the_standard"
+        },
+        {
+          "text": "[Signal 3] Read the lab before he narrates it — the benches, the tape-shadowed locker, the plots still pinned at the horseshoe's far end. Never let the curator choose your first document.",
+          "next": "read_the_lab",
+          "skillRequires": { "signal": 3 }
+        }
+      ]
+    },
+    "read_the_lab": {
+      "id": "read_the_lab",
+      "text": "You walk the lab with your hands clasped behind you, museum-style, the way you once walked a vault, because the vault taught you the method and the method paid: never let the curator choose your first document.\n\nThe room curates itself anyway; you just refuse the order of service. The benches first. The wear on the third stool from the window matches the wear on your own desk chair in the tower, the same starboard list of a man who sits on his left hip when he reads — and the bench in front of it carries, in fading grease pencil, a column of figures whose sevens cannot decide about the cross-stroke. Then the horseshoe's far end, where the plots are still pinned: validation curves, years of them, browning at the edges, and you read them the way you read everything, axes first. Reference-candidate residuals, battery after battery — a synthetic mind checked against the species and failing, failing, failing, the curves all wearing the same signature sag of a model that describes everyone and coheres as no one. And then the last sheet in the row, pinned slightly askew, by a hand in a hurry or a state: REF-CANDIDATE (LIVE) — RESIDUALS, FULL BATTERY. The curve is flat. Flat across the whole instrument, flat the way water is level, flat the way nothing biological has any right to be against a statistical construction of the entire species — unless the construction and the subject are, within measurement error, the same object.\n\nThere is no name on the sheet. There is a subject code, and there is the plot's own grammar — the axis conventions, the interval notation, the boxed question mark against one outlier since resolved — and you have been reading that grammar since your second year of university, because you invented it.\n\nThe model would not hold because it was not anybody. The live subject's residuals were flat. And the man who built the median mind of the species plotted this sheet about someone, in this room, in your handwriting, and the chair behind you is harnessed for a sitter of exactly your measurements, and the cold walks up your spine with the patience of arithmetic completing itself.\n\nBehind you, Rhee watches you read. 'Most visitors head for the chair,' he says quietly. 'You went for the plots.' A pause, weighed on a machinist's scale. 'He did too. Every morning. First thing, like checking the weather.'",
+      "item": {
+        "id": "flat_residuals",
+        "name": "The Flat Curve",
+        "description": "REF-CANDIDATE (LIVE) — RESIDUALS, FULL BATTERY: one browning sheet, pinned askew, flat across the whole instrument. A synthetic median that cohered as no one, and one live subject it could not tell itself apart from. Plotted in your own conventions, boxed question mark and all.",
+        "persistent": false
+      },
+      "choices": [
+        {
+          "text": "Say it to him straight, so the room can stop holding it: 'It was never synthetic at the end, was it. Who was the standard, Rhee?'",
+          "next": "the_standard"
         }
       ]
     },
@@ -27,13 +48,27 @@
       "choices": [
         {
           "text": "Sit down, before the legs decide for you, and make Rhee tell the rest in order: the delivery, the Halfway, and why a man who was the standard woke up eleven months ago in a tower with no memory of any of it.",
-          "next": "rhee_tells"
+          "next": "rhee_delivery"
         }
       ]
     },
-    "rhee_tells": {
-      "id": "rhee_tells",
-      "text": "Rhee tells it in order, machinist to the end, and the order is its own horror, because you can hear the invoice lines accumulating toward a total he does not have.\n\nThe October delivery: the interface rig itself — the chair's twin, the mobile unit, crated with its biological reference kernel, escorted east by the only man whose presence the kernel could be validated against in transit. 'Calibration standard, biological. Bureaucrat's poetry. You rode with your own baseline in a box, son, down to the mooring they'd poured for it under the yard. Eighteen months of night freight to build the socket; one October night to seat the plug.' Why there, why deep: 'Distance. The mathematics wanted the anchor point far from the engine. The Loom's core ran overhead —' a hand, tilted at the ceiling, at the sky, at the memory of a sun-scale machine — 'and the fixed point sat in bedrock, east, at the end of the longest lever they could pour. Your yard is the anchor's house, and it was built around your numbers.'\n\nAnd the Halfway. Rhee was here, in this room, on the horseshoe. 'The global run needed the standard live in the loop — not the model; you; the residuals had settled that argument. You'd been commuting to the yard for months. Every few weeks, east, two days in the mooring, back — synchronization sits, they were called. On the day, you were seated. We initiated. And I will tell you what the record shows and no more, because past this line everything is grief pretending to be data: forty-one seconds in, the reconciliation front hit something it could not express as a difference from you, and the engine did what engines do when the reference disagrees with the world.' The old man's hands settle flat on the bench, and stop. 'It kept the reference. It kept you, son. It threw away the world's version and kept yours, and the mismatch tore the sky in half, and when the lights came back the Loom was gone quiet, the campus was echoless, every one of my nine hundred was fifty-one, and the mooring — sealed, live, drawing power, holding one heartbeat and the one true day around it. We could not raise it. We have never raised it. We buried the project, and then, four years on —' he looks up, and his eyes go from you to Osy and back, and the machinist finally sets down his tools — 'the ledgers started. The purchases. The Editor, signing in a wardkey that this division issued exactly one of, ever. Single holder. I have spent four years praying the seals had held and the man in my doorway is the answer: they didn't. Something walks out of that mooring wearing your keys, son. And the only mercy I can find in tonight is that it isn't wearing you — because you're here, and you don't remember, and the wardkey never leaves the holder. So I have one question back, and it's the same as yours. If the standard is standing in my lab —' the stick, trembling, stilled — 'who is standing in the mooring?'",
+    "rhee_delivery": {
+      "id": "rhee_delivery",
+      "text": "Rhee tells it in order, machinist to the end, and the order is its own horror, because you can hear the invoice lines accumulating toward a total he does not have.\n\nThe October delivery: the interface rig itself — the chair's twin, the mobile unit, crated with its biological reference kernel, escorted east by the only man whose presence the kernel could be validated against in transit. 'Calibration standard, biological. Bureaucrat's poetry. You rode with your own baseline in a box, son, down to the mooring they'd poured for it under the yard. Eighteen months of night freight to build the socket; one October night to seat the plug.' Why there, why deep: 'Distance. The mathematics wanted the anchor point far from the engine. The Loom's core ran overhead —' a hand, tilted at the ceiling, at the sky, at the memory of a sun-scale machine — 'and the fixed point sat in bedrock, east, at the end of the longest lever they could pour. Your yard is the anchor's house, and it was built around your numbers.'\n\nAnd there the ring main runs down — the crank's spring spent, the lamps browning to embers — and Rhee does not stop talking; he has told this part to the dark for four years, and the dark is where it lives. It is you who moves: across the lab, to a crank your hands find without being sent, winding the old man's light back up while he stands with one palm flat on the chair's rail, keeping the worst of it for a room that can see him tell it. 'The Halfway next,' he says, when the lamps have climbed back to honest yellow. 'Ask it however you can stand to. There's no order of service makes it smaller.'",
+      "choices": [
+        {
+          "text": "The day itself, plainly: 'Tell me the Halfway, Rhee. From inside this room. The record, and no mercy — for him or for me.'",
+          "next": "rhee_halfway"
+        },
+        {
+          "text": "Aim him at the machine, the way she would — payoffs first: 'When the run went wrong, the engine had a choice to make. Tell it from the choice outward.'",
+          "next": "rhee_halfway"
+        }
+      ]
+    },
+    "rhee_halfway": {
+      "id": "rhee_halfway",
+      "text": "And the Halfway. Rhee was here, in this room, on the horseshoe. 'The global run needed the standard live in the loop — not the model; you; the residuals had settled that argument. You'd been commuting to the yard for months. Every few weeks, east, two days in the mooring, back — synchronization sits, they were called. On the day, you were seated. We initiated. And I will tell you what the record shows and no more, because past this line everything is grief pretending to be data: forty-one seconds in, the reconciliation front hit something it could not express as a difference from you, and the engine did what engines do when the reference disagrees with the world.' The old man's hands settle flat on the bench, and stop. 'It kept the reference. It kept you, son. It threw away the world's version and kept yours, and the mismatch tore the sky in half, and when the lights came back the Loom was gone quiet, the campus was echoless, every one of my nine hundred was fifty-one, and the mooring — sealed, live, drawing power, holding one heartbeat and the one true day around it. We could not raise it. We have never raised it. We buried the project, and then, four years on —' he looks up, and his eyes go from you to Osy and back, and the machinist finally sets down his tools — 'the ledgers started. The purchases. The Editor, signing in a wardkey that this division issued exactly one of, ever. Single holder. I have spent four years praying the seals had held and the man in my doorway is the answer: they didn't. Something walks out of that mooring wearing your keys, son. And the only mercy I can find in tonight is that it isn't wearing you — because you're here, and you don't remember, and the wardkey never leaves the holder. So I have one question back, and it's the same as yours. If the standard is standing in my lab —' the stick, trembling, stilled — 'who is standing in the mooring?'",
       "choices": [
         {
           "text": "Put your two exhibits on his bench — the hut survey with its margin, and the October line — and let the household and the machinist merge their files into one.",
