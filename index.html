@@ -62,6 +62,14 @@
     </div>
   </div>
 
+  <!-- ─── Part Card (precedes the chapter card on a part's first chapter) -->
+  <div id="part-card" class="hidden">
+    <div id="part-card-inner">
+      <span id="part-card-label"></span>
+      <span id="part-card-title"></span>
+    </div>
+  </div>
+
   <!-- ─── Chapter Card (full-screen title reveal) ─────────────── -->
   <div id="chapter-card" class="hidden">
     <div id="chapter-card-inner">
@@ -75,7 +83,7 @@
 
     <!-- Top-left UI -->
     <div id="nav-bar">
-      <button id="btn-game-back" title="Back to stories">← stories</button>
+      <button id="btn-game-back" title="Back to chapters">← chapters</button>
     </div>
 
     <!-- Top-right UI -->
@@ -107,7 +115,7 @@
 
   <!-- ─── Item Notification ─────────────────────────────────────── -->
   <div id="item-notification" aria-live="polite">
-    <span class="notif-label">Item discovered</span>
+    <span id="item-notif-label" class="notif-label">Item discovered</span>
     <span id="item-notif-name"></span>
     <span id="item-notif-desc"></span>
   </div>

@@ -37,9 +37,12 @@ const Game = {
   el: {},
 
   /* ── Internal handles ────────────────────────────────────────── */
-  _twCancel:      null,
-  _notifTimer:    null,
-  _currentScreen: 'library',
+  _twCancel:       null,
+  _currentScreen:  'library',
+  _notifQueue:     [],
+  _notifBusy:      false,
+  _notifGen:       0,
+  _pendingDropped: null,   // items the chapter break took; announced on the first scene
 
   /* ═══════════════════════════════════════════════════════════════
      INIT
@@ -180,6 +183,9 @@ const Game = {
       chapterCard:      $('chapter-card'),
       chapterCardNum:   $('chapter-card-numeral'),
       chapterCardTitle: $('chapter-card-title'),
+      partCard:         $('part-card'),
+      partCardLabel:    $('part-card-label'),
+      partCardTitle:    $('part-card-title'),
       gameTitle:        $('game-title'),
       gameSubtitle:     $('game-subtitle'),
       btnNew:           $('btn-new'),
@@ -198,6 +204,7 @@ const Game = {
       sceneText:        $('scene-text'),
       choicesContainer: $('choices-container'),
       itemNotification: $('item-notification'),
+      itemNotifLabel:   $('item-notif-label'),
       itemNotifName:    $('item-notif-name'),
       itemNotifDesc:    $('item-notif-desc'),
       game:             $('game'),
@@ -236,10 +243,61 @@ const Game = {
   },
 
   /* ═══════════════════════════════════════════════════════════════
-     CHAPTER CARD
+     PARTS
+
+     A story may group its chapters into parts (manifest.parts). Stories
+     without them behave exactly as before: no headers, no part card.
   ═══════════════════════════════════════════════════════════════ */
+  _parts() {
+    return this.manifest?.parts || [];
+  },
+
+  _partOf(chId) {
+    return this._parts().find(p => p.chapters.includes(chId)) || null;
+  },
+
+  /* The part a chapter *opens*, or null if it sits mid-part. */
+  _partOpenedBy(chId) {
+    return this._parts().find(p => p.chapters[0] === chId) || null;
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     PART / CHAPTER CARDS
+  ═══════════════════════════════════════════════════════════════ */
+  async _showPartCard(part) {
+    const { partCard, partCardLabel, partCardTitle } = this.el;
+
+    partCardLabel.textContent = part.label || '';
+    partCardTitle.textContent = part.title || '';
+    partCardTitle.classList.toggle('hidden', !part.title);
+    partCardLabel.classList.remove('card-enter');
+    partCardTitle.classList.remove('card-enter');
+
+    partCard.classList.remove('hidden');
+    await this._wait(30);
+    partCard.classList.add('card-visible');
+
+    await this._wait(100);
+    partCardLabel.classList.add('card-enter');
+    partCardTitle.classList.add('card-enter');
+
+    await this._wait(2100);
+
+    partCardLabel.classList.remove('card-enter');
+    partCardTitle.classList.remove('card-enter');
+    partCard.classList.remove('card-visible');
+    await this._wait(700);
+    partCard.classList.add('hidden');
+  },
+
+  /* The part card, when there is one, plays first and cross-fades into
+     the chapter card — so a part's opening chapter reads: PART TWO / The
+     Crossing → VII / The Long Road West → prose. */
   async _showChapterCard(ch) {
     const { chapterCard, chapterCardNum, chapterCardTitle } = this.el;
+
+    const part = this._partOpenedBy(ch.id);
+    if (part) await this._showPartCard(part);
 
     chapterCardNum.textContent   = ch.numeral;
     chapterCardTitle.textContent = ch.title;
@@ -273,14 +331,15 @@ const Game = {
     await this._transitionTo('library');
   },
 
-  /* Leave a scene mid-play. The chapter state is already saved on every
-     scene render, so this only has to stop what's still animating. */
+  /* Leave a scene mid-play, back up to this story's chapter list — the
+     library is two hops away, via the chapter screen's own back button.
+     The chapter state is already saved on every scene render, so this
+     only has to stop what's still animating. */
   async _leaveGame() {
     if (this._twCancel) this._twCancel();
-    clearTimeout(this._notifTimer);
-    this.el.itemNotification.classList.remove('show');
+    this._clearNotifications();
     this._closeInventory();
-    await this._backToLibrary();
+    await this._transitionTo('chapter');
   },
 
   /* ═══════════════════════════════════════════════════════════════
@@ -384,47 +443,76 @@ const Game = {
   _buildChapterList() {
     this.el.chapterList.innerHTML = '';
 
+    let lastPart = null;
     this.manifest.chapters.forEach(ch => {
-      const prog        = this._getChapterProgress(ch.id);
-      const isUnlocked  = !!prog;
-      const isCompleted = prog?.status === 'complete';
-
-      const tile = document.createElement('div');
-      tile.className = 'chapter-tile' + (!isUnlocked ? ' locked' : '');
-
-      const numeral = document.createElement('span');
-      numeral.className = 'chapter-numeral';
-      numeral.textContent = ch.numeral;
-
-      const info = document.createElement('div');
-      info.className = 'chapter-info';
-
-      const title = document.createElement('div');
-      title.className = 'chapter-title-text';
-      title.textContent = ch.title;
-
-      const teaser = document.createElement('div');
-      teaser.className = 'chapter-teaser';
-      teaser.textContent = isUnlocked ? ch.teaser : '—';
-
-      info.appendChild(title);
-      info.appendChild(teaser);
-
-      const badge = document.createElement('span');
-      badge.className = 'chapter-badge';
-      if (isCompleted)     badge.textContent = '✓';
-      else if (isUnlocked) badge.textContent = '●';
-
-      tile.appendChild(numeral);
-      tile.appendChild(info);
-      tile.appendChild(badge);
-
-      if (isUnlocked) {
-        tile.addEventListener('click', () => this._onChapterTileClick(ch, isCompleted));
+      const part = this._partOf(ch.id);
+      if (part && part !== lastPart) {
+        this.el.chapterList.appendChild(this._partHeader(part));
+        lastPart = part;
       }
-
-      this.el.chapterList.appendChild(tile);
+      this.el.chapterList.appendChild(this._chapterTile(ch));
     });
+  },
+
+  _partHeader(part) {
+    const header = document.createElement('div');
+    header.className = 'part-header';
+
+    const label = document.createElement('span');
+    label.className = 'part-header-label';
+    label.textContent = part.label;
+    header.appendChild(label);
+
+    if (part.title) {
+      const title = document.createElement('span');
+      title.className = 'part-header-title';
+      title.textContent = part.title;
+      header.appendChild(title);
+    }
+
+    return header;
+  },
+
+  _chapterTile(ch) {
+    const prog        = this._getChapterProgress(ch.id);
+    const isUnlocked  = !!prog;
+    const isCompleted = prog?.status === 'complete';
+
+    const tile = document.createElement('div');
+    tile.className = 'chapter-tile' + (!isUnlocked ? ' locked' : '');
+
+    const numeral = document.createElement('span');
+    numeral.className = 'chapter-numeral';
+    numeral.textContent = ch.numeral;
+
+    const info = document.createElement('div');
+    info.className = 'chapter-info';
+
+    const title = document.createElement('div');
+    title.className = 'chapter-title-text';
+    title.textContent = ch.title;
+
+    const teaser = document.createElement('div');
+    teaser.className = 'chapter-teaser';
+    teaser.textContent = isUnlocked ? ch.teaser : '—';
+
+    info.appendChild(title);
+    info.appendChild(teaser);
+
+    const badge = document.createElement('span');
+    badge.className = 'chapter-badge';
+    if (isCompleted)     badge.textContent = '✓';
+    else if (isUnlocked) badge.textContent = '●';
+
+    tile.appendChild(numeral);
+    tile.appendChild(info);
+    tile.appendChild(badge);
+
+    if (isUnlocked) {
+      tile.addEventListener('click', () => this._onChapterTileClick(ch, isCompleted));
+    }
+
+    return tile;
   },
 
   async _onChapterTileClick(ch, isCompleted) {
@@ -516,10 +604,13 @@ const Game = {
     };
   },
 
-  /* Transfer persistent items and skills from the previous chapter's completed state */
+  /* Transfer persistent items and skills from the previous chapter's completed state.
+     Everything else is chapter-scoped and falls away here — held for the new
+     chapter's first scene to announce, so the player sees what they lost. */
   _startChapterFresh(ch) {
     const idx  = this.manifest.chapters.findIndex(c => c.id === ch.id);
     const next = this._freshState(ch.startScene);
+    this._pendingDropped = null;
 
     if (idx > 0) {
       const prevCh   = this.manifest.chapters[idx - 1];
@@ -528,14 +619,42 @@ const Game = {
         prevProg.completedInventory
           .filter(i => i.persistent)
           .forEach(i => next.inventory.push(i));
+
+        const dropped = prevProg.completedInventory.filter(i => !i.persistent && !i.silent);
+        if (dropped.length) this._pendingDropped = dropped;
       }
       if (prevProg?.completedSkills)      next.skills           = { ...prevProg.completedSkills };
       if (prevProg?.completedSkillPoints) next.skillPoints      = prevProg.completedSkillPoints;
       if (prevProg?.completedWaypoints)   next.waypointsClaimed = [...prevProg.completedWaypoints];
+    } else {
+      this._inheritedItems().forEach(i => next.inventory.push(i));
     }
 
     this.state = next;
     this._refreshInventoryUI();
+  },
+
+  /* Items carried over from another story's save (manifest.inheritsFrom):
+     scan the source story's completed chapters for the listed item ids. */
+  _inheritedItems() {
+    const inh = this.manifest?.inheritsFrom;
+    if (!inh?.story || !Array.isArray(inh.items)) return [];
+
+    let saved;
+    try {
+      saved = JSON.parse(localStorage.getItem(this._progressKeyFor({ dir: inh.story })) || 'null');
+    } catch (_) {
+      return [];
+    }
+
+    const wanted = new Set(inh.items);
+    const found  = new Map();
+    Object.values(saved?.chapters || {}).forEach(ch => {
+      (ch?.completedInventory || []).forEach(i => {
+        if (wanted.has(i.id) && !found.has(i.id)) found.set(i.id, { ...i, persistent: true });
+      });
+    });
+    return [...found.values()];
   },
 
   async _loadChapterData(ch) {
@@ -546,7 +665,10 @@ const Game = {
     if (!this._getChapterProgress(ch.id)) this._initChapterProgress(ch.id);
   },
 
+  /* Resuming mid-chapter: the break's drops were announced on the way in,
+     the first time. Don't replay them. */
   _restoreState(save) {
+    this._pendingDropped = null;
     this.state = {
       currentSceneId:   save.currentSceneId,
       inventory:        save.inventory        || [],
@@ -578,6 +700,13 @@ const Game = {
     this.el.choicesContainer.innerHTML = '';
 
     this.el.game.classList.remove('fading');
+
+    /* Before the prose, not after: this reports on the boundary just
+       crossed, and the end of this scene belongs to whatever it awards. */
+    if (this._pendingDropped) {
+      this._pendingDropped.forEach(i => this._showLostNotification(i));
+      this._pendingDropped = null;
+    }
 
     await this._typewriteText(scene.text);
 
@@ -752,7 +881,9 @@ const Game = {
       const countLocked = choice.requiresCount &&
         choice.requiresCount.of.filter(id => this.hasItem(id)).length < choice.requiresCount.min;
       const skillLocked = choice.skillRequires && !this._meetsSkills(choice.skillRequires);
-      const locked      = itemLocked || countLocked || skillLocked;
+      const absentLocked = choice.requiresAbsent &&
+        choice.requiresAbsent.some(id => this.hasItem(id));
+      const locked      = itemLocked || countLocked || skillLocked || absentLocked;
 
       /* Hidden-thread choices: silently absent unless unlocked. */
       if (locked && choice.hideLocked) return;
@@ -1026,17 +1157,55 @@ const Game = {
   },
 
   /* ═══════════════════════════════════════════════════════════════
-     ITEM NOTIFICATION
+     ITEM NOTIFICATIONS
+
+     Queued, because a chapter boundary can drop several items at once and
+     each one deserves its own beat rather than overwriting the last.
   ═══════════════════════════════════════════════════════════════ */
   _showItemNotification(item) {
-    this.el.itemNotifName.textContent = item.name;
-    this.el.itemNotifDesc.textContent = item.description;
-    this.el.itemNotification.classList.add('show');
+    this._queueNotification({ label: 'Item discovered', item });
+  },
 
-    clearTimeout(this._notifTimer);
-    this._notifTimer = setTimeout(() => {
+  /* Non-persistent items don't survive the chapter break. Say so, in the
+     same corner and the same grammar as the pickup — just inverted. */
+  _showLostNotification(item) {
+    this._queueNotification({ label: 'Left behind', item, lost: true });
+  },
+
+  _queueNotification(notif) {
+    this._notifQueue.push(notif);
+    if (!this._notifBusy) this._drainNotifications();
+  },
+
+  async _drainNotifications() {
+    const gen = this._notifGen;
+    this._notifBusy = true;
+
+    while (this._notifQueue.length && gen === this._notifGen) {
+      const { label, item, lost } = this._notifQueue.shift();
+
+      this.el.itemNotifLabel.textContent = label;
+      this.el.itemNotifName.textContent  = item.name;
+      this.el.itemNotifDesc.textContent  = item.description;
+      this.el.itemNotification.classList.toggle('lost', !!lost);
+      this.el.itemNotification.classList.add('show');
+
+      await this._wait(this.config.notifDuration);
+      if (gen !== this._notifGen) return;
+
       this.el.itemNotification.classList.remove('show');
-    }, this.config.notifDuration);
+      if (this._notifQueue.length) await this._wait(560);  // let it slide out first
+    }
+
+    this._notifBusy = false;
+  },
+
+  /* Bump the generation so any in-flight drain loop retires quietly. */
+  _clearNotifications() {
+    this._notifGen++;
+    this._notifQueue = [];
+    this._notifBusy  = false;
+    this.el.itemNotification.classList.remove('show');
   },
 
   /* ═══════════════════════════════════════════════════════════════

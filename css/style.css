@@ -351,6 +351,66 @@ button {
   opacity: 1;
 }
 
+/* ── Part Card ─────────────────────────────────────────────────── */
+/* Plays ahead of the chapter card on a part's opening chapter. Inverts the
+   chapter card's hierarchy — small label above, large italic title — so the
+   two read as a sequence rather than a repeat. */
+#part-card {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 401;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.65s ease;
+}
+
+#part-card.card-visible {
+  opacity: 1;
+}
+
+#part-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#part-card-label {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.85s ease;
+}
+
+#part-card-label.card-enter {
+  opacity: 1;
+}
+
+#part-card-title {
+  font-family: var(--font-prose);
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.25;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.9s ease 0.35s, transform 0.9s ease 0.35s;
+}
+
+#part-card-title.card-enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── Chapter Select Screen ─────────────────────────────────────── */
 #chapter-content {
   width: 100%;
@@ -370,6 +430,37 @@ button {
 
 #chapter-list {
   margin-bottom: 3rem;
+}
+
+/* Part headers sit between chapter tiles; the first one carries no top
+   margin because the screen's eyebrow is already above it. */
+.part-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin: 2.6rem 0 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--border-bright);
+}
+
+.part-header:first-child {
+  margin-top: 0;
+}
+
+.part-header-label {
+  font-family: var(--font-ui);
+  font-size: 0.58rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.part-header-title {
+  font-family: var(--font-prose);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-mid);
 }
 
 .chapter-tile {
@@ -783,6 +874,23 @@ button {
 
 #item-notification.show {
   transform: translateX(0);
+}
+
+/* Losing an item at the chapter break: same corner, drained of accent. */
+#item-notification.lost {
+  border-left-color: var(--text-dim);
+}
+
+#item-notification.lost .notif-label {
+  color: var(--text-mid);
+}
+
+#item-notification.lost #item-notif-name {
+  color: var(--text-mid);
+}
+
+#item-notification.lost #item-notif-desc {
+  color: var(--text-dim);
 }
 
 .notif-label {
