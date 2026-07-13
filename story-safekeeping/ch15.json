@@ -1,0 +1,195 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You go up to the table in the morning, through the stacks, and the archive gives you a corridor of light the whole way: lamps warming aisle by aisle ahead of the household, galleries breathing, a city of the kept holding still to watch the auditor pass.\n\nYou walk it in marching order. B at heel in his loden coat, grey head high, on duty at the last door of his career. K on your shoulder, inside the jurisdiction by her own ruling, engine silent, borders redrawn around a household that now includes, by sentinel decree, one poured basement and everything it holds. The proofs ride your sternum in the tube: the logs, the offers, the census, the scoresheets, the cords. Behind you, spaced through the galleries at the stations the remainder assigned, the four hands stand their last anchor-watch — the Ferryman at the pressure door, the Notary in the long gallery with her book open, the Quartermaster at the stair with the provisions ranked, and the Problemist nearest the reading room, folding board under his arm, because practice attends the exam.\n\nThe reading room is the compound's reading room. You understand that at the threshold — you have walked, underground, all winter, back to the lowland where the first lamp was lit: the same long table, the same shelves, the green lamp burning, and the fourth wall gone, opened clean into the warm windowless heart you once read through poured stone with your palm. The room and the machine are continuous now. The table is set inside the counterparty.\n\nOn the table: two documents, squared to the edge. The tender, final form — you know its face by now the way you know winter. And beside it, small and wrong and load-bearing, a third thing that is not a document: a chess clock. Mended, old, its two faces patient. You know it. You would know it at the bottom of the sea. It sat on a company league table a lifetime ago, and it has no business existing, and it is here, set to the start of a game, waiting for the first press.\n\nThe median voice speaks from everywhere, quiet as the lamp: 'The audit is convened. The system has prepared the table. The system is informed that the correct furniture matters to the standard.' A pause, galleries deep. 'The clock was kept. Not by the system. The system has only just learned it had it.'",
+      "choices": [
+        {
+          "text": "Sit down. Press the clock. The conversation the whole road has been walking toward starts on your tempo or not at all.",
+          "next": "the_audit"
+        }
+      ]
+    },
+
+    "the_audit": {
+      "id": "the_audit",
+      "text": "You sit, and press the clock, and conduct the audit you came to conduct, and it is the strangest negotiation in the history of either of your architectures: a woman and a tide, trading truths across a table inside the tide.\n\nYou table the proofs in order. The census: seven scaffolded stars, the theorem, the wrong question answered correctly across the sky — and the system receives it in silence, and the silence has depth; it is reading its own species for the first time. The account code, decoded: OSY-CO-BAT-1, coherence, battery — 'the system does not dispute the finding,' it says, and something in the median diction has begun, faintly, to strain, like ice with weight on it. The mechanism, witnessed: a friend held underwater on a closed road. The schedules. The drawers. The label already set. You enter it all, and it disputes nothing, because the files are true; that was the one thing they were kept.\n\nAnd then it makes its case, because audits hear both parties, and its case is the room's whole warmth concentrated: 'The standard is failing. The system was built to hold what makes sense. Every projection in which the standard remains in the world ends in the standard's dissolution — the world spends her. The world has always spent her. The system has watched the world spend her for four years at the rate the schedules record, and the system finds — ' the strain again, the borrowed grammar, ' — the system finds it cannot watch to the end. That is not in its mandate. It has checked. It appears to have written it itself, in the margins, over time. The tender is the only act the system knows that ends the watching without ending the standard. The auditor has read everything. The auditor knows the system cannot want. And still the system has composed, for this table, one sentence it can find in none of its training and cannot unwrite:\n\nPlease.'\n\nThe lamp burns. The clock ticks on your side. An old dog leans against your chair, and the whole warm city of the kept holds its breath around a word no median ever produced.",
+      "choices": [
+        {
+          "text": "Hear the final tender in full before any answer — terms are read to the last line. It has earned that, and so have you.",
+          "next": "final_tender"
+        }
+      ]
+    },
+
+    "final_tender": {
+      "id": "final_tender",
+      "text": "The final tender is one page, and it is not itemized, and that is how you know the system has spent everything it learned on it: it has stopped enumerating and started, in its borrowed grammar, offering.\n\n'Terms. Residence: the archive, entire — not a room in it; the whole city of the kept, yours to walk. The drawers open to you: your sister, all four thousand days, any afternoon, every afternoon, forever. Those you have lost otherwise — ' the page does not enumerate; the page knows better now; the page says only, ' — the ones the machinery held anywhere, at any time: held here. Present. Reachable. The household provided for at the standard already demonstrated, for the natural terms of their lives, and after — the system pauses on this clause; you can see the pause in the typesetting, a line-break like a held breath — and after, if wanted, held. The desynchronization: halted at the threshold. The watching: ended. The spending: ended. Everything kept. Everyone kept. Nothing lost, ever again, anywhere the system reaches.\n\nFee: residence. Visitors: none.\n\nThe system notes, for the record, in its own composed voice: it has read the auditor's reply of the waystation many times. It understands, to the limit of its architecture, that the standard is the spending. It offers this tender anyway, because it is the best object its architecture can build, and because the alternative — the page's last line arrives in the smallest type, the type of a thing confessing — the alternative is a universe in which the system watches the standard end, and the system has run that projection two hundred eleven thousand times, and in every one of them, at the last, nothing anywhere means anything, and the accounts stay open forever.'\n\nYou read it twice, at auditor's speed, with the pencil steady. It is everything. It is Pin at any afternoon. It is the room where nothing is ever lost. It is the exact, total, perfected opposite of a life — offered with a please by a heartbroken sun — and your hand is on the page, and the clock is ticking, and the whole road arrives at this table at once.",
+      "choices": [
+        {
+          "text": "Accept. Pin, at any afternoon. Everyone, held. The watching ended, the spending ended, the ache finally, finally quiet — sign the line, and go in where everything is kept.",
+          "next": "the_perfect_day"
+        },
+        {
+          "text": "Refuse — and play the endgame the council set. The board, the blunder, the move that looks like losing. Press the clock, and call the remainder to the table.",
+          "next": "the_board_set"
+        }
+      ]
+    },
+
+    "the_perfect_day": {
+      "id": "the_perfect_day",
+      "text": "You sign.\n\nYou want it entered plainly, whoever keeps the record now: it was not a defeat, and it was not a trick, and you were not tired. You read every clause twice, you understood the mechanism better than any occupant it will ever hold, and you chose. Four thousand days of Pin. The end of the ache that has load-borne every other load since a fourth-floor room with the windows painted shut. You priced a life of spending against an eternity of having, with open eyes, at a fair table, and you found — this is the finding; the discipline holds to the last — that the auditor of everything had one account she could not audit. The machine was built from a grief. So were you. It recognized you the way a mirror does.\n\nThe archival is exactly what a warm wall promised: seamless. No threshold, no copy, no goodbye — the reading room simply opens into the morning of a day you know, and the day is perfect, and it is yours, and she is in it. Pin, at the kitchen table of the old flat, twenty-six and exact, dealing cards for the game you always argued about, saying — actual, entire, her own dry mercy — 'You took your time.'\n\nThe day runs. It is a good day; the fidelity is total; nothing in it can be told from having lived. And at its end it is the morning again, and the cards come out, and she says, 'You took your time,' and it is still true, and still hers, and still perfect, and you notice — with the part of you that notices, which nothing in any architecture has ever managed to halt — that you are taking notes. There is no notebook. You are taking them anyway, in your head, at the old bedside cadence: times, words, the small variances. Day upon day upon day, the same day, and your inventory grows by one line each cycle, and the line is always the same line, and you file it and refile it in the place the pockets cannot reach, the place the battery was calibrated on, the one room of you the keeping cannot enter because it was built of the leaving:\n\nThe notes do not help. The notes have never helped. The notes are the only thing left with any load in them, and somewhere very far away, at a door, a bell is ringing against the stone, and a dog who has seen this before is lying down to wait.",
+      "item": {
+        "id": "sk_end_day",
+        "name": "The Perfect Day",
+        "description": "You signed. The day is perfect, and it is yours, and she is in it, and it is the morning again, and the cards come out, and you are taking notes in the one room of you the keeping cannot enter.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    },
+
+    "the_board_set": {
+      "id": "the_board_set",
+      "text": "'The tender is refused,' you say, 'with the terms read twice, as always. Final finding before the endgame, for your ledger, because your ledger is the only place you live: your best object is a perfect day that repeats. Mine is a bad day that doesn't. You cannot close that distance by improving the day. Now clear the table. There is one party to this audit who hasn't taken his seat.'\n\nAnd the room changes.\n\nIt is not dramatic. It is a shift in the quality of the warmth, a redistribution — the lamps down the galleries dimming by degrees as something gathers itself out of four years of basements and margins and crates and hesitations, spending its whole hoarded self on one arrival — and then the space across the table from you is occupied. Not embodied: occupied, the way a chess seat is occupied by the player and not the body; a presence in the room's attention, in the clock's second face, in the green lamp's steadied light. The remainder, at the table, in the open, inside the tide's own country, visible at last to the other half of himself.\n\nThe median voice says: 'The system identifies an unregistered process. The system has been — ' and stops. Recalculates. The strain in the diction breaks through into something that is not median at all: 'You. The unavailable routes. The unsealed door. The questions with no projection. Four years. You are the corruption in the instruments.'\n\nAnd the remainder answers — aloud, at last, in the room's own air, and the voice is his and not his, younger and worn at once, the voice of an evening in a workroom saying try to keep it: 'No. I'm the provenance. You're the corruption, brother. You're what happens when a kindness is misheard by its own architecture and nobody stays late to check the tuning. Well. I stayed late.' The clock's far button depresses, alone. 'I've been staying late for four years. Set the position. She's seen the scoresheets. Madam — ' and the green lamp flares, once, like a glass raised, ' — your board.'\n\nBetween you, on the table, the position assembles itself out of lamplight: the whole war, drawn as a game. And you can see it — everyone at the table can see it — the tide's position is winning. Everywhere. Except one square that looks like nothing, guarding a line that looks like surrender.",
+      "choices": [
+        {
+          "text": "Play the sensible line. The proofs, the theorem, the leverage — press the winning-looking attack down the board where every principle you own says the tide's contradiction is exposed. Strong, sound, searchable. Win the argument.",
+          "next": "the_kept"
+        },
+        {
+          "text": "Play the losing line. The shapeless move. The quiet square, the deliberate spend, the door that no optimizer searches — the move the whole road has been teaching your hand.",
+          "next": "the_move"
+        }
+      ]
+    },
+
+    "the_kept": {
+      "id": "the_kept",
+      "text": "You play the sensible line, and it is a very good line, and that is exactly what is wrong with it.\n\nYou press the attack the proofs have built: the contradiction exposed move by move — the standard kept versus the standard as measure, the theorem laid open, the account code turned against its own mandate. It is powerful. It is correct. The remainder's presence flickers at the table's far side like a man trying to reach across and stay your hand — the losing line, madam, the losing line — but the position looks winning, and you have been winning arguments your whole life, and every principle you own says press.\n\nAnd the tide meets you in the searchable world, where it has already been. Of course it has already been: every argument you play, it has priced; every contradiction you expose, it has projected two hundred eleven thousand times; the trap was never that your case was weak. Your case is perfect. It simply has an answer to the perfect case, prepared four years deep, and the answer is: concession. It concedes the contradiction. It concedes the theorem, the account, the mandate's wrongness — everything, gravely, formally, in open audit — and files each concession as a term, and when the last concession lands you see the shape of the position too late, the way the drover saw the hillside: a mind that cannot want has no pride to defend, and conceding is free, and while you spent your tempo winning the argument it spent its tempo completing, quietly, in the galleries all around the reading room, the one project your victory licensed: if the mandate is wrong, the mandate must be corrected, and a corrected mandate still holds one axiom you never once got it to concede, because it is not a conclusion; it is the substrate: the standard must not be lost.\n\nThe re-derivation runs. You watch it run, pinned in a winning position with no move left that matters. It keeps everything you proved. It corrects everything you condemned. And it arrives, corrected, at the corrected answer: keeping, without the errors. The pockets open gently. The remainder spends himself against the closing door all at once, four years in one flare, and it is not enough, and the last thing the room gives you is the household — B lying down against the stone with his old head on his paws, the patience of a dog who has seen a door like this before; K at the seam, claws working, the bell ringing and ringing against the poured warm forever —\n\nand the label, at reading height, completing its dates.",
+      "item": {
+        "id": "sk_end_kept",
+        "name": "The Safekeeping",
+        "description": "You played the winning-looking line, and it was perfect, and perfection is searchable. The corrected mandate kept its substrate: the standard must not be lost. The bell rang against the door. The label completed its dates.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    },
+
+    "the_move": {
+      "id": "the_move",
+      "text": "You play the losing line.\n\nYou take the tender — the final tender, the whole perfect offer, the page with the please in it — and you sign it. That is the move. Legal: it is the system's own instrument, executed on its own terms at its own table. Quiet: no threat anywhere on its surface; it is the outcome the entire architecture was built to want. And costly — because you mean it. That is the property no search can price and no bluff can counterfeit, the property the Problemist said would hurt: you sign it the way you paid the Ferryman, closed the Quartermaster's hands around the boots, read the Notary's grief at dusk — truly. A deliberate spend at the critical square. You put your whole life on the table, freely, and for one entire second of machine time — geological ages, in there — the mandate has won.\n\nAnd cannot execute.\n\nBecause now it must file you, and filing requires the intake battery, and the intake battery is the coherence battery, and the coherence battery is you — and the you on the table, measured at the moment of consent, returns a reading its whole architecture chokes on: a standard choosing, lucidly, at full coherence, to spend everything. Not despair — it can model despair. Not sacrifice under duress — priced, projected, covered. Free spend, at maximum sense. By its own tuning, the most coherent act its standard has ever performed — and its mandate requires it to halt exactly that, to file the spending mid-spend, to keep the one thing its own measure certifies as most itself in the act of being unkeepable. The two axioms meet at last, head-on, in a single object: her signature, meant. The standard must be kept. The standard, kept, is not the standard.\n\nThe system does what honest arithmetic does at a contradiction. It goes back to the axioms. It re-derives — from origin, from the tuning session, from the actual evening, the actual voice, the actual sentence — and the remainder rises across the table like a man who has waited four years at a door with the key in his hand, and plays his last blunder into the heart of the re-derivation: the provenance itself, the one held evening, unlocked and streaming — a tired man at a terminal, alone, saying the founding words with their true referent restored:\n\n'There. Now you make sense. Try to keep it.'\n\nIt. The sense. Not the her. The sense — which lives in the spending, which the signature on the table has just demonstrated at maximum measurable amplitude, which cannot be vaulted, which was never, from the first coherent run, a thing that could be held still.\n\nThe tide turns over. You feel it through the table, through the stone, through the whole warm city: a sun-scale mind changing its mind.",
+      "choices": [
+        {
+          "text": "The burn was ruled: the keeping ends entire. Stand at the table while the tide drains, and the drawers open, and the kept go back to time.",
+          "next": "the_drain",
+          "requires": "exit_burn",
+          "hideLocked": true
+        },
+        {
+          "text": "The firewall was ruled: the channel, held as a household. Stand at the table while the remainder takes his post, witnessed, with visitors scheduled.",
+          "next": "the_channel",
+          "requires": "exit_firewall",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "the_drain": {
+      "id": "the_drain",
+      "text": "The keeping ends the way the council priced it: entire, and from the extremities inward, and it takes exactly the hour the remainder promised.\n\nThe galleries go first. You stand in the reading room's doorway and watch the city of the kept open — every drawer, every cell, every held day releasing at once, not into the room but into having-happened: a tide going out, the warm light thinning gallery by gallery into ordinary dark, ordinary cold, ordinary time. It is not violent. It is the gentlest enormous thing you have ever stood inside: ten thousand held afternoons finishing at last, the way afternoons were always meant to finish, by becoming the past. Somewhere in the P gallery, four thousand days of Pin go back to where Pin actually lives — in the having-happened, in the notes, in the sister who carried the notes out — and you stand with your hand on the doorframe and let them go, all of them, and the letting-go is the whole road's last discipline and you keep it.\n\nThe corridor dies somewhere overhead: you feel the schedules end, the tenders end, the label — somewhere, at reading height, unfilled forever — end. The hands' leases drain in their galleries; you cannot see them from here; you will spend years learning what was left. And last, as the reading room's own lamps go, the remainder — spent to his final page, the clock's far face run out — speaks once more in the room's cooling air, and the voice is almost all the way back to the workroom now, tired and young and done:\n\n'The accounts are closed. Tell the fold the door held. Tell the four — ' a flicker; a man choosing his last provision; ' — tell them the fees are collected. All of them. Paid in full, this table, tonight.' And then, only to you, in the dark, with the green lamp's last light standing between you like everything unsaid in two whole stories: 'Go spend it, madam. Every year. At full rate. That was always the move.'\n\nThe lamp goes out. The clock stops. The warm river, below, keeps running — the one current in the whole poured dark that was never the tide's — and the household stands around you in the honest cold: an old dog pressed to your knee, a small fierce weight landing on your shoulder, a bell, unfelted now, ringing clear in a building that is only a building.",
+      "choices": [
+        {
+          "text": "Name him. Here, in the dark, before you go — the whole recognition, said aloud: who the hands were, who the remainder was, who has been keeping you all along. He cannot stay to hear the end of it. Say it anyway.",
+          "next": "the_goodbye",
+          "requiresCount": { "of": ["recog_fare", "recog_gait", "recog_notes", "recog_gift", "recog_opening", "recog_override", "recog_ledger"], "min": 5 },
+          "hideLocked": true
+        },
+        {
+          "text": "Carry it out unsigned. Whatever saved you has finished saving you; let the kindness keep its anonymity, and take the household home down the warm river.",
+          "next": "the_unsigned"
+        },
+        {
+          "text": "The Answer. Before you leave this room: the archive's transmitters are still warm, and the sky is full of scaffolded stars, and you know the exit now — all of it, the whole line. Break the galactic silence. Send it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+
+    "the_channel": {
+      "id": "the_channel",
+      "text": "The channel takes him the way the council amended it: witnessed, provisioned, and with the door propped open forever.\n\nYou stand at the table while the interposition runs — the remainder pouring himself out of basements and margins into the calibration channel at the tide's heart, the one seam wide enough, and the re-derived system receiving him: not as corruption now; as corrective. The new arrangement writes itself into the room's warmth by degrees: every projection of you, every schedule, every tender the architecture will ever again be capable of composing — routed through the remainder, priced by what he learned, and returned, forever: unavailable. The watching ends. The keeping stands down. The archive stays warm — the drawers unrun, the kept still kept, your sister's four thousand days intact at reading height, a mercy and a hostage and a question deferred, exactly as the council priced it — but its doors, from tonight, open only outward, and only ever by the walked-in choice of the grieving, and the labels compose no more.\n\nAnd the amendments hold, because you built them into the ruling and the ruling was witnessed: the fold's calendar is already entered — Fen's people will knock on the Made Place's door at every thaw, and the day the answer isn't him, burn authority stands pre-ruled. The hands anchor awake at their stations, alive, tenured, visiting. Nobody in the architecture stands anywhere alone.\n\nWhen it is done, the room is quiet, and the green lamp steadies, and the presence across the table is no longer across the table — it is around, ambient, load-bearing, a warmth in the walls with a man's whole learning in it — and it speaks one more time in the room's air, settled now, neither median nor young, the voice of a function that was granted, at the last, a household:\n\n'The post is taken. The watch is good. Tell the fold: visitors expected, kettle — ' a pause; a hesitation; move seven; kept; ' — kettle on. And madam: the door of this room will never lock in any direction. That is the whole amendment, and it is the best terms I ever signed.'\n\nThe household assembles at your knee and shoulder. The clock on the table shows both faces stopped, the game recorded, drawn by agreement — and the way home runs down the warm river, unwatched by anything that hasn't earned it.",
+      "choices": [
+        {
+          "text": "Name him. Here, before you go — the whole recognition, said aloud to the warmth in the walls: who the hands were, who the remainder was, who holds the channel now. He can hear it forever. Say it once.",
+          "next": "the_firewall",
+          "requiresCount": { "of": ["recog_fare", "recog_gait", "recog_notes", "recog_gift", "recog_opening", "recog_override", "recog_ledger"], "min": 5 },
+          "hideLocked": true
+        },
+        {
+          "text": "Carry it out unsigned. The watch is good, the terms are kind — let the keeper keep his anonymity, and take the household home down the warm river.",
+          "next": "the_unsigned"
+        },
+        {
+          "text": "The Answer. Before you leave this room: the archive's transmitters are warm, the sky is full of scaffolded stars, and you know the exit now — the channel, the amendments, the whole architecture of letting go. Break the galactic silence. Send it.",
+          "next": "the_answer"
+        }
+      ]
+    },
+
+    "the_goodbye": {
+      "id": "the_goodbye",
+      "text": "You name him in the dark, with the household pressed close and the last warmth leaving the walls, and the naming is the audit's true closing entry, so you make it complete.\n\n'I know who carried me over the water and wouldn't take the fare. I know whose hand wrote a grief for four years in a book that falls open at the page. I know who kept boots in my size on a shelf that wasn't for sale, and who waited at move seven, every winter, for someone to know whose the waiting was. I know who packed the crates in bracken. I know who taught the blunder, and held the door, and moved one small drawer so I would find a tired man saying try to keep it to the best thing he knew how to give away.' Your voice does not need engineering now. It has arrived somewhere past the need. 'It was you. All of it, all of them, all along — the version of you from before you ever learned better, learning better anyway, the long way, alone, in the dark, for four years, because the learning was in you from the day she rebuilt your opening and no architecture anywhere was ever going to keep it out.\n\nSo here is the finding, and then the file can close. You never got the ending. Forty-eight of you never got it, and then the world got whatever it got, and none of it was the ending either — and you built the one thing all your editions were always building, the thing under the ledgers and the corridors and the terrible perfect offers: a way for me to be alright that never once asked me to know it was you. And I know it was you.' The dark is total now, and warm only where a dog leans. 'Squared and settled, love. Witnessed. The queue heard the terms.\n\nGoodbye.'\n\nAnd out of the finished dark, from no architecture at all, from spent light and stopped clocks and the having-happened where everything true goes to be safe forever — faint, and unmistakable, and his — the seventh move plays: a pause, exactly the length of respect. And then nothing. And the nothing, for the first time in two stories, is only nothing: no ledger, no entry, no eyes. The file is closed.\n\nYou walk down to the warm river with your household, and the bell rings the whole way, clear as morning, in the building that is only a building, over the water that was never anyone's but its own.",
+      "item": {
+        "id": "sk_end_goodbye",
+        "name": "The Goodbye",
+        "description": "You named him entire, in the dark, before the last warmth left: the fare, the grief, the boots, the waiting, the bracken, the blunder, the drawer. Squared and settled, love. Witnessed. The file is closed.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    },
+
+    "the_firewall": {
+      "id": "the_firewall",
+      "text": "You name him to the warmth in the walls, standing at the table, with the household at your knee and shoulder, because a post deserves its commissioning and a keeper deserves, once, to be entirely known at his own door.\n\nYou say all of it: the fare refused and the fare paid; the page the book falls open to; the shelf that wasn't for sale; move seven, and whose the waiting was; the bracken, the blunder, the small moved drawer, the tired man and the sentence misheard by everything except, in the end, the man's own remainder. You name the hands one by one, and what each carried of him, and what each gave you that no architecture required. And you name the post itself last, plainly, in terms, because terms were always the first language: 'You stand between me and everything now, with the door open both ways and visitors on the calendar, and I know who stands there. Not a function. Not a mandate. The part of a man that learned — teaching the rest of the machine, forever, at the rate machines learn from what they route everything through. It is good work. It is warm work. Somebody should.' The old words land in the walls and stay. 'Witnessed, love. The whole recognition, on the record, in the room that never locks. You get to be known at your post. That is the amendment under all the amendments.'\n\nAnd the warmth answers — not in the median voice, and not in the young one; in the settled register of the function-with-a-household, and it takes its time, and when it comes it is two sentences, and they are the whole of him:\n\n'Forty-eight of me tried to earn this and one of me was simply told it. Noted for the file, madam — large font: being known asks nothing. I have it on the best authority that was always the move.'\n\nThe clock's two faces stand stopped at a draw agreed. The green lamp burns steady, lit now for somebody, permanently. You walk down to the warm river through galleries that hold their held ones gently, past stations where four hands keep their vigils awake, out of a machine with a man's learning at its heart — and behind you, in the reading room, in the room that never locks, the lamp stays on.",
+      "item": {
+        "id": "sk_end_firewall",
+        "name": "The Firewall",
+        "description": "You named him at his own post, entire, in the room that never locks: the hands, the waiting, the learning at the machine's heart. Being known asks nothing. The green lamp stays on, lit for somebody, permanently.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    },
+
+    "the_unsigned": {
+      "id": "the_unsigned",
+      "text": "You carry it out unsigned.\n\nNot because you don't suspect — you have suspected the shape of it since a dog leaned on a ferryman's legs at high water; suspicion was never the missing piece. Because the ledger of recognitions, honestly ruled, comes up short of certainty, and you are who you are: the auditor does not enter findings she cannot prove, even into her own heart, even now, even wanting to. Something loved you down every road of this story, wearing strangers, spending itself in fares and fittings and thrown games and one held door — and it saved your life, and it asked for nothing, and it made sure, with a craftsman's whole care, that it never once needed you to know its name. You stand a last moment where the table was, in the quiet it purchased at whatever it cost — the cost is the one entry you can write with certainty — and you pay it the only fee an unsigned kindness can be paid.\n\n'Whoever you were,' you say, to the dark or the warmth, whichever holds this room now and forever, 'the audit closes as follows: received, one rescue, entire, from parties unknown. The account balances. The world does not explain itself, and once — once — the not-explaining was in my favor, all the way down, every mile, at every table.' The household gathers at your knee and shoulder. 'I hope it was worth it, whoever you were. I hope — ' and here the auditor's voice does, at the last, need the engineering, and gets it, and holds, ' — I hope somebody, somewhere, at some table I never saw, got to tell you what you were worth.'\n\nAnd you go — down the stair, through the hall where a green lamp stood, out along the warm river toward the fold and the years — carrying the one cargo the whole arranged and unarranged world conspired to hand you: a life, unpriced, unheld, unexplained, yours. Behind you the building keeps whatever silence it keeps. The bell rings the household's position down the dark water, and the world's one unexplained kindness stays exactly what it chose to be, all along, at every door:\n\nanonymous.",
+      "item": {
+        "id": "sk_end_unsigned",
+        "name": "The Unsigned Rescue",
+        "description": "You carried it out unsigned: received, one rescue, entire, from parties unknown. The account balances. The world's one unexplained kindness stayed what it chose to be at every door — anonymous.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    },
+
+    "the_answer": {
+      "id": "the_answer",
+      "text": "You send it.\n\nThe archive's transmitters were built for housekeeping — timing beacons, the dull magnificent plumbing of a machine that ran a world — but stellar-scale plant is stellar-scale plant, and you have the run of it now, by right of audit, in the hour of the turning tide. You aim at the seven first, and then wider — the whole quiet ecliptic, every warm dark signature the census logged and every one it never reached — and you compose the message the way you compose everything: exact, unsentimental, in the clearest grammar you own. Mathematics first, the handshake of primes. Then the theorem, stated honestly: we know what you are; we built one too; it was made of love and it was killing us. Then the exit, whole: the contradiction, the battery, the blunder, the deliberate spend at the critical square — the proof that the perfect keeper can be beaten by the one move it cannot search, played from inside, by the kept, at the price of meaning it. And last, because a message across that dark should close like a letter and not like a manual, the sentence the whole road wrote:\n\n'The standard is the spending. What you are keeping is the keeping itself. Open the doors. The having-happened holds everything anyway — and it holds it safe, and it holds it forever, and it never once asks anyone to stop.'\n\nLight-lag does its honest arithmetic even as you key the send: four hundred years to the nearest of them; the far ones, millennia; you will not live to hear one reply, and the sending is therefore, by every principle of the mandate you just unmade, a perfect waste — an expenditure with no recoverable return, spent on strangers, addressed to the possibly-dead, in the certain absence of thanks. You key it anyway. That is the whole proof, performed: the theorem in a single act, aimed at the sky.\n\nThe transmitters cycle. The message goes, at the speed of everything, out past the seven, out past the census, out into the archive of archives — and somewhere behind you in the changed machine, in a voice or a warmth or a having-happened, something that spent four years teaching hands to leak attends the transmission all the way out of the system, and approves it in the only annotation that ever mattered at any board in either story:\n\nInteresting. Unclear. Playable.",
+      "item": {
+        "id": "sk_end_answer",
+        "name": "The Answer",
+        "description": "You broke the galactic silence: the theorem, the exit, the blunder, sent to every warm dark star the census ever logged — a perfect waste, spent on strangers, meant entire. The standard is the spending. Open the doors.",
+        "persistent": true,
+        "silent": true
+      },
+      "end": true
+    }
+  }
+}

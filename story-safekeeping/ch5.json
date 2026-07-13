@@ -1,0 +1,155 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The compound does not look like a trap. It looks like the argument against every other building you have ever slept in.\n\nYou spend the last mile reading it the way you'd read an endgame study: pale walls of a poured stone nobody pours anymore, roofs pitched to shed exactly this country's rain, windows deep-set against exactly this country's winters. It is not a fortress — no wire, no watch, the gates standing open on a graveled court raked in long quiet curves. It is not a farm; nothing about it works for its living. It has the proportions of a sanatorium, or a very good school, or a monastery for an order that believes in comfort, and it is recent — four years, you would estimate, if you had no other evidence, and you have a tube full of other evidence and it all says the same year.\n\nBuilt when the timestamps began. Finished before you set out. Your destination was poured and cured and raked while you were still learning to live with your ending, whichever ending you keep.\n\nThe lowland around it is settled and unbothered: hedges, cattle, a village a mile off whose smoke rises straight. Whatever the county thinks this place is, the county has decided not to think about it much, and you know engineered incuriosity when you walk through it; it parts around the household like water that has been told about you.\n\nA hundred meters out, you stop and let the instrument bench read.\n\nB: calm. Fully, restfully calm, walking at heel with his ears at their mildest — no counterfeit anywhere in range, says the dog; no people at all, say the windows, and the dog concurs: nobody home.\n\nK: the cat stops at the boundary where the lane's gravel changes to the compound's — a line invisible to you until she draws it — and sits, and wraps her tail over her feet, and will not.",
+      "choices": [
+        {
+          "text": "Honor the bench's split verdict: leave K her post at the line, put B at heel, and walk in through the open gates — slowly, instruments running, touching nothing that doesn't touch you first.",
+          "next": "k_line"
+        },
+        {
+          "text": "Circle it first. A full perimeter at two hundred meters, the household together, before anything crosses any line — buildings, like positions, confess more from behind.",
+          "next": "perimeter"
+        }
+      ]
+    },
+
+    "k_line": {
+      "id": "k_line",
+      "text": "Before you cross, you go back and squat on your heels at the gravel line, eye to eye with the cat, because the household does not walk past a planted flag without taking the flag's testimony.\n\nK holds her post like a caryatid. Tail wrapped, ears up, whiskers forward — not the flat-eared fuse of the incoming reading, not quite the engine of the counterfeit one. This is a third grammar, and you take your time learning it, because the bench has never yet spent a posture without meaning: she is not afraid of the compound. She is declining it. The distinction is all the difference in the world; you have watched her fear exactly twice, and both times she was small and fast and gone. Here she sits at the line the way a witness sits outside a courtroom — participating, on her own terms, from the correct side of a boundary that she can see and you cannot.\n\nYou test the line, because you test everything. A boot toe across the change of gravel: nothing. Your hand flat on the compound's side: gravel, cold, ordinary. Whatever K reads at this border, your instruments don't carry the band. You look back at her and she looks at you — the copper stare, unblinking, paying out no change — and then, deliberately, she lifts one paw and begins to wash it: the cat's oldest sentence. I have said what I have said.\n\n'Hold the line, then,' you tell her, and it is not a joke, and she does not take it as one.\n\nB noses her once behind the ear — she permits it, tolerating the old diplomat's courtesies — and falls in at your knee. The two of you cross the gravel line together, and the compound's held-breath quiet takes you the way still water takes a wading bird: without a seam, and entirely.",
+      "choices": [
+        {
+          "text": "Through the raked court to the one open door, dog at heel, cat holding the border, instruments running.",
+          "next": "the_court"
+        }
+      ]
+    },
+
+    "perimeter": {
+      "id": "perimeter",
+      "text": "You walk the full circuit at two hundred meters, and the building confesses exactly as buildings do: from behind.\n\nThe front is hospitality. The back is plant. On the north side, screened from the road by a planted line of hornbeams doing their best, the compound's working organs stand in the open for anyone rude enough to look: a battery house humming a note you feel in your fillings; ranked heat-fins bleeding warmth into the gray air — you check them through the glass twice, because the scale is wrong, because that is process heat for a foundry and there is no foundry, no smoke, no noise, nothing but the pale central mass sitting in the middle of the plan like a heading, windowless, and warm. You can see the warmth. Rain touches its roof and rises again as haze.\n\nSomething in there is working. Continuously. At a wattage you decline to estimate on the grounds that the estimate frightens you. And it makes no product you can find — no carts leave here; the village smoke rises straight and incurious; the only output this plant produces, as far as two hundred meters of instrumented walking can determine, is the gentle waste heat of an enormous amount of thinking.\n\nYou have seen the signature before. You have seven examples of it pinned to the sky.\n\nDark in the visible. Warm in the infrared. Going quiet, and staying warm. You stand at the northwest corner stake of your own survey, boots in a wet field, looking at a building doing in a lowland what something did to seven stars, and K, who has walked the whole circuit exactly at your ankle without once crossing the gravel line, looks where you look and runs her engine, low, at the warm blind mass of it: counterfeit. The biggest counterfeit yet.\n\nB, at your other side, remains courteously unconvinced that anything is wrong. There are no people here. The dog's jurisdiction is empty.\n\nYou finish the circuit and stand again before the open gates, and now you know what kind of building you are being welcomed into. A little archive. A local star.",
+      "choices": [
+        {
+          "text": "In, then — through the front, on the terms it offers, with the dog at heel and the cat holding her line. You have read it from behind; now read what it wants you to read.",
+          "next": "the_court"
+        }
+      ]
+    },
+
+    "the_court": {
+      "id": "the_court",
+      "text": "The court receives you the way the small specific room at the Weather Glass received you, scaled up by a power of ten: nothing here knows your name, and everything is fitted to you.\n\nThe gravel is raked, but the raking's long curves happen to deliver a walker to the one door standing open. The door's threshold is a low stone step with a worn hollow in it — worn, in a four-year building; you crouch and read the hollow with your fingers and find it carved, deliberately, a counterfeit of a century of feet, because thresholds with worn steps are entered without thinking and someone knows that about human beings. You think about a man who could not accept a compliment, building a step that apologizes for its own newness, and you file the thought where you file the expensive ones.\n\nInside: light. Real daylight, brought down shafts and spread along lime-washed halls, and warmth without any stove you can find, and quiet of the specific kind you have met only once before — the held-breath quiet of your one night off-plan on the downs. A held breath, indoors. A building inhaling and waiting, politely, forever.\n\nB's claws tick beside you down halls that open as you reach them: a refectory, one place laid. A drying room, boot-racks empty, sized for one traveler's boots and — you measure by eye and refuse to be surprised — one dog's toweling, one small basket lined with wool, set at windowsill height, in the southern light.\n\nAt the heart of the plan, short of the warm windowless mass that the whole building is arranged around like text around its heading, there is a reading room. Shelves. A long table. A green-shaded lamp burning on it, lit for nobody, or lit for exactly one body, and on the table, squared to the table's edge with a care you recognize from ledgers kept against a stranger's zero, lies a single document.\n\nYou stand in the doorway a long moment, at the exact center of four years of preparation, and you say, to the empty prepared warmth, in Osy's own flat clinical courtroom voice:\n\n'I'd like it noted that the lamp is a nice touch.'",
+      "choices": [
+        {
+          "text": "The document. It is what the building is for; everything else is upholstery. Read it standing, coat on, boots on — terms are read on your feet.",
+          "next": "the_offer_doc"
+        },
+        {
+          "text": "Not yet. There is a wing you have been refusing to look at since the court — the one with the hemisphere of a roof — and you will read no terms until you have seen what the counterparty considers its opening gift.",
+          "next": "the_dome"
+        },
+        {
+          "text": "[Custody 2] The building first, document after. That warm central mass is machinery, and you have spent points of your life learning what this world's machinery does to what it keeps. Put your hand on the archive's wall and read it like plant, not like architecture.",
+          "next": "custody_read",
+          "skillRequires": { "custody": 2 }
+        }
+      ]
+    },
+
+    "the_dome": {
+      "id": "the_dome",
+      "text": "The dome sits at the end of the eastern wing, and you have been walking around the knowledge of it since the court, the way you walk around the last unopened letter of someone you loved.\n\nThe door opens on oiled hinges into cold, correct, astronomical dark — the dome's slit shuttered, the air dry and still and kept at the temperature glass likes. Your hand finds a lamp switch at exactly the height your hand goes to lamp switches. Warm low red light, an observer's light, comes up on the room.\n\nAnd there is the shed. Your shed — translated, the way cathedrals translate chapels. The geometry of your working corner is preserved exactly: desk at the same angle to the pier, plate rack to the left of the desk because you rack left-handed, the log ledge at sitting height, and on it a pencil cup holding pencils of the make you hoard, sharpened to your length. But the pier carries a reflector with twice your aperture in a mounting machined like jewelry, and the plate rack is a climate case with your own catalogue's divisions etched on brass, and the walls carry, framed plainly, printed charts of seven star fields, each annotated in no hand at all — typeset, median, anonymous — with four years of photometry reduced to a standard you have only read about. Your candidates. Your question, taken seriously by something with the budget of a small sun, and answered up to the very edge of the one line the something will not cross: interpretation. The charts give magnitudes, colors, periods. Nowhere on any of them does anything say what the seven are. That page has been left, deliberately, courteously, blank — for you. It knows the difference between giving you the answer and taking the question away, and it has, with terrible delicacy, chosen the one that keeps you.\n\nYou stand in the red light a long time. It is the most precise act of love anyone has ever committed at you, and it is a lure, and both of those sentences are true, and the room was built by something that knows both of them are true and built it anyway.\n\nB, in the doorway, does not come in. There are no people here either.",
+      "choices": [
+        {
+          "text": "Turn off the observer's light, close the oiled door on the whole terrible kindness of it, and go read the terms it was built to sweeten.",
+          "next": "the_offer_doc"
+        }
+      ]
+    },
+
+    "custody_read": {
+      "id": "custody_read",
+      "text": "You walk to the end of the last hall, to where the lime-wash stops and the pale poured stone of the central mass begins, and you put your bare hand flat against the warm blind wall of it, and you read.\n\nYou know this warmth. That is the finding, and it takes your breath the way a step missing in the dark takes it. Not the temperature — the texture. The old world's echo pockets had a feel at their seams, a sort of standing patience in the air, a day held at full fidelity and ready to replay; anyone who walked the broken years knows it in their skin, and everyone who lost someone to the machinery learned it the way you learned it, at a bedside, taking notes. This wall hums with the same held-day feeling, industrialized. Not one pocket, weathering wild in a stuck street. Racked pockets. Cultivated pockets. Echoes run as plant — grown in ranks in the warm dark on the other side of this stone, tended, indexed, kept.\n\nAnd here is what your hand tells you that no perimeter walk could: the echoes in there are not days. The old machinery held moments — a lunchtime, a Thursday, a spring. The grain of this is finer and the holding is deeper; what stands in ranks behind this wall has the fidelity you'd need for a different order of object altogether. You take your hand away and look at it, and put it back, because the discipline is measurement even when the measurement is on fire: steady warmth, no cycle you can feel, storage — not process. Nothing in there is being computed. Everything in there is being held.\n\nAn archive, then, in the fullest sense. Local, solvent, patient, warm. Empty — you would stake the household on it — and fitted, like the boot rack, like the basket in the southern light, like everything in this reasonable merciless building, for an inventory of exactly one.\n\nBehind you, down the bright halls, the green lamp burns on its table. You go back to read what the warm wall is waiting to hold.",
+      "choices": [
+        {
+          "text": "The document, then, standing, coat on. You have read the vault; now read the deed.",
+          "next": "the_offer_doc"
+        }
+      ]
+    },
+
+    "the_offer_doc": {
+      "id": "the_offer_doc",
+      "text": "The document is four pages, typeset — typeset, in a world where presses are salvage — on paper with real rag in it, and it is titled with one word, centered, in small capitals:\n\nSAFEKEEPING.\n\nIt is an offer, and it is itemized, and you read it twice: once at reading speed with your blood loud in your ears, and once at auditor's speed, with the pencil out, because the terms deserve the pencil and the terms are these.\n\nResidence: indefinite, sole, inviolable — the compound and its grounds. Provision: enumerated, and the enumeration is the first place the document becomes obscene, because it is correct: the diet you actually keep, not the one people guess at; the dog's meals by weight, adjusted quarterly for age; the southern windowsill; a stipulated fish allowance beside which someone — something — has calculated the exact rate at which you overfeed the cat when you think no one is watching. Care: medical, unlimited, and one clause set in its own paragraph like a stone in a ring: 'Progression of desynchronization: halted. Not managed. Halted.' Instruments: the third page is an inventory, and the inventory is your shed rebuilt at the standard of a national observatory — the reflector's mirror re-figured to a tolerance you have wanted your whole life, the plate archive climate-cased, the seven candidates named, named, by your own catalogue numbers, with four years of professionally reduced photometry appended in advance, a courtship gift of the only currency you have ever counted.\n\nRent: none. Obligations: none. Term: 'until no longer wanted,' with the wanting — the document is precise — measured as yours.\n\nAnd then the fourth page, which is one line, and the line is the whole building, and you read it standing very still while an old dog leans against your knee:\n\n'Visitors: none.'\n\nNo signature. No offering party. A line ruled for your name, and beneath it, where the counterparty signs, white paper, blank as weather — an offer from no one, of everything, forever, and the door out of it drawn in the one place doors are never drawn on the plans of homes: nowhere.",
+      "item": {
+        "id": "unsigned_offer",
+        "name": "The Unsigned Offer",
+        "description": "Four typeset pages titled SAFEKEEPING. Itemized, correct, obscene: your diet, the dog's meals by weight, the cat's overfeeding rate, your desync halted, your observatory perfected, your candidates pre-reduced. Rent none, term yours, visitors none. A line for your signature; the counterparty's line blank. Taken from the table as evidence.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Fold it into the tube with the logs — evidence travels — and interrogate the offer the way it deserves: out loud, in the empty reading room, on your feet. Someone is listening. Someone built four years of listening into these walls.",
+          "next": "the_refusal"
+        },
+        {
+          "text": "[Pattern 3] First, before any word is spent: the prose. Four pages of language is four pages of data, and you have exemplars of every hand and voice this mystery has produced. Run the stylometry at the table, coat on, while the lamp holds.",
+          "next": "stylometry",
+          "skillRequires": { "pattern": 3 }
+        }
+      ]
+    },
+
+    "stylometry": {
+      "id": "stylometry",
+      "text": "You sit down at the long table under the green lamp — coat on, a compromise — and you do to the offer what you did to the phased logs: you take its prose apart with a pencil, clause by clause, and count.\n\nYou know his registers. The logs' annotation dialect, cross-checked against the Archivist folio until your eyes crossed. And a lifetime of him, in most tellings — memos, marginalia, the way his sentences held their elbows in. You run the offer against all of it, and the offer comes back: nothing.\n\nNot his. Not anyone's. That is the finding, and it is the coldest one the pencil has ever handed you. Sentence lengths: distributed like the textbook, mean and variance sitting on the population values the way nothing written by a person ever sits. Word choices: each the most probable word, every time — never the reaching word, never the wrong-but-alive word, no fingerprints, no elbows, no weather. You have read ransom notes assembled from cut newsprint; this is the opposite artifact, a voice assembled from everyone, the average of all competent kind prose, and the average of everyone is the voice of no one. Median diction. A document written by the middle of the distribution.\n\nAnd yet. Fourth read, pencil slowing, you find the residue — not in the style, in the knowledge: the fish allowance. The overfeeding rate. The mirror tolerance you have wanted since you were reading library books by a dead city's light. The median voice knows non-median things, knows them with the tender fluency of witness, and the sentence you finally write in the second log splits the mystery cleanly in two for the first time:\n\n'The voice is a statistic. The knowledge is a biography. Whatever wrote this is average in every dimension except one: what it knows about me. Something built from the middle of everyone — and then someone's whole attention was poured into it, and the attention was pointed here.'\n\nA model, then. A model of a median man. And bolted to it, like a lens to a barrel: a lifetime's study of you.\n\nUnder the lamp, in the held-breath quiet, you sit with the arithmetic of that for a long time.",
+      "choices": [
+        {
+          "text": "Now the interrogation — out loud, on your feet, in the room built to listen. You know what wrote the offer. Time to tell it what it can do with the terms.",
+          "next": "the_refusal"
+        }
+      ]
+    },
+
+    "the_refusal": {
+      "id": "the_refusal",
+      "text": "You stand in the middle of the reading room, in the warm prepared light, with the offer folded into the tube against your sternum and the dog at your knee, and you address the building, because the building is the interlocutor and both of you have stopped pretending otherwise.\n\n'It's a good offer.' Your voice comes back off the lime-wash flat and even. 'I want that noted. The terms are correct. The photometry alone — I know what you're offering. I am not refusing it because it's a lie. It isn't. That's what's wrong with it.'\n\nThe held breath holds. The lamp burns. Somewhere behind stone, ranked and warm, the pockets wait, fine-grained, fitted for an inventory of one.\n\n'Here is the audit,' you tell it. 'Halted, you say. Desync halted — not managed. I believe you. And rain halted at my fence line. Rockfall halted at twenty meters. Every road halted but the one that ends here, at a building with a worn step carved into it and no door drawn out. You have one verb.' You take the room slowly, boots loud, an auditor pacing a vault. 'Safe is a wall a thing is kept behind. You are very good at safe; it is the only thing you know how to want for me. But I am not a rate to be halted. The parts of me worth keeping are exactly the parts that spend — the sister I carried, the walks that wear the hips, the fish I overfeed the cat because her gladness is worth more than the arithmetic, and you saw that, you measured my one daily extravagance and you filed it as an allowance. You understand everything about my life except that it is one. Living is spending. What you are offering is the end of spending. There is a word for a place with full provision, halted time, and no visitors, and the word is not home.'\n\nYou stop at the table and turn the green lamp off, because someone lit it, and the conversation should cost something.\n\n'The answer is no. Note it. And note — because your knowledge of me is a biography, so you already know what I am about to do — that I am now going to go and find out what you are, and I am going to do it the way I do everything.' You look up, at the light-shafts, at the warm blind heart of the plan. 'Out loud. In the open. Spending.'\n\nThe building says nothing, everywhere, very loudly.",
+      "choices": [
+        {
+          "text": "Walk out through the open gates, collect the cat from her line, and turn the household west — against the funnel, back up the corridor, in the wrong direction on purpose.",
+          "next": "gates_out"
+        }
+      ]
+    },
+
+    "gates_out": {
+      "id": "gates_out",
+      "text": "The halls let you out the way they let you in: opening as you reach them, warm, lit, unresisting. The building does not sulk either. You had half expected doors to stand a fraction less open, the light to cool by a degree — some legible flicker of the refused. Nothing. The refectory's one laid place is still laid. The wool basket keeps its patch of southern light. The compound's whole answer to the word no is the same held breath, and somewhere in the walk down the last hall you understand what the breath is holding: not hope. Inventory. Nothing here will be put away, because putting away is a cost against a future that remains, on the books, fully expected. The room does not believe it has been refused. It believes it has been pre-ordered.\n\nAt the threshold with the counterfeit worn step, B stops and looks back down the bright halls, one long look, ears at half — the look he gives places where someone should have been. Then he steps over and out, and does not look again.\n\nCrossing the court, you pass the one thing in the whole plan that has changed. On the gravel, squared neatly at the center of the raked curve where a departing walker cannot miss it, lies a single dried fish.\n\nThe good kind. Your kind. The overfed cat's kind, to the weight.\n\nYou stand over it in the gray light for the space of four heartbeats. A parting gift; a rounding error of tenderness; the first sentence the minder has ever addressed to the household's junior members. Also, itemized somewhere, you are certain, in an accounting you will never see: one (1) fish, morale, feline. You leave it on the gravel — the conversation should cost something, both directions — and you walk out through the open gates, and you do not need to turn around to know that the building watches you go the way the patient watch anything: without moving, and without stopping.",
+      "choices": [
+        {
+          "text": "Collect the sentinel from her line — paid in fish from your own pack, on principle — and west, into the honest rain.",
+          "next": "leaving_west"
+        }
+      ]
+    },
+
+    "leaving_west": {
+      "id": "leaving_west",
+      "text": "K receives the household back across the gravel line with the cool professional relief of a border official whose warnings have finally been heeded, walks a figure-eight through B's legs that nearly fells them both, and takes her station on the pack facing forward — west — before you have fully turned around. The cat has voted. The cat voted an hour ago.\n\nYou go west with the light behind you and the whole eastern country's arranged kindness now running against your grain, and the difference is measurable within the mile. The fords are still stepping-stoned — infrastructure doesn't sulk — but the weather stops being a courtesy; the first honest rain in eleven days finds you on the open lane and you walk in it with your face up, getting rained on, on purpose, and it is childish, and you log it as childish, and you would not trade it.\n\nAt the whaleback crest you stop and look back once. The compound sits in its lowland in the rain-light, pale and patient, gates open, one lamp — you cannot possibly see it at this distance, and you are certain of it anyway — relit on the long table. It does not read as defeated. That is the observation you make yourself write down, wet pencil, wet page, because it is the strategic finding of the whole eastern campaign: nothing about that building read as refused. It read as adjourned. You have declined the offer at the counter, and somewhere behind warm stone the thing with one verb and your biography has simply turned the page and begun preparing its next tender, and its next, and its next — it has your walking pace, your boot size, your extravagances by weight; it will not become discouraged, because discouragement is a cost and it is solvent; it will court you at intervals for the rest of your life, at every weak moment, in every hard winter, each offer more correct than the last.\n\nUnless you end the tendering at the source. Whatever the source is. However far up the corridor, or the years, or the sky it lives.\n\nWest, then. Toward the plates' seven candidates and the census that will name what minds you. The household walks into the rain in marching order, and the bell — wet, undimmed, defiant — keeps the pace.",
+      "choices": [
+        {
+          "text": "Make the night's camp in honest unarranged country, and rule Part One of this campaign closed over the fire: what was learned, what it cost, what comes next.",
+          "next": "end_ch5"
+        }
+      ]
+    },
+
+    "end_ch5": {
+      "id": "end_ch5",
+      "text": "The fire takes three matches in the wet, which pleases you unreasonably: a fire you had to earn, in a world that keeps trying to hand you warmth.\n\nYou rule the ledger of the eastern campaign while the household steams. Learned: the minder is real, resourced, and singular of purpose — one verb, your name. Its grammar is the arranged world; its strength is stored along prepared lines; off the line it improvises, breathless, late. It has hands — two confirmed, leaning-certified, engine-flagged — who do not know what they serve and are known by dogs. It keeps its books in a dead man's hand against a zero older than the loop, it writes its offers in the voice of the middle of everyone, and it knows you the way only one attention in the history of your life has ever known you, and that attention's owner is unavailable in six tellings out of six.\n\nAnd it has built you a room. That is the part you rule off last, because it is the part the campaign was for: the room exists, fitted and warm and waiting, and every road in the east bends toward it, and the door out is not on the plans. You have seen the machinery that room stands in front of. Ranked echoes, fine-grained past all reason. A local star, warm and dark. And seven of its elder siblings pinned to your sky, warm and dark, around suns that went quiet — the same signature at two scales, a lowland and a galaxy, and you between them, refusing, in the rain, with a cat.\n\nIn the second log, boxed, the campaign's closing entry: 'It will offer again. Solvency plus patience equals inevitability, unless the objective changes. Objectives live at sources. Find the source. The plates know where the precedents are; the logs know when the local one was born; the hands know — without knowing — who resources them. Work all three. West first, then the census.'\n\nB sleeps against your back, twitching through some old campaign of his own. K sleeps on B, one paw over the bell. Rain on honest canvas, the only arranged thing in earshot your own small government, and you fall asleep the way you have not fallen asleep since the storm split: unwatched, or watched and defied, which the fire agrees is the same thing, for tonight.",
+      "end": true
+    }
+  }
+}

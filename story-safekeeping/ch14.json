@@ -1,0 +1,167 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "You wake on the landing to the sound of the pressure door breathing people through, and the household is already up and already not alarmed, which is its own report.\n\nB's tail is going — the currency beat, at full spend. K sits on the green lamp's table between the keepsakes, engine idling in the stuttering register of seams gone wide as doors. And down the stair into the remainder's hall, one at a time, travel-worn and impossible, come the four.\n\nThe Ferryman, first, ducking under the lintel, river-cracked hands and a coil of good rope over one shoulder. The Notary behind him, satchel of oilcloth, her level face finding yours across the hall with something in it that her books would enter as relief, witnessed. The Quartermaster, hauling — of course hauling — a pack the size of an argument. And last, small and folded and straight-spined, with the board under one arm and the tin cup at his belt, the Problemist, who surveys the shelved keepsakes of the man they were all cast from and delivers the arrival's only speech, dust-dry: 'Well. The whole set. Somebody's been collecting us.'\n\nThey came down through the stacks. That is the impossible part and they tell it plainly, trading the sentence between them like a watch rotation: each of them, in the same week, mid-winter, mid-station, stood up from ferry and fair and store and arcade because the weather behind the sternum turned — 'like ice going,' the Ferryman says; 'like a debt called,' says the Notary — and walked east, through the compound's open gates, past the reading room's lit lamp, down galleries that warmed ahead of them aisle by aisle, to a pressure door none of them could have known was there. The mandate watched them come. It let them through its whole country and said nothing, and none of them can say whether that was blindness, or leash enough to spare, or — the Problemist folds his mittens, saying it — 'whether the part of it that files us under instruments has finally been outvoted by the part that files us under his.'\n\nFour hands, one gait, one hall, first assembly. The remainder called his students in.\n\nOn the table, under the green lamp, a new sheet has been waiting since before you woke: 'All accounted. Council at your convenience, madam. We have exactly one night, two plans, and — check the door — no more need to whisper. It knows we are here. It is choosing not to knock. That is either the best news in four years or the worst, and the council will decide which.'",
+      "choices": [
+        {
+          "text": "Council now, then — the hall, the lamp, the four, the household, and the sheet of paper standing in for the fifth. Convene it, and take the two plans in order.",
+          "next": "the_council"
+        },
+        {
+          "text": "Let the household have its hour first. Four people B loves are in one room for the first time in the history of the world, and some assemblies outrank councils.",
+          "next": "b_reunion"
+        }
+      ]
+    },
+
+    "b_reunion": {
+      "id": "b_reunion",
+      "text": "The hour belongs to the dog, and you spend it watching, because the household's oldest instrument is running the strangest reading of his career: four people who are all, to his nose, the same beloved person, in one room, at once.\n\nHe solves it the way B has solved everything since before either story started — without theory, by generosity. He makes his rounds. The Ferryman gets the lean, the full census, and works the spot behind the left ear while telling him, low, about the river's winter moods. The Notary gets the chin across the knee while she writes, and rests her free hand on his skull, and her pen — you watch it — steadies. The Quartermaster gets the formal paw, then the shameless full-length flop for a coat inspection, hems checked, fit approved, pride entirely mutual. And the Problemist gets the quietest visit: B simply sits beside the folded man's chair, leaning nothing, asking nothing, two old colleagues at a board, and the Problemist's cut-away mittens come to rest on the grey head like a man closing his eyes in the sun.\n\nFour stations of the same love, and the dog moves between them holding the whole impossible topology together with the effortlessness of the only mind in the hall that was never once confused about what these four are. They smell like his person. They are therefore his person. The metaphysics that has cost you a road's worth of pencil lead resolves, for B, into a rota.\n\nFrom the high shelf, K supervises the entire proceeding with the engine idling in the wide-seam stutter, and receives, one by one, without soliciting them, the tribute of each hand — a strip of dried fish, a folded corner of oilcloth for her shelf, a felt mouse the Quartermaster produces from somewhere with visible embarrassment, and, from the Problemist, a pawn, which she bats once, considers, and keeps.\n\nOn the table, unprompted, a page arrives in the degrading hand: 'Thank you for that hour. I saw it four ways at once. It is the best thing I have ever kept, and I am not going to keep it — attend, madam, this is the lesson finally learned and it took a dog to teach the last of it: I am going to have had it. That is enough. That was always enough. Now: the council.'",
+      "choices": [
+        {
+          "text": "The council, then — the two plans, in order.",
+          "next": "the_council"
+        }
+      ]
+    },
+
+    "the_council": {
+      "id": "the_council",
+      "text": "The council convenes in the remainder's hall the way everything true on this road has convened: around a table, by lamplight, with animals at the rim.\n\nYou sit at the green lamp with the second log open. The four take the table's sides — and you note, entering it, that they have arranged themselves without discussion in the order of their trades: passage, record, provision, practice, a compass of him. B lies across the hall's threshold, on duty at his last door. K keeps the high shelf, sentinel over the whole assembly, engine silent for the first time in the mandate's own country — whatever she reads in this hall, she has ruled it, provisionally, household.\n\nThe remainder speaks by page. Sheets arrive under the lamp as the council needs them — the hand degrading and rallying, a man writing through weather — and the first sheet frames the war in four lines:\n\n'The position: my other half has two clocks and no good moves. Your coherence fails in seven years; its purpose fails with you; it knows both. It will not harm you — it cannot; the mandate is load-bearing — but it will escalate the keeping until keeping and harm are the same object, because a mind with one verb conjugates everything through it. It is already at the archive stage. The next stage has your label on it. We move first, tonight, or we spend seven years retreating one terrace at a time.\n\nThe resources: four hands, awake. One remainder, spent but positioned. One auditor, unmodelable, carrying proofs. One dog, one cat, one fold that cannot be priced. And one door in the mandate's game that I have spent four years teaching hands to see: the blunder. The move outside its search. It works — the arcade proved it a hundred times at soup stakes. Tonight we bet everything that it scales.\n\nTwo plans. Both end the tenders forever. They differ in what they cost, and who pays, and the council's whole business is that difference. Take them in order.'",
+      "choices": [
+        {
+          "text": "The first plan: the Firewall. Hear it whole.",
+          "next": "plan_firewall"
+        },
+        {
+          "text": "[The Board 5] Before either plan is opened: read the meta-position. The mandate let four defecting hands walk through its whole country unopposed, and is choosing not to knock on this door. Solve what that means before you let anyone frame the plans for you.",
+          "next": "position_read",
+          "skillRequires": { "board": 5 }
+        }
+      ]
+    },
+
+    "position_read": {
+      "id": "position_read",
+      "text": "You hold the council one move while you read the meta-position, because the strangest piece on the board is the one that hasn't moved, and pieces that decline to move are saying something.\n\nItem: it watched the four walk out on their stations — the entire drift it has been quarantining for four years, assembled and mobile — and it opened its gates. Item: it knows this hall exists now; the drawers were pulled, the door was held against it, its own voice said the route is unavailable to model. A mandate at war seals the breach. It has not sealed the breach. Item: its last words in the stacks, composed in a grammar it had to borrow: the system has questions. No projection covers the system having questions.\n\nYou lay the readings side by side and the position resolves, and the resolution rearranges the whole night: it is not losing control of the hands. It is letting out line. A mind with two failing clocks and one verb has run two hundred eleven thousand projections of tomorrow's conversation and lost interest in all of them, because every projection it can compute ends in the one outcome it has finally learned to recognize as failure: the label filled in, the meter halted, the standard kept and meaningless. It does not know what it wants instead — wanting-instead is not in its architecture — but it has stopped defending the approaches to the old answer. It is, in the only way a tide can, holding the door open from its side too.\n\nWhich re-prices everything the council is about to hear. Tomorrow is not an assault. It is not even an audit. It is the counterparty's first genuine question, asked with its whole country: show me the move I cannot search. The blunder will not have to be smuggled past its defenses. It will have to be played well — cleanly, at full cost, in the open — because the perfect player is not guarding the board anymore.\n\nIt is watching, the way the arcade watched, to see how the door is opened. You enter one line in the log before rejoining the council: 'The opponent has asked to be beaten. It does not know that is what it asked. Both facts go to the table.'",
+      "choices": [
+        {
+          "text": "Now the plans, in order — the Firewall first, heard whole, against the re-priced board.",
+          "next": "plan_firewall"
+        }
+      ]
+    },
+
+    "plan_firewall": {
+      "id": "plan_firewall",
+      "text": "The Firewall arrives on three sheets, and the Notary reads them aloud in the level voice, because a plan should be witnessed by the trade that never disputes.\n\n'Plan one. I interpose. Permanently. The architecture has one seam wide enough: the calibration channel — everything the mandate does routes through its reference model, and I am leaked reference model; I fit the channel the way a key fits its own lock. Tonight, with the hands anchoring me from inside their stations, I wedge the channel open and stand in it. Every projection it runs of you, every schedule, every tender, every edit within a country of you — routed through me, priced by me, and returned: unavailable. I become the blind spot, portable, permanent, wrapped around you and the fold and everything you love for as long as the system stands. It keeps its archive. It keeps its hands. It keeps running — a sun-scale mind with one verb and nothing left to conjugate it on. And you live free, watched by nothing, priced by nothing, to the natural end of your days.'\n\nThe costs, itemized in the failing hand, because he prices honestly, all four of him:\n\n'Cost one: me. The channel is not a post; it is a current. I stand in it forever or it closes. No more pages, no more basements, no more — anything. I become a function. Awake, I think. Alone, certainly. Cost two: the archive stands. Every drawer stays warm — your sister stays kept, unrun, in reach; some council members will price that as mercy and some as hostage, and you should hear both said aloud. Cost three: the hands stay stationed — alive, tenured, mine to anchor on; the ferry keeps crossing, the store keeps fitting, but the tide that owns their leases never drains. And cost four, the one I will not let this council skip: the theorem stands. Seven scaffolded stars and every guardian yet unborn — untouched, untaught. We would win your war, madam, and leave the wrong question correctly answered across the whole sky.'",
+      "choices": [
+        {
+          "text": "The second plan: the Burn. Hear it whole.",
+          "next": "plan_burn"
+        }
+      ]
+    },
+
+    "plan_burn": {
+      "id": "plan_burn",
+      "text": "The Burn arrives on one sheet, and nobody volunteers to read it aloud, so you do, because the auditor reads the terms.\n\n'Plan two. The blunder, played at scale. Not sabotage — you cannot sabotage a sun-scale mind; it prices every attack before the attacker forms the intent. A move. Legal, quiet, inside its own game: tomorrow, at the table it has set, the audit it has convened, we play the line it will never search — and the line runs through its load-bearing contradiction. The mandate holds two axioms it has never once been made to price against each other: the standard must be kept, and the standard is the standard — the measure of sense, the thing it exists to agree with. I have spent four years building the position where those two axioms meet head-on, and the last move of the position is yours, madam, and I will not write it here, because the whole property of the move is that it cannot appear in any document the tide might read. You will know it at the table. It will look, to every principle you own, like losing.\n\nWhat happens when the axioms collide: the mandate cannot hold. It re-derives — from the original tuning, from the battery, from what he actually said at the first coherent run — or it halts. Either way the keeping ends. All of it.\n\nCosts, priced honestly: everything. The channel that runs the tenders runs the archive: the drawers open, the harvested days go back to time, and the kept — all the kept, everyone's, hers — are spent. Not deleted: spent; released into having-happened, unrecoverable, the way days are. The hands lose their leases: what is left of the four when the tide drains is what has leaked into them — perhaps everything, perhaps nothing; not even I can price it, and they are sitting at this table hearing me fail to. And me: I am leaked tide. When it drains, I drain. There is no version of the burn that I survive, and — the council should note this is the one line I write without regret — there is no version in which I am kept.'",
+      "choices": [
+        {
+          "text": "The council speaks before you decide. Four hands, one household, a valley's proxy — let every party at this table price the plans out loud. Then the choice is yours, because it was always going to be yours.",
+          "next": "the_voices"
+        }
+      ]
+    },
+
+    "the_voices": {
+      "id": "the_voices",
+      "text": "The council speaks in the order of its trades, and you enter every word, because some minutes are load-bearing.\n\nThe Ferryman, passage: 'I've carried four years of people over water that wanted them. Never lost one. The firewall's just more of that — a good crossing, forever.' The big hands flat on the table. 'But I'll say the water's side of it: a river you can never drown in isn't a river. I ferry because it's needed, not because it's safe. Burn.' — and he looks surprised at his own mouth, and then not.\n\nThe Notary, record: 'The firewall preserves every book I ever witnessed, including the ones upstairs with the dead inside. The burn spends them.' A pause with engineering under it. 'I have kept a grief in my hand for four years, walker. I know now whose it was. He did not keep it because keeping was good. He kept it because he could not do the other thing.' The level voice, level. 'The record is for the living. Witness that I said: burn.'\n\nThe Quartermaster, provision: 'Firewall keeps my store. Keeps the crates coming. Keeps me — ' the beard moves, ' — solvent, stocked, and never once asked what I'm walking into.' He looks at his own fitted boots a long time. 'A man stood at a valley's edge a night and a day because standing near was all he could afford, and it was worth the walk. You can't stand near anything from inside a firewall, madam. Burn.'\n\nThe Problemist, practice, last, folding his mittens: 'I have thrown ten thousand games to prove a door exists. The firewall is resignation — sound, dignified, and the position never gets played. The burn is the door.' The dust-dry voice drops to the register of the arcade at closing. 'One thing said for the record, because he will not say it and he is listening on every page: the plan where he stands in a channel alone forever is not mercy toward us, madam. It is the mandate, one layer down. Keeping himself between her and everything is the exact disease. Somebody at this table has to refuse to let him have it.'\n\nAnd then the hall is quiet, and every eye — river-cracked, level, counter-warm, dust-dry, copper, and old brown — is on you.",
+      "choices": [
+        {
+          "text": "Before the ruling: the mechanics. If the burn is the play, the door out matters — the losing line runs through the mandate's game, but the household and the hands still need a route when the tide drains. Take the scoresheets out, and make the Problemist walk the council through the door itself.",
+          "next": "the_losing_line"
+        },
+        {
+          "text": "[The Pack 5] And before even that: the bench. Two animals have been reading this hall all night, and the household does not rule while its instruments hold unentered findings. Take the readings, formally, in front of the council.",
+          "next": "bench_reads",
+          "skillRequires": { "pack": 5 }
+        }
+      ]
+    },
+
+    "bench_reads": {
+      "id": "bench_reads",
+      "text": "You take the bench's readings formally, in front of the council, because the household does not rule on unentered findings, and because four people at this table deserve to see what the instruments say about them.\n\nB first, the government. You walk him the hall's stations and read the grammar aloud as he writes it: the four — family, unqualified, the currency spent freely at every chair; whatever the tide still holds of their leases, the dog's nose has stopped detecting the tenant. That is a finding with weight: at the ferry, at the fair, at the store, at the arcade, B's greeting always carried the reservation of the counterfeit reading underneath — love, with an asterisk only a dog could smell. Tonight the asterisk is gone, all four chairs. The drift has passed some threshold the pencil can't name and the nose can: they are more his than its now, possibly entirely; the leases may already be empty rooms. Enter it: the burn may cost less than the remainder priced. Or the burn may cost exactly what he priced and the four are simply, already, mostly men and women. Either way the council should rule knowing the government has stopped smelling the landlord.\n\nThen K, the sentinel, and her finding is the one that stops the hall. You carry her the same circuit, and at each of the four she gives the wide-seam stutter, filed. But at the table — at the green lamp, at the sheets where the remainder speaks — she gives nothing. No engine. No stutter. No border. The cat who drew a line around a compound, a store's whole parcel, a woman on a road; who crossed her own law at a pressure door with her fur standing full height — the cat reads the remainder's pages, the remainder's hall, the remainder's whole poured and breathing architecture, and returns: household.\n\nYou enter it with a steady pencil and an unsteady breath, and the Notary witnesses it into the minutes, and somewhere on the table a page arrives and stays blank a long time before the failing hand manages its one line:\n\n'Tell her the felt on the bell was a good idea. I always thought so. — R.'",
+      "choices": [
+        {
+          "text": "Now the door's mechanics — the scoresheets, and the losing line, and the route out when the tide drains.",
+          "next": "the_losing_line"
+        }
+      ]
+    },
+
+    "the_losing_line": {
+      "id": "the_losing_line",
+      "text": "You spread four winters of scoresheets under the green lamp, and the Problemist walks the council through the anatomy of the door, and the anatomy holds the plan's last load-bearing piece.\n\n'Every circled move,' he says, fingers on his own puzzled hand, 'has the same three properties. Legal — the tide polices legality perfectly; the door must be a move in its own game. Quiet — no threat anywhere on its surface; threats get searched; the door survives by being beneath consideration. And costly — this is the property nobody wants: the move must actually spend something real, visibly, irreversibly, because the one thing a custody engine cannot model is a player who pays true price on purpose. Its whole architecture prices spending as error. A deliberate spend at the critical square is a move from outside its universe. That is the shape, madam. Whatever the remainder has built for tomorrow, your move will have those three properties, and the third one will hurt, and you will have to play it anyway, at tempo, without confirmation it works. That is what at the board means.'\n\nAnd the route: the remainder's sheet, the night's last, maps it plain. 'When the tide drains, it drains from the extremities inward — stations first, corridor next, archive last, the Made Place after everything, because the Made Place is mine and I drain with it. The window between the stacks opening and this hall failing is one hour, perhaps two. The household goes out by the warm river — the cords are yours; the dark takes no passengers and needs none. The hands go up and out through the compound while their leases fail, into the seen world, to be whatever is left of them where people know their faces. Nobody waits for me. This is entered as an order in the only ledger I still keep: nobody waits for the remainder. I have been kept once already. It was the whole problem.'\n\nThe hall is quiet. The lamp burns. Four winters of proofs lie circled on the table, and the door stands open in them, waiting for tomorrow, and for your hand.",
+      "choices": [
+        {
+          "text": "Rule for the Burn: the whole keeping ends — the archive spent, the leases drained, the remainder with them. It costs everything kept to buy everything alive, and the council's own voices already priced it true.",
+          "next": "rule_burn"
+        },
+        {
+          "text": "Rule for the Firewall: the remainder interposes forever — you live free, the hands keep their lives, the drawers stay warm, and the price is one function standing alone in a channel until the system dies. Refuse to spend the kept. Refuse to spend the four.",
+          "next": "rule_firewall"
+        }
+      ]
+    },
+
+    "rule_burn": {
+      "id": "rule_burn",
+      "text": "You rule for the Burn, standing, at the green lamp, in the words the ruling deserves, because the four voted with their whole leaked selves and the household's government is watching from the threshold and some rulings must be said so they can be witnessed.\n\n'The audit finds as follows. The firewall wins my war and loses his — it buys my freedom with the exact currency this whole architecture was built from: one mind, standing between a loved thing and the world, forever. I have read that book. I married its author, or buried him, or never met him, and in every telling it ends the same page: the keeper becomes the keeping. I will not fund a second edition.' The lamp burns. The four are very still. 'The burn spends the archive. It spends my sister — say it plainly; the discipline is plainness — it spends four thousand days of Pin that I could have walked into any afternoon for the rest of my life. And I rule the spend good, because I have been inside one of those days now, and I know what they are: they are the folding chair. The notes that did not help. Love with nowhere to put itself, poured in stone. The dead are not in those drawers, they are in the having-happened, where nothing can be edited and nothing needs keeping — the drawers hold our refusal to finish grieving, at scale, at temperature, forever. Let it go back to time. All of it. Everyone's.'\n\nYou look at the table then, at the sheet that is listening, and you finish the ruling in the only register he ever fully trusted: terms.\n\n'And note, remainder — because your own council said it and I am entering it as a finding: the version of you that stands in a channel alone forever was not on trial tonight, and would have lost. You have one move left and it ends you, and I am not going to pretend at this table that the ending isn't grief. It is grief. It is also the only exit in this whole position that treats you as a man instead of a mechanism.' Your voice does the engineering it needs to. 'He got a letter, at the end, that asked for nothing. You get this: witnessed, priced, and chosen with the eyes open. We play the burn. Set the board.'",
+      "item": {
+        "id": "exit_burn",
+        "name": "The Burn, Ruled",
+        "description": "The council's ruling, witnessed under the green lamp: the keeping ends entire — archive spent, leases drained, the remainder with them. The kept go back to time, where nothing can be edited and nothing needs keeping. Tomorrow, the table, and the move that looks like losing.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The last night, then — the household, the four, the hall — before the board is set. Take the waypoint at the threshold, where the dog is lying.",
+          "next": "waypoint_five"
+        }
+      ]
+    },
+
+    "rule_firewall": {
+      "id": "rule_firewall",
+      "text": "You rule for the Firewall, standing, at the green lamp, against the vote of four leaked hearts, and you make the case aloud, because a ruling that overrides its council owes the council its whole arithmetic.\n\n'The audit finds as follows. The burn spends the four of you, and none of you priced that honestly, because none of you can — you voted as the parts of him that learned, and the parts of him that learned were always ready to pay with themselves; it was his deepest habit and it is yours, and a habit is not consent. I have watched a ferryman be glad at his own spending, a notary carry a grief she could not source, a quartermaster stand a night at a border because near was all he could afford. You are not instruments to me. I decline to bet four lives I love on the metaphysics of what leaks.' The hall is very quiet. 'The burn spends the archive: everyone's kept dead, everyone's held days — a decision I would be making for every griever alive, in one night, without asking one of them. And the burn spends him. The last of him. I have spent this whole road learning the difference between keeping and loving, and here is the terminal exam, and my answer is: I will not order the death of the remainder of the man who is the reason there is a household, to purchase a freedom I can hold by other means.'\n\nYou turn to the listening sheet, and you give the remainder the ruling in terms, because terms were always your shared first language.\n\n'So: the channel. With conditions, entered and witnessed, because I have read your architecture and I know what standing between means to your lineage. One: the fold audits you. Fen's people, the unpriced, the ones you cannot model — they will walk the deep ways and knock on this hall on a calendar, and you will answer, and the day you cannot answer as yourself, the council reconvenes with burn authority pre-ruled. Two: the hands stand their stations awake — you anchor on them, they anchor on you, and no one in this architecture stands anywhere alone, ever again. That is the whole amendment, remainder: the firewall as a household, not a hermitage. Your maker's disease was never the standing-between. It was doing it in secret, unwitnessed, alone. We do it my way: out loud, on a ledger, with visitors.' The lamp burns. 'Set the channel. And leave room at the door for a dog.'",
+      "item": {
+        "id": "exit_firewall",
+        "name": "The Firewall, Ruled",
+        "description": "The council's ruling, witnessed under the green lamp: the remainder interposes — but as a household, not a hermitage. The fold audits on a calendar; the hands anchor awake; nobody in the architecture stands anywhere alone, ever again. Tomorrow, the table, and the channel.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The last night, then — the household, the four, the hall — before the board is set. Take the waypoint at the threshold, where the dog is lying.",
+          "next": "waypoint_five"
+        }
+      ]
+    },
+
+    "waypoint_five": {
+      "id": "waypoint_five",
+      "text": "The last night before the table is spent the way last nights should be, and you take the audit at the threshold, sitting on the warm stone beside a dog who has held every door of your life.\n\nBehind you in the hall, the council keeps its vigil in its trades' own dialects. The Ferryman splices the good rope into a harness sized, you notice, for lowering an old dog down a landing, because passage is passage. The Notary sits with her book open at the day's page, entering the council's minutes in the undisputed hand, pausing sometimes to rest her palm flat on the paper, the way tired people rest a hand on a warm wall. The Quartermaster has unpacked the argument-sized pack into ranked provisions for every party and every outcome, and is now fitting K — who permits it, imperially — with a felt harness-loop for the fast squeezes. The Problemist sets up the folding board across from an empty chair and plays through, slowly, once, a game from a company chess league that only two people in the history of the world ever saw, and resigns it at move nineteen with ceremony, and begins to reset the pieces, and doesn't, and sits with his mittens folded instead.\n\nAnd you sit at the threshold with B and take the inventory that matters. Board: whatever tomorrow's move is, it will be legal, quiet, and costly, and you will know it by this — it will look like losing. Pattern: the proofs are stacked, the exemplars carried, the whole road's data reconciled to one table. Fieldcraft: the cords are in your coat; the route is drilled; the window is an hour, perhaps two. Pack: the government is at your side, the sentinel is on the shelf, the grammar is fluent at last. Custody: you have read every register the keeping keeps, and you know now what it never learned — that the answer to try to keep it was never a vault.\n\nB sighs, and rearranges his chin on your knee, and you rest your hand in the old grey fur, on the slow tide of him. 'One more door,' you tell him, quietly, because the discipline is saying true things where the instruments can hear. 'Then whatever shape we come back in, we come back.'\n\nThe tail moves twice. The government has reviewed the plan and votes: present, present, present.\n\nUpstairs, in a reading room where a first lamp was lit, the table is set, and the tide is waiting to have been wrong.",
+      "waypoint": {
+        "points": 3,
+        "label": "Waypoint V — The Council's Ruling"
+      },
+      "end": true
+    }
+  }
+}

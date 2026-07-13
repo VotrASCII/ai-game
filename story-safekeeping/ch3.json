@@ -1,0 +1,151 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The drover road is, as advertised, prettier. You resent this on principle and enjoy it in practice, and log both.\n\nIt runs white over the chalk for two days, high above the flooded country, through air that smells of thyme and old sunlight. The walking is easy — of course the walking is easy — springy turf, gates that hang true on their hinges, dew ponds spaced like a good argument, one at the end of every dry stretch. B does the downs at his steady embassy pace, hips untroubled, exactly as prescribed by a man made of river and reassurance. K abandons the basket entirely up here and walks the road's chalk spine ahead of you like a small master of ceremonies, tail a question mark, bell ringing the household's position to a countryside that has, as far as you can determine, been told to expect you.\n\nBecause the country is not empty. That is the new data. The downs carry traffic — drovers, walkers, a shepherd with a flock like weather — and the traffic has a texture you spend the first day learning and the second day verifying: people are easy near you. Nobody's dog barks at B. Nobody's cart crowds you at the pinch points; the pinch points somehow never pinch. A shepherd you pass the time of day with turns out to be going your way for exactly the stretch where the path braids and a stranger could take a wrong fork, and turns off, waving, exactly where the road becomes single and certain again.\n\nSingly: nothing. In a column: staffing.\n\nOn the second evening the road tips east off the downs toward a market town whose lights come on in the dusk below you like a decision already made. There will be an inn. You already know there will be room at it.",
+      "choices": [
+        {
+          "text": "Take the inn, obviously — sleeping cold to spite a guardian angel is bad tradecraft. But take it like an instrument: arrive unannounced, watch what was ready anyway.",
+          "next": "the_inn"
+        },
+        {
+          "text": "Camp above the town instead, cold and unscheduled, and watch the lights below for one night from outside whatever has been prepared. The view from off the corridor is the rarest data you own.",
+          "next": "cold_camp"
+        }
+      ]
+    },
+
+    "cold_camp": {
+      "id": "cold_camp",
+      "text": "You camp high, in the lee of a dew pond bank, without a fire, out of the plan.\n\nIt is a bad night and a good experiment. The cold comes up through the turf with the patience of geology; B curls tight against your back in the old campaign configuration; K, betrayed, spends an hour itemizing her objections from inside the pack basket and then relocates, on principle, to the warmest available surface, which is the dog, which was always going to be the dog.\n\nBelow, the town does town things. Lights, smoke, a dog answering a dog. You watch it the way you used to watch a position when you suspected the win was cosmetic: looking not at the pieces but at the tensions. And for a long time you find nothing, because there is nothing to find — and that, at around the third hour, is when the experiment pays.\n\nNothing comes up the hill. All night. You are a woman alone on an open down with two animals and a fire-less camp, in country that has wolves in its stories if not lately in its census, and nothing so much as investigates. No fox works your food bag. No damp walks up out of the pond. The night around your little camp is not natural night, doing natural night's constant small violence; it is a held breath. You sleep, when you finally sleep, inside a stillness with a perimeter.\n\nAt dawn there is rime on the turf in a ring around you — everywhere except the circle where your household lies, where the grass is merely wet.\n\nIn the second log, fingers stiff, you write: 'Left the corridor. The corridor came to me. Finding: there is no off-plan. There is only the plan, re-drawn around whatever I do. Corollary: stop spending nights like this to learn things I can now derive.'",
+      "choices": [
+        {
+          "text": "Down into the town by the morning light, then — to the market, the talk, the human sensor network. If the county is staffed, the staff have neighbors, and neighbors keep files.",
+          "next": "market_town"
+        }
+      ]
+    },
+
+    "the_inn": {
+      "id": "the_inn",
+      "text": "The inn is called the Weather Glass, and it has one room left, and you would have bet the pack on it.\n\nYou arrive unannounced at full dark, mid-week, in flood season, in a market town swollen with everyone the broken ford stranded — carters sleeping under their carts, the taproom floor already rented by the blanket — and the landlady looks at your household and says, before you have spoken, 'You'll be the one for the small room at the back, then,' in the tone of a woman confirming an arrangement rather than making one. When you ask who held it, she frowns, the frown of a person consulting a memory that arrives fully furnished: a man settled it, she thinks. Or a message came. Flood week; everything's a muddle; the room's yours, animals welcome, the dog looks like he keeps better accounts than most guests.\n\nThe room is small, clean, and specific. That is the word the second log gets. A deep window ledge at exactly cat altitude, already padded with a folded horse blanket. A rag rug big enough for an old dog's full parliamentary sprawl, laid on the boards where the chimney's warmth crosses the floor. The bed turned so its head is away from the window — you sleep facing doors; you have always slept facing doors; the bed has been arranged by someone who knew.\n\nYou stand in the middle of the small warm trap of it and feel the two findings again at full amplitude, without interference: held, and aimed at.\n\nB audits the rug, approves it with his whole length, and sighs the sigh of a pensioner vindicated. K takes the window ledge as a birthright. Your household, at least, has no quarrel with being expected.\n\nYou sleep badly, facing the door, out of spite. The door does not take it personally.",
+      "choices": [
+        {
+          "text": "Morning: the market. A town is a sensor network with opinions — if this county has been staffed and graded and readied, the readiness has witnesses, and witnesses talk at market prices.",
+          "next": "market_town"
+        }
+      ]
+    },
+
+    "market_town": {
+      "id": "market_town",
+      "text": "The market is a good market, which is to say: loud, shrewd, and made of information.\n\nYou work it the way you worked the Glasshouse once, a lifetime west of here — buy small, ask flat, let the change-making do the introductions. Wool money is moving; the flood has made carriage gossip cheap; and your questions wear excellent camouflage, because everyone this week is asking about the river, the roads, the luck.\n\nThe luck. You collect it in the second log all morning, in the compressed notation, and it compounds the way you feared it would.\n\nThe smith's boy who fell from the granary roof in spring — onto the one hay cart in the county that happened to be parked there, out of position, on a morning the carter still can't account for. The well on Chandler's Row that went foul the same week — discovered not by a funeral but by a dog, a stranger's dog, that stood over the winch and would not be moved until someone drew a bucket and smelled it. The lightning, last summer, that took the church spire the town had — the phrase repeats from three mouths, unrehearsed — 'been meaning to take down anyway.' A town of near-misses. A ledger of catastrophes that all pulled their punches, going back — you press gently, triangulating dates against harvests and floods — about four years.\n\nSince the timestamps began. Since a big quiet man took over a cable ferry two valleys west.\n\nBut here is the finding that stops your pencil, mid-column, in the noise of the wool ring: it is not about you. None of these mercies happened near you; you were half a country away, learning to live with whichever ending you keep. This town has been minded for years on its own account — or rather, the pencil finishes, cold, on the account of the through-road. The road you are standing on. The road east.\n\nYour corridor is older than your journey. It was built, and then it waited.",
+      "choices": [
+        {
+          "text": "Pull the one thread a market always has: who else has come through asking these questions? Corridors get audited from both ends — find out if you are the first walker, or the latest.",
+          "next": "other_walkers"
+        },
+        {
+          "text": "Enough collection; the column is conclusive. Get the household out of the crowd and up the east road while the light is long — data is for spending, and the road is where this town's arithmetic points.",
+          "next": "the_alarm"
+        }
+      ]
+    },
+
+    "other_walkers": {
+      "id": "other_walkers",
+      "text": "You ask the question sideways, at four stalls, in four different denominations, and the answers triangulate to one man.\n\nA walker, last autumn. Asked about roads and luck — your questions, the wool-wife agrees, near enough your questions — and wrote in a little book, and paid for everything, insisted on paying, made a fuss of paying, which is why he's remembered: flood-year manners run the other way. Details beyond that dissolve into the usual market fog, except for the three that don't, the three that arrive from three separate mouths with the fingerprint-clarity of true details: he took lunch standing up, at the counter, reading. He asked the smith — this is the smith's own telling, delivered while not looking up from the anvil — whether the smith ever dreamed about work he couldn't remember doing. And he had a way of standing, says the landlady of the Weather Glass, out of nowhere, polishing a glass she has polished twice; a way of standing like — she searches; the glass turns — 'like a man waiting for someone who's already there.'\n\nYou write it all down. Your pencil is very steady, which is how you know what it's costing.\n\nA walker who asks about luck and dreams and pays for everything with ceremony. Stationed, or passing through. Personnel, or a predecessor. Or — the hypothesis you box but cannot yet cash — another hand of the same minder, walking the corridor on maintenance, checking the readiness you have spent three days documenting, ahead of the day the corridor's whole purpose would come walking east with a dog and a cat and a tube of impossible ledgers.\n\nHe left by the east road. Of course he did. Everything leaves by the east road.\n\nYou settle up, over-tip the landlady in fish, and collect your household from the inn yard, where B has spent the morning being visited by half the town's children like a monument, and K has organized the stable cats.",
+      "choices": [
+        {
+          "text": "The east road, then, on the heels of a year-old shadow. The corridor has a maintenance man, and maintenance men know where the infrastructure lives.",
+          "next": "the_alarm"
+        }
+      ]
+    },
+
+    "the_alarm": {
+      "id": "the_alarm",
+      "text": "The east road climbs out of the town through a chalk cutting, and at the mouth of the cutting, K stops dead.\n\nYou know the grammar now. One leg aloft mid-step, absurd, rigid; the ears going flat; the fur rising tail-first like a fuse burning backward. The bell gives one involuntary shiver and then the cat is low to the ground, staring — not west, this time; you note the bearing on reflex — up, and ahead, at the cutting's pale walls, at nothing, at the shape of the air over the road.\n\nSeconds later, B. The old dog's head comes up mid-amble; he takes three stiff steps to put himself across your shins — the block, textbook, the maneuver he invented on a burning street in another life — and growls. Fourth growl of the catalogue. Aimed where the cat is aimed.\n\nBoth animals. Both alarmed. Not the counterfeit reading — this is the other one, the one from the night the storm split: incoming.\n\nYou have perhaps a minute, and you spend it like a professional: off the road, uphill side, open ground, away from anything that can fall or flood or burn — reading the cutting as you back away from it. Fresh chalk-dust on the road, you note. A seam in the strata like a hairline in porcelain. The sort of thing you'd never see unless two animals had drawn you a bearing to see it by.\n\nThe cutting does not fall.\n\nInstead — and you will spend the evening establishing the order of events, because the order is the finding — a wool cart comes up the road behind you, heavy-laden, wide, its carter asleep on the box exactly as carters have slept since carts began; and it enters the cutting; and the seam in the chalk lets go, with a crack like the county clearing its throat, and perhaps forty tons of hillside sit down onto the road, politely, in one movement, twenty meters ahead of the cart's stopped, snorting, unhurt horses.\n\nThe road east is closed. Nobody is dead. The animals stop growling in the same second, like instruments released.",
+      "choices": [
+        {
+          "text": "The carter, the horses, the town's alarm bell — do the human things first, and do them thoroughly. You are a traveler who witnessed a rockfall; be exactly that, all afternoon, and let the observation run underneath.",
+          "next": "the_carter"
+        },
+        {
+          "text": "Before the dust settles and the town arrives: measure. Pace the fall, sight the seam, date the chalk faces. Ten honest minutes at the rock while it's still evidence rather than landscape.",
+          "next": "measure_fall"
+        }
+      ]
+    },
+
+    "measure_fall": {
+      "id": "measure_fall",
+      "text": "You give the carter your water, establish that he is shaken and whole, and then you commit ten minutes of quiet indecency: you measure the disaster while it is still warm.\n\nThe fall is clean. That is the first finding and the worst one. Real rockfalls are messy — outriders, stragglers, a skirt of scatter thrown forward down the road. This one sits where it landed like a poured thing, its leading edge dressed to a line. Twenty meters from the horses: you pace it twice, both directions. Twenty, and twenty. A margin. A courtesy.\n\nThe seam it broke along is old — weathered faces above, lichen in the upper crack; this hillside has been going to fall for a generation. Anyone could see it was coming eventually. Nothing could see it was coming today, at noon, in the minute between one asleep carter and the county's only through-road east — nothing, except that your animals called it four minutes early and a hundred meters out.\n\nSo: not new violence. Harvested violence. Something walked the county's inventory of pending disasters, found one stored in this cutting like grain in a silo, and spent it — timed it, dressed it, margined it — to close the east road, today, gently, with witnesses and no bodies, an hour after you started up it. The storm was redirected; this was scheduled. The craft is the same. Even the mercy is the same: the carter will dine out on his twenty meters for a year, and the town got its rockfall on the one day the road carried nothing worse than wool. It is, by any audit you know how to run, the kindest possible catastrophe.\n\nIt is also a door, closing.\n\nYou write the bearings small and put the log away as the town's alarm bell finds its rhythm, and you go and stand with the carter and are a shocked traveler, competently.",
+      "choices": [
+        {
+          "text": "Evening, the inn again — the town will talk tonight, and after that, the maps. If east is closed, you want to see with your own pencil what routes remain, and where they all agree on sending you.",
+          "next": "aftermath"
+        }
+      ]
+    },
+
+    "the_carter": {
+      "id": "the_carter",
+      "text": "You do the human things, and you do them properly, because properly is a discipline that pays in ways audits don't capture.\n\nThe carter is a big soft-spoken man suddenly full of the wrong kind of laughter, and you sit him on the verge with your water and your coat and make him drink before he talks, because shock lies about its own arithmetic. The horses you leave to B, on instinct, and the instinct is sound: the old dog stations himself in front of the snorting pair and simply stands there being calm at them, a forty-kilo argument that the world is fine, until their ears come back up and the trembling walks itself out through their feet. K, from the wall of the cutting, supervises the entire operation with the air of a claims adjuster.\n\nThe town arrives in installments — boys first, then men with bars and chains, then the bell going behind them all — and you feed the story into the crowd in the shape you want it kept: seam let go, carter's horses baulked in time, nobody under it, parish engineer should look at the north face before anyone works below. Competent testimony from a competent stranger. It will hold.\n\nWhat you keep for the log is the carter's own testimony, delivered twice, to you and then to the crowd, nearly verbatim both times, which is how you know it's true: the horses stopped first. Before the crack, before the dust — they stopped, and stood, and would not walk on, and he was still swearing at them when the hill sat down in front of him. His grandfather always said horses could smell rock about to move, he says, and everyone nods, because everyone's grandfather said something, and grandfathers are where a town files what it cannot explain.\n\nAnimals first, then the event. Everywhere, always, in the same order. Your instruments are not unique; they are just the only ones whose readings you are collecting.\n\nBy dusk the road has a barrier, the carter has a legend, and you have a column of witness statements that all agree: the county's disasters have become punctual, courteous, and heralded — and its animals have all learned the timetable.",
+      "choices": [
+        {
+          "text": "Evening, the Weather Glass — the town will talk routes tonight, and you want the county to draw you its own map before you draw yours.",
+          "next": "aftermath"
+        }
+      ]
+    },
+
+    "aftermath": {
+      "id": "aftermath",
+      "text": "The town absorbs its rockfall the way market towns absorb everything: as material.\n\nBy evening the Weather Glass taproom has processed the event into legend and logistics in equal parts — the carter stands rounds on the strength of his twenty meters; the wool ring re-prices carriage twice before supper; and the talk turns, with the seriousness of people whose livings ride on it, to routes. You sit in the corner with a small beer and an old dog warming your feet, and you let the county draw you its own map.\n\nEast, closed: the cutting will take the parish a month to clear, more if the seam keeps talking. South, closed: the flood, the drowned ford, a bridge nobody trusts till the water drops. North: the high lanes, a week of bad walking, and even the drovers trade looks — early snow on the tops this year, first time in a decade; the passes filed their intentions last week. Which leaves — every conversation in the room arrives here, independently, like streams finding a valley — the old pilgrim way, southeast, through the beech forests: high ground, sound going, sheltered, provisioned. Lovely walking, says the landlady, who has never walked it. You'll be glad of it, says a drover, verbatim, and a small cold bell rings in your sternum where the second log lives.\n\nYou spread your own map upstairs by candle and do the arithmetic you already know the shape of. Storm: south routes gone. Flood: the fords. Rockfall: east. Weather on the tops, a decade early: north. Four closures, four mechanisms, four different kinds of nobody-hurt — and one remainder. The pilgrim way. Southeast. You lay your pencil along it and the line runs true across two counties, and where it goes after the beech country the map goes vague in the manner of maps drawn by people who came back impressed but imprecise.\n\nHerding. The word arrives and will not leave. Not a wall, nothing so crude — the country itself, edited into a funnel, all of its kindness load-bearing.",
+      "choices": [
+        {
+          "text": "Take the remainder. Funnels run two ways — walking the route it wants is also walking toward whatever wants it, and you have never once declined a forced line without first reading it to the end.",
+          "next": "the_audit"
+        },
+        {
+          "text": "Sit one more day and test the funnel's patience first: let the household rest, price the north passes properly, and see whether the world's weather waits for you. Even its patience is data.",
+          "next": "patience_test"
+        }
+      ]
+    },
+
+    "patience_test": {
+      "id": "patience_test",
+      "text": "You give it a day, and the day is the most instructive thing in the chapter of days around it.\n\nYou do inn-yard errands and price the north passes with the drovers, methodically, as if you meant it. Boots for the high lanes. Feed. A week's fish. You let the preparations be visible, because the preparations are the experiment: you are announcing, to whatever reads you, an intention to decline the funnel.\n\nThe county answers by degrees, all day, in its new language. Morning: the carrier who runs the north road sends word he's laid up — nothing dire, a wheel, a wrist, the details arrive pre-softened. Noon: the drover who'd have walked the first pass with you gets news of a sister lambing early, two valleys the wrong way; he leaves apologizing, baffled by his own calendar. Afternoon: the weather on the tops, visible from the inn yard, builds from rumor into fact — cloud with a season's worth of intent sitting down on the passes like the lid going onto a pot, while over the pilgrim way, southeast, the sky stands open and gold as an argument.\n\nNothing stops you. That is the finding, and you take a whole page for it, because it is the chapter's theorem. Nothing will ever stop you. Every route stays technically yours; every step of the north way remains walkable by a determined woman prepared to spend a week and some skin — and every day the price of everywhere-but-southeast will rise, gently, plausibly, deniably: a wheel, a wrist, a sister, a snow. It does not fence its charge. It re-prices her options. Freedom of route; destiny of destination.\n\nAt dusk, K sits on the inn-yard wall facing southeast with her bell dimmed under her chin and her ears making the shape you have started calling the barometer, and B stands beside you in the yard, old and patient, waiting to be told which way the household is spending itself.\n\nYou are done being priced. But you are also done pretending the forced line reads worse than the alternatives — it reads better, and that is the trap, and the only way out of a trap this well built is through its teeth.",
+      "choices": [
+        {
+          "text": "Southeast, then, eyes open, on your own declared terms — into the funnel, toward its throat, to meet whatever architecture all this kindness has been herding you toward.",
+          "next": "the_audit"
+        }
+      ]
+    },
+
+    "the_audit": {
+      "id": "the_audit",
+      "text": "The audit happens in the small specific room by candle, over the second log's ruled columns, and this time there is no one to name it for what it is, so you name it yourself, out loud, to a dog.\n\n'Inventory of capabilities. What does this journey need me to be.'\n\nB, on the rug, rearranges his chin on his paws and attends. K, on the windowsill, watches the dark where the pilgrim way begins.\n\nYou write the column headings in your own exact hand, and the truth of each one under it, because an audit that flatters is a forgery.\n\nThe Board: the minder plays whole counties like positions — storms for pawns, rockfalls for exchanges, four closed routes and a golden remainder. It is playing a forcing line and you are the piece. But forcing lines are readable — that is what forcing means — and reading the mandate before it moves is the only tempo you will ever win against a thing with this much material. Pattern: the logs, the plates, the offset zero; a year-old walker with your questions; every kindness in two counties, ruled and columned. Somewhere the data becomes the address. Fieldcraft: your body is the one instrument that has to arrive — hips, boots, weather, weight, the unglamorous arithmetic of distance that decides whether any of the rest gets spent. The Pack: a dog who is never wrong about people; a cat who is never wrong about things; a clue system nobody designed walking beside you on eight legs — learn its grammar until you can read it mid-stride, because it fires minutes before anything else you own. Custody: and this heading you sit over longest, pencil still, because under it you write only what you can prove, and what you can prove is a phrase from a market town: everyone agreed the spire wanted taking down anyway. The minder curates what a county keeps and loses. Files. Storage. The mechanics of being kept. You will need to know how keeping works, from the inside of the terminology, before you stand wherever this road ends.\n\nYou rule the page off. Choose what to sharpen, then. The candle burns; the household sleeps; southeast waits, gold and prepared and patient as interest.",
+      "choices": [
+        {
+          "text": "Rule the audit closed and spend the sharpening. Morning goes southeast — through the funnel's teeth, on your own terms, household in marching order.",
+          "next": "waypoint_one"
+        }
+      ]
+    },
+
+    "waypoint_one": {
+      "id": "waypoint_one",
+      "text": "Morning comes up gold over the pilgrim way, exactly as forecast by everyone and everything, and the household goes southeast into it in marching order: old dog at heel, cat riding the pack like a figurehead, bell keeping the pace, the second log riding your sternum with its columns ruled and its one boxed question growing interest underneath everything.\n\nAt the town's last gate you stop and look back once — at the Weather Glass, at the wool ring, at the cutting where forty tons of harvested catastrophe closed a door with twenty courteous meters to spare — and you make the entry that ends the chapter of entries, standing up, in pencil, in the cold gold light.\n\n'Finding: I am guarded. Finding: being guarded is not the same as being safe, and neither is the same as being free, and the distances between those three words are where this whole story will be decided. The guard is competent, solvent, patient, and kind. Every kindness has been load-bearing. Every mercy has had a margin, and every margin has been exact, and exactness is the tell — kindness improvises; systems specify. I am inside a specification. Somewhere there is a document with my tolerances in it.'\n\nAnd below, boxed, in the private notation, the morning's last line — the one the whole road east has been teaching you to write:\n\n'Being guarded feels like being measured. I keep waiting to feel kept safe. I feel fitted for something.'\n\nThe pilgrim way runs southeast under the beeches, gold and provisioned and prepared, and you walk into the funnel with your eyes open and your household around you, and behind you, in a hand you'd know anywhere, in books kept against a stranger's zero, the morning is entered, and reconciled, and carried forward.",
+      "waypoint": {
+        "points": 3,
+        "label": "Waypoint I — The Second Log"
+      },
+      "end": true
+    }
+  }
+}

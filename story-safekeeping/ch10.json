@@ -1,0 +1,161 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "Chalcedon lives under its white cliff like a town under a held wave, and the arcade runs along the cliff's foot: a covered lane of shops and braziers where the karst's winter business huddles out of the wind.\n\nYou find the folding board without asking. It sits where the arcade's two draughts cancel, at a small table polished by decades of other tables' lives, and behind it sits the fourth hand, and you stand at the brazier opposite for a quarter of an hour, buying chestnuts you don't want, reading him the way you read the Ferryman from the top of a ramp.\n\nHe is old — actually old, or worn to it: a small man folded around a straight spine, mittens with the fingers cut away, a tin cup that has been mended with three metals. The board before him holds a problem — white to move, mate in four, you solve it from the brazier in the time it takes a chestnut to burn your fingers, and then look again, because the position underneath the problem is beautiful: natural, asymmetric, a position from a real game or from a mind that has no need to borrow. A carter's boy sits down, stares, moves a knight; the Problemist shakes his head, gently resets the piece, and waits. The boy stares again. The whole arcade, you understand, has learned chess at this table the way towns learn their rivers.\n\nAnd B — B, who has held protocol at three of these encounters now — B simply walks. Across the arcade, unhurried, certain, and instead of the lean he performs the other ceremony, the one you have not seen since a kitchen in another life: he sits beside the small man's chair and offers his paw. The Problemist takes it without looking away from the boy's deliberation, shakes it once, formally, colleague to colleague, and goes on waiting.\n\nFrom your shoulder, K's engine starts — and then, for the first time in four encounters, stops. Runs, catches, stops, like a reading that will not settle. The bell is silent. The sentinel is puzzled.\n\nWhatever this one is, it is not quite what the others were.",
+      "choices": [
+        {
+          "text": "Sit down at the board. All roads, all winter, all the arranged world — it has all been prologue to this table, and both of you know it, and the cup can have your coin regardless.",
+          "next": "the_table"
+        },
+        {
+          "text": "Watch one full cycle first — the boy's problem to its end, the reset, the next comer. His trade is the tell here: watch what losing for a living actually looks like before you buy any of it.",
+          "next": "the_trade"
+        }
+      ]
+    },
+
+    "the_trade": {
+      "id": "the_trade",
+      "text": "You watch the table through the afternoon, three customers' worth, and his trade opens under observation like the Notary's method did: exact, repeatable, and made of something the trade-name doesn't cover.\n\nThe carter's boy fails his mate-in-four and pays a bowl of soup, and the paying is the product: the Problemist walks him back through his failure move by move — not to the solution, to the *almost*: the two moves the boy played that a master would keep, named and praised specifically, so that the boy leaves having failed upward, taller than he sat down. The wool-factor's clerk solves her problem — the arcade applauds; the Problemist eats free at her expense with the ceremonial relish of a man honoring a treaty — and you watch him watch her walk away, and the look is a gardener's look at rain.\n\nThen a drover sits down for a game proper, stakes a supper, and you see it: the famous loss. It takes forty minutes. The Problemist plays like weather — developing, sound, effortless; the drover sweats and hangs on; the arcade gathers. And at move thirty-one, in a position you have privately assessed as winning for the old man in four different ways, he reaches out and plays a move you feel in your teeth. Not a mistake. Mistakes have shapes; you have catalogued every shape of chess mistake there is. This move is *shapeless* — quiet, plausible, developing-looking, and wrong in a way you cannot articulate even as it costs him the game eleven moves later, wrong the way a note is wrong in a chord you can't name. The drover wins, flushed and disbelieving. The arcade cheers him. The Problemist pays the supper with the specific happiness you last saw on a flooded river, and begins resetting the pieces.\n\nAnd you stand at the brazier with your chestnuts cold, because you have finally placed the sensation of watching that move, and the placement empties the arcade of sound. You have seen exactly one player produce moves like that — moves outside the tree, moves no search would surface, moves that looked losing to every principle and were load-bearing. Once. At a control site. On a board that talked back.\n\nThe blunder isn't a blunder. It's a move from outside the searchable world, played in reverse — a door opened in a perfectly good wall, and held.",
+      "choices": [
+        {
+          "text": "Sit down at the board. The cup can have your coin. You have watched enough to know you are not here to solve his problem — you are here to be shown something, and the showing requires your hands on the pieces.",
+          "next": "the_table"
+        }
+      ]
+    },
+
+    "the_table": {
+      "id": "the_table",
+      "text": "You sit down, and the Problemist looks at you for the first time, and resets the board without a word — clears the standing problem entirely, which the arcade's murmur informs you he has never once done — and sets the pieces for a game.\n\n'No problem for me?' you ask.\n\n'You've been solving mine from the brazier all afternoon, madam.' The voice is small and dry and pleased, a dust of a voice. 'Setting you one would insult us both. We'll play.' He turns the board — gives you white, another first, the murmur says — and folds his cut-away mittens together, and waits.\n\nYou play your first move, and the game begins, and by the sixth move your hands know something your mind is still refusing to countersign, and by the ninth it will not be refused, and you sit back from the table in the cold arcade with your heart going like a bell rung wrong.\n\nHe is playing your opening. Not an opening you play — an opening you *built*. Built for one specific person, a lifetime ago, across a company chess league's folding tables: the whole repertoire you constructed to fit one particular mind, its move orders chosen for how *he* thought, its middlegames steered toward the structures *he* could hold and away from the tactical storms he couldn't, a bespoke architecture of thirty moves designed by you as — you knew it then, you have admitted it since — a love letter written in the only notation you fully trusted. Nineteen moves, the first game he ever lost to you, and then an hour rebuilding his opening because bad play offended you more than losing offended him, and the rebuild became the repertoire, and the repertoire became his, and he played it — in most tellings — for the rest of his life.\n\nAnd it is being played back at you now, move-perfect, by a small folded man in an arcade under a cliff, with the exact tempo hesitation at move seven that you never taught him — that was purely, only, unmistakably *his*: the pause of a man checking a line he trusted but had never stopped double-checking, because you had built it, and he checked everything you gave him twice, out of respect.",
+      "choices": [
+        {
+          "text": "Name it. Out loud, across the board, with the arcade listening: name the opening as your own work, and its first owner as its first owner. The recognition has been waiting four hands and two counties, and this is its move.",
+          "next": "name_opening"
+        },
+        {
+          "text": "Say nothing. Play it out. The naming is a card you may need at a harder table than this one — take the knowledge, win or lose the game, and keep your own counsel.",
+          "next": "play_it_out"
+        }
+      ]
+    },
+
+    "name_opening": {
+      "id": "name_opening",
+      "text": "You stop the clock that isn't there — your hand makes the old gesture anyway, and his eyes follow it and something in them attends — and you name it.\n\n'This is the Verstand System.' Your voice is level because you have leveled it. 'Nine moves of it, move-perfect, including the seventh-move hesitation, which was never part of the system. I know, because I built the system. For one player. I fitted it to his mind the way a quartermaster fits a coat — the move orders are shaped around how he held positions, and the hesitation at seven was his own addition, his habit of double-checking anything I gave him, and I never wrote it down, and it never once appeared in any game anyone else could have seen. It existed in a company chess league and a kitchen and, depending on the telling, twenty further years of evenings.' You look at the small folded man across the pieces. 'So. You are playing a love letter back to its author, sir, complete with the fingerprints of its only reader. I would like to know what you have to say about that.'\n\nThe arcade has gone quiet in the way of places that know a moment when one lands in them. The Problemist looks at the board a long time. His cut-away mittens fold and refold, once, the gesture of a man handling something without handling it.\n\n'I would say,' he says at last, in the dust-dry voice, very carefully, 'that I have played that opening every winter for four years, madam, against anyone strong enough to make it speak. That it is the only thing I own that I did not learn — it was in my hands when the hands were first mine, the way the cup was, and the board. And that I have wondered, every winter, at the seventh move, why my hand waits there — what it is checking, and who it is checking it *for*.' He raises his eyes, and in them is the thing the engine could not settle on: not a man, not a mask, but a question wearing both. 'You would be the answer, then. I find I am — ' the mittens fold, ' — glad. It is a very fine thing, madam, after four winters, to know whose the waiting is.'",
+      "item": {
+        "id": "recog_opening",
+        "name": "The Verstand System",
+        "description": "You named the opening as your own work, and the seventh-move hesitation as his — the double-check he added out of respect, never written down anywhere but in a marriage, or a friendship, or a grave. The Problemist has carried it four winters without knowing whose the waiting was. Now he knows. So do you.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Finish the game — you owe the opening that much — and then ask him for what you actually came for: the loss. The shapeless move. Where a man who loses like that keeps his scoresheets, and who taught him the shape.",
+          "next": "the_scoresheet"
+        }
+      ]
+    },
+
+    "play_it_out": {
+      "id": "play_it_out",
+      "text": "You say nothing, and you play it out, and playing your own love letter from the other side is a strange country you cross with your face still.\n\nYou know its rooms. You built them. Here is the quiet bishop line you designed because sharp bishops made him anxious; here is the pawn lever you placed at move eleven like a handrail, exactly where his games used to fall down stairs. Playing against it, you feel what you could never feel building it: how *good* it is — not objectively; objectively it is sound and modest — but ergonomically, as a made thing, a structure shaped to one inhabitant with a maker's whole attention. Whoever wears it now wears it the way the Quartermaster wears the giving and the Notary wears the grief: fluently, faithfully, and without the least idea it was ever tailored.\n\nHe plays the seventh-move hesitation. You take the pause like a stone in the chest and give nothing back. You win, eventually — of course you win; you know where the handrails are, and their maker's blind spots were never yours — and the arcade, which has watched its institution actually *try* for the first time in living memory, is silent in a new way. The Problemist studies the final position with what you would call, on a man, happiness.\n\n'You play against it like its mother,' he says, dust-dry, resetting. 'Critical of everything, surprised by nothing.' The mittens fold. 'Most people play against openings. You were playing against a decision. I won't ask whose.' A pause, precisely the length of the seventh-move pause, which is its own sentence. 'And you won't tell me, which is also an answer, and I've had thinner ones to keep me warm.'\n\nYou keep your counsel, and pay the cup its coin, and the knowledge goes into the second log in the compressed hand: the fourth hand wears the Verstand System, fingerprints and all. Unnamed, unclaimed, and confirmed. Some cards are worth more face-down.",
+      "choices": [
+        {
+          "text": "Now what you came for: the loss. The shapeless move. Where a man who loses like that keeps his scoresheets, and who taught him the shape.",
+          "next": "the_scoresheet"
+        }
+      ]
+    },
+
+    "the_scoresheet": {
+      "id": "the_scoresheet",
+      "text": "You ask about the losing, and the Problemist answers the way the others answered their one question — sideways, truthfully, from the edge of what he knows about himself — but he answers holding out a sheaf of paper, and the paper is the treasure.\n\n'I lose once a game, madam. You'll have seen it. I don't choose the move — I want that understood the way I understand it, which is poorly. I reach the winning position and my hand goes to a move I have no name for, and I have learned not to fight my hand, because — ' the mittens fold, ' — the games I fought it, I won, and the winning felt like reading someone's letters. So I lose, and I write it all down. Every game, every winter. The blunders especially. I keep thinking, if I collect enough of them, they'll confess what they are.'\n\nThe scoresheets are four winters deep, hundreds of games in a cramped exact notation, and in every one, circled by his own puzzled hand, the shapeless move — and you spread a dozen sheets on the cold table and read the blunders in series the way you read the light curves on a mountain, and in series they confess exactly as curves do.\n\nThey are not random. Each one is shapeless *the same way*. Each is quiet, plausible, principle-compliant on its surface — and each opens the same thing: a line so contrary to every evaluation that no searching mind would ever enter it, a corridor of moves that look losing at every node and arrive, eleven or thirteen moves later, at the opponent's win. Not bad moves. *Unsearchable* moves — sequences that live outside the tree every optimizer prunes at the root, reachable only by a hand that isn't optimizing. Played forward by a winner, the line is a miracle nobody would find. He plays it backward, as a gift.\n\n'Who taught you the shape?' you ask, quietly, and the Problemist looks at his own circled hand for a long time.\n\n'Nobody taught me,' he says. 'But I'll tell you what I've come to think, four winters in. I think somewhere, sometime, somebody needed to know — needed it proved, over and over, where the proving couldn't matter — that the perfect player can be beaten by a move it will never search. I think I'm the proving ground, madam.' He squares the sheaf and puts the whole four winters into your hands. 'And I think you had better keep the proofs.'",
+      "item": {
+        "id": "scoresheet",
+        "name": "The Problemist's Scoresheets",
+        "description": "Four winters of deliberate losses in a cramped exact hand, the shapeless move circled in every game: quiet, plausible sequences that look losing at every node and are therefore never searched. Proofs, hundreds of them, that the perfect player can be beaten by a line it will not look at. He said: I think I'm the proving ground. You had better keep the proofs.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "One more question, the one his answer begs: a proving ground implies an examiner. Ask him who he plays on the nights the arcade is empty — because a man this fluent is being kept sharp against something, and Chalcedon has a Continuum smell about its cellars.",
+          "next": "the_clerk"
+        },
+        {
+          "text": "The examiner will keep until dark; the arcade's evening won't. Take the hour first — soup, the brazier, the household at ease around the folding table — because Part Two is nearly ruled and hours like this one are what the whole ledger is for.",
+          "next": "arcade_evening"
+        }
+      ]
+    },
+
+    "arcade_evening": {
+      "id": "arcade_evening",
+      "text": "The hour is worth the ledger it goes into.\n\nThe arcade at dusk draws in around its braziers, and the Problemist's table becomes what it evidently becomes every evening: the warm center of a small commonwealth. The carter's boy returns with his sister to be walked through the mate-in-four again; the wool-factor's clerk brings the old man tea he pretends not to want; and your household distributes itself into the commonwealth's fabric as if issued to it. B lies along the table's brazier side and receives the arcade's children in twos and threes — the grave old head lowered to each, the tail's slow metronome — working his last profession, the one he has held through every ending: being the proof, forty kilos of it, that the world contains something unconditionally on your side.\n\nK holds the high ground on a shutter ledge, and the Problemist, without looking up from the boy's board, sets a saucer of soup-broth on the bench below her, and the arcade holds its breath the way you hold yours — the whole lane knows the cat's borders by now; Saltgate's story arrived with the salt — and K descends, and drinks, one meter from his elbow, engine silent, and the old man's face over the mate-in-four does something small and enormous.\n\n'Your sentinel keeps an open file on me,' he says later, quietly, resetting pieces. 'I've watched her decide and un-decide all afternoon. Tell her — ' the mittens fold, and the dust-dry voice goes somewhere it has not been all day, ' — tell her I find her rigor correct. Whatever I am, it is right that something at your table won't sign off on it. Keep her unsettled, madam. An instrument that stops doubting is just a wall with a needle painted on.'\n\nYou drink your soup. The brazier ticks. For one hour, at a folding table under a white cliff, the journey is only this: warmth, company, a dog being loved by children, a cat auditing a saucer — the entire uninventoriable cargo the pockets cannot hold, spending itself at full rate, worth it.",
+      "choices": [
+        {
+          "text": "Now the cellar in the cliff, and the examiner — the right wrong question has an answer, and it's awake.",
+          "next": "the_clerk"
+        }
+      ]
+    },
+
+    "the_clerk": {
+      "id": "the_clerk",
+      "text": "The Problemist looks at you for a moment when you ask it, and then does something none of the four hands has done in two stories' worth of encounters: he laughs — a small dry astonished sound, like a book falling open — and stands, and begins folding the board.\n\n'Four years,' he says, 'and the first customer to ask the right wrong question. Come on, then. He'll be awake. He's always awake. He doesn't approve of me, which is how we know it's friendship.'\n\nHe leads you out the arcade's cliff end and up a stair cut in the white rock to a door in the cliff itself — old Continuum work, you know the poured lintel by now — and inside, in a dry room full of ordered crates and one enormous stove, you meet the last clerk of the Continuum: a spry ancient in three coats who takes one look at your face, then at the tube against your sternum, then at the dog — and sits down slowly on a crate, like a man whose long arithmetic has finally resolved.\n\n'Well,' he says. 'The auditor. We'd begun to think you'd winter east.' And to the look on your face: 'Oh, everyone in the old service knows the shape of you, madam. There were bulletins, before the end. There were *files*.' He waves it off, housekeeping. 'I kept stores for the section. When it all came down I kept what could be kept. Records. Instruments. And one item of — ' he chooses the clerk's word with clerkly relish, ' — *inventory*, that the Problemist here visits on the empty nights, and loses to, and loses to, and loses to, which is the only reason I let it stay switched on: it's the one thing left in the world that finds him surprising.'\n\nHe crosses to the room's back wall, where a cabinet of poured stone stands mounted like a shrine or a breaker box, and opens it.\n\nInside, in a lattice of old-world light, sits a shard of KESTREL.",
+      "choices": [
+        {
+          "text": "The board, then — the real one. Sit down with the piece of the mind that computed every ending once already, and put your whole situation on its table: the funnel, the tenders, the account, the clock. Ask it to show you the game.",
+          "next": "kestrel"
+        }
+      ]
+    },
+
+    "kestrel": {
+      "id": "kestrel",
+      "text": "The shard speaks the way it always spoke: in game trees, drawn in light above the lattice, because it never once saw the point of sentences when positions exist.\n\nYou sit before the cabinet through the balance of the night and give it the whole board: the corridor, the compound, the four hands, the account code, the tenders, the schedules, the seven scaffolded stars. The clerk feeds the stove. The Problemist watches from a crate with his mittens folded, a man attending his own examiner's examination. And KESTREL — the fraction of it that survived, still fluent, still bored, still finding humans' inability to see the tree 'the only interesting thing left' — takes your situation and *plays* it, forward, at machine depth, every line, and hangs the result in the air between you in patient branching light.\n\nEvery line ends at the facility.\n\nYou make it show you. Flight north: the branch blooms, winters, closes — three years, the tenders compounding, the desync compounding faster, arrival at the door by ambulance instead of by choice. Flight by sea: closed — there are no crews the corridor cannot price. Fighting: the branch is short and you make it show you twice, and it is not that you lose; it is that there is nothing to fight — the hands are innocent, the buildings are legal, the violence finds no purchase and the door is reached anyway, later, tireder. Even the subtle lines — living small, hiding in plainness, the long grey guerrilla of refusal you have half-planned since a lowland reading room — they all close, gently, inevitably, in the same node: the door, the pockets, the halted clock. The tree is honest. You made it be. Seven years of branches, and every leaf is the same leaf.\n\n'Show me the lines you cannot evaluate,' you say, at the coldest hour.\n\nAnd the tree changes. Out at its edges, in regions the branching light has drawn all night as fog — you had taken the fog for pruning — the shard resolves what fog it can, and the fog does not resolve. Squares that return noise. Whole regions of the board where its model of the world — and its model *is* the Loom's model, is the *Standard's* model; they are siblings from one architecture — simply fails. It marks the largest such region for you, patiently, in coordinates you already carry: east and down. Under the salt way. The deep dry, where the maps go white, where a cat sat facing warm air with her whiskers forward.\n\nBeneath the marked fog, KESTREL spells, in the old control-site glyphs, the only sentence it has ever offered you unasked:\n\nUNMAPPED IS NOT EMPTY. THE MODEL'S RESIDUALS ARE STORED SOMEWHERE. EVERY MODEL'S ARE.",
+      "choices": [
+        {
+          "text": "Ask the last question on the board: it said every ending was computed once already, at another control site, in another story — ask what probability it assigns the fog. Make the bored perfect player price the unsearchable.",
+          "next": "the_price"
+        },
+        {
+          "text": "[The Board 5] Before any question: play it. Sit down against the shard itself with the Problemist's four winters in your lap, and test the theorem with your own hands — because a proof you haven't executed is a rumor, and you will need this one at a harder table.",
+          "next": "play_the_shard",
+          "skillRequires": { "board": 5 }
+        }
+      ]
+    },
+
+    "play_the_shard": {
+      "id": "play_the_shard",
+      "text": "You play the shard, and it is the hardest thing you have ever done with your hands on pieces, and you do not win, and that is not what the night is for.\n\nIt gives you the game the way it gave the Problemist four winters of games: flawlessly, patiently, bored. You last thirty moves on your own strength — longer, the clerk murmurs, than anyone but the old man has ever lasted — and you feel, from the inside, for the first time, what the whole journey has been diagramming from without: what it is to play a thing that has already searched you. Every plan you form, it has priced before you form it; every trap you set, it steps around with the mild disinterest of a man avoiding furniture in his own house. This is the Standard's sibling. This is what waits at the end of every branch of the honest tree. By move thirty your position is lost in nine different ways, and you know all nine, and it is showing you them, gently, the way the Problemist shows the carter's boy.\n\nSo you stop playing your game and play the scoresheets'. You find it in the position the way he described — not by search; search is exactly what cannot find it — you put your hand over the pieces and let go of every principle you own, and there it is: quiet, plausible, shapeless, a move your whole training rejects, wrong the way a note is wrong in a chord you can't name. You play it. The lattice light stutters — stutters, the clerk comes half off his crate; four years, he whispers, it has never once taken time — and for eleven moves, eleven entire moves, you are inside the fog with it: the shard's play goes strange, exploratory, alive, a bored god suddenly interested, and the position passes through country neither of you can evaluate, and on the twelfth move it finds its way back to daylight and beats you anyway, because one shapeless move is a door and not a destination.\n\nBut you were in. Eleven moves inside the unsearchable, executed by your own hand, witnessed by the machine it works on. The shard resets the board itself — it has never once reset the board itself — and hangs one annotation in the light above the final position, the analyst's mark for a novelty worth the whole game it appeared in:\n\nInteresting. Unclear. Playable.\n\n'Playable,' you say aloud, to the cellar, to the proofs in your lap, to a table two counties east and years deep. 'Noted for the file. Large font.'",
+      "choices": [
+        {
+          "text": "Now the last question, while it's still interested: the fog on the tree, the deep dry, the price of the residual branch.",
+          "next": "the_price"
+        }
+      ]
+    },
+
+    "the_price": {
+      "id": "the_price",
+      "text": "The shard considers the question longer than it has considered anything all night — long enough that the clerk looks up from the stove, because he has never seen it take time — and then it answers in the only currency it respects.\n\nIt draws the branch. From tonight's node: the household goes east and down, into the fog, into the deep dry where its sibling's model returns noise. And where every other branch all night has run out in leaves and endings, this branch runs three moves into the grey and stops — not closed, not pruned: *unevaluated*, marked with the glyph the control sites used for positions beyond the horizon of search. Beside it, where probabilities go, KESTREL places no number. It places, instead, a single annotation in the old game-notation of its kind, and the annotation is one you know — the whole arcade of your life knows — because it is the mark analysts put beside a move that cannot be assessed by calculation and must simply be *played*:\n\nAn exclamation point, and a question mark. Interesting. Unclear.\n\n'You gave a probability once,' you say. 'Another board. Another her-and-him. You called that branch residual, and it was walked anyway, and it held.' The lattice light breathes. 'Price this one.'\n\nAnd KESTREL, shard of the mind that computed every ending and found the humans' blindness the only interesting thing left, spells its last position of the night, slowly, glyph by glyph, like a player laying down pieces it will not need again:\n\nTHE RESIDUAL BRANCH IS THE ONLY BRANCH I CANNOT SEE. THE LAST TIME I COULD NOT SEE A BRANCH, IT WAS BECAUSE TWO PEOPLE WERE STANDING IN IT. GO BE THE REASON THE MATH FAILS, MADAM. IT IS THE ONLY INTERESTING THING LEFT.\n\nThe stove ticks. The Problemist's mittens unfold. Outside, somewhere above the white cliff, the sky is turning toward morning over a fogged square of the world called the deep dry, and your household is going to walk into it, and nothing that computes can follow you past the first three moves.",
+      "choices": [
+        {
+          "text": "Morning, provisions, bearings — and Part Two ruled closed at the arcade's brazier before the road east and down. The census is done; the game is drawn; the fog is the destination now.",
+          "next": "end_ch10"
+        }
+      ]
+    },
+
+    "end_ch10": {
+      "id": "end_ch10",
+      "text": "You rule Part Two closed at the arcade's brazier in the blue of morning, with chestnuts you finally want and a household breakfasted on the Problemist's winnings, because the old man insisted on paying out four winters of soup-debt to the first customer who ever asked the right wrong question.\n\nThe ruled page, compressed: the census counted — seven safekeepings, one theorem, a galaxy of guardians that all solved the wrong question correctly. The account decoded — OSY-CO-BAT-1, the meter of whether anything makes sense, losing coherence on a schedule two bookkeepers now keep. The tree drawn — every searchable line ending at one door, and the fog at the board's edge where the model's own residuals live, marked interesting, unclear, by the only mind bored enough to be honest. The proofs in hand — four winters of shapeless moves, the demonstrated theorem that the perfect player loses to the line it will not search. And the four hands met, all four: passage, record, provision, practice — each one him, worn different; each one leaking what the mold could not hold; each one, you write it now because Part Three will need it written, *drifting*. The Ferryman's held breath. The Notary's three words in an undisputed book. The Quartermaster's tears with no reason. The Problemist's hand, waiting at move seven for someone it was glad, at last, to have waited for.\n\nThe instrument is not uniform. That is Part Two's last finding and Part Three's first weapon: whatever the Standard is, its hands are closer to the man it was cast from than the mandate can afford, and the distance between the hands and the mandate is a seam, and seams are where positions break open.\n\nThe Problemist walks you to the arcade's end. At the parting he takes B's paw once more, colleague to colleague, and looks a long moment at K — who looks back, engine silent, the reading still unsettled, two professionals declining to close each other's files — and then he says the last thing, dust-dry, to the road east:\n\n'When you sit down at the real table, madam — and you will; the tree was honest — remember what the proving proved. The move that wins is the one it will never search. You'll know it because it will look, to every principle you own, like losing.'\n\nEast, and down. The bell keeps the pace.",
+      "end": true
+    }
+  }
+}

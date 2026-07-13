@@ -1,0 +1,407 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The morning does what mornings do now, which is arrive on schedule and act as if that were nothing.\n\nYou have three clocks, because your household inherited the doctrine of a man who trusted only instruments he had personally caught being wrong. The wind-up on the shelf. The pendulum in the stairwell. The sun, which you log with a pencil line on the kitchen doorframe at first light, because the sun is the only clock nobody has ever managed to edit and you like to keep one witness the world can't lean on. All three agree it is morning. Years of mornings now — how many years depends on where you're standing, which is the joke the world plays on calendars, and you have stopped asking the question in units the world can cheat.\n\nAt the foot of the bed there is a sound like a sack of grain deciding to live. B gets up the way old dogs get up: front half first, a pause to consult the back half, then the whole grey-muzzled parliament of him rising on a vote of two to one. He finds your hand with his nose. His morning report. Contents, as always: present, present, present.\n\nYou take the census you take every morning, the one you never write down because some inventories are load-bearing. One dog, old. One kettle, functional. One sky, quiet. One list of questions on the wall in your own exact hand, and at the top of the list, underlined the number of times a thing gets underlined when you cannot solve it: the logs.\n\nThe file, whoever keeps it, is still open. You intend to find the clerk.",
+      "choices": [
+        {
+          "text": "Downstairs, the kettle is already on, which means he's up — and if he's up this early, his memory came back from wherever it goes at night, and you get him at his clearest. Those hours are currency now. Spend them.",
+          "next": "w_house",
+          "requires": "end_one",
+          "hideLocked": true
+        },
+        {
+          "text": "Downstairs, the kettle is yours to put on. It has been yours a long time. You do the morning properly, because doing it properly is a thing you learned from someone, and the logs on the wall can have you after coffee, not before.",
+          "next": "a_house",
+          "requiresCount": { "of": ["end_anchor", "end_final_edit", "end_refusal", "end_burn", "end_loop"], "min": 1 },
+          "hideLocked": true
+        },
+        {
+          "text": "There is a knock at the door. Nobody knocks anymore — knocking implies a world where doors answer. Through the window: grey robes, patient posture, the satchel of a profession that outlived its civilization. An Archivist. They only ever come to collect.",
+          "next": "arch_door",
+          "requiresAbsent": ["end_one", "end_anchor", "end_final_edit", "end_refusal", "end_burn", "end_loop"],
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "arch_door": {
+      "id": "arch_door",
+      "text": "You open the door because an Archivist on the step is like weather: refusing it changes nothing and gets your floor wet.\n\nThis one is young, or young the way they all are — an order that memorizes dead days doesn't age along the usual axis. She has walked a long way. She does not ask to come in. B ambles past you, inspects her hem, files her under harmless, and sits on her feet, which she accepts the way you'd accept rain.\n\n'We are completing a record,' she says. 'The record has a hole in it, and the hole has your name on the rim. You were there at the end of it. The end of the Editor.'\n\nYou know their price. Everyone knows their price. Not barter, not coin: a memory, told truly. They wrote the rule before you were born and they have never once amended it, which in this world makes it the closest thing standing to a law of physics.\n\n'Tell me how it ended,' she says. She takes out a pen that has been mended more times than B has had winters. 'Truly. As you keep it, not as you'd trade it.'\n\nAnd the thing about their price — the reason it works, the reason whole markets clear on it — is that paying it costs you exactly what it costs. You have kept the ending filed where you keep the things that don't get handled. To tell it truly you will have to take it out.\n\nB leans against her shins and sighs. He was there too. His copy is presumably kinder.",
+      "choices": [
+        {
+          "text": "Tell it truly: you won. The odds said the branch was residual and you walked it anyway, all three of you, and he is upstairs right now, and the kettle is about to find out.",
+          "next": "arch_one"
+        },
+        {
+          "text": "Tell it truly: he became the anchor. The world settled and re-synced around him like cloth around a nail, and he dissolved by degrees, at peace, and you keep his notebook and the world keeps its shape.",
+          "next": "arch_anchor"
+        },
+        {
+          "text": "Tell it truly: he unmade himself. The original timeline, restored, with you honestly alive in it — and no him, ever. You keep a name you cannot place, and a dog who whines at strangers with a certain gait.",
+          "next": "arch_edit"
+        },
+        {
+          "text": "Tell it truly: he refused. No more edits, the broken world declared the honest one — and he lived in it with you, and died in it later, holding the enclave gate, which he would have called a fair price and you did not.",
+          "next": "arch_refusal"
+        },
+        {
+          "text": "Tell it truly: it burned. The Reclaimers took the Loom down and the world froze honest, and the echo-sickness collected him within the season, and you stayed to the end, as a friend, which was the true word and you have never apologized for it.",
+          "next": "arch_burn"
+        },
+        {
+          "text": "Tell it truly: it never ended. The loop closed. The day it all started happened again, one word different, and only you and the dog carry the crease — B would not go through, and you trust his rulings more than your memory.",
+          "next": "arch_loop"
+        }
+      ]
+    },
+
+    "arch_one": {
+      "id": "arch_one",
+      "text": "You tell it truly, and telling it truly takes the better part of an hour, because the truth of it is not the last board — the truth of it is the eight small doors that had to be walked through first, each one disguised as an ordinary afternoon, and you name every one, and the Archivist's mended pen keeps up.\n\nWhen you finish she caps the pen and stands, and B removes himself from her feet with ceremony.\n\n'The residual branch,' she says. 'We had it at approximately zero.'\n\n'So did the machine that computed it,' you say. 'Approximately zero is not zero. Tell your order to mind the difference. Everything I have is parked in it.'\n\nShe bows — they bow the way clocks strike, an obligation of the mechanism — and goes. You watch her down the lane and then you stop watching her, because upstairs the floorboards have announced, in the dialect you know best, that he is awake.\n\nThe record is paid. The morning is yours. Both of yours — and the kettle's.",
+      "item": {
+        "id": "end_one",
+        "name": "Told Truly",
+        "description": "How it ended: the residual branch, walked to its end.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Go up. His clear hours are currency and the exchange opens early.",
+          "next": "w_house"
+        }
+      ]
+    },
+
+    "arch_anchor": {
+      "id": "arch_anchor",
+      "text": "You tell it truly, which means you tell it in procedures, because the feelings were never the accurate part.\n\nThe world needed a fixed point and he was already the shape of one. He signed for it the way he signed for everything at the end — legibly, and having read the terms twice. The re-sync moved out from him like frost growing in reverse, days agreeing with days for the first time in years, and he dissolved by degrees over a season, and the degrees were gentle, and he was present for nearly all of them, and near the end he mostly asked you to describe the weather, which had become singular, because of him.\n\nYou keep his notebook. You state this for the record with the page count, because the Archivist will want the page count, and because the page count is a fact and facts hold your voice steady.\n\n'The world you are standing in,' you tell her, 'runs on him. File that under infrastructure, not under grief.'\n\nShe writes it down. She bows. She goes. B watches the lane long after she's out of it, which he does whenever the subject has been the man — the ears say the file isn't closed, whatever the record claims.\n\nThe kettle is yours to put on.",
+      "item": {
+        "id": "end_anchor",
+        "name": "Told Truly",
+        "description": "How it ended: a fixed point, taken on purpose.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        }
+      ]
+    },
+
+    "arch_edit": {
+      "id": "arch_edit",
+      "text": "You tell it truly, and truly is a strange country here, because the truth is a thing you mostly cannot reach: the timeline is original, restored, honest — and it never had him in it, and a fact that never happened does not fit in a mouth.\n\nSo you tell her what you have. That you are alive in a way the record upstream says you shouldn't have been, and nobody paid for it, because the payer was deleted along with the invoice. That you keep one name, a plain name, and cannot attach it to a face, a debt, a chess opening, anything — it sits in you like a key to a house that was never built. That the dog was already yours when the world became this world, except that you have no memory of acquiring a dog, and he whines, once, quietly, at strangers who walk with a particular unhurried gait, maybe twice a year, and then looks at you as if you owed him an explanation.\n\n'And do you?' the Archivist asks. 'Owe him one?'\n\n'I owe someone one,' you say. 'I am working on the address.'\n\nShe writes it down. Their order has a classification for this, she tells you, bowing: debts payable to the unwritten. It is not a small file.\n\nThe kettle is yours. It has, as far as the world is concerned, always been yours.",
+      "item": {
+        "id": "end_final_edit",
+        "name": "Told Truly",
+        "description": "How it ended: an honest world, and a name with no address.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        }
+      ]
+    },
+
+    "arch_refusal": {
+      "id": "arch_refusal",
+      "text": "You tell it truly: the world stayed broken because the broken world was the one that hadn't lied.\n\nNo more edits. That was the whole treaty, and he held it, even when holding it cost what it eventually cost. The days went on disagreeing with each other; the seams stayed seams; people learned the weather of days the way coast people learn tides, and it was hard, and it was honest, and you would sign it again.\n\nHe lived years in it. You give the Archivist the years, and then, because their price is truly, you give her the last day too — the enclave gate, the crowd behind it, the arithmetic he did in the doorway, visibly, the way he did all his arithmetic, and the fact that it came out the way his arithmetic always came out when one of the terms was you. You do not soften it. He would have called it a fair price. You have audited that claim annually and you dissent, annually, and the dissent is filed, and the gate held.\n\n'A fair price,' the Archivist repeats, writing.\n\n'His words,' you say. 'The record should show the survivor disagrees with the deceased. The record should also show it was in character. All of it.'\n\nShe bows and goes. B puts his chin on your knee, bearing the weight of being the one who was also there.\n\nThe kettle is yours to put on.",
+      "item": {
+        "id": "end_refusal",
+        "name": "Told Truly",
+        "description": "How it ended: no more edits, and a gate that held.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        }
+      ]
+    },
+
+    "arch_burn": {
+      "id": "arch_burn",
+      "text": "You tell it truly: they burned it, and you helped decide, which is a sentence with a lot of weather inside it.\n\nThe Reclaimers' case was the best argument anyone made at the end of the world, and it carried, and the Loom came down, and every edit anywhere froze exactly as honest as it stood. No more thumb on the scale, anyone's scale, ever. The world you live in is the world that was actually purchased, at the price actually paid.\n\nPart of the price surfaced later, itemized. Echo-sickness. The people who had been handled too often by the machinery came apart without it — gently, like bindings giving out, and he was the most handled man alive, forty-eight editions of handling, and it took him in a season.\n\nYou stayed. You tell her the true word for what you stayed as: a friend. He heard the word used, several times, and never once objected, and near the end he said — you give the Archivist the sentence exactly, because it is the sentence you keep — that a man who gets a friend like this at the end of a story like that has been overpaid, and should say so in writing. He said so in writing.\n\nThe pen stops. She bows lower than their mechanism requires.\n\nThe kettle is yours to put on.",
+      "item": {
+        "id": "end_burn",
+        "name": "Told Truly",
+        "description": "How it ended: the honest fire, and a season of staying.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        }
+      ]
+    },
+
+    "arch_loop": {
+      "id": "arch_loop",
+      "text": "You tell it truly, and the truth sounds insane, and the Archivist writes it down without blinking, because their order files stranger.\n\nIt never ended. That is your testimony. The last board was set, and the moves went wrong the way moves go wrong when the player has decided to lose — a betrayal of everything by inches — and then the loop closed, and somewhere a morning began again with a legal pad and a list and one word changed, and the door of it is shut to you.\n\nWhat you have is the crease. You remember a story the world says didn't happen; the world remembers a story you say didn't finish. Both of you keep excellent notes. The dispute is ongoing.\n\nAnd you have the dog. B stood at the seam of it, you tell her — the exact seam — and would not go through. Growled, the second growl of his recorded life, planted himself, and would not. Whatever is on the far side of that seam, running its lap again, it does not include this dog, because this dog resigned. You trust his rulings. He has never once been wrong about a door.\n\n'And the man?' the Archivist asks. 'In your keeping, how does it end for him?'\n\n'It doesn't,' you say. 'That's the hole in your record. It doesn't end. It repeats. Someone should get him out.'\n\nShe writes that down too. Their pen, you notice, does not mend itself.\n\nThe kettle is yours to put on.",
+      "item": {
+        "id": "end_loop",
+        "name": "Told Truly",
+        "description": "How it ended: it didn't. The crease, and a dog's resignation.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        }
+      ]
+    },
+
+    "w_house": {
+      "id": "w_house",
+      "text": "He is at the kitchen table with the wind-up clock in pieces in front of him, which is a good sign — on the clear mornings he fixes things, on the other mornings he holds them.\n\nOlder suits him, mostly. The grey came in the way his arguments always did, methodically and all at once at the end. What the last years actually cost him is filed behind his eyes, in the archive that has been — there is no soft word, so the household uses the true one — fraying. The letter warned you both, years ago, in his own hand: each rewind kept its receipt in his memory, and the receipts are being collected. Some mornings he loses whole rooms of himself. He has never yet lost the room with you in it. He has told you, with the flat precision you married him for — the word the two of you use, there having been no functioning registry office in four hundred kilometers — that when that room goes, he will already have left instructions taped inside it, addressed to whoever he is that day, and the first line will be her coffee takes no sugar, do not ask, do not experiment.\n\n'The stairwell pendulum is losing four seconds a day,' he says, not looking up, 'and before you ask: I checked whether it's the pendulum or the day. It's the pendulum. I still check.'\n\n'You still check.'\n\n'A man has a religion.' He sets a gear the size of a lentil into its bed. 'You were at the wall again last night. I heard you not-sleeping. It has a sound.'\n\nThe wall. The logs. The question with your name on the rim of it.",
+      "choices": [
+        {
+          "text": "Put the logs on the table next to his gears. He is the other living expert on the Editor's hand, and his clear hours are exactly the currency this question costs.",
+          "next": "w_fray"
+        },
+        {
+          "text": "Not this morning. This morning he is fixing a clock and the light is good, and you have learned — expensively — which mornings are for questions and which are for keeping.",
+          "next": "w_keep"
+        }
+      ]
+    },
+
+    "w_keep": {
+      "id": "w_keep",
+      "text": "You keep the morning instead.\n\nYou drink the coffee he made without asking how you take it, because that room of him is intact and both of you treat it like the archive treasure it is. You hand him gears in the order he doesn't ask for them in. B relocates from the doorway to the exact center of the kitchen, where the traffic is, and is stepped over eleven times with full honors.\n\nIt is, by any audit, a good morning. That is not nothing. That has never, not once since the world broke, been nothing — you have a whole notebook establishing the theorem, with dates.\n\nBut you are who you are, and while your hands pass gears your mind is upstairs at the wall, walking the numbers again. The logs. Timestamped after the last board. His signature style down to the boxed question marks — you have compared them stroke by stroke against the real thing across the table from you, and the strokes hold. And numbered in a scheme that is wrong. Not wrong like forgery. Wrong like foreign. Forty-eight editions of the man used one numbering dialect between them, and you can recite it, and this is not it. It is offset from everything, the way a clock is offset that was set in a different room, by someone who has never seen yours.\n\nHe catches you at it, of course. He always catches you at it.\n\n'Go on up,' he says, fitting the escapement. 'You're handing me gears in the order I need them and thinking in the order you do. One of us should get the benefit.'",
+      "choices": [
+        {
+          "text": "Up to the wall, then. The numbers will be exactly as wrong as yesterday, and you will measure exactly how wrong, again, because measurement is the only prayer you know.",
+          "next": "w_fray"
+        }
+      ]
+    },
+
+    "w_fray": {
+      "id": "w_fray",
+      "text": "The logs live in a document tube on the wall of the workroom, because some papers earn architecture.\n\nYou found them — both of you found them, years ago now, in the season when B started refusing streets again and you followed the refusals to a cache that should not have existed. Ledger entries. Edit logs, unmistakably, in the Editor's own annotation style: the double-dash, the carat, the boxed question mark, the private shorthand of a man who is at this moment downstairs reassembling a clock and who swears, in the way he swears things he has verified rather than merely believes, that he did not write them. And the timestamps run to after the end. After the last board. Into years that hadn't happened yet when every edition of him was accounted for.\n\nAnd the numbering. You spread the sheets and it is still there, still wrong, still patient: every iteration of him counted from the same zero — the loop's zero, Day One. These are counted from a different zero. Every serial is offset by the same constant, like a man keeping perfect books against a calendar you've never seen. You have taken that constant apart forty ways. It is not a cipher. It is not a taunt. It is just... earlier. As if the clerk who keeps this ledger started counting before there was a loop to count.\n\nDownstairs, the finished clock begins to tick. He can't make this journey with you — you both know it without the conversation; travel pulls at the fraying, and his staying is what keeps this valley's days agreeing with each other. The region syncs on him. He is furniture now, in the way he'd be the first to find funny: loadbearing.\n\nSo the clerk is yours to find. You copy the sheets in your own exact hand and roll the copies into the field tube.",
+      "item": {
+        "id": "phase_logs",
+        "name": "The Phased Logs",
+        "description": "Edit-ledger entries in the Editor's unmistakable private shorthand, timestamped after the finale, serial-numbered from a zero that none of the forty-eight iterations ever used. Copied stroke by stroke in your own hand. The offset is constant. Constants mean something.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The author of these is alive, or something is, and it keeps books like him and counts like a stranger. Definitions of alive can be argued later; ledgers mean transactions, and transactions can be traced.",
+          "next": "the_stray"
+        },
+        {
+          "text": "Before anything else: the timestamps are the tell. Whatever wrote these was operating after every account was closed. Start from what that rules out — it rules out every him you have ever met.",
+          "next": "the_stray"
+        }
+      ]
+    },
+
+    "a_house": {
+      "id": "a_house",
+      "text": "The morning, properly.\n\nKettle. The pencil line on the doorframe, checked against the wind-up, checked against the pendulum — the pendulum is losing four seconds a day, and you have verified it is the pendulum and not the day, because that is a distinction this world makes you check. B's breakfast, placed with both hands, because he does not eat until you step back, and in all his grey years he has never once renegotiated the protocol. Somebody taught you that placing a bowl properly is a form of prayer available to the secular. The somebody varies with who you ask. You have stopped asking.\n\nThen the wall.\n\nThe wall is yours the way the red-thread wall at Verstand Street was yours, a lifetime ago: a surface that tells the truth faster than people do. In the center, in the document tube that has earned its architecture, the logs.\n\nYou found them in the season when B started disobeying — the old dog who never disobeys, growling at nothing, planting himself in doorways, working a beat only he could see. You followed his refusals, because his refusals have a better publication record than most physicists, and at the end of them was a cache. Ledger entries. Edit logs, in the Editor's own private annotation dialect — the double-dash, the carat, the boxed question mark. You have exemplars to check that against: the Archivists archive everything, including what the Editor deleted, and they sold you a folio of loop-era edit logs at the one price they charge. Stroke for stroke, the hand holds. Timestamped after the end. After all of it. And serial-numbered in a scheme no edition of him ever used: every number offset by the same constant, books kept perfectly against a calendar that is not the loop's, by a clerk who started counting before there was a loop.\n\nThe file is still open. Someone is still writing in it.",
+      "item": {
+        "id": "phase_logs",
+        "name": "The Phased Logs",
+        "description": "Edit-ledger entries in the Editor's unmistakable private shorthand, timestamped after the finale, serial-numbered from a zero that none of the forty-eight iterations ever used. The offset is constant. Constants mean something.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Run the hand analysis again, colder. A style can be learned, forged, inherited — but the shorthand was private, and the list of who ever saw it has one name on it, and the name is unavailable. Start from that impossibility; impossibilities are load-bearing.",
+          "next": "a_logs"
+        },
+        {
+          "text": "Run the numbers instead. Forget whose hand — hands lie, arithmetic doesn't. A constant offset means a different zero, and a different zero means a different birthday. Date the clerk.",
+          "next": "a_logs"
+        }
+      ]
+    },
+
+    "a_logs": {
+      "id": "a_logs",
+      "text": "You work the wall until noon, and the wall gives you what it has given you for years, which is a shape with a hole where the explanation goes.\n\nItem: the hand is his. Not similar. His — the pressure, the impatient crossbar, the boxed question marks the loop-era ledgers use for a move their author didn't understand yet. You have exemplars, a whole Archivist folio of them, and you have done the comparison the slow way, letterform by letterform, three times, in three seasons, hoping to break it. It holds.\n\nItem: the author is not him. Every edition is accounted for; you did the accounting personally, and you do not do accounting twice unless it was wrong, and it wasn't.\n\nItem: the zero. Whoever keeps these books counts from a day that is not Day One. You have bracketed the offset eleven ways and it lands, every way, before. Before the loop. Before the Halfway. Back in the world where he was a man with a job, building models nobody audited, and you were the colleague who rebuilt his openings because bad play offends you more than losing ever did.\n\nA clerk with his hand and a stranger's calendar, working after the end of every account. When you write it out like that, in the cold noon light, the sentence looks back at you like a position you have seen before and cannot place — a known opening, reached by transposition, from a line nobody plays.\n\nB gets up from the doorway mid-thought, which he does not do, and goes to the window, which he does not do either, and stands there with his ears making the shape they make when the mail is wrong.\n\nOutside, coming up the lane with its tail vertical and its opinion of the property already formed, is a cat.",
+      "choices": [
+        {
+          "text": "A cat. In a world where the villages count their animals like ammunition, a loose cat walking a straight line to your door is a data point, and data points get investigated.",
+          "next": "the_stray"
+        }
+      ]
+    },
+
+    "the_stray": {
+      "id": "the_stray",
+      "text": "The cat arrives the way an invoice arrives: addressed, itemized, and indifferent to whether you were ready.\n\nSmall, young, the black-and-grey brindle of a thing assembled from other cats' spare parts. Thin, but not starving — thin like a first draft. It walks past the gate as if gates were a superstition, sits down on the exact center of the doorstep, and looks at the house with the expression of a surveyor who has found the plot smaller than advertised.\n\nAnd it is wearing a bell.\n\nA small brass bell, on a braided cord, snug and deliberate. Someone made that cord. Someone measured a kitten's neck and braided three colors of salvaged wire into a collar and hung a real bell on it, in an economy where brass is currency and cats are feral or eaten. And then the cat is here, and the someone is nowhere, and no village you trade with has mentioned losing either.\n\nB reaches the doorstep at his top remaining speed, which is a dignified trot, and performs the full diplomatic protocol: the circle, the census of smells, the enormous grey-muzzled face lowered to a creature the size of his head. You brace for cat physics. The cat does not run. The cat looks at forty kilos of incoming dog, adjusts one ear, and bites him — precisely, ceremonially, on the nose. Not hard. A gavel coming down.\n\nB sits, delighted beyond the reach of language. His tail sweeps the step like a metronome set to allegro. In the ledger of B's heart, you can see it happen, an account is opened and immediately overdrawn.\n\nYou were always, you have said it for years, deadpan, over the head of a leaning retriever, a cat person. The universe has finally issued the refund. It appears the refund prefers the dog.",
+      "item": {
+        "id": "k_bell",
+        "name": "K's Collar Bell",
+        "description": "Small brass bell on a braided wire collar, made carefully by someone for a kitten nobody can trace. Brass is currency; care is scarcer. Filed under: questions wearing a cord.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Feed it, log it, name it. A creature that walks a straight line to this house on this particular morning gets a file, and things with files get names. It looks like a K. Everything about it is angles.",
+          "next": "k_verdict"
+        },
+        {
+          "text": "Quarantine protocol. Nothing crosses this threshold unexamined the week the wall grows a new question — check the bell, the cord, the paws, the direction it came from. Kindness after inspection. That order.",
+          "next": "k_inspect"
+        }
+      ]
+    },
+
+    "k_inspect": {
+      "id": "k_inspect",
+      "text": "You inspect the cat, which is a negotiation conducted under protest with all four sets of claws in escrow.\n\nThe bell is a bell. Brass, ordinary, cheerful, maddening. No maker's mark, no message in the cord, no hollow chamber — you check; you are past the age of embarrassment about checking. The braid is competent and the knots are the knots a patient person ties. The paws say roads: worn pads, one old thorn scar, a walker. The direction it came from says nothing at all, because the lane bends, and the cat, when re-interviewed, declines to elaborate and washes its shoulder at you in a manner you can only describe as jurisdictional.\n\nB supervises the whole procedure from a range of eleven centimeters, rapt, occasionally offering his opinion in the low talkative almost-woof he retired years ago and has apparently un-retired for this. When you release the subject, it does not flee. It walks to B, inspects the enormous old face at leisure, and then folds itself down against his foreleg like a comma — mean to him on arrival, attached to him on principle, the entire relationship negotiated and ratified in nine minutes.\n\nFine. It has a file now. Things with files get names, and it looks like a K — everything about it is angles.\n\nIn the file, under first observations, you write what you actually observed, because that is the discipline: 'Arrived belled, from nowhere, on the morning I dated the clerk. The dog trusts it completely. Note: the dog's trust has a better track record than my suspicion. Note also: both have been wrong exactly once.'",
+      "choices": [
+        {
+          "text": "Two animals now. One household. Back to the wall — the clerk is still yours to date, and now the morning has a second anomaly to file.",
+          "next": "household"
+        }
+      ]
+    },
+
+    "k_verdict": {
+      "id": "k_verdict",
+      "text": "You feed it, log it, name it: K.\n\nThe feeding establishes the constitutional order of the household in a single sitting. K eats first — not by your ruling, by B's: the old dog stands back from the dish with the grave courtesy of a doorman at a hotel he owns, and watches the small angular stranger eat half his fish, and his tail does not stop the entire time. You have watched this dog give things away his whole life. He has never once given anything away like it was a privilege. K, for the record, thanks him by walking under his chin, tail up, ringing.\n\nThe logging is quicker. 'Arrived belled, from nowhere, on the morning I dated the clerk.' You look at the sentence in your own exact hand and consider striking the second clause as paranoia, and leave it, because you have a rule older than the broken world: correlations get written down. The ones that embarrass you especially.\n\nThe naming, K contests briefly on procedural grounds, then accepts along with the sunny half of the windowsill, the wool chair, and lifetime rights to the warm slab of dog now stationed under the window. By nightfall the cat is asleep on B's flank, rising and falling with the old lungs' slow tide, one paw hooked into the grey fur like a deckhand who does not trust the sea. B holds as still as furniture, honored past bearing, until his own sleep takes him.\n\nTwo animals now. One of them arrived from nowhere, wearing somebody's careful work, on a morning you can name.\n\nThe wall can have the rest of you tomorrow. Tomorrow, it turns out, has other plans.",
+      "choices": [
+        {
+          "text": "Tomorrow: the plates. The sky survey is the one instrument you run that no one down here can lean on, and its cadence does not care about cats.",
+          "next": "household"
+        }
+      ]
+    },
+
+    "household": {
+      "id": "household",
+      "text": "The household finds its new shape in a day and a half, the way households do when the newcomer has strong opinions and the incumbent has none.\n\nK claims the high ground: windowsill, shelf, the summit of the wool chair, and — after one long actuarial stare at the distance — the top of B himself, who receives the honor lying down, in both senses. The cat is mean to him with great regularity and no conviction: the tail swatted in passing, the ambush from behind the boot rack, the nose-gavel when the old head comes down too close to the fish. B files every assault under games and appears to believe, on the strength of the evidence available to him, that he has finally, at the end of a long life, been issued his own kitten, which — you check the thought for flaws and find none — is exactly what has happened.\n\nOn the peg by the door, where it has hung since it was handed into your keeping, is the lead. Woven green, worn soft, brass clip mended twice — by its first owner — and a third time, later, by you, with wire, less well. B does not need it and never did; he walks at a heel nobody taught him. But some mornings you take it down and clip it on anyway, and he stands taller, an old man in a good suit, and the two of you walk the lane like a procession of state while K patrols the wall-tops alongside, ringing faintly, mean and faithful, keeping the whole parade under surveillance.\n\nA dog, a cat, a kettle, a wall of questions. As worlds go it is small and it balances. You have audited larger worlds that didn't.",
+      "item": {
+        "id": "b_lead",
+        "name": "B's Lead",
+        "description": "Woven green, worn soft, a brass clip repaired twice by its first owner and once, later, by you. He has never needed it. It is not for him, and you have known that for years, and you keep it on the peg where the knowing can see it.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "The plates, then. Survey night. The sky is the one ledger down here that nobody edits, and you keep your appointments with it.",
+          "next": "the_plates"
+        }
+      ]
+    },
+
+    "the_plates": {
+      "id": "the_plates",
+      "text": "The observatory is a shed with delusions, and it is the best instrument within a hundred kilometers, because you built it and you do not build badly.\n\nA salvaged reflector, re-figured by hand over one obsessive winter. A camera assembled from three dead ones. And the archive: your plates — not glass, mostly, but you call them plates because the astronomer whose books you learned from called them plates — years of the same sky, exposed on schedule, filed by coordinates in your own exact hand. Photometry is just bookkeeping with starlight, and bookkeeping is the family trade.\n\nYou started the survey years ago for the plainest reason in the world: the sky is the one record the machinery down here never touched. Days repeat, bridges unhappen, valleys disagree about the year — and through all of it the stars keep exactly one set of books. When the ground lies, you check the ceiling. It steadied you, in the bad seasons. It became the habit that outlived its reason, and then — you can date the night — it stopped being a habit and became a result.\n\nBecause the ceiling has entries in it you cannot reconcile.\n\nStars that dim in the visible, year over year, and do not redden the way dust says they should. You found the first by accident, chasing a variable that wasn't varying right. Then you did what you do, which is stop having accidents and start having a method, and the method found more. Faint in the eyepiece, warm in the long-exposure infrared plates you traded three winters of favors to be able to take. Dimming, and glowing. Going dark, and staying warm.\n\nCooling suns don't do that. Shrouded suns do.",
+      "item": {
+        "id": "survey_plates",
+        "name": "The Survey Plates",
+        "description": "Years of the same sky on schedule: your photometry archive, coordinates and magnitudes in your own hand. Several entries dim in the visible while holding warm in the infrared, which is not a thing suns do. It is a thing construction does.",
+        "persistent": true
+      },
+      "choices": [
+        {
+          "text": "Tonight, work the anomaly list. Seven candidates now. Whatever wraps a star wraps it for a reason, and reasons are your jurisdiction.",
+          "next": "the_storm"
+        },
+        {
+          "text": "Tonight, run the scheduled fields first, anomalies after. The survey's value is its cadence — the moment you start chasing only what excites you, you are no longer measuring the sky, you are flattering a hypothesis.",
+          "next": "the_storm"
+        }
+      ]
+    },
+
+    "the_storm": {
+      "id": "the_storm",
+      "text": "The animals ruin the observing run twenty minutes before the weather does.\n\nK goes first — that is the order you will learn, this night and after: the cat is the tripwire and the dog is the confirmation. Mid-wash, on the bench beside the eyepiece, K stops, one leg still aloft, absurd and rigid, ears flat, and stares at the west wall of the shed as if it had said something. Then the fur goes up, all of it, tail to a bottle-brush, and the small body drops low and pours off the bench and is somewhere else, fast, without visible transit.\n\nYou are still formulating the joke about cats and ghosts when B stands up. Old B, slow B, up in one motion you haven't seen him make in two years, facing the same west wall, and he growls. Third growl of his recorded life. You know the ledger of his growls. You are in it as the keeper.\n\nYou are out the shed door with the dog against your knee before you have decided anything — and the western sky is wrong. There is a storm coming down the valley like a decision: a front the color of wet slate, dragging its rain in a hem, wind ahead of it flattening the long grass in waves. It is the kind of weather that takes roofs. You have perhaps four minutes, and you spend one of them, because you are you, reading the front's geometry.\n\nAnd the geometry is wrong. The front has a seam in it. West of your valley it is one weather; as you watch, it shears — cleanly, on a line, the way paper tears along a fold that was put there — and the two halves walk around your sky. Rain to the north of you. Rain to the south of you. The roar of it on both sides, a hard grey wall past the orchard, past the lane, and overhead, in a corridor cut to the shape of your holding, the stars stay out.\n\nThe grass in your yard does not even move.",
+      "choices": [
+        {
+          "text": "Instruments. Now, while it's live: rain gauges, the barograph, bearings on both walls of water — grief and wonder can queue; the front is data for eleven more minutes at most.",
+          "next": "storm_measure"
+        },
+        {
+          "text": "Stand in the dry corridor and take the other measurement first, the one instruments don't take: how it feels to be the eye of a considerate storm. You will need the memory of this feeling later, when someone asks you when you knew.",
+          "next": "storm_felt"
+        }
+      ]
+    },
+
+    "storm_measure": {
+      "id": "storm_measure",
+      "text": "You work the storm like a crime scene, because it is one.\n\nBoth rain gauges out, north fence and south fence, and within the half hour they are telling their twin stories: forty-one millimeters in the north gauge, thirty-eight in the south, and the gauge by the house — the control, the one that should split the difference — bone dry. The barograph needle draws the front's pressure trough passing on both sides of you like a river around a bridge piling. You take bearings on the two rain walls with the surveying compass and plot them at the kitchen table afterward, hands steady, coffee going cold, and the corridor comes out to roughly four hundred meters wide, centered — you do this part twice, because the first result is the kind of result you double-check — not on your house.\n\nOn the shed. On the observatory. On where you were standing.\n\nB lies across the kitchen doorway at maximum inconvenience, watching you plot. K is a rumor under the wool chair; the bell has not rung in an hour. The animals called the seam before the sky showed it. You write that down too, and box it, because it means the thing that split the storm is a thing they can hear coming.\n\nA lifetime ago, at a wall of red thread, you told a tired man: entropy doesn't have preferences. This has preferences. You were right then and it changed everything.\n\nThe sentence has come back. It has come back with better aim. The old catastrophes pooled their luck around every roof you slept under — expenditure, courtship by ledger, and you know how that story ended, all six ways it ended. But this is not luck pooling. This is rain, told where not to fall, in a corridor cut to the width of your evening walk.\n\nSomething is minding you. Present tense. With overhead.",
+      "choices": [
+        {
+          "text": "Say the hypothesis out loud in the empty kitchen, because hypotheses said out loud can be argued with: the clerk of the phased logs is real, is operating, and its ledger has one account in it. Yours.",
+          "next": "night_math"
+        },
+        {
+          "text": "Refuse the flattering conclusion until it survives the alternatives. List every other thing that shears a storm — seam weather, edit scar tissue, anchor shadow — and kill them one by one with the plotted bearings. Then say it out loud.",
+          "next": "night_math"
+        }
+      ]
+    },
+
+    "storm_felt": {
+      "id": "storm_felt",
+      "text": "You stand in the corridor of dry air with the rain roaring one field away on either hand, and you take the measurement.\n\nIt feels like being indoors. That is the finding. Under an open sky, in the largest weather of the year, it feels like a roof — like standing in a doorway sized for you while the world gets on with its violence outside, and the grass at your feet not moving, and the stars overhead steady in a slot of clear sky shaped like your property. B presses against your knee, growl gone, hackles half-settled, looking up at you on a schedule, running his one great question: are we safe. And the honest answer, the one you don't say into the dog's ears, is: intensely. We are intensely safe. That is the problem.\n\nYou know what care looks like when it operates at scale. You spent years mapping catastrophes that pooled their luck around your roofline; you married the ledger those were written in, or buried it, or burned it — the endings blur together at this hour, and every one of them ended the accounting. The accounts were closed. You did the audit yourself.\n\nAnd here is rain, told where not to fall, and the shape of the not is you.\n\nStanding in it — this is the measurement, write it down — you feel two things at full amplitude, simultaneously, without interference. The first is held. The second is aimed at. You will spend the rest of this story learning that they were never two findings. They were one finding, read twice.\n\nThe rain walls close behind the front an hour later, politely, like doors.",
+      "choices": [
+        {
+          "text": "Inside, to the table, to the arithmetic. Feelings are data but they are not analysis, and tonight has produced one hypothesis wearing a storm: something with preferences is minding you, present tense, with overhead.",
+          "next": "night_math"
+        }
+      ]
+    },
+
+    "night_math": {
+      "id": "night_math",
+      "text": "Midnight, the kitchen table, the good pencil. You convene the committee of one and put the night's finding through the grinder.\n\nItem: a storm was divided, live, along a seam cut to the shape of your holding. Cost of that edit, in the old accounting: enormous. Weather is a heavy object; whole towns were traded for less, in the years when the ledger was open. Somebody spent like a government to keep your grass dry, and you didn't even have washing out.\n\nItem: the animals heard it coming. The cat before the dog, seconds apart, both aimed west before the sky committed. Whatever the machinery is, it is the machinery B has always heard — and B's hearing dates it: this is Loom-work, or descended from Loom-work, the same seams, the same discontinuities under the world. The infrastructure did not all burn, or did not stay burned, or was never all found. Pick your ending; the conclusion holds in every one of them, which is what makes it a conclusion.\n\nItem: the phased logs. A clerk with his hand and a stranger's zero, keeping books after the end of every account. Tonight the books got an entry you personally witnessed: one storm, redirected, beneficiary singular.\n\nYou draw the box around it, the way he used to box the move he didn't understand yet.\n\nSomething that keeps the Editor's books, that predates the Editor's loop, that spends like the Loom and hides better than the Loom ever bothered to, is minding you — has, if the timestamps are honest, been minding you for years. It has never once shown itself. Tonight it couldn't help it: keeping you dry outranked staying hidden.\n\nIts priorities, at least, are now data.",
+      "choices": [
+        {
+          "text": "Whatever minds you can find you, which means staying here changes nothing except the quality of your ignorance. The ledgers are transactions, transactions have infrastructure, infrastructure has a location. Go east, to the crossing, where the traders pass — and pull the thread.",
+          "next": "end_ch1"
+        },
+        {
+          "text": "Tell him first. Not a note — the whole board, laid out on the kitchen table in the morning light, because you learned from forty-eight editions of a man what withholding to protect someone costs, and this household does not pay in that currency.",
+          "next": "w_goodbye",
+          "requires": "end_one",
+          "hideLocked": true
+        },
+        {
+          "text": "One more night's data first. You have exactly one observation of the minder in action; a sample of one is an anecdote with instruments. Provoke nothing, change nothing, watch everything — then east.",
+          "next": "end_ch1"
+        }
+      ]
+    },
+
+    "w_goodbye": {
+      "id": "w_goodbye",
+      "text": "You lay the whole board on the kitchen table in the morning light: the logs, the offset, the storm plotted in two colors, the animals' timeline reconstructed to the second. He reads it the way he reads everything now, with his finger under the line, husbanding the thread of himself. It takes him a long time. You watch him find it — you can always see him find it, the stillness moves up his hand into his shoulders — and when he looks up, he is at his clearest, and his clearest was always very clear.\n\n'The zero,' he says. 'You dated the zero. It's before me.'\n\n'Before the loop. Before the Halfway. Somewhere in the years when you were building things nobody audited.'\n\nHe sits with that. B puts his chin on the old knee; K, from the windowsill, supervises the emotional weather with the contempt of the young.\n\n'I can't come,' he says at last. Flat, factual, the tone you both keep for the true things. 'Travel pulls the fraying. And the valley syncs on me — if I walk out of it, three hundred people's Tuesdays start arguing again. I am, at the end of everything, a piece of infrastructure.' The smile is real. 'You married a bridge.'\n\n'I married the ledger-keeper,' you say. 'The bridge came later.'\n\nAt the gate he puts the field tube into your hands and holds them shut around it, and he says the thing you already knew he would say, because forty-eight of him learned it the hard way and this one kept it: 'Whatever is minding you — don't owe it. Whatever it wants for you, make sure the wanting stays yours.' And then, precise to the last: 'Take the dog's lead. He stands taller. And the cat's already decided; she was in the pack basket an hour ago.'",
+      "choices": [
+        {
+          "text": "East, then. A dog on a lead, a cat in a basket, the logs in a tube, and a storm's worth of proof that something considers your safety its business. Go make it explain itself.",
+          "next": "end_ch1"
+        }
+      ]
+    },
+
+    "end_ch1": {
+      "id": "end_ch1",
+      "text": "You leave on a morning all three clocks agree on, which you choose to take as an omen, there being no auditor of omens to overrule you.\n\nThe pack takes an hour, because you pack the way you play: everything earns its weight or stays. The plates' summary sheets, copied small. The phased logs in their tube. The good pencil, the surveying compass, the wind-up clock — the pendulum stays, losing its four honest seconds a day for nobody. B's lead, from the peg. B stands taller. And K — K settles the question of K by being in the pack basket when you lift it, folded into the exact shape of the space, one eye open, daring you to file an objection. You had a speech prepared about roads and small animals. You deliver it to the basket. The basket rings once, faintly, and goes to sleep.\n\nAt the bend of the lane you stop and take the bearing you have been avoiding: back at the house, the dry yard in the middle of last night's soaked country, mud glistening to the north of the fence line, mud glistening to the south, and your grass standing up green and dry and preferred in the middle of it like a pressed flower. From here you can see the shape of the corridor plainly. It is not sinister. That is the thing you make yourself write down, standing there, because it is the finding and the finding is the problem: it is not sinister. It is considerate. It is the most careful thing anyone has done for you in years.\n\nEntropy doesn't have preferences. This has preferences, and the preference is you: dry, rested, unstartled, safe. You have been someone's expenditure before and it nearly unmade the world. This is not spending. This is stewardship — patient, precise, solvent — and stewardship implies a steward, and stewards keep their charges somewhere.\n\nEast, to the crossing. The road bends down out of the valley, and the household goes with you, old dog at heel, cat asleep in the basket, bell keeping the pace.\n\nBehind you, though you will not know it for some chapters, the entry is already written, in a hand you'd know at the bottom of the sea, numbered from a zero older than the story: subject mobile. Corridor maintained. All weather subject to review.",
+      "end": true
+    }
+  }
+}

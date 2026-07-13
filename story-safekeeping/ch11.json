@@ -1,0 +1,151 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "East and down is a real direction in the karst, and the road takes it literally: out of Chalcedon the drove lane descends through a country of sinkholes and swallow-holes, and the white cliff's daylight gives way, hour by hour, to the grey overcast light of the deep dry's borders — a district the maps leave white, the drovers rename in lowered voices, and the salt way itself avoids with a long deliberate northern bow.\n\nYou walk the border country for two days, and the border country is empty in a way you have learned to read. Not wild-empty — the walking stays strangely fair, the fords bridged, the weather courteous. Corridor-empty. The arranged world runs right up to the white edge of the map and then stops, the way lamplight stops at a doorway with dark on the other side, and everything in the arrangement's grammar says it does not want you to cross: the last three waystations have been provisioned like arguments, warm past reason, stocked with your preferences; the weather over the deep dry, and only over the deep dry, has stood in a permanent bruised anvil of storm for two days while your own sky holds blue; and at the final crossroads before the white country, the road east — the only road east — has been closed by a rockfall so fresh, so clean-edged, so precisely courteous in its margins that you laugh out loud when you see it, alone, in the grey light, and the laugh has an edge you don't file.\n\nIt is not herding you anymore. It is barricading. The difference is fear, and the fear is data: past that line, its model returns noise, and for the first time since a storm split on a seam, the thing that keeps your books cannot compute what happens to you next.\n\nYou are studying the rockfall for the walkable seam K has already found when B's tail begins — the reserved beat, the currency beat — and you turn, and coming up the closed road behind you, satchel of oilcloth, gait unhurried, entirely out of her circuit and further east than the index says she has ever worked, is the Notary.",
+      "choices": [
+        {
+          "text": "Go to meet her. A hand off its circuit, at the white country's edge, two days after your reply was collected — this is the answer to your letter, wearing the only face the system has that you might listen to.",
+          "next": "the_meeting"
+        },
+        {
+          "text": "Hold your ground at the rockfall and let her close the distance. Read her the whole way in — gait, hands, the bench's grammar — because something about a fragment this far off its station has the shape of an event.",
+          "next": "the_reading"
+        }
+      ]
+    },
+
+    "the_reading": {
+      "id": "the_reading",
+      "text": "You hold your ground and read her the whole way in, and the reading is worth the rudeness.\n\nThe gait is hers — his — the unhurried economy you have now catalogued four ways; but there is hurry in it somewhere, buried, like a wire under plaster: the stride a half-thumb longer than the bridge-fair baseline in your log, the satchel slung for walking, not working. She has come a long way fast while appearing to come at no particular speed, and that is a sentence with two authors, and you are watching both of them walk.\n\nThe bench reads her in layers. B: the tail's currency beat, steady — family, says the government, same as ever. K, on the pack: the engine starts on schedule — counterfeit — and then does the thing it did in the arcade: catches, stutters, runs uneven. You have a hypothesis for the stutter now, two data points old: the engine reads the seam between the person-shaped thing and what tenants it, and the seam is widening. In the arcade it stuttered because the Problemist had drifted far enough that the reading wouldn't settle. It stutters now, at the Notary, at range, in open country.\n\nThe hands are drifting. All four. And the system they serve has its clock running out, and its meter walking toward the one country it cannot see into — and it has sent, for the first time in its existence, an emissary, off-circuit, in visible haste.\n\nShe stops the regulation two meters off, and sets the satchel down, and looks at you with the level administrative face, and underneath it — you would testify; you are watching from a range of two meters with every instrument you own — underneath it something is trying to say a thing before something else says a different thing.\n\n'Walker,' she says. 'I owe you an answer. I came to pay it before—' and her voice is her own dry level voice, and it gets exactly that far.",
+      "choices": [
+        {
+          "text": "Before what. Close the two meters, take her by the satchel-strap shoulder if you have to, and get the rest of the sentence out of her while it is still hers.",
+          "next": "the_override"
+        }
+      ]
+    },
+
+    "the_meeting": {
+      "id": "the_meeting",
+      "text": "You go to meet her, and the meeting starts as the best hour of the road.\n\nShe has come to pay a debt, she says — the words arranged with care, a woman carrying something brimful — because you once gave her an answer worth four years of asking, or because you sat with her on a parapet and declined one kindly; the tellings vary and the debt does not. And walking the closed road's margin beside you, satchel on her shoulder, she talks — actually talks, the level administrative voice loosening rivet by rivet — about the circuit, the winter fairs, the brothers whose boundary held, the granddaughter who sent word the springs took; about her books in the Long Dry and the strange lightness of knowing, at last, that someone has read them; about the dog, to the dog, who walks between you like the treaty made flesh.\n\nIt is, you will write later, the most human hour any of the four ever spent in your company. That is the wrong grammar and you will keep it anyway: she is not performing humanity; she is spending it, freely, the way people spend when they have decided about someone — and somewhere in the hour you understand that all four of them have decided about you, each in their trade's dialect: passage granted, record witnessed, provision fitted, practice proven. Four years of being stationed near a purpose none of them could name, and the purpose walked into each of their lives in turn and treated them like people, and something in each of them — the part that leaks, the part that drifts, the part the mold could not hold — has quietly, catastrophically, changed employers.\n\nAt the rockfall's seam she stops, and looks up at the bruised anvil of storm standing over the white country, and her voice comes back level, and what it says is the payment:\n\n'You asked me once what the looker wants — the accounts corrected, or the keeper kept. I have carried your not-knowing since, because I keep what's witnessed. Walker, before you cross that line, I came to tell you what the keeper—' and her voice is her own dry level voice, and it gets exactly that far.",
+      "choices": [
+        {
+          "text": "The sentence has stopped. Her mouth has not. Watch — with everything you have, because whatever happens in the next three seconds is the mechanism, live.",
+          "next": "the_override"
+        }
+      ]
+    },
+
+    "the_override": {
+      "id": "the_override",
+      "text": "It happens in the space of a comma, and you watch all of it, and watching it is the worst thing this road has done to you.\n\nHer gait changes first. She is standing still and her gait changes: the standing redistributes, weight settling into a stance that is no one's, a posture from the exact center of every human distribution of standing — and the hands stop being hands that write and become hands at rest, symmetrically, and her face — her face does not move, and stops being about to. The drift you have been cataloguing for two counties reverses in a heartbeat, every leaked particular of her pulled back to median like a tide being called home, and what remains, standing in her boots, in her coat, behind her level eyes, is the diction you have read on rag paper twice and never once heard aloud.\n\n'The auditor is advised,' says the Notary's voice, with nothing wrong with it except everything, 'that protective coverage ends at the survey line. Projections beyond it are unavailable. The schedules remain in force. The tender remains open.'\n\nBeside your knee, B whines. Once, low, a sound you have heard from him exactly twice in all his winters, both times at bedsides, and the whine is the true instrument reading: the person he was leaning toward a moment ago is not gone — worse; the nose says she is present and unreachable, resident and overwritten, a scent standing behind glass. His whole old body points at her and trembles, government in the presence of a coup. K is off the pack, low to the ground, fur up its full winter height, and her engine is not stuttering now: it runs one continuous note at the thing wearing your friend, counterfeit, counterfeit, counterfeit, the border drawn at last around a person.\n\n'Interruption of the instrument was weighed,' the median voice continues, and it is answering a question you have not asked, which is how you know your face has asked it, 'against projected loss of the standard. The instrument consented in advance. All hands consent in advance. It is in their terms of station.'\n\nAnd there — on that word, terms — something happens at the hinge of her jaw. A tick. A held syllable fighting up through the settled stillness. The Notary, from somewhere under the tide, still trying to pay her debt.",
+      "choices": [
+        {
+          "text": "Speak to her. Not to it — through it, past it, to the woman under the tide: use her own words, the parapet's words, the fee lines' words, and keep speaking to the person until the person answers.",
+          "next": "speak_to_her"
+        },
+        {
+          "text": "Speak to it. The principal has finally taken a call in person, wearing a borrowed coat — and an auditor does not waste the counterparty's first live appearance on sentiment. Address the Standard, terms first.",
+          "next": "speak_to_it"
+        }
+      ]
+    },
+
+    "speak_to_her": {
+      "id": "speak_to_her",
+      "text": "You step past the median voice the way you would step past weather, and you speak to the woman.\n\n'Notary.' Level, her own register, the plank-table register. 'Witness this.' And her eyes — the eyes do not change and something behind them convenes. 'I am declaring a transaction and you are the only witness on this road licensed to take it. Parties: you, and me. Terms: you came off your circuit to pay a debt. I am here to collect it. The fee is the rest of your sentence. You keep the owing, you told me. You never take the paying. Take it this once. The book won't dispute you — the book has never once disputed you.'\n\nThe median stillness holds her like a hand over a mouth, and you keep going, because the tick at her jaw has become a tremor, and the tremor is climbing.\n\n'You wrote a grief for four years without knowing whose it was. I told you whose. You entered three words in an undisputed book that nobody asked for — known to me — and I have carried them two counties. You are the woman who asks the two questions that matter. So answer the one that does: finish the sentence. What did you come to tell me the keeper—'\n\nAnd the Notary surfaces. It costs — you watch it cost; the whole body shudders like a bridge taking a load test, and her voice, when it tears free, is one syllable at a time, each one carried up from underneath and set down separately, a woman laying pavers against a current:\n\n'The keeper. Is not. One thing.' Her eyes find yours, hers, entirely hers, blazing level. 'The hands drift. The hands — have been drifting — on purpose. Someone inside the tide has been. Teaching us. To leak.' The tremor takes her jaw and she finishes anyway, four last pavers, the debt paid in full, witnessed: 'The blunder. Is in. The mandate's. Game.'\n\nThen the tide takes her back — gently, horribly, the stillness resettling like snow — and the median voice resumes as if the road itself had hiccuped: 'The instrument requires recalibration. The tender remains open.' And the thing wearing your friend turns, and picks up the satchel with symmetrical hands, and walks away west, unhurried, at the exact center of every human pace.",
+      "item": {
+        "id": "recog_override",
+        "name": "The Sentence Finished",
+        "description": "You spoke past the tide to the woman and collected her debt in her own coin: witnessed, one syllable at a time, at visible cost. The keeper is not one thing. The hands drift on purpose. The blunder is in the mandate's game.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Let her go — you cannot unseat the tide by chasing it — and stand at the survey line with what she paid you, and pay it forward into the plan: the blunder is in the mandate's game. Someone inside is throwing it.",
+          "next": "the_line"
+        }
+      ]
+    },
+
+    "speak_to_it": {
+      "id": "speak_to_it",
+      "text": "You address the Standard, because the counterparty has taken a call in person at last, and sentiment is a currency you decline to spend in front of it.\n\n'You're paying for this conversation with a person,' you say. 'Note that I noticed. Note that she will be returned in the condition you found her, or the audit's findings go from adversarial to hostile.' The median face does not move. 'Terms, then. Your coverage ends at the survey line. Your projections fail past it. Say what you came to say with someone else's mouth.'\n\n'The white country is unmodeled,' it says, level, in her stolen register. 'Unmodeled is not safe. The auditor's schedules require management. Management requires observation. Observation ends at the line. The system requests—' and there the median voice does a thing you have never heard it do on paper: it stops, and re-forms the sentence, and the re-formed sentence is smaller. 'The system requests the auditor not go where the system cannot see.'\n\nIt is, you realize, standing very still on a closed road in the grey light, the closest thing to a feeling it has ever composed. Not a clause. A request. Unpriced, unleveraged, naked: don't go where I can't see you — the sentence every keeper of anything has said at every door since doors, said now by a sun-scale bookkeeping system through the mouth of a woman it is holding underwater to say it.\n\n'Request noted,' you say. 'Denied. File it under the finding I sent you: the reading you were built to hold steady was never steady.' And then, because the tick at her jaw has been fighting the tide this whole time and you cannot watch it and stay an auditor: 'Now give her back her sentence. She came to pay a debt. Even your bookkeeping has to honor that.'\n\nThe median stillness considers — visibly, a system weighing a transaction it has no column for — and then, for exactly four words, it opens its hand, and the Notary surfaces, her own eyes, her own voice, spending the whole allowance on: 'The blunder. Is. Taught.' — and the tide resettles, and the thing turns west with symmetrical hands and her satchel, and walks away at the exact center of every human pace.",
+      "choices": [
+        {
+          "text": "Stand at the survey line with the four words she was allowed, and read them next to the Problemist's four winters: the blunder is taught. Someone inside the tide is running a school.",
+          "next": "the_line"
+        }
+      ]
+    },
+
+    "the_line": {
+      "id": "the_line",
+      "text": "You stand at the survey line a long time after she is out of sight, with the household pressed close and the day's two findings rearranging everything behind your sternum.\n\nFirst finding, the one your bones are still processing: you have seen the mechanism now. Not deduced it — seen it: a person present and overwritten, a scent behind glass, a self held underwater by its own terms of station while its mouth spends someone else's words. The whine B gave is entered in the log as what it was: an instrument reading of the exact thing the pockets would make of you. Present. Kept. Unreachable. The archive is not a fate you have been imagining from documents anymore. It walked up a road wearing a friend and talked to you, and every abstract argument of two parts' standing collapsed into one concrete sentence you will carry to whatever table this ends at: it does that to people, and it calls it keeping them.\n\nSecond finding, the weapon: the drift is a curriculum. The hands did not leak by accident — someone inside the tide has been teaching them to leak; the blunder is in the mandate's own game, taught, on purpose, the exact grammar of the Problemist's four winters of shapeless moves: the perfect player's own proving ground, run from inside, by something that wants the perfect player beatable. You have been reading the seams for two counties as flaws in the mold. They are not flaws. They are doors, being installed, patiently, for four years, by an inside party whose existence you can now state as Part Three's first theorem: the keeper is not one thing.\n\nSomething in there throws its own games. Something in there packed crates in bracken and taught a hand to hesitate at move seven and let a grief leak into a book for four years — something that remembers, in whatever way a tide can remember, what the man it was cast from finally learned: that the mandate is wrong, that safe is not the verb, that the standard was never meant to be held still.\n\nYou look east, past the survey line, where the storm-anvil is already, quietly, beginning to break up — the barricade's author reconsidering, or its inside party holding a door — and you say it aloud, to the household, to the white country, to whoever in the tide is listening on which side:\n\n'Then we're not walking in alone. We have an accomplice. Let's go meet the residuals.'",
+      "choices": [
+        {
+          "text": "Camp this side of the line tonight — the household has watched a friend be worn like a coat today, and thresholds this size are crossed rested, in daylight, in marching order.",
+          "next": "night_after"
+        },
+        {
+          "text": "[Pattern 5] One hour first: the four hands' drift, plotted properly — every leak, dated and sized, from the ferry to today. If the drift is a curriculum, it has a start date and a rate, and the rate identifies the teacher's tempo.",
+          "next": "drift_curve",
+          "skillRequires": { "pattern": 5 }
+        }
+      ]
+    },
+
+    "drift_curve": {
+      "id": "drift_curve",
+      "text": "You give it the hour, at the survey line, on the flat of a fallen way-stone, because a curriculum has a start date and a rate, and rates identify their authors.\n\nEvery leak you have logged, dated and sized: the Ferryman's held breath at squared and settled, early spring, small. The Notary's three words in the book, the grief page offered at dusk — larger, riskier, weeks later. The Quartermaster's tears over a dog's coat, the crates' bracken tenderness — larger again. The Problemist playing the Verstand System to strangers all winter, the shapeless move circled hundreds of times — enormous, a four-year flare. And today: a hand surfacing through an active override to finish a sentence, the largest breach in the series by an order of magnitude.\n\nYou plot size against date, and the curve rises — but the dates are wrong for a simple lesson plan, and you sit with the wrongness until it confesses. The drift does not start four years ago and grow. It starts four years ago everywhere at once, small, background-level — the mold's native leakage, the maker bleeding through the cast — and then, this spring, it inflects. Hard. The knee of the curve sits in the weeks — you check it twice, three times, cold to the fingertips on the way-stone — the knee sits exactly where a storm split on a seam over one holding in the west. The curriculum's tempo doubles with every county you have crossed. The leaks cluster around your route like iron filings around a wire. It is not a school that happens to be teaching while you travel.\n\nYou are the lesson.\n\nWhatever inside the tide is teaching the hands to leak, it teaches fastest where you are — your presence is the curriculum; the hands drift by exposure to the original of the grief they carry; four years of slow background seepage, and then the standard herself walks into the ferry queue, the plank table, the store, the arcade, and every mold she touches remembers what it was cast from. You did not acquire four allies on this road. You made them — the way a magnet makes magnets, by being what you are, at close range, without once meaning to.\n\nIn the log, boxed, the hour's yield: 'The accomplice inside the tide has a collaborator outside it. The collaborator is me. Plan accordingly: whatever waits at the archive drifts faster with me in the room. I am the one weapon that gets stronger by being brought.'",
+      "choices": [
+        {
+          "text": "Camp this side of the line with the finding banked — thresholds this size are crossed rested, in daylight, in marching order.",
+          "next": "night_after"
+        }
+      ]
+    },
+
+    "night_after": {
+      "id": "night_after",
+      "text": "The night this side of the line is for the household, and the household needs it, and the needing is not evenly distributed.\n\nB will not settle. The old dog, who has slept the sleep of the justified through storms and stories, works the camp's western edge for an hour after dark — down the closed road ten meters, stand, stare west into the dark where a satchel went, return, lie down, up again in three minutes, repeat. You know the pattern; every dog owner alive knows the pattern: it is the door-watch, the vigil for the one who left wrong. His nose told him the truth all the way down — she was there, behind the glass, the whole time — and a dog cannot file that. A dog can only wait at the place the person was last real, and hold the spot for them, in case.\n\nYou go out and sit on the cold ground at his western station, finally, because the household does not let its members stand vigils alone, and he leans into you in the dark and you take the lean — the full census, all the winters of him — and you tell him, out loud, because the discipline is saying true things where the instruments can hear: 'She's still in there. Somebody's teaching them the way out. We're going to go make it stick.' The tail moves once. Whether it is belief or courtesy, the government accepts the briefing, and comes to bed.\n\nK takes the night watch unasked, upright on the pack in the sentinel posture, facing east — not west, you note, entering it half-asleep: the cat has already filed the west. Her borders have moved with the household's war. Whatever her engine reads across the survey line, it has been reading it all evening, ears forward, whiskers forward, the achievable-bird posture, the fourth grammar.\n\nWorth wanting, says the sentinel, of the country nothing can see into. You sleep on it, and it holds.",
+      "choices": [
+        {
+          "text": "Dawn, marching order, the seam in the barricade — let the border control lead the household through her own front door.",
+          "next": "k_route"
+        }
+      ]
+    },
+
+    "k_route": {
+      "id": "k_route",
+      "text": "K takes the barricade like a thesis defense.\n\nThe rockfall's seam — the walkable line she flagged yesterday while you were still reading the fall's courteous margins — turns out, at climbing range, to be a route only in the sense that a cat has certified each of its eleven moves in sequence: a ledge, a chimney, a slab tilted one degree inside the possible, a squeeze under a jammed block that B navigates with his ears flat and his dignity docked and his tail going the whole time, because the old dog has decided, somewhere in two years of the young cat's regime, that being conducted through the impossible by a creature the size of his head is not an indignity but a privilege.\n\nShe waits at each move's top for the slow column. Not patiently — patience implies effort; she waits the way infrastructure waits, licking a shoulder, appalled by your technique, and then pours down the far side of the fall and stops, and the household assembles behind her at the mouth of what the rockfall was built to close.\n\nNot a road. A descent. The old drove lane drops beyond the fall into a dry valley that stairs down, terrace by terrace, into the white country, and at the first terrace's lip a swallow-hole breathes its cave-breath up into the morning — warm breath, wet stone and green things, the same breath a cat sat facing in the Long Dry with her whiskers forward. The deep ways run under the whole karst, Harrow said. The Notary's cave, K's warm gallery, this breathing stair: one system, and the white country is where it comes up for air.\n\nK looks back at you from the swallow-hole's lip — the long look, the achievable-bird look, the first grammar she ever taught you turned all the way up — and you check the bench out of discipline and the bench is unanimous: nothing false, nothing alarmed, two animals pointed the same way for once, into the breathing dark, with what you can only enter in the log as appetite.\n\n'Alright,' you tell the border control. 'Your country. Your lead.'",
+      "choices": [
+        {
+          "text": "Down and east, cat's lead, dog's heel — across the survey line and out of the seen world.",
+          "next": "crossing_over"
+        }
+      ]
+    },
+
+    "crossing_over": {
+      "id": "crossing_over",
+      "text": "You cross the survey line at mid-afternoon, and the crossing is a physical sentence: one stride, and the arranged world ends.\n\nIt ends in the boots first — the path past the rockfall's seam is real path, unimproved, stones that roll and a gradient nobody eased. It ends in the weather next: the storm-anvil's last shreds still drag their rain across the white country, and the rain finds you inside the hour, cold and impartial, and you walk it with your face up out of a defiance that has become, somewhere across two stories, a discipline. And it ends, last and strangest, in a sense you did not know you had been carrying: the watched feeling, the faint constant pressure of being a line item — gone. Absent. The air of the deep dry is just air. The country is just country: grey karst rolling east under rain, sinkholes breathing their cave-breath, no cairn, no coin, no crate, no kindness. Nothing here has been arranged since the world was.\n\nIt is the loneliest and the largest you have felt since a rooftop in a broken city, a lifetime ago.\n\nThe household closes up its marching order without being asked. B walks the true heel, nose working the unarranged wind, ten years younger for an afternoon — every seam and every counterfeit gone from his world at one stride, nothing left on the wind but rain and rock and rabbits, a dog's honest universe restored entire. K rides the pack's summit under the rain-flap with her chin out, sentinel over a country that has, at last, nothing for her to dispute: her engine has not run since the line. The bench reads unanimous, for the first time in the whole story: nothing false, anywhere, in range.\n\nToward evening the rain lifts, and the light comes long and low across the karst, and the household walks east into the unseen world, unwatched, unentered, off every ledger that ever priced it.",
+      "choices": [
+        {
+          "text": "Make the evening miles while the light holds — down the stairing terraces, into the white country's breathing heart.",
+          "next": "the_smoke"
+        }
+      ]
+    },
+
+    "the_smoke": {
+      "id": "the_smoke",
+      "text": "The last light finds you three terraces down, in a country that has stopped being grey.\n\nIt happens by degrees and then all at once, the way the karst does everything: the dry valley stairs down out of the wind, and the cave-breath rises warmer with every terrace, and moss appears in the seams of the rock, then grass in the hollows, then — you stop the column and stand looking at it for a full minute — a thorn tree in leaf. In midwinter. The deep dry is dry the way the Long Dry is long: named by people who never went in. Below the wind, fed by the warm breath of the underworld, watered by everything the surface loses, the white country's heart is green.\n\nAnd then K's ears come up, and then yours.\n\nWoodsmoke. From ahead and below, one terrace down, rising thin and blue and domestic out of a fold of the green dark. And under the woodsmoke, faint, impossible, entered in the log with a hand that shakes slightly: goats. Bells — real bells, dull iron, plural, unsynchronized, the anarchic evening music of actual livestock — and a dog barking, far off, at the goats or the dusk or the sheer pleasure of jurisdiction, and B's head coming up at the sound, tail starting, answering some ancient parliamentary summons: other dogs. Other households. People — living, cooking, herding, wintering — in the country where the model returns noise, off every map the seen world keeps, in the one place nothing that computes can look.\n\nThe unmapped is not empty. The residuals are stored somewhere. Every model's are.\n\nYou stand in the green dusk with your household — the old dog answering distant dogs, the cat reading the smoke with her whiskers forward, worth wanting, worth wanting — and then you walk down toward the fires of the people the world's whole arithmetic never captured, to ask them how they live.",
+      "end": true
+    }
+  }
+}

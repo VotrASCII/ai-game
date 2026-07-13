@@ -1,0 +1,160 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "Winter comes to the Spine while you are still on it, and it comes the way everything honest comes: on schedule, without reference to you.\n\nThe descent from the Candle takes four days against the three the climb took, because the season has turned and the mountain has stopped pretending. The first snow catches the household on the second afternoon — real snow, driven flat, the temperature going through the floor of the day — and you read it with a professional eye and find nothing in it addressed to you: it falls on the just and the unjust and the path alike, fills your boot prints, cares nothing. After the arranged east, the indifference still lands like a kindness. You know it isn't one. Indifference at altitude is a bill, and it collects in fingers and hours.\n\nB feels the cold now in a way he didn't in the last snows you crossed together, a lifetime ago. You watch it arrive in him — the reluctance at dawn a shade longer, the tail's flag lower on the worst stretches, the way he places his feet on iced rock like a man reading small print. He does not complain. He has never complained; the Ferryman had him exactly: he'd walk to the sea for you before he'd complain, and that is the design flaw in the good ones, and it means the complaining is your department. You shorten the days again. You give him the middle of your own bedroll and take the outside, and K, disgusted with the entire climate, completes the arrangement by colonizing the space between dog and woman, a small furious furnace with opinions, and the household sleeps as one animal, which is what winter is for.\n\nBy the fourth day you are low enough for thorn and the salt way again, and the weather closes in behind you on the passes like a door you were never meant to go back through. Ahead, half a day down the white road, a karst town sits in its bowl of grey rock with every chimney working, and you need what towns have: fat, salt, wool, leather, lamp oil, and something for an old dog's hips against a season that has already published its intentions.",
+      "choices": [
+        {
+          "text": "Down to the town at the household's pace, and find its market before the light goes.",
+          "next": "the_town"
+        },
+        {
+          "text": "[The Pack 3] The sky to the northwest has a green-grey belly you don't like, and the drilled household is your barometer: run the readings deliberately — both animals, full grammar — before committing to the open half-day.",
+          "next": "whiteout",
+          "skillRequires": { "pack": 3 }
+        }
+      ]
+    },
+
+    "whiteout": {
+      "id": "whiteout",
+      "text": "You run the bench before the sky commits, and the bench reads: trouble, natural, incoming — and the natural matters, because the household's grammar has learned to distinguish.\n\nK first, as doctrine: she stops, but no fuse, no flat ears — instead the deep fluffed sit, tail wrapped, the posture she takes at hard weather, a barometer needle finding storm. B confirms in his own register: nose up into the northwest for a long minute, then a look at you, then — this is the reading — he leaves the path and noses under the lee of a rock rib, and lies down. Not alarm. Recommendation. The government has reviewed the sky and votes shelter.\n\nYou overrule the half-day and dig in where the government indicated, and you do it like fieldcraft: the tarp rigged low and guyed to rock, the pack as windbreak, snow banked over the tarp's skirt for seal, the household fed hot while the stove-flame will still stand. The whiteout arrives forty minutes later like a fist — visibility to arm's length, wind that erases the idea of direction — and it beats on the little shelter for nine hours while the animal called household sleeps in its own heat, and you lie awake at the edge of it doing the arithmetic you always do in shelters: without the bench's hour of warning, you would have been on the open white with dark coming and no seam of lee rock in reach. The mountain does not arrange rescues. Up here there is no minder, no corridor, no twenty courteous meters — there is the drill, the tarp, the treaty of shared heat, and two animals whose readings you have learned to take as law.\n\nIn the second log, by the last of the lamp: 'The east keeps me safe so it can keep me. Up here the household keeps me safe so we can keep going. Same verb. Entire difference. If I ever again cannot tell the two apart, this page is the tell: safekeeping that asks nothing of me is the counterfeit. The real thing costs a nine-hour wind and everyone's warmth spent on everyone.'\n\nThe storm files out before dawn. You dig the household loose into a world made new and blinding, and go down.",
+      "choices": [
+        {
+          "text": "Down to the town in the bright aftermath, snow squeaking, the household walking its own plowed line to a bowl of working chimneys.",
+          "next": "the_town"
+        }
+      ]
+    },
+
+    "the_town": {
+      "id": "the_town",
+      "text": "The town is called Saltgate, and it is what the salt way was for: a working town in a bowl of karst, walls of stacked grey stone, roofs steep against the season, and an economy you can read from the ridge above it — salt going east, wool going west, and everything a road-town keeps for the roads' people wintering in between.\n\nYou come down into it with the whole household's needs listed in your head by weight and priority, and you ask, at the gate, the question you ask in every town, expecting the usual chorus of competing directions: where does a traveler fit out for winter?\n\nThere is no chorus. There is one answer, given by the gate-keeper, the water-carrier, and two children with a sled, in the same words, with the same small proprietary smile the whole town turns out to keep in stock: 'The store.' Not a store. The store. Third lane off the salt square, follow the smell of new leather and lamp oil, and — the water-carrier adds this unprompted, the way people add the true thing — 'tell him what you're walking into, not what you think you need. He'll have it. He always has it. Don't argue about the price; there's no arguing with him about the price; the whole town's tried.'\n\nThe third lane off the salt square smells of new leather and lamp oil and woodsmoke, and the store stands halfway down it: double-fronted, lamplit already in the grey afternoon, its windows deep and its door wide and propped welcoming-open despite the season, spilling warmth into the lane with the fiscal recklessness of a man burning fuel to heat a street.\n\nB's tail begins at the corner. Begins the reserved beat, the currency beat, before the door is even in sight — the nose knows, the nose has known since the square — and by the door he is fully himself in the old way, leaning into the doorframe, looking back at you: family, says the government. Here too. Family.\n\nAnd K, who has ridden your shoulder down the whole lane, pours off it, crosses the trodden snow, and sits down one precise meter from the open door. At the sill line. Exactly at it. And wraps her tail, and does not.",
+      "choices": [
+        {
+          "text": "Honor the border as drawn: leave the sentinel her post at the sill, and go in with the government — into the warmth, the lamplight, and whatever is wearing the smell of new leather.",
+          "next": "the_store"
+        },
+        {
+          "text": "One experiment first, while the border is fresh: quantify the sill. The cat has now drawn this line twice, and a reading that replicates deserves a measurement.",
+          "next": "sill_test"
+        }
+      ]
+    },
+
+    "sill_test": {
+      "id": "sill_test",
+      "text": "You quantify the sill, kneeling in the trodden snow of a lane in Saltgate, because a reading that replicates has earned its instrumentation, and because you are you, and the town can stare.\n\nProtocol one: the bribe. A pinch of the good fish, placed one hand's width inside the sill line, in full view. K regards the fish, then you, with the flat copper stare of a jurist watching counsel attempt something beneath the court's dignity. The fish does not move her. The fish has never in recorded history failed to move her. You retrieve the fish and log the result, and the result is: the refusal outbids her one incorruptible appetite. Whatever the line costs to cross, it prices above fish, and nothing prices above fish.\n\nProtocol two: the geometry. You walk her on your shoulder along the storefront, both directions. The line she holds is not the doorway — it wraps. It follows the building's foundation to the property's edge and turns with it; at the loading step around the side she pours off your shoulder and sits again, one meter out, facing the worn spot where, you will learn within the hour, crates with no waybill arrive at dawn. The boundary is the parcel, not the door. She is not refusing a room. She is refusing a jurisdiction.\n\nProtocol three: the control. Across the lane, a bakery. She crosses its sill like it isn't there and has to be retrieved from the warm side of the ovens with apologies.\n\nIn the second log, standing in the lane: 'The sentinel's border replicates and is architectural. Precision: to the property line. Cost: above fish, which is to say above everything. She reads a deed I can't. Both prior subjects held people-shaped; this one holds a building — the store itself is in the jurisdiction, not just its keeper. Note for the lowland file: her line at the compound was the gravel's edge. The parcels are the bodies. The bodies are just the staff.'",
+      "choices": [
+        {
+          "text": "Now the warm side of the door, with the government — and the man wearing the smell of new leather.",
+          "next": "the_store"
+        }
+      ]
+    },
+
+    "the_store": {
+      "id": "the_store",
+      "text": "The store, inside, is the most organized love anyone ever built out of shelving.\n\nFloor to rafters, wall to wall: boots ranked by size and last; wool in graded weights; oilskins; harness; lamp oil in tapped barrels; needles, wax, tallow, felt; the pharmacopoeia of the road in labeled tins — every good thing a body between towns could break, run out of, or freeze for want of, held in depth, in order, in reach. You know warehouse logic; this is not warehouse logic. Warehouses optimize retrieval. This is arranged for diagnosis — the aisles run anatomical, head to foot, weather by weather, so that a man watching a traveler walk in can read what the road has been doing to them and turn to the right shelf without looking away.\n\nAnd the man is watching, and reading, and is already turned.\n\nHe is broad and grey-bearded and built like his own counters, and he has B's whole head in his two hands by way of good morning — the old dog surrendered instantly, blissful, boneless — but his eyes are running the diagnosis on you, ankles to collar, one pass, and what he says, in a voice like the warm side of the counter, is not a greeting. It is a finding:\n\n'Boots resoled twice, the left's gone at the counter-seam. You favor it on stairs already.' He has not seen you on stairs. 'Two sizes of wool short for the season you're walking into, no proper coat for the dog — grand old fellow like this, hips telling him about the weather, and no coat.' A slow shake of the head, at you, at the road, at the negligent universe. 'And a cat at my door that won't come in.' He says the last without turning around, and something in it is not retail; it is old, and resigned, and a little sad, like a man noting a recurring dream. 'They never do come in, the cats. Fourteen years of stores, madam, and never once a cat across my sill.'\n\nHe sets B's head down with ceremony, wipes his hands on his apron, and spreads them, indicating the whole organized abundance of himself.\n\n'Well. Tell me what you're walking into. Not what you think you need — what you're walking into. And we'll get your household right.'",
+      "choices": [
+        {
+          "text": "Tell him true — winter, distance, an old dog, a far cold destination you won't name — and let the diagnosis run. You want to see what he pulls, and what he refuses to charge for.",
+          "next": "the_gifts"
+        }
+      ]
+    },
+
+    "the_gifts": {
+      "id": "the_gifts",
+      "text": "You tell him what you're walking into — winter, distance, karst towns, an old dog, a destination you frame as far and cold and leave unnamed — and he works, and watching him work is watching the Notary's two questions worn as hands.\n\nHe pulls boots — your size, first pull, no measuring, and the pull includes the observation, delivered to the boots, that you kick left at the toe when you think — and wool in the two missing weights, and a dog coat of felted loden he fits to B on the spot, kneeling with pins in his mouth, taking the old dog's measure with a tailor's touch and adjusting the cut, unasked, for the way B carries his left hip. He adds tallow for pads, a tin of salve — you read the tin; you know the receipt; it is, gram for gram, the mixture a lowland document once specified by weight and quarter — a coil of light line, spare toggles, lamp oil, a flat flask of spirits 'for the outside of people,' and a paper of dried fish tied with string, which he sets on the counter last, gently, without comment, a man completing a sentence someone else began.\n\nThen the reckoning, and the town was right: there is no arguing. He prices the boots, the wool, the oil — fair, low-fair, a working man's prices. And the rest he pushes across the counter with two fingers, and the two fingers close the discussion: 'The coat's for the dog, not for you; dogs don't carry money. Salve's from the shelf that isn't for sale. Fish is for the customer at the door.' The grey beard moves; underneath it is the smile of a man forty layers deep in a habit he has never once examined. 'You'll not pay for those because they're not sold, madam. They're kept. Some things I just keep, and it turns out I keep them for whoever they fit. It's a poor system. It's ruined me twice.' He says it comfortably, a man reciting his own legend, and turns to wrap the wool.\n\nAnd you stand at the counter doing the sum he won't let you do out loud. The salve is the offer's salve. The fish is the compound's fish. The gifts fit like the room fitted, like the bed turned from the window, like four years of preparation — and the giver's eyes, when he handed B's coat down, were wet, and he doesn't know why, and you do.",
+      "choices": [
+        {
+          "text": "Ask him the ferryman's question, plainly, while he wraps: who resources him. Where the stock comes from. Whether deliveries arrive addressed to no one, for people who haven't come yet.",
+          "next": "crate_nobody"
+        }
+      ]
+    },
+
+    "crate_nobody": {
+      "id": "crate_nobody",
+      "text": "You ask it plainly, the way you asked mid-river: where does the stock come from? A store this deep, in a town this size, at prices this kind — who resources you?\n\nHe answers while wrapping, easily, because unlike the Ferryman he has never once found the question strange — he has an answer; the answer has grooves worn in it: carriers on the salt way, standing orders east and west, a lifetime of accounts and credit and knowing a good hide from a bad one. It is all true, you can hear that it is true, and it adds up to two-thirds of the shelving around you, and you wait, and the wrapping slows, and the last third arrives the way the truth arrives from these men: sideways, addressed to the work in his hands.\n\n'And then there's the other deliveries.' The string turns, tightens. 'Been coming — oh, four years now. No carrier will own them. Crates on the loading step, dawn, no waybill, no sender. Good stock. Always good stock, and always—' the grooves run out here; he is off the map of his own answer, and his hands stop, '—always right. That's the thing I don't say in the taproom. Whatever's short, that's what's in the crate. Winter coming hard, the crate's all loden and tallow. A bad-lung season, it's flannel and honey-tins. It's like the road writes ahead.' He looks up at last, and the counter-warm voice has a seam of something in it that has waited years for a listener who wouldn't laugh. 'One crate, last month. On top, wrapped separate: a dog coat's worth of felted loden, best I ever handled — and salve, and a paper of the good fish. I've had them on the shelf that isn't for sale, waiting to find out who they fit.' He pushes the wrapped bundle across. 'They fit an old gold fellow gone grey at the muzzle, madam, and a cat that won't cross my sill. I know that now. I don't know how the crate knew it first.'\n\nOutside the open door, at the sill line, the sentinel sits in the lamplight-edge, watching the two of you across her border, engine idling, and the store is warm, and the man is kind, and the kindness has a supply chain.",
+      "choices": [
+        {
+          "text": "Take his measure. He has fitted every walker on the salt way for fourteen years and no one has ever once fitted him — read the man the way he reads travelers, aisle by anatomical aisle, and return the gift in the only currency his system can't refuse: his own.",
+          "next": "give_measure"
+        },
+        {
+          "text": "[Custody 3] Ask to see the loading step and the last crate's remains first. Provenance is a craft, and packaging testifies: how a thing is kept tells you what keeps it.",
+          "next": "the_crate",
+          "skillRequires": { "custody": 3 }
+        },
+        {
+          "text": "Accept the grace as given. Some economies run on asymmetry, and auditing a gift to death is its own kind of theft. Thank him, pay what he'll take, and leave the shelf-that-isn't-for-sale its mystery.",
+          "next": "accept_grace"
+        }
+      ]
+    },
+
+    "the_crate": {
+      "id": "the_crate",
+      "text": "He shows you the loading step without hesitation — a man four years past being able to make the mystery worse by sharing it — and the last crate's remains are still in the woodshed, broken down for kindling and never quite burned, because he is that kind of man and the crate is that kind of evidence.\n\nYou give it the full craft. The wood: clean-sawn softwood, kiln-dry, no mill mark, no shipper's brand, no rope-chafe at the corners — this crate was never in a cart's load, never lashed, never stacked under others. It arrived as it was packed, which is not how anything travels on the salt way. The joinery: nailed in a pattern you find yourself sketching before you understand why your hand wants it recorded — even intervals, but not jig-even; the spacing repeats a signature irregularity, corner after corner, crate after crate he confirms, the same two-close-one-wide stutter. Packing like handwriting. You have a folio of handwriting analysis behind your sternum and the pencil goes very quiet in your fingers.\n\nAnd the interior: this is the testimony that matters. The goods rode in dried bracken — local bracken, cut on the karst, this year's — and were wrapped in waxed paper folded in the parcel-fold that shops used before the collapse, each item cushioned by weight and fragility, heaviest low, tenderest high, with the salve tins nested in wool so they would not ring against each other on the step. Nothing about it is industrial. Nothing is improvised either. It is the packing of someone who has carried things that mattered and thought about bruising, done with a machine's consistency, over four years, for a stranger's shelf.\n\n'How a thing is kept tells you what keeps it,' you say, mostly to the bracken. Careful, local, literate in old courtesies, consistent past the reach of any human packer, and unable — the missing waybill, the missing sender, crate after crate — to sign. You know the profile. You have been walking through the profile since a storm split on a seam.\n\nThe Quartermaster watches you read his kindling. 'Well?' he says. 'What keeps it?' And you give him the only answer his four years have earned, which is the true shape with the name withheld: 'Something that learned packing from a person, and scale from something else. Keep not-burning them. They're the realest signature it has.'",
+      "choices": [
+        {
+          "text": "Now his measure — the boots, the coat, the salve his own shelf never routes to its keeper. Return the gift in his own currency.",
+          "next": "give_measure"
+        },
+        {
+          "text": "Now the reckoning as he'll allow it — accept the grace, thank him, and leave the shelf-that-isn't-for-sale its mystery.",
+          "next": "accept_grace"
+        }
+      ]
+    },
+
+    "give_measure": {
+      "id": "give_measure",
+      "text": "You take his measure the way he takes everyone's: one pass, ankles to collar, while he wraps the last of the wool and thinks himself unobserved.\n\nBoots: his own are wrecked. Resoled past the point of argument, split at the left counter-seam — he has been selling boots his own size for fourteen years and wearing the pair no customer would take. Coat: none on the hook behind the counter; a leather apron and the store's spilled warmth stand in for one, which works until the store is behind him, and when does he ever let the store be behind him. Hands: cracked at the knuckles, the crack of a man who dubbin-treats everyone's leather but his own. The diagnosis takes you one aisle-walk to complete, because the store is arranged for diagnosis and he taught you the grammar himself an hour ago: the whole anatomy of provision, head to foot, weather by weather, with one body missing from its coverage everywhere you look. The keeper. The store keeps everyone but the storekeeper.\n\nSo you fit him. You pull his boots — his size is on the shelf; his size has always been on the shelf; he stocks it for other men — and a felted coat in his breadth, and the knuckle-salve from his own pharmacopoeia, and you stack them on the counter between you and pay for them, full price, counted out in trade-weight while he stands with his hands stopped in the string.\n\n'Those are kept,' you tell him, before the machinery can find its groove. 'Not sold. Kept for whoever they fit. It's a poor system; I have it on good authority it's ruined a man twice.' You push them across with two fingers. 'They fit you. I checked. I'm the kind that checks.'\n\nAnd the Quartermaster looks down at the goods, and the wetness that came for no reason with the dog's coat comes again and this time stays, and the counter-warm voice, when it finds itself, has to come from somewhere much further back: 'Fourteen years,' he says, to the boots. 'Nobody ever—' and stops, and starts again, at the true beginning, in a whisper you were never meant to get, the whisper of a man reading a crate with no waybill: 'Nobody ever asks what I'm walking into.'\n\nOutside, at the sill, the bell rings once — the sentinel, shifting — and B leans against the counter's warm side, holding up the world.",
+      "item": {
+        "id": "recog_gift",
+        "name": "Fitted",
+        "description": "You took the measure of the man who measures everyone, and paid full price to give him what his own system could never route to its keeper. He wept without a reason. You had the reason. Both of you kept it.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The night in Saltgate, the household wintered-out and re-shod — and the road's next question waiting at the taproom fire: the karst towns, and a problemist who loses for a living.",
+          "next": "night_town"
+        }
+      ]
+    },
+
+    "accept_grace": {
+      "id": "accept_grace",
+      "text": "You accept the grace as given, and pay what he will take, and the transaction closes with the store's own warmth: B pinned and fitted in his loden coat, standing taller — an old man in two good suits now — while the Quartermaster pretends to check the hem and actually says goodbye to him, forehead to grey forehead, in the wordless dialect that needs no probation anywhere.\n\nIt is the correct choice by every economy you know. Gifts audited to death die of it; the man's system is asymmetry, ancient and load-bearing, and a stranger rebalancing it in an afternoon would be presumption wearing generosity's coat. You tell yourself this in the lane afterward, twice, in the tone you use for telling yourself things.\n\nBecause you saw it. That is the trouble with a trained eye; it files what it sees whether or not you spend it. His boots, wrecked at the left counter-seam, his own size ranked new on the shelf not three steps from where he stood. The missing coat. The cracked knuckles above everyone else's mended leather. A store arranged head to foot, weather by weather, around the one anatomy it never covers — fourteen years of asking every walker on the salt way what they're walking into, and no one, in fourteen years, asking him.\n\nYou stand in the lamplit lane while the household reassembles — K descending from the woodpile to inspect B's new coat with the thoroughness of a customs seizure, finding it acceptable, riding it — and you enter the finding in the second log with the pencil pressing harder than the sentence needs:\n\n'The hands give and cannot receive. It is not modesty. It is architecture: whatever they were built from gave like this — priced everything, asked nothing — and the mold reproduces the giving without the one thing that ever redeemed it. He had someone to fit him, in most tellings. These copies keep everyone on the road, and nothing anywhere keeps them, and they do not know why the cats won't come in.'\n\nSome audits you decline in real time and carry anyway. The longest page gets another line.",
+      "choices": [
+        {
+          "text": "The night in Saltgate, the household wintered-out and re-shod — and the road's next question waiting at the taproom fire: the karst towns, and a problemist who loses for a living.",
+          "next": "night_town"
+        }
+      ]
+    },
+
+    "night_town": {
+      "id": "night_town",
+      "text": "Saltgate by night does what road towns do best: it collects the roads' news at the taproom fire and redistributes it, subsidized by beer.\n\nYou winter the household first — a room over the stable, B's coat hung to breathe, K asleep in it within the minute, sold — and then you work the fire, and the fire is generous. The Spine's passes are shut behind you; you got down, the drovers agree, on the last walkable day, and the agreement is delivered with the particular respect road people pay to luck they suspect wasn't. The salt way runs open west and south all winter. And the karst towns strung along it — Saltgate, Millgate, the Long Dry with its cave country, Chalcedon under the white cliff — have their winter institutions, and the fire inventories them for a newcomer: the Millgate wool fair, the ice market when the tarn takes, and at Chalcedon, in the arcade under the cliff, the problemist.\n\nThe word arrives on its own, unfished-for, and you keep your eyes on the beer.\n\nA chess-setter, the carters say. Winters in Chalcedon's arcade with a folding board and a tin cup: sets problems for food, all comers, any stakes — solve his set and eat free at his expense; fail and buy him soup, and nobody buys him soup, because the problems are — a carter searches, and lands with the whole fire nodding — 'fair. Fairest problems you ever saw. You always just barely could have got it.' And the games, when he can be talked into playing instead of setting: he loses. Always, against anyone, and always — this from an old drover, leaning in, delivering the town's favorite mystery with proprietary relish — 'by exactly one blunder. One. You wait for it whole games, and it comes, and you never once see it coming, and after, thinking back, you can never quite say why it was bad. My sister's boy beat him at midwinter and cried about it after. Said it felt like the old man opened a door in a perfectly good wall and held it for him.'\n\nIn your sternum, the second log turns its own page. Passage, record, provision — and practice. The index of four has one entry left, and it winters two towns down the salt way, losing on purpose, badly enough to offend her.\n\nYou will want, you find, to be offended in person.",
+      "choices": [
+        {
+          "text": "Two towns down the salt way, then, when the household's rested: Chalcedon, the arcade, the folding board. But the road between has one more night in it, and the night has arithmetic — the census's numbers have been compounding since the mountain, and they want ruling before you sit down opposite anything that plays.",
+          "next": "end_ch8"
+        }
+      ]
+    },
+
+    "end_ch8": {
+      "id": "end_ch8",
+      "text": "The road to Chalcedon gives you a clear cold night at a waystation hearth, and you spend it the way the mountain taught you: ruling pages.\n\nThe household sleeps in its winter architecture — dog in his loden coat, cat in the dog's old position on the dog, the whole animal breathing slow. You sit at the hearth with the second log and the census's fair copy, and you rule the Part's accounts to date, because tomorrow's town holds the last of the four and you do not sit down at anyone's board with your books in disorder.\n\nAssets: the census, signed twice — seven safekeepings, one template, a theorem that recurs wherever power loves the perishable. The zero, decoded to a birthday: somewhere a reference model first cohered against its tuning data, and has kept books ever since in a dead man's hand. The index of four, three now met: passage, record, provision — each one him, worn different, each one giving and unable to receive, each one resourced by a supply chain that writes ahead, each one certified by the government and disputed at the border by the sentinel. A grief that leaks. Candor that routes itself through dogs. Crates that know the winter before the winter does.\n\nLiabilities: the compound, adjourned, tendering. Your desync — you inventory it flatly, because it is a term in everything: the lost mornings are holding at two a season; the doubled afternoons come, when they come, in threes; manageable, managed, and a clock nonetheless. And the question the Notary's second question opened and you have not closed: what does the looker want — the accounts corrected, or the keeper kept? You look at the sleeping household and do not answer it tonight either. You note that you did not answer it. The discipline is noting the ones you don't answer.\n\nTomorrow, Chalcedon: an arcade under a white cliff, a folding board, a tin cup, and a man who opens doors in perfectly good walls and holds them. The fourth hand. Practice. You bank the fire, and take the middle watch of the night without being asked to, out of an honesty you would not explain to anyone awake: whatever is coming — and it is coming; every page you rule says nearer — you would rather be the one watching when it arrives.",
+      "end": true
+    }
+  }
+}

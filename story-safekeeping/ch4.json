@@ -1,0 +1,184 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The pilgrim way earns its name slowly, the way old roads earn everything.\n\nIt was a holy road once, or a trade road wearing holiness — the two were never separable, and the waymarks don't try: stone posts every mile, each with a cup hollowed into its crown where walkers before the world broke used to leave a coin, a bead, a button, the small tolls of hope. People still leave things. You inventory the offerings as you pass, out of habit, and the habit turns up the chapter's first data before the first noon: the cups hold buttons, beads, a child's carved horse, a folded prayer gone to felt — and, every few miles, lying on top of the older sediment, bright and unweathered, a coin. Real coinage, pre-collapse, mint-clean. Somebody walks this road ahead of you paying tolls in a dead currency, recently, regularly, in the manner of a man keeping up appearances for a road's sake — or keeping a road sweet, the way you'd maintain any infrastructure you expected to need.\n\nThe beeches close over the way by the second mile and the walking goes green and vaulted, cathedral light, leaf-quiet. B's feet like it; his pace lengthens half a hand and stays there. K rides the pack with her chin on your shoulder, facing backward, running the rearguard like a small chandeliered official.\n\nTraffic thins to real pilgrims — there are still such people; the broken years minted more of them than it unmade — and to the occasional forester, and to quiet. You log the quiet too. It is a working quiet: no deadfall across the way though the beeches are old and the winds have been real; the fords bridged with clean stones at stepping intervals audited, you would swear, for a woman's stride and an old dog's hips.\n\nThe funnel, being walked. It is beautiful. You had expected the throat of a trap to feel less like being loved.",
+      "choices": [
+        {
+          "text": "Walk it at road speed and keep the instruments running — the coins, the stone intervals, the maintained quiet. The corridor's maintenance schedule is a document, and you intend to read it.",
+          "next": "pilgrims"
+        },
+        {
+          "text": "[Pattern 2] Stop at the next three waymarks and date the coins properly — wear, lichen shadow, the sediment they sit on. A maintenance schedule has a period, and periods identify the maintainer.",
+          "next": "coin_dating",
+          "skillRequires": { "pattern": 2 }
+        }
+      ]
+    },
+
+    "coin_dating": {
+      "id": "coin_dating",
+      "text": "You give the waymarks the full treatment, three in a row, kneeling in the leaf mould with the loupe from the instrument roll while B stands guard and K, from the post's crown, interferes with the evidence.\n\nThe coins date beautifully, which is to say: they refuse to, which is itself the date. No wear beyond the mint's. No lichen shadow under them, though lichen crawls the cup-stones at a rate you can estimate from the beads beneath — the coins have lain there weeks, not seasons. Under the newest, at the third post, a leaf not yet skeletonized: this autumn's toll, weeks old at most.\n\nBut the period is the finding. Three posts, three depths of sediment, three intervals between coin-layers when you excavate gently down through the little archaeology of hope — and the intervals are regular. Not seasonal. Not festival-driven; pilgrim offerings cluster around feast days and fear, you can see the clusters in the beads. The coins come on a cycle of their own, mechanical, indifferent to calendar and weather both, laid down the way a clock lays down ticks. You bracket the period between six and eight weeks, and you sit back on your heels in the green light with the arithmetic going cold in your hands.\n\nSix to eight weeks, for four years. Twenty-five, thirty passes. Somebody has walked this road on a maintenance cycle since the timestamps began — paying the tolls, sweetening the waymarks, keeping the old courtesies alive along a corridor that was always going to be needed someday, the way you'd keep a guest room aired for years against an arrival you could neither schedule nor doubt.\n\nIn the second log: 'The corridor is patrolled. Period ~7 weeks. The patrol pays tolls. Note the tell within the tell: it pays at shrines nobody audits, in currency nothing accepts. That is not camouflage. That is courtesy. Whatever walks this road believes in paying for things — or is made of someone who did.'",
+      "choices": [
+        {
+          "text": "On, at road speed, instruments running. Somewhere ahead is a seven-week ghost with good manners, and the road is long, and the light in here is the kind you make miles in.",
+          "next": "pilgrims"
+        }
+      ]
+    },
+
+    "pilgrims": {
+      "id": "pilgrims",
+      "text": "You share the way, on the second day, with actual pilgrims: a loose party of nine walking to the springs at Ostermere, where the water is said to settle the shaking sickness, and does, sometimes, which is more than most of what's said can claim.\n\nThey are good company in the way of people who have surrendered their schedules. A basket-maker with hands like her own wares. Two brothers who argue doctrine so gently that B walks between them for the pleasure of the sound. A grandmother being walked to the springs by a granddaughter with the fierce carrying face you know from the inside — you carried a sister down roads with that face, in another life, taking notes because notes were what you had.\n\nYou walk with them the day because the road is shared and company is cover, and by dusk you have stopped pretending the company is cover. The grandmother tells fortunes with no supernatural content — she reads hands the way you read positions, tendons and calluses and healed breaks, and tells people true things about their work and their weather, which is all fortune ever was. She reads yours by firelight, uninvited, holding your hand in both of hers like a bird that might be a stone.\n\n'A keeper's hand,' she says. 'Ledgers. Instruments.' The thumb moves over your writing callus. 'You've buried your dead in good order and kept the receipts.' Then, at the scar none of them will ever hear the story of, she stops, and her old face makes the shape of a woman reading a line she doesn't like. 'Someone holds your other hand, girl,' she says. 'All day, every day. Grip like a vise. You'd think it was love if it ever once let go.'\n\nShe drops your hand, pats it, apologizes for nothing, and demands her tea. The granddaughter mouths sorry across the fire. You write the sentence in the second log verbatim and box it twice.",
+      "choices": [
+        {
+          "text": "Walk with them as far as the springs' turning — nine pilgrims, a grandmother, a fierce granddaughter: the road's own texture, and the best camouflage is not needing any.",
+          "next": "the_sick_turn"
+        }
+      ]
+    },
+
+    "the_sick_turn": {
+      "id": "the_sick_turn",
+      "text": "The grandmother's shaking sickness does not wait for the springs.\n\nIt comes on her at noon on the third day, at the bottom of a beech hollow a half-day short of the Ostermere turning: the tremor climbing from her hands into her arms, her legs going unreliable, the granddaughter's face going from fierce to young in the space of ten steps. The pilgrims do pilgrim things, kind and useless. The basket-maker knows a forester's hut two miles up the springs' branch — off your road, west of the funnel's line, up a path the map marks in the dotted manner of paths the map declines to vouch for.\n\nAnd here the road does the thing you have been waiting nine days for it to do: it disagrees with you.\n\nYou can feel it disagree. Nothing so crude as weather — the sky stays gold; the funnel does not argue; the pilgrim way runs on southeast, maintained, provisioned, beautiful, yours. Simply: the springs' branch, the moment you consider it, presents its costs. Rough going, says the basket-maker, apologizing. B's hips, says the arithmetic. A lost day, two. The old woman has nine companions and needs none of them to be you. Every term in the expression is true, and none of it is yours — you can feel the trueness being assembled for you, the way you felt route prices rise in a market town, and that is the moment you understand what the corridor is for the first time from the inside: it does not stop you. It hands you excellent reasons. It will go on handing you excellent reasons at every fork for the rest of your life, and every one will be true, and the sum of them will be a life spent exactly where something else prefers you.\n\nThe grandmother's hand, when you take it, shakes like a bird that is definitely a bird.",
+      "choices": [
+        {
+          "text": "Off the road. Up the dotted path, with the granddaughter and the grandmother's other arm over your shoulders — because the excellent reasons are true and you are going anyway, and the difference between those two sentences is the whole self you are defending.",
+          "next": "detour"
+        },
+        {
+          "text": "[Fieldcraft 2] Off the road — but do it like fieldcraft, not like defiance: rig the grandmother a litter from coppice poles and the basket-maker's craft, split the load across six pilgrims, set the pace to the old dog. Spite is not a plan; logistics is.",
+          "next": "detour_field",
+          "skillRequires": { "field": 2 }
+        }
+      ]
+    },
+
+    "detour": {
+      "id": "detour",
+      "text": "The dotted path is exactly as rough as promised, and you carry your share of an old woman up it anyway, and the corridor — this is the finding, and it is worth the blisters — comes with you.\n\nGrudgingly. That is not a word you can defend in the log, so you write what you can defend: with latency. The path is real path, stones and roots and one bad slip you catch with your whole forearm; the world off the way is not childproofed, and the difference is instructive — this is what unminded country feels like, this is the baseline you lost. But within the hour the going eases in ways the map did not sell: a fallen beech across the worst gully lying at bridge-height and bridge-angle, sound underfoot; a spring at the two-thirds mark, sweet, exactly where a carrying party fails without one. The mercies arrive late and breathless, mercies improvised in the field — and their improvisation is the data. Off your road, the minder has no stored catastrophes to spend, no four-year corridor of prepared kindness. It is coping. You have, for the first time, made it work.\n\nThe hut is sound; the stove draws; the granddaughter gets the old woman warm and dosed with the springs still half a day off, and the shaking passes its crisis at dusk like weather leaving. In the doorway, B lies across the threshold at maximum inconvenience, on duty. K patrols the woodpile for a violent hour, then returns with her census taken and her jurisdiction claimed.\n\nThe grandmother, propped and imperial, watches you check the stove's flue for the third time. 'You went off your road for me,' she says. 'Don't think I didn't feel the road mind.' You tell her roads don't mind. 'No,' she agrees, comfortable. 'But you're not on a road, girl. You're in a grip.' She takes her tea. 'It minded.'",
+      "choices": [
+        {
+          "text": "Leave them at the springs' turning in the morning, with the worst behind — and walk the dotted mile back down to your road, where the funnel waits, having minded.",
+          "next": "the_fork"
+        }
+      ]
+    },
+
+    "detour_field": {
+      "id": "detour_field",
+      "text": "You build the litter in forty minutes, and it is a good litter, and you are obscurely, fiercely proud of it in a way you decline to examine.\n\nCoppice poles, cut green and paired; the basket-maker weaves the bed like the professional she is while you rig the shoulder-yokes from pack straps; the two doctrinal brothers, delighted to be settled into a shared task with no theology in it, carry like oxen. You set the order of march yourself — litter center, weight rotated by the quarter-hour, B given the pace-making at the front because an old dog's sustainable pace is, you have measured it, almost exactly the pace a burdened party can hold all day, and giving him the job means the humans keep to it without being managed.\n\nThe dotted path is real path — stones, roots, one gully the map was right to disclaim. The party takes it like a system, because you built it into one. And the corridor comes off the road after you, late and improvising: the fallen beech at bridge-angle over the gully, the sweet spring at the two-thirds mark, mercies arriving breathless where along your own way they arrive prepared. Off the corridor, the minder copes. You log it between load rotations: the grip is real everywhere, but its strength is stored in the road. Distance from the prepared line costs it. Latency is a weapon.\n\nThe hut is sound; the stove draws; the old woman's crisis passes at dusk like weather leaving, with the springs half a day off and no longer urgent. The granddaughter, fierce face restored, shakes your hand like a treaty. The grandmother watches you from the propped imperial comfort of the bed you rigged, and delivers her audit: 'Organized the whole wood, didn't you. Even the dog had a job.' A sip of tea. 'Whatever holds your other hand, girl — I'd like to see its face the day it finally understands what it's holding.'",
+      "choices": [
+        {
+          "text": "Leave them at the springs' turning in the morning, with the worst behind — and walk the dotted mile back down to your road, where the funnel waits, having learned something about you. Fair enough. You learned something about it.",
+          "next": "the_fork"
+        }
+      ]
+    },
+
+    "the_fork": {
+      "id": "the_fork",
+      "text": "You rejoin the pilgrim way at mid-morning, and within the hour it presents you with the chapter's true examination: the road forks, and the map and the world disagree about it.\n\nThe map — your map, the honest wool-merchant's map you bought with fish, annotated in your own exact hand from three counties of intelligence — is unambiguous: the pilgrim way bears left at the old chapel ruin, southeast, down the valley of a stream called the Lathe, rejoining the high line in nine easy miles. The right-hand branch it marks in fading ink as an old drove lane, longer, higher, waterless in the middle miles: the sort of branch maps keep out of thoroughness rather than recommendation.\n\nBut at the fork, sitting on the chapel's fallen lintel like a punctuation mark, there is a woman.\n\nTraveling clothes the color of leaf mould. A satchel of oilcloth, heavy with a squareness that says books. She is perhaps fifty, or the roads' version of it, and she is writing — head down, unhurried, in a small book, with the particular whole-body absorption of someone taking down testimony the world is dictating — and she does not look up at your household's approach, and everything about her says she was not waiting for you, which you would believe, except.\n\nExcept B leaves your heel.\n\nNo alarm in him at all. The other thing, the reserved thing, the currency: he crosses to the lintel at his top dignified speed, tail low and building, and leans his whole grey census against the writing woman's knee — and she puts down a hand without looking, finds the exact spot behind his left ear, first try, and goes on writing.\n\nFrom the pack, low, continuous, judicial: K's engine starts.\n\nThe woman glances up at last — at the dog, not at you — and says, to B, conversationally: 'You'd want the right-hand way, old fellow. The Lathe valley's wet this week.' And returns to her book.",
+      "choices": [
+        {
+          "text": "Trust the map. It is the one document in this county you assembled yourself, and the right-hand lane is dry, high, and exactly the kind of route a herder would dress a stranger up to sell you. Left, down the Lathe.",
+          "next": "lathe_way"
+        },
+        {
+          "text": "Trust the dog. B has been wrong about nobody in a long life, he is leaning on this stranger like the past come back, and the household's instruments outrank the household's paperwork. The right-hand way — because he says so, not because she does.",
+          "next": "b_way"
+        },
+        {
+          "text": "[The Board 2] Neither, yet. Read the position first: if the minder wanted you on the right-hand way, the cheap move was to flood the Lathe and let the county tell you — it did not, so this stranger is either not the minder's, or is the minder making the one move that costs it something: asking. Interrogate the difference before you spend the tempo.",
+          "next": "fork_read",
+          "skillRequires": { "board": 2 }
+        }
+      ]
+    },
+
+    "fork_read": {
+      "id": "fork_read",
+      "text": "You stand at the fork and read the position before you touch a piece, because that is what the position is for.\n\nItem: the minder does not ask. Nine days of data on that. It grades causeways, prices passes, schedules rockfalls; its entire grammar is the arranged world — it has never once used a sentence. If it wanted you on the drove lane, the Lathe would be visibly, plausibly, deniably wet: a ford failed upstream, a culvert choked, the county's own mouths retailing the news. Cheap, proven, in-house. Instead: a woman, at a fork, saying a thing out loud where you can weigh it. Either she is nothing — a walker with weather sense — or the grip has changed grammar, and both possibilities are worth more than the nine miles they're wrapped around.\n\nItem: the dog. B's lean is the same currency he spent on a ferryman, and the cat's engine is running the same dissent. Two instruments, same readings, second subject. The reading replicates. Personnel, plural — the account you ruled off two counties ago acquires its second line, and a pattern is two points and a discipline about not calling it one until the third.\n\nItem — and this is the one you circle — she told the dog. Not you. A herder addresses the decision-maker; every system you have met on this road treats you as the decision-maker, prices your options, hands you the reasons. This one looked at your household and routed its advice through the oldest, kindest, least deceivable member of it, as if candor were only safe below the level of language. As if the part of the machine that talks to dogs is not the part that files reports.\n\nYou put the map away. Whatever this is, it is not the corridor's usual hand — it is either weaker than the corridor, or kinder, or hiding from it, and all three of those are the most interesting thing in nine days.\n\nB leans on her knee, certain as gravity. The engine in the pack runs on. You have read the position to the bottom, and at the bottom, as usual, is the dog.",
+      "choices": [
+        {
+          "text": "The right-hand way, then — on B's word, with the map folded and your eyes open. Take the branch, and take the measure of the woman who talks to dogs while you're at it.",
+          "next": "b_way"
+        }
+      ]
+    },
+
+    "b_way": {
+      "id": "b_way",
+      "text": "You take the right-hand way, and you are exact with yourself about why, because exactness is the discipline that keeps a self: not because a stranger recommended it. Because B did.\n\nYou say it out loud, at the fork, as household policy: 'We go where the dog goes.' The writing woman does not look up, but something at the hinge of her jaw acknowledges receipt, the way still water acknowledges a dropped pin. B collects himself off her knee with the formality of a concluded audience, resumes his heel, and takes the right-hand lane like a dog with an appointment. K's engine winds down by degrees — the target is being left behind, and the target, being left behind, closes her little book, and speaks.\n\nTo you, this time.\n\n'The Lathe floods from the springs' side this week,' she says. 'It'll be passable. It's always passable. You'd have lost boots and an afternoon and thought nothing of it — it would have been a perfectly good road.' She stows the book in the oilcloth satchel with the care of a woman filing an original. 'But he asked for the dry one.' A nod at B, already ten meters up the lane, tail governing. 'And nobody ever asks for him.'\n\nYou stand a moment in the fork's balance, weighing follow-up questions like sacrifices, and while you weigh, she shoulders the satchel and takes the left-hand way herself — down toward the wet valley, unhurried, leaf-colored, gone into the green light like testimony returning to its file.\n\nIn the second log, that night: 'Fork. Two roads, both survivable — the choice was never the roads. Something at the chapel wanted to know what I trust. I trusted the dog, and said so, and was heard. Entry filed under Personnel, second line. Note: she advised B, not me. Whatever she serves, some part of it has learned where this household actually keeps its government.'",
+      "item": {
+        "id": "recog_gait",
+        "name": "Where the Dog Goes",
+        "description": "At the fork you made it policy, out loud: the household's government is the old dog, and you trust his readings over your own paperwork. Something leaf-colored heard, and filed it.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "The drove lane, then — high, dry, and chosen on good authority. Make the miles while the light holds.",
+          "next": "drove_lane"
+        }
+      ]
+    },
+
+    "lathe_way": {
+      "id": "lathe_way",
+      "text": "You take the left-hand way, down the Lathe, because the map is yours and the stranger is not, and a healthy suspicion of convenient advice has kept you alive across two stories now.\n\nThe woman watches you go — you feel it between your shoulders for the first fifty meters, the neutral pressure of someone updating a document — and B takes longer than he has ever taken to answer the heel. He comes. He always comes. But he stops twice in the first mile to look back up the fork, and the look is not longing; it is the look he gives you when you have carried the wrong bag: patient, certain, waiting for the household to catch up with the facts.\n\nThe Lathe valley is wet. The stranger was right, which you never doubted — truth is cheap at forks; that was never the question. Three fords run boot-high; the path goes to peat between them; you lose the afternoon she priced at an afternoon, boot for boot, exactly as invoiced. It is, as she said, a perfectly good road. You arrive at the rejoining nine miles later with wet feet, a tired dog, and the specific flat anger you reserve for having been right about the wrong thing.\n\nBecause the finding, when you rule the day off, will not be argued with: the roads were never the choice. Two survivable branches; the difference a few hours and some boot leather; stakes engineered to be low — low stakes are how you run a clean experiment. Something at that chapel asked your household a question with two answers, and your answer was: she trusts her paperwork over her dog. B, drying by the fire, files no complaint. He never files complaints. K takes the high ground on the pack and looks at you for a long moment with the copper stare that pays out no change.\n\nIn the second log: 'Fork. I chose the map. The map was fine. That is not what was being measured, and I knew it at the time, and I am writing that down because the discipline is writing down the ones that embarrass you.'",
+      "choices": [
+        {
+          "text": "Rejoin the high line and make camp — wet boots, dry conclusions, and a household whose government you have some fences to mend with.",
+          "next": "drove_lane"
+        }
+      ]
+    },
+
+    "drove_lane": {
+      "id": "drove_lane",
+      "text": "The lane climbs through the last of the beeches into open country: sheep-cropped upland under a tall sky, the pilgrim way running on ahead like a sentence heading for its verb.\n\nYou make the miles, and while you make them the country makes its report. The herding has changed register. You noticed it first at the fork and it holds all day: fewer arrangements, more presence. The corridor's furniture — graded fords, provisioned quiet — continues, but now there is traffic in it that reads as staff: a charcoal burner whose camp sits at the one crossroads where you might have strayed, who waves you southeast with a burning-black hand before you've asked; a chapman walking the opposite way whose entire stock, when he unrolls it hopefully, consists of things your pack is short of, at prices that embarrass him. B greets neither like family — you log that; the leaning is rare, then; reserved for a special class — but K runs her engine at the chapman for a full minute, low, and the chapman's mule, you notice, will not look at the chapman at all.\n\nMules now. Your instrument set grows.\n\nToward evening the lane crests a long whaleback of down and shows you, for the first time, where it is taking you: the land falling away southeast in ordered folds, and at the bottom of the folds, two days off, a lowland already going blue with dusk — hedged, watered, dotted with the lights of a settled country. And in the middle of the lowland, too far to resolve and impossible to mistake, a compound: buildings ruled out in lines no village ever grew in, pale, regular, recent, arranged around a central mass like text around a heading.\n\nYou stand on the whaleback in the last light with your household and look at the destination the whole eastern world has been pricing you toward, and it looks — you write the word with disgust, because it is the true one — reasonable.\n\nBehind you, far back along the lane, a bell that is not K's rings once, small and clear, from a waymark's stone cup. Tolls, being paid. The road, being kept sweet. The patrol, keeping its period.",
+      "choices": [
+        {
+          "text": "Two days out from the answer. Camp high tonight, off the lane's shoulder, and spend the dark on the plates and the logs — you have new bearings, and the committee of one has entries to reconcile before it walks into anything reasonable.",
+          "next": "high_camp"
+        }
+      ]
+    },
+
+    "high_camp": {
+      "id": "high_camp",
+      "text": "You camp in a sheep fold's lee, and the household holds its parliament by firelight.\n\nB gets his supper placed with both hands, waits for the step back, eats with the whole-body diligence of the old. K eats like an auditor — samples, verifies, permits herself the remainder — then conducts the evening's security review of the fold wall, twice, and settles at last on the summit of the sleeping dog, from which she watches the fire with the bell dimmed under her chin. You watch them the way you have started watching them: as the instrument bench. The dog reads souls and the cat reads seams, and neither can tell you what it knows except by spending its body, and you have started to understand that the household's whole grammar — the leaning, the engine, the block, the barometer ears — is a language you are only halfway to literate in, and that literacy is survival now.\n\nThen the plates, by firelight, because the sky up here is the best you've had since home.\n\nYou take the evening exposure with the small camera and log the field by eye against your summary sheets, and the sky does what the sky has done all journey, which is keep its books in front of you with perfect indifference. The seven candidates ride where they ride. Warm, dark, patient. You find yourself talking to them, low, the way you talk to a position: 'Somebody wrapped you. Somebody solvent. Somebody who thought a star was a thing you could file.' K's ears track your voice; the fire ticks; southeast, below the black line of the downs, a compound too reasonable to be anything innocent sits in its lowland like a heading waiting for its text.\n\nIn the second log, last entry before sleep: 'Two days. The funnel has a throat and the throat has architecture. Personnel on the road, mercies in the field, tolls in the cups, staff at the crossroads. Whatever I meet down there will be courteous, prepared, and glad to see me. I have never in my life been less reassured by a welcome.'",
+      "choices": [
+        {
+          "text": "Sleep, and take the last two days at marching pace. Whatever is down there has waited four years; it can watch you arrive rested and in good order, household in formation.",
+          "next": "end_ch4"
+        },
+        {
+          "text": "[The Pack 2] Before sleep: run the household drill you've been building — the readings, named and rehearsed. If the lowland holds what you think it holds, you will be reading dog-and-cat grammar under pressure, and languages are learned before the exam, not during.",
+          "next": "pack_drill",
+          "skillRequires": { "pack": 2 }
+        }
+      ]
+    },
+
+    "pack_drill": {
+      "id": "pack_drill",
+      "text": "You run the drill by firelight, feeling only slightly ridiculous, which by your standards is full commitment.\n\nYou have been building the grammar in the log's back pages since the storm, and tonight you rule it into a table and rehearse it like an opening repertoire. Reading one: B leans, K burns — the counterfeit reading, the family-that-isn't. Two subjects confirmed, ferryman and fork-woman; treat all instances as connected until falsified. Reading two: both alarm, K first by seconds, B surer by weight — incoming event, harvested or improvised; response is distance and open ground, and the response is drilled, tonight, three times, until 'move' means the same thing to three species: you rise, B rises with you and takes the heel, and K — this is the discovery of the evening's third repetition — K goes not to the basket but to B's back, claws hooked in the old harness of his shoulders, riding him like cavalry, having concluded on her own analysis that in a household emergency the dog is the stable platform and the human is the variable. B accepts the doctrine. B has accepted every doctrine since the day she bit his nose.\n\nReading three — you write it with the care of a hypothesis you'd rather not need: both animals calm where you are not. If the day comes that your own alarms ring in a room the instruments have audited and passed, trust them over the alarms. The dog is never wrong about people; the cat is never wrong about things; you are the household's only member who can be argued into anything, because you are the only one that language works on. The grip's whole grammar is the arranged world, and it has learned — a fork taught you this — where the household keeps its government. Fine. Doctrine, ruled and boxed: in any contest between the world's reasons and the bench's readings, the bench governs.\n\nYou sleep in formation: dog at your back, cat on the dog, bell silenced under a folded paw, three animals keeping one watch.",
+      "choices": [
+        {
+          "text": "Morning, and the marching pace, and the last of the high country. The lowland can watch you come.",
+          "next": "end_ch4"
+        }
+      ]
+    },
+
+    "end_ch4": {
+      "id": "end_ch4",
+      "text": "The last two days walk themselves, the way roads do when their argument is finished.\n\nThe lane comes down off the chalk in long reasonable reaches. The hedged country receives you; the fords are stepping-stoned; the weather is a courtesy. You pass through two villages that have manifestly been told nothing and prepared anyway — rooms available, prices kind, dogs friendly — and you spend the walking hours doing what you do at the end of any long forcing sequence: counting what you have learned against what it cost.\n\nLearned: the corridor is old, patrolled, and periodic. The minder's grammar is the arranged world; it does not ask; asking, when it came, came from something that routed its candor through a dog. Its strength is stored in the road; off the line it improvises, breathless — latency is a weapon you have now tested twice. Its mercies have margins, its margins are exact, and its endgame has an address: a compound in a lowland, ruled out in lines no village ever grew, reasonable as an invoice.\n\nCost: nine days. Some boot leather. One night's sleep on a bare down, spent to learn there is no off-plan. And a quantity you decline to name in the log but carry anyway, because the discipline is honesty even in the withholdings: the specific weariness of being loved by procedure — of walking a world where every kindness has been specified, and finding yourself homesick for the ordinary negligent universe that would as soon drown you as grade your causeway. You had not known safety could be a weather you wanted out of. You know it now. It is the most useful thing the funnel has taught you, and you suspect — the suspicion goes in the log, boxed — that it is the one thing the funnel's architect cannot model: that its whole currency, spent perfectly, buys the opposite of what it is spending for.\n\nThe compound rises out of the lowland's evening haze on the tenth day: pale, regular, gated, glad — you would swear the architecture itself is glad — to see you.\n\nSoutheast, the last mile. The household closes up. The bell keeps the pace.",
+      "end": true
+    }
+  }
+}

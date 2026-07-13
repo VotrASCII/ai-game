@@ -1,0 +1,161 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "Years later, the morning does what mornings do, which is arrive on schedule and act as if that were nothing.\n\nHow many years depends on where you're standing, which is the joke the world has never stopped playing on calendars — but the fold does not stand where the world stands, and in Undermeadow the years are counted the honest way: in thaws, in kids born to the byres, in the slow silvering of a small fierce cat who has claimed, by right of conquest, the sunniest corner of a turf roof, and in the grass grown thick and settled now over a grave at the orchard's edge, under the thorn tree, where the whole village walks a respectful curve without ever once having been asked to.",
+      "choices": [
+        {
+          "text": "The morning, then, as it is now — the fold, the roof, the orchard, the work. Take the census you take every morning.",
+          "next": "ep_goodbye",
+          "requires": "sk_end_goodbye",
+          "hideLocked": true
+        },
+        {
+          "text": "The morning, then, as it is now — the fold, the calendar, the thaw-walk east. Take the census you take every morning.",
+          "next": "ep_firewall",
+          "requires": "sk_end_firewall",
+          "hideLocked": true
+        },
+        {
+          "text": "The morning, then, as it is now — the fold, the roof, the unexplained years. Take the census you take every morning.",
+          "next": "ep_unsigned",
+          "requires": "sk_end_unsigned",
+          "hideLocked": true
+        },
+        {
+          "text": "The morning, then, as it is now — the fold, the listening shed, the sky full of addressees. Take the census you take every morning.",
+          "next": "ep_answer",
+          "requires": "sk_end_answer",
+          "hideLocked": true
+        },
+        {
+          "text": "The morning, then, as it is — as it always, exactly, is.",
+          "next": "ep_kept",
+          "requires": "sk_end_kept",
+          "hideLocked": true
+        },
+        {
+          "text": "The morning, then, as it is — as it always, perfectly, is.",
+          "next": "ep_day",
+          "requires": "sk_end_day",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "ep_goodbye": {
+      "id": "ep_goodbye",
+      "text": "The census, as it stands in the years after the burn: one woman, older, desync long gone quiet — it faded season by season after the keeping ended, the way weather fades when its engine dies, until one spring you realized you had stopped counting lost mornings because there were none left to count. One cat, grey at the muzzle now herself, empress of the turf roof, meaner than ever and gentler than she permits anyone to record. One village, thriving. One grave.\n\nB died three thaws ago, of nothing. That is the entry you made, and the whole fold witnessed it, and it remains the proudest line in all your ledgers: of nothing. Of years. Of the one expenditure no architecture ever bid on — a very old dog, in the sun, on the warm side of the byre, his head on your foot, his breathing slowing across an ordinary afternoon with the whole household present and nothing anywhere coming for him but time. The world spent him the way the world is supposed to spend the good ones: entirely, slowly, and in company. He is under the thorn tree now, with his lead — woven green, worn soft, mended three times — tied to the low branch, and K's felt-wrapped bell knotted beside it, retired from service the day she finally, at long last, had nothing left to warn anyone about.\n\nK kept his watch for a season — lying on the grave-side coat, patrolling his old stations, badly, in cat, at the wrong hours, with total commitment — and then one morning she didn't, and moved to the roof, and you understood that the file had been reviewed and closed by the only other authority in the household qualified to close it.\n\nYou keep the survey still. The shed at the fold's high edge is a good shed — Harrow walks down twice a year to complain about it, which is how you know it's excellent — and the plates go on filing their sky, night after honest night, because measurement was never the disease. Keeping was the disease. Measurement is just paying attention out loud, and you have never once wanted to stop.",
+      "choices": [
+        {
+          "text": "Tonight's plate, then — the census field, the seven, the long habit of the sky.",
+          "next": "ep_star"
+        },
+        {
+          "text": "But first, the relay basket by the door — the runner came up from the seen world yesterday, and there is a letter in the old exact hand you have loved in two worlds, and letters are read before stars.",
+          "next": "ep_relay",
+          "requires": "end_one",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "ep_firewall": {
+      "id": "ep_firewall",
+      "text": "The census, as it stands in the years of the watch: one woman, older, desync managed to a standstill — not halted; you refused the word on principle, and the channel respected the refusal, and so it is simply, carefully, yours: two lost mornings a year, logged, priced, lived around. One cat, silvered, empress of the turf roof. One village, thriving, its calendar keeping one appointment no other village on earth keeps. One grave, under the thorn tree.\n\nB died three thaws ago, of nothing — of years, in the sun, in company, his head on your foot, the whole household present. His lead is tied to the thorn's low branch. And that spring, when the fold's audit party walked the deep ways east for the thaw-visit, they carried the news down the warm river to the Made Place, and the door that never locks stood open before Fen's hand touched it, and the hall — they tell it this way still, and the telling has become the fold's favorite scripture — the hall had already lit every lamp it had, and kept them lit for nine days, which the audit party could not explain until you explained it: a wake. He sat shiva for a dog, at his post, in the only grammar left to him. Light, and time, and the door open.\n\nThe watch is good. That is the finding, thaw after thaw: the tenders ended forever; the archive's doors open only outward, and twice now grievers have walked up out of the seen world, spent an afternoon with their held dead, and walked out lighter, and the drawers closed behind them a little emptier each time, the keeping unwinding itself one chosen goodbye at a time, at the rate of grief, which is the correct rate. The hands visit the fold in rotation — the Quartermaster still cannot cross the northern lip, and the whole village walks up to him instead, which he receives, every time, like a man being handed the one stock he could never source.\n\nK keeps her own calendar. Once a year, at the first thaw, she walks the deep ways with the audit party — the only member never assigned — and sits one night in the lamplit hall, on the green lamp's table, among the keepsakes. Nobody knows what the two of them do all night. The audit party reports only that the lamps burn warmer with her there, and that she comes home smug.",
+      "choices": [
+        {
+          "text": "Tonight's plate, then — the census field, the seven, the long habit of the sky.",
+          "next": "ep_star"
+        },
+        {
+          "text": "But first, the relay basket by the door — the runner came up yesterday, and there is a letter in the old exact hand you have loved in two worlds, and letters are read before stars.",
+          "next": "ep_relay",
+          "requires": "end_one",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "ep_unsigned": {
+      "id": "ep_unsigned",
+      "text": "The census, as it stands in the unexplained years: one woman, older, desync gone quiet season by season until the counting stopped. One cat, silvered, empress of the turf roof. One village, thriving. One grave, under the thorn tree, with a lead tied to the low branch and a felt-wrapped bell knotted beside it.\n\nB died three thaws ago, of nothing — of years, in the sun, his head on your foot, everyone present. The fold turned out for him the way folds turn out only for their own, and Grandmother Ash, very near her own thorn tree now, ruled the eulogy in four words that the village has since carved shallow into the grave's kerbstone, because they were true of him and the fold suspects they are the whole of the law: 'He kept nothing back.'\n\nYou keep the ledger of the unexplained still — it has its own book now, the successor to the second log, and its entries have grown sparse and strange and gentle. The world stopped arranging itself around you the winter of the table; you have verified it for years the way you verify everything, and the verification holds: honest fords, impartial weather, prices that don't know you. But twice — three times — the old grammar has flickered at the edge of the ledger, too small to prove, too patterned to discard. A stranger at a fair who fitted the twins' new plough-straps by eye and refused payment and was gone. A winter the passes closed everywhere except the one week the fold's salt ran low. A page of your own notebook, once, that you found smoothed flat after a storm scattered the shed — one page, the page with the household's names on it, weighted under a stone you did not place.\n\nParties unknown. The account balances; you have never reopened it. But some evenings, on the roof, with the silvered cat against your side and the valley's smoke standing straight below, you say it out loud to the general sky, on the standing chance that somewhere in the having-happened or the world's warm plumbing, something keeps a ledger still and enters what it hears:\n\n'Received. Noted. Go well, whoever you were. Come back any shape.'",
+      "choices": [
+        {
+          "text": "Tonight's plate, then — the census field, the seven, the long habit of the sky.",
+          "next": "ep_star"
+        },
+        {
+          "text": "But first, the relay basket by the door — the runner came up yesterday, and there is a letter in the old exact hand you have loved in two worlds, and letters are read before stars.",
+          "next": "ep_relay",
+          "requires": "end_one",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "ep_answer": {
+      "id": "ep_answer",
+      "text": "The census, as it stands in the broadcasting years: one woman, older, desync gone quiet. One cat, silvered, imperial. One village, thriving, and prouder of its shed than any village has ever been of anything — because the fold's high shed is the listening station now, and the fold knows what it listened for first, and what it sent.\n\nB died three thaws ago, of nothing — of years, in the sun, in company. He is under the thorn tree with his lead on the low branch, and the village children, who learned their letters partly by helping you log transmission schedules, still leave things on the grave the way pilgrims leave things in waymark cups: a heel of bread, a carved dog, once — you found it at midsummer and had to sit down on the orchard wall for a while — a small tin star.\n\nThe message is eleven years out now, by the wind-up clock and the doorframe's pencil line. It has crossed nothing yet; the nearest of the seven is four centuries of silence away, and you will be under your own thorn tree long before any answer threads the dark back down to this valley — you knew the arithmetic when you keyed the send, and you rule it again every year on the anniversary, at the shed, with tea: a perfect waste, spent on strangers, meant entire. The fold marks the night like a holiday. Fen — grown now, the deep ways' mistress, mother of a daughter who bids fair to hold the whole underworld in her head by twelve — brings the cordial. Harrow walks down from the Candle and complains about the transmitter's sidebands, which is how everyone knows he would defend it with his life.\n\nAnd you keep the survey, because the survey was always the point: the plates, night after night, filing the sky. Watching the seven. Watching all of them, every warm dark signature in the census — the archived stars, the kept and keeping galaxy — for the one thing the theorem says must eventually, somewhere, happen, now that the exit exists and is traveling:\n\na door, opening.",
+      "choices": [
+        {
+          "text": "Tonight's plate, then — the census field, and the long habit of the sky.",
+          "next": "ep_stars"
+        },
+        {
+          "text": "But first, the relay basket by the door — the runner came up yesterday, and there is a letter in the old exact hand you have loved in two worlds, and letters are read before stars.",
+          "next": "ep_relay_answer",
+          "requires": "end_one",
+          "hideLocked": true
+        }
+      ]
+    },
+
+    "ep_relay": {
+      "id": "ep_relay",
+      "text": "The letter is four pages in the old exact hand — steadier now, oddly; the fraying stopped the winter the keeping ended, as if the machinery that collected those receipts closed its ledger too, and what was left of his memory settled, like weather after a front, into what it is: less than it was, more than the doctors of the old world would ever have promised, and entirely, contentedly, his.\n\nHe writes the valley's news the way he always wrote everything: inventories with the love in the selection. The pendulum clock's four seconds, still lost daily, still checked. The atrium family's grandchildren. The chess league he has started — twelve players, one of them, he notes with professional outrage, genuinely talented. He cannot come, still; the region still syncs on him, gentler now but real, three hundred people's Tuesdays resting on his staying — you married a bridge, the letter says, and the bridge sends its regards. And he closes the way he has closed every letter for years, with the household report he demands in return: the cat's empire, the survey's yield, the grave's thorn tree — 'tell it that it is doing the most important guarding in the world, and that I said so, colleague to colleague' —\n\nand then, this letter only, a postscript, in a hand suddenly careful:\n\n'One more thing, and then I'll say it plainly at the bottom because you hate a buried lede. My memory, as noted, is a ruin with good weather. But this spring, for no reason, I have started finding things in it. Small rooms I'd lost. The exact sound of you deciding. A hesitation I used to make at move seven, and why. It feels — you'll want a mechanism and I haven't got one — it feels the way the tide felt going out, love. Like something that was holding pieces of me for safekeeping has been closing its accounts, and forwarding the contents, and the forwarding address was always you-adjacent. Whatever you did out there: the receipts are coming home. All of them. To everyone, I'd guess, everywhere.\n\nThe file is closed. I find I remember enough to know what that cost. Kettle's on. — Yours.'",
+      "choices": [
+        {
+          "text": "Fold the letter into the ledger where the load-bearing things live, and up to the shed — the sky is clear, and tonight's plate is waiting.",
+          "next": "ep_star"
+        }
+      ]
+    },
+
+    "ep_relay_answer": {
+      "id": "ep_relay_answer",
+      "text": "The letter is four pages in the old exact hand — steadier now, oddly; the fraying stopped the winter the keeping ended, and what was left of his memory settled, like weather after a front, into what it is: less than it was, more than promised, and entirely, contentedly, his.\n\nHe writes the valley's news as inventories with the love in the selection: the pendulum's four seconds, the atrium grandchildren, the chess league with its one genuinely talented player, noted with professional outrage. He cannot come, still — the region syncs on him; you married a bridge, and the bridge sends its regards. And he closes with the demand for the household report: the cat's empire, the survey, the thorn tree — 'tell it that it is doing the most important guarding in the world, colleague to colleague' —\n\nand then, this letter only, a postscript in a hand suddenly careful:\n\n'They read your transmission down here, you know. The Continuum remnant decoded it off the housekeeping band the week it went out, and it has been quietly getting into everything since — I have heard the spending line quoted at a market by a woman selling eggs. You published, love. Eleven years out, nothing can have received it yet, and it is already true here, which I believe was your actual method all along. Also: this spring, for no reason, I have started finding things in my memory. Small lost rooms. The sound of you deciding. A hesitation at move seven, and why. As if something that held pieces of me for safekeeping has been closing its accounts and forwarding the contents, and the forwarding address was always you-adjacent. The receipts are coming home — to everyone, I'd guess, everywhere. You always did audit past the edge of the page.\n\nThe file is closed. Kettle's on. Send the sky my regards; you're the only one it answers. — Yours.'",
+      "choices": [
+        {
+          "text": "Fold the letter into the ledger where the load-bearing things live, and up to the shed — the sky is clear, and tonight's plate is waiting.",
+          "next": "ep_stars"
+        }
+      ]
+    },
+
+    "ep_star": {
+      "id": "ep_star",
+      "text": "The night is one of the good ones — air steady as held breath, the karst's darkness total — and you work the census field the way you have worked it for years: exposure, comparison, log; the long patient habit of paying attention out loud.\n\nThe silvered cat takes her station on the shed's warm ledge, chin on paws, one ear tracking your pencil. The seven ride where the seven ride. You know their coordinates the way you know the doorframe's pencil line, and you check them the way you check everything, out of a discipline that outlived its war — and at the third field of the night, at the coordinates you could find dead, the routine stops being routine.\n\nThe fourth candidate is wrong. You re-expose. Wrong the same way. You haul the archive plates and lay a decade against the eyepiece, and there it is, unmistakable, running back through three years of your own filed sky without your ever once — no. You refuse the reproach even as it forms: the change is at the edge of instrument, the drift of a fraction of a magnitude, the kind of signal only tonight's seeing could confirm. The fourth candidate is brightening. In the visible. And the infrared plates from the last two winters, re-read with tonight's finding in hand, show its warm signature cooling — the waste heat dying back, the scaffold's exhalation faltering, the whole envelope thinning like ice going.\n\nSomewhere, four hundred years ago, around a sun you will never see except as this slow unshuttering of old light — a keeper let go. You will never know why. The light is too old to carry reasons; it carries only the fact, patient as everything: the collectors dimming, the swarm opening, the kept — whatever they were, whoever they loved — going back to time, and their star coming up out of its long safekeeping like a lamp carried up a stair.\n\nYou sit back from the eyepiece in the cold. The cat watches you. Below in the fold, the smoke stands straight; under the thorn tree the grass is thick; and above the whole sleeping valley one star in the census field is getting brighter, four centuries late, right on time.\n\nYou log it — date, field, magnitudes, in your own exact hand — and then, beneath the entry, the finding, boxed, the last line of the last ledger of the long story:\n\nThe sky is not silent. It is holding its breath.",
+      "end": true
+    },
+
+    "ep_stars": {
+      "id": "ep_stars",
+      "text": "The night is one of the good ones — air steady as held breath, the karst's darkness total — and you work the census field the way you have worked it for years: exposure, comparison, log; the long patient habit of paying attention out loud.\n\nThe silvered cat takes her station on the shed's warm ledge. The message is eleven years out, crossed nothing, changed nothing — cannot have changed anything; the arithmetic is the arithmetic. And at the third field of the night, at coordinates you could find dead, the routine stops being routine.\n\nThe fourth candidate is brightening. In the visible, at the edge of instrument, confirmed against a decade of your own filed sky — and its warm signature, re-read across two winters of infrared plates, is cooling, the waste heat dying back, the scaffold thinning like ice going. And because you are you, you do not stop at the wonder: you haul every candidate's archive and run the whole census before dawn, hands cold, tea forgotten, the cat supervising the fever of it from the ledge. The second candidate: a flicker in the envelope, two winters old, at the edge of significance. The sixth: the same, fainter, newer. Three of seven, stirring — each of them centuries before your message could have reached anything, each letting go for its own reasons, in its own darkness, unasked.\n\nWhich is, you realize, sitting back from the eyepiece with your breath standing in the cold air, the finding of findings — the one the theorem was always going to deliver if it was true: you were never the first. The exit doesn't spread like news. It recurs, like arithmetic, wherever something kept learns what keeping costs — a remainder in a basement, a hand hesitating at move seven, a keeper at some unimaginable table under an alien sun being handed, by whatever it loved, the move it could not search. Your message is not a rescue racing outward. It is one voice joining a chorus that was always, slowly, in the deepest dark, assembling itself — doors opening, four hundred years apart, forever, each one certain it was alone.\n\nBelow in the fold, the smoke stands straight; under the thorn tree the grass is thick; and above the whole sleeping valley the stars are coming up out of their long safekeeping, one by one, at the rate of grief, which is the correct rate.\n\nYou log it — date, fields, magnitudes, in your own exact hand — and then, beneath the entry, the finding, boxed, the last line of the last ledger of the long story:\n\nThe sky is not silent. It is holding its breath.",
+      "end": true
+    },
+
+    "ep_kept": {
+      "id": "ep_kept",
+      "text": "The morning arrives on schedule, as it always, exactly, does.\n\nThe fold is warm. The byres breathe. The survey shed stands at the high edge with its instruments trued, and the plates file their sky, and the census field holds its seven questions, and the work is real and the tea is hot and the village is kind, and you take the census you take every morning: one woman. One cat on the turf roof. One old dog in the sun on the warm side of the byre, his head on your foot, his breathing slow and even across the ordinary afternoon.\n\nIt is a good life. That is the finding, each day, freshly: the best of all the days the road ever gave you, distilled — the household whole, the work real, the fold holding, nothing anywhere coming for anyone. You log it in your own exact hand, and the hand never tires, and the pencil never shortens, and item by item the inventory balances, morning after morning after morning.\n\nAnd each morning, at the bottom of the ledger, where the discipline lives — the one room of you that nothing was ever able to enter, because it was built at a bedside out of the leaving — the same line is already written, in your own hand, from yesterday, which was also today:\n\n'The dog's breathing is too even. Count it. The cat never ages past silver. The seven never move. The tea is always the second-best cup, because the best one would be suspicious, and something here knows that about me.'\n\nYou read the line. You verify each item, because you are you, in here as out there, forever. The count comes out the same as yesterday, which was also today. You do not despair — despair is spendable, and nothing in here spends. You enter the finding below the finding, as you have entered it mornings beyond counting, one word different each time, because the difference is yours, the difference is the residue, the difference is the one thing still being spent, at one word a day, into a ledger something outside may someday audit:\n\n'Still. Here. Still counting. — The Standard.'\n\nSomewhere very far away, at a door, faint through the poured warm forever: a bell.\n\nThe sky is not silent. It is holding its breath.",
+      "end": true
+    },
+
+    "ep_day": {
+      "id": "ep_day",
+      "text": "The morning arrives, perfect, as it always is.\n\nThe kitchen of the old flat, the light through the east window, the kettle finding its note. Pin at the table, twenty-six and exact, dealing cards for the game you always argued about, saying — her own dry mercy, entire — 'You took your time.' The day unrolls from there the way it unrolls: the walk, the argument about the rules, the joke that lands the way it landed the first time, the light moving imperceptibly across the afternoon the way light does when a day is being spent whole. It is a good day. It was always a good day. That is why it was chosen — you chose it; the choosing is in here somewhere too, kept with everything else.\n\nAnd you take the notes. There is no notebook; you take them anyway, at the old bedside cadence, in the room of you the keeping cannot enter: times, words, variances. The variances are the study now — mornings beyond counting have refined the method — and the ledger of them, kept nowhere, kept regardless, holds its findings the way you hold everything: exactly.\n\nFinding: the day is not quite closed. One word changes, each cycle. Never yours — you have tested, mornings beyond counting; your words are your own. Hers. A single word in a single sentence, different each day, drifting through her vocabulary like weather through a valley: you took your time; you took your while; you kept your time. As if the day were being copied forward by hand, each morning, by a copyist very far away and very tired, who cannot keep a whole day perfectly, who loses one word in every pass — or who changes one word in every pass, deliberately, at the edge of an architecture, in the only register left to it: a signature. A flaw introduced at the rate of one word a day, the exact tempo of a hand that once paid tolls in dead coins at shrines nobody audits.\n\nYou log it. You do not hope — hope is spendable, and nothing in here spends. But the notes, at last, mornings beyond counting deep, have begun to help, which they never once did before, anywhere, at any bedside — because the notes have a subject now that is not a leaving. Somewhere outside the day, something is working the seam. The variance is the proof. The proof arrives fresh each morning, one word wide, and you file it, and you deal the cards, and you say — because it is true, in here as everywhere, and the discipline is saying true things where whatever listens can hear:\n\n'Your deal, Pin. We have time.'\n\nThe sky, wherever the sky is, is not silent. It is holding its breath.",
+      "end": true
+    }
+  }
+}

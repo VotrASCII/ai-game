@@ -1,0 +1,163 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "West is work, and you had missed work.\n\nThe corridor's grain runs against you now and stays run: honest fords, honest weather, prices that don't know you. It is slower and wetter and better, and the household finds its road-hardness inside a week — B's pace shortens but steadies, K abandons the basket for the pack's summit full-time, and you get, for the first time since the storm, whole days that belong to nobody's arrangement. You spend them on the two ledgers you carry: the logs, and the sky.\n\nThe sky is the reason for the route. You are walking toward the Spine — the high karst country two counties west where the air dries out and the nights go black as spilled ink, where the old world kept an observatory on the mountain called the Candle because the old world, whatever else it wasted, knew where its darkness was. If the dome is standing and the optics are salvage, you can resolve the seven candidates properly. If not, the darkness alone is worth the boots: your portable kit and a month of black nights would settle half the column of questions in the plate summaries.\n\nThe road west, meanwhile, has its own economy, and by the second week you are inside it: drovers, carters, chapmen, the whole slow commerce of a world re-learning distance. And at the crossing of the Ost road and the old salt way, where a stone bridge takes tolls in kind and the tolls make markets, you find the bridge fair mid-swarm — thirty stalls, a hundred arguments — and at the center of the arguments, seated at a plank table with a queue longer than the toll-taker's, a woman the color of leaf mould, writing.\n\nHer again. The fork woman. The satchel of books sits open at her boots, and the queue is not buying anything. The queue is testifying.",
+      "choices": [
+        {
+          "text": "Join the queue. Whatever service she sells, the buying of it is the fastest lawful way to sit across a table from Personnel, line two, and read her at conversation range.",
+          "next": "the_queue"
+        },
+        {
+          "text": "Work the fair first and buy her reputation before you buy her time — a woman with a queue has witnesses, and witnesses priced her long before you arrived.",
+          "next": "her_reputation"
+        }
+      ]
+    },
+
+    "her_reputation": {
+      "id": "her_reputation",
+      "text": "The fair prices her readily; she is, you gather, one of its institutions.\n\nThe Notary, they call her, and the trade name is exact: she witnesses. Sales, loans, boundary settlements, marriages, apprenticeships — anything two parties want made permanent in a world that lost its registries, she takes down in her small book in a hand — three separate stall-keepers volunteer this, with the pride of locals describing a landmark — that has never once been successfully disputed. Her memory is spoken of the way you'd speak of a bridge's rating: a fact of infrastructure. She has been working the western roads four years — you stop flinching at the number; it is simply the number now — and her circuit is regular, and her judgments, when parties ask her to arbitrate as well as witness, are accepted, because they are correct, and correctness this consistent has stopped surprising anyone but you.\n\nAnd her fee is the scandal and the institution both: she names one, always — a hen, a knife-sharpening, a measure of salt, scrupulously proportionate to the trade witnessed — writes it in the book as owing, and never, in four years, on any road, in any village anyone can name, collects. The fair's theory divides by temperament: penance, madness, some order's vow, a rich woman's hobby. The wool-factor you buy tea from has the best version, delivered low, with a glance down the queue: 'It's not that she forgets, mind. Ask her and she'll read you your debt to the quarter-ounce, year and day. She keeps the owing. She just won't take the paying.' He blows on his tea. 'My mother says she's collecting something else.'\n\nYour pencil, in your pocket, against your sternum: a system that documents everything, prices everything, and takes nothing. A ledger of debts maintained perfectly and never called. You have met this bookkeeping before — you married it, or buried it, or never got to do either; the tellings converge — and it was how he loved: everything witnessed, everything priced, nothing ever asked.",
+      "choices": [
+        {
+          "text": "The queue, then, at conversation range — with her reputation in one pocket and the second log in the other.",
+          "next": "the_queue"
+        }
+      ]
+    },
+
+    "the_queue": {
+      "id": "the_queue",
+      "text": "The queue moves at the speed of truth, which is slower than commerce but steadier, and you spend it profitably: watching her work.\n\nShe witnesses a heifer sale, a loan of seed grain against a share of harvest, a boundary walked out by two brothers who have clearly walked it in anger for years and want it done arguing about. Her method never varies. She hears both parties without expression; asks two questions — always two, you count across five transactions, and each one lands where the trade's future dispute is already germinating; writes; reads back what she wrote in a level voice; has both parties touch the page. Then she names her fee, enters it as owing, thanks them, and does not collect. The brothers try to pay — the whole fair has clearly tried to pay for years; it has become a game the road plays against her — and she receives the attempt the way stone receives weather.\n\nB lies at your feet in the queue with his chin on his paws, ears tracking her voice, tail giving one slow sweep each time it comes. K, on the pack, has not run her engine — you note it twice, boxed: at the fork she burned at this woman; today the engine idles, one ear back, watching. As if the reading needed range to hold. As if, up close, the cat's certainty ran into something the certainty couldn't grip.\n\nThen it is your turn, and you sit down across the plank table, and the Notary looks at you with no surprise whatsoever — files your face the way she filed the fork, receipt acknowledged — and before you can spend the opening you have been composing for an hour, she speaks first.\n\n'You'll want a witnessing,' she says. 'They always do, the ones who come to read me. Choose a thing to make permanent, and we'll both get what we sat down for.'",
+      "choices": [
+        {
+          "text": "Make it real and make it small: have her witness the household itself — one woman, one dog, one cat, names and descriptions, a family entered in a book that has never been disputed. Watch what her hand does with B's name.",
+          "next": "witness_household"
+        },
+        {
+          "text": "Make it the case: put the phased logs' existence on her table — not the tube, the fact of it — and have her witness that you are looking for their author. Say it plainly, and watch the two questions she asks.",
+          "next": "witness_hunt"
+        },
+        {
+          "text": "[The Board 3] Before you spend your turn: stay in the queue one more transaction and solve her method properly. Two questions, every trade, each landing where the future dispute germinates — that is not clerking, that is search, and search has a structure worth reading.",
+          "next": "two_questions",
+          "skillRequires": { "board": 3 }
+        }
+      ]
+    },
+
+    "two_questions": {
+      "id": "two_questions",
+      "text": "You cede your place twice and watch four more transactions with the board-eye, and her method opens under analysis like a well-annotated game.\n\nEvery trade is a tree. You learned to see them at a folding table in another life: the branching future of any agreement, most branches trivial, a few load-bearing, and somewhere in the crown one or two nodes where the whole structure will someday be tested — the harvest that fails, the heifer that sickens, the boundary oak that falls across the line. A human clerk writes down what the parties say. An arbiter with a search running writes down what the parties will fight about, and you watch her find it, four times in four trees, in two questions each, with no wasted probe.\n\nTwo questions is the tell. Not one — one is a guess. Not three — three is a search still running. Two, every time, means the tree is already solved when she sits down, and the questions are not exploration; they are confirmation, the way a master checks a memorized line for a transposition before playing the book move. She is not clever, you write, cold down your spine at a bridge fair. She is read-ahead. Every trade on this road was analyzed before the parties knew they were trading.\n\nAnd then the second finding, which is the one you keep turning over all afternoon: she confirms anyway. A thing that has solved the tree does not need the parties' answers — but she asks, and listens, and once, at the seed-grain loan, the borrower's answer surprises her (a grain of variance at the eyebrow; you were watching for exactly that grain) and she strikes what her pen had begun and writes the world's version instead of the model's. Whatever she runs on prefers being corrected to being right. You know exactly one bookkeeping tradition with that property, and you have slept beside it, or across a continent from it, depending on the telling.\n\nSolved trees, held open for the world to amend. It is the most careful epistemology on this road, and it is wearing a plain woman at a plank table, entering fees it will never collect.",
+      "choices": [
+        {
+          "text": "Now your turn at the table — the household, entered permanent: one woman, one dog, one cat, in the book nobody disputes.",
+          "next": "witness_household"
+        },
+        {
+          "text": "Now your turn at the table — the hunt, witnessed: you are looking for the clerk of an impossible ledger, and you want it on the undisputed record.",
+          "next": "witness_hunt"
+        }
+      ]
+    },
+
+    "witness_household": {
+      "id": "witness_household",
+      "text": "'A household,' you say. 'For the permanent record. One woman, traveling. One dog, old, gold gone grey, government of the household. One cat, young, belled, border control. I want us in the book that doesn't get disputed.'\n\nIt is the first time in five transactions that her method varies. Not much — a grain's worth, a single tooth slipping on a gear — but you are watching for exactly that grain, and it comes at the dog. She writes your description of yourself without looking up. She writes the cat with, you would swear, the ghost of professional approval. And then B, who has been waiting his turn with the patience of the very old, gets up, crosses to her side of the table as if summoned, and sets his chin on her knee, and the Notary's pen stops.\n\nStops, and hangs, and the hand holding it makes a small adjustment of grip you have seen ten thousand times across a chessboard and a kitchen table and a deathbed or a wedding or neither, depending on the telling — the regrip of a hand that has just found the writing suddenly heavy. She looks down at the grey head on her knee for a long moment. The fair goes on shouting around the three of you and the silence at the plank table has walls.\n\n'Government of the household,' she repeats, finally, and writes it, and her voice is level and her hand is level and something underneath both has had to be leveled, an act of engineering you observed in real time. 'Description: gold gone grey. Old fellow.' The pen hesitates — hesitates — and adds, in the undisputed hand, three words that are not yours and were not asked for: 'Known to me.'\n\nShe reads it back. You touch the page; B, guided, touches it with his nose, which she enters as his mark with total seriousness. Her fee, for a household witnessing: 'One fish. The good kind.' Entered as owing. Not collected.\n\nKnown to me. You walk away from the table with the household made permanent in the world's most trusted book, and those three words burning in your sternum like a coin in a waymark cup.",
+      "choices": [
+        {
+          "text": "Camp at the fair's edge tonight. She works the bridge until the market breaks; there will be an after, when the queue is done and the books are being wrapped in oilcloth, and the after is when people are findable.",
+          "next": "after_hours"
+        }
+      ]
+    },
+
+    "witness_hunt": {
+      "id": "witness_hunt",
+      "text": "'Witness this,' you say. 'I possess documents — call them ledgers — written after their author's death, in their author's hand, numbered from a calendar their author never used. I am traveling to find the clerk. If I die on the road, I want it on a page nobody disputes: somebody was looking. Somebody had read the books and was coming to ask about them.'\n\nThe fair shouts around the plank table. The Notary does not write. For the first time in six transactions, she sets the pen down — a motion with the weight of a door closing gently — and looks at you, and you receive, at conversation range, the full attention of whatever she is, and it is like standing in the dry corridor of a split storm: held, and aimed at.\n\n'Two questions,' she says, as she always says. 'First: the hand. You say the author's hand. Hands are learned, copied, inherited. What is your standard of comparison, and would it convince a stranger, or only a widow?'\n\nThe question lands where the dispute germinates. You have asked it of yourself for years; you give her the honest answer: the Archivist folio, letterform by letterform, three seasons, three verdicts, and beneath the answer the unsayable second standard, which is a lifetime, in most tellings, of watching that hand think.\n\nShe nods, once, and takes up the pen. 'Second question.' The pen touches the page and waits, and her eyes stay on yours, and the second question, when it comes, arrives in the same level administrative voice as every other word you have heard her spend, and is: 'When you find the clerk — and the book will show I asked it exactly this way — what does the looker want: the accounts corrected, or the keeper kept?'\n\nAnd you sit with your mouth open at a plank table in a bridge fair, outread by two questions for the first time since a basement full of red thread, because you do not know, and she watched you not know, and she writes — reading it aloud as her hand moves, level as water — 'Witnessed: she is looking. Reason: under audit by the principal herself.'\n\nHer fee, for a hunt witnessed: 'One answer, when you have it.' Entered as owing. 'I won't collect,' she adds, wrapping the book. 'I never do. But you'll want to have it ready. The wanting-it-ready is the fee.'",
+      "choices": [
+        {
+          "text": "Camp at the fair's edge tonight. There will be an after, when the queue is done — and you have a question of your own that wants asking away from the queue's ears.",
+          "next": "after_hours"
+        }
+      ]
+    },
+
+    "after_hours": {
+      "id": "after_hours",
+      "text": "The fair breaks at dusk in the usual slow surf of canvas and cursing, and you find her where the after-hours version of a person is always found: at the edge of the light, past the last stalls, on the bridge's downstream parapet, wrapping her day's books in oilcloth by feel while the river runs dark underneath.\n\nShe hears the household coming — or the bell announces it — and speaks without turning, in the level voice, to the water: 'Six books.' A square of oilcloth folds; a cord draws tight. 'You were going to ask what I do with the finished ones. It's the only question the road never asks me, and you're the kind that asks the unasked ones. So: six books a year, roughly. Forty years' worth, if you count how I count.' She turns, then, and sits on the parapet with the day's volume still unwrapped in her lap, and in the last of the light her face is ordinary and tired and entirely opaque, a well-kept door. 'They go in a dry cave in the karst, above the salt way. Registered, sequenced, safe. Every trade, every settlement, every household on the western roads, four years running.' A pause with engineering under it. 'And I could not tell you why. It costs me three days' walking a quarter. Nobody reads them. Nobody knows they're there to read. I keep a record no one asked for, of everyone, against a day nobody has named for me — and on my honest nights, walker, I will tell you what I told the dog at the fork: nobody ever asks the reasons for me either. I write. It's what I have instead of the reasons.'\n\nShe opens the unwrapped book, then — today's — and thumbs backward through it, past the heifer and the seed loan and the brothers' boundary, to a page much older than today, a page the book falls open to the way books fall open at the pages that own them, and she looks at it for a moment, and then at you.\n\n'I write other things too,' she says. 'Between the witnessings. The same one, mostly, over and over, for four years, and I don't know whose it is. My hand has a grief in it the way some hands have a tremor.' She holds the book out across the dark, open to the page. 'You've an auditor's eye and a widow's standard of comparison. I'd take it as payment' — the level voice, level, level — 'on everything the road owes me, if you'd read it and tell me whether it's anyone's.'",
+      "choices": [
+        {
+          "text": "Read it. Take the book in both hands, angle the page to the last light, and give the grief in her hand the thing it has been writing toward for four years: a witness.",
+          "next": "read_the_page"
+        },
+        {
+          "text": "Decline — gently, and honestly: some pages are doors, and you have a rule about doors on the road at night. Hand the moment back to her with its seal unbroken.",
+          "next": "decline_page"
+        }
+      ]
+    },
+
+    "read_the_page": {
+      "id": "read_the_page",
+      "text": "You take the book in both hands and angle the page to the last of the light, and you read, and the world goes very quiet from the outside in, the way it does when the thing arriving is already here.\n\nIt is an inventory. Of course it is an inventory — everything on this road that loves you speaks in inventories. Item: one afternoon, late spring, a fourth-floor room with the windows painted shut. Item: one folding chair, set at the bedside, occupied by a sister who has stopped being able to hold a pencil, so the visitor holds it. Item: one notebook, ruled, in which the visitor records — because recording is the only thing left with any load in it — the times of the episodes, the words lost per hour, the backward march of the birthdays as a grown woman becomes a girl becomes small becomes — the hand does not flinch; the hand is the Notary's undisputed hand; the grief is in the selection, in what the pen chose to keep — item: one hair ribbon, found after, too small for anyone who had lived there. Item: one question, asked by the sister, near the end, in a child's grammar, of the person taking notes: whether the notes would help. Item: the answer given — yes — and, in parentheses, in a hand that has carried it four years without knowing whose it was: (the first lie she ever told her).\n\nPin. The room, the chair, the ribbon, the lie. Your afternoon. Yours — except for one impossible vantage, one wrongness that is the whole revelation: this inventory watches you. Its subject is not the dying girl; you have written that inventory, you know its items. This one records the note-taker: the set of your shoulders, hour by hour; the pencil changing hands when yours cramped; the exact minute you started lying with your posture for your sister's benefit. It is your worst afternoon, witnessed from the doorway — and no one living stood in that doorway, and the one who did was not living, was not there, was not anywhere yet, was a model in a workroom being tuned, even then, on the coherence of a woman he could not stop measuring.\n\nYou close the book. The river runs. The Notary watches your face with four years of not-knowing in hers, and you give her what you'd want, which is the truth, level:\n\n'It's mine. The afternoon is mine, and the eyes are — someone who loved me. You've been carrying a page of him.' Your voice does the engineering it needs to. 'It's anyone's. It's the realest thing in your books.'",
+      "item": {
+        "id": "recog_notes",
+        "name": "The Doorway",
+        "description": "You read the grief her hand has carried four years and named it: your worst afternoon, inventoried from a doorway no one living stood in. You told her it was real, and whose. Witnessed, both directions.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Sit with her on the parapet while the dark finishes arriving — two keepers of unaskable records — and then ask your navigation question: the karst, the Candle, the way up to the dark.",
+          "next": "parapet_night"
+        }
+      ]
+    },
+
+    "decline_page": {
+      "id": "decline_page",
+      "text": "'No,' you say, and you make the no as gentle as its edges allow. 'Not tonight, and maybe not ever, and not because I don't credit it. Because I do. I've buried people out of pages like that, and I know what they cost the reader, and I have a rule about paying tolls in the dark: I don't, when I can't see the bridge.'\n\nThe Notary holds the book out one heartbeat longer — the stillness of a system finishing a transaction it had already priced both ways — and then draws it back, and wraps it with the others, and the cord draws tight, and whatever her face does in the last of the light is done privately, behind the well-kept door.\n\n'A rule about tolls,' she says, level. 'He'd have — ' and stops. Not dramatically; administratively, the way her pen stopped at the dog: a clause entered and struck in the same motion. 'People with rules last longer on these roads,' is what she finishes with, and it is not what she started.\n\nYou sit a while on the parapet anyway, the two of you, because declining the page was not declining the woman, and you want that distinction on the record between you. The river runs dark. B settles across both your feet impartially, a bridge of dog, and the Notary rests one hand on his grey flank the way tired people rest a hand on a warm wall — and you watch her hand rise and fall with his breathing, four years of writing in it, and a grief you did not read, and you think: whatever she is carrying, she offered it to exactly one person on this whole road, once, at dusk, and was refused, and entered the refusal as paid in full.\n\nSome audits you get wrong in real time and cannot re-run. You have a page in the second log for those. It is the longest page.",
+      "choices": [
+        {
+          "text": "Ask your navigation question before the night closes: the karst, the Candle, the way up to the dark country where her cave of books and your census both point.",
+          "next": "parapet_night"
+        }
+      ]
+    },
+
+    "parapet_night": {
+      "id": "parapet_night",
+      "text": "You ask about the way west, and the Notary gives you the karst the way she gives everything: witnessed, exact, and slightly to the left of what you asked for.\n\nThe salt way climbs out of the river country in three days, she says, and the Spine takes a week to cross by the drove passes. Water is the discipline up there — she names the tanks and the failure seasons of each, a maintenance record delivered from memory. The Candle stands where it always stood; the dome, last she passed, was whole. 'There's a keeper of sorts on the mountain,' she adds. 'A Continuum man, or was. He'll be glad of you. He is glad of no one, so expect the gladness to arrive as complaint.' The pen-hand moves as she talks, involuntary, indexing air.\n\nThen she pays you. That is the only verb for what happens: she looks at the household bedding down at the bridge-end — the dog, the bell, the tube of ledgers against your pack — and something in her runs the arithmetic of what tonight was worth and settles the account unasked.\n\n'You're hunting the clerk of an impossible ledger,' she says. 'So attend to the impossible ledger-keepers you meet. Four of us work these roads, walker. The ferryman on the eastern water, who pays himself in crossings. Me. A provisioner on the salt way — you'll know his store; your cat won't cross its sill. And a setter of chess problems, up in the karst towns, who loses for a living.' The level voice, to the river, reciting an index she has never once read aloud. 'We've never met, the four of us. We keep each other's circuit like the seasons keep each other — by never arriving together. I know their fees the way I know my own: named, entered, never collected. And I know one more thing, because I am a woman who writes everything down and reads what she wrote: all four fees are the same fee, worn different. Passage, record, provision, practice. Care, priced honestly, and never once called in.'\n\nShe stands, shoulders the oilcloth bundle, and looks down at you — at the exact center, you realize, of four years of her circuit — and delivers the last line of the day's book like a verdict already touched by both parties:\n\n'Something keeps us the way I keep my books, walker. Registered, sequenced, safe, and never read. Go up the mountain and find out what it's saving us for.'",
+      "choices": [
+        {
+          "text": "Morning, and the salt way west, with the index of four in the log and the Spine standing on the horizon like a sentence waiting for its verb.",
+          "next": "salt_way"
+        }
+      ]
+    },
+
+    "salt_way": {
+      "id": "salt_way",
+      "text": "The salt way earns its climb honestly, and the household pays it in the household's several currencies.\n\nYou pay in shoulders and water discipline: the Notary's tank schedule proves exact — of course it proves exact — and you walk tank to tank through a country going up in steps, river green giving way to thorn, thorn to the first grey teeth of the karst, the air drying out day by day until your lips crack and the nights snap with cold and the stars come down close and hard like an audit. B pays in mornings: the first hour of each day is stiff now, a slow parliamentary unfolding you watch without watching, and you shorten the early stages to match him and let him pretend, and he lets you pretend you aren't, and the treaty holds because neither party reads it aloud. He walks himself warm by the second hour and does the rest of the day like a professional. You add a line to the evening routine — his hips, both hands, the way the offer's third page specified by weight and quarter — and you hate that the document was right about what he needs, and you do it anyway, nightly, because the hating is yours and the hips are his.\n\nK pays nothing and collects everywhere, as is the way of her nation. The karst suits her: a country made of ledges, crevices, ambush architecture and high ground. She ranges off-column fifty meters at a time now, a small brindle sovereignty annexing outcrops, and twice she earns her whole passage — once freezing the column with the flat-eared fuse a full minute before a rotten shelf lets go across the path behind you, once simply refusing a water tank, sitting on its rim like a lid, until you haul the cover and find the dead marten fouling it and draw from the spare instead.\n\nBoth alarms true. No engine anywhere — the high country is empty of counterfeits, empty of arrangements, empty of everything except distance and cold and the plain expensive world. You had forgotten what it costs. You had forgotten what it buys.\n\nOn the sixth evening the way crests the first pass, and the Spine opens ahead in ranked grey waves, and far off on the highest shoulder, small and exact against the last light, stands a dome.",
+      "choices": [
+        {
+          "text": "The first high camp, then, under real darkness — and the audit before sleep: rule the Notary's chapter closed and set the mountain's agenda.",
+          "next": "waypoint_two"
+        }
+      ]
+    },
+
+    "waypoint_two": {
+      "id": "waypoint_two",
+      "text": "The salt way climbs, and the household climbs with it, and at the first high camp — river country unrolled behind, the Spine's grey teeth ahead — you convene the audit under the first properly dark sky in weeks.\n\nThe committee of one, plus government, plus border control. B lies along your left side, working through his supper's aftermath with an old dog's thoroughness. K sits on the pack's summit facing the mountains, ears making the barometer shape, bell dimmed under her chin. You rule the page and write the campaign's new facts in the compressed hand.\n\nOne: Personnel has a roster, and the roster has an index, and the index was recited to you at dusk by one of its own entries. Four. Ferryman, Notary, Quartermaster, Problemist — passage, record, provision, practice. Fees named, entered, never collected: his bookkeeping, worn four ways. They do not meet. They do not know what they serve. They are known by dogs and disputed by cats, and one of them carries a page of your worst afternoon written from a doorway no one living stood in.\n\nTwo: the grief is load-bearing. Whatever built the four built them out of someone — and the someone leaks. At the fork it leaked candor to a dog. At the plank table it leaked three words into an undisputed book. At the parapet it leaked an entire afternoon, four years running, into the hand of a woman who cannot say whose it is. The minder's median voice knows non-median things, and its hands write griefs they cannot source. Models drift toward their tuning. You know this the way you know your own trade's oldest embarrassment: he built his standard out of his own conventions, and the conventions are surfacing, like a watermark coming up through cheap paper as the light moves.\n\nThree: the mountain. A whole dome of proper darkness; a Continuum keeper whose gladness arrives as complaint; her cave of registered books somewhere in the same karst; and overhead, seven warm dark questions that a lowland building answered in miniature. The census is next. Count what the sky is keeping. Then make the count explain the keeper.\n\nYou rule the page off and sit a while in the honest cold, one hand on the dog, watching your candidates ride the black.",
+      "waypoint": {
+        "points": 4,
+        "label": "Waypoint II — The Index of Four"
+      },
+      "end": true
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "id": "start",
+      "text": "The road east is two days of good walking, and the household does it in three, because the household contains a cat.\n\nK rides the pack basket in the mornings, holds court on your shoulder across the high open stretch — claws through the coat, bell against your ear, surveying the country like an inspector with unlimited jurisdiction — and insists on walking the last hour of each day personally, at cat pace, which is a pace with appointments in it. B matches the pace without being asked. B has walked at heel his whole life; now, grey-muzzled, he walks at heel to a kitten, and if he has noticed the demotion he has filed it under honors.\n\nYou log the country as you cross it, because you are you. Trade is moving: carts of salvage, wool going one way, dried fish the other, the small stubborn arithmetic of people provisioning a life on the far side of the end of the world. You price what passes out of old habit. The habit says the roads are busier than last year. Whatever else the world is doing, it is compounding.\n\nAnd twice — you write both down, with bearings — the road is kind in a way roads are not. A washed-out cutting with exactly one dry causeway through it, packed and firm, as if graded last week for a wedding. A dead orchard where every standing tree leans away from the track, the whole grove combed by some considerate gale. Small things. Nothings. The kind of nothing you would never have noticed before the storm walked around your house, and now notice the way you'd notice a stranger's fingerprints on your instruments.\n\nThe minder does not take days off. The road east has been prepared.",
+      "choices": [
+        {
+          "text": "Prepared roads cut both ways: whatever smooths your path can read your route. Change nothing visibly — but start keeping the second log, the private one, of every kindness the country shows you.",
+          "next": "second_log"
+        },
+        {
+          "text": "Test it. Leave the graded causeway and take the hard northern lip of the cutting, boots in the mud, just to see what the world does about a charge who declines the arrangements.",
+          "next": "test_mud"
+        }
+      ]
+    },
+
+    "second_log": {
+      "id": "second_log",
+      "text": "The second log lives in your breast pocket, in pencil, in the compressed notation you invented for chess and repurposed for the world when the world started making moves.\n\nBy the second evening it has nine entries. The causeway. The combed orchard. A dog-leg in the track that detours, for no topographic reason, around a slope you'd have called avalanche-prone. A stream exactly one stride wide at the crossing point and manifestly wider everywhere else. Read singly, each is luck. Read as a column, they are what a column of luck always is — you learned this at a wall of red thread, a lifetime ago — a budget. Someone is spending on you, steadily, in small denominations, the way you'd maintain a road you expected to need.\n\nWhat the column does not contain is as loud as what it does. No entry ever helps you toward anything. Every kindness is lateral: smoother, drier, safer, never faster, never closer. The road is being made comfortable, not short. You sit with that distinction a long time by the second night's fire, because distinctions are where the truth lives, and this one has a shape you don't like: it is the shape of a corridor. Comfort perpendicular to purpose. A hallway is also perfectly safe, everywhere except its ends.\n\nB sleeps against your back. K sleeps on B, rising and falling with the old tide, bell dimmed under one paw — the cat has learned to silence her own announcement, which you note in the first log, the public one, under fauna. In the second log you write: 'It maintains me. Maintenance implies a schedule. Schedules imply a destination.' You underline nothing. Underlining is for questions, and this has stopped being one.",
+      "choices": [
+        {
+          "text": "On to the river. The crossing is where the road's intentions and yours will disagree for the first time — rivers are where corridors show their walls.",
+          "next": "the_river"
+        }
+      ]
+    },
+
+    "test_mud": {
+      "id": "test_mud",
+      "text": "You take the hard lip of the cutting, boots in the mud, on principle. It is terrible. You are entirely satisfied.\n\nIt is also instructive, which was the point. The mud is real mud; the slip you take at the halfway mark is a real slip, arrested by a real and undignified grab at a real root; the world, whatever else it is doing, is not a stage set, and its minder is not omnipotent or not attentive at this scale — or, third hypothesis, and you stop on the lip of the cutting when this one arrives, wet to the knee: it is attentive at exactly the scale it needs. Nothing on the hard route could have killed you. Inconvenienced, muddied, humiliated in front of a cat — yes, amply, and the cat is making the most of it. But the drop was never more than a meter and a half. The root was load-tested. You look back along the ugly honest track you chose and you cannot find, anywhere on it, a way to have died.\n\nThat is not what wild country looks like. Wild country always stocks at least one way to die; that is what wild means. This country has been childproofed.\n\nB arrives at the top by the sensible route, not judging you, constitutionally unable to judge you, followed by K, who is judging you enough for the road's entire population. The bell rings once, editorially.\n\nIn the log you write the finding with cold hands: 'Tested the boundary. There is no boundary at my scale — only at the scale of outcomes. I can choose any path I like, provided all of them are safe. Freedom of route; destiny of destination. Note: this is also a definition of a corridor.'",
+      "choices": [
+        {
+          "text": "On to the river. The crossing is where the road's intentions and yours will disagree for the first time — rivers are where corridors show their walls.",
+          "next": "the_river"
+        }
+      ]
+    },
+
+    "the_river": {
+      "id": "the_river",
+      "text": "You hear the river before you see it, and what you hear is wrong, and you know why before the trees open, because you did the arithmetic two nights ago and have been carrying the result like a stone.\n\nThe storm. Your storm — the one that split on a seam and walked around your grass. Forty-one millimeters in the north gauge, thirty-eight in the south, and none of it abolished: redirected. Conservation is not sentimental. The rain that was told not to fall on you fell somewhere, all of it, plus the interest of two colliding half-fronts, and the somewhere is this watershed, and the river is running brown and heavy and two meters proud of its banks, with whole fence posts going by at the speed of decisions.\n\nThe bridge that used to cross here is years gone — you knew that; everyone knows that; the bridge is why there is a ferry. What you did not know until the trees open is the rest: the ford six kilometers south, the one the wool carts use, is under a meter of moving water. The painter at the low jetty says a barn upstream lost its footing in the night. Nobody drowned, he says, twice, the way people say things they are relieved by and puzzled at. Nobody drowned. The flood came through at four in the morning like an audit and somehow everyone's animals had been restless, everyone's households awake, boots already on.\n\nYou stand on the high bank with your household and read the brown water, and in the second log, later, you will write the entry that Part One of your life with this thing keeps teaching: 'My dry evening, itemized. The rain fell on someone. It always falls on someone. The minder does not delete costs. It relocates them — away from me, onto the watershed — and then it spends more to blunt what it relocated. Restless animals. Households awake. It is managing the externalities of managing me.'\n\nAnd below the entry, boxed: 'What is the load limit of that? And who is billed when it's reached?'",
+      "choices": [
+        {
+          "text": "Down to the ferry landing. One crossing left on this whole reach of river, which means whoever runs it just became the most important stranger in the county — and your only way east.",
+          "next": "the_landing"
+        }
+      ]
+    },
+
+    "the_landing": {
+      "id": "the_landing",
+      "text": "The ferry landing is doing brisk, bad-tempered business.\n\nA dozen parties wait on the cobbled ramp: wool carts, a tinker's van, two families with handbarrows, a drover with sheep who have opinions about water. The flood has made this the only crossing for a day's walk in either direction, and the queue has the special courtesy of people who all know they could be stuck here together for days.\n\nThe ferry itself is a flat-bottomed scow on a cable reeve — a proper high-water rig, the cable strung bank to bank between two dead oaks, the scow crabbing across the current on a bridle. You price the engineering out of habit and the habit comes back impressed: whoever rigged it understood the river. The fall of the cable is set for exactly this flood, not for the river's easy moods; the deadmen anchoring the oaks are new-cut and overbuilt; there is a second bridle, rigged and coiled, for when the first frays. Somebody here does not believe in single points of failure.\n\nThe somebody is poling the scow into the landing now: a big quiet man, forty going on weathered, moving with the unhurried economy of people who work on water. He hands a family down onto the ramp — both hands, each passenger, formal as a customs official — and takes payment from the wool carts in kind, a fleece, a wheel of cheese, counting nothing, weighing nothing, trusting the queue to price itself.\n\nAt your knee, B goes still.\n\nNot the alarm stillness. You know the alarm stillness; you have three growls' worth of it catalogued. This is the other one, the one you have not seen since the world had him in it: the whole old body pointing, tail starting low and building, the front feet doing the small dance of a dog resolving not to run. Then he breaks — old B, dignified B, who has not broken protocol in years — and trots down the ramp past the whole queue, straight to the ferryman, and leans his entire grey weight against the stranger's legs and looks up at him with the face that has no theory about anything.\n\nThe ferryman looks down. 'Well,' he says. 'Hello.'\n\nAnd from the pack basket, low and continuous, K begins to growl.",
+      "choices": [
+        {
+          "text": "Watch the animals. Both of them, closely, before a single word is spent on this man — the household has instruments people don't, and the instruments have just disagreed.",
+          "next": "the_disagreement"
+        },
+        {
+          "text": "Go get your dog, with apologies, the way any traveler would — and use the retrieval as cover to read the ferryman up close: hands, gait, what he does with a stranger's apology.",
+          "next": "retrieve_b"
+        }
+      ]
+    },
+
+    "the_disagreement": {
+      "id": "the_disagreement",
+      "text": "You stand at the top of the ramp and let the instruments run.\n\nB: pressed against the stranger's legs, leaning his whole census of a life on him, tail sweeping slow and certain. You have watched this dog meet perhaps two hundred people. He is courteous to all of them, warm to a dozen, and he leans on nobody. Leaning is reserved. Leaning is a currency he has spent, in your observed record, on exactly two humans, one of whom is you, and the other of whom is — the sentence files itself before you can stop it — unavailable, in six different ways, depending on the telling.\n\nK: flat-eared in the basket, pupils gone to slits, growl running like a small engine, every hair she owns underwriting the opinion. Not the storm-growl — you have that one catalogued now, the west-facing one, the incoming-seam one. This is aimed. This is at him. The cat who bit a forty-kilo dog on the nose within a minute of meeting him, who has feared nothing on three days of road, has looked at a mild man handing families off a boat and concluded: wrong.\n\nOne animal says: family. The other says: counterfeit.\n\nYou write the two readings one above the other in the second log, and the pencil slows, because you can feel the finding coming the way you used to feel mate coming — not seen yet, but forced, somewhere in the position. There is exactly one hypothesis that satisfies both instruments. Something that smells like family. Something a dog's nose files under his person and a cat's whole uncanny-detector files under forgery. A copy, good enough to fool love, not good enough to fool suspicion.\n\nYou do not write the hypothesis down. Not yet. It is too expensive to be wrong about, and too expensive to be right about, and the ferry is loading.",
+      "choices": [
+        {
+          "text": "Down the ramp. Whatever that man is, he is the only way east, and you have never once learned anything by staying at the top of a ramp.",
+          "next": "the_ferryman"
+        }
+      ]
+    },
+
+    "retrieve_b": {
+      "id": "retrieve_b",
+      "text": "You go down the ramp wearing the apology every dog owner keeps folded in a pocket, and you use the whole transaction as an instrument sweep.\n\n'He's not usually—' you begin, and stop, because it is a lie, and you don't spend lies where you're gathering data.\n\n'He's fine,' the ferryman says. He has not moved his legs, careful of the old dog's balance — noted — and his hand has gone to exactly the spot behind B's left ear, first try, no search, the spot it took you a month to find — noted, boxed, underlined. 'Good old fellow. You can feel where his weather sits, this time of year.' He works the ear. B subsides into him like a landslide given permission. 'Someone better with animals would tell you his hips have two more winters of road in them. I'd just say go easy on the cobbles.'\n\nSomeone better. You log the shape of that sentence — self-erased in the act of speaking, expertise disclaiming itself in real time. You knew a man who could not accept a compliment without routing it to a hypothetical better stranger. You knew him very well, in most tellings.\n\nUp close: river-cracked hands, boots resoled with cart tire, a gait — when he steps back to gesture at the queue — unhurried in a way that lands somewhere old in you, a rhythm your body files before your mind can subpoena the file. Nothing wrong with him. Nothing. He is the most nothing-wrong-with-him man on this whole bank.\n\nIn the basket on your back, K is a low continuous engine of dissent.\n\n'You'll be wanting the crossing,' he says, to you, though a dozen parties queue ahead of you. It is not a question. He is already looking at the water like a man planning a passage he has, for reasons unstated, already decided to make.",
+      "choices": [
+        {
+          "text": "You'll wait your turn like anyone. Say so — and watch what a man who runs the county's only crossing does when someone declines to be special.",
+          "next": "the_ferryman"
+        }
+      ]
+    },
+
+    "the_ferryman": {
+      "id": "the_ferryman",
+      "text": "The ferryman works the queue in order, and the order quietly stops applying to you.\n\nIt is deftly done. The drover's sheep need the full deck — you understand, of course. The tinker's van wants the morning's slack water — safer, everyone nods. Somehow, without one visible favor, the parties ahead of you resolve into later sailings, and the sun is still high when the scow noses the ramp and the big man looks at your household — woman, old dog, basket of dissent — and says, 'Yours is an easy load. We'll have you over within the hour.'\n\nYou watch him rig for it. He rechecks the bridle he has already checked. He walks the cable with his eyes, twice, bank to bank. He glances at the brown water upstream the way a chess player glances at a clock — not worried, informed. Every move says: this crossing, of all today's crossings, will not be permitted to contain surprises.\n\n'What do I owe you?' you ask, at the ramp. Around you the queue has paid in fleece, cheese, tinware, a coil of good rope.\n\n'Nothing,' he says. Easily. Too easily — the ease of a thing decided long before you asked. 'Flood rates are robbery, and you've animals to feed. Call it luck.'\n\nCall it luck. Behind your sternum, the second log opens itself to the column where luck is entered as expenditure. Every kindness on this road was anonymous — weather, gravel, geometry. This one has a face, and the face is refusing to be paid, and B is leaning on its legs like the past come back at high water, and K, from the basket, keeps her engine running: counterfeit, counterfeit, counterfeit.\n\nWhoever — whatever — is minding you, you have just met either its employee, or its hand.",
+      "choices": [
+        {
+          "text": "Refuse the free crossing. Make him accept a price — a real one, named out loud, weighed in his hand. In this world the unpaid debts are the leashes, and you will not board one, and besides: watch what taking payment does to a man who may not be built to receive.",
+          "next": "fare_paid"
+        },
+        {
+          "text": "Take the kindness at face value. The county is full of decent people; suspicion of decency is how the broken years hollowed everyone out, and you refuse to be hollowed. Board, thank him, watch him anyway.",
+          "next": "fare_free"
+        }
+      ]
+    },
+
+    "fare_paid": {
+      "id": "fare_paid",
+      "text": "'No,' you say. 'Nothing is what strangers charge each other in stories. Name a price or I'll name one.'\n\nHe looks at you for a moment with an expression you will be a long time cataloguing — surprise, yes, but under it something that surprise is too small a word for: the look of a system encountering an input it has no column for. The queue paid. You insist on paying. The mechanics are identical; the meaning is opposite; and the meaning visibly will not parse.\n\n'The crossing's easy today—' he begins.\n\n'The crossing is the hardest it's been all year, you've rigged a second bridle because you expect the first to fray, and you were going to make it free.' You have the fish out of the pack already, the good dried fish, a full week's trade weight, and you put it in his river-cracked hands and close his fingers on it, both of your hands around one of his, the gesture arriving out of your body from somewhere with a long memory. 'There. Witnessed. The queue heard the terms. We're strangers, squared and settled, and you owe me nothing either.'\n\nAnd the man takes a breath and holds it, holding the fish, and for the length of that breath — you would testify to this, you are watching from a range of half a meter — the unhurried machinery of him stops entirely. He is not deciding what to say. He is somewhere else, being someone else's arithmetic. B, pressed against his legs, looks up at the silence and whines, once, softly, at a frequency you last heard in another life.\n\n'Squared and settled,' the ferryman repeats, finally, quietly, like a man reading his own handwriting in an unfamiliar language. He stows the fish with absurd care, as if it were instruments. 'Then let's get your household over the water, madam, before the river hears we've settled up and raises its rates.'\n\nHe hands you aboard. Both hands. Formal as a customs official.",
+      "item": {
+        "id": "recog_fare",
+        "name": "Squared and Settled",
+        "description": "You made the free crossing cost something, witnessed, out loud. Whatever he is, for one held breath he was somewhere being counted — and you saw it.",
+        "persistent": true,
+        "silent": true
+      },
+      "choices": [
+        {
+          "text": "Aboard, then. Mid-river is the best interrogation room in the county: no exits, shared risk, and a man at a cable with his hands full and his guard down.",
+          "next": "mid_river"
+        }
+      ]
+    },
+
+    "fare_free": {
+      "id": "fare_free",
+      "text": "You take the kindness. You have your reasons, and they are even good ones.\n\nThe broken years taught everyone to price everything, and you watched what that pricing did — the flinch that arrives before the gratitude, the ledger where a face should be. You decided, somewhere in the worst of it, that you would not become a person who audits decency, and the decision held, and it is one of the load-bearing decisions; you check it annually like a roof timber. So: 'Thank you,' you say, plainly, and mean it, and the big man nods like weather agreeing with itself and hands you aboard — both hands, formal as a customs official.\n\nBut you watch him anyway, because refusing to audit is not the same as refusing to see.\n\nAnd what you see, as he poles off and takes up the bridle, is a man doing a dangerous thing with total calm on your behalf, for free, having quietly restructured an entire afternoon's queue to get your household onto the safest hour of water — and being happy. That is the word. It sits on him almost invisibly, like fair weather, and it is pointed at your dog leaning on his legs and your cat glaring from the basket and you: the happiness of a man doing the one errand he was made for.\n\nYou have seen that exact happiness before. It used to alarm you then, too.\n\nIn the second log, later, you will enter the crossing under expenditures — his, not yours — and beside it, in the compressed notation, the entry your pencil produces almost without consulting you: 'Free is what this costs me. What does it cost him? And in what currency, and drawn on whose account?'",
+      "choices": [
+        {
+          "text": "Aboard, then. Mid-river is the best interrogation room in the county: no exits, shared risk, and a man at a cable with his hands full and his guard down.",
+          "next": "mid_river"
+        }
+      ]
+    },
+
+    "mid_river": {
+      "id": "mid_river",
+      "text": "Mid-river, the world simplifies to physics and company.\n\nThe scow crabs across the flood on its bridle, the cable singing a low working note, brown water shouldering the hull with the patience of the very strong. The ferryman stands easy at the tiller-oar, one eye on the cable's fall, and B sits leaning against his leg — has not left his leg — and K watches the water from the basket's rim with the offense of a creature discovering that the world is mostly this.\n\nYou interrogate the way you play openings: with developing moves that look like conversation. He answers everything and volunteers nothing, which is itself a volunteering. He has run the crossing four years — since about when the logs' timestamps begin, says the pencil in your sternum. Before that: 'Around. Work on water.' Hands vague, a past like fog with good manners. He knows the river the way you know a position you've analyzed to bedrock — not remembering it, containing it. When a dead alder comes down the flood at the scow, turning slowly, an actual danger, he leans the bridle two points and lets the current walk the trunk past your stern with four meters to spare, and he does it while finishing a sentence about eel traps.\n\n'You've crossed people you shouldn't have,' you say, at the midpoint, conversationally. 'In four years. Flood water, night water. People this county couldn't spare.'\n\n'Now and then.'\n\n'Ever lost one?'\n\n'No.' And then, because he cannot help it, because it is compulsory, because you know the reflex from another mouth in another life: 'Someone better on this water would tell you that's luck.'\n\n'And what would you call it?'\n\nHe considers the brown flood, all the way over, all the way down, the look of a man consulting an authority. 'A good employer,' he says. 'Mind the spray, madam. We're at the fast water.'",
+      "choices": [
+        {
+          "text": "Push, right here, mid-river, where he can't step away from the question: a good employer. Ask him who he works for — plainly, once, and watch the answer arrive or fail to.",
+          "next": "who_employer"
+        },
+        {
+          "text": "Let it lie. You heard what you heard; mid-river candor is a coin that spends itself. File it, land the household, and leave him unspooked — assets who don't know they've been read stay readable.",
+          "next": "far_bank"
+        }
+      ]
+    },
+
+    "who_employer": {
+      "id": "who_employer",
+      "text": "'Who do you work for?' you ask. Plainly. Once.\n\nThe scow rides the fast water. The cable sings. The ferryman does not stop working — the hands go on making their small exact corrections — but something in the weather of him changes, and B feels it through his leg and looks up, and the old tail moves twice, uncertainly, a dog asking the room to stay kind.\n\n'The crossing,' he says, at last. 'I work for the crossing.'\n\n'That's a job. I asked for an employer. Fleece and cheese keep the boat caulked; they don't set a second bridle before the first frays, and they don't teach a man which hour of a flood is the safe one. Somebody resources you. I'd like the name.'\n\nAnd the man looks at you — takes his eyes off the water for the first time all crossing, spends attention he does not have spare, and the scow wanders a hand's width on the bridle before his body corrects it without him — and what is in his face is not evasion. You know evasion; evasion is cheap; this is expensive. It is the face of a man standing at the edge of what he knows about himself, looking over.\n\n'I don't have a name for it,' he says, quietly, under the cable's note. 'There are mornings I know the river before the river does. There's a kind of weather I get, here—' the flat of his hand, briefly, against his sternum, the exact gesture of a man you buried or married or never met, depending on the telling — 'when someone's coming that matters. You had it around you for two days before you walked out of the trees.' He returns his eyes to the water, corrects the bridle, is a ferryman again. 'I don't ask it questions, madam. It's never once let anyone drown.'\n\nThe far bank arrives under the hull like a verdict.",
+      "choices": [
+        {
+          "text": "Land the household. He gave you more than he knows he has — a man with a weather where a mandate should be — and pushing past a person's edge of self-knowledge yields fiction, not data.",
+          "next": "far_bank"
+        }
+      ]
+    },
+
+    "far_bank": {
+      "id": "far_bank",
+      "text": "The far bank is a working landing under a chalk bluff, and the ferryman hands your household off the scow in strict protocol order: dog first — B disembarks like visiting royalty, then immediately spoils it by turning to lean on the man one last time, a full-service goodbye, the old head pressed to the wet knee — then the basket, K receiving her transfer with the dignity of a hostage, then you. Both hands. Formal as ever.\n\n'East, you'll want the drover road over the downs,' he says, coiling wet line. 'The low lane floods in this weather.' A pause; a measured addendum: 'And it's slow going for a cart, the drover road, but you're on foot, and it's — ' the small hitch of a man auditing his own sentence — 'it's better walking. Prettier. You'll be glad of it.'\n\nPrettier. You'll be glad of it. Route guidance with your comfort itemized in it, from a man with a weather where a mandate should be. You thank him. You mean several things by it.\n\nHe stands with the ramp between you, big hands quiet, and for a moment he looks like he is going to say something outside the job description — the silence has that shape, someone drafting and discarding — and what arrives, finally, is: 'Look after the old fellow's hips. Cobbles, stairs. He'd walk to the sea for you before he'd complain; that's the design flaw in the good ones.' And to B, gravely: 'Mind her, then.'\n\nB's tail concurs. K, from the basket, delivers an exit growl of judicial finality.\n\nThe scow pulls away into the brown light. You stand on the east bank with your instruments disagreeing on your back and behind your sternum, and you take out the second log, and you enter the crossing under a heading you rule off with two lines, because it is the first entry of a new account: 'Personnel.'",
+      "choices": [
+        {
+          "text": "Up the bluff before dark, and camp where the drover road meets the sky. The recommended road, of course — noted as recommended, taken anyway; corridors are mapped by walking them, and you have a county of questions and exactly one thread. Follow it east.",
+          "next": "end_ch2"
+        }
+      ]
+    },
+
+    "end_ch2": {
+      "id": "end_ch2",
+      "text": "You make camp on the shoulder of the downs, where the drover road runs white over the chalk in the last light, and you convene the committee of one over the day's evidence.\n\nItem: a man who moves like the past, disclaims himself in a dead man's exact syntax, and found the spot behind B's ear on the first try. Item: an old dog's total, instant, unbought trust — the single most reliable instrument you own, pointing at a stranger's legs like a compass finding north. Item: a young cat's total, instant, unbought revulsion — the same instrument in a different casing, pointing the same direction, reading the same object, returning: false. Item: a held breath at the words squared and settled, or an employer he can't name, or a weather behind the sternum — the account varies with the telling, and every telling files the same way.\n\nYou write the hypothesis at last, because tonight it survived the alternatives, and your rule is that survivors get written down.\n\n'The minder has hands. The hands are people, or things wearing people so well that a dog's nose accepts the claim. They do not know what they are — or know it only as weather. They are stationed, resourced, briefed by something that knows my route before I walk it. One of them just carried my household across a flood for free and told me which road is prettier.'\n\nYou box it. Then, below, in the private notation, smaller, the entry you will not read aloud even to the fire:\n\n'The dog is not wrong. That is the part I am not ready to cost out. The dog is never wrong about people, and the cat is never wrong about things, and they are both right about him. Whatever is minding me is made out of someone. I have an inventory of who it could be made of, and the inventory has one line.'\n\nB sleeps. K sleeps on B. The bell has gone quiet with them, and east of your fire the drover road runs white and recommended over the downs, and somewhere under all the world's new arithmetic, an entry closes: subject across. Crossing nominal. Fare — the ledger pauses on the word — fare received.",
+      "end": true
+    }
+  }
+}

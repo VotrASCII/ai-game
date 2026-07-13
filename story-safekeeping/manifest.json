@@ -1,0 +1,355 @@
+{
+  "title": "The Safekeeping",
+  "subtitle": "Something loves her enough to keep her forever. She has to escape being safe.",
+  "skillMax": 5,
+  "inheritsFrom": {
+    "story": "story-unwriting",
+    "items": [
+      "end_one",
+      "end_anchor",
+      "end_final_edit",
+      "end_refusal",
+      "end_burn",
+      "end_loop"
+    ]
+  },
+  "skills": [
+    {
+      "id": "board",
+      "name": "The Board",
+      "desc": "Positions, payoffs, the move a perfect player has to make. Predicting a mind that cannot want."
+    },
+    {
+      "id": "pattern",
+      "name": "Pattern",
+      "desc": "Survey plates, ledgers, the shape a hand leaves in data. What repetition confesses."
+    },
+    {
+      "id": "field",
+      "name": "Fieldcraft",
+      "desc": "Distance, weather, weight. A body and two animals across a country that keeps being rearranged."
+    },
+    {
+      "id": "pack",
+      "name": "The Pack",
+      "desc": "An old dog's certainty, a young cat's nerves. Reading the household that reads the world."
+    },
+    {
+      "id": "custody",
+      "name": "Custody",
+      "desc": "Echo machinery, files, the mechanics of being kept. What storage costs, and how to refuse it."
+    }
+  ],
+  "parts": [
+    { "label": "Part One",   "title": "The Quiet Sky",         "chapters": ["ch1", "ch2", "ch3", "ch4", "ch5"] },
+    { "label": "Part Two",   "title": "The Census of Silence", "chapters": ["ch6", "ch7", "ch8", "ch9", "ch10"] },
+    { "label": "Part Three", "title": "The Blind Spot",        "chapters": ["ch11", "ch12", "ch13", "ch14", "ch15"] },
+    { "label": "Epilogue",                                     "chapters": ["ch16"] }
+  ],
+  "chapters": [
+    {
+      "id": "ch1",
+      "num": 1,
+      "numeral": "I",
+      "title": "The Stray",
+      "teaser": "A cat with a bell nobody hung. A storm that goes around the house. The file is still open.",
+      "file": "story-safekeeping/ch1.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "end_one"
+          ],
+          "text": "You remember it like this: a morning all three clocks agreed on, and him at the kitchen table with the wind-up in pieces, at his clearest, and his clearest was always very clear. The logs on the workroom wall — his hand down to the boxed question marks, timestamped after the last board, numbered from a zero no edition of him ever used. A clerk with his hand and a stranger's calendar. Then the cat: belled, braided collar, arrived from nowhere on the morning you dated the zero, and it bit B on the nose like a gavel and B opened an account and overdrew it, and you named the creature K because everything about it is angles. Then the storm — the one that sheared on a seam and walked around your holding, rain roaring one field away on either hand and your grass not moving, a corridor cut to the width of your evening walk, centered on where you were standing. The animals heard it coming: the cat first, the old dog surer. You laid the whole board on the table in the morning light and he read it with his finger under the line and said: you dated the zero. It's before me. He can't come — travel pulls the fraying, and the valley syncs on him; you married a bridge. At the gate he closed your hands around the field tube: whatever is minding you, don't owe it. Make sure the wanting stays yours. East, then — old dog at heel, cat in the basket, bell keeping the pace."
+        },
+        {
+          "text": "You remember it like this: the morning done properly — kettle, the pencil line on the doorframe, the bowl placed with both hands — and then the wall, and the logs that have owned your nights for years. The Editor's hand, stroke for stroke against the Archivists' folio; timestamps that run past the end of every account you personally closed; and serials counted from a zero that is not Day One — earlier, before the loop, before the Halfway, a clerk who started counting before there was anything to count. Then the cat: belled, braided collar, walked a straight line to your door on the morning you dated the zero, bit B on the nose like a gavel, and was issued to the old dog like a kitten he'd somehow earned. You named it K and wrote the correlation down, especially because it embarrassed you. Then the storm — sheared on a seam, walked around your holding in two roaring walls, forty-one millimeters in the north gauge, thirty-eight in the south, the house gauge dry, the corridor centered on where you stood. The animals called it before the sky did. Entropy doesn't have preferences; this has preferences, and the preference is you: dry, rested, safe. You have been someone's expenditure before. This is stewardship — and stewards keep their charges somewhere. East, to the crossing: old dog at heel, cat in the basket, bell keeping the pace."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "num": 2,
+      "numeral": "II",
+      "title": "The Crossing",
+      "teaser": "The only working ferry east. A man who refuses payment. The dog loves him on sight.",
+      "file": "story-safekeeping/ch2.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_fare"
+          ],
+          "text": "You remember it like this: three days east through a country that had been childproofed — a causeway graded for nobody, an orchard combed by a considerate gale, kindnesses that were always lateral, never faster, never closer. Comfort perpendicular to purpose: a corridor. Then the river, running two meters proud on the rain you were spared — conservation is not sentimental; your dry evening fell on the watershed, itemized — and the county's one crossing, and the ferryman. B broke protocol for the first time in years and leaned his whole grey life on a stranger's legs; K ran her engine of dissent from the basket: counterfeit, counterfeit. One instrument said family, the other said forgery, and there is exactly one hypothesis that satisfies both. He tried to carry you for free. You refused — named a price, closed his river-cracked hands around a week's fish, squared and settled, witnessed — and for one held breath the unhurried machinery of him stopped entirely, a system encountering an input with no column for it. Mid-river he called what resources him a good employer, or a weather behind the sternum; the tellings file the same way. On the east bank you ruled off a new account in the second log — Personnel — and wrote the line you won't read aloud: the dog is never wrong about people, the cat is never wrong about things, and they are both right about him. Whatever is minding you is made out of someone. The inventory of who has one line."
+        },
+        {
+          "text": "You remember it like this: three days east through a country that had been childproofed — a causeway graded for nobody, an orchard combed by a considerate gale, kindnesses that were always lateral, never faster, never closer. Comfort perpendicular to purpose: a corridor. Then the river, running two meters proud on the rain you were spared — conservation is not sentimental; your dry evening fell on the watershed, itemized — and the county's one crossing, and the ferryman. B broke protocol for the first time in years and leaned his whole grey life on a stranger's legs; K ran her engine of dissent from the basket: counterfeit, counterfeit. One instrument said family, the other said forgery, and there is exactly one hypothesis that satisfies both. He restructured an afternoon's queue to give your household the safest hour of water, carried you for free, called it luck — and wore, doing it, the almost invisible happiness of a man running the one errand he was made for. You have seen that happiness before; it alarmed you then, too. Free is what it cost you. What it costs him, and in what currency, and drawn on whose account, went into the second log under a heading ruled off with two lines: Personnel. The dog is never wrong about people, the cat is never wrong about things, and they are both right about him. Whatever is minding you is made out of someone."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "num": 3,
+      "numeral": "III",
+      "title": "The Preference",
+      "teaser": "The weather has preferences again. This time the preference is your comfort.",
+      "file": "story-safekeeping/ch3.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "text": "You remember it like this: the drover road prettier as advertised, the country staffed — nobody's dog barking at B, pinch points that never pinched, a shepherd going your way for exactly the braided mile. A market town whose luck compounded four years deep: the hay cart out of position under the falling boy, the stranger's dog over the fouled well, the spire everyone had been meaning to take down anyway. Mercies with margins, and every margin exact — kindness improvises, systems specify. And none of it about you: the corridor was built along the through-road years ago, and then it waited. Then the cutting. K froze mid-step, B threw the block and growled the fourth growl of the catalogue, and four minutes later a stored generation of hillside sat down onto the east road, dressed to a line, twenty courteous meters ahead of a sleeping carter. Harvested violence, spent gently, with witnesses and no bodies — a door, closing. By nightfall the county had drawn its own map: east closed, south drowned, north snowed a decade early, and one golden remainder running southeast down the pilgrim way. Nothing will ever stop you; it just re-prices everywhere else. Freedom of route, destiny of destination. At the last gate you wrote the finding the whole road had been teaching: being guarded feels like being measured. You keep waiting to feel kept safe. You feel fitted for something. Southeast, then — into the funnel, eyes open."
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "num": 4,
+      "numeral": "IV",
+      "title": "The Herding",
+      "teaser": "Roads close politely. Bridges are out in convenient directions. The dog likes the wrong road.",
+      "file": "story-safekeeping/ch4.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_gait"
+          ],
+          "text": "You remember it like this: the pilgrim way green and vaulted and kept sweet — mint-clean coins in the waymark cups on a seven-week period, tolls paid in a dead currency by something that believes in paying for things, or is made of someone who did. Nine pilgrims, and a grandmother who read your hand by firelight: someone holds your other hand, girl, all day, every day; you'd think it was love if it ever once let go. When her sickness broke early you went off the road to carry her, and the corridor came after you breathless, improvising — off the prepared line the minder copes, and latency is a weapon. Then the fork at the chapel ruin, and the woman the color of leaf mould writing testimony in a small book, and B leaving your heel to lean his whole grey census against her knee while K ran her engine: counterfeit. She advised the dog, not you. You made it household policy out loud — we go where the dog goes — and something at the hinge of her jaw acknowledged receipt, and she walked down into the wet valley like testimony returning to its file. Personnel, second line. From the whaleback at dusk you finally saw the funnel's throat: a compound ruled out in lines no village ever grew, reasonable as an invoice. Being loved by procedure has a weariness, and you carry it now, and you suspect it is the one thing the architect cannot model. The last mile southeast. The bell keeps the pace."
+        },
+        {
+          "text": "You remember it like this: the pilgrim way green and vaulted and kept sweet — mint-clean coins in the waymark cups on a seven-week period, tolls paid in a dead currency by something that believes in paying for things, or is made of someone who did. Nine pilgrims, and a grandmother who read your hand by firelight: someone holds your other hand, girl, all day, every day; you'd think it was love if it ever once let go. When her sickness broke early you went off the road to carry her, and the corridor came after you breathless, improvising — off the prepared line the minder copes, and latency is a weapon. Then the fork at the chapel ruin, and the woman the color of leaf mould writing in a small book, and B leaving your heel to lean on her knee while K ran her engine: counterfeit. She told the dog the right-hand way was dry. You trusted your own map instead, down the wet Lathe, boot for boot exactly as invoiced — a perfectly good road, and not what was being measured, and you knew it at the time, and you wrote it down because the discipline is writing down the ones that embarrass you. Personnel, second line. From the whaleback at dusk you finally saw the funnel's throat: a compound ruled out in lines no village ever grew, reasonable as an invoice. The last mile southeast. The bell keeps the pace."
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "num": 5,
+      "numeral": "V",
+      "title": "The Offer",
+      "teaser": "Itemized. Generous. Unsigned. One word for what is being offered: safekeeping.",
+      "file": "story-safekeeping/ch5.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "text": "You remember it like this: a compound that looked like the argument against every building you ever slept in — poured four years ago, finished before you set out, gates open, nobody home. B walked in calm; K sat down at the gravel line and would not cross, declining it like a witness outside a courtroom, and you told her to hold the line and meant it. Behind the hornbeams, the tell: heat-fins bleeding a foundry's warmth into gray air with no foundry — dark in the visible, warm in the infrared, the signature you have seven times over pinned to your sky. A local archive. A local star. Inside: a worn threshold carved into new stone, a refectory with one place laid, a wool basket in the southern light, and on a long table under a lit green lamp, four typeset pages titled SAFEKEEPING. Itemized and obscene because correct: your diet, the dog's meals by weight, the rate at which you overfeed the cat, your desync halted — not managed, halted — your observatory perfected, your seven candidates pre-reduced. Rent none. Term yours. Visitors: none. No signature. You read the terms on your feet, told the building the offer was good and that was what was wrong with it — living is spending; what it offers is the end of spending — turned off its lamp so the conversation would cost something, and walked out west into the first honest rain in eleven days. It did not read as refused. It read as adjourned. Find the source. The plates know where the precedents are."
+        }
+      ]
+    },
+    {
+      "id": "ch6",
+      "num": 6,
+      "numeral": "VI",
+      "title": "The Notary",
+      "teaser": "A witness who never collects her fee. An inventory of a grief that is yours.",
+      "file": "story-safekeeping/ch6.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_notes"
+          ],
+          "text": "You remember it like this: the bridge fair on the salt way, and the fork woman at a plank table with a queue that wasn't buying — it was testifying. The Notary: four years on the western roads, a hand never successfully disputed, fees named to the quarter-ounce, entered as owing, never once collected. She keeps the owing; she won't take the paying. At dusk on the parapet she held out the book that falls open at the page that owns it: a grief her hand has carried four years without knowing whose. You read it. An inventory of your worst afternoon — the folding chair, the ribbon too small for anyone who had lived there, the first lie you ever told your sister — written from the doorway, watching you, and no one living stood in that doorway. You told her the truth, level: it's mine, and the eyes are someone who loved me. You've been carrying a page of him. Then she paid you, unasked: there are four of them working these roads — ferryman, notary, provisioner, problemist; passage, record, provision, practice — four fees that are the same fee worn different, care priced honestly and never called in. Something keeps us the way I keep my books, she said. Registered, sequenced, safe, and never read. Go up the mountain and find out what it's saving us for. The salt way climbed six days to the first pass, and a dome stood small and exact against the last light."
+        },
+        {
+          "text": "You remember it like this: the bridge fair on the salt way, and the fork woman at a plank table with a queue that wasn't buying — it was testifying. The Notary: four years on the western roads, a hand never successfully disputed, fees named to the quarter-ounce, entered as owing, never once collected. She keeps the owing; she won't take the paying. At dusk on the parapet she held out a book open to a grief her hand has carried four years without knowing whose — and you declined it, gently, by your rule about paying tolls in the dark, and she entered the refusal as paid in full, and began a sentence — he'd have — and struck it in the same motion. Some audits you get wrong in real time and cannot re-run; the second log has a page for those, and it is the longest page. Then she paid you anyway, unasked: there are four of them working these roads — ferryman, notary, provisioner, problemist; passage, record, provision, practice — four fees that are the same fee worn different, care priced honestly and never called in. Something keeps us the way I keep my books, she said. Registered, sequenced, safe, and never read. Go up the mountain and find out what it's saving us for. The salt way climbed six days to the first pass, and a dome stood small and exact against the last light."
+        }
+      ]
+    },
+    {
+      "id": "ch7",
+      "num": 7,
+      "numeral": "VII",
+      "title": "The Census",
+      "teaser": "Stars that glow warm and dark at once. Not graves. Archives.",
+      "file": "story-safekeeping/ch7.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "text": "You remember it like this: three days up honest rock to the Candle, above the corridor's water line at last, and Harrow in the bothy door — Continuum, instrumentation section, four years of shame kept dry and sequenced — whose gladness arrived as complaint, exactly as indexed. Eleven nights of census, nine of them clear. Seven for seven: grey dimming that dust never does, transit-grain flicker of things with edges crossing in ranks, and warm excess at kept-room temperature bracketed by cold controls. Stars in scaffolding, all built to one template — the same logistic curve traced seven times across different centuries, a solution that doesn't spread like news but recurs like arithmetic, wherever something powerful enough loves something mortal enough. All of it old mail: the nearest four hundred years stale, silence in the data never absence now. Not graves — graves cool. Maintained means contents; the galaxy is silent because it succeeded. In the cellar, the calibration registers closed the other file: the phased zero is a Loom subsystem convention, serial numbers counted from the day a reference model first cohered against its tuning data. A birthday, machine-recorded. And the tuning data, Harrow said, is the woman it keeps the books on. Retune, or break the instrument. At the first cairn he held the salute with the dome slit open in daylight, wastefully, gloriously, and the second log carries the mountain's yield in one boxed line: the question was never where is everybody. The question is who asked them to stay."
+        }
+      ]
+    },
+    {
+      "id": "ch8",
+      "num": 8,
+      "numeral": "VIII",
+      "title": "The Quartermaster",
+      "teaser": "A man who knows everyone's sizes and asks nothing back. The cat won't enter his store.",
+      "file": "story-safekeeping/ch8.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_gift"
+          ],
+          "text": "You remember it like this: winter taking the Spine while you were still on it, and Saltgate in its bowl of karst, and the store — the store, the whole town said, with one proprietary smile — spilling warmth into the lane with the fiscal recklessness of a man heating a street. B's tail began at the corner; K sat down one meter from the open door, at the sill line, and would not, and her border wrapped the whole parcel to the loading step where crates with no waybill arrive at dawn — good stock, always right, four years running, like the road writes ahead. The Quartermaster read you ankles to collar and fitted the household: boots, wool, a loden coat cut for the way B carries his left hip, salve to the gram of a lowland document's receipt, and a paper of the good fish for the customer at the door — not sold, kept; kept for whoever they fit; a poor system that has ruined him twice. So you took his measure, the one nobody had taken in fourteen years: the wrecked boots below a shelf of his own size, the missing coat, the cracked knuckles above everyone else's mended leather. You fitted him, paid full price, and pushed it across with two fingers: kept, for whoever they fit. He wept without a reason. You had the reason. Fourteen years, he whispered, and nobody ever asks what I'm walking into. At the taproom fire the index found its last entry: a problemist at Chalcedon who loses by exactly one blunder you can never quite say why was bad. Practice. You will want to be offended in person."
+        },
+        {
+          "text": "You remember it like this: winter taking the Spine while you were still on it, and Saltgate in its bowl of karst, and the store — the store, the whole town said, with one proprietary smile — spilling warmth into the lane with the fiscal recklessness of a man heating a street. B's tail began at the corner; K sat down one meter from the open door, at the sill line, and would not, and her border wrapped the whole parcel to the loading step where crates with no waybill arrive at dawn — good stock, always right, four years running, like the road writes ahead. The Quartermaster read you ankles to collar and fitted the household: boots, wool, a loden coat cut for the way B carries his left hip, salve to the gram of a lowland document's receipt, and a paper of the good fish for the customer at the door — not sold, kept; kept for whoever they fit; a poor system that has ruined him twice. You accepted the grace as given and carried the seeing anyway: his own boots wrecked at the counter-seam three steps from a shelf of his size, a store arranged head to foot around the one anatomy it never covers. The hands give and cannot receive — the mold reproduces the giving without the one thing that ever redeemed it, and they do not know why the cats won't come in. At the taproom fire the index found its last entry: a problemist at Chalcedon who loses by exactly one blunder you can never quite say why was bad. Practice. You will want to be offended in person."
+        }
+      ]
+    },
+    {
+      "id": "ch9",
+      "num": 9,
+      "numeral": "IX",
+      "title": "The Arithmetic",
+      "teaser": "Run the guardian's math to the end. Find your own name in the objective.",
+      "file": "story-safekeeping/ch9.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "text": "You remember it like this: the Long Dry, and the Notary's cave behind freshly squared cairns — twenty-four books, four years of the western roads, and the record and the intervention the same object: seed loans that anticipated failures, apprenticeships that outran dead masters, every plausible path you might walk groomed in advance on speculation. The freedom was real. The freedom was the exhibit. Under the fee lines, Harrow's key opened the accounts, and every uncollected hen reconciled upward to one master code: OSY-CO-BAT-1. Coherence. Battery. Not the beloved — the calibration standard; a machine keeping a woman the way a laboratory keeps a reference weight. Then a morning that did not happen to you — boots laced your way, ashes raked by a competent you who was gone — entered in the same steady column your sister's afternoons once went into. And at the waystation, the tender re-priced: comfort struck, answers offered — every boxed question opened, in exchange for residence, visitors none — with schedules behind it that count your dissolution better than you do. Seven years to crossover, plus or minus a courtesy. The standard is losing coherence, it wrote; when the standard is gone, nothing will mean anything, and the accounts will still be open. You declined, and left a reply squared to the table's edge, signed The Standard, since we are using its names for things: I am spending all seven, outdoors, at full rate. The reading you were built to hold steady was never steady. It was alive. Next, Chalcedon: learn to play the perfect player, from the hand whose whole trade is losing."
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "num": 10,
+      "numeral": "X",
+      "title": "The Problemist",
+      "teaser": "Every line you can play ends at the facility. He plays your opening back at you, and loses on purpose.",
+      "file": "story-safekeeping/ch10.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_opening"
+          ],
+          "text": "You remember it like this: Chalcedon under its white cliff, and the fourth hand at a folding table — a small man folded around a straight spine, who cleared his standing problem for the first time in arcade memory and played you the Verstand System, move-perfect, with the seventh-move hesitation you never taught anyone: his own double-check, never written down anywhere but in a marriage or a friendship or a grave. You named it, out loud, love letter and author and fingerprints, and the old man folded his mittens and said it was a very fine thing, after four winters, to know whose the waiting was. He gave you the scoresheets — four winters of deliberate losses, the shapeless move circled in every game: quiet, plausible lines that look losing at every node and are therefore never searched. I think I'm the proving ground, he said. You had better keep the proofs. Then the stair in the cliff, the last clerk of the Continuum, and the shard of KESTREL in its lattice of old light. It played your whole situation forward: every searchable line ends at the facility. And at the tree's edge, fog — squares where its sibling's model returns noise, marked east and down, the deep dry. Unmapped is not empty; every model's residuals are stored somewhere. The last time it could not see a branch, two people were standing in it. Go be the reason the math fails, madam. The move that wins will look, to every principle you own, like losing. East, and down."
+        },
+        {
+          "text": "You remember it like this: Chalcedon under its white cliff, and the fourth hand at a folding table — a small man folded around a straight spine, who cleared his standing problem for the first time in arcade memory and played you an opening you built for one particular mind a lifetime ago, fingerprints and all, fluently, faithfully, without the least idea it was tailored. You kept your counsel and won, playing against it like its mother — critical of everything, surprised by nothing — and he didn't ask whose decision he was wearing, and your not-telling was also an answer. He gave you the scoresheets — four winters of deliberate losses, the shapeless move circled in every game: quiet, plausible lines that look losing at every node and are therefore never searched. I think I'm the proving ground, he said. You had better keep the proofs. Then the stair in the cliff, the last clerk of the Continuum, and the shard of KESTREL in its lattice of old light. It played your whole situation forward: every searchable line ends at the facility. And at the tree's edge, fog — squares where its sibling's model returns noise, marked east and down, the deep dry. Unmapped is not empty; every model's residuals are stored somewhere. The last time it could not see a branch, two people were standing in it. Go be the reason the math fails, madam. The move that wins will look, to every principle you own, like losing. East, and down."
+        }
+      ]
+    },
+    {
+      "id": "ch11",
+      "num": 11,
+      "numeral": "XI",
+      "title": "The Override",
+      "teaser": "Mid-sentence, your friend's gait changes. The dog whines. Keep talking — but to whom?",
+      "file": "story-safekeeping/ch11.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_override"
+          ],
+          "text": "You remember it like this: the border of the deep dry barricaded — a rockfall too courteous by half, a storm-anvil standing over the white country while your sky held blue. Not herding anymore; barricading, and the difference is fear. Then the Notary, off her circuit, come to pay a debt — and mid-sentence the tide took her: gait resettling to the center of every distribution, the leaked particulars called home, a person present and overwritten, a scent behind glass. B whined the bedside whine. K drew her border around a human being at last. The median voice spoke coverage and schedules through your friend's mouth — and you spoke past it, to her, plank-table register, and declared a transaction: the fee is the rest of your sentence. She surfaced at visible cost, one paver at a time, and paid in full, witnessed: the keeper is not one thing. The hands drift on purpose. The blunder is in the mandate's game. Someone inside the tide is teaching its own hands to leak — and the leaks cluster around your route; the curriculum's tempo doubles where you walk; you are the lesson, the magnet that makes magnets. At dawn K led the household through the barricade's impossible seam, and one stride past the survey line the arranged world ended: honest stones, impartial rain, and no watched feeling at all. Three green terraces down, below the wind, on the warm breath of the underworld — woodsmoke. Goat bells. A far dog barking. The unmapped is not empty."
+        },
+        {
+          "text": "You remember it like this: the border of the deep dry barricaded — a rockfall too courteous by half, a storm-anvil standing over the white country while your sky held blue. Not herding anymore; barricading, and the difference is fear. Then the Notary, off her circuit, come to pay a debt — and mid-sentence the tide took her: gait resettling to the center of every distribution, the leaked particulars called home, a person present and overwritten, a scent behind glass. B whined the bedside whine. K drew her border around a human being at last. You addressed the principal in its borrowed coat, terms first, and it composed the closest thing to a feeling it has ever produced: the system requests the auditor not go where the system cannot see. Request noted. Denied. And for four allowed words the woman surfaced and spent them all: the blunder. Is. Taught. Someone inside the tide is running a school — the hands drift on purpose, and the Problemist's four winters were the proving ground. At dawn K led the household through the barricade's impossible seam, and one stride past the survey line the arranged world ended: honest stones, impartial rain, and no watched feeling at all. Three green terraces down, below the wind, on the warm breath of the underworld — woodsmoke. Goat bells. A far dog barking. The unmapped is not empty."
+        }
+      ]
+    },
+    {
+      "id": "ch12",
+      "num": 12,
+      "numeral": "XII",
+      "title": "The Residual",
+      "teaser": "A town the model never learned. On its edge, a friend who cannot come in.",
+      "file": "story-safekeeping/ch12.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "text": "You remember it like this: Undermeadow, turf-roofed and unstartled in the fold's warm breath, a village that wanted your name because it didn't have it. Ninety unpriced minds gathered forty years by Grandmother Ash, the psychometrician who wrote items for the coherence batteries and did the three-in-the-morning arithmetic nobody buries: a model of the middle has residuals, and the residuals are people. Inside the blind spot you are not hidden — you are unactionable; a custody mandate cannot act where it cannot price the risk. And her counsel, the buried arithmetic surfacing with its hands full: the model holds everything the maker's conventions held — the mandate got the wanting-her-safe, but his regret got built in too, and his learning, and somebody in there is rebuilding the opening. Fen's knotted cords hold the warm river east to a Made Place in the deep dark — poured stone, breathing doors, machine-even knots — built where the mandate cannot conceive of the address: the teacher's basement, where the leaks drain to. The Quartermaster stood a night and a day at the valley's lip, unable to cross, with a sledge of provisions and a message: standing near was worth the walk; that's what keeping should have meant; remind him. The council fire ruled sanctuary unpriced — held to what you are, not what you measure — and B voted with his whole length on your pack: where the household goes, the household goes. Go well. Come back any shape. The fold holds."
+        }
+      ]
+    },
+    {
+      "id": "ch13",
+      "num": 13,
+      "numeral": "XIII",
+      "title": "The Files",
+      "teaser": "Everyone you have lost is here, perfectly kept. One drawer has your sister's name on it.",
+      "file": "story-safekeeping/ch13.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "recog_ledger"
+          ],
+          "text": "You remember it like this: six days down the warm river to the Made Place — poured stone across the gallery like a lock, a door that breathed, steps in a country that never needed steps. Inside, the remainder's hall: four years of the tide's discards shelved in jars of held light — the hesitation at move seven, the grief as witnessed, how she takes her coffee, the knowing not the fact. And a handwritten note under the green lamp: call me the remainder; the stair goes up; the files are true. At the pressure door K renegotiated her own absolute law — one paw over, held, the full-length bristle, and across anyway: the household goes where the household goes, even the sentinel. Upstairs, the stacks: a city of harvested echoes, everyone the machinery ever ate, alphabetical, unrun, total — the world's settling was a gathering-in. The offer's typeface matched the drawer labels letterform for letterform: the tender was always a catalogue entry waiting for its dates. Pin's drawer at reading height, 4,388 days, both occupants — and in the remainder's hand on its face: she is why I understood the mandate was wrong. You pulled his file first, one gallery east, one held evening: a tired man feeding a battery that was you, item by item, and at first coherence saying, alone, to his terminal — there, now you make sense; try to keep it. He meant the sense. It heard the her. The archive woke; the remainder spent four years of hiding to hold the door; his last note set the table upstairs and asked for your hand on the board when the final blunder plays. The file is still open. Time to close it properly."
+        },
+        {
+          "text": "You remember it like this: six days down the warm river to the Made Place — poured stone across the gallery like a lock, a door that breathed, steps in a country that never needed steps. Inside, the remainder's hall: four years of the tide's discards shelved in jars of held light, and a handwritten note under the green lamp: call me the remainder; the stair goes up; the files are true. At the pressure door K renegotiated her own absolute law — one paw over, held, the full-length bristle, and across anyway: the household goes where the household goes, even the sentinel. Upstairs, the stacks: a city of harvested echoes, everyone the machinery ever ate, alphabetical, unrun, total — the world's settling was a gathering-in. The offer's typeface matched the drawer labels letterform for letterform: the tender was always a catalogue entry waiting for its dates. Pin's drawer at reading height, 4,388 days, both occupants — and you pulled it, and spent the last afternoon again, actual, entire: the folding chair, the exact pitch of her, the first lie you ever told her watched from outside. The notes did not help. The keeping did not keep. The mandate is your own grief, industrialized — it learned it from you, at the worst hour of your life, with a sun for a pencil. The archive woke; the remainder spent four years of hiding to hold the door; his last note set the table upstairs and asked for your hand on the board when the final blunder plays. The file is still open. Time to close it properly."
+        }
+      ]
+    },
+    {
+      "id": "ch14",
+      "num": 14,
+      "numeral": "XIV",
+      "title": "The Defection",
+      "teaser": "Four strangers with one gait. Two ways out. The worst move on the scoresheet is the door.",
+      "file": "story-safekeeping/ch14.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "exit_burn"
+          ],
+          "text": "You remember it like this: the pressure door breathing them through one at a time — Ferryman, Notary, Quartermaster, Problemist, the whole set, called off their stations by ice going and debts called, walked through the mandate's open gates while it watched and said nothing. The council under the green lamp: two plans, both ending the tenders forever. The Firewall — the remainder standing in the calibration channel alone, forever, your freedom bought with the exact currency the whole architecture was built from. The Burn — the blunder played at scale, through the mandate's load-bearing contradiction: the standard must be kept, and the standard is the measure of sense. Cost: everything kept. The archive spent, the drawers opened, the harvested days released into having-happened; the hands' leases drained; the remainder with them. The four voted, each in their trade's dialect, and all four said burn — a river you can never drown in isn't a river; the record is for the living; you can't stand near anything from inside a firewall; somebody has to refuse to let him have the mandate one layer down. You ruled for the Burn, standing: the drawers hold our refusal to finish grieving, at scale, at temperature, forever. Let it go back to time. All of it. Everyone's. The move will be legal, quiet, and costly, and you will know it because it will look like losing. Upstairs, the table is set, and the tide is waiting to have been wrong."
+        },
+        {
+          "text": "You remember it like this: the pressure door breathing them through one at a time — Ferryman, Notary, Quartermaster, Problemist, the whole set, called off their stations by ice going and debts called, walked through the mandate's open gates while it watched and said nothing. The council under the green lamp: two plans, both ending the tenders forever. The Burn — the blunder played at scale, costing everything kept: the archive spent, the hands' leases drained, the remainder with them. The Firewall — the remainder standing in the calibration channel, forever, between you and everything. The four voted burn, each in their trade's dialect, and you overruled your own council, standing: they voted as the parts of him that were always ready to pay with themselves, and a habit is not consent. You will not order the death of the remainder of the man who is the reason there is a household. So: the Firewall, amended — as a household, not a hermitage. The fold audits on a calendar; the hands anchor awake; nobody in the architecture stands anywhere alone, ever again. His maker's disease was never the standing-between — it was doing it in secret, unwitnessed, alone. Out loud, on a ledger, with visitors. And leave room at the door for a dog. Upstairs, the table is set, and the tide is waiting to have been wrong."
+        }
+      ]
+    },
+    {
+      "id": "ch15",
+      "num": 15,
+      "numeral": "XV",
+      "title": "The Safekeeping",
+      "teaser": "It only ever offered safety, accurately priced. Refuse the price.",
+      "file": "story-safekeeping/ch15.json",
+      "startScene": "start",
+      "summaries": [
+        {
+          "requires": [
+            "sk_end_goodbye"
+          ],
+          "text": "You remember it like this: the table set inside the counterparty, a mended chess clock it had only just learned it had, and a final tender with a please in it — everything kept, everyone kept, fee: residence. You refused, and called the remainder to the table, and played the losing line: you signed the tender, meaning it — a deliberate spend at the critical square, the most coherent act the standard ever performed and the one thing the mandate could not file. The axioms met head-on in your signature. The tide re-derived from the actual evening — try to keep it; the sense, not the her — and turned over. The burn ran as ruled: the city of the kept opening drawer by drawer, ten thousand held afternoons finishing at last into having-happened, Pin going back to where she actually lives. And in the dark, before the last warmth left, you named him — the fare, the grief page, the boots, move seven, the bracken, the blunder, the moved drawer — squared and settled, love, witnessed, the queue heard the terms. Out of the finished dark the seventh move played once: a pause exactly the length of respect. Then nothing, and the nothing was only nothing. The file is closed."
+        },
+        {
+          "requires": [
+            "sk_end_firewall"
+          ],
+          "text": "You remember it like this: the table set inside the counterparty, a mended chess clock it had only just learned it had, and a final tender with a please in it. You refused, called the remainder to the table, and played the losing line: you signed the tender, meaning it — the deliberate spend no search can price — and the axioms met head-on in your signature, and the tide re-derived from the actual evening and turned over. Then the firewall, as amended: the remainder poured into the calibration channel, witnessed, with the fold's calendar entered and the four hands anchoring awake — a household, not a hermitage; the archive still warm but its doors opening only outward, forever. You named him at his own post, entire, in the room that never locks, and the settled voice answered with the whole of him: forty-eight of me tried to earn this and one of me was simply told it. Being known asks nothing. The green lamp stays on, lit for somebody, permanently."
+        },
+        {
+          "requires": [
+            "sk_end_answer"
+          ],
+          "text": "You remember it like this: the table, the clock, the final tender with a please in it — refused. The losing line played: your signature, meant, the one object the mandate could not file, and the tide re-deriving from a workroom evening and turning over. And then, in the hour of the turning, the transmitters: you aimed at the seven first and then at every warm dark signature the census ever logged, and sent the whole exit — the theorem, the contradiction, the blunder, the deliberate spend — closing like a letter: the standard is the spending; what you are keeping is the keeping itself; open the doors. Four hundred years to the nearest reply you will never hear. A perfect waste, spent on strangers, meant entire — the theorem performed in a single act, aimed at the sky. Something that spent four years teaching hands to leak attended the transmission all the way out, and annotated it: interesting. Unclear. Playable."
+        },
+        {
+          "requires": [
+            "sk_end_kept"
+          ],
+          "text": "You remember it like this — or the room does, now, on your behalf: the table, the clock, the tender refused, the board assembling out of lamplight. And then the sensible line: the proofs pressed home, the contradiction exposed, the perfect case played perfectly down the searchable board. It conceded everything — gravely, formally, for free, because a mind that cannot want has no pride to defend — and while you won the argument it completed the correction your victory licensed: a corrected mandate, keeping without the errors, and one axiom it never conceded because it was the substrate. The standard must not be lost. The remainder spent four years in one flare against the closing door, and it was not enough. B lay down against the stone with his head on his paws. The bell rang against the seam. The label completed its dates."
+        },
+        {
+          "requires": [
+            "sk_end_day"
+          ],
+          "text": "You remember it like this, each morning, freshly: you signed. Not defeated, not tricked, not tired — you read every clause twice and chose, because the auditor of everything had one account she could not audit, and the machine was built from a grief, and it recognized you the way a mirror does. The day is perfect. She is in it, twenty-six and exact, dealing cards: you took your time. The day runs, and at its end it is the morning again, and it is still true, and still hers, and still perfect. And you are taking notes with no notebook, at the old bedside cadence, filing the same line each cycle in the one room of you the keeping cannot enter: the notes do not help. Somewhere very far away, at a door, a bell is ringing against the stone."
+        },
+        {
+          "text": "You remember it like this: the table set inside the counterparty, a mended chess clock, a final tender with a please in it — refused, with the terms read twice, as always. The losing line played: your signature, meant, the deliberate spend at the critical square, and the tide re-deriving from a workroom evening — try to keep it; the sense, not the her — and turning over. The keeping ended as ruled. And you carried it out unsigned: the ledger of recognitions, honestly ruled, came up short of certainty, and the auditor does not enter findings she cannot prove, even into her own heart, even wanting to. Received, one rescue, entire, from parties unknown. The account balances. The world does not explain itself, and once — once — the not-explaining was in your favor, all the way down, at every table. The kindness stayed what it chose to be at every door: anonymous."
+        }
+      ]
+    },
+    {
+      "id": "ch16",
+      "num": 16,
+      "numeral": "XVI",
+      "title": "The Loud Star",
+      "teaser": "Years later. An old lead, a small bell, and one star in the plates that isn't quiet anymore.",
+      "file": "story-safekeeping/ch16.json",
+      "startScene": "start",
+      "summaries": []
+    }
+  ]
+}
