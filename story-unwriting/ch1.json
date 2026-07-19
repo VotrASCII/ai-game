@@ -60,6 +60,14 @@
         {
           "text": "Down, then. The desk. The pad. You are calm about it, which you have decided to be proud of, there being no one else available to be proud of anything about you.",
           "next": "the_list"
+        },
+        {
+          "text": "Stay up here another few minutes with the cold and the dog's full weight, itemizing the skyline's errors, before you go down to the pad. The list has waited six weeks. It can watch you procrastinate one more sunrise.",
+          "next": "the_list"
+        },
+        {
+          "text": "Gather B's collection of roof-gravel rooks first and pocket the best one, on the grounds that a man going downstairs to face item seven is entitled to one piece of artillery.",
+          "next": "the_list"
         }
       ]
     },
@@ -69,6 +77,10 @@
       "choices": [
         {
           "text": "Fifth floor. The receiver. If the transit mesh is alive you can hear it from the workshop without going into any tunnels, and you will do this one last build, and then — the list. The list will keep.",
+          "next": "workshop"
+        },
+        {
+          "text": "Log it before you touch anything — time, bearing, the tail's verdict — because if you are about to invent a reason to be busy, you want it timestamped and admissible. Then the fifth floor, and the receiver.",
           "next": "workshop"
         }
       ]
@@ -134,6 +146,10 @@
         {
           "text": "Out the east door, down into the mile you know, following three pencil lines toward the first voice in eleven months.",
           "next": "descent"
+        },
+        {
+          "text": "Check the pack a third time — water, food, batteries, dog — knowing perfectly well the third check is a ritual, not an audit, and that rituals are what precise men do instead of admitting they are afraid. Then the east door.",
+          "next": "descent"
         }
       ]
     },
@@ -143,6 +159,10 @@
       "choices": [
         {
           "text": "Down. Headlamp on, dog at heel, into the mile you know by the light you have.",
+          "next": "descent"
+        },
+        {
+          "text": "One breath at the threshold, on the record, for the man who spent six weeks not crossing out item seven and is now about to be late for something instead. Then down, headlamp on, dog at heel.",
           "next": "descent"
         }
       ]
@@ -159,6 +179,10 @@
       "choices": [
         {
           "text": "Pack properly, plot the bearings, and go get her voice back its second party. Down through the east door, professional to the last.",
+          "next": "descent"
+        },
+        {
+          "text": "Skip the full protocol for once — bearings in your head, pack half-audited, dog already decided — because eleven months of being careful was only ever for lack of anywhere to be. Down, fast.",
           "next": "descent"
         }
       ]
@@ -179,6 +203,14 @@
       "choices": [
         {
           "text": "Sit down on the crate, in the light, at the edge of the rest of your life. 'Show me everything. From the first pin.'",
+          "next": "end_ch1"
+        },
+        {
+          "text": "Stay standing one moment longer, running the inventory — the grey at her temple, the new scar, the board set mid-position for nobody — and file the damage before the work. Then the crate. 'Start with the thread that scares you most.'",
+          "next": "end_ch1"
+        },
+        {
+          "text": "'First: when did you last eat?' Because somebody in this station should get to be looked after, and it is obvious from the crates that she has not once been on her own manifest.",
           "next": "end_ch1"
         }
       ]
