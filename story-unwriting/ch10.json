@@ -8,6 +8,10 @@
         {
           "text": "Convene the war council in the calibration lab — all parties, all cards up, Sere included. If every move loses something, the household chooses its loss like professionals.",
           "next": "war_council"
+        },
+        {
+          "text": "Stand one more minute at the glass, counting fires like a man pricing pieces — then convene the council, all parties, all cards up, Sere included.",
+          "next": "war_council"
         }
       ]
     },
@@ -49,6 +53,10 @@
         {
           "text": "Down into the deep stacks with both days burning — the copying, the as-builts, the founder's own design, before the ghost goes cold.",
           "next": "aftermath"
+        },
+        {
+          "text": "Carry Rhee's tea down for him — small courtesies keep large plans honest — then into the stacks with both bought days burning.",
+          "next": "aftermath"
         }
       ]
     },
@@ -64,6 +72,10 @@
       "choices": [
         {
           "text": "Down into the deep stacks with a lunar timer running — the copying, the as-builts, the founder's own design, and a world to mend by moonrise.",
+          "next": "aftermath"
+        },
+        {
+          "text": "Second the amendment, for the record — carried, no dissent — and then down into the stacks with the lunar timer running.",
           "next": "aftermath"
         }
       ]
@@ -82,6 +94,10 @@
         {
           "text": "Down into the whole, paid-for stacks — because the only apology with any engineering content is to read every page the old man died holding the door for.",
           "next": "aftermath"
+        },
+        {
+          "text": "Sit a moment where the old man sat — the stool, the stick's worn groove — before going down to read every page he held the door for.",
+          "next": "aftermath"
         }
       ]
     },
@@ -97,6 +113,10 @@
       "choices": [
         {
           "text": "Down into the intact stacks beneath the burnt campus — the copying resumed, the founder's design whole, and an old man reading in the ruin of his own workshop.",
+          "next": "aftermath"
+        },
+        {
+          "text": "Leave the machinist to his ruin at his own pace — some readings are private — and take the stair down to the resumed copying, the whole and paid-for design.",
           "next": "aftermath"
         }
       ]

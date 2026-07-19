@@ -8,6 +8,10 @@
         {
           "text": "Agree — but write the protocol first, together: session limits, abort criteria, the dog in the cell. If you're going back into your own head, you go instrumented.",
           "next": "protocol_prep"
+        },
+        {
+          "text": "Agree — and add one clause of your own before the drafting starts: the first anomaly, however small, surfaces the session. No heroics in your own head.",
+          "next": "protocol_prep"
         }
       ]
     },
@@ -17,6 +21,10 @@
       "choices": [
         {
           "text": "Session one: shallow, procedural, by the book — let the hands lead and the mind follow, and surface on the timer with the phrasebook a little less foreign.",
+          "next": "sessions_montage"
+        },
+        {
+          "text": "Session one — and before the headset, hand her the abort line with ceremony, because instruments work better when the household can watch them being trusted.",
           "next": "sessions_montage"
         }
       ]
@@ -78,6 +86,10 @@
         {
           "text": "Back to the stacks in the morning — because if 'again' has priors, then somewhere in the founder's records there is a ledger of them, and the household now knows what word to search for.",
           "next": "ledger_door"
+        },
+        {
+          "text": "Sleep first — even load-bearing variables need rest — and in the morning, the stacks, and the founder's records, and the word the household now knows to search for.",
+          "next": "ledger_door"
         }
       ]
     },
@@ -94,6 +106,10 @@
       "choices": [
         {
           "text": "Back to the stacks in the morning, carrying it alone — because if 'again' has priors, somewhere in the founder's records is a ledger of them, and you intend to find it before anyone else knows to look.",
+          "next": "ledger_door"
+        },
+        {
+          "text": "Sleep badly on it, alone with the margin you left for the reader — and in the morning, the stacks, and the ledger of 'again', found before anyone else knows to look.",
           "next": "ledger_door"
         }
       ]

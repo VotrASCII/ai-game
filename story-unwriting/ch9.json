@@ -8,6 +8,10 @@
         {
           "text": "In, behind the household's held breath — to the calibration lab, the personnel file, and a man who has waited four years to be remembered by someone who can't.",
           "next": "calibration_lab"
+        },
+        {
+          "text": "In, at the household's pace — her at your shoulder, the dog at hers — into the old machine air, to read a four-year objection filed on your behalf.",
+          "next": "calibration_lab"
         }
       ]
     },
@@ -39,6 +43,10 @@
         {
           "text": "Say it to him straight, so the room can stop holding it: 'It was never synthetic at the end, was it. Who was the standard, Rhee?'",
           "next": "the_standard"
+        },
+        {
+          "text": "Hold the plots one minute longer — first thing, like checking the weather — and then ask him, quietly, the question the room is already answering: who was the standard?",
+          "next": "the_standard"
         }
       ]
     },
@@ -48,6 +56,10 @@
       "choices": [
         {
           "text": "Sit down, before the legs decide for you, and make Rhee tell the rest in order: the delivery, the Halfway, and why a man who was the standard woke up eleven months ago in a tower with no memory of any of it.",
+          "next": "rhee_delivery"
+        },
+        {
+          "text": "Stay standing — some findings deserve to be taken on your feet — and ask Rhee for the rest in order: the delivery, the Halfway, the tower with no memory in it.",
           "next": "rhee_delivery"
         }
       ]
@@ -73,6 +85,10 @@
         {
           "text": "Put your two exhibits on his bench — the hut survey with its margin, and the October line — and let the household and the machinist merge their files into one.",
           "next": "merge_files"
+        },
+        {
+          "text": "Answer his question with your own first — trade like colleagues, not witnesses — and then lay the exhibits on the bench: the margin, and the October line.",
+          "next": "merge_files"
         }
       ]
     },
@@ -83,6 +99,10 @@
         {
           "text": "Open the model's source manifest in the file, because the household does not flinch at pages — and read out whose mind you baked into the standard, eleven years ago, without asking her.",
           "next": "model_sources"
+        },
+        {
+          "text": "Let Osy run the merge — order out of order is her mother tongue — and stand ready at the personnel file for the question you can feel the bench assembling.",
+          "next": "model_sources"
         }
       ]
     },
@@ -92,6 +112,10 @@
       "choices": [
         {
           "text": "Say the rest: the ledger isn't a monster's. It's a modeler's — an engine still running its founder's last objective function, optimizing what he taught it to treasure. The Editor may be exactly what she called it in the vault: not the machine. The machine's opponent — or its conscience.",
+          "next": "say_the_rest"
+        },
+        {
+          "text": "Open it slowly, reading the sources column aloud in inventory voice — some pages are easier walked at protocol pace — and let the name arrive in its own row.",
           "next": "say_the_rest"
         }
       ]
@@ -109,6 +133,10 @@
         {
           "text": "One question left for the lab before rest: her drift. Rhee ran calibration for twenty-two years — put Osy on his instruments and get the number the Warden only felt.",
           "next": "drift_measurement"
+        },
+        {
+          "text": "Ask it as an engineering request — Rhee, your instruments, her drift, a number — because the Warden felt it, and this household does not run on feelings it can measure.",
+          "next": "drift_measurement"
         }
       ]
     },
@@ -118,6 +146,10 @@
       "choices": [
         {
           "text": "Morning, and the audit — because the yard is next, the grace period is spent, and what this household is about to attempt has never been attempted by anyone, including the man who invented it.",
+          "next": "waypoint_three"
+        },
+        {
+          "text": "Lie awake a while with the number and the two-metre arithmetic — then morning, and the audit, and the thing nobody, including its inventor, has ever attempted.",
           "next": "waypoint_three"
         }
       ]
