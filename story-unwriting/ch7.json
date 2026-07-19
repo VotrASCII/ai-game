@@ -51,6 +51,10 @@
         {
           "text": "Morning, then, openly: through the gap in the stones, hands shown, household presented. Whatever she measured in the dark, skulking would confirm the worst reading of it.",
           "next": "waystation"
+        },
+        {
+          "text": "Break camp before first light and make the approach with the dog visible and the packs open — nothing declares honest business like luggage a stranger is welcome to inspect.",
+          "next": "waystation"
         }
       ]
     },
@@ -76,6 +80,10 @@
         {
           "text": "Walk the line now, in front of everyone, and let her read what she reads — the household doctrine is two eyes open, and it does not exempt you.",
           "next": "warden_line"
+        },
+        {
+          "text": "Ask her first what the warm kind means in doctrine — pay for the answer if it costs — and then walk the line in front of everyone, exempt from nothing.",
+          "next": "warden_line"
         }
       ]
     },
@@ -85,6 +93,10 @@
       "choices": [
         {
           "text": "Stop at the boundary's end and face her. The reading is taken either way; the only question left is whether it gets discussed as colleagues or hunted as doctrine. Choose colleagues, in front of the church.",
+          "next": "warden_verdict"
+        },
+        {
+          "text": "Hold her gaze while the fist opens — no flinch, no performance of innocence — and let the reading stand as taken. Then the discussion, as colleagues, in front of the church.",
           "next": "warden_verdict"
         }
       ]
@@ -101,6 +113,10 @@
       "choices": [
         {
           "text": "West, that night, by the wake of the next storm — three days of grace on the clock and a household file grown one entry heavier and one secret lighter.",
+          "next": "lost_morning"
+        },
+        {
+          "text": "Thank her at the gate-stone — for the grace, for the three days, for the white stone set out of true — and go west that night by the wake of the next storm.",
           "next": "lost_morning"
         }
       ]
@@ -133,6 +149,10 @@
         {
           "text": "West, under the new protocol — three heartbeats keeping one shared ledger of hours, into the control country.",
           "next": "end_ch7"
+        },
+        {
+          "text": "Log the new protocol in both notebooks before anyone moves — a medical device deserves documentation — then west, three heartbeats, one shared ledger of hours.",
+          "next": "end_ch7"
         }
       ]
     },
@@ -142,6 +162,10 @@
       "choices": [
         {
           "text": "West, under the amended treaty — three heartbeats keeping one shared ledger of hours, into the control country.",
+          "next": "end_ch7"
+        },
+        {
+          "text": "Rest your hand once on the dog's head — retroactive gratitude, ratified where he can feel it — then west, under the amended treaty, into the control country.",
           "next": "end_ch7"
         }
       ]

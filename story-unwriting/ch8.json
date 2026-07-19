@@ -22,6 +22,10 @@
         {
           "text": "Depose the days at dusk — pay honestly, choose your days carefully — and open the construction file in the morning.",
           "next": "deposition"
+        },
+        {
+          "text": "Walk the cloister once before dusk, pricing which day of your life you can afford to spend truly — then the deposition, and in the morning, the file.",
+          "next": "deposition"
         }
       ]
     },
@@ -31,6 +35,10 @@
       "choices": [
         {
           "text": "Sit with that in front of the household, out loud, per treaty — and at dusk, pay the Order's price for the paper: a day of your lives each, deposed truly. The construction file opens in the morning.",
+          "next": "deposition"
+        },
+        {
+          "text": "Thank the beekeeper properly — for the hello she would have said — and carry her sentence to the household out loud, per treaty, before the dusk deposition.",
           "next": "deposition"
         }
       ]
@@ -42,6 +50,10 @@
         {
           "text": "The eighth of June. You know the date the way you know your own scars. Ask her the only question that matters: can the Hour be walked by its own congregation?",
           "next": "hour_threshold"
+        },
+        {
+          "text": "Stand at the rail a while with the date in your mouth — the eighth of June, Hour 121 — and then ask her the only question that matters: can the Hour be walked by its own congregation?",
+          "next": "hour_threshold"
         }
       ]
     },
@@ -51,6 +63,10 @@
       "choices": [
         {
           "text": "Walk the Hour. Together, per treaty — both eyes, the original record, whatever it holds against the versions you have each kept for eleven years.",
+          "next": "the_hour"
+        },
+        {
+          "text": "Answer the Prioress exactly — the terrace, nine to twenty-two forty, the original — because precision is the only prayer you have ever trusted. Then walk it, together, per treaty.",
           "next": "the_hour"
         }
       ]
@@ -93,6 +109,10 @@
         {
           "text": "Breakfast, and the freight register, and the one line somebody wanted burned.",
           "next": "freight_register"
+        },
+        {
+          "text": "Carry it held into breakfast like contraband joy — and then the freight register, and the one line somebody wanted burned.",
+          "next": "freight_register"
         }
       ]
     },
@@ -102,6 +122,10 @@
       "choices": [
         {
           "text": "The freight register, then, and the one line somebody with no address wanted burned.",
+          "next": "freight_register"
+        },
+        {
+          "text": "Walk the four-minute corridor without defending yourself to it — the sentence is hers to hold and yours to earn against — and open the register at eight.",
           "next": "freight_register"
         }
       ]
@@ -118,6 +142,10 @@
       "choices": [
         {
           "text": "Copy everything, thank the Order, and take the road's last leg — the campus itself, where the interface archives wait, and where the word CALIBRATION was somebody's job to define.",
+          "next": "end_ch8"
+        },
+        {
+          "text": "Sit one minute with the word courier where she can watch you take the weight of it — then copy everything, thank the Order, and take the last leg to the campus.",
           "next": "end_ch8"
         }
       ]

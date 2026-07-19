@@ -22,6 +22,10 @@
         {
           "text": "Thursday, ten o'clock, Exchange Street, all three of you — into the basement of whatever is left of the people who built the sky.",
           "next": "exchange_street"
+        },
+        {
+          "text": "Spend the two days before Thursday preparing like an examiner — every question written, every likely answer pre-priced — because an outfit that has read your month deserves a household that has read theirs.",
+          "next": "exchange_street"
         }
       ]
     },
@@ -31,6 +35,10 @@
       "choices": [
         {
           "text": "Eight o'clock, Exchange Street, sublevel 2. Bring the writer. You are the writer. Go and find out what that means.",
+          "next": "exchange_street"
+        },
+        {
+          "text": "Sleep badly, pack the original, and arrive early — because whatever bring the writer means, the writer arriving first says it in a grammar engineers recognize.",
           "next": "exchange_street"
         }
       ]
@@ -63,6 +71,10 @@
         {
           "text": "Follow her to the bright end, and Sedge Lane, and whatever the red books call a bridge.",
           "next": "sedge_log"
+        },
+        {
+          "text": "Note the rails as you walk them — what she steers past, what she steers around — because a guided tour is also a map of what the guide will not show you.",
+          "next": "sedge_log"
         }
       ]
     },
@@ -73,6 +85,10 @@
         {
           "text": "Open the folio with her. Both eyes, together, no flinching at the file — the treaty holds precisely because moments like this are what it was signed for.",
           "next": "beneficiary_maps"
+        },
+        {
+          "text": "Reach for the folio first — your hand steady enough to pass audit, both of you knowing exactly what the steadiness costs — and open it where she can see everything you see.",
+          "next": "beneficiary_maps"
         }
       ]
     },
@@ -82,6 +98,10 @@
       "choices": [
         {
           "text": "Ask the vault's other question — the one you have been carrying since the aisles, or since the hut, or since the mirror: 'Who signs the edits? A ledger this disciplined doesn't run unsigned.'",
+          "next": "auth_key"
+        },
+        {
+          "text": "Hold the question one breath longer, watching the intervals tighten on the plot like weather coming in — and then ask it plainly: 'Who signs the edits?'",
           "next": "auth_key"
         }
       ]
@@ -113,6 +133,10 @@
         {
           "text": "Up, out, into the daylight, carrying the finding — and let the household audit what it has become before anything else is decided.",
           "next": "waypoint_two"
+        },
+        {
+          "text": "Shake Voss's hand on the way out — engineer to engineer, guilt to guilt — and carry the finding up into the daylight, where the household can audit what it has become.",
+          "next": "waypoint_two"
         }
       ]
     },
@@ -129,6 +153,10 @@
       "choices": [
         {
           "text": "Take the three blocks. Then, at the folding table, give her everything — the shorthand, the recognition, the fear — and let the household audit what it has become.",
+          "next": "waypoint_two"
+        },
+        {
+          "text": "Walk the three blocks composing nothing — no openings, no defenses; she would hear the drafting in your gait — and at the folding table, give her the unrehearsed everything.",
           "next": "waypoint_two"
         }
       ]
