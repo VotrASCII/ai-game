@@ -23,6 +23,10 @@
         {
           "text": "On to the river. The crossing is where the road's intentions and yours will disagree for the first time — rivers are where corridors show their walls.",
           "next": "the_river"
+        },
+        {
+          "text": "Read the entry once more before the log closes — schedules imply a destination — and then the river, where corridors show their walls.",
+          "next": "the_river"
         }
       ]
     },
@@ -34,6 +38,10 @@
         {
           "text": "On to the river. The crossing is where the road's intentions and yours will disagree for the first time — rivers are where corridors show their walls.",
           "next": "the_river"
+        },
+        {
+          "text": "Circle the definition twice in your head, not on the page — freedom of route, destiny of destination — and then the river, where the disagreement is scheduled.",
+          "next": "the_river"
         }
       ]
     },
@@ -44,6 +52,10 @@
       "choices": [
         {
           "text": "Down to the ferry landing. One crossing left on this whole reach of river, which means whoever runs it just became the most important stranger in the county — and your only way east.",
+          "next": "the_landing"
+        },
+        {
+          "text": "Stand with the boxed question until the light moves — who is billed when the limit's reached — and then down to the landing, and the county's most important stranger.",
           "next": "the_landing"
         }
       ]
@@ -82,6 +94,10 @@
         {
           "text": "You'll wait your turn like anyone. Say so — and watch what a man who runs the county's only crossing does when someone declines to be special.",
           "next": "the_ferryman"
+        },
+        {
+          "text": "Take your place in the queue with the household squared away — belled, leashed, logged — and watch what the man at the cable does with someone who declines to be special.",
+          "next": "the_ferryman"
         }
       ]
     },
@@ -115,6 +131,10 @@
         {
           "text": "Aboard, then. Mid-river is the best interrogation room in the county: no exits, shared risk, and a man at a cable with his hands full and his guard down.",
           "next": "mid_river"
+        },
+        {
+          "text": "Note the care with the fish — instruments, his — and then aboard: mid-river is the best interrogation room in the county.",
+          "next": "mid_river"
         }
       ]
     },
@@ -125,6 +145,10 @@
       "choices": [
         {
           "text": "Aboard, then. Mid-river is the best interrogation room in the county: no exits, shared risk, and a man at a cable with his hands full and his guard down.",
+          "next": "mid_river"
+        },
+        {
+          "text": "Box the currency question and carry it up the ramp unanswered — and aboard: no exits, shared risk, a man with his hands full.",
           "next": "mid_river"
         }
       ]
@@ -152,6 +176,10 @@
         {
           "text": "Land the household. He gave you more than he knows he has — a man with a weather where a mandate should be — and pushing past a person's edge of self-knowledge yields fiction, not data.",
           "next": "far_bank"
+        },
+        {
+          "text": "Enter it under Personnel while the hull still moves — a weather where a mandate should be — and then land the household on the far bank's verdict.",
+          "next": "far_bank"
         }
       ]
     },
@@ -162,6 +190,10 @@
       "choices": [
         {
           "text": "Up the bluff before dark, and camp where the drover road meets the sky. The recommended road, of course — noted as recommended, taken anyway; corridors are mapped by walking them, and you have a county of questions and exactly one thread. Follow it east.",
+          "next": "end_ch2"
+        },
+        {
+          "text": "Feed the household first at the water line — audits keep; suppers don't — then up the bluff to the drover road, east, along the county's one thread.",
           "next": "end_ch2"
         }
       ]

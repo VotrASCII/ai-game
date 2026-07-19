@@ -71,6 +71,10 @@
         {
           "text": "Go up. His clear hours are currency and the exchange opens early.",
           "next": "w_house"
+        },
+        {
+          "text": "Watch the lane one beat longer than the record requires — then up, because his clear hours are currency and the exchange opens early.",
+          "next": "w_house"
         }
       ]
     },
@@ -88,6 +92,10 @@
       "choices": [
         {
           "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        },
+        {
+          "text": "Stand a moment with the dog's open file — the ears disagree with the archive, and the ears have seniority — then the kettle, the morning, the wall.",
           "next": "a_house"
         }
       ]
@@ -107,6 +115,10 @@
         {
           "text": "The morning, properly. Then the wall of questions.",
           "next": "a_house"
+        },
+        {
+          "text": "Let the classification settle — debts payable to the unwritten — then the kettle, which has always been yours, and the wall of questions.",
+          "next": "a_house"
         }
       ]
     },
@@ -124,6 +136,10 @@
       "choices": [
         {
           "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        },
+        {
+          "text": "Rest a hand on the chin on your knee — co-witness, acknowledged — then the kettle, and the morning, and the wall.",
           "next": "a_house"
         }
       ]
@@ -143,6 +159,10 @@
         {
           "text": "The morning, properly. Then the wall of questions.",
           "next": "a_house"
+        },
+        {
+          "text": "Watch her bow lower than the mechanism requires, and file what that means — then the kettle, and the wall of questions.",
+          "next": "a_house"
         }
       ]
     },
@@ -160,6 +180,10 @@
       "choices": [
         {
           "text": "The morning, properly. Then the wall of questions.",
+          "next": "a_house"
+        },
+        {
+          "text": "Watch the pen not mend itself all the way down the lane — then the kettle, and the wall of questions.",
           "next": "a_house"
         }
       ]
@@ -186,6 +210,10 @@
       "choices": [
         {
           "text": "Up to the wall, then. The numbers will be exactly as wrong as yesterday, and you will measure exactly how wrong, again, because measurement is the only prayer you know.",
+          "next": "w_fray"
+        },
+        {
+          "text": "Hand him three more gears in his order instead of yours — courtesy between craftsmen — and then up to the wall, to measure exactly how wrong, again.",
           "next": "w_fray"
         }
       ]
@@ -272,6 +300,10 @@
         {
           "text": "Two animals now. One household. Back to the wall — the clerk is still yours to date, and now the morning has a second anomaly to file.",
           "next": "household"
+        },
+        {
+          "text": "Write one more line first — the bell is somebody's workmanship, and workmanship has an address — and then back to the wall, with the morning's second anomaly filed.",
+          "next": "household"
         }
       ]
     },
@@ -282,6 +314,10 @@
       "choices": [
         {
           "text": "Tomorrow: the plates. The sky survey is the one instrument you run that no one down here can lean on, and its cadence does not care about cats.",
+          "next": "household"
+        },
+        {
+          "text": "Let tomorrow keep its plans unspoiled — tonight the household sleeps at full strength — and then the plates, whose cadence does not care about cats.",
           "next": "household"
         }
       ]
@@ -299,6 +335,10 @@
       "choices": [
         {
           "text": "The plates, then. Survey night. The sky is the one ledger down here that nobody edits, and you keep your appointments with it.",
+          "next": "the_plates"
+        },
+        {
+          "text": "One turn of the yard first, counting the new parade — dog, cat, kettle, wall — because small worlds balance best when audited nightly. Then the plates.",
           "next": "the_plates"
         }
       ]
@@ -362,6 +402,10 @@
         {
           "text": "Inside, to the table, to the arithmetic. Feelings are data but they are not analysis, and tonight has produced one hypothesis wearing a storm: something with preferences is minding you, present tense, with overhead.",
           "next": "night_math"
+        },
+        {
+          "text": "Stand in the doorway one minute more, watching the rain walls close like doors — held, and aimed at — and then the table, and the arithmetic.",
+          "next": "night_math"
         }
       ]
     },
@@ -393,6 +437,10 @@
       "choices": [
         {
           "text": "East, then. A dog on a lead, a cat in a basket, the logs in a tube, and a storm's worth of proof that something considers your safety its business. Go make it explain itself.",
+          "next": "end_ch1"
+        },
+        {
+          "text": "Take the lead, take the basket, take the advice — the wanting stays yours — and go east to make it explain itself.",
           "next": "end_ch1"
         }
       ]
