@@ -22,6 +22,10 @@
         {
           "text": "Witness it, formally, into the file — and add the corollary she hasn't said: the engine could arrange everything except the two things it was built to treasure. Her mind. And her no.",
           "next": "the_corollary"
+        },
+        {
+          "text": "Say nothing yet — let nobody ever played my moves stand in the camp air, unimproved — and then enter it formally in the file, with the corollary she hasn't said.",
+          "next": "the_corollary"
         }
       ]
     },
@@ -31,6 +35,10 @@
       "choices": [
         {
           "text": "The morning after, she does the thing with Pin's notebooks — and the household stands witness at the river.",
+          "next": "pin_reckoning"
+        },
+        {
+          "text": "Sleep on the finding, dog between the bedrolls — and in the morning stand witness at the river while she does the thing with Pin's notebooks.",
           "next": "pin_reckoning"
         }
       ]
@@ -47,6 +55,10 @@
       "choices": [
         {
           "text": "Carry it. And ask her, at last, the operational question the whole reckoning has been building to: what does she want her role to be, at the yard — because the household does not decide it for her.",
+          "next": "player_not_piece"
+        },
+        {
+          "text": "Carry it — and first, thank her, once, plainly, without adjectives, for showing the household the piece that takes. Then the operational question: her role at the yard is hers to choose.",
           "next": "player_not_piece"
         }
       ]

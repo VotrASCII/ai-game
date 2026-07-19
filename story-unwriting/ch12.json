@@ -18,6 +18,10 @@
         {
           "text": "The early ledger, then. Sequences one through four hundred, off the red shelves — the pages your predecessors are begging you to not be.",
           "next": "early_ledger"
+        },
+        {
+          "text": "Stand, stretch, make the tea first — thirteen shelves of your own handwriting deserve steady hands — and then sequences one through four hundred, in order.",
+          "next": "early_ledger"
         }
       ]
     },
@@ -48,6 +52,10 @@
         {
           "text": "Sit where she can see you, and let her read her life raw — every shelf, every sequence, untranslated, to the end.",
           "next": "unsoftened"
+        },
+        {
+          "text": "Sit — and set your own log on the table facing her before she opens SEQ 1, because if she is reading raw tonight, everything in the room reads raw.",
+          "next": "unsoftened"
         }
       ]
     },
@@ -64,6 +72,10 @@
       "choices": [
         {
           "text": "The last page of the letter, then — page six, the one the writer said came after the shelves — and whatever forty-seven wanted read only by a man who had watched her read.",
+          "next": "page_six"
+        },
+        {
+          "text": "Write the law down first, both hands, as instructed — the truth did this; the truth never once arranged her — and then page six, the one meant for a man who had watched her read.",
           "next": "page_six"
         }
       ]
@@ -82,6 +94,10 @@
         {
           "text": "Page six of the letter, when she is finally done — whatever forty-seven wanted read only by a man who had watched her read.",
           "next": "page_six"
+        },
+        {
+          "text": "Bring her tea at hour thirteen — the only marginalia you have any right to add tonight — and then page six, when she is done.",
+          "next": "page_six"
         }
       ]
     },
@@ -97,6 +113,10 @@
       "choices": [
         {
           "text": "Take the key. Take the note. Take the household east — to the yard, the rungs, the chair, and the choice forty-seven men never managed to make in the room.",
+          "next": "waypoint_four"
+        },
+        {
+          "text": "Copy 46's note into your own log first, word for word, in the impatient hand — some documents want a second site — and then east, with the key, all three of you.",
           "next": "waypoint_four"
         }
       ]

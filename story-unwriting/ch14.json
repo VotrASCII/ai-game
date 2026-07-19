@@ -8,6 +8,10 @@
         {
           "text": "Answer it. Key the transmitter, encode a reply in its own notation — accept the game. You did not come four hundred kilometres to leave a god's opening hanging.",
           "next": "first_reply"
+        },
+        {
+          "text": "Log the dog's verdict first — provisional, incomprehensible, filed — and then key the transmitter and answer a god's opening in its own notation.",
+          "next": "first_reply"
         }
       ]
     },
@@ -17,6 +21,10 @@
       "choices": [
         {
           "text": "Take the white pieces. Sit down at the lodge window with the household at your shoulder and a god across the glass, and hear the terms.",
+          "next": "the_terms"
+        },
+        {
+          "text": "Study the regulation board a long minute before sitting — turned so the white faces the visitors; note who has been made host — and then sit, household at your shoulder, and hear the terms.",
           "next": "the_terms"
         }
       ]
@@ -54,6 +62,10 @@
         {
           "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
           "next": "briefing"
+        },
+        {
+          "text": "Sit with the verdict a moment — no line in which that move is played by a keeper — and then collect the debt: the briefing, the countdown, the mooring.",
+          "next": "briefing"
         }
       ]
     },
@@ -70,6 +82,10 @@
         {
           "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
           "next": "briefing"
+        },
+        {
+          "text": "Log the appended note first — keep the line; name it for the dog — and then collect the debt: the briefing, the countdown, the mooring.",
+          "next": "briefing"
         }
       ]
     },
@@ -80,6 +96,10 @@
         {
           "text": "The verdict is in. Now the ward owes the household its briefing: the countdown, the mooring, and everything a perimeter god knows about what waits below.",
           "next": "briefing"
+        },
+        {
+          "text": "Sit a moment with a god's disappointment — perhaps he is still en route — and then collect the debt: the briefing, the countdown, the mooring.",
+          "next": "briefing"
         }
       ]
     },
@@ -89,6 +109,10 @@
       "choices": [
         {
           "text": "One document before the descent: ask the ward for its forecast. It has run the endgame for fourteen hundred days — make it show its lines.",
+          "next": "endgame_sheet"
+        },
+        {
+          "text": "Thank it first, in protocol, in full — sworn witnesses are owed courtesy even at machine scale — and then ask for the forecast: fourteen hundred days of endgame, shown.",
           "next": "endgame_sheet"
         }
       ]
@@ -105,6 +129,10 @@
       "choices": [
         {
           "text": "Dawn, then. The gate, the gravel, the doorless barn, and the hatch that opens downward into everything.",
+          "next": "end_ch14"
+        },
+        {
+          "text": "Stand at the window a while, pricing the residual with her — the one unpriced line on a god's sheet — and then sleep, because dawn opens the gate.",
           "next": "end_ch14"
         }
       ]
