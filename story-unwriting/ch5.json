@@ -8,6 +8,10 @@
         {
           "text": "The Sedge Lane footbridge, then — over the cutting, dead on Pin's line, the only crossing for a mile in either direction.",
           "next": "bridge_cross"
+        },
+        {
+          "text": "One instrument check at the treeline first — batteries, glasses, the receiver's gain — because the middle of the middle is not a place this household arrives at underequipped. Then the footbridge.",
+          "next": "bridge_cross"
         }
       ]
     },
@@ -17,6 +21,10 @@
       "choices": [
         {
           "text": "Up the ridge to the long look — bellies in the grass, glasses out, the Anchorage laid out below like a problem set.",
+          "next": "long_look"
+        },
+        {
+          "text": "Cross last, behind the dog and the colleague, watching the water in the cutting run its wrong direction — someone should hold the rear, and the job is yours by temperament.",
           "next": "long_look"
         }
       ]
@@ -54,6 +62,10 @@
         {
           "text": "Enough. That word — mid-game — has changed the shape of the day. Pull back off the ridge line and hold the decision council.",
           "next": "decision_point"
+        },
+        {
+          "text": "Listen sixty seconds longer with the gain flat — logging the cadence, the tempo, evidence over adrenaline — and then pull back off the ridge line for the council.",
+          "next": "decision_point"
         }
       ]
     },
@@ -70,6 +82,10 @@
         {
           "text": "Down, and back along the rim, and hold the decision council — the yard has a keeper, and the keeper lives underneath it.",
           "next": "decision_point"
+        },
+        {
+          "text": "Sketch the hatch and the radii on your knee before descending — the pacing-groove measured, the slippers unmentioned — and carry the drawing down to the council.",
+          "next": "decision_point"
         }
       ]
     },
@@ -85,6 +101,10 @@
       "choices": [
         {
           "text": "Curve in hand, hold the decision council: the long look is done, and the question is how much closer 'recon' goes.",
+          "next": "decision_point"
+        },
+        {
+          "text": "Walk the seam's line one careful stretch further, curve in hand, until the word moor stops being a metaphor — then the council, and the question of how much closer recon goes.",
           "next": "decision_point"
         }
       ]
@@ -120,6 +140,10 @@
         {
           "text": "South to the aqueduct crossing — the long dark way home, with the new true world all around you and the old one riding in exactly two skulls and possibly one dog.",
           "next": "far_bank"
+        },
+        {
+          "text": "One look back at the mother and the boy before the dark takes the bank — the first two entries in a ledger you are only beginning to suspect you keep — then south, the long way home.",
+          "next": "far_bank"
         }
       ]
     },
@@ -129,6 +153,10 @@
       "choices": [
         {
           "text": "Answer her honestly, at the foot of the stairs, with the only hypotheses that survive the night — and let her write them into the record.",
+          "next": "notebook_scene"
+        },
+        {
+          "text": "Take the stairs first and put the kettle on — some testimony wants a table under it — and give her the honest hypotheses over tea, on the record.",
           "next": "notebook_scene"
         }
       ]
@@ -145,6 +173,10 @@
       "choices": [
         {
           "text": "Write the day into her notebook in your own impatient hand — the bridge, the boy, the three hypotheses, the name — and let the household hold its new weight together.",
+          "next": "end_ch5"
+        },
+        {
+          "text": "Write the day, all of it — and when you reach the name, print it in block capitals, once, the way you would label a hazard, and keep writing.",
           "next": "end_ch5"
         }
       ]

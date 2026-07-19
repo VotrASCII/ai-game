@@ -61,6 +61,10 @@
         {
           "text": "Rendezvous complete, kit complete. Now the real errand: information. The tent rows where the depot stories live.",
           "next": "scrip_hunt"
+        },
+        {
+          "text": "Bank the decoration without visible damage — she will price a reaction — and steer for the tent rows, where the depot stories live.",
+          "next": "scrip_hunt"
         }
       ]
     },
@@ -90,6 +94,10 @@
       "choices": [
         {
           "text": "Find Osy at the rendezvous palm and trade findings — she has been hunting stories all afternoon, and yours has a basement in it.",
+          "next": "scrip_hunt"
+        },
+        {
+          "text": "One detour along the battery stalls first, converting scrip to spares while the market still likes you — then the rendezvous palm, and the trading of findings.",
           "next": "scrip_hunt"
         }
       ]
@@ -137,6 +145,10 @@
         {
           "text": "Home by the lamplit rows — one stall left that Osy has been circling all day without entering: the Archivists' tent.",
           "next": "archivist_tent"
+        },
+        {
+          "text": "Let the quiet hold — large font needs no reply — and walk beside her toward the one stall she has circled all day without entering: the Archivists' tent.",
+          "next": "archivist_tent"
         }
       ]
     },
@@ -146,6 +158,10 @@
       "choices": [
         {
           "text": "Follow her toward the one stall she has circled all day without entering: the Archivists' tent.",
+          "next": "archivist_tent"
+        },
+        {
+          "text": "Give the arithmetic ten more strides — what was won, at which counter — and then follow anyway, because the tent is the last stall of the day and she should not enter it alone.",
           "next": "archivist_tent"
         }
       ]
@@ -163,6 +179,10 @@
       "choices": [
         {
           "text": "Follow, at the distance the mistake has priced. The Archivists' tent is the last stall of the day, and she has been circling it since morning.",
+          "next": "archivist_tent"
+        },
+        {
+          "text": "Close the distance anyway — not forgiven, and not pretending otherwise — because whatever the mistake cost, the Archivists' tent is not a door she should open alone.",
           "next": "archivist_tent"
         }
       ]
@@ -194,6 +214,10 @@
         {
           "text": "Home, all three of you, under the mismatched stars — and open Pin's notebooks at the lamp, because NEW, underlined twice, is now the oldest lead you have.",
           "next": "end_ch4"
+        },
+        {
+          "text": "Stand witness a moment longer in the borrowed light, saying nothing — some files want a silence before the next lead — then home, and Pin's notebooks at the lamp.",
+          "next": "end_ch4"
         }
       ]
     },
@@ -209,6 +233,10 @@
       "choices": [
         {
           "text": "Home under the mismatched stars — and at the lamp, Pin's notebooks come open, because NEW, underlined twice, is now the oldest lead you have.",
+          "next": "end_ch4"
+        },
+        {
+          "text": "Fall into step without testing the new quiet — doors left ajar close if you lean on them — and at home, at the lamp, open Pin's notebooks. NEW, underlined twice.",
           "next": "end_ch4"
         }
       ]
