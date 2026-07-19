@@ -8,6 +8,10 @@
         {
           "text": "Light the second lamp, rig a reading station, and do this properly: four years, twenty-four books, one auditor. Start at book one and let the record testify in order.",
           "next": "the_cave"
+        },
+        {
+          "text": "Water the animals, set the bell at the cave mouth as doorkeeper, and then the reading station, the second lamp, and four years of record taken in order.",
+          "next": "the_cave"
         }
       ]
     },
@@ -39,6 +43,10 @@
         {
           "text": "Now the fee lines — the accounts under the record. Vectors say where the steering points; the ledger convention will say what it's all entered against.",
           "next": "the_fees"
+        },
+        {
+          "text": "Sit one minute with the exhibit — the freedom was real; the freedom was the exhibit — and then down into the fee lines, the accounts under the record.",
+          "next": "the_fees"
         }
       ]
     },
@@ -49,6 +57,10 @@
       "choices": [
         {
           "text": "Back to the shelves and the fee lines — Harrow's key against the Notary's accounts. The deep country will keep; the ledger is tonight's war.",
+          "next": "the_fees"
+        },
+        {
+          "text": "Pay the scout in fish at the mouth of the throat — reports read into the record earn wages — and then back to the shelves, and the ledger's war.",
           "next": "the_fees"
         }
       ]
@@ -61,6 +73,10 @@
         {
           "text": "Out of the cave into daylight, books resealed, cairns squared — and sit with the household on the warm scree while the finding finishes arriving.",
           "next": "scree_light"
+        },
+        {
+          "text": "Read the meter sentence once aloud to the shelves — the cave has held worse — and then out, books resealed, to the warm scree and the household.",
+          "next": "scree_light"
         }
       ]
     },
@@ -72,6 +88,10 @@
         {
           "text": "East, at road pace, toward Chalcedon — and whatever waits at the night's shelter.",
           "next": "lost_morning"
+        },
+        {
+          "text": "One more hour on the scree, letting the finding finish arriving — you are the meter; the meter is the door — then east along the Long Dry.",
+          "next": "lost_morning"
         }
       ]
     },
@@ -82,6 +102,10 @@
       "choices": [
         {
           "text": "East, the last day, to the waystation — where the road, which reads your books too, will have prepared its answer.",
+          "next": "the_waystation"
+        },
+        {
+          "text": "Re-run the morning drill once, whole, to prove the discipline holds on the days you cannot — then east, the last day, to the waystation.",
           "next": "the_waystation"
         }
       ]
@@ -121,6 +145,10 @@
         {
           "text": "Now the reply. The tender addressed you — its first composed sentence — and audits answer their correspondence. Write it before the fire and the ruled page.",
           "next": "the_reply"
+        },
+        {
+          "text": "Walk once around the fire before drafting — audits answer their correspondence, but they answer composed — and then the reply, at the table, in ink.",
+          "next": "the_reply"
         }
       ]
     },
@@ -131,6 +159,10 @@
       "choices": [
         {
           "text": "The fire, the ruled page, the waypoint — and tomorrow, Chalcedon and the fourth hand.",
+          "next": "waypoint_three"
+        },
+        {
+          "text": "Sleep with the clock pressed and the move made — no second-guessing signed documents — then the fire, the ruled page, and tomorrow, Chalcedon.",
           "next": "waypoint_three"
         }
       ]

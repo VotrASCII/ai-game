@@ -23,6 +23,10 @@
         {
           "text": "Sit down at the board. The cup can have your coin. You have watched enough to know you are not here to solve his problem — you are here to be shown something, and the showing requires your hands on the pieces.",
           "next": "the_table"
+        },
+        {
+          "text": "Watch one more hand first, pricing the door held open in the wall — then the coin in the cup, and your hands on the pieces.",
+          "next": "the_table"
         }
       ]
     },
@@ -56,6 +60,10 @@
         {
           "text": "Finish the game — you owe the opening that much — and then ask him for what you actually came for: the loss. The shapeless move. Where a man who loses like that keeps his scoresheets, and who taught him the shape.",
           "next": "the_scoresheet"
+        },
+        {
+          "text": "Finish the game at tournament pace — the opening deserves witnesses with manners — and then ask for the loss, the shapeless move, and who taught the shape.",
+          "next": "the_scoresheet"
         }
       ]
     },
@@ -66,6 +74,10 @@
       "choices": [
         {
           "text": "Now what you came for: the loss. The shapeless move. Where a man who loses like that keeps his scoresheets, and who taught him the shape.",
+          "next": "the_scoresheet"
+        },
+        {
+          "text": "Buy the next round of chestnuts first — some cards stay face-down better over food — and then the loss, the scoresheets, and who taught the shape.",
           "next": "the_scoresheet"
         }
       ]
@@ -99,6 +111,10 @@
         {
           "text": "Now the cellar in the cliff, and the examiner — the right wrong question has an answer, and it's awake.",
           "next": "the_clerk"
+        },
+        {
+          "text": "Let the evening spend itself to the last saucer — worth it, entered as worth it — and then the cellar in the cliff, and the examiner who is awake.",
+          "next": "the_clerk"
         }
       ]
     },
@@ -109,6 +125,10 @@
       "choices": [
         {
           "text": "The board, then — the real one. Sit down with the piece of the mind that computed every ending once already, and put your whole situation on its table: the funnel, the tenders, the account, the clock. Ask it to show you the game.",
+          "next": "kestrel"
+        },
+        {
+          "text": "Inventory the cabinet's engineering first — poured stone, old-world light, a breaker box for a god — and then sit, and put the whole situation on its table.",
           "next": "kestrel"
         }
       ]
@@ -137,6 +157,10 @@
         {
           "text": "Now the last question, while it's still interested: the fog on the tree, the deep dry, the price of the residual branch.",
           "next": "the_price"
+        },
+        {
+          "text": "Enter playable in the log, large font, exactly as spoken — and then the last question while the boredom holds off: the fog, the deep dry, the price.",
+          "next": "the_price"
         }
       ]
     },
@@ -147,6 +171,10 @@
       "choices": [
         {
           "text": "Morning, provisions, bearings — and Part Two ruled closed at the arcade's brazier before the road east and down. The census is done; the game is drawn; the fog is the destination now.",
+          "next": "end_ch10"
+        },
+        {
+          "text": "Thank the clerk on the way up — examiners are owed their fee of courtesy — and then morning, provisions, and Part Two ruled closed at the brazier.",
           "next": "end_ch10"
         }
       ]

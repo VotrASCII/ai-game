@@ -23,6 +23,10 @@
         {
           "text": "Before what. Close the two meters, take her by the satchel-strap shoulder if you have to, and get the rest of the sentence out of her while it is still hers.",
           "next": "the_override"
+        },
+        {
+          "text": "Hold the two meters and call her name across them — hers, the plank-table register — and pull the sentence toward you while it is still hers to finish.",
+          "next": "the_override"
         }
       ]
     },
@@ -67,6 +71,10 @@
         {
           "text": "Let her go — you cannot unseat the tide by chasing it — and stand at the survey line with what she paid you, and pay it forward into the plan: the blunder is in the mandate's game. Someone inside is throwing it.",
           "next": "the_line"
+        },
+        {
+          "text": "Watch her to the horizon's fold — someone should — and then the survey line, and the payment forward: the blunder is in the mandate's game.",
+          "next": "the_line"
         }
       ]
     },
@@ -77,6 +85,10 @@
       "choices": [
         {
           "text": "Stand at the survey line with the four words she was allowed, and read them next to the Problemist's four winters: the blunder is taught. Someone inside the tide is running a school.",
+          "next": "the_line"
+        },
+        {
+          "text": "Log the four words at the line, verbatim, boxed — the blunder is taught — and read them against four winters of shapeless moves: a school, running inside the tide.",
           "next": "the_line"
         }
       ]
@@ -105,6 +117,10 @@
         {
           "text": "Camp this side of the line with the finding banked — thresholds this size are crossed rested, in daylight, in marching order.",
           "next": "night_after"
+        },
+        {
+          "text": "Write the weapon sentence in the public log too — the household deserves the arithmetic — and camp this side of the line, rested for the threshold.",
+          "next": "night_after"
         }
       ]
     },
@@ -115,6 +131,10 @@
       "choices": [
         {
           "text": "Dawn, marching order, the seam in the barricade — let the border control lead the household through her own front door.",
+          "next": "k_route"
+        },
+        {
+          "text": "Check the seam once more at first light before waking anyone — thresholds deserve one sober look — then marching order, and the border control's lead.",
           "next": "k_route"
         }
       ]
@@ -127,6 +147,10 @@
         {
           "text": "Down and east, cat's lead, dog's heel — across the survey line and out of the seen world.",
           "next": "crossing_over"
+        },
+        {
+          "text": "One entry at the line — appetite, two animals pointed the same way — and then down and east, cat's lead, dog's heel, out of the seen world.",
+          "next": "crossing_over"
         }
       ]
     },
@@ -137,6 +161,10 @@
       "choices": [
         {
           "text": "Make the evening miles while the light holds — down the stairing terraces, into the white country's breathing heart.",
+          "next": "the_smoke"
+        },
+        {
+          "text": "Mark the crossing in the second log with a ruled double line — off every ledger that ever priced you — and make the evening miles while the light holds.",
           "next": "the_smoke"
         }
       ]
