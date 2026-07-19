@@ -23,6 +23,10 @@
         {
           "text": "Down into the town by the morning light, then — to the market, the talk, the human sensor network. If the county is staffed, the staff have neighbors, and neighbors keep files.",
           "next": "market_town"
+        },
+        {
+          "text": "Break the cold camp with the corollary underlined in your stride if not on the page — then down into the town, the market, the human sensor network.",
+          "next": "market_town"
         }
       ]
     },
@@ -33,6 +37,10 @@
       "choices": [
         {
           "text": "Morning: the market. A town is a sensor network with opinions — if this county has been staffed and graded and readied, the readiness has witnesses, and witnesses talk at market prices.",
+          "next": "market_town"
+        },
+        {
+          "text": "Pay the landlady in advance and in fish — householders read better in shops than in ledgers — then the market, where the readiness will have witnesses.",
           "next": "market_town"
         }
       ]
@@ -60,6 +68,10 @@
         {
           "text": "The east road, then, on the heels of a year-old shadow. The corridor has a maintenance man, and maintenance men know where the infrastructure lives.",
           "next": "the_alarm"
+        },
+        {
+          "text": "One last round of the yard — the monument visited, the stable cats organized — then the east road, on the heels of a year-old shadow.",
+          "next": "the_alarm"
         }
       ]
     },
@@ -86,6 +98,10 @@
         {
           "text": "Evening, the inn again — the town will talk tonight, and after that, the maps. If east is closed, you want to see with your own pencil what routes remain, and where they all agree on sending you.",
           "next": "aftermath"
+        },
+        {
+          "text": "Play the shocked traveler to the last curtain — competently, at the carter's shoulder — and then the inn, the talk, the maps, and where they all agree on sending you.",
+          "next": "aftermath"
         }
       ]
     },
@@ -96,6 +112,10 @@
       "choices": [
         {
           "text": "Evening, the Weather Glass — the town will talk routes tonight, and you want the county to draw you its own map before you draw yours.",
+          "next": "aftermath"
+        },
+        {
+          "text": "Buy the carter a drink against the legend's next telling — witnesses keep better watered — then the Weather Glass, and the county's own map of itself.",
           "next": "aftermath"
         }
       ]
@@ -133,6 +153,10 @@
       "choices": [
         {
           "text": "Rule the audit closed and spend the sharpening. Morning goes southeast — through the funnel's teeth, on your own terms, household in marching order.",
+          "next": "waypoint_one"
+        },
+        {
+          "text": "Bank the candle and sleep before the arithmetic turns poetic — morning goes southeast through the teeth, household in marching order.",
           "next": "waypoint_one"
         }
       ]

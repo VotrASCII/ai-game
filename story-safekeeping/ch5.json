@@ -23,6 +23,10 @@
         {
           "text": "Through the raked court to the one open door, dog at heel, cat holding the border, instruments running.",
           "next": "the_court"
+        },
+        {
+          "text": "One breath at the gravel line — the compound's quiet priced, the exits counted — then the raked court, the one open door, instruments running.",
+          "next": "the_court"
         }
       ]
     },
@@ -33,6 +37,10 @@
       "choices": [
         {
           "text": "In, then — through the front, on the terms it offers, with the dog at heel and the cat holding her line. You have read it from behind; now read what it wants you to read.",
+          "next": "the_court"
+        },
+        {
+          "text": "Log the finding at the gates first — a little archive, a local star, no people — and then in through the front, to read what it wants you to read.",
           "next": "the_court"
         }
       ]
@@ -65,6 +73,10 @@
         {
           "text": "Turn off the observer's light, close the oiled door on the whole terrible kindness of it, and go read the terms it was built to sweeten.",
           "next": "the_offer_doc"
+        },
+        {
+          "text": "Stand one moment with the two true sentences — a gift, a lure, built by something that knows both — then close the oiled door and go read the terms it was built to sweeten.",
+          "next": "the_offer_doc"
         }
       ]
     },
@@ -75,6 +87,10 @@
       "choices": [
         {
           "text": "The document, then, standing, coat on. You have read the vault; now read the deed.",
+          "next": "the_offer_doc"
+        },
+        {
+          "text": "One circuit of the inventory-of-one first, memorizing the shelving logic — then the deed, standing, coat on.",
           "next": "the_offer_doc"
         }
       ]
@@ -120,6 +136,10 @@
         {
           "text": "Walk out through the open gates, collect the cat from her line, and turn the household west — against the funnel, back up the corridor, in the wrong direction on purpose.",
           "next": "gates_out"
+        },
+        {
+          "text": "Out through the gates at audit pace — no hurry, no backward look; buildings read gaits too — collect the cat, and turn the household west on purpose.",
+          "next": "gates_out"
         }
       ]
     },
@@ -131,6 +151,10 @@
         {
           "text": "Collect the sentinel from her line — paid in fish from your own pack, on principle — and west, into the honest rain.",
           "next": "leaving_west"
+        },
+        {
+          "text": "Give the sentinel her fish at the line itself — contracts honored where they were kept — and west, into the honest rain.",
+          "next": "leaving_west"
         }
       ]
     },
@@ -141,6 +165,10 @@
       "choices": [
         {
           "text": "Make the night's camp in honest unarranged country, and rule Part One of this campaign closed over the fire: what was learned, what it cost, what comes next.",
+          "next": "end_ch5"
+        },
+        {
+          "text": "Walk the first wet mile before choosing ground — funnels do not get to pick your campsite tonight — then the fire, and Part One ruled closed.",
           "next": "end_ch5"
         }
       ]

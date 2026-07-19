@@ -24,6 +24,10 @@
         {
           "text": "On, at road speed, instruments running. Somewhere ahead is a seven-week ghost with good manners, and the road is long, and the light in here is the kind you make miles in.",
           "next": "pilgrims"
+        },
+        {
+          "text": "Stand at the shrine cup one minute more — courtesy, boxed twice — and then road speed, instruments running, after a ghost with good manners.",
+          "next": "pilgrims"
         }
       ]
     },
@@ -34,6 +38,10 @@
       "choices": [
         {
           "text": "Walk with them as far as the springs' turning — nine pilgrims, a grandmother, a fierce granddaughter: the road's own texture, and the best camouflage is not needing any.",
+          "next": "the_sick_turn"
+        },
+        {
+          "text": "Box the grandmother's sentence a third time on your own account — love that never once let go — and walk with them to the springs' turning, the road's own texture.",
           "next": "the_sick_turn"
         }
       ]
@@ -62,6 +70,10 @@
         {
           "text": "Leave them at the springs' turning in the morning, with the worst behind — and walk the dotted mile back down to your road, where the funnel waits, having minded.",
           "next": "the_fork"
+        },
+        {
+          "text": "Take the grip's minding as data, not flattery — and in the morning, the dotted mile back down to your road, and the funnel, which minded.",
+          "next": "the_fork"
         }
       ]
     },
@@ -72,6 +84,10 @@
       "choices": [
         {
           "text": "Leave them at the springs' turning in the morning, with the worst behind — and walk the dotted mile back down to your road, where the funnel waits, having learned something about you. Fair enough. You learned something about it.",
+          "next": "the_fork"
+        },
+        {
+          "text": "Let her audit stand unanswered — the day it understands what it is holding — and in the morning, the dotted mile back down to the road.",
           "next": "the_fork"
         }
       ]
@@ -104,6 +120,10 @@
         {
           "text": "The right-hand way, then — on B's word, with the map folded and your eyes open. Take the branch, and take the measure of the woman who talks to dogs while you're at it.",
           "next": "b_way"
+        },
+        {
+          "text": "The right-hand way — and one entry first: the interesting thing is never the fork; it is who was watching you choose.",
+          "next": "b_way"
         }
       ]
     },
@@ -122,6 +142,10 @@
         {
           "text": "The drove lane, then — high, dry, and chosen on good authority. Make the miles while the light holds.",
           "next": "drove_lane"
+        },
+        {
+          "text": "The drove lane — and a measured tithe of fish to the government at your knee, because good authority should be kept on retainer.",
+          "next": "drove_lane"
         }
       ]
     },
@@ -133,6 +157,10 @@
         {
           "text": "Rejoin the high line and make camp — wet boots, dry conclusions, and a household whose government you have some fences to mend with.",
           "next": "drove_lane"
+        },
+        {
+          "text": "Rejoin the high line — and read the embarrassing entry twice before sleep, because the discipline is reading them, not only writing them.",
+          "next": "drove_lane"
         }
       ]
     },
@@ -143,6 +171,10 @@
       "choices": [
         {
           "text": "Two days out from the answer. Camp high tonight, off the lane's shoulder, and spend the dark on the plates and the logs — you have new bearings, and the committee of one has entries to reconcile before it walks into anything reasonable.",
+          "next": "high_camp"
+        },
+        {
+          "text": "Listen until the waymark bell finishes its period — tolls, paid; road, kept sweet — and then camp high, and reconcile the committee of one.",
           "next": "high_camp"
         }
       ]
@@ -170,6 +202,10 @@
       "choices": [
         {
           "text": "Morning, and the marching pace, and the last of the high country. The lowland can watch you come.",
+          "next": "end_ch4"
+        },
+        {
+          "text": "Lie a while in formation, doing the arithmetic of three animals keeping one watch — then morning, marching pace, and the lowland can watch you come.",
           "next": "end_ch4"
         }
       ]
