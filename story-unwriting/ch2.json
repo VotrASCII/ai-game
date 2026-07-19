@@ -28,6 +28,14 @@
         {
           "text": "Give her the verdict with the control behind it: the wall holds, the luck pools, something is choosing.",
           "next": "verdict"
+        },
+        {
+          "text": "Slide the keyboard over and let her read the two cities raw — the verdict will hold better arrived-at in her voice than delivered in yours.",
+          "next": "verdict"
+        },
+        {
+          "text": "Lead with the error bars — eleven months of luck could still be luck, you say, and then show her the number that says it couldn't, because she has never once forgiven a buried caveat.",
+          "next": "verdict"
         }
       ]
     },
@@ -37,6 +45,10 @@
       "choices": [
         {
           "text": "Go now, in daylight, while the seam between here and there is thin. The archive is the mission; the floor is just a floor.",
+          "next": "surface_walk"
+        },
+        {
+          "text": "Eat first, check the packs, leave within the hour — a stuck day isn't going anywhere, and this household does not run missions on tea alone.",
           "next": "surface_walk"
         }
       ]
@@ -67,6 +79,10 @@
       "choices": [
         {
           "text": "Follow him in. Lobby, stairwell, and up.",
+          "next": "lobby"
+        },
+        {
+          "text": "One circuit of the block first, reading the building the way you would read a data set — entrances, sightlines, exits — and then in through the revolving door behind the dog.",
           "next": "lobby"
         }
       ]
@@ -122,6 +138,10 @@
         {
           "text": "Give her the hour anyway — stand with her while the old Thursday spends itself, and then walk the floor once before you go.",
           "next": "break_room_end"
+        },
+        {
+          "text": "Stand the watch from the doorway with B — perimeter duty, close enough to be found, far enough to stay out of the frame of whatever she is visiting.",
+          "next": "break_room_end"
         }
       ]
     },
@@ -153,6 +173,10 @@
         {
           "text": "Home through the seam, drives on your back, the day's finds logged.",
           "next": "end_ch2"
+        },
+        {
+          "text": "Shoulder the drives and offer her your arm off the kerb of the world before — an old joke, older manners — and walk home through the seam while the noon roars on behind you.",
+          "next": "end_ch2"
         }
       ]
     },
@@ -168,6 +192,10 @@
       "choices": [
         {
           "text": "Home through the seam, drives on your back, the day's finds logged.",
+          "next": "end_ch2"
+        },
+        {
+          "text": "Shoulder the drives and follow her out — and file, in your own log, in your own hand, the weight of the piece you did not give back.",
           "next": "end_ch2"
         }
       ]

@@ -50,6 +50,10 @@
         {
           "text": "Bank the readings and push for home before the light goes — the storm is drifting, and drift is a thing you now have numbers for.",
           "next": "b_refusal"
+        },
+        {
+          "text": "Take the third bearing kneeling, one hand on the dog — instrument and alarm both read better at contact distance — then pack the kit and give the storm its road.",
+          "next": "b_refusal"
         }
       ]
     },
@@ -84,6 +88,10 @@
         {
           "text": "Home, then — dinner, tea, and the day's numbers, which have just become the first survey of somebody's switching yard.",
           "next": "station_shelter"
+        },
+        {
+          "text": "Stand one more minute in the wind, repeating it — not weather at all, none of it, ever — until the sentence stops improving and starts costing, then follow the dog stationward.",
+          "next": "station_shelter"
         }
       ]
     },
@@ -93,6 +101,10 @@
       "choices": [
         {
           "text": "Ask the operational question, because someone has to: how do you survey the center of an ellipse without telling the ellipse's owner you've found it?",
+          "next": "monitoring_hut"
+        },
+        {
+          "text": "Say her theory back to her first, in your own vocabulary, error bars and all — because a plan agreed in two languages is the only kind this household signs.",
           "next": "monitoring_hut"
         }
       ]
@@ -131,6 +143,10 @@
         {
           "text": "Home, and take stock. The survey is done and it found more than an ellipse; before anyone follows any coordinates, this household audits what it knows and what it can do.",
           "next": "waypoint_one"
+        },
+        {
+          "text": "Home the long way, past the ellipse's rim, letting the geometry set in your head — and tomorrow, the audit: what this household knows, and what it can do.",
+          "next": "waypoint_one"
         }
       ]
     },
@@ -140,6 +156,10 @@
       "choices": [
         {
           "text": "Morning, and take stock. The survey found more than an ellipse; before anyone follows any coordinates, this household audits what it knows and what it can do.",
+          "next": "waypoint_one"
+        },
+        {
+          "text": "Lie awake a while under the dog's steady audit, rehearsing the case for morning — and in the morning take stock of what the household knows and what it can do.",
           "next": "waypoint_one"
         }
       ]
