@@ -23,6 +23,10 @@
         {
           "text": "The queue, then, at conversation range — with her reputation in one pocket and the second log in the other.",
           "next": "the_queue"
+        },
+        {
+          "text": "Rehearse nothing — bookkeepers hear rehearsal the way you hear rounding — and join the queue at conversation range, log in pocket.",
+          "next": "the_queue"
         }
       ]
     },
@@ -69,6 +73,10 @@
         {
           "text": "Camp at the fair's edge tonight. She works the bridge until the market breaks; there will be an after, when the queue is done and the books are being wrapped in oilcloth, and the after is when people are findable.",
           "next": "after_hours"
+        },
+        {
+          "text": "Walk the fair once with the three words burning — known to me — and then camp at its edge, because the after is when people are findable.",
+          "next": "after_hours"
         }
       ]
     },
@@ -79,6 +87,10 @@
       "choices": [
         {
           "text": "Camp at the fair's edge tonight. There will be an after, when the queue is done — and you have a question of your own that wants asking away from the queue's ears.",
+          "next": "after_hours"
+        },
+        {
+          "text": "Have the answer's shape drafted by dusk — the wanting-it-ready is the fee — and camp at the fair's edge, for the after, when the queue is done.",
           "next": "after_hours"
         }
       ]
@@ -113,6 +125,10 @@
         {
           "text": "Sit with her on the parapet while the dark finishes arriving — two keepers of unaskable records — and then ask your navigation question: the karst, the Candle, the way up to the dark.",
           "next": "parapet_night"
+        },
+        {
+          "text": "Let the engineering hold your voice one minute more — then the parapet, the dark finishing its arrival, and the navigation question: the karst, the Candle, the way up.",
+          "next": "parapet_night"
         }
       ]
     },
@@ -123,6 +139,10 @@
       "choices": [
         {
           "text": "Ask your navigation question before the night closes: the karst, the Candle, the way up to the dark country where her cave of books and your census both point.",
+          "next": "parapet_night"
+        },
+        {
+          "text": "Enter the refusal on the longest page in your own hand — and then the navigation question, before the night closes: the karst, the Candle, the way up to the dark.",
           "next": "parapet_night"
         }
       ]
@@ -135,6 +155,10 @@
         {
           "text": "Morning, and the salt way west, with the index of four in the log and the Spine standing on the horizon like a sentence waiting for its verb.",
           "next": "salt_way"
+        },
+        {
+          "text": "Copy her verdict into the second log unimproved — registered, sequenced, safe, never read — and in the morning, the salt way west.",
+          "next": "salt_way"
         }
       ]
     },
@@ -145,6 +169,10 @@
       "choices": [
         {
           "text": "The first high camp, then, under real darkness — and the audit before sleep: rule the Notary's chapter closed and set the mountain's agenda.",
+          "next": "waypoint_two"
+        },
+        {
+          "text": "Stand a minute with the dome on the last light — small, exact, collimated at heaven — then the first high camp, and the audit that sets the mountain's agenda.",
           "next": "waypoint_two"
         }
       ]

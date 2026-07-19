@@ -50,6 +50,10 @@
         {
           "text": "Now the dome, and first light, and the sky's own testimony.",
           "next": "first_light"
+        },
+        {
+          "text": "Sleep once on the mountain's own arithmetic first — then the dome, and first light, and the sky's testimony.",
+          "next": "first_light"
         }
       ]
     },
@@ -92,6 +96,10 @@
         {
           "text": "Now the full battery on all seven anyway — the curves argue the template; the battery proves the population. Nine clear nights of proving.",
           "next": "the_battery"
+        },
+        {
+          "text": "Box the sentence that wants boxing — the solution travels — and then the full battery on all seven: nine clear nights of proving.",
+          "next": "the_battery"
         }
       ]
     },
@@ -102,6 +110,10 @@
       "choices": [
         {
           "text": "Now the lag — the cold arithmetic of when. Every entry in the census is old mail, and the ledger needs that footnote before any verdict stands.",
+          "next": "the_lag"
+        },
+        {
+          "text": "Watch the wrench lesson fail once more, both parties delighted — households bank these — and then out to the cold arithmetic of when.",
           "next": "the_lag"
         }
       ]
@@ -130,6 +142,10 @@
         {
           "text": "Now Harrow's cellar, and the professionals' records, and what a calibrator can read in an impossible zero.",
           "next": "harrow_archive"
+        },
+        {
+          "text": "Read the proof back twice, hunting the crack you half hope is there — airtight, both passes — and then Harrow's cellar, and the professionals' records.",
+          "next": "harrow_archive"
         }
       ]
     },
@@ -140,6 +156,10 @@
       "choices": [
         {
           "text": "Up out of the cellar, to the stove, and rule the census closed. You came up the mountain to count what the sky is keeping. It is counted. Say the verdict out loud, both signatories present, and set the road's next bearing.",
+          "next": "census_verdict"
+        },
+        {
+          "text": "Sit with retune, or break the instrument until the stove ticks it into place — then up, both signatories, and the verdict said out loud.",
           "next": "census_verdict"
         }
       ]

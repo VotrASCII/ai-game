@@ -24,6 +24,10 @@
         {
           "text": "Down to the town in the bright aftermath, snow squeaking, the household walking its own plowed line to a bowl of working chimneys.",
           "next": "the_town"
+        },
+        {
+          "text": "Fold the storm's finding into the public log — the real thing costs everyone's warmth spent on everyone — and go down into the blinding new world.",
+          "next": "the_town"
         }
       ]
     },
@@ -50,6 +54,10 @@
         {
           "text": "Now the warm side of the door, with the government — and the man wearing the smell of new leather.",
           "next": "the_store"
+        },
+        {
+          "text": "One line more for the lowland file — the parcels are the bodies; the bodies are staff — and then the warm side of the door, and the government.",
+          "next": "the_store"
         }
       ]
     },
@@ -61,6 +69,10 @@
         {
           "text": "Tell him true — winter, distance, an old dog, a far cold destination you won't name — and let the diagnosis run. You want to see what he pulls, and what he refuses to charge for.",
           "next": "the_gifts"
+        },
+        {
+          "text": "Tell him true — and watch his hands while you do, because a diagnostician's hands inventory faster than his mouth.",
+          "next": "the_gifts"
         }
       ]
     },
@@ -71,6 +83,10 @@
       "choices": [
         {
           "text": "Ask him the ferryman's question, plainly, while he wraps: who resources him. Where the stock comes from. Whether deliveries arrive addressed to no one, for people who haven't come yet.",
+          "next": "crate_nobody"
+        },
+        {
+          "text": "Give the wet eyes their minute — he doesn't know why; you do — and then the ferryman's question, plainly, while he wraps: who resources him.",
           "next": "crate_nobody"
         }
       ]
@@ -125,6 +141,10 @@
         {
           "text": "The night in Saltgate, the household wintered-out and re-shod — and the road's next question waiting at the taproom fire: the karst towns, and a problemist who loses for a living.",
           "next": "night_town"
+        },
+        {
+          "text": "Leave him with the sentence he has never been asked — nobody ever asks what I'm walking into — and take the household out into the night town, re-shod.",
+          "next": "night_town"
         }
       ]
     },
@@ -136,6 +156,10 @@
         {
           "text": "The night in Saltgate, the household wintered-out and re-shod — and the road's next question waiting at the taproom fire: the karst towns, and a problemist who loses for a living.",
           "next": "night_town"
+        },
+        {
+          "text": "Add the line to the longest page and close it gently — then the night in Saltgate, and the taproom fire, and the problemist who loses for a living.",
+          "next": "night_town"
         }
       ]
     },
@@ -146,6 +170,10 @@
       "choices": [
         {
           "text": "Two towns down the salt way, then, when the household's rested: Chalcedon, the arcade, the folding board. But the road between has one more night in it, and the night has arithmetic — the census's numbers have been compounding since the mountain, and they want ruling before you sit down opposite anything that plays.",
+          "next": "end_ch8"
+        },
+        {
+          "text": "One more evening of rest first — the old dog has earned a stove, and the compounding will keep till the fire — then two towns down the salt way, ready to be offended in person.",
           "next": "end_ch8"
         }
       ]
