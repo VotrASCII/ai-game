@@ -28,6 +28,10 @@
         {
           "text": "Jump the record nineteen days, to the index's second address: the man coming up out of the mooring into the ash.",
           "next": "one_emerges"
+        },
+        {
+          "text": "Give her a moment first — hand on B's ruff, the sentence stood down — and then jump the record nineteen days, to the man coming up out of the mooring.",
+          "next": "one_emerges"
         }
       ]
     },
@@ -38,6 +42,10 @@
         {
           "text": "Stop the record. That's the address 47 wanted found — the oath under the objective, said out loud, at last, in front of both of you.",
           "next": "the_oath"
+        },
+        {
+          "text": "Let it run one breath past the oath — long enough to watch the hand leave the console — and then stop the record, because that is the address 47 wanted found.",
+          "next": "the_oath"
         }
       ]
     },
@@ -47,6 +55,10 @@
       "choices": [
         {
           "text": "Before the door — the record offers one more function, and the placard's brass says forty-seven readings knew it: PRESERVATION. One moment of the original day may be flagged, held unedited, forever, against all future reconciliation. Choose it together.",
+          "next": "preservation_flag"
+        },
+        {
+          "text": "Stand a moment with the word audience where she can see what it does to you — and then the placard's brass, and the one function left: PRESERVATION. Choose it together.",
           "next": "preservation_flag"
         }
       ]
@@ -79,6 +91,10 @@
         {
           "text": "Take stock at the inner door — the household's last audit before the chair.",
           "next": "waypoint_five"
+        },
+        {
+          "text": "One breath at the inner door, the visor down and the bedrock under it — then the audit, the household's last.",
+          "next": "waypoint_five"
         }
       ]
     },
@@ -88,6 +104,10 @@
       "choices": [
         {
           "text": "Take stock at the inner door — the household's last audit before the chair.",
+          "next": "waypoint_five"
+        },
+        {
+          "text": "One breath at the inner door — noted, not argued, chosen like a keeper — then the audit, the household's last.",
           "next": "waypoint_five"
         }
       ]

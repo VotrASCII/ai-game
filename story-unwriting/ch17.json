@@ -29,6 +29,10 @@
         {
           "text": "Morning, and the accounts — because there is one more document in her jacket, and it has been waiting since chapter one of the file.",
           "next": "the_accounts"
+        },
+        {
+          "text": "Let the dog's notarized sigh hold you both until first light — then the accounts, and the document that has been waiting since chapter one of the file.",
+          "next": "the_accounts"
         }
       ]
     },
@@ -38,6 +42,10 @@
       "choices": [
         {
           "text": "Morning, and the accounts — because there is one more document in her jacket, and it has been waiting since chapter one of the file.",
+          "next": "the_accounts"
+        },
+        {
+          "text": "Take the two hours — orders are orders — and wake with your whole heart, because the accounts are waiting in her jacket.",
           "next": "the_accounts"
         }
       ]
@@ -70,6 +78,10 @@
         {
           "text": "The hatch, the rungs, the antechamber, the reader — and the last audit of the file, at the inner door, with the boundary opening.",
           "next": "waypoint_six"
+        },
+        {
+          "text": "One look back at the gold light on the gravel — the last surface morning, whichever after arrives — and then the hatch, the rungs, and the last audit at the inner door.",
+          "next": "waypoint_six"
         }
       ]
     },
@@ -79,6 +91,10 @@
       "choices": [
         {
           "text": "The hatch, the rungs, the antechamber, the reader — and the last audit of the file, at the inner door, with the boundary opening.",
+          "next": "waypoint_six"
+        },
+        {
+          "text": "One look back at the gold light on the gravel — the last surface morning, whichever after arrives — and then the hatch, the rungs, and the last audit at the inner door.",
           "next": "waypoint_six"
         }
       ]

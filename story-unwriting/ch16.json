@@ -8,6 +8,10 @@
         {
           "text": "Hear them. At the wire, in turn, formally — the world's three cases, argued to the holder, before the boundary.",
           "next": "hollis_case"
+        },
+        {
+          "text": "Hear them — and set the order yourself, courtesy of the house: the wronged first, the guilty second, the patient last.",
+          "next": "hollis_case"
         }
       ]
     },
@@ -17,6 +21,10 @@
       "choices": [
         {
           "text": "Answer nothing yet. Hear the Continuum's case next — Voss walked four hundred kilometres to make it.",
+          "next": "voss_case"
+        },
+        {
+          "text": "Hold the knowing at the wire a moment — her life, the lie, both parties declining to say so — and then call the Continuum's case; Voss walked four hundred kilometres to make it.",
           "next": "voss_case"
         }
       ]
@@ -28,6 +36,10 @@
         {
           "text": "And the third case — the one soul on a bicycle, who has been waiting at the north wire with a satchel and the patience of an institution.",
           "next": "archivist_case"
+        },
+        {
+          "text": "Watch the review a moment longer — nineteen bowed heads, and the dog's slow verdict — and then call the third case: the one soul on a bicycle at the north wire.",
+          "next": "archivist_case"
         }
       ]
     },
@@ -37,6 +49,10 @@
       "choices": [
         {
           "text": "Give the fence its answer — and lock the household's alignment for the boundary.",
+          "next": "alignment"
+        },
+        {
+          "text": "Committee dynamics noted, filed, and — for one private second — enjoyed. Then the fence gets its answer, and the household locks its alignment.",
           "next": "alignment"
         }
       ]
@@ -73,6 +89,10 @@
         {
           "text": "Six days, then, on the one true day, with the honest world's auditors in the yard — and a door counting down to the boundary.",
           "next": "end_ch16"
+        },
+        {
+          "text": "Walk the wire once before the six days begin — a nod to the witness her doctrine never named — and then the one true day, and the counting door.",
+          "next": "end_ch16"
         }
       ]
     },
@@ -90,6 +110,10 @@
         {
           "text": "Six days, then, on the one true day, with the review working below — and a door counting down to the boundary.",
           "next": "end_ch16"
+        },
+        {
+          "text": "Walk the review's perimeter once — countersignatures deserve inspection — and then six days on the one true day, and the counting door.",
+          "next": "end_ch16"
         }
       ]
     },
@@ -106,6 +130,10 @@
       "choices": [
         {
           "text": "Six days, then, on the one true day, the world at the wire — and a door counting down to the boundary.",
+          "next": "end_ch16"
+        },
+        {
+          "text": "Stand a while with the math on the coats — a man, a beacon, a dog, the world holding its breath — and then six days, and the counting door.",
           "next": "end_ch16"
         }
       ]
