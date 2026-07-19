@@ -8,6 +8,10 @@
         {
           "text": "In — into the teacher's basement, the place the mandate cannot conceive of, with the government at your knee and the sentinel on your shoulder.",
           "next": "the_vault"
+        },
+        {
+          "text": "In — at audit pace, counting the doors as they hold — into the teacher's basement, government at your knee, sentinel on your shoulder.",
+          "next": "the_vault"
         }
       ]
     },
@@ -33,6 +37,10 @@
       "choices": [
         {
           "text": "The stair now, and the pressure door, and the sentinel's ruling on her own border.",
+          "next": "k_crosses"
+        },
+        {
+          "text": "Read R's letter once more where it lives — almost one whole man — and then the stair, the pressure door, and the sentinel's ruling on her own border.",
           "next": "k_crosses"
         }
       ]
@@ -62,6 +70,10 @@
         {
           "text": "The comparison, quickly, before anything else spends you: the unsigned offer against the stacks' labels, letterform against letterform. You have carried the exemplar two counties for exactly this shelf.",
           "next": "same_hand"
+        },
+        {
+          "text": "The comparison — and gloves first, because an exemplar that has crossed two counties deserves evidence handling.",
+          "next": "same_hand"
         }
       ]
     },
@@ -72,6 +84,10 @@
       "choices": [
         {
           "text": "The comparison, before anything spends you: the unsigned offer against the stacks' labels, letterform against letterform. You have carried the exemplar two counties for exactly this shelf.",
+          "next": "same_hand"
+        },
+        {
+          "text": "The comparison — announced aloud to the listening stacks, because this audit works in the open: the offer against the labels, letterform against letterform.",
           "next": "same_hand"
         }
       ]
@@ -123,6 +139,10 @@
         {
           "text": "Now the stacks are waking around you — lamps warming aisle on aisle, machinery changing its mind in the far galleries. The audit has been noticed. Down the stair, back through the remainder's hall, before the tide arrives in person.",
           "next": "the_waking"
+        },
+        {
+          "text": "One breath for the misheard kindness — he meant the sense; it heard the her — and then down the stair, ahead of the waking tide.",
+          "next": "the_waking"
         }
       ]
     },
@@ -134,6 +154,10 @@
         {
           "text": "Down the stair, back through the remainder's hall, before the tide arrives in person — carrying the afternoon, and the finding, and the weight.",
           "next": "the_waking"
+        },
+        {
+          "text": "Rest your hand once on the small unvisited drawer in passing — owed, and noted as owed — and then down the stair, ahead of the tide.",
+          "next": "the_waking"
         }
       ]
     },
@@ -144,6 +168,10 @@
       "choices": [
         {
           "text": "Down the warm river's landing, one night's camp behind the held door — rule the chapter, rest the household, and let the vault's findings settle into the plan before the table is set.",
+          "next": "end_ch13"
+        },
+        {
+          "text": "Post the sentinel at the landing's mouth and sleep in watches — then the ruled page, and the findings settling into the plan.",
           "next": "end_ch13"
         }
       ]

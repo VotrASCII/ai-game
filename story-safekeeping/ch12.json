@@ -8,6 +8,10 @@
         {
           "text": "Morning: the question that matters. Somebody in this valley decided, once, that Undermeadow would live in the blind spot — find who keeps the village's memory, and ask how the residuals came to know they were residuals.",
           "next": "the_finder"
+        },
+        {
+          "text": "Morning — and one lap of the fold first at B's diplomatic pace, because the question that matters lands better from a guest the village has watched walk. Then: who keeps the memory.",
+          "next": "the_finder"
         }
       ]
     },
@@ -19,6 +23,10 @@
         {
           "text": "Tell her everything — the storm to the survey line, the account code to the taught blunder. She built the batteries; she can read the instrument's anatomy from inside. Buy the valley's counsel with the whole truth.",
           "next": "ash_counsel"
+        },
+        {
+          "text": "Everything — starting from the storm, told in audit order, because the woman who built the batteries deserves the instrument read at full calibration.",
+          "next": "ash_counsel"
         }
       ]
     },
@@ -29,6 +37,10 @@
       "choices": [
         {
           "text": "Ask the operational question: the archive lies east, in the seen world, behind every prepared line the mandate owns. Undermeadow lives in the deep ways. Ask what the karst knows about getting from the blind spot to the vault.",
+          "next": "the_deep_ways"
+        },
+        {
+          "text": "Check everything twice — her own instruction, applied to her: say the counsel back until the joints hold — and then the operational question: the blind spot to the vault.",
           "next": "the_deep_ways"
         }
       ]
@@ -57,6 +69,10 @@
         {
           "text": "Back up to the fold, and the winter's work — provisions, rest, and the anatomy of the enemy at Grandmother Ash's stove.",
           "next": "wintering"
+        },
+        {
+          "text": "Square the stone-in-the-boot finding in the log — even in defection, the hand squares its edges — and then up to the fold, and the winter's work.",
+          "next": "wintering"
         }
       ]
     },
@@ -84,6 +100,10 @@
         {
           "text": "Then the sentries' word that has been waiting since yesterday: something stands at the valley's northern lip, and has stood there through a night and a day. Go and see, before the fire and the terms.",
           "next": "the_edge"
+        },
+        {
+          "text": "Sit one minute with the proctor's nod — exam closed — and then the sentries' word from the northern lip: go and see what has stood there a night and a day.",
+          "next": "the_edge"
         }
       ]
     },
@@ -94,6 +114,10 @@
       "choices": [
         {
           "text": "Take the terms of sanctuary to the council fire — and take him the valley's answer back up the hill before you go, because a man who cannot enter the fold can still be held to what he is at its edge.",
+          "next": "the_terms"
+        },
+        {
+          "text": "Carry the chandler's solvency up the hill with the terms — paid for, squared once, solvent since — and then the council fire.",
           "next": "the_terms"
         }
       ]
@@ -113,6 +137,10 @@
         {
           "text": "Take the valley's answer up to the northern lip before the light goes — a man who cannot enter the fold can still be told what the fold ruled.",
           "next": "goodbye_edge"
+        },
+        {
+          "text": "Copy the nine words to the top of your own last page first — the fold holds — and then the northern lip, before the light goes.",
+          "next": "goodbye_edge"
         }
       ]
     },
@@ -124,6 +152,10 @@
         {
           "text": "Down to the fold for the last night — one question left before the dawn, and it sleeps by your bed on four grey legs.",
           "next": "descent_eve"
+        },
+        {
+          "text": "Stand with B at the border until the tail's slow currency beat stops — then down to the fold, and the question that sleeps on four grey legs.",
+          "next": "descent_eve"
         }
       ]
     },
@@ -134,6 +166,10 @@
       "choices": [
         {
           "text": "The fire's rim, the ruled page, the waypoint — and the descent with the dawn.",
+          "next": "waypoint_four"
+        },
+        {
+          "text": "Check the pack basket's arithmetic one last time — bell, fish, instruments, appetite — then the fire's rim, the ruled page, and the descent with the dawn.",
           "next": "waypoint_four"
         }
       ]

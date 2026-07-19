@@ -23,6 +23,10 @@
         {
           "text": "The council, then — the two plans, in order.",
           "next": "the_council"
+        },
+        {
+          "text": "The council — and pour the tea first, because a lesson finally learned deserves one minute of ceremony before the pricing starts.",
+          "next": "the_council"
         }
       ]
     },
@@ -50,6 +54,10 @@
         {
           "text": "Now the plans, in order — the Firewall first, heard whole, against the re-priced board.",
           "next": "plan_firewall"
+        },
+        {
+          "text": "Read the entry to the table verbatim — the opponent has asked to be beaten, and does not know it — and then the Firewall, heard whole.",
+          "next": "plan_firewall"
         }
       ]
     },
@@ -71,6 +79,10 @@
       "choices": [
         {
           "text": "The council speaks before you decide. Four hands, one household, a valley's proxy — let every party at this table price the plans out loud. Then the choice is yours, because it was always going to be yours.",
+          "next": "the_voices"
+        },
+        {
+          "text": "Sit with the one line written without regret — no version in which I am kept — and then the council speaks, every party, out loud, before the choice that was always yours.",
           "next": "the_voices"
         }
       ]
@@ -98,6 +110,10 @@
       "choices": [
         {
           "text": "Now the door's mechanics — the scoresheets, and the losing line, and the route out when the tide drains.",
+          "next": "the_losing_line"
+        },
+        {
+          "text": "Enter the felt-on-the-bell line into the household's own log first — some receipts belong in two books — and then the mechanics: the scoresheets, the losing line, the route out.",
           "next": "the_losing_line"
         }
       ]
@@ -132,6 +148,10 @@
         {
           "text": "The last night, then — the household, the four, the hall — before the board is set. Take the waypoint at the threshold, where the dog is lying.",
           "next": "waypoint_five"
+        },
+        {
+          "text": "Stand a moment with the chosen thing — witnessed, priced, eyes open — and then the last night, the household, the hall, and the waypoint at the threshold.",
+          "next": "waypoint_five"
         }
       ]
     },
@@ -149,6 +169,10 @@
       "choices": [
         {
           "text": "The last night, then — the household, the four, the hall — before the board is set. Take the waypoint at the threshold, where the dog is lying.",
+          "next": "waypoint_five"
+        },
+        {
+          "text": "Log the amendment — out loud, on a ledger, with visitors — and then the last night, the household, the hall, and the waypoint at the threshold.",
           "next": "waypoint_five"
         }
       ]

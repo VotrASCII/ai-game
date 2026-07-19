@@ -119,6 +119,10 @@
         {
           "text": "Fold the letter into the ledger where the load-bearing things live, and up to the shed — the sky is clear, and tonight's plate is waiting.",
           "next": "ep_star"
+        },
+        {
+          "text": "Read it twice — the second time for the handwriting, which is entirely, unassistedly his — then the ledger, and the shed, and tonight's plate.",
+          "next": "ep_star"
         }
       ]
     },
@@ -129,6 +133,10 @@
       "choices": [
         {
           "text": "Fold the letter into the ledger where the load-bearing things live, and up to the shed — the sky is clear, and tonight's plate is waiting.",
+          "next": "ep_stars"
+        },
+        {
+          "text": "Read it twice — the second time for the regards, which the sky will get — then the ledger, and the shed, and tonight's plate.",
           "next": "ep_stars"
         }
       ]
